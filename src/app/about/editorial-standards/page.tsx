@@ -7,7 +7,6 @@ export const metadata = buildMetadata({
   description:
     "How FixItReal writes, reviews, updates, and corrects its content — plus our policies on AI, conflicts of interest, and sponsored placements.",
   path: "/about/editorial-standards",
-  noIndex: true,
 });
 
 export default function EditorialStandardsPage() {

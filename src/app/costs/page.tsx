@@ -11,7 +11,6 @@ export const metadata = buildMetadata({
   description:
     "Honest home repair costs with labor, materials, permits, and regional variation broken out. Real numbers. Sources shown. Updated quarterly.",
   path: "/costs",
-  noIndex: true,
 });
 
 export default async function CostsHub() {

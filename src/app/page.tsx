@@ -9,7 +9,6 @@ import { buildMetadata } from "@/lib/metadata";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
-  noIndex: true, // placeholder site — remove once content is verified
 });
 
 export default async function Home() {

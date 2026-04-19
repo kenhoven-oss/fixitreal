@@ -11,7 +11,6 @@ export const metadata = buildMetadata({
   description:
     "Contractor vetting, pricing red flags, and consumer-first guidance the sites taking contractor ad money can't publish.",
   path: "/advice",
-  noIndex: true,
 });
 
 export default async function AdviceHub() {

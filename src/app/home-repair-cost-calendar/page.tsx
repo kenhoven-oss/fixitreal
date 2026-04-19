@@ -12,7 +12,6 @@ export const metadata = buildMetadata({
   description:
     "One task list for every month of the year — what to check, what it costs, and why it matters. Free. No login. Download the PDF.",
   path: "/home-repair-cost-calendar",
-  noIndex: true,
 });
 
 const path = "/home-repair-cost-calendar";

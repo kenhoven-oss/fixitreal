@@ -7,7 +7,6 @@ export const metadata = buildMetadata({
   description:
     "How FixItReal makes money: home-services lead-gen partnerships, display advertising, and affiliate links — and what we will never accept.",
   path: "/affiliate-disclosure",
-  noIndex: true,
 });
 
 export default function AffiliateDisclosurePage() {

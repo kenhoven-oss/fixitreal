@@ -8,7 +8,6 @@ export const metadata = buildMetadata({
   title: "Contact",
   description: `Email FixItReal directly at ${site.contactEmail}. We read every message and respond to legitimate inquiries within a few days.`,
   path: "/about/contact",
-  noIndex: true,
 });
 
 export default function ContactPage() {

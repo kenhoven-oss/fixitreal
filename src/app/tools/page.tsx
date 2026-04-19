@@ -9,7 +9,6 @@ export const metadata = buildMetadata({
   description:
     "Interactive tools for home repair decisions — starting with DIY or Hire, with cost estimator and quote scorecard on the way.",
   path: "/tools",
-  noIndex: true,
 });
 
 export default function ToolsHub() {

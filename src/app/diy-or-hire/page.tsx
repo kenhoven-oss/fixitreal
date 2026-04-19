@@ -12,7 +12,6 @@ export const metadata = buildMetadata({
   description:
     "Should you fix it yourself or call a pro? Real verdicts on real jobs — with cost comparisons, permit rules, and the safety trade-offs nobody else tells you.",
   path: "/diy-or-hire",
-  noIndex: true,
 });
 
 export default async function DiyOrHireHub() {

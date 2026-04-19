@@ -7,7 +7,6 @@ export const metadata = buildMetadata({
   description:
     "How FixItReal sources, validates, and updates the cost figures we publish — with our data sources, sample sizes, and refresh cadence.",
   path: "/about/methodology",
-  noIndex: true,
 });
 
 export default function MethodologyPage() {

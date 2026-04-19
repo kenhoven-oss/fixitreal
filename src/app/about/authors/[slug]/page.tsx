@@ -25,7 +25,6 @@ export async function generateMetadata({ params }: { params: Params }) {
     title: `${author.name} — ${author.role}`,
     description: author.shortBio,
     path: author.url,
-    noIndex: true,
   });
 }
 

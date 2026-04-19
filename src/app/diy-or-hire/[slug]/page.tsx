@@ -24,7 +24,6 @@ export async function generateMetadata({ params }: { params: Params }) {
     updatedAt: article.frontmatter.updatedAt,
     authorName: leeHoven.name,
     section: "DIY or Hire",
-    noIndex: true,
   });
 }
 

@@ -11,7 +11,6 @@ export const metadata = buildMetadata({
   description:
     "Pick a home repair. Get a verdict with cost comparison, permit rules, risk assessment, and our reasoning. No quiz — just the answer.",
   path: "/tools/diy-or-hire",
-  noIndex: true,
 });
 
 export default function DiyOrHireTool() {

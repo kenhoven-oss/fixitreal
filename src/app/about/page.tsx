@@ -12,7 +12,6 @@ export const metadata = buildMetadata({
   description:
     "FixItReal is a consumer-advocate home repair site — one independent editor, no home warranty advertisers, no sponsored content disguised as editorial.",
   path: "/about",
-  noIndex: true,
 });
 
 export default function AboutPage() {
