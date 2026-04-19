@@ -32,8 +32,9 @@ export function NewsletterBlock({ variant = "default" }: NewsletterBlockProps) {
         year — so nothing breaks without warning.
       </p>
       <form
-        action="https://example.beehiiv.com/subscribe"
+        action="https://fixitreal.beehiiv.com/subscribe"
         method="post"
+        target="_blank"
         className="mt-5 flex flex-col sm:flex-row gap-2 max-w-md"
       >
         <label htmlFor="newsletter-email" className="sr-only">
