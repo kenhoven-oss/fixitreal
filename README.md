@@ -36,16 +36,33 @@ Content lives in `.ts` files under `src/content/` — no CMS.
 
 ## Environment variables
 
-- Local: edit `.env.local` (gitignored, never committed).
-- Production / Preview: set in the Vercel dashboard → Settings → Environment Variables.
-- `.env.local.example` is committed and documents every variable the app reads.
+Two places variables live:
 
-Never put secrets in code, in `src/content/`, or in any file without `.local` in its name.
+- **Local dev:** `.env.local` (gitignored; never committed).
+- **Vercel (preview + production):** project → Settings → Environment Variables.
+
+Workflow for adding a new variable (e.g. a Stripe key):
+
+1. Add the key to `.env.local.example` with an empty value, and the real value to `.env.local`.
+2. Add it to `src/lib/env.ts` so the app reads it through a typed accessor. Mark `required: true` for server-side secrets.
+3. In Vercel → Settings → Environment Variables, add the same key with its real value. Tick **Production**, **Preview**, and optionally **Development**.
+4. Commit `.env.local.example` + `env.ts` changes. Next push redeploys with the new var.
+
+Never put secrets in code, in `src/content/`, or in any file without `.local` in its name. `NEXT_PUBLIC_` vars are exposed to the browser — only use that prefix for non-secret values.
 
 ## Deployment
 
-`main` branch auto-deploys to Vercel. Preview deploys are created for every pull request.
+`main` auto-deploys to production. Every pull request gets its own preview deployment at a `*.vercel.app` URL.
 
 ## Multi-PC setup
 
-Any computer needs: Git, Node.js LTS, GitHub auth (SSH key or PAT), and an editor. Clone with `git clone git@github.com:kenhoven-oss/fixitreal.git`, then `npm install`, then `cp .env.local.example .env.local`. Nothing else is required — no assets live outside the repo.
+On any new machine:
+
+1. Install **Git**, **Node.js LTS** (≥20), and an editor (VS Code is fine).
+2. Make sure Git is authed to GitHub — HTTPS + Git Credential Manager (bundled with Git for Windows) is the path of least resistance; SSH also works.
+3. `git clone https://github.com/kenhoven-oss/fixitreal.git`
+4. `cd fixitreal && npm install`
+5. `cp .env.local.example .env.local` (skip if no vars are needed yet)
+6. `npm run dev`
+
+Everything the app needs lives in the repo. No assets, configs, or secrets are stored only on any one machine.
