@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { ArticlePage } from "@/components/content/ArticlePage";
 import { buildMetadata } from "@/lib/metadata";
 import { loadArticle, listArticleSlugs } from "@/lib/articles-loader";
-import { leeHoven } from "@/content/authors/lee-hoven";
+import { kenHoven } from "@/content/authors/ken-hoven";
 
 type Params = Promise<{ slug: string }>;
 
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     type: "article",
     publishedAt: article.frontmatter.publishedAt,
     updatedAt: article.frontmatter.updatedAt,
-    authorName: leeHoven.name,
+    authorName: kenHoven.name,
     section: "DIY or Hire",
   });
 }

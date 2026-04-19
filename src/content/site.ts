@@ -2,13 +2,13 @@ export const site = {
   name: "FixItReal",
   domain: "fixitreal.com",
   url: "https://www.fixitreal.com",
-  tagline: "Fix it right, not twice.",
+  tagline: "Fix It Right — Not Twice.",
   explainer: "Know what to fix, what to buy, and when to hire help.",
   description:
     "FixItReal is a consumer-advocate home repair site. Honest answers on what to fix, what it should cost, and when to hire help.",
   locale: "en_US",
   contactEmail: "hello@fixitreal.com",
-  authorSlug: "lee-hoven",
+  authorSlug: "ken-hoven",
   nav: [
     { href: "/diy-or-hire", label: "DIY or Hire" },
     { href: "/costs", label: "Costs" },

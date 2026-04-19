@@ -5,7 +5,7 @@ import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, articleSchema } from "@/lib/jsonld";
 import { costCalendar } from "@/content/cost-calendar";
-import { leeHoven } from "@/content/authors/lee-hoven";
+import { kenHoven } from "@/content/authors/ken-hoven";
 
 export const metadata = buildMetadata({
   title: "The Home Repair Cost Calendar (free)",
@@ -59,8 +59,8 @@ export default function CostCalendarPage() {
 
           <p className="mt-4 text-sm text-ink-500">
             By{" "}
-            <Link href={leeHoven.url} className="no-underline hover:text-navy-900">
-              {leeHoven.name}
+            <Link href={kenHoven.url} className="no-underline hover:text-navy-900">
+              {kenHoven.name}
             </Link>
             {" · "}Updated April 2026
           </p>
@@ -143,8 +143,8 @@ export default function CostCalendarPage() {
             url: path,
             datePublished: "2026-04-19",
             dateModified: "2026-04-19",
-            authorUrl: leeHoven.url,
-            authorName: leeHoven.name,
+            authorUrl: kenHoven.url,
+            authorName: kenHoven.name,
             articleSection: "Resources",
           })
         )}

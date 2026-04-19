@@ -18,7 +18,7 @@ const staticRoutes: Route[] = [
   { path: "/about/editorial-standards", priority: 0.4, changeFrequency: "yearly" },
   { path: "/about/methodology", priority: 0.5, changeFrequency: "monthly" },
   { path: "/about/contact", priority: 0.3, changeFrequency: "yearly" },
-  { path: "/about/authors/lee-hoven", priority: 0.4, changeFrequency: "yearly" },
+  { path: "/about/authors/ken-hoven", priority: 0.4, changeFrequency: "yearly" },
   { path: "/affiliate-disclosure", priority: 0.3, changeFrequency: "yearly" },
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },
 ];

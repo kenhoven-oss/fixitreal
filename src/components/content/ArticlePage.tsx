@@ -15,7 +15,7 @@ import {
   breadcrumbSchema,
 } from "@/lib/jsonld";
 import type { LoadedArticle } from "@/lib/articles-loader";
-import { leeHoven } from "@/content/authors/lee-hoven";
+import { kenHoven } from "@/content/authors/ken-hoven";
 import { site } from "@/content/site";
 
 type ArticlePageProps = {
@@ -73,8 +73,8 @@ export function ArticlePage({ article }: ArticlePageProps) {
         <p className="mt-4 text-sm text-ink-500 flex flex-wrap gap-x-4 gap-y-1">
           <span>
             By{" "}
-            <Link href={leeHoven.url} className="no-underline hover:text-navy-900">
-              {leeHoven.name}
+            <Link href={kenHoven.url} className="no-underline hover:text-navy-900">
+              {kenHoven.name}
             </Link>
           </span>
           <span>
@@ -180,8 +180,8 @@ export function ArticlePage({ article }: ArticlePageProps) {
             url: path,
             datePublished: frontmatter.publishedAt,
             dateModified: frontmatter.updatedAt ?? frontmatter.publishedAt,
-            authorUrl: leeHoven.url,
-            authorName: leeHoven.name,
+            authorUrl: kenHoven.url,
+            authorName: kenHoven.name,
             articleSection: pillarLabel[pillar],
           }),
         ])}

@@ -5,10 +5,10 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Badge } from "@/components/ui/Badge";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, personSchema } from "@/lib/jsonld";
-import { leeHoven } from "@/content/authors/lee-hoven";
+import { kenHoven } from "@/content/authors/ken-hoven";
 
 const authors = {
-  [leeHoven.slug]: leeHoven,
+  [kenHoven.slug]: kenHoven,
 } as const;
 
 type Params = Promise<{ slug: string }>;

@@ -221,7 +221,7 @@ export function CalendarPdf() {
   return (
     <Document
       title="The Home Repair Cost Calendar"
-      author="Lee Hoven · FixItReal"
+      author="Ken Hoven · FixItReal"
       subject="Monthly homeowner maintenance calendar with cost ranges"
       creator="FixItReal.com"
     >
@@ -265,7 +265,7 @@ export function CalendarPdf() {
 
         <View style={styles.coverFooter}>
           <Text>fixitreal.com</Text>
-          <Text>Fix it right, not twice.</Text>
+          <Text>Fix It Right — Not Twice.</Text>
         </View>
       </Page>
 
@@ -302,7 +302,7 @@ export function CalendarPdf() {
 
           <View style={styles.pageFooter}>
             <Text>fixitreal.com</Text>
-            <Text>© 2026 FixItReal — Fix it right, not twice.</Text>
+            <Text>© 2026 FixItReal — Fix It Right — Not Twice.</Text>
           </View>
         </Page>
       ))}
@@ -362,7 +362,7 @@ export function CalendarPdf() {
 
         <View style={styles.pageFooter}>
           <Text>fixitreal.com</Text>
-          <Text>© 2026 FixItReal — Fix it right, not twice.</Text>
+          <Text>© 2026 FixItReal — Fix It Right — Not Twice.</Text>
         </View>
       </Page>
     </Document>

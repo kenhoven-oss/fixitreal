@@ -4,28 +4,28 @@ import { site } from "@/content/site";
 
 export function Header() {
   return (
-    <header className="border-b border-ink-200 bg-white">
-      <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-6">
+    <header className="border-b border-ink-200 bg-white sticky top-0 z-40">
+      <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between gap-6">
         <Link
           href="/"
-          className="flex items-center shrink-0 no-underline"
+          className="flex items-center gap-3 shrink-0 no-underline"
           aria-label={site.name}
         >
           <Image
             src="/logo.png"
             alt={site.name}
-            width={180}
-            height={45}
+            width={360}
+            height={90}
             priority
-            className="h-9 w-auto"
+            className="h-12 w-auto md:h-14"
           />
         </Link>
-        <nav className="flex gap-7 text-sm font-medium text-ink-700">
+        <nav className="flex flex-wrap gap-x-6 gap-y-1 text-sm font-semibold text-navy-900">
           {site.nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="no-underline hover:text-navy-900 transition-colors"
+              className="no-underline hover:text-amber-700 transition-colors"
             >
               {item.label}
             </Link>

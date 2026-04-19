@@ -5,7 +5,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, aboutPageSchema } from "@/lib/jsonld";
-import { leeHoven } from "@/content/authors/lee-hoven";
+import { kenHoven } from "@/content/authors/ken-hoven";
 
 export const metadata = buildMetadata({
   title: "About FixItReal",
@@ -51,8 +51,8 @@ export default function AboutPage() {
           <div className="mt-4 flex items-start gap-5">
             <div className="relative h-20 w-20 shrink-0 rounded-full bg-ink-200 overflow-hidden">
               <Image
-                src={leeHoven.photo}
-                alt={leeHoven.name}
+                src={kenHoven.photo}
+                alt={kenHoven.name}
                 width={80}
                 height={80}
                 className="h-full w-full object-cover"
@@ -60,12 +60,12 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="font-serif text-xl text-navy-900">
-                <Link href={leeHoven.url} className="no-underline hover:text-navy-700">
-                  {leeHoven.name}
+                <Link href={kenHoven.url} className="no-underline hover:text-navy-700">
+                  {kenHoven.name}
                 </Link>
               </p>
-              <p className="text-sm text-ink-600">{leeHoven.role}</p>
-              <p className="mt-3 text-ink-700 leading-relaxed">{leeHoven.bio}</p>
+              <p className="text-sm text-ink-600">{kenHoven.role}</p>
+              <p className="mt-3 text-ink-700 leading-relaxed">{kenHoven.bio}</p>
             </div>
           </div>
         </div>

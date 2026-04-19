@@ -14,7 +14,7 @@ import {
   breadcrumbSchema,
 } from "@/lib/jsonld";
 import { getJob, getAllJobSlugs } from "@/content/jobs";
-import { leeHoven } from "@/content/authors/lee-hoven";
+import { kenHoven } from "@/content/authors/ken-hoven";
 
 type Params = Promise<{ job: string }>;
 
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     type: "article",
     publishedAt: j.lastReviewed,
     updatedAt: j.lastReviewed,
-    authorName: leeHoven.name,
+    authorName: kenHoven.name,
     section: "DIY or Hire",
   });
 }
@@ -72,8 +72,8 @@ export default async function JobResultPage({ params }: { params: Params }) {
         </h1>
         <p className="mt-3 text-sm text-ink-500">
           By{" "}
-          <Link href={leeHoven.url} className="no-underline hover:text-navy-900">
-            {leeHoven.name}
+          <Link href={kenHoven.url} className="no-underline hover:text-navy-900">
+            {kenHoven.name}
           </Link>
           {" · "}Updated {new Date(j.lastReviewed).toLocaleDateString("en-US", { month: "long", year: "numeric" })}
         </p>
@@ -206,8 +206,8 @@ export default async function JobResultPage({ params }: { params: Params }) {
             url: path,
             datePublished: j.lastReviewed,
             dateModified: j.lastReviewed,
-            authorUrl: leeHoven.url,
-            authorName: leeHoven.name,
+            authorUrl: kenHoven.url,
+            authorName: kenHoven.name,
             articleSection: "DIY or Hire",
           }),
           ...(j.verdict !== "hire-a-pro"

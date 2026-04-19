@@ -54,7 +54,7 @@ export default function DefaultOgImage() {
               maxWidth: 1000,
             }}
           >
-            Fix it right, not twice.
+            Fix It Right — Not Twice.
           </div>
           <div
             style={{

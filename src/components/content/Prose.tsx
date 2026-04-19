@@ -25,6 +25,7 @@ export function Prose({ children, className = "" }: ProseProps) {
         [&_td]:px-3 [&_td]:py-2 [&_td]:border-b [&_td]:border-ink-200
         [&_code]:bg-ink-100 [&_code]:px-1 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-[0.9em] [&_code]:text-navy-800
         [&_strong]:font-semibold [&_strong]:text-navy-900
+        [&_a]:text-navy-700 [&_a]:underline [&_a]:decoration-amber-500 [&_a]:decoration-[1.5px] [&_a]:underline-offset-[3px] [&_a:hover]:decoration-navy-700
         ${className}
       `}
     >

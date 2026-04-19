@@ -118,7 +118,7 @@ export default async function JobOgImage({
         >
           <div style={{ fontSize: 22, color: "#595751" }}>fixitreal.com</div>
           <div style={{ fontSize: 22, color: "#595751", fontStyle: "italic" }}>
-            Fix it right, not twice.
+            Fix It Right — Not Twice.
           </div>
         </div>
       </div>
