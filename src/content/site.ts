@@ -40,6 +40,9 @@ export const site = {
     twitter: null as string | null,
     linkedin: null as string | null,
   },
+  verification: {
+    google: "97rfapfS5wg2O5RCryKUEabuEcBEGHmaxmvTFNeaoNA",
+  },
 } as const;
 
 export type Pillar = (typeof site.pillars)[number];

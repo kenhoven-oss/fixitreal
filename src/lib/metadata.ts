@@ -38,6 +38,9 @@ export function buildMetadata({
     description: desc,
     alternates: { canonical: url },
     robots: noIndex ? { index: false, follow: false } : undefined,
+    verification: site.verification.google
+      ? { google: site.verification.google }
+      : undefined,
     openGraph: {
       type,
       url,
