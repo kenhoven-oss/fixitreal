@@ -27,9 +27,13 @@ export async function generateMetadata({ params }: { params: Params }) {
   const j = getJob(job);
   if (!j) return buildMetadata({ title: "Job not found", noIndex: true });
 
+  // Meta description: use reasoning (1-sentence) and pad if short. Target: ≤155 chars.
+  const desc = j.reasoning.length > 155
+    ? j.reasoning.slice(0, 152).replace(/\s\S*$/, "") + "…"
+    : j.reasoning;
   return buildMetadata({
     title: j.longTitle,
-    description: j.reasoning + " " + j.rationale.slice(0, 120),
+    description: desc,
     path: `/tools/diy-or-hire/${j.slug}`,
     type: "article",
     publishedAt: j.lastReviewed,

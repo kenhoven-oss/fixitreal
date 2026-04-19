@@ -30,7 +30,11 @@ export function buildMetadata({
   const fullTitle = title ? `${title} | ${site.name}` : `${site.name} — ${site.tagline}`;
   const desc = description ?? site.description;
   const url = new URL(path, env.siteUrl).toString();
-  const ogImage = image ? new URL(image, env.siteUrl).toString() : undefined;
+  // Default OG image falls back to the root /opengraph-image dynamic endpoint
+  // so every page has a branded social card even without a per-route override.
+  const ogImage = image
+    ? new URL(image, env.siteUrl).toString()
+    : new URL("/opengraph-image", env.siteUrl).toString();
 
   return {
     metadataBase: new URL(env.siteUrl),
