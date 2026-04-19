@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { env } from "@/lib/env";
 import { getAllJobSlugs } from "@/content/jobs";
+import { loadAllArticles } from "@/lib/articles-loader";
 
 const now = new Date();
 
@@ -21,7 +22,7 @@ const staticRoutes: Route[] = [
   { path: "/affiliate-disclosure", priority: 0.3, changeFrequency: "yearly" },
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((r) => ({
     url: `${env.siteUrl}${r.path}`,
     lastModified: now,
@@ -36,5 +37,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticEntries, ...toolEntries];
+  const articles = await loadAllArticles();
+  const articleEntries: MetadataRoute.Sitemap = articles.map((a) => ({
+    url: `${env.siteUrl}${a.path}`,
+    lastModified: new Date(
+      a.frontmatter.updatedAt ?? a.frontmatter.publishedAt
+    ),
+    changeFrequency: a.frontmatter.pillar === "costs" ? "monthly" : "yearly",
+    priority: 0.8,
+  }));
+
+  return [...staticEntries, ...toolEntries, ...articleEntries];
 }

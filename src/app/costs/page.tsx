@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/Card";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, collectionPageSchema } from "@/lib/jsonld";
+import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
   title: "Repair costs: what things actually cost in 2026",
@@ -13,7 +14,9 @@ export const metadata = buildMetadata({
   noIndex: true,
 });
 
-export default function CostsHub() {
+export default async function CostsHub() {
+  const articles = await loadArticlesByPillar("costs");
+
   return (
     <>
       <Section padding="md" size="lg">
@@ -55,20 +58,21 @@ export default function CostsHub() {
       </Section>
 
       <Section padding="md" size="lg">
-        <h2 className="font-serif text-2xl text-navy-900">Coming soon</h2>
+        <h2 className="font-serif text-2xl text-navy-900">All cost guides</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            { slug: "water-heater-replacement", title: "Water heater replacement cost" },
-            { slug: "plumber-hourly", title: "Plumber hourly cost in 2026" },
-            { slug: "electrician-hourly", title: "Electrician hourly cost in 2026" },
-            { slug: "toilet-replacement", title: "Toilet replacement cost" },
-            { slug: "garbage-disposal-replacement", title: "Garbage disposal replacement cost" },
-          ].map((a) => (
+          {articles.map((a) => (
             <Card
-              key={a.slug}
+              key={a.frontmatter.slug}
+              href={a.path}
               eyebrow="Cost guide"
-              title={a.title}
-              description="Materials, labor, permit, regional breakdown — launching soon."
+              title={a.frontmatter.title}
+              description={a.frontmatter.description}
+              meta={
+                <span>
+                  {a.frontmatter.readingMinutes} min · Updated{" "}
+                  {new Date(a.frontmatter.updatedAt ?? a.frontmatter.publishedAt).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
+                </span>
+              }
             />
           ))}
         </div>
@@ -86,6 +90,10 @@ export default function CostsHub() {
             description:
               "Honest home repair costs with labor, materials, permits, and regional variation.",
             url: "/costs",
+            hasPart: articles.map((a) => ({
+              name: a.frontmatter.title,
+              url: a.path,
+            })),
           })
         )}
       />

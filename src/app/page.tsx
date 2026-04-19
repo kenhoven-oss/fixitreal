@@ -6,12 +6,24 @@ import { TrustBar } from "@/components/marketing/TrustBar";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { WhatWeDontDo } from "@/components/marketing/WhatWeDontDo";
 import { buildMetadata } from "@/lib/metadata";
+import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
-  noIndex: true, // placeholder site — remove once content ships
+  noIndex: true, // placeholder site — remove once content is verified
 });
 
-export default function Home() {
+export default async function Home() {
+  const [costs, advice, decisions] = await Promise.all([
+    loadArticlesByPillar("costs"),
+    loadArticlesByPillar("advice"),
+    loadArticlesByPillar("diy-or-hire"),
+  ]);
+
+  const featuredCosts = costs.slice(0, 3);
+  const featuredAdvice = advice.slice(0, 3);
+  const featuredDecisions = decisions.slice(0, 3);
+  void featuredDecisions;
+
   return (
     <>
       {/* Hero */}
@@ -60,7 +72,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Featured costs placeholder */}
+      {/* Featured costs */}
       <Section padding="lg" className="bg-ink-50">
         <div className="max-w-2xl">
           <h2 className="font-serif text-3xl text-navy-900">What things actually cost in 2026</h2>
@@ -69,24 +81,15 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <Card
-            eyebrow="Coming soon"
-            title="Water heater replacement"
-            description="$1,350–$2,400 · 50-gal standard install · regional breakdown coming"
-            meta={<span>Updated quarterly</span>}
-          />
-          <Card
-            eyebrow="Coming soon"
-            title="Toilet replacement"
-            description="$220 DIY · $480 hired · when each makes sense"
-            meta={<span>Updated quarterly</span>}
-          />
-          <Card
-            eyebrow="Coming soon"
-            title="Plumber hourly cost"
-            description="$130–$180/hr typical · regional + call-out fee details"
-            meta={<span>Updated quarterly</span>}
-          />
+          {featuredCosts.map((a) => (
+            <Card
+              key={a.frontmatter.slug}
+              href={a.path}
+              eyebrow="Cost guide"
+              title={a.frontmatter.title}
+              description={a.frontmatter.description}
+            />
+          ))}
         </div>
         <p className="mt-8 text-sm">
           <Link href="/costs" className="no-underline text-navy-700 hover:text-navy-900">
@@ -95,7 +98,7 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* Featured advice placeholder */}
+      {/* Featured advice */}
       <Section padding="lg">
         <div className="max-w-2xl">
           <h2 className="font-serif text-3xl text-navy-900">
@@ -106,21 +109,15 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <Card
-            eyebrow="Coming soon"
-            title="Why home warranties are a bad deal"
-            description="The math, the companies to avoid, and what to do instead."
-          />
-          <Card
-            eyebrow="Coming soon"
-            title="How to vet a contractor"
-            description="The 14-point checklist Angi won't publish."
-          />
-          <Card
-            eyebrow="Coming soon"
-            title="7 signs a repair quote is overpriced"
-            description="What to question before signing."
-          />
+          {featuredAdvice.map((a) => (
+            <Card
+              key={a.frontmatter.slug}
+              href={a.path}
+              eyebrow="Advice"
+              title={a.frontmatter.title}
+              description={a.frontmatter.description}
+            />
+          ))}
         </div>
         <p className="mt-8 text-sm">
           <Link href="/advice" className="no-underline text-navy-700 hover:text-navy-900">

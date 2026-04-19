@@ -1,9 +1,11 @@
+import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Card } from "@/components/ui/Card";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, collectionPageSchema } from "@/lib/jsonld";
+import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
   title: "DIY or Hire: honest home repair decisions",
@@ -13,7 +15,9 @@ export const metadata = buildMetadata({
   noIndex: true,
 });
 
-export default function DiyOrHireHub() {
+export default async function DiyOrHireHub() {
+  const articles = await loadArticlesByPillar("diy-or-hire");
+
   return (
     <>
       <Section padding="md" size="lg">
@@ -43,30 +47,32 @@ export default function DiyOrHireHub() {
             </p>
             <p>
               Every article here answers one question: <em>should you fix this
-              yourself, or call someone?</em> When we say &ldquo;hire a pro,&rdquo;
-              we&apos;ll tell you what fair pricing looks like. When we say
-              &ldquo;DIY,&rdquo; we&apos;ll tell you exactly what you&apos;re
-              signing up for.
+              yourself, or call someone?</em> Want a quick answer for a specific
+              job?{" "}
+              <Link href="/tools/diy-or-hire" className="no-underline text-navy-700 hover:text-navy-900">
+                Use the decision tool
+              </Link>.
             </p>
           </div>
         </div>
       </Section>
 
       <Section padding="md" size="lg">
-        <h2 className="font-serif text-2xl text-navy-900">Coming soon</h2>
+        <h2 className="font-serif text-2xl text-navy-900">All decision guides</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            { slug: "garbage-disposal", title: "Garbage disposal: repair vs replace" },
-            { slug: "toilet", title: "Toilet replacement: DIY or hire" },
-            { slug: "ceiling-fan", title: "Ceiling fan install: DIY or hire" },
-            { slug: "dishwasher", title: "Dishwasher install: DIY or hire" },
-            { slug: "garage-door-opener", title: "Garage door opener: DIY or pro" },
-          ].map((a) => (
+          {articles.map((a) => (
             <Card
-              key={a.slug}
+              key={a.frontmatter.slug}
+              href={a.path}
               eyebrow="Decision guide"
-              title={a.title}
-              description="Verdict, cost comparison, red flags — launching soon."
+              title={a.frontmatter.title}
+              description={a.frontmatter.description}
+              meta={
+                <span>
+                  {a.frontmatter.readingMinutes} min · Updated{" "}
+                  {new Date(a.frontmatter.updatedAt ?? a.frontmatter.publishedAt).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
+                </span>
+              }
             />
           ))}
         </div>
@@ -84,6 +90,10 @@ export default function DiyOrHireHub() {
             description:
               "Should you fix it yourself or call a pro? Real verdicts on real jobs.",
             url: "/diy-or-hire",
+            hasPart: articles.map((a) => ({
+              name: a.frontmatter.title,
+              url: a.path,
+            })),
           })
         )}
       />

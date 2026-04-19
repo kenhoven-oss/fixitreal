@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/Card";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, collectionPageSchema } from "@/lib/jsonld";
+import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
   title: "Honest home repair advice",
@@ -13,7 +14,9 @@ export const metadata = buildMetadata({
   noIndex: true,
 });
 
-export default function AdviceHub() {
+export default async function AdviceHub() {
+  const articles = await loadArticlesByPillar("advice");
+
   return (
     <>
       <Section padding="md" size="lg">
@@ -53,20 +56,21 @@ export default function AdviceHub() {
       </Section>
 
       <Section padding="md" size="lg">
-        <h2 className="font-serif text-2xl text-navy-900">Coming soon</h2>
+        <h2 className="font-serif text-2xl text-navy-900">All advice</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            { slug: "vetting-a-contractor", title: "How to vet a contractor" },
-            { slug: "home-warranties-bad-deal", title: "Why home warranties are a bad deal" },
-            { slug: "signs-of-overpriced-quote", title: "7 signs a repair quote is overpriced" },
-            { slug: "hidden-fees", title: "Hidden fees in a typical home repair quote" },
-            { slug: "three-contractor-quotes", title: "How to get 3 quotes without wasting time" },
-          ].map((a) => (
+          {articles.map((a) => (
             <Card
-              key={a.slug}
+              key={a.frontmatter.slug}
+              href={a.path}
               eyebrow="Advice"
-              title={a.title}
-              description="Honest, opinionated, consumer-first — launching soon."
+              title={a.frontmatter.title}
+              description={a.frontmatter.description}
+              meta={
+                <span>
+                  {a.frontmatter.readingMinutes} min · Updated{" "}
+                  {new Date(a.frontmatter.updatedAt ?? a.frontmatter.publishedAt).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
+                </span>
+              }
             />
           ))}
         </div>
@@ -84,6 +88,10 @@ export default function AdviceHub() {
             description:
               "Consumer-advocacy guidance on contractors, pricing, and home-repair scams.",
             url: "/advice",
+            hasPart: articles.map((a) => ({
+              name: a.frontmatter.title,
+              url: a.path,
+            })),
           })
         )}
       />
