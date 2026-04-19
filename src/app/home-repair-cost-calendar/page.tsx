@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
+import { CalendarSignupForm } from "@/components/marketing/CalendarSignupForm";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, articleSchema } from "@/lib/jsonld";
 import { costCalendar } from "@/content/cost-calendar";
@@ -10,7 +10,7 @@ import { kenHoven } from "@/content/authors/ken-hoven";
 export const metadata = buildMetadata({
   title: "The Home Repair Cost Calendar (free)",
   description:
-    "One task list for every month of the year — what to check, what it costs, and why it matters. Free. No login. Download the PDF.",
+    "One task list for every month of the year — what to check, what it costs, and why it matters. Free PDF, emailed to your inbox.",
   path: "/home-repair-cost-calendar",
 });
 
@@ -42,28 +42,17 @@ export default function CostCalendarPage() {
             and nothing surprises you on a bill.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="/downloads/home-repair-cost-calendar.pdf"
-              className="inline-flex items-center rounded-md bg-navy-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-navy-800 transition-colors"
-            >
-              Download PDF →
-            </a>
-            <Link
-              href="/costs"
-              className="inline-flex items-center rounded-md border border-ink-300 px-5 py-3 text-sm font-semibold text-navy-900 bg-white no-underline hover:border-navy-700"
-            >
-              Browse cost guides
-            </Link>
-          </div>
-
           <p className="mt-4 text-sm text-ink-500">
             By{" "}
-            <Link href={kenHoven.url} className="no-underline hover:text-navy-900">
+            <Link href={kenHoven.url} className="hover:text-navy-900">
               {kenHoven.name}
             </Link>
             {" · "}Updated April 2026
           </p>
+
+          <div className="mt-8">
+            <CalendarSignupForm variant="hero" />
+          </div>
         </div>
       </Section>
 
@@ -130,7 +119,17 @@ export default function CostCalendarPage() {
       </Section>
 
       <Section padding="lg" size="md" className="print:hidden">
-        <NewsletterBlock variant="inline" />
+        <div className="rounded-lg border border-ink-200 bg-ink-50 p-6 md:p-8">
+          <p className="font-serif text-2xl text-navy-900">
+            Haven&apos;t grabbed the PDF yet?
+          </p>
+          <p className="mt-2 text-sm text-ink-600 max-w-lg">
+            One email to confirm, then the calendar lands in your inbox.
+          </p>
+          <div className="mt-5 max-w-xl">
+            <CalendarSignupForm variant="inline" />
+          </div>
+        </div>
       </Section>
 
       <script
