@@ -6,7 +6,7 @@ type CalendarSignupFormProps = {
   variant?: "hero" | "inline";
 };
 
-const BEEHIIV_SUBSCRIBE_URL = "https://fixitreal.beehiiv.com/subscribe";
+const SUBSCRIBE_URL = "/api/subscribe";
 
 export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -36,16 +36,12 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
     }
 
     try {
-      // Submit to Beehiiv — its public subscribe endpoint accepts email + first_name as form-encoded.
-      // mode: "no-cors" because Beehiiv doesn't return CORS headers for this endpoint,
-      // but the subscription is still recorded. The opaque response means we can't read a status,
-      // so we optimistically mark success and let Beehiiv's double opt-in email do the confirmation work.
-      await fetch(BEEHIIV_SUBSCRIBE_URL, {
+      const res = await fetch(SUBSCRIBE_URL, {
         method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({ email, first_name: firstName }).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, firstName }),
       });
+      if (!res.ok) throw new Error("subscription failed");
       setStatus("success");
       form.reset();
     } catch {
