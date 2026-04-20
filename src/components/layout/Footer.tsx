@@ -23,14 +23,14 @@ export function Footer() {
                 alt={site.name}
                 width={360}
                 height={90}
-                className="h-24 w-auto md:h-32"
+                className="h-32 w-auto md:h-44"
               />
             </Link>
             <p className="mt-4 text-sm text-ink-600 max-w-sm">{site.tagline}</p>
             <p className="mt-3 text-xs text-ink-500 max-w-sm">{site.description}</p>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-ink-500">Browse</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-ink-700">Browse</p>
             <ul className="mt-3 space-y-2 text-sm">
               {site.pillars.map((p) => (
                 <li key={p.slug}>
@@ -47,7 +47,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-ink-500">Trust</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-ink-700">Trust</p>
             <ul className="mt-3 space-y-2 text-sm">
               {trustLinks.map((l) => (
                 <li key={l.href}>

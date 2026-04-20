@@ -3,6 +3,12 @@ import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Card } from "@/components/ui/Card";
 import { buildMetadata } from "@/lib/metadata";
+import {
+  jsonLdScript,
+  webApplicationSchema,
+  breadcrumbSchema,
+  collectionPageSchema,
+} from "@/lib/jsonld";
 
 export const metadata = buildMetadata({
   title: "FixItReal tools",
@@ -61,6 +67,32 @@ export default function ToolsHub() {
           </Link>
         </p>
       </Section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript([
+          breadcrumbSchema([
+            { name: "Home", href: "/" },
+            { name: "Tools", href: "/tools" },
+          ]),
+          collectionPageSchema({
+            name: "FixItReal tools",
+            description:
+              "Interactive tools for home repair decisions — DIY or Hire, cost estimator, and quote scorecard.",
+            url: "/tools",
+            hasPart: [
+              { name: "DIY or Hire", url: "/tools/diy-or-hire" },
+            ],
+          }),
+          webApplicationSchema({
+            name: "DIY or Hire",
+            description:
+              "Pick a home repair job and get a verdict — DIY or hire a pro — with cost comparison, permit rules, and our reasoning.",
+            url: "/tools/diy-or-hire",
+            applicationCategory: "UtilityApplication",
+          }),
+        ])}
+      />
     </>
   );
 }

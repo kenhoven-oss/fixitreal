@@ -20,7 +20,7 @@ export function Card({ href, eyebrow, title, description, meta, children }: Card
       )}
       <h3 className="mt-2 font-serif text-xl leading-snug text-navy-900">{title}</h3>
       {description && <p className="mt-2 text-sm text-ink-600 leading-relaxed">{description}</p>}
-      {meta && <div className="mt-3 text-xs text-ink-500">{meta}</div>}
+      {meta && <div className="mt-3 text-xs text-ink-600">{meta}</div>}
       {children}
     </>
   );
