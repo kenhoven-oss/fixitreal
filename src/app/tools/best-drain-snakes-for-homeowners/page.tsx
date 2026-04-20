@@ -51,7 +51,7 @@ const products: RecommendedProduct[] = [
     whyItMadeTheList:
       "For a lot of bathroom clogs, the blockage is a wad of hair within six inches of the drain — not something a full auger can help with. A long plastic barbed strip pulls those out in seconds and costs very little.",
     keyBuyingNotes:
-      "These are disposable by design. Buy a short multi-pack rather than one expensive unit; the tool takes the beating so your drain doesn&apos;t.",
+      "These are disposable by design. Buy a short multi-pack rather than one expensive unit; the tool takes the beating so your drain doesn't.",
     // PASTE AMAZON AFFILIATE LINK HERE
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
@@ -77,11 +77,11 @@ const products: RecommendedProduct[] = [
     name: "Powered drum auger (homeowner grade)",
     badge: "Best for Tougher Clogs",
     category: "Powered snake",
-    bestFor: "Recurring main-line or laundry-stack clogs a manual cable can&apos;t clear.",
+    bestFor: "Recurring main-line or laundry-stack clogs a manual cable can't clear.",
     whyItMadeTheList:
       "Once a clog is more than 20 feet in or involves roots and grease, a manual cable stops making progress. A compact powered drum auger gives homeowners a middle option between renting a sewer machine and calling a plumber every time.",
     keyBuyingNotes:
-      "Match cable length to the run you&apos;re trying to reach. Look for variable speed, a foot pedal if possible, and a properly sized cutter head for the line diameter. If the clog is in the main sewer line, call a pro instead — a wrong move can damage the line.",
+      "Match cable length to the run you're trying to reach. Look for variable speed, a foot pedal if possible, and a properly sized cutter head for the line diameter. If the clog is in the main sewer line, call a pro instead — a wrong move can damage the line.",
     // Another draft-mode product — no link yet.
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
@@ -116,12 +116,12 @@ const faqs = [
   {
     question: "Can a drain snake damage my pipes?",
     answer:
-      "Used correctly, no. Problems come from forcing the cable when it stops, running a cutter head that&apos;s too large for the pipe, or using a powered snake on old, corroded cast-iron drains. If you hit hard resistance, stop and reassess instead of pushing.",
+      "Used correctly, no. Problems come from forcing the cable when it stops, running a cutter head that's too large for the pipe, or using a powered snake on old, corroded cast-iron drains. If you hit hard resistance, stop and reassess instead of pushing.",
   },
   {
     question: "What about chemical drain cleaners?",
     answer:
-      "We don&apos;t recommend them for most homeowners. They damage older pipes, create hazards if a pro later has to open the line, and often move the clog rather than clearing it. A snake and a plunger are safer tools.",
+      "We don't recommend them for most homeowners. They damage older pipes, create hazards if a pro later has to open the line, and often move the clog rather than clearing it. A snake and a plunger are safer tools.",
   },
   {
     question: "How far in can a homeowner safely snake?",
@@ -131,7 +131,7 @@ const faqs = [
   {
     question: "Is a drain snake worth owning if I only clog once a year?",
     answer:
-      "Usually yes. A basic hand auger pays for itself the first time you avoid a service call. Store it in a bucket so the cable doesn&apos;t rust, and the tool lasts years.",
+      "Usually yes. A basic hand auger pays for itself the first time you avoid a service call. Store it in a bucket so the cable doesn't rust, and the tool lasts years.",
   },
 ];
 
