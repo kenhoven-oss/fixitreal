@@ -28,6 +28,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
+      <head>
+        {/* @ts-expect-error — Impact verification requires non-standard value= attribute */}
+        <meta name='impact-site-verification' value='c0d08fb1-8b1f-4e9b-9be4-736725c60abb' />
+      </head>
       <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"
