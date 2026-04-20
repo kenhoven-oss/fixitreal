@@ -6,12 +6,24 @@ type ExternalLinkProps = {
   className?: string;
 };
 
+/**
+ * Detect affiliate outbound links so they get the correct rel attributes.
+ * Covers Amazon SiteStripe short links and any amazon.com URL carrying an
+ * affiliate tag query parameter.
+ */
+function isAffiliateHref(href: string): boolean {
+  return /^https?:\/\/amzn\.to\//i.test(href) || /amazon\.[a-z.]+\/.+[?&]tag=/i.test(href);
+}
+
 export function ExternalLink({ href, children, className = "" }: ExternalLinkProps) {
+  const affiliate = isAffiliateHref(href);
+  const rel = affiliate ? "sponsored nofollow noopener noreferrer" : "noopener noreferrer";
+
   return (
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel={rel}
       className={`underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:decoration-navy-700 ${className}`}
     >
       {children}
