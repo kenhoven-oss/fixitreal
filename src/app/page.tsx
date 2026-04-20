@@ -50,11 +50,12 @@ export default async function Home() {
   return (
     <>
       {/* ==============================================================
-           HERO — interior photo plays on the right (plant, shadows),
-           navy gradient fades in from the left to keep the headline
-           legible. Brand-direction copy preserved per brief.
+           HERO — light Stitch-style treatment. Off-white surface with
+           the interior photo at reduced opacity; editorial dark-navy
+           headline; soft gradient fades the image to the left so the
+           type always has a clean surface to sit on.
            ============================================================== */}
-      <section className="relative overflow-hidden bg-navy-900 text-white">
+      <section className="relative overflow-hidden bg-ink-50">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9RTcaIeoOAX2M-bOjGivO-dKoTSqllzy0H-FWsqkAV0Fh2qMjW7aRGD-TgHwkRghHfCY3LVMm-AlIflitzleMJt7s5LXKe5w7bzHdcIgzaOfLqXBYRooMlRiFyDev9Wk1e9wPoNEf0UFoZTPnQRZktouO3qsebFROudnTjWcTLRFOQxeh8Y5q159OwD17xaAUaavXUkOtPWXTRaqw1jKU_UOObdzwKoIPm2Cd3FlkZ8gqGfn_B7jkQXX4cuaYLYiDgtjnbOME8Q"
@@ -63,25 +64,23 @@ export default async function Home() {
             sizes="100vw"
             priority
             unoptimized
-            className="object-cover"
+            className="object-cover object-right opacity-75"
           />
-          {/* Horizontal fade: solid navy on the left for text legibility,
-              transparent on the right so the plant + wall shadows read. */}
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/85 md:via-navy-900/70 to-transparent" />
-          {/* Subtle vertical darken at the top so the white nav never
-              floats over a bright window highlight. */}
-          <div className="absolute inset-0 bg-gradient-to-b from-navy-900/40 via-transparent to-navy-900/30" />
+          {/* Soft left-to-right wash: near-opaque cream on the left
+              keeps the headline on a clean surface, transparent on
+              the right so the plant + shadows read at full fidelity. */}
+          <div className="absolute inset-0 bg-gradient-to-r from-ink-50 via-ink-50/85 md:via-ink-50/70 to-ink-50/0" />
         </div>
         <div className="relative z-10 mx-auto max-w-6xl px-6 py-24 md:py-32 grid gap-10 md:grid-cols-12">
           <div className="md:col-span-9 lg:col-span-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-700">
               Consumer advocate · Home repair
             </p>
-            <h1 className="mt-5 font-serif text-5xl md:text-7xl leading-[1.04] tracking-tight text-white">
+            <h1 className="mt-5 font-serif text-5xl md:text-7xl leading-[1.04] tracking-tight text-navy-900">
               Trusted home repair guidance{" "}
-              <span className="text-amber-400">for real homeowners</span>
+              <span className="text-amber-700">for real homeowners</span>
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-ink-100/90 max-w-2xl leading-relaxed">
+            <p className="mt-6 text-lg md:text-xl text-ink-700 max-w-2xl leading-relaxed">
               Step-by-step repair guides, seasonal maintenance tips, and
               practical advice to help you care for your home with confidence —
               written by an independent advocate, not a contractor.
@@ -89,13 +88,13 @@ export default async function Home() {
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
                 href="/tools/diy-or-hire"
-                className="inline-flex items-center rounded-md bg-amber-500 px-6 py-3 text-sm font-semibold text-navy-900 visited:text-navy-900 no-underline hover:bg-amber-400 transition-colors"
+                className="inline-flex items-center rounded-md bg-navy-900 px-6 py-3 text-sm font-semibold text-white visited:text-white no-underline hover:bg-navy-800 transition-colors"
               >
                 DIY or hire? Get the verdict
               </Link>
               <Link
                 href="/advice"
-                className="inline-flex items-center rounded-md border border-white/40 bg-white/5 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white visited:text-white no-underline hover:bg-white/15 transition-colors"
+                className="inline-flex items-center rounded-md border border-ink-300 bg-white px-6 py-3 text-sm font-semibold text-navy-900 visited:text-navy-900 no-underline hover:border-navy-700 transition-colors"
               >
                 Browse repair guides
               </Link>
