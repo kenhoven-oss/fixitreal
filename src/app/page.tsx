@@ -77,7 +77,7 @@ export default async function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">
               Consumer advocate · Home repair
             </p>
-            <h1 className="mt-5 font-serif text-5xl md:text-7xl leading-[1.04] tracking-tight">
+            <h1 className="mt-5 font-serif text-5xl md:text-7xl leading-[1.04] tracking-tight text-white">
               Trusted home repair guidance{" "}
               <span className="text-amber-400">for real homeowners</span>
             </h1>
