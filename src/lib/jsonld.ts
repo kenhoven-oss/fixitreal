@@ -14,7 +14,7 @@ export function organizationSchema(): JsonLd {
     "@type": "Organization",
     name: site.name,
     url: env.siteUrl,
-    logo: absoluteUrl("/logo.png"),
+    logo: absoluteUrl("/FIXitREALlogo.png"),
     description: site.description,
     ...(sameAs.length ? { sameAs } : {}),
   };
@@ -113,7 +113,7 @@ export function articleSchema(a: ArticleInput): JsonLd {
       "@type": "Organization",
       name: site.name,
       url: env.siteUrl,
-      logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
+      logo: { "@type": "ImageObject", url: absoluteUrl("/FIXitREALlogo.png") },
     },
     ...(a.image ? { image: absoluteUrl(a.image) } : {}),
     ...(a.articleSection ? { articleSection: a.articleSection } : {}),

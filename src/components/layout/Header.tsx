@@ -12,12 +12,12 @@ export function Header() {
           aria-label={site.name}
         >
           <Image
-            src="/logo.png"
+            src="/FIXitREALlogo.png"
             alt={site.name}
-            width={512}
-            height={512}
+            width={964}
+            height={329}
             priority
-            className="h-28 w-auto md:h-40"
+            className="h-14 w-auto md:h-20"
           />
         </Link>
         <nav className="flex flex-wrap gap-x-6 gap-y-1 text-sm font-semibold text-navy-900">

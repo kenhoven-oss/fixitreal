@@ -19,11 +19,11 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="inline-block no-underline" aria-label={site.name}>
               <Image
-                src="/logo.png"
+                src="/FIXitREALlogo.png"
                 alt={site.name}
-                width={512}
-                height={512}
-                className="h-36 w-auto md:h-48"
+                width={964}
+                height={329}
+                className="h-16 w-auto md:h-24"
               />
             </Link>
             <p className="mt-4 text-sm text-ink-600 max-w-sm">{site.tagline}</p>
