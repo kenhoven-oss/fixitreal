@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/content/site";
 
 const trustLinks = [
@@ -16,8 +17,16 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="font-serif text-xl text-navy-900">{site.name}</p>
-            <p className="mt-2 text-sm text-ink-600 max-w-sm">{site.tagline}</p>
+            <Link href="/" className="inline-block no-underline" aria-label={site.name}>
+              <Image
+                src="/logo.png"
+                alt={site.name}
+                width={360}
+                height={90}
+                className="h-20 w-auto md:h-24"
+              />
+            </Link>
+            <p className="mt-4 text-sm text-ink-600 max-w-sm">{site.tagline}</p>
             <p className="mt-3 text-xs text-ink-500 max-w-sm">{site.description}</p>
           </div>
           <div>

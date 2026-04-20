@@ -5,7 +5,7 @@ import { site } from "@/content/site";
 export function Header() {
   return (
     <header className="border-b border-ink-200 bg-white sticky top-0 z-40">
-      <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between gap-6">
+      <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-6">
         <Link
           href="/"
           className="flex items-center gap-3 shrink-0 no-underline"
@@ -17,7 +17,7 @@ export function Header() {
             width={360}
             height={90}
             priority
-            className="h-12 w-auto md:h-14"
+            className="h-16 w-auto md:h-20"
           />
         </Link>
         <nav className="flex flex-wrap gap-x-6 gap-y-1 text-sm font-semibold text-navy-900">
