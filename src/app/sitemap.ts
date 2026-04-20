@@ -20,7 +20,15 @@ const staticRoutes: Route[] = [
   { path: "/about/contact", priority: 0.3, changeFrequency: "yearly" },
   { path: "/about/authors/ken-hoven", priority: 0.4, changeFrequency: "yearly" },
   { path: "/affiliate-disclosure", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },
+  { path: "/terms", priority: 0.2, changeFrequency: "yearly" },
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/tools/best-drain-snakes-for-homeowners", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/tools/best-plungers-for-homeowners", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/tools/best-voltage-testers-for-homeowners", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/tools/best-shop-vacs-for-water-cleanup", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/tools/best-moisture-meters-for-homeowners", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen", priority: 0.75, changeFrequency: "monthly" },
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

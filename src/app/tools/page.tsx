@@ -10,10 +10,51 @@ import {
   collectionPageSchema,
 } from "@/lib/jsonld";
 
+type BuyingGuide = { href: string; title: string; description: string };
+
+const buyingGuides: BuyingGuide[] = [
+  {
+    href: "/tools/best-drain-snakes-for-homeowners",
+    title: "Best drain snakes for homeowners",
+    description:
+      "Manual, hair-clog, tub-specific, and powered options — which to pick for which clog, and when the snake is past its limit.",
+  },
+  {
+    href: "/tools/best-plungers-for-homeowners",
+    title: "Best plungers for homeowners",
+    description:
+      "Why you need more than one, and how to match cup shape to the drain you're clearing.",
+  },
+  {
+    href: "/tools/best-voltage-testers-for-homeowners",
+    title: "Best voltage testers for homeowners",
+    description:
+      "What a tester can safely verify, what it can't, and the cheap set every homeowner with a fuse box should own.",
+  },
+  {
+    href: "/tools/best-shop-vacs-for-water-cleanup",
+    title: "Best shop vacs for water cleanup",
+    description:
+      "Sizing a wet/dry vac to the kind of leak you actually face — and the filter swap most homeowners forget.",
+  },
+  {
+    href: "/tools/best-moisture-meters-for-homeowners",
+    title: "Best moisture meters for homeowners",
+    description:
+      "Pin vs. pinless vs. dual-mode, and how to read a moisture reading without fooling yourself.",
+  },
+  {
+    href: "/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen",
+    title: "Best caulk and caulk guns for bath and kitchen",
+    description:
+      "Silicone vs. siliconized-acrylic, plus the prep tools that separate a clean bead from a lumpy mess.",
+  },
+];
+
 export const metadata = buildMetadata({
   title: "FixItReal tools",
   description:
-    "Interactive tools for home repair decisions — starting with DIY or Hire, with cost estimator and quote scorecard on the way.",
+    "Interactive tools for home-repair decisions plus homeowner-focused buying guides for the parts and tools you actually need.",
   path: "/tools",
 });
 
@@ -30,19 +71,27 @@ export default function ToolsHub() {
             Tools
           </p>
           <h1 className="mt-2 font-serif text-4xl md:text-5xl text-navy-900 leading-tight">
-            Interactive tools for home repair decisions
+            Tools and buying guides for real homeowners
           </h1>
           <p className="mt-6 text-lg text-ink-700 leading-relaxed">
-            We&apos;re building a small set of tools that answer the three
-            questions every homeowner asks before a repair: <em>can I do this
-            myself, what should it cost, and is this quote a rip-off?</em> One
-            at a time. No bloat. No gimmicks.
+            Two sets of tools live here: interactive decision tools that help
+            you size up a repair before you start, and buying guides for the
+            parts and gear that actually earn a spot in a homeowner&apos;s
+            toolbox. No bloat, no affiliate hype — honest picks you&apos;d
+            pass along to a neighbor.
           </p>
         </div>
       </Section>
 
+      {/* Interactive decision tools */}
       <Section padding="md" size="lg">
-        <div className="grid gap-6 md:grid-cols-2">
+        <h2 className="font-serif text-2xl text-navy-900">Decision tools</h2>
+        <p className="mt-2 text-ink-700 max-w-3xl">
+          Built to answer the three questions every homeowner asks before a
+          repair: can I do this myself, what should it cost, and is this quote
+          a rip-off?
+        </p>
+        <div className="mt-6 grid gap-6 md:grid-cols-3">
           <Card
             href="/tools/diy-or-hire"
             eyebrow="Live"
@@ -60,10 +109,31 @@ export default function ToolsHub() {
             description="Paste 3 contractor quotes. We score each against our cost data and flag the outliers."
           />
         </div>
+      </Section>
+
+      {/* Buying guides */}
+      <Section padding="md" size="lg" className="bg-ink-50">
+        <h2 className="font-serif text-2xl text-navy-900">Buying guides</h2>
+        <p className="mt-2 text-ink-700 max-w-3xl">
+          Category-level picks for the tools and parts a homeowner actually
+          needs. Category descriptions are honest, not hype — we say when a
+          category isn&apos;t worth owning, too.
+        </p>
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {buyingGuides.map((g) => (
+            <Card
+              key={g.href}
+              href={g.href}
+              eyebrow="Buying guide"
+              title={g.title}
+              description={g.description}
+            />
+          ))}
+        </div>
 
         <p className="mt-10 text-sm">
           <Link href="/about/methodology" className="no-underline text-navy-700 hover:text-navy-900">
-            How these tools work →
+            How we pick what we recommend →
           </Link>
         </p>
       </Section>
@@ -78,10 +148,11 @@ export default function ToolsHub() {
           collectionPageSchema({
             name: "FixItReal tools",
             description:
-              "Interactive tools for home repair decisions — DIY or Hire, cost estimator, and quote scorecard.",
+              "Interactive decision tools and homeowner-focused buying guides for home-repair parts and gear.",
             url: "/tools",
             hasPart: [
               { name: "DIY or Hire", url: "/tools/diy-or-hire" },
+              ...buyingGuides.map((g) => ({ name: g.title, url: g.href })),
             ],
           }),
           webApplicationSchema({
