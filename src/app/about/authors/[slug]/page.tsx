@@ -86,6 +86,17 @@ export default async function AuthorProfile({ params }: { params: Params }) {
             </p>
             <h1 className="mt-2 font-serif text-4xl text-navy-900">{author.name}</h1>
             <p className="mt-4 text-lg text-ink-700 leading-relaxed">{author.bio}</p>
+            <p className="mt-4 text-sm text-ink-600 leading-relaxed">
+              Ken also founded{" "}
+              <a
+                href="https://www.printreadyforms.com"
+                className="underline decoration-amber-500 hover:text-navy-900"
+                rel="noopener noreferrer"
+              >
+                PrintReadyForms
+              </a>
+              , a separate site focused on downloadable forms and templates.
+            </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {author.credentials.map((c) => (
                 <Badge key={c} tone="navy" size="md">

@@ -82,6 +82,7 @@ export function ArticlePage({ article }: ArticlePageProps) {
             Updated{" "}
             {updateDate.toLocaleDateString("en-US", {
               month: "long",
+              day: "numeric",
               year: "numeric",
             })}
           </span>
@@ -91,6 +92,21 @@ export function ArticlePage({ article }: ArticlePageProps) {
               · Safety-sensitive topic — consult a licensed pro
             </span>
           )}
+        </p>
+        <p className="mt-2 text-xs text-ink-600">
+          <Link
+            href="/about/methodology"
+            className="no-underline hover:text-navy-900 border-b border-amber-500 pb-0.5"
+          >
+            How we research
+          </Link>
+          {" · "}
+          <Link
+            href="/about/editorial-standards"
+            className="no-underline hover:text-navy-900 border-b border-amber-500 pb-0.5"
+          >
+            Editorial standards
+          </Link>
         </p>
 
         <AffiliateDisclosure variant="banner" />
