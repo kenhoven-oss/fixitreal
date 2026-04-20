@@ -4,8 +4,8 @@ export const size = { width: 64, height: 64 };
 export const contentType = "image/png";
 
 /**
- * Favicon — house silhouette with amber accent wrench slash.
- * Generated at build time by Next.js, served at /icon.
+ * Favicon — orange rounded square with a chunky white pitched-roof
+ * house silhouette and a navy door. Designed to stay legible at 16px.
  */
 export default function Icon() {
   return new ImageResponse(
@@ -18,30 +18,23 @@ export default function Icon() {
           alignItems: "center",
           justifyContent: "center",
           background: "#EC7E28",
-          borderRadius: "12px",
+          borderRadius: "14px",
         }}
       >
         <svg
-          width="48"
-          height="48"
+          width="54"
+          height="54"
           viewBox="0 0 48 48"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* House silhouette */}
+          {/* House silhouette: pitched roof + body as one path */}
           <path
-            d="M24 6 L6 20 L6 42 L42 42 L42 20 Z"
+            d="M24 5 L3 22 L8 22 L8 43 L40 43 L40 22 L45 22 Z"
             fill="#ffffff"
-            stroke="#ffffff"
-            strokeWidth="1"
             strokeLinejoin="round"
           />
-          {/* Amber accent diagonal (wrench mark) */}
-          <path
-            d="M14 36 L32 18"
-            stroke="#182D4A"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
+          {/* Door */}
+          <rect x="20" y="28" width="8" height="15" fill="#182D4A" rx="1" />
         </svg>
       </div>
     ),
