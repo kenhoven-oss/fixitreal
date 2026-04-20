@@ -39,8 +39,7 @@ const products: RecommendedProduct[] = [
       "A 25-foot manual hand auger hits the sweet spot for homeowner use — long enough to reach most kitchen and bathroom clogs, short enough to control without a mess. A rotating drum keeps the cable tidy and lets you feed it slowly without kinking.",
     keyBuyingNotes:
       "Look for a steel cable in the 1/4-inch range, a drum with a secure lid, and a rubber hand grip. A thumb lock on the drum is worth the upgrade if you can find one.",
-    // PASTE AMAZON AFFILIATE LINK HERE
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4tZgObP",
     buttonText: "Check price on Amazon",
   },
   {
@@ -52,8 +51,7 @@ const products: RecommendedProduct[] = [
       "For a lot of bathroom clogs, the blockage is a wad of hair within six inches of the drain — not something a full auger can help with. A long plastic barbed strip pulls those out in seconds and costs very little.",
     keyBuyingNotes:
       "These are disposable by design. Buy a short multi-pack rather than one expensive unit; the tool takes the beating so your drain doesn't.",
-    // PASTE AMAZON AFFILIATE LINK HERE
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4cwgbzh",
     buttonText: "Check price on Amazon",
   },
   {
@@ -65,12 +63,7 @@ const products: RecommendedProduct[] = [
       "Bathtub drains have an unusual geometry — a trip-waste lever and a low P-trap. A flat-tape snake threads past both more reliably than a round cable, and it takes up almost no space in a utility closet.",
     keyBuyingNotes:
       "Check the total length; 20 feet handles almost any tub clog. A plastic guide sleeve at the tip prevents finish scratches on the overflow plate.",
-    /*
-      Draft behavior: this entry intentionally has no affiliate URL yet,
-      so the card renders without a buy button. Paste a link later and
-      the button appears automatically.
-    */
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4vC5Zy0",
     buttonText: "Check price on Amazon",
   },
   {
@@ -82,8 +75,7 @@ const products: RecommendedProduct[] = [
       "Once a clog is more than 20 feet in or involves roots and grease, a manual cable stops making progress. A compact powered drum auger gives homeowners a middle option between renting a sewer machine and calling a plumber every time.",
     keyBuyingNotes:
       "Match cable length to the run you're trying to reach. Look for variable speed, a foot pedal if possible, and a properly sized cutter head for the line diameter. If the clog is in the main sewer line, call a pro instead — a wrong move can damage the line.",
-    // Another draft-mode product — no link yet.
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4sNWsBb",
     buttonText: "Check price on Amazon",
   },
 ];

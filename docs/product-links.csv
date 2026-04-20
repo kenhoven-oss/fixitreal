@@ -1,5 +1,22 @@
 Page,Product Name,Badge,Category,Amazon Search Hint,Affiliate URL (paste here),Status,Notes
-/tools/best-drain-snakes-for-homeowners,25-ft manual hand auger,Best Overall,Manual drain snake,"""25 foot drain auger 1/4 inch drum""",,Draft,"Steel cable, drum with lid, rubber grip, thumb lock preferred"
-/tools/best-drain-snakes-for-homeowners,Basic 15-ft zip-it style cable,Best Budget,Hair/debris tool,"""zip it drain cleaning tool 2 pack""",,Draft,Multi-pack preferred; these are disposable
-/tools/best-drain-snakes-for-homeowners,Flat-tape tub drain snake,Best for Tubs,Tub-specific snake,"""flat tape tub drain snake 20 ft""",,Draft,Plastic guide sleeve at tip prevents tub finish scratches
-/tools/best-drain-snakes-for-homeowners,Powered drum auger (homeowner grade),Best for Tougher Clogs,Powered snake,"""homeowner power drain auger 50 ft""",,Draft,"Variable speed + foot pedal if possible; match cable to line diameter"
+/tools/best-drain-snakes-for-homeowners,25-ft manual hand auger,Best Overall,Manual drain snake,"""25 foot drain auger 1/4 inch drum""",https://amzn.to/4tZgObP,Live,"Steel cable, drum with lid, rubber grip, thumb lock preferred"
+/tools/best-drain-snakes-for-homeowners,Basic 15-ft zip-it style cable,Best Budget,Hair/debris tool,"""zip it drain cleaning tool 2 pack""",https://amzn.to/4cwgbzh,Live,Multi-pack preferred; these are disposable
+/tools/best-drain-snakes-for-homeowners,Flat-tape tub drain snake,Best for Tubs,Tub-specific snake,"""flat tape tub drain snake 20 ft""",https://amzn.to/4vC5Zy0,Live,Plastic guide sleeve at tip prevents tub finish scratches
+/tools/best-drain-snakes-for-homeowners,Powered drum auger (homeowner grade),Best for Tougher Clogs,Powered snake,"""homeowner power drain auger 50 ft""",https://amzn.to/4sNWsBb,Live,Variable speed + foot pedal if possible; match cable to line diameter
+/tools/best-plungers-for-homeowners,Flange plunger (toilet),Best for Toilets,Toilet plunger,"""toilet flange plunger black rubber""",,Draft,"Fold-out flange; thick handle; avoid cheap cups that collapse"
+/tools/best-plungers-for-homeowners,Cup plunger (sink/tub),Best for Sinks & Tubs,Standard cup plunger,"""cup plunger sink drain""",,Draft,Flat-rim cup seals flat drain openings; keep separate from toilet plunger
+/tools/best-plungers-for-homeowners,Accordion-style high-pressure plunger,Best for Tough Clogs,High-pressure plunger,"""accordion plunger toilet""",,Draft,Generates more pressure than a flange; awkward but effective
+/tools/best-voltage-testers-for-homeowners,Non-contact voltage tester pen,Best Overall,Non-contact NCVT,"""non contact voltage tester klein""",,Draft,"Dual-range (50V / 1000V); bright tip light; beep + visual"
+/tools/best-voltage-testers-for-homeowners,GFCI outlet tester,Best for Outlet Checks,Outlet/GFCI tester,"""GFCI outlet tester plug in""",,Draft,3-light wiring diagnostic + GFCI trip button
+/tools/best-voltage-testers-for-homeowners,Digital multimeter (homeowner grade),Best for Deeper Checks,Multimeter,"""digital multimeter auto ranging""",,Draft,Auto-ranging; CAT III safety rating; insulated leads
+/tools/best-voltage-testers-for-homeowners,Circuit breaker finder,Best for Panel Work,Breaker finder,"""circuit breaker finder receptacle""",,Draft,Transmitter + receiver pair; saves guessing at the panel
+/tools/best-shop-vacs-for-water-cleanup,Mid-size wet/dry shop vac (6–9 gal),Best Overall,Wet/dry vacuum,"""shop vac 6 gallon wet dry""",,Draft,Enough capacity for a typical under-sink or appliance leak
+/tools/best-shop-vacs-for-water-cleanup,Compact wet/dry vac (2–3 gal),Best Compact,Wet/dry vacuum,"""shop vac 2.5 gallon portable""",,Draft,For apartments or garage storage where full-size is overkill
+/tools/best-shop-vacs-for-water-cleanup,Large wet/dry shop vac (12+ gal),Best for Flooded Areas,Wet/dry vacuum,"""shop vac 12 gallon wet dry""",,Draft,Pump-out port helps when you have standing water
+/tools/best-moisture-meters-for-homeowners,Pin-type moisture meter,Best Overall,Moisture meter,"""pin moisture meter wood drywall""",,Draft,"Good for spot-checking drywall, wood studs, trim"
+/tools/best-moisture-meters-for-homeowners,Pinless moisture meter,Best Non-Invasive,Moisture meter,"""pinless moisture meter wall""",,Draft,Scans without leaving holes; better for finished walls
+/tools/best-moisture-meters-for-homeowners,Dual-mode (pin + pinless) moisture meter,Best Versatile,Moisture meter,"""dual moisture meter pin pinless""",,Draft,Both modes in one; worth it if you check leaks more than once a year
+/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen,Dripless caulk gun,Best Overall,Caulk gun,"""dripless caulk gun smooth rod""",,Draft,Smooth-rod drive; 18:1 thrust ratio; pressure release
+/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen,100%% silicone kitchen & bath caulk,Best for Wet Areas,Sealant,"""100 percent silicone caulk bathroom""",,Draft,Mildew-resistant; do NOT use on tile grout lines
+/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen,Caulk removal tool,Best Prep Tool,Removal tool,"""caulk remover tool scraper""",,Draft,Plastic blade so you don't scratch the tub finish
+/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen,Smoothing/finishing kit,Best for Clean Lines,Finishing kit,"""caulk finishing tool kit""",,Draft,Simple rubber smoothers + masking tape produce the cleanest bead
