@@ -8,7 +8,6 @@ import {
   breadcrumbSchema,
   faqSchema,
 } from "@/lib/jsonld";
-import { site } from "@/content/site";
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
@@ -41,7 +40,7 @@ const products: RecommendedProduct[] = [
     keyBuyingNotes:
       "Look for a steel cable in the 1/4-inch range, a drum with a secure lid, and a rubber hand grip. A thumb lock on the drum is worth the upgrade if you can find one.",
     // PASTE AMAZON AFFILIATE LINK HERE
-    affiliateUrl: "https://amzn.to/EXAMPLE-DRAIN-SNAKE-1",
+    affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
   {
@@ -54,7 +53,7 @@ const products: RecommendedProduct[] = [
     keyBuyingNotes:
       "These are disposable by design. Buy a short multi-pack rather than one expensive unit; the tool takes the beating so your drain doesn&apos;t.",
     // PASTE AMAZON AFFILIATE LINK HERE
-    affiliateUrl: "https://amzn.to/EXAMPLE-DRAIN-SNAKE-2",
+    affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
   {
@@ -167,7 +166,7 @@ export default function BestDrainSnakesGuide() {
               {kenHoven.name}
             </Link>
           </span>
-          <span>Updated April 2026</span>
+          <span>Updated April 20, 2026</span>
           <span>6 min read</span>
         </p>
 

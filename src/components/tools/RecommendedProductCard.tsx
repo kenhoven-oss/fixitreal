@@ -82,9 +82,9 @@ export function RecommendedProductCard({ product, children }: RecommendedProduct
 
       {children}
 
-      {affiliateUrl ? (
+      {affiliateUrl?.trim() ? (
         <a
-          href={affiliateUrl}
+          href={affiliateUrl.trim()}
           target="_blank"
           rel="sponsored nofollow noopener"
           className="mt-auto inline-flex items-center justify-center rounded-md bg-navy-900 px-5 py-2.5 text-sm font-semibold text-white visited:text-white no-underline hover:bg-navy-800 transition-colors"

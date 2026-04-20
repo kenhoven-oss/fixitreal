@@ -13,9 +13,7 @@ import type { RecommendedProduct } from "./RecommendedProductCard";
  * links stay clean and disclosure-free until they go live.
  */
 export function AmazonDisclosure({ products }: { products: RecommendedProduct[] }) {
-  const hasAffiliateLink = products.some(
-    (p) => typeof p.affiliateUrl === "string" && p.affiliateUrl.trim() !== ""
-  );
+  const hasAffiliateLink = products.some((p) => !!p.affiliateUrl?.trim());
 
   if (!hasAffiliateLink) return null;
 
