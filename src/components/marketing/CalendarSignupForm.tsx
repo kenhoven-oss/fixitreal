@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 
 type CalendarSignupFormProps = {
   variant?: "hero" | "inline";
@@ -11,7 +11,12 @@ const SUBSCRIBE_URL = "/api/subscribe";
 export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
+  const mountedAtRef = useRef<number>(0);
   const isHero = variant === "hero";
+
+  useEffect(() => {
+    mountedAtRef.current = Date.now();
+  }, []);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -22,8 +27,9 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
     const formData = new FormData(form);
     const email = String(formData.get("email") ?? "").trim();
     const firstName = String(formData.get("first_name") ?? "").trim();
+    const website = String(formData.get("website") ?? "");
+    const elapsedMs = Date.now() - mountedAtRef.current;
 
-    // Basic client-side validation (Beehiiv does the real verification via double opt-in)
     if (!firstName || firstName.length < 2) {
       setError("Please enter your first name.");
       setStatus("error");
@@ -39,7 +45,7 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
       const res = await fetch(SUBSCRIBE_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, firstName }),
+        body: JSON.stringify({ email, firstName, website, elapsedMs }),
       });
       if (!res.ok) throw new Error("subscription failed");
       setStatus("success");
@@ -59,14 +65,20 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
             : "rounded-lg bg-amber-50 border border-amber-200 p-5"
         }
       >
-        <p className="font-serif text-2xl text-navy-900">Check your inbox</p>
+        <p className="font-serif text-2xl text-navy-900">You&apos;re in — grab your PDF</p>
         <p className="mt-3 text-ink-800 leading-relaxed">
-          We just sent a confirmation email. Click the link in it to confirm
-          your address and your free Home Repair Cost Calendar PDF will arrive
-          in the welcome email right after.
+          Your Home Repair Cost Calendar is ready to download below. We&apos;ll
+          also email it to you shortly along with a quick welcome note.
         </p>
-        <p className="mt-2 text-sm text-ink-600">
-          Don&apos;t see it within 5 minutes? Check your spam folder.
+        <a
+          href="/downloads/home-repair-cost-calendar.pdf"
+          download
+          className="mt-4 inline-flex items-center justify-center rounded-md bg-navy-900 px-6 py-2.5 text-sm font-semibold text-white no-underline hover:bg-navy-800"
+        >
+          Download the PDF →
+        </a>
+        <p className="mt-3 text-xs text-ink-600">
+          Not seeing the email within 5 minutes? Check your spam folder.
         </p>
       </div>
     );
@@ -95,6 +107,12 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
           </p>
         </>
       )}
+
+      {/* Honeypot — hidden from users, bots fill it in */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>
+        <label htmlFor="website">Website</label>
+        <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" defaultValue="" />
+      </div>
 
       <div className={`${isHero ? "mt-5" : ""} grid gap-3 sm:grid-cols-2`}>
         <div>
