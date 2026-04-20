@@ -17,7 +17,7 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#182D4A",
+          background: "#EC7E28",
           borderRadius: "12px",
         }}
       >
@@ -38,7 +38,7 @@ export default function Icon() {
           {/* Amber accent diagonal (wrench mark) */}
           <path
             d="M14 36 L32 18"
-            stroke="#EC7E28"
+            stroke="#182D4A"
             strokeWidth="4"
             strokeLinecap="round"
           />
