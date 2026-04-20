@@ -13,17 +13,17 @@
   --color-navy-800: #1a2840;
   --color-navy-900: #182D4A;
 
-  /* Brand — amber accent */
-  --color-amber-50:  #fdf8ea;
-  --color-amber-100: #fbefd0;
-  --color-amber-200: #f5dc9a;
-  --color-amber-300: #efc468;
-  --color-amber-400: #dfa83f;
-  --color-amber-500: #D4A038;
-  --color-amber-600: #b68325;
-  --color-amber-700: #8f641f;
-  --color-amber-800: #6b4c1c;
-  --color-amber-900: #4a3515;
+  /* Brand — orange accent (matches logo) */
+  --color-amber-50:  #fff4ec;
+  --color-amber-100: #ffe3cf;
+  --color-amber-200: #fdc6a0;
+  --color-amber-300: #fba268;
+  --color-amber-400: #f6833b;
+  --color-amber-500: #EC7E28;
+  --color-amber-600: #d16310;
+  --color-amber-700: #b2500a;
+  --color-amber-800: #7e3907;
+  --color-amber-900: #522505;
 
   /* Ink — warm neutral grays for text and surfaces */
   --color-ink-50:  #fafaf9;
