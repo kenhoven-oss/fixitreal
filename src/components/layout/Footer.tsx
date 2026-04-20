@@ -23,7 +23,7 @@ export function Footer() {
                 alt={site.name}
                 width={360}
                 height={90}
-                className="h-20 w-auto md:h-24"
+                className="h-24 w-auto md:h-32"
               />
             </Link>
             <p className="mt-4 text-sm text-ink-600 max-w-sm">{site.tagline}</p>
