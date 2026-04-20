@@ -50,8 +50,9 @@ export default async function Home() {
   return (
     <>
       {/* ==============================================================
-           HERO — full-bleed background image, large editorial headline,
-           brand-direction copy preserved per brief.
+           HERO — interior photo plays on the right (plant, shadows),
+           navy gradient fades in from the left to keep the headline
+           legible. Brand-direction copy preserved per brief.
            ============================================================== */}
       <section className="relative overflow-hidden bg-navy-900 text-white">
         <div className="absolute inset-0 z-0">
@@ -62,12 +63,17 @@ export default async function Home() {
             sizes="100vw"
             priority
             unoptimized
-            className="object-cover opacity-30"
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900/85 to-navy-800/60" />
+          {/* Horizontal fade: solid navy on the left for text legibility,
+              transparent on the right so the plant + wall shadows read. */}
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/85 md:via-navy-900/70 to-transparent" />
+          {/* Subtle vertical darken at the top so the white nav never
+              floats over a bright window highlight. */}
+          <div className="absolute inset-0 bg-gradient-to-b from-navy-900/40 via-transparent to-navy-900/30" />
         </div>
         <div className="relative z-10 mx-auto max-w-6xl px-6 py-24 md:py-32 grid gap-10 md:grid-cols-12">
-          <div className="md:col-span-9 lg:col-span-8">
+          <div className="md:col-span-9 lg:col-span-7">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400">
               Consumer advocate · Home repair
             </p>
@@ -89,7 +95,7 @@ export default async function Home() {
               </Link>
               <Link
                 href="/advice"
-                className="inline-flex items-center rounded-md border border-white/30 px-6 py-3 text-sm font-semibold text-white visited:text-white no-underline hover:bg-white/10 transition-colors"
+                className="inline-flex items-center rounded-md border border-white/40 bg-white/5 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white visited:text-white no-underline hover:bg-white/15 transition-colors"
               >
                 Browse repair guides
               </Link>
