@@ -63,7 +63,8 @@ body {
 
 /* Links are un-styled by default. Prose body links get underlined via the
    Prose component; nav links, cards, and CTAs use explicit utility classes. */
-:where(a) {
+:where(a),
+:where(a):visited {
   color: inherit;
   text-decoration: none;
 }

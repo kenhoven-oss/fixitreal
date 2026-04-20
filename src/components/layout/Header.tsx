@@ -14,10 +14,10 @@ export function Header() {
           <Image
             src="/logo.png"
             alt={site.name}
-            width={360}
-            height={90}
+            width={512}
+            height={512}
             priority
-            className="h-24 w-auto md:h-36"
+            className="h-28 w-auto md:h-40"
           />
         </Link>
         <nav className="flex flex-wrap gap-x-6 gap-y-1 text-sm font-semibold text-navy-900">

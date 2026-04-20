@@ -21,9 +21,9 @@ export function Footer() {
               <Image
                 src="/logo.png"
                 alt={site.name}
-                width={360}
-                height={90}
-                className="h-32 w-auto md:h-44"
+                width={512}
+                height={512}
+                className="h-36 w-auto md:h-48"
               />
             </Link>
             <p className="mt-4 text-sm text-ink-600 max-w-sm">{site.tagline}</p>
