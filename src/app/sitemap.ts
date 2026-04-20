@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+import { readdir } from "node:fs/promises";
+import path from "node:path";
 import { env } from "@/lib/env";
 import { getAllJobSlugs } from "@/content/jobs";
 import { loadAllArticles } from "@/lib/articles-loader";
@@ -23,16 +25,33 @@ const staticRoutes: Route[] = [
   { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },
   { path: "/terms", priority: 0.2, changeFrequency: "yearly" },
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },
-  { path: "/tools/best-drain-snakes-for-homeowners", priority: 0.75, changeFrequency: "monthly" },
-  { path: "/tools/best-plungers-for-homeowners", priority: 0.75, changeFrequency: "monthly" },
-  { path: "/tools/best-voltage-testers-for-homeowners", priority: 0.75, changeFrequency: "monthly" },
-  { path: "/tools/best-shop-vacs-for-water-cleanup", priority: 0.75, changeFrequency: "monthly" },
-  { path: "/tools/best-moisture-meters-for-homeowners", priority: 0.75, changeFrequency: "monthly" },
-  { path: "/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen", priority: 0.75, changeFrequency: "monthly" },
 ];
 
+/**
+ * Discover every /tools/best-* buying-guide folder at build time so new
+ * guides get picked up in the sitemap without touching this file.
+ */
+async function discoverBuyingGuideRoutes(): Promise<Route[]> {
+  const toolsDir = path.join(process.cwd(), "src", "app", "tools");
+  try {
+    const entries = await readdir(toolsDir, { withFileTypes: true });
+    return entries
+      .filter((e) => e.isDirectory() && e.name.startsWith("best-"))
+      .map((e) => ({
+        path: `/tools/${e.name}`,
+        priority: 0.75,
+        changeFrequency: "monthly" as const,
+      }));
+  } catch {
+    return [];
+  }
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((r) => ({
+  const buyingGuides = await discoverBuyingGuideRoutes();
+  const allStaticRoutes = [...staticRoutes, ...buyingGuides];
+
+  const staticEntries: MetadataRoute.Sitemap = allStaticRoutes.map((r) => ({
     url: `${env.siteUrl}${r.path}`,
     lastModified: now,
     changeFrequency: r.changeFrequency,

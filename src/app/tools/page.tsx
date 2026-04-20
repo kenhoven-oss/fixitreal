@@ -85,13 +85,12 @@ export default function ToolsHub() {
 
       {/* Interactive decision tools */}
       <Section padding="md" size="lg">
-        <h2 className="font-serif text-2xl text-navy-900">Decision tools</h2>
+        <h2 className="font-serif text-2xl text-navy-900">Decision tool</h2>
         <p className="mt-2 text-ink-700 max-w-3xl">
-          Built to answer the three questions every homeowner asks before a
-          repair: can I do this myself, what should it cost, and is this quote
-          a rip-off?
+          The fastest way to settle a common repair question: should you do it
+          yourself, or pay a pro?
         </p>
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
           <Card
             href="/tools/diy-or-hire"
             eyebrow="Live"
@@ -99,16 +98,16 @@ export default function ToolsHub() {
             description="Pick a job. Get a verdict, a cost comparison, permit rules, and our reasoning. No quiz — just the answer."
           />
           <Card
-            eyebrow="Coming soon"
-            title="Cost estimator"
-            description="ZIP-aware repair cost estimates across the trades — with labor/materials/permit breakdowns and source transparency."
-          />
-          <Card
-            eyebrow="Coming later"
-            title="Quote scorecard"
-            description="Paste 3 contractor quotes. We score each against our cost data and flag the outliers."
+            href="/home-repair-cost-calendar"
+            eyebrow="Free PDF"
+            title="Home Repair Cost Calendar"
+            description="Every month of the year with real 2026 cost ranges for the maintenance tasks that come due. Prevents expensive surprises."
           />
         </div>
+        <p className="mt-6 text-xs text-ink-600 max-w-3xl">
+          A ZIP-aware cost estimator and a contractor quote scorecard are both
+          in the works. Subscribe below to get notified when they ship.
+        </p>
       </Section>
 
       {/* Buying guides */}

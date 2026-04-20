@@ -79,6 +79,11 @@ type ArticleInput = {
   dateModified?: string;
   authorUrl: string;
   authorName: string;
+  /** Optional richer author fields for a full Person sub-graph. */
+  authorImage?: string;
+  authorJobTitle?: string;
+  authorDescription?: string;
+  authorSameAs?: string[];
   reviewerUrl?: string;
   reviewerName?: string;
   image?: string;
@@ -99,6 +104,10 @@ export function articleSchema(a: ArticleInput): JsonLd {
       "@type": "Person",
       name: a.authorName,
       url: absoluteUrl(a.authorUrl),
+      ...(a.authorImage ? { image: absoluteUrl(a.authorImage) } : {}),
+      ...(a.authorJobTitle ? { jobTitle: a.authorJobTitle } : {}),
+      ...(a.authorDescription ? { description: a.authorDescription } : {}),
+      ...(a.authorSameAs?.length ? { sameAs: a.authorSameAs } : {}),
     },
     ...(a.reviewerUrl && a.reviewerName
       ? {

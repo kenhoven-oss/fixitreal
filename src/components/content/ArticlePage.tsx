@@ -185,6 +185,9 @@ export function ArticlePage({ article }: ArticlePageProps) {
             dateModified: frontmatter.updatedAt ?? frontmatter.publishedAt,
             authorUrl: kenHoven.url,
             authorName: kenHoven.name,
+            authorImage: kenHoven.photo,
+            authorJobTitle: kenHoven.role,
+            authorDescription: kenHoven.shortBio,
             articleSection: pillarLabel[pillar],
           }),
         ])}
