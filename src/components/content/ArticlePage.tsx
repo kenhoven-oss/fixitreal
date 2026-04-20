@@ -7,6 +7,7 @@ import { Prose } from "@/components/content/Prose";
 import { FaqBlock } from "@/components/content/FaqBlock";
 import { PullQuote } from "@/components/content/PullQuote";
 import { Citation } from "@/components/content/Citation";
+import { AffiliateDisclosure } from "@/components/content/AffiliateDisclosure";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import {
@@ -92,7 +93,9 @@ export function ArticlePage({ article }: ArticlePageProps) {
           )}
         </p>
 
-        <div className="mt-10">
+        <AffiliateDisclosure variant="banner" />
+
+        <div className="mt-8">
           <Prose>
             <MDXRemote
               source={content}

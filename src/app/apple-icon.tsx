@@ -35,7 +35,7 @@ export default function AppleIcon() {
           />
           <path
             d="M14 36 L32 18"
-            stroke="#D4A038"
+            stroke="#EC7E28"
             strokeWidth="4"
             strokeLinecap="round"
           />
