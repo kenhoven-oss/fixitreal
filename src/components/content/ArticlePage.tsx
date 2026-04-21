@@ -6,6 +6,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Prose } from "@/components/content/Prose";
 import { FaqBlock } from "@/components/content/FaqBlock";
 import { PullQuote } from "@/components/content/PullQuote";
+import { QuickAnswer } from "@/components/content/QuickAnswer";
 import { Citation } from "@/components/content/Citation";
 import { AffiliateDisclosure } from "@/components/content/AffiliateDisclosure";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
@@ -31,6 +32,7 @@ const pillarLabel: Record<string, string> = {
 
 const mdxComponents = {
   PullQuote,
+  QuickAnswer,
   Citation,
   a: ({ href, children }: { href?: string; children?: React.ReactNode }) =>
     href && /^https?:/.test(href) ? (
