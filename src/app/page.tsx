@@ -159,6 +159,13 @@ export default async function Home() {
               </Link>
               {" · "}
               <Link
+                href="/diy-or-hire/water-heater"
+                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
+              >
+                Water heater
+              </Link>
+              {" · "}
+              <Link
                 href="/diy-or-hire/garbage-disposal"
                 className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
               >
@@ -166,24 +173,17 @@ export default async function Home() {
               </Link>
               {" · "}
               <Link
+                href="/diy-or-hire/unclog-drain"
+                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
+              >
+                Unclog a drain
+              </Link>
+              {" · "}
+              <Link
                 href="/diy-or-hire/ceiling-fan"
                 className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
               >
                 Ceiling fan
-              </Link>
-              {" · "}
-              <Link
-                href="/diy-or-hire/garage-door-opener"
-                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
-              >
-                Garage door opener
-              </Link>
-              {" · "}
-              <Link
-                href="/diy-or-hire/dishwasher"
-                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
-              >
-                Dishwasher
               </Link>
             </p>
             {/* Credibility meta: author + last-reviewed date + standards link.
