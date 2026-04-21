@@ -12,7 +12,12 @@ import { buildMetadata } from "@/lib/metadata";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 import { kenHoven } from "@/content/authors/ken-hoven";
 
-export const metadata = buildMetadata({});
+export const metadata = buildMetadata({
+  title: "Honest home repair advice and 2026 cost guides",
+  description:
+    "A consumer-advocate home repair site. Honest answers on what to fix yourself, what repairs should cost in 2026, and when to call a pro — from an independent editor with no warranty advertisers or affiliate farms.",
+  path: "/",
+});
 
 /**
  * Manually curated order for the homepage "Featured decisions" grid.
@@ -25,10 +30,11 @@ export const metadata = buildMetadata({});
  */
 const featuredDecisionSlugs = [
   "toilet",              // top plumbing search volume, concrete DIY savings
+  "water-heater",        // very high-intent YMYL — big savings decision
   "garbage-disposal",    // high volume, clear DIY-recommended verdict
+  "unclog-drain",        // extremely high search volume, clear DIY answer
   "ceiling-fan",         // seasonal spike + borderline YMYL electrical
   "garage-door-opener",  // YMYL safety guidance (torsion springs)
-  "dishwasher",          // tied to appliance replacement events
 ] as const;
 
 // Curated set of buying guides shown on the homepage.
@@ -74,6 +80,19 @@ export default async function Home() {
     .map((slug) => decisionsBySlug.get(slug))
     .filter((a): a is NonNullable<typeof a> => a !== undefined);
 
+  // "Reviewed" stamp reflects the most recent content update across all
+  // published articles — an honest, auto-maintained trust signal.
+  const allArticleDates = [...costs, ...advice, ...decisions].map(
+    (a) => a.frontmatter.updatedAt ?? a.frontmatter.publishedAt
+  );
+  const latestReviewIso = allArticleDates.sort().reverse()[0];
+  const latestReview = latestReviewIso
+    ? new Date(latestReviewIso).toLocaleDateString("en-US", {
+        month: "long",
+        year: "numeric",
+      })
+    : null;
+
   return (
     <>
       {/* ==============================================================
@@ -85,12 +104,11 @@ export default async function Home() {
       <section className="relative overflow-hidden bg-ink-50">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9RTcaIeoOAX2M-bOjGivO-dKoTSqllzy0H-FWsqkAV0Fh2qMjW7aRGD-TgHwkRghHfCY3LVMm-AlIflitzleMJt7s5LXKe5w7bzHdcIgzaOfLqXBYRooMlRiFyDev9Wk1e9wPoNEf0UFoZTPnQRZktouO3qsebFROudnTjWcTLRFOQxeh8Y5q159OwD17xaAUaavXUkOtPWXTRaqw1jKU_UOObdzwKoIPm2Cd3FlkZ8gqGfn_B7jkQXX4cuaYLYiDgtjnbOME8Q"
+            src="/images/hero/home-interior.jpg"
             alt=""
             fill
             sizes="100vw"
             priority
-            unoptimized
             className="object-cover object-right opacity-75"
           />
           {/* Soft left-to-right wash: near-opaque cream on the left
@@ -166,6 +184,38 @@ export default async function Home() {
                 className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
               >
                 Dishwasher
+              </Link>
+            </p>
+            {/* Credibility meta: author + last-reviewed date + standards link.
+                Small type, kept compact so it reinforces E-E-A-T without
+                competing with the hero CTAs visually. */}
+            <p className="mt-6 text-xs text-ink-600 flex flex-wrap items-center gap-x-3 gap-y-1">
+              <span>
+                Written and edited by{" "}
+                <Link
+                  href={kenHoven.url}
+                  className="font-semibold text-navy-700 hover:text-navy-900 no-underline"
+                >
+                  {kenHoven.name}
+                </Link>
+                , {kenHoven.role}
+              </span>
+              {latestReview && (
+                <>
+                  <span aria-hidden className="text-ink-400">
+                    ·
+                  </span>
+                  <span>Content reviewed {latestReview}</span>
+                </>
+              )}
+              <span aria-hidden className="text-ink-400">
+                ·
+              </span>
+              <Link
+                href="/about/editorial-standards"
+                className="text-navy-700 hover:text-navy-900 no-underline border-b border-amber-500 pb-0.5"
+              >
+                Editorial standards
               </Link>
             </p>
           </div>
@@ -281,6 +331,54 @@ export default async function Home() {
           </Link>
         </div>
         <CategoryGrid />
+      </Section>
+
+      {/* ==============================================================
+           PROBLEM SHORTCUTS — a second findability layer for visitors who
+           scrolled past the hero and didn't pick a Popular repair decision.
+           These are problem-phrased (how a homeowner describes the issue),
+           not topic-phrased — distinct intent from the hero shortcut strip.
+           Pill styling keeps visual weight low so this never overpowers
+           the Category Grid above or the Buying Guides below.
+           ============================================================== */}
+      <Section padding="lg" className="bg-white border-t border-ink-100">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
+              Got a specific problem right now?
+            </p>
+            <h2 className="mt-2 font-serif text-2xl md:text-3xl text-navy-900 leading-tight">
+              Jump straight to the troubleshooting guide.
+            </h2>
+          </div>
+          <Link
+            href="/advice"
+            className="shrink-0 text-sm font-semibold text-navy-700 hover:text-navy-900 border-b-2 border-amber-500 pb-0.5"
+          >
+            All troubleshooting guides →
+          </Link>
+        </div>
+        <div className="mt-8 flex flex-wrap gap-2.5">
+          {[
+            { phrase: "Breaker keeps tripping", href: "/advice/breaker-keeps-tripping" },
+            { phrase: "AC isn't cooling", href: "/advice/ac-not-cooling" },
+            { phrase: "Water heater is leaking", href: "/advice/water-heater-leaking" },
+            { phrase: "GFCI won't reset", href: "/advice/gfci-outlet-keeps-tripping" },
+            { phrase: "Sump pump not working", href: "/advice/sump-pump-not-working" },
+            { phrase: "Ceiling water stain", href: "/advice/ceiling-water-stain" },
+            { phrase: "Toilet leaking at base", href: "/advice/toilet-leaking-at-the-base" },
+            { phrase: "Faucet is dripping", href: "/advice/faucet-dripping" },
+            { phrase: "Drywall damage after a leak", href: "/advice/drywall-damage-after-a-leak" },
+          ].map((p) => (
+            <Link
+              key={p.href}
+              href={p.href}
+              className="inline-flex items-center rounded-full border border-ink-300 bg-white px-4 py-2 text-sm text-navy-700 no-underline transition-colors hover:border-navy-700 hover:text-navy-900 hover:bg-ink-50"
+            >
+              {p.phrase}
+            </Link>
+          ))}
+        </div>
       </Section>
 
       {/* ==============================================================
