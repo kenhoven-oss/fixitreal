@@ -52,7 +52,7 @@ const buyingGuides: BuyingGuide[] = [
 ];
 
 export const metadata = buildMetadata({
-  title: "FixItReal tools",
+  title: "Home repair tools & buying guides",
   description:
     "Interactive tools for home-repair decisions plus homeowner-focused buying guides for the parts and tools you actually need.",
   path: "/tools",

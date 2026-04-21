@@ -47,19 +47,30 @@ async function discoverBuyingGuideRoutes(): Promise<Route[]> {
   }
 }
 
+/**
+ * Build a full sitemap URL using the same URL-constructor normalization that
+ * `buildMetadata` uses for `alternates.canonical`. This guarantees the sitemap
+ * entry and the page's declared canonical are byte-identical — including the
+ * homepage, where string concatenation would otherwise drift if env.siteUrl
+ * ever gained or lost a trailing slash.
+ */
+function fullUrl(path: string): string {
+  return new URL(path, env.siteUrl).toString();
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const buyingGuides = await discoverBuyingGuideRoutes();
   const allStaticRoutes = [...staticRoutes, ...buyingGuides];
 
   const staticEntries: MetadataRoute.Sitemap = allStaticRoutes.map((r) => ({
-    url: `${env.siteUrl}${r.path}`,
+    url: fullUrl(r.path),
     lastModified: now,
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }));
 
   const toolEntries: MetadataRoute.Sitemap = getAllJobSlugs().map((slug) => ({
-    url: `${env.siteUrl}/tools/diy-or-hire/${slug}`,
+    url: fullUrl(`/tools/diy-or-hire/${slug}`),
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.75,
@@ -67,7 +78,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const articles = await loadAllArticles();
   const articleEntries: MetadataRoute.Sitemap = articles.map((a) => ({
-    url: `${env.siteUrl}${a.path}`,
+    url: fullUrl(a.path),
     lastModified: new Date(
       a.frontmatter.updatedAt ?? a.frontmatter.publishedAt
     ),

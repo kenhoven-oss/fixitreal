@@ -8,7 +8,7 @@ import { jsonLdScript, aboutPageSchema } from "@/lib/jsonld";
 import { kenHoven } from "@/content/authors/ken-hoven";
 
 export const metadata = buildMetadata({
-  title: "About FixItReal",
+  title: "About us — independent home repair guidance",
   description:
     "FixItReal is a consumer-advocate home repair site — one independent editor, no home warranty advertisers, no sponsored content disguised as editorial.",
   path: "/about",
