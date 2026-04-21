@@ -62,9 +62,20 @@ export function SearchClient({ index, initialQuery = "" }: SearchClientProps) {
       </div>
 
       <p className="mt-3 text-xs text-ink-600">
-        {showPlaceholder && <>Type at least two characters to search across {index.length} indexed pages.</>}
-        {!showPlaceholder && !showEmptyState && <>{results.length} result{results.length === 1 ? "" : "s"}.</>}
-        {showEmptyState && <>No matches. Try a broader term — e.g. &quot;drain&quot; instead of &quot;kitchen drain snake&quot;.</>}
+        {showPlaceholder && (
+          <>Type at least two characters to search every article, cost guide, and decision tool.</>
+        )}
+        {!showPlaceholder && !showEmptyState && (
+          <>
+            {results.length} result{results.length === 1 ? "" : "s"}.
+          </>
+        )}
+        {showEmptyState && (
+          <>
+            No matches. Try a broader term — e.g. &quot;drain&quot; instead of
+            &quot;kitchen drain snake&quot;.
+          </>
+        )}
       </p>
 
       {!showPlaceholder && results.length > 0 && (
