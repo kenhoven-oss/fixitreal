@@ -40,7 +40,17 @@ export function buildMetadata({
     metadataBase: new URL(env.siteUrl),
     title: fullTitle,
     description: desc,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      // Site is US-focused (cost ranges in USD, US code references, US-trade
+      // rates). Declaring en-us + x-default tells Search the regional variant
+      // precisely and keeps us future-proof if any international variants
+      // are ever added.
+      languages: {
+        "en-us": url,
+        "x-default": url,
+      },
+    },
     robots: noIndex ? { index: false, follow: false } : undefined,
     verification: site.verification.google
       ? { google: site.verification.google }

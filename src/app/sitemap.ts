@@ -48,14 +48,19 @@ async function discoverBuyingGuideRoutes(): Promise<Route[]> {
 }
 
 /**
- * Build a full sitemap URL using the same URL-constructor normalization that
- * `buildMetadata` uses for `alternates.canonical`. This guarantees the sitemap
- * entry and the page's declared canonical are byte-identical — including the
- * homepage, where string concatenation would otherwise drift if env.siteUrl
- * ever gained or lost a trailing slash.
+ * Build a full sitemap URL that matches the page's rendered `alternates.canonical`
+ * byte-for-byte. We use the URL constructor for robust path resolution, then
+ * strip a trailing slash on the root URL because Next.js's metadata API emits
+ * the homepage canonical without one. Keeping them identical prevents Search
+ * Console "URL is not on Google" warnings from minor-format mismatch.
  */
 function fullUrl(path: string): string {
-  return new URL(path, env.siteUrl).toString();
+  const u = new URL(path, env.siteUrl).toString();
+  // Strip the trailing slash ONLY on a bare root URL (e.g. https://host/).
+  // Non-root paths already have no trailing slash. This matches Next's
+  // canonical normalization, which emits the homepage canonical as
+  // https://www.fixitreal.com (no slash).
+  return u.replace(/^(https?:\/\/[^/]+)\/$/, "$1");
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

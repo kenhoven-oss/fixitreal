@@ -27,7 +27,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="en-US"
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
       <head>
