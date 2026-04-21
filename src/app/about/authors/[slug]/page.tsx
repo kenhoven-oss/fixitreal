@@ -110,11 +110,17 @@ export default async function AuthorProfile({ params }: { params: Params }) {
         <div className="mt-12 grid gap-10 md:grid-cols-2">
           <div>
             <h2 className="font-serif text-2xl text-navy-900">Areas of focus</h2>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 space-y-2.5">
               {author.expertiseAreas.map((e) => (
-                <li key={e} className="text-ink-700">
-                  <span aria-hidden className="text-amber-500 mr-2">·</span>
-                  {e}
+                <li
+                  key={e}
+                  className="flex items-start gap-3 text-ink-700 leading-relaxed"
+                >
+                  <span
+                    aria-hidden
+                    className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500"
+                  />
+                  <span>{e}</span>
                 </li>
               ))}
             </ul>

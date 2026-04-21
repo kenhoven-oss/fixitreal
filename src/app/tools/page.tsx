@@ -3,6 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Card } from "@/components/ui/Card";
 import { buildMetadata } from "@/lib/metadata";
+import { jobs } from "@/content/jobs";
 import {
   jsonLdScript,
   webApplicationSchema,
@@ -59,6 +60,9 @@ export const metadata = buildMetadata({
 });
 
 export default function ToolsHub() {
+  const verdictCount = jobs.length;
+  const buyingGuideCount = buyingGuides.length;
+
   return (
     <>
       <Section padding="md" size="lg">
@@ -74,45 +78,44 @@ export default function ToolsHub() {
             Tools and buying guides for real homeowners
           </h1>
           <p className="mt-6 text-lg text-ink-700 leading-relaxed">
-            Two sets of tools live here: interactive decision tools that help
-            you size up a repair before you start, and buying guides for the
-            parts and gear that actually earn a spot in a homeowner&apos;s
-            toolbox. No bloat, no affiliate hype — honest picks you&apos;d
-            pass along to a neighbor.
+            <strong className="text-navy-900">{verdictCount} DIY-or-hire verdicts</strong>,{" "}
+            <strong className="text-navy-900">{buyingGuideCount} homeowner-focused buying guides</strong>,
+            and a dated 2026 cost calendar — all kept current. No bloat, no
+            affiliate hype, no &quot;top 10&quot; lists padded with junk. Honest
+            picks you&apos;d pass along to a neighbor.
           </p>
         </div>
       </Section>
 
       {/* Interactive decision tools */}
       <Section padding="md" size="lg">
-        <h2 className="font-serif text-2xl text-navy-900">Decision tool</h2>
+        <h2 className="font-serif text-2xl text-navy-900">Live tools</h2>
         <p className="mt-2 text-ink-700 max-w-3xl">
           The fastest way to settle a common repair question: should you do it
-          yourself, or pay a pro?
+          yourself, or pay a pro? And the reference that prevents budget
+          surprises across the whole year.
         </p>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           <Card
             href="/tools/diy-or-hire"
-            eyebrow="Live"
+            eyebrow={`Decision database · ${verdictCount} jobs`}
             title="DIY or Hire"
             description="Pick a job. Get a verdict, a cost comparison, permit rules, and our reasoning. No quiz — just the answer."
           />
           <Card
             href="/home-repair-cost-calendar"
-            eyebrow="Free PDF"
+            eyebrow="Free PDF · Seasonal"
             title="Home Repair Cost Calendar"
             description="Every month of the year with real 2026 cost ranges for the maintenance tasks that come due. Prevents expensive surprises."
           />
         </div>
-        <p className="mt-6 text-xs text-ink-600 max-w-3xl">
-          A ZIP-aware cost estimator and a contractor quote scorecard are both
-          in the works. Subscribe below to get notified when they ship.
-        </p>
       </Section>
 
       {/* Buying guides */}
       <Section padding="md" size="lg" className="bg-ink-50">
-        <h2 className="font-serif text-2xl text-navy-900">Buying guides</h2>
+        <h2 className="font-serif text-2xl text-navy-900">
+          Buying guides · {buyingGuideCount} categories
+        </h2>
         <p className="mt-2 text-ink-700 max-w-3xl">
           Category-level picks for the tools and parts a homeowner actually
           needs. Category descriptions are honest, not hype — we say when a
