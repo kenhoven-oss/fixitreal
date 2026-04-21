@@ -14,6 +14,23 @@ import { kenHoven } from "@/content/authors/ken-hoven";
 
 export const metadata = buildMetadata({});
 
+/**
+ * Manually curated order for the homepage "Featured decisions" grid.
+ *
+ * Ordered by homeowner-intent strength — the jobs readers arrive on the site
+ * most often trying to decide on — not by publication date. Each slug must
+ * correspond to an MDX article in src/content/articles/diy-or-hire/.
+ * Missing articles are dropped silently so the section stays resilient as
+ * content moves.
+ */
+const featuredDecisionSlugs = [
+  "toilet",              // top plumbing search volume, concrete DIY savings
+  "garbage-disposal",    // high volume, clear DIY-recommended verdict
+  "ceiling-fan",         // seasonal spike + borderline YMYL electrical
+  "garage-door-opener",  // YMYL safety guidance (torsion springs)
+  "dishwasher",          // tied to appliance replacement events
+] as const;
+
 // Curated set of buying guides shown on the homepage.
 const featuredGuides = [
   {
@@ -39,13 +56,23 @@ const featuredGuides = [
 ];
 
 export default async function Home() {
-  const [costs, advice] = await Promise.all([
+  const [costs, advice, decisions] = await Promise.all([
     loadArticlesByPillar("costs"),
     loadArticlesByPillar("advice"),
+    loadArticlesByPillar("diy-or-hire"),
   ]);
 
   const featuredCosts = costs.slice(0, 3);
   const featuredAdvice = advice.slice(0, 3);
+
+  // Resolve curated slugs to loaded articles, preserving our manual order and
+  // dropping any slug that no longer has a matching MDX file.
+  const decisionsBySlug = new Map(
+    decisions.map((a) => [a.frontmatter.slug, a])
+  );
+  const featuredDecisions = featuredDecisionSlugs
+    .map((slug) => decisionsBySlug.get(slug))
+    .filter((a): a is NonNullable<typeof a> => a !== undefined);
 
   return (
     <>
@@ -99,6 +126,48 @@ export default async function Home() {
                 Browse repair guides
               </Link>
             </div>
+            {/* Popular article shortcuts — give a visitor with a specific
+                repair in mind a direct path to the exact article without
+                scrolling past the hero. Kept subtle so the hero stays clean. */}
+            <p className="mt-7 text-sm text-ink-700 max-w-2xl leading-relaxed">
+              <span className="text-xs font-semibold uppercase tracking-wider text-ink-500 mr-2">
+                Popular:
+              </span>
+              <Link
+                href="/diy-or-hire/toilet"
+                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
+              >
+                Toilet replacement
+              </Link>
+              {" · "}
+              <Link
+                href="/diy-or-hire/garbage-disposal"
+                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
+              >
+                Garbage disposal
+              </Link>
+              {" · "}
+              <Link
+                href="/diy-or-hire/ceiling-fan"
+                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
+              >
+                Ceiling fan
+              </Link>
+              {" · "}
+              <Link
+                href="/diy-or-hire/garage-door-opener"
+                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
+              >
+                Garage door opener
+              </Link>
+              {" · "}
+              <Link
+                href="/diy-or-hire/dishwasher"
+                className="text-navy-700 underline decoration-amber-500 decoration-[1.5px] underline-offset-[3px] hover:text-navy-900"
+              >
+                Dishwasher
+              </Link>
+            </p>
           </div>
         </div>
       </section>
@@ -106,12 +175,59 @@ export default async function Home() {
       <TrustBar />
 
       {/* ==============================================================
-           PILLARS — three entry points, calm and scannable.
+           POPULAR REPAIR DECISIONS — the primary findability section.
+           Placed immediately after the TrustBar so a visitor arriving
+           with a specific problem in mind sees direct article links
+           before any category browsing. Manually curated order (see
+           featuredDecisionSlugs above) emphasizes highest-intent jobs.
            ============================================================== */}
-      <Section padding="xl" className="bg-white">
+      {featuredDecisions.length > 0 && (
+        <Section padding="xl" className="bg-white">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
+                Popular repair decisions
+              </p>
+              <h2 className="mt-2 font-serif text-3xl md:text-4xl text-navy-900 leading-tight">
+                Find your answer in one click.
+              </h2>
+              <p className="mt-3 text-ink-700 leading-relaxed">
+                Direct pathways to the repair questions homeowners actually
+                ask — not just category pages. Pick the job you&apos;re facing
+                and go straight to the verdict, with a DIY-vs-pro cost
+                comparison and safety notes.
+              </p>
+            </div>
+            <Link
+              href="/diy-or-hire"
+              className="shrink-0 text-sm font-semibold text-navy-700 hover:text-navy-900 border-b-2 border-amber-500 pb-0.5"
+            >
+              All decision guides →
+            </Link>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {featuredDecisions.map((a) => (
+              <Card
+                key={a.frontmatter.slug}
+                href={a.path}
+                eyebrow="Decision guide"
+                title={a.frontmatter.title}
+                description={a.frontmatter.description}
+              />
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {/* ==============================================================
+           PILLARS — three entry points for category browsing, for visitors
+           whose specific article wasn't in the Popular decisions above.
+           Border-t creates a soft divider between the two bg-white sections.
+           ============================================================== */}
+      <Section padding="xl" className="bg-white border-t border-ink-100">
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
-            Where to start
+            Or browse by category
           </p>
           <h2 className="mt-2 font-serif text-3xl md:text-4xl text-navy-900 leading-tight">
             Three questions every homeowner asks. Three places to find the
