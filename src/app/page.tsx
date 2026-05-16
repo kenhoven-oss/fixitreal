@@ -12,6 +12,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, itemListSchema } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 import { kenHoven } from "@/content/authors/ken-hoven";
+import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 
 export const metadata = buildMetadata({
   title: "Honest home repair advice and 2026 cost guides",
@@ -226,6 +227,93 @@ export default async function Home() {
       </section>
 
       <TrustBar />
+
+      {/* ==============================================================
+           DECISION PATHS — "What repair are you dealing with?"
+           Routes visitors into the right hub based on intent within
+           seconds of landing. Each card matches a specific homeowner
+           job-to-be-done, not a content category.
+           ============================================================== */}
+      <Section padding="xl" className="bg-ink-50">
+        <div className="max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
+            Start here
+          </p>
+          <h2 className="mt-2 font-serif text-3xl md:text-4xl text-navy-900 leading-tight">
+            What repair are you dealing with?
+          </h2>
+          <p className="mt-3 text-ink-700 leading-relaxed">
+            Pick the situation that matches yours. We&apos;ll route you to the
+            decision tool, cost guide, or contractor-quote check that actually
+            fits.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              href: "/contractor-red-flags",
+              eyebrow: "Got a contractor quote",
+              title: "Is this price fair?",
+              blurb:
+                "Spot padded line items, deposit traps, and the eight red flags that signal a bad contractor — before signing.",
+            },
+            {
+              href: "/diy-or-hire",
+              eyebrow: "Want to DIY",
+              title: "Should I do it myself?",
+              blurb:
+                "Honest DIY-vs-pro verdicts on real jobs, with cost comparisons and safety thresholds.",
+            },
+            {
+              href: "/costs",
+              eyebrow: "Need a fair cost",
+              title: "What should this repair cost?",
+              blurb:
+                "Dated 2026 cost ranges with labor, materials, and permits broken out. No vague \"$500 to $5,000\" answers.",
+            },
+            {
+              href: "/home-inspection-repairs",
+              eyebrow: "Selling a house",
+              title: "Which repairs do I have to make?",
+              blurb:
+                "What lenders require, what buyers can ask for, and when a closing credit beats a rushed contractor visit.",
+            },
+            {
+              href: "/home-inspection-repairs/which-inspection-repairs-sellers-must-fix",
+              eyebrow: "Got an inspection report",
+              title: "How do I respond to the buyer's repair list?",
+              blurb:
+                "Sort line items into must-fix, should-fix, and won't-fix — without the agent push.",
+            },
+            {
+              href: "/tools",
+              eyebrow: "Need to buy the right tool",
+              title: "What part or tool do I actually need?",
+              blurb:
+                "Product guides matched to specific repair jobs — drain snakes, moisture meters, smoke alarms, more.",
+            },
+          ].map((c) => (
+            <Link
+              key={c.href}
+              href={c.href}
+              className="group block rounded-lg border border-ink-200 bg-white p-5 no-underline transition-all hover:border-navy-700 hover:shadow-sm"
+            >
+              <p className="text-xs font-semibold uppercase tracking-wider text-amber-700">
+                {c.eyebrow}
+              </p>
+              <p className="mt-2 font-serif text-lg text-navy-900 leading-snug group-hover:text-navy-700">
+                {c.title}
+              </p>
+              <p className="mt-2 text-sm text-ink-700 leading-relaxed">
+                {c.blurb}
+              </p>
+              <p className="mt-3 text-xs font-semibold text-navy-700 group-hover:text-navy-900">
+                Go →
+              </p>
+            </Link>
+          ))}
+        </div>
+      </Section>
 
       {/* ==============================================================
            POPULAR REPAIR DECISIONS — the primary findability section.
@@ -452,6 +540,21 @@ export default async function Home() {
             See every buying guide →
           </Link>
         </p>
+
+        {/* PrintReadyForms cross-link: subtle, contextually relevant to
+            visitors who just saw product picks and may be considering
+            hiring out. Never the primary homepage CTA — repair decisions
+            stay above this. */}
+        <div className="mt-12 max-w-3xl">
+          <PrintReadyFormsCTA
+            contextLabel="Hiring a contractor?"
+            title="Need forms to organize a repair project?"
+            description="If you're comparing quotes, tracking payments, or documenting change orders, our sister site PrintReadyForms has ready-to-use contractor and project forms that pair with FixItReal repair advice."
+            buttonText="View contractor forms"
+            href="https://www.printreadyforms.com/category/construction-contractors"
+            utmCampaign="homepage_contractor_forms"
+          />
+        </div>
       </Section>
 
       {/* ==============================================================
