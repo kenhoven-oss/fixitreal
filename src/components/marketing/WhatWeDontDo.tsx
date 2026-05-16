@@ -4,7 +4,7 @@ const items = [
   "No home warranty affiliates, ever",
   "No product reviews of tools we haven't used",
   "No AI-written content without human review",
-  "No lead-gen partner we wouldn't personally call",
+  "No claim that every contractor in a lead-gen network has been personally vetted",
   "No sponsored posts disguised as editorial",
 ];
 

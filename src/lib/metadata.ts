@@ -6,6 +6,17 @@ type BuildMetadataInput = {
   title?: string;
   description?: string;
   path?: string;
+  /**
+   * Override the canonical URL. Use when this page intentionally
+   * consolidates ranking signals into a different URL — for example, a
+   * decision-tool page (/tools/diy-or-hire/<slug>) whose long-form
+   * coverage lives at a different article URL (/diy-or-hire/<slug>).
+   *
+   * Must be a site-relative absolute path (starting with "/"). When
+   * provided, alternates.canonical and the hreflang entries point at
+   * this path; alternates.openGraph.url stays on `path` for sharing.
+   */
+  canonicalPath?: string;
   noIndex?: boolean;
   type?: "website" | "article";
   publishedAt?: string;
@@ -19,6 +30,7 @@ export function buildMetadata({
   title,
   description,
   path = "/",
+  canonicalPath,
   noIndex = false,
   type = "website",
   publishedAt,
@@ -30,6 +42,9 @@ export function buildMetadata({
   const fullTitle = title ? `${title} | ${site.name}` : `${site.name} — ${site.tagline}`;
   const desc = description ?? site.description;
   const url = new URL(path, env.siteUrl).toString();
+  const canonicalUrl = canonicalPath
+    ? new URL(canonicalPath, env.siteUrl).toString()
+    : url;
   // Default OG image falls back to the root /opengraph-image dynamic endpoint
   // so every page has a branded social card even without a per-route override.
   const ogImage = image
@@ -41,14 +56,14 @@ export function buildMetadata({
     title: fullTitle,
     description: desc,
     alternates: {
-      canonical: url,
+      canonical: canonicalUrl,
       // Site is US-focused (cost ranges in USD, US code references, US-trade
       // rates). Declaring en-us + x-default tells Search the regional variant
       // precisely and keeps us future-proof if any international variants
       // are ever added.
       languages: {
-        "en-us": url,
-        "x-default": url,
+        "en-us": canonicalUrl,
+        "x-default": canonicalUrl,
       },
       types: {
         "application/rss+xml": [
