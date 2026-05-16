@@ -30,8 +30,8 @@ export function AffiliateDisclosure({ variant = "inline" }: AffiliateDisclosureP
   return (
     <p className="my-4 text-xs text-ink-600 leading-relaxed">
       <strong className="font-semibold text-ink-800">Disclosure:</strong>{" "}
-      This page may contain affiliate links. If you buy something through one,
-      we may earn a small commission at no extra cost to you. See our{" "}
+      This page contains affiliate links. As an Amazon Associate, I earn from
+      qualifying purchases — at no extra cost to you. See our{" "}
       <Link
         href="/affiliate-disclosure"
         className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"

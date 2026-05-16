@@ -13,6 +13,7 @@ export const site = {
     { href: "/diy-or-hire", label: "DIY or Hire" },
     { href: "/costs", label: "Costs" },
     { href: "/advice", label: "Advice" },
+    { href: "/home-inspection-repairs", label: "Inspection Repairs" },
     { href: "/tools", label: "Tools" },
     { href: "/about", label: "About" },
   ] as const,
@@ -34,6 +35,13 @@ export const site = {
       href: "/advice",
       name: "Honest Advice",
       description: "Contractor vetting, pricing red flags, and consumer-first guidance.",
+    },
+    {
+      slug: "home-inspection-repairs",
+      href: "/home-inspection-repairs",
+      name: "Inspection Repairs",
+      description:
+        "What sellers must fix, what buyers can ask for, and how to handle post-inspection negotiations.",
     },
   ] as const,
   social: {

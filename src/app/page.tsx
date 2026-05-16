@@ -271,9 +271,9 @@ export default async function Home() {
       )}
 
       {/* ==============================================================
-           PILLARS — three entry points for category browsing, for visitors
-           whose specific article wasn't in the Popular decisions above.
-           Border-t creates a soft divider between the two bg-white sections.
+           PILLARS — primary entry points for category browsing.
+           Auto-renders site.pillars so adding a new pillar appears here.
+           Eyebrow labels map per slug; falls back to "Browse" for safety.
            ============================================================== */}
       <Section padding="xl" className="bg-white border-t border-ink-100">
         <div className="max-w-2xl">
@@ -281,26 +281,47 @@ export default async function Home() {
             Or browse by category
           </p>
           <h2 className="mt-2 font-serif text-3xl md:text-4xl text-navy-900 leading-tight">
-            Three questions every homeowner asks. Three places to find the
-            answer.
+            The four questions every homeowner needs answered.
           </h2>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {site.pillars.map((p) => (
-            <Card
-              key={p.slug}
-              href={p.href}
-              eyebrow={
-                p.slug === "diy-or-hire"
-                  ? "Decide"
-                  : p.slug === "costs"
-                    ? "Budget"
-                    : "Vet"
-              }
-              title={p.name}
-              description={p.description}
-            />
-          ))}
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {site.pillars.map((p) => {
+            const eyebrowMap: Record<string, string> = {
+              "diy-or-hire": "Decide",
+              costs: "Budget",
+              advice: "Vet",
+              "home-inspection-repairs": "Negotiate",
+            };
+            return (
+              <Card
+                key={p.slug}
+                href={p.href}
+                eyebrow={eyebrowMap[p.slug] ?? "Browse"}
+                title={p.name}
+                description={p.description}
+              />
+            );
+          })}
+        </div>
+        <div className="mt-8 rounded-md bg-amber-50 border border-amber-200 px-5 py-4 text-sm text-ink-800 leading-relaxed">
+          <strong className="font-semibold text-navy-900">
+            Buying or selling?
+          </strong>{" "}
+          Start with{" "}
+          <Link
+            href="/home-inspection-repairs"
+            className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+          >
+            inspection-report repair guidance
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="/contractor-red-flags"
+            className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+          >
+            contractor red flags
+          </Link>{" "}
+          before signing anything.
         </div>
       </Section>
 
