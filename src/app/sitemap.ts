@@ -29,6 +29,7 @@ const staticRoutes: Route[] = [
   { path: "/about/contact", priority: 0.3, changeFrequency: "yearly" },
   { path: "/about/authors/ken-hoven", priority: 0.4, changeFrequency: "yearly" },
   { path: "/affiliate-disclosure", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/corrections", priority: 0.3, changeFrequency: "yearly" },
   { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },
   { path: "/terms", priority: 0.2, changeFrequency: "yearly" },
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },

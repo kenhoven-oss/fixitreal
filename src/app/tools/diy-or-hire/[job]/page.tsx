@@ -6,6 +6,7 @@ import { VerdictBanner } from "@/components/tool/VerdictBanner";
 import { CostComparisonTable } from "@/components/tool/CostComparisonTable";
 import { FaqBlock } from "@/components/content/FaqBlock";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
+import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
@@ -137,6 +138,19 @@ export default async function JobResultPage({ params }: { params: Params }) {
             <p className="mt-3 text-ink-800 leading-relaxed">{j.ifYouHire}</p>
           </div>
         </section>
+
+        {/* PrintReadyForms cross-link for jobs where hiring is a realistic
+            path. Skipped on clear-DIY-recommended jobs to avoid noise. */}
+        {j.verdict !== "diy-recommended" && (
+          <PrintReadyFormsCTA
+            contextLabel="Hiring it out?"
+            title="Get the quote in writing before approving."
+            description="Before approving a contractor estimate, make sure it itemizes labor, parts, exclusions, disposal fees, and how change orders are handled. A side-by-side comparison sheet exposes vague line items fast."
+            buttonText="Compare contractor estimates"
+            href="https://www.printreadyforms.com/product/contractor-estimate-quote-pack"
+            utmCampaign={`job_${j.slug}`}
+          />
+        )}
 
         <section className="mt-10">
           <h2 className="font-serif text-2xl text-navy-900">Permit &amp; code</h2>

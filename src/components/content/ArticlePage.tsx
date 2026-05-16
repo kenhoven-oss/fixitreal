@@ -14,7 +14,13 @@ import { AffiliateDisclosure } from "@/components/content/AffiliateDisclosure";
 import { KeyTakeaway } from "@/components/content/KeyTakeaway";
 import { CostEstimateBox } from "@/components/content/CostEstimateBox";
 import { SafetyWarning } from "@/components/content/SafetyWarning";
+import { KensTake } from "@/components/content/KensTake";
+import { FairPriceChecker } from "@/components/content/FairPriceChecker";
+import { DIYorHireVerdict } from "@/components/content/DIYorHireVerdict";
+import { ContractorRedFlagsBlock } from "@/components/content/ContractorRedFlagsBlock";
+import { ArticleProof } from "@/components/content/ArticleProof";
 import { ChecklistCTA } from "@/components/marketing/ChecklistCTA";
+import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import { jsonLdScript, articleSchema, howToSchema } from "@/lib/jsonld";
@@ -45,7 +51,13 @@ const mdxComponents = {
   KeyTakeaway,
   CostEstimateBox,
   SafetyWarning,
+  KensTake,
+  FairPriceChecker,
+  DIYorHireVerdict,
+  ContractorRedFlagsBlock,
+  ArticleProof,
   ChecklistCTA,
+  PrintReadyFormsCTA,
   a: ({ href, children }: { href?: string; children?: React.ReactNode }) =>
     href && /^https?:/.test(href) ? (
       <ExternalLink href={href}>{children}</ExternalLink>
