@@ -83,12 +83,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: r.priority,
   }));
 
-  const toolEntries: MetadataRoute.Sitemap = getAllJobSlugs().map((slug) => ({
-    url: fullUrl(`/tools/diy-or-hire/${slug}`),
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.75,
-  }));
+  // Exclude job slugs that 301 redirect to /diy-or-hire/<article> per
+  // next.config.ts. Sitemaps should list canonical URLs only; including a
+  // redirect source wastes Google's crawl budget and can suppress the
+  // canonical destination in mixed-signal cases.
+  const redirectedJobSlugs = new Set([
+    "replace-toilet",
+    "replace-garbage-disposal",
+    "install-ceiling-fan",
+    "install-dishwasher",
+    "install-garage-door-opener",
+  ]);
+  const toolEntries: MetadataRoute.Sitemap = getAllJobSlugs()
+    .filter((slug) => !redirectedJobSlugs.has(slug))
+    .map((slug) => ({
+      url: fullUrl(`/tools/diy-or-hire/${slug}`),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    }));
 
   const articles = await loadAllArticles();
   const articleEntries: MetadataRoute.Sitemap = articles.map((a) => ({

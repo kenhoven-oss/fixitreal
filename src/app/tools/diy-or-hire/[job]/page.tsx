@@ -19,8 +19,25 @@ import { kenHoven } from "@/content/authors/ken-hoven";
 
 type Params = Promise<{ job: string }>;
 
+/**
+ * Slugs that 301 redirect to their corresponding /diy-or-hire/<article>
+ * via next.config.ts. We exclude them from generateStaticParams so the
+ * build doesn't waste cycles prerendering pages that just get redirected
+ * at the edge. The runtime page handler also notFound()s them as a
+ * defense-in-depth check in case the redirect ever misfires.
+ */
+const REDIRECTED_JOB_SLUGS = new Set([
+  "replace-toilet",
+  "replace-garbage-disposal",
+  "install-ceiling-fan",
+  "install-dishwasher",
+  "install-garage-door-opener",
+]);
+
 export function generateStaticParams() {
-  return getAllJobSlugs().map((job) => ({ job }));
+  return getAllJobSlugs()
+    .filter((job) => !REDIRECTED_JOB_SLUGS.has(job))
+    .map((job) => ({ job }));
 }
 
 export async function generateMetadata({ params }: { params: Params }) {

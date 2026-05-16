@@ -4,8 +4,19 @@ import { getJob, getAllJobSlugs } from "@/content/jobs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+/** Mirrors the page.tsx + next.config.ts redirect list — keep in sync. */
+const REDIRECTED_JOB_SLUGS = new Set([
+  "replace-toilet",
+  "replace-garbage-disposal",
+  "install-ceiling-fan",
+  "install-dishwasher",
+  "install-garage-door-opener",
+]);
+
 export function generateStaticParams() {
-  return getAllJobSlugs().map((job) => ({ job }));
+  return getAllJobSlugs()
+    .filter((job) => !REDIRECTED_JOB_SLUGS.has(job))
+    .map((job) => ({ job }));
 }
 
 export default async function JobOgImage({
