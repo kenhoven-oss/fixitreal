@@ -3,7 +3,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Card } from "@/components/ui/Card";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
-import { jsonLdScript, collectionPageSchema } from "@/lib/jsonld";
+import { jsonLdScript, collectionPageSchema, itemListSchema } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
@@ -83,7 +83,7 @@ export default async function CostsHub() {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(
+        dangerouslySetInnerHTML={jsonLdScript([
           collectionPageSchema({
             name: "Home repair costs: honest breakdowns",
             description:
@@ -93,8 +93,18 @@ export default async function CostsHub() {
               name: a.frontmatter.title,
               url: a.path,
             })),
-          })
-        )}
+          }),
+          itemListSchema({
+            name: "FixItReal home repair cost guides",
+            description:
+              "Every FixItReal cost guide with current 2026 ranges, math, and sources.",
+            url: "/costs",
+            items: articles.map((a) => ({
+              name: a.frontmatter.title,
+              url: a.path,
+            })),
+          }),
+        ])}
       />
     </>
   );

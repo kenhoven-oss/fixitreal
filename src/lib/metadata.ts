@@ -50,6 +50,11 @@ export function buildMetadata({
         "en-us": url,
         "x-default": url,
       },
+      types: {
+        "application/rss+xml": [
+          { url: new URL("/feed.xml", env.siteUrl).toString(), title: `${site.name} — RSS feed` },
+        ],
+      },
     },
     robots: noIndex ? { index: false, follow: false } : undefined,
     verification: site.verification.google

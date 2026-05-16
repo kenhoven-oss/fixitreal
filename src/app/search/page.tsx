@@ -25,7 +25,14 @@ const pillarLabels: Record<string, string> = {
   "diy-or-hire": "DIY or Hire",
 };
 
-export default async function SearchPage() {
+type SearchParams = Promise<{ q?: string }>;
+
+export default async function SearchPage({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}) {
+  const { q = "" } = await searchParams;
   const articles = await loadAllArticles();
 
   // All indexable, canonical, publicly-reachable pages on the site.
@@ -79,7 +86,7 @@ export default async function SearchPage() {
         </div>
 
         <div className="mt-10">
-          <SearchClient index={index} />
+          <SearchClient index={index} initialQuery={q} />
         </div>
       </Section>
     </>

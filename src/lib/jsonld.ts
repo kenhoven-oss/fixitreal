@@ -25,8 +25,19 @@ export function websiteSchema(): JsonLd {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: site.name,
+    alternateName: site.domain,
     url: env.siteUrl,
     description: site.description,
+    inLanguage: "en-US",
+    publisher: { "@type": "Organization", name: site.name, url: env.siteUrl },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${env.siteUrl}/search?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 }
 
@@ -91,6 +102,11 @@ type ArticleInput = {
 };
 
 export function articleSchema(a: ArticleInput): JsonLd {
+  // Default image: per-route dynamic OG endpoint. Every Article entity always
+  // has an image — required for Google rich-result eligibility on Article.
+  const imageUrl = a.image
+    ? absoluteUrl(a.image)
+    : `${absoluteUrl(a.url)}/opengraph-image`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -98,6 +114,8 @@ export function articleSchema(a: ArticleInput): JsonLd {
     description: a.description,
     mainEntityOfPage: absoluteUrl(a.url),
     url: absoluteUrl(a.url),
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
     datePublished: a.datePublished,
     dateModified: a.dateModified ?? a.datePublished,
     author: {
@@ -124,8 +142,19 @@ export function articleSchema(a: ArticleInput): JsonLd {
       url: env.siteUrl,
       logo: { "@type": "ImageObject", url: absoluteUrl("/FIXitREALlogo.png") },
     },
-    ...(a.image ? { image: absoluteUrl(a.image) } : {}),
+    image: {
+      "@type": "ImageObject",
+      url: imageUrl,
+      width: 1200,
+      height: 630,
+    },
     ...(a.articleSection ? { articleSection: a.articleSection } : {}),
+    // Speakable hints help Google Assistant / voice search read the right
+    // passages aloud. We mark the H1 and the article description block.
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".article-lede"],
+    },
   };
 }
 
@@ -217,6 +246,37 @@ export function collectionPageSchema(c: CollectionInput): JsonLd {
           })),
         }
       : {}),
+  };
+}
+
+/* -------------------- ItemList -------------------- */
+
+type ItemListInput = {
+  name: string;
+  description?: string;
+  url: string;
+  items: Array<{ url: string; name?: string }>;
+};
+
+/**
+ * ItemList enrichment for collection pages. Google uses this to enable
+ * carousel rich results on category hubs and to better understand which
+ * articles belong to the collection in what order.
+ */
+export function itemListSchema(input: ItemListInput): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: input.name,
+    ...(input.description ? { description: input.description } : {}),
+    url: absoluteUrl(input.url),
+    numberOfItems: input.items.length,
+    itemListElement: input.items.map((it, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      url: absoluteUrl(it.url),
+      ...(it.name ? { name: it.name } : {}),
+    })),
   };
 }
 

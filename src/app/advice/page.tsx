@@ -3,7 +3,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Card } from "@/components/ui/Card";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
-import { jsonLdScript, collectionPageSchema } from "@/lib/jsonld";
+import { jsonLdScript, collectionPageSchema, itemListSchema } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
@@ -81,7 +81,7 @@ export default async function AdviceHub() {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(
+        dangerouslySetInnerHTML={jsonLdScript([
           collectionPageSchema({
             name: "Honest home repair advice",
             description:
@@ -91,8 +91,18 @@ export default async function AdviceHub() {
               name: a.frontmatter.title,
               url: a.path,
             })),
-          })
-        )}
+          }),
+          itemListSchema({
+            name: "FixItReal honest home repair advice articles",
+            description:
+              "Every consumer-advocate advice article on FixItReal, newest first.",
+            url: "/advice",
+            items: articles.map((a) => ({
+              name: a.frontmatter.title,
+              url: a.path,
+            })),
+          }),
+        ])}
       />
     </>
   );

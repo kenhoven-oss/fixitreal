@@ -4,7 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Card } from "@/components/ui/Card";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
-import { jsonLdScript, collectionPageSchema } from "@/lib/jsonld";
+import { jsonLdScript, collectionPageSchema, itemListSchema } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
@@ -83,7 +83,7 @@ export default async function DiyOrHireHub() {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(
+        dangerouslySetInnerHTML={jsonLdScript([
           collectionPageSchema({
             name: "DIY or Hire: honest home repair decisions",
             description:
@@ -93,8 +93,18 @@ export default async function DiyOrHireHub() {
               name: a.frontmatter.title,
               url: a.path,
             })),
-          })
-        )}
+          }),
+          itemListSchema({
+            name: "FixItReal DIY-or-hire decision guides",
+            description:
+              "Every DIY-or-hire decision guide on FixItReal with cost comparison and safety notes.",
+            url: "/diy-or-hire",
+            items: articles.map((a) => ({
+              name: a.frontmatter.title,
+              url: a.path,
+            })),
+          }),
+        ])}
       />
     </>
   );

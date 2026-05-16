@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, personSchema } from "@/lib/jsonld";
+import { env } from "@/lib/env";
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { loadAllArticles } from "@/lib/articles-loader";
 
@@ -223,16 +224,24 @@ export default async function AuthorProfile({ params }: { params: Params }) {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(
-          personSchema({
-            name: author.name,
-            url: author.url,
-            image: author.photo,
-            jobTitle: author.role,
+        dangerouslySetInnerHTML={jsonLdScript([
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            url: `${env.siteUrl}${author.url}`,
+            name: `${author.name} — ${author.role}`,
             description: author.shortBio,
-            ...(sameAs.length ? { sameAs } : {}),
-          })
-        )}
+            dateModified: new Date().toISOString().slice(0, 10),
+            mainEntity: personSchema({
+              name: author.name,
+              url: author.url,
+              image: author.photo,
+              jobTitle: author.role,
+              description: author.bio,
+              ...(sameAs.length ? { sameAs } : {}),
+            }),
+          },
+        ])}
       />
     </>
   );

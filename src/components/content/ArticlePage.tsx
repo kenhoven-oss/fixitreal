@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Prose } from "@/components/content/Prose";
@@ -11,11 +13,7 @@ import { Citation } from "@/components/content/Citation";
 import { AffiliateDisclosure } from "@/components/content/AffiliateDisclosure";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { ExternalLink } from "@/components/ui/ExternalLink";
-import {
-  jsonLdScript,
-  articleSchema,
-  breadcrumbSchema,
-} from "@/lib/jsonld";
+import { jsonLdScript, articleSchema } from "@/lib/jsonld";
 import type { LoadedArticle } from "@/lib/articles-loader";
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { site } from "@/content/site";
@@ -73,7 +71,10 @@ export function ArticlePage({ article }: ArticlePageProps) {
         <h1 className="mt-3 font-serif text-4xl md:text-5xl text-navy-900 leading-tight">
           {frontmatter.title}
         </h1>
-        <p className="mt-4 text-sm text-ink-500 flex flex-wrap gap-x-4 gap-y-1">
+        <p className="article-lede mt-5 text-lg text-ink-700 leading-relaxed max-w-3xl">
+          {frontmatter.description}
+        </p>
+        <p className="mt-5 text-sm text-ink-500 flex flex-wrap gap-x-4 gap-y-1">
           <span>
             By{" "}
             <Link href={kenHoven.url} className="no-underline hover:text-navy-900">
@@ -118,7 +119,24 @@ export function ArticlePage({ article }: ArticlePageProps) {
             <MDXRemote
               source={content}
               components={mdxComponents}
-              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+              options={{
+                mdxOptions: {
+                  remarkPlugins: [remarkGfm],
+                  rehypePlugins: [
+                    rehypeSlug,
+                    [
+                      rehypeAutolinkHeadings,
+                      {
+                        behavior: "wrap",
+                        properties: {
+                          className: "heading-anchor",
+                          ariaLabel: "Link to this section",
+                        },
+                      },
+                    ],
+                  ],
+                },
+              }}
             />
           </Prose>
         </div>
@@ -194,7 +212,6 @@ export function ArticlePage({ article }: ArticlePageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript([
-          breadcrumbSchema(breadcrumbItems),
           articleSchema({
             headline: frontmatter.title,
             description: frontmatter.description,
