@@ -35,11 +35,16 @@ export default function AffiliateDisclosurePage() {
           <h2 className="font-serif text-2xl text-navy-900 mt-8">How we earn</h2>
           <ul className="list-disc pl-6 space-y-3">
             <li>
-              <strong>Home-services lead-gen.</strong> On some cost guides and
-              decision pages, you&apos;ll see a &ldquo;get a quote&rdquo; form
-              powered by a lead-gen partner (Modernize, Networx, or similar).
-              When you request a quote through that form, we earn a referral
-              fee from the partner — not from the contractor you work with.
+              <strong>Home-services lead-gen (under evaluation).</strong> We
+              may test carefully selected lead-generation partners — the
+              forms where you enter your project details and a network sends
+              matching contractors. <strong>We do not recommend any
+              contractor simply because they came through a partner
+              network.</strong> If a partner does not meet our standards for
+              lead quality, contractor vetting, or homeowner experience, we
+              remove them. Any &ldquo;get a quote&rdquo; form on this site,
+              when present, earns FixItReal a referral fee from the partner
+              — not from the contractor you ultimately hire.
             </li>
             <li>
               <strong>Affiliate links.</strong> Some articles link to products
@@ -66,8 +71,13 @@ export default function AffiliateDisclosurePage() {
             <li>
               <strong>Predatory lead-gen aggregators.</strong> Some lead-gen
               partners have well-documented complaints from contractors about
-              lead quality and pricing. We only work with partners we&apos;d
-              personally use.
+              lead quality and pricing. We only test partners that meet our
+              minimum standards, and we remove any that don&apos;t hold up.
+              <em>
+                Being matched through a partner network is never on its own a
+                recommendation — homeowners still need to vet each contractor
+                directly.
+              </em>
             </li>
             <li>
               <strong>Paid editorial.</strong> We don&apos;t sell article

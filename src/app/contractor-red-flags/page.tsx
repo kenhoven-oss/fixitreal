@@ -11,6 +11,7 @@ import {
   faqSchema,
 } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
+import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 
 export const metadata = buildMetadata({
   title: "Contractor red flags — how to spot a bad quote, a bad pro, a bad job",
@@ -189,6 +190,19 @@ export default async function ContractorRedFlagsPage() {
           </p>
         </Section>
       )}
+
+      <Section padding="md" size="lg">
+        <div className="max-w-3xl">
+          <PrintReadyFormsCTA
+            contextLabel="Comparing contractor quotes?"
+            title="Use a written estimate worksheet."
+            description="A worksheet compares scope, price, exclusions, payment terms, and warranty side by side — the only way to spot the quote that looks low but skips materials, permits, or cleanup."
+            buttonText="View contractor estimate forms"
+            href="https://www.printreadyforms.com/product/contractor-estimate-quote-pack"
+            utmCampaign="contractor_red_flags"
+          />
+        </div>
+      </Section>
 
       <Section padding="md" size="lg">
         <h2 className="font-serif text-2xl text-navy-900">

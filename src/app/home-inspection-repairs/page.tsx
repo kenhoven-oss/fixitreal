@@ -3,6 +3,8 @@ import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Card } from "@/components/ui/Card";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
+import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
+import { ChecklistCTA } from "@/components/marketing/ChecklistCTA";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
@@ -146,6 +148,24 @@ export default async function HomeInspectionRepairsHub() {
             </div>
           ))}
         </dl>
+      </Section>
+
+      <Section padding="md" size="lg">
+        <div className="grid gap-6 md:grid-cols-2">
+          <ChecklistCTA
+            title="Home Inspection Repair Negotiation Checklist"
+            description="Separate safety issues, reasonable repairs, credits, and buyer overreach before responding to an inspection report. Free printable."
+            ctaText="Get the inspection checklist →"
+          />
+          <PrintReadyFormsCTA
+            contextLabel="Tracking inspection items?"
+            title="Selling a house? Track repair requests carefully."
+            description="Document each inspection item, buyer request, estimated cost, seller response, credit, and final agreement on one form — so nothing slips at closing."
+            buttonText="View repair documentation forms"
+            href="https://www.printreadyforms.com/category/construction-contractors"
+            utmCampaign="home_inspection_repairs"
+          />
+        </div>
       </Section>
 
       <Section padding="lg" size="lg">

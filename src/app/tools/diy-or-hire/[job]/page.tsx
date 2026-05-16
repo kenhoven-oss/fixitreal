@@ -32,10 +32,23 @@ export async function generateMetadata({ params }: { params: Params }) {
   const desc = j.reasoning.length > 155
     ? j.reasoning.slice(0, 152).replace(/\s\S*$/, "") + "…"
     : j.reasoning;
+
+  // Canonicalize this decision-tool page to the long-form article when one
+  // exists at /diy-or-hire/<slug>. Both pages exist intentionally (the tool
+  // is interactive, the article is editorial), but Google should
+  // consolidate ranking signals into the article — it's the stronger,
+  // longer-form result. Job pages without a matching article stay self-
+  // canonical.
+  const matchingArticleSlug = j.relatedArticles.decision;
+  const canonicalPath = matchingArticleSlug
+    ? `/diy-or-hire/${matchingArticleSlug}`
+    : undefined;
+
   return buildMetadata({
     title: j.longTitle,
     description: desc,
     path: `/tools/diy-or-hire/${j.slug}`,
+    canonicalPath,
     type: "article",
     publishedAt: j.lastReviewed,
     updatedAt: j.lastReviewed,
