@@ -231,13 +231,24 @@ export default async function AuthorProfile({ params }: { params: Params }) {
             url: `${env.siteUrl}${author.url}`,
             name: `${author.name} — ${author.role}`,
             description: author.shortBio,
-            dateModified: new Date().toISOString().slice(0, 10),
+            dateModified:
+              authoredArticles
+                .map((a) => a.frontmatter.updatedAt ?? a.frontmatter.publishedAt)
+                .sort()
+                .at(-1) ?? new Date().toISOString().slice(0, 10),
+            hasPart: authoredArticles.slice(0, 12).map((a) => ({
+              "@type": "Article",
+              name: a.frontmatter.title,
+              url: `${env.siteUrl}${a.path}`,
+            })),
             mainEntity: personSchema({
               name: author.name,
               url: author.url,
               image: author.photo,
               jobTitle: author.role,
               description: author.bio,
+              knowsAbout: author.expertiseAreas,
+              worksFor: { name: "FixItReal", url: env.siteUrl },
               ...(sameAs.length ? { sameAs } : {}),
             }),
           },

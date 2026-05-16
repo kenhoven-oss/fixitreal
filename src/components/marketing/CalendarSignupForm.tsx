@@ -127,6 +127,8 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
             minLength={2}
             placeholder="First name"
             autoComplete="given-name"
+            aria-invalid={status === "error" ? true : undefined}
+            aria-describedby={status === "error" ? "newsletter-form-error" : undefined}
             className="w-full rounded-md border border-ink-300 bg-white px-4 py-2.5 text-sm text-ink-900 outline-none focus:border-navy-500"
           />
         </div>
@@ -141,6 +143,8 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
             required
             placeholder="you@example.com"
             autoComplete="email"
+            aria-invalid={status === "error" ? true : undefined}
+            aria-describedby={status === "error" ? "newsletter-form-error" : undefined}
             className="w-full rounded-md border border-ink-300 bg-white px-4 py-2.5 text-sm text-ink-900 outline-none focus:border-navy-500"
           />
         </div>
@@ -149,13 +153,21 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
       <button
         type="submit"
         disabled={status === "submitting"}
+        aria-busy={status === "submitting" ? true : undefined}
         className="mt-3 w-full sm:w-auto inline-flex items-center justify-center rounded-md bg-navy-900 px-6 py-2.5 text-sm font-semibold text-white no-underline hover:bg-navy-800 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {status === "submitting" ? "Sending…" : "Email me the calendar →"}
       </button>
 
       {error && (
-        <p className="mt-2 text-sm text-red-700">{error}</p>
+        <p
+          id="newsletter-form-error"
+          role="alert"
+          aria-live="polite"
+          className="mt-2 text-sm text-red-700"
+        >
+          {error}
+        </p>
       )}
 
       <p className="mt-3 text-xs text-ink-500 leading-relaxed">

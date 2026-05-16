@@ -56,7 +56,22 @@ export function buildMetadata({
         ],
       },
     },
-    robots: noIndex ? { index: false, follow: false } : undefined,
+    robots: noIndex
+      ? { index: false, follow: false }
+      : {
+          index: true,
+          follow: true,
+          // Allow Google Image Search; allow long snippet and large image
+          // previews in SERP rich results. These flags don't change ranking
+          // but they unlock Google's richest result types.
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+          },
+        },
     verification: site.verification.google
       ? { google: site.verification.google }
       : undefined,
