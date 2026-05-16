@@ -9,6 +9,7 @@ import { WhatWeDontDo } from "@/components/marketing/WhatWeDontDo";
 import { SeasonalChecklist } from "@/components/marketing/SeasonalChecklist";
 import { CategoryGrid } from "@/components/marketing/CategoryGrid";
 import { buildMetadata } from "@/lib/metadata";
+import { jsonLdScript, itemListSchema } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 import { kenHoven } from "@/content/authors/ken-hoven";
 
@@ -552,6 +553,22 @@ export default async function Home() {
       <Section padding="xl" className="bg-white">
         <NewsletterBlock />
       </Section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(
+          itemListSchema({
+            name: "FixItReal popular home repair decisions",
+            description:
+              "The repair decisions homeowners arrive at FixItReal most often trying to make.",
+            url: "/",
+            items: featuredDecisions.map((a) => ({
+              name: a.frontmatter.title,
+              url: a.path,
+            })),
+          })
+        )}
+      />
     </>
   );
 }

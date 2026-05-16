@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     updatedAt: article.frontmatter.updatedAt,
     authorName: kenHoven.name,
     section: "Repair Costs",
+    image: `${article.path}/opengraph-image`,
   });
 }
 

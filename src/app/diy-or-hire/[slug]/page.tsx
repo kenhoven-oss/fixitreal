@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     updatedAt: article.frontmatter.updatedAt,
     authorName: kenHoven.name,
     section: "DIY or Hire",
+    image: `${article.path}/opengraph-image`,
   });
 }
 
