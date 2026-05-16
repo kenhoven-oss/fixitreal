@@ -14,6 +14,7 @@ export const site = {
     { href: "/costs", label: "Costs" },
     { href: "/advice", label: "Advice" },
     { href: "/home-inspection-repairs", label: "Inspection Repairs" },
+    { href: "/senior-home-safety", label: "Senior Safety" },
     { href: "/tools", label: "Tools" },
     { href: "/about", label: "About" },
   ] as const,
@@ -42,6 +43,13 @@ export const site = {
       name: "Inspection Repairs",
       description:
         "What sellers must fix, what buyers can ask for, and how to handle post-inspection negotiations.",
+    },
+    {
+      slug: "senior-home-safety",
+      href: "/senior-home-safety",
+      name: "Senior Home Safety",
+      description:
+        "Practical home modifications to reduce fall risk and make a home easier to navigate as parents age.",
     },
   ] as const,
   social: {

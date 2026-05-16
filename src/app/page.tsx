@@ -120,16 +120,18 @@ export default async function Home() {
         <div className="relative z-10 mx-auto max-w-6xl px-6 py-24 md:py-32 grid gap-10 md:grid-cols-12">
           <div className="md:col-span-9 lg:col-span-7">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-700">
-              Consumer advocate · Home repair
+              The homeowner decision engine
             </p>
             <h1 className="mt-5 font-serif text-5xl md:text-7xl leading-[1.04] tracking-tight text-navy-900">
-              Trusted home repair guidance{" "}
-              <span className="text-amber-700">for real homeowners</span>
+              Decide what to fix,{" "}
+              <span className="text-amber-700">what it should cost,</span> and
+              what actually matters.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-ink-700 max-w-2xl leading-relaxed">
-              Step-by-step repair guides, seasonal maintenance tips, and
-              practical advice to help you care for your home with confidence —
-              written by an independent advocate, not a contractor.
+              FixItReal helps homeowners decide what to repair, what to hire
+              out, what inspection items matter, what contractor red flags to
+              watch for, and which home repair products are worth buying — from
+              an independent editor with no warranty advertisers.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
@@ -281,16 +283,17 @@ export default async function Home() {
             Or browse by category
           </p>
           <h2 className="mt-2 font-serif text-3xl md:text-4xl text-navy-900 leading-tight">
-            The four questions every homeowner needs answered.
+            Every homeowner decision, in one place.
           </h2>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {site.pillars.map((p) => {
             const eyebrowMap: Record<string, string> = {
               "diy-or-hire": "Decide",
               costs: "Budget",
               advice: "Vet",
               "home-inspection-repairs": "Negotiate",
+              "senior-home-safety": "Age in place",
             };
             return (
               <Card
