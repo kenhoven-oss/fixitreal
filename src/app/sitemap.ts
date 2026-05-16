@@ -18,6 +18,8 @@ const staticRoutes: Route[] = [
   { path: "/home-inspection-repairs", priority: 0.9, changeFrequency: "weekly" },
   { path: "/contractor-red-flags", priority: 0.85, changeFrequency: "monthly" },
   { path: "/senior-home-safety", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/emergency-repairs", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/what-is-this", priority: 0.85, changeFrequency: "weekly" },
   { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" },
   { path: "/tools", priority: 0.8, changeFrequency: "monthly" },
   { path: "/tools/diy-or-hire", priority: 0.85, changeFrequency: "monthly" },

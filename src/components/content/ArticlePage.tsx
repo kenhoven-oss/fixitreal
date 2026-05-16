@@ -11,6 +11,10 @@ import { PullQuote } from "@/components/content/PullQuote";
 import { QuickAnswer } from "@/components/content/QuickAnswer";
 import { Citation } from "@/components/content/Citation";
 import { AffiliateDisclosure } from "@/components/content/AffiliateDisclosure";
+import { KeyTakeaway } from "@/components/content/KeyTakeaway";
+import { CostEstimateBox } from "@/components/content/CostEstimateBox";
+import { SafetyWarning } from "@/components/content/SafetyWarning";
+import { ChecklistCTA } from "@/components/marketing/ChecklistCTA";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import { jsonLdScript, articleSchema, howToSchema } from "@/lib/jsonld";
@@ -30,12 +34,18 @@ const pillarLabel: Record<string, string> = {
   advice: "Honest Advice",
   "home-inspection-repairs": "Inspection Repairs",
   "senior-home-safety": "Senior Home Safety",
+  "emergency-repairs": "Emergency Repairs",
+  "what-is-this": "What Is This?",
 };
 
 const mdxComponents = {
   PullQuote,
   QuickAnswer,
   Citation,
+  KeyTakeaway,
+  CostEstimateBox,
+  SafetyWarning,
+  ChecklistCTA,
   a: ({ href, children }: { href?: string; children?: React.ReactNode }) =>
     href && /^https?:/.test(href) ? (
       <ExternalLink href={href}>{children}</ExternalLink>
