@@ -37,6 +37,26 @@ export const articleFrontmatterSchema = z.object({
   relatedAdvice: z.array(z.string()).optional(),
   relatedJob: z.string().optional(),
 
+  /**
+   * Generic cross-pillar related articles. Renders in the article's
+   * auto-Related section alongside relatedDecision/relatedCost/etc.
+   * Use this when linking to articles outside the four original pillars
+   * (e.g. home-inspection-repairs, senior-home-safety, emergency-repairs,
+   * what-is-this) or when you need to surface arbitrary cross-pillar
+   * relationships beyond what the typed shortcuts express.
+   *
+   * Path must be an absolute site-relative path starting with "/".
+   * Label is optional — falls back to a humanized slug.
+   */
+  related: z
+    .array(
+      z.object({
+        path: z.string().regex(/^\/[a-z0-9/-]+$/, "must be absolute site-relative path"),
+        label: z.string().min(3).max(120).optional(),
+      })
+    )
+    .optional(),
+
   /* Trust requirements */
   citations: z
     .array(z.object({ label: z.string().min(3), url: z.string().url() }))
