@@ -8,6 +8,7 @@ const trustLinks = [
   { href: "/about/methodology", label: "Methodology" },
   { href: "/about/contact", label: "Contact" },
   { href: "/affiliate-disclosure", label: "Affiliate disclosure" },
+  { href: "/disclaimer", label: "Disclaimer" },
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },
 ];

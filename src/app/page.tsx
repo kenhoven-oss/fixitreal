@@ -286,7 +286,7 @@ export default async function Home() {
             Every homeowner decision, in one place.
           </h2>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {site.pillars.map((p) => {
             const eyebrowMap: Record<string, string> = {
               "diy-or-hire": "Decide",
@@ -294,6 +294,8 @@ export default async function Home() {
               advice: "Vet",
               "home-inspection-repairs": "Negotiate",
               "senior-home-safety": "Age in place",
+              "emergency-repairs": "Act fast",
+              "what-is-this": "Identify",
             };
             return (
               <Card

@@ -12,9 +12,10 @@ export const site = {
   nav: [
     { href: "/diy-or-hire", label: "DIY or Hire" },
     { href: "/costs", label: "Costs" },
-    { href: "/advice", label: "Advice" },
-    { href: "/home-inspection-repairs", label: "Inspection Repairs" },
+    { href: "/home-inspection-repairs", label: "Inspection" },
     { href: "/senior-home-safety", label: "Senior Safety" },
+    { href: "/contractor-red-flags", label: "Red Flags" },
+    { href: "/emergency-repairs", label: "Emergency" },
     { href: "/tools", label: "Tools" },
     { href: "/about", label: "About" },
   ] as const,
@@ -50,6 +51,20 @@ export const site = {
       name: "Senior Home Safety",
       description:
         "Practical home modifications to reduce fall risk and make a home easier to navigate as parents age.",
+    },
+    {
+      slug: "emergency-repairs",
+      href: "/emergency-repairs",
+      name: "Emergency Repairs",
+      description:
+        "What to do first when something goes badly wrong — water, electrical, gas, sewage — before the pro arrives.",
+    },
+    {
+      slug: "what-is-this",
+      href: "/what-is-this",
+      name: "What Is This?",
+      description:
+        "Identifying the unfamiliar switches, pipes, valves, vents, and small doors that come with every house.",
     },
   ] as const,
   social: {
