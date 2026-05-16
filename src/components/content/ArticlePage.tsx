@@ -309,6 +309,23 @@ export function ArticlePage({ article }: ArticlePageProps) {
                 </Link>
               </li>
             )}
+            {frontmatter.related?.map((r) => {
+              const fallbackLabel = r.path
+                .replace(/^\//, "")
+                .split("/")
+                .pop()!
+                .replace(/-/g, " ");
+              return (
+                <li key={r.path}>
+                  <Link
+                    href={r.path}
+                    className="no-underline text-navy-700 hover:text-navy-900"
+                  >
+                    → {r.label ?? fallbackLabel}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </Section>
