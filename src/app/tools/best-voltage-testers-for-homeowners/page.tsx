@@ -173,7 +173,7 @@ export default function BestVoltageTestersGuide() {
           <p>
             Anything inside the main panel beyond reading it with the cover
             on, anything with aluminum branch wiring, anything that smells
-            like burnt plastic, anything that's been near water — that's a
+            like burnt plastic, anything that&apos;s been near water — that&apos;s a
             licensed electrician&apos;s call. Testers help you be smart about
             what you touch. They do not replace training.
           </p>
@@ -194,14 +194,14 @@ export default function BestVoltageTestersGuide() {
             <strong className="text-navy-900">Safety ratings exist for a reason.</strong>{" "}
             For residential work inside the house, CAT III 600 V is the
             floor for a multimeter. The rating isn&apos;t about accuracy —
-            it's about what happens to the meter (and your hand) in a fault
+            it&apos;s about what happens to the meter (and your hand) in a fault
             condition. Buy fused leads, and inspect them for nicks before
             every use.
           </p>
           <p>
             <strong className="text-navy-900">Test what you can see.</strong>{" "}
-            If you can't visually trace a circuit from breaker to work
-            point, you don&apos;t fully know what's feeding it. Shared
+            If you can&apos;t visually trace a circuit from breaker to work
+            point, you don&apos;t fully know what&apos;s feeding it. Shared
             neutrals, multi-wire circuits, and old backfed subpanels all hide
             voltage even when a single breaker is off.
           </p>

@@ -181,7 +181,7 @@ export default function BestPlungersGuide() {
             <strong className="text-navy-900">Keep the toilet plunger and the sink plunger separate.</strong>{" "}
             Even after cleaning, nobody wants to argue about which plunger
             ended up on the kitchen counter. Buy two, store them in different
-            rooms, and label the handle with a strip of tape if it's ambiguous.
+            rooms, and label the handle with a strip of tape if it&apos;s ambiguous.
           </p>
           <p>
             <strong className="text-navy-900">An accordion plunger is a backup, not a starter.</strong>{" "}
@@ -191,7 +191,7 @@ export default function BestPlungersGuide() {
           </p>
           <p>
             <strong className="text-navy-900">Technique beats brand.</strong>{" "}
-            Warm the cup so it's pliable. Seat it straight down, not at an
+            Warm the cup so it&apos;s pliable. Seat it straight down, not at an
             angle. Push first to expel trapped air, then pull hard — the pull
             stroke is what breaks most clogs, because it rocks the blockage
             back toward you before pressure drives it out.
@@ -204,7 +204,7 @@ export default function BestPlungersGuide() {
             <p>
               Three plungers that cover the realistic range of household
               clogs. The first two belong in every house; the third is for
-              stubborn situations that a standard plunger can't move.
+              stubborn situations that a standard plunger can&apos;t move.
             </p>
           }
           products={products}
@@ -215,11 +215,11 @@ export default function BestPlungersGuide() {
         </h2>
         <div className="mt-3 space-y-4 text-ink-700 leading-relaxed">
           <p>
-            A plunger clears a single fixture that's blocked between the
+            A plunger clears a single fixture that&apos;s blocked between the
             drain and the nearest vent or trap. Once the problem is farther
-            downstream — or higher up in the vent system — plunging won't
+            downstream — or higher up in the vent system — plunging won&apos;t
             fix it, and in some cases can make the mess worse by pressurizing
-            a line that's already struggling.
+            a line that&apos;s already struggling.
           </p>
           <p>
             Call a plumber if you see any of these:
@@ -243,7 +243,7 @@ export default function BestPlungersGuide() {
               reach.
             </li>
             <li>
-              A septic system that's backed up across multiple fixtures —
+              A septic system that&apos;s backed up across multiple fixtures —
               don&apos;t plunge into a full tank.
             </li>
           </ul>
