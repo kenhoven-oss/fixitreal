@@ -50,6 +50,10 @@ type PersonInput = {
   jobTitle?: string;
   description?: string;
   sameAs?: string[];
+  /** Topics this person credibly writes about. Strong E-E-A-T signal. */
+  knowsAbout?: readonly string[] | string[];
+  /** Organization this person represents. */
+  worksFor?: { name: string; url: string };
 };
 
 export function personSchema(p: PersonInput): JsonLd {
@@ -61,6 +65,16 @@ export function personSchema(p: PersonInput): JsonLd {
     ...(p.image ? { image: absoluteUrl(p.image) } : {}),
     ...(p.jobTitle ? { jobTitle: p.jobTitle } : {}),
     ...(p.description ? { description: p.description } : {}),
+    ...(p.knowsAbout?.length ? { knowsAbout: [...p.knowsAbout] } : {}),
+    ...(p.worksFor
+      ? {
+          worksFor: {
+            "@type": "Organization",
+            name: p.worksFor.name,
+            url: p.worksFor.url,
+          },
+        }
+      : {}),
     ...(p.sameAs?.length ? { sameAs: p.sameAs } : {}),
   };
 }

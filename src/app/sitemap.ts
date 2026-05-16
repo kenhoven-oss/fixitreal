@@ -4,6 +4,7 @@ import path from "node:path";
 import { env } from "@/lib/env";
 import { getAllJobSlugs } from "@/content/jobs";
 import { loadAllArticles } from "@/lib/articles-loader";
+import { getAllTopics } from "@/lib/topics";
 
 const now = new Date();
 
@@ -14,6 +15,9 @@ const staticRoutes: Route[] = [
   { path: "/diy-or-hire", priority: 0.9, changeFrequency: "weekly" },
   { path: "/costs", priority: 0.9, changeFrequency: "weekly" },
   { path: "/advice", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/home-inspection-repairs", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/contractor-red-flags", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" },
   { path: "/tools", priority: 0.8, changeFrequency: "monthly" },
   { path: "/tools/diy-or-hire", priority: 0.85, changeFrequency: "monthly" },
   { path: "/about", priority: 0.5, changeFrequency: "yearly" },
@@ -25,6 +29,7 @@ const staticRoutes: Route[] = [
   { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },
   { path: "/terms", priority: 0.2, changeFrequency: "yearly" },
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/topics", priority: 0.7, changeFrequency: "weekly" },
 ];
 
 /**
@@ -89,7 +94,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ),
     changeFrequency: a.frontmatter.pillar === "costs" ? "monthly" : "yearly",
     priority: 0.8,
+    // Image sitemap entry: every article has a route-prerendered OG image at
+    // /<pillar>/<slug>/opengraph-image. Including it gives Google a strong
+    // image-pair signal for Image Search and discovery.
+    images: [fullUrl(`${a.path}/opengraph-image`)],
   }));
 
-  return [...staticEntries, ...toolEntries, ...articleEntries];
+  const topics = await getAllTopics();
+  const topicEntries: MetadataRoute.Sitemap = topics.map((t) => ({
+    url: fullUrl(`/topics/${t.slug}`),
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticEntries, ...toolEntries, ...articleEntries, ...topicEntries];
 }

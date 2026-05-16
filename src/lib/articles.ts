@@ -1,6 +1,11 @@
 import { z } from "zod";
 
-export const PILLARS = ["diy-or-hire", "costs", "advice"] as const;
+export const PILLARS = [
+  "diy-or-hire",
+  "costs",
+  "advice",
+  "home-inspection-repairs",
+] as const;
 export type Pillar = (typeof PILLARS)[number];
 
 export const articleFrontmatterSchema = z.object({
@@ -35,6 +40,31 @@ export const articleFrontmatterSchema = z.object({
     .min(2),
   faq: z
     .array(z.object({ question: z.string().min(5), answer: z.string().min(20) }))
+    .optional(),
+
+  /**
+   * Optional structured HowTo. When present on a DIY-or-hire or advice
+   * article, we emit HowTo JSON-LD alongside Article so Google can render
+   * a step-by-step rich result for DIY queries (the highest-CTR result
+   * format for "how to <repair>" intent).
+   */
+  howTo: z
+    .object({
+      name: z.string().min(5),
+      totalMinutes: z.number().int().positive().optional(),
+      estimatedCostLow: z.number().nonnegative().optional(),
+      estimatedCostHigh: z.number().nonnegative().optional(),
+      supplies: z.array(z.string().min(2)).optional(),
+      tools: z.array(z.string().min(2)).optional(),
+      steps: z
+        .array(
+          z.object({
+            name: z.string().min(3),
+            text: z.string().min(20),
+          })
+        )
+        .min(3),
+    })
     .optional(),
 });
 
