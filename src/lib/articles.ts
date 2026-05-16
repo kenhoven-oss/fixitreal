@@ -5,6 +5,7 @@ export const PILLARS = [
   "costs",
   "advice",
   "home-inspection-repairs",
+  "senior-home-safety",
 ] as const;
 export type Pillar = (typeof PILLARS)[number];
 

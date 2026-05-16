@@ -29,6 +29,7 @@ const pillarLabel: Record<string, string> = {
   costs: "Repair Costs",
   advice: "Honest Advice",
   "home-inspection-repairs": "Inspection Repairs",
+  "senior-home-safety": "Senior Home Safety",
 };
 
 const mdxComponents = {

@@ -120,16 +120,18 @@ export default async function Home() {
         <div className="relative z-10 mx-auto max-w-6xl px-6 py-24 md:py-32 grid gap-10 md:grid-cols-12">
           <div className="md:col-span-9 lg:col-span-7">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-700">
-              Consumer advocate · Home repair
+              The homeowner decision engine
             </p>
             <h1 className="mt-5 font-serif text-5xl md:text-7xl leading-[1.04] tracking-tight text-navy-900">
-              Trusted home repair guidance{" "}
-              <span className="text-amber-700">for real homeowners</span>
+              Decide what to fix,{" "}
+              <span className="text-amber-700">what it should cost,</span> and
+              what actually matters.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-ink-700 max-w-2xl leading-relaxed">
-              Step-by-step repair guides, seasonal maintenance tips, and
-              practical advice to help you care for your home with confidence —
-              written by an independent advocate, not a contractor.
+              FixItReal helps homeowners decide what to repair, what to hire
+              out, what inspection items matter, what contractor red flags to
+              watch for, and which home repair products are worth buying — from
+              an independent editor with no warranty advertisers.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
@@ -271,9 +273,9 @@ export default async function Home() {
       )}
 
       {/* ==============================================================
-           PILLARS — three entry points for category browsing, for visitors
-           whose specific article wasn't in the Popular decisions above.
-           Border-t creates a soft divider between the two bg-white sections.
+           PILLARS — primary entry points for category browsing.
+           Auto-renders site.pillars so adding a new pillar appears here.
+           Eyebrow labels map per slug; falls back to "Browse" for safety.
            ============================================================== */}
       <Section padding="xl" className="bg-white border-t border-ink-100">
         <div className="max-w-2xl">
@@ -281,26 +283,48 @@ export default async function Home() {
             Or browse by category
           </p>
           <h2 className="mt-2 font-serif text-3xl md:text-4xl text-navy-900 leading-tight">
-            Three questions every homeowner asks. Three places to find the
-            answer.
+            Every homeowner decision, in one place.
           </h2>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {site.pillars.map((p) => (
-            <Card
-              key={p.slug}
-              href={p.href}
-              eyebrow={
-                p.slug === "diy-or-hire"
-                  ? "Decide"
-                  : p.slug === "costs"
-                    ? "Budget"
-                    : "Vet"
-              }
-              title={p.name}
-              description={p.description}
-            />
-          ))}
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {site.pillars.map((p) => {
+            const eyebrowMap: Record<string, string> = {
+              "diy-or-hire": "Decide",
+              costs: "Budget",
+              advice: "Vet",
+              "home-inspection-repairs": "Negotiate",
+              "senior-home-safety": "Age in place",
+            };
+            return (
+              <Card
+                key={p.slug}
+                href={p.href}
+                eyebrow={eyebrowMap[p.slug] ?? "Browse"}
+                title={p.name}
+                description={p.description}
+              />
+            );
+          })}
+        </div>
+        <div className="mt-8 rounded-md bg-amber-50 border border-amber-200 px-5 py-4 text-sm text-ink-800 leading-relaxed">
+          <strong className="font-semibold text-navy-900">
+            Buying or selling?
+          </strong>{" "}
+          Start with{" "}
+          <Link
+            href="/home-inspection-repairs"
+            className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+          >
+            inspection-report repair guidance
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="/contractor-red-flags"
+            className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+          >
+            contractor red flags
+          </Link>{" "}
+          before signing anything.
         </div>
       </Section>
 
