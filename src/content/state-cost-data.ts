@@ -328,6 +328,33 @@ export const STATE_COST_GUIDES: CostGuideForState[] = [
     jobDescription:
       "single small plumbing fix — leaky faucet, slow drain, stuck disposal",
   },
+  {
+    slug: "smoke-detector-replacement",
+    shortName: "smoke detector replacement",
+    longName: "smoke detector replacement",
+    base: { tripLow: 105, tripHigh: 210 },
+    hourly: { low: 80, high: 150 },
+    jobDescription:
+      "single hardwired smoke alarm swap with brand-match replacement",
+  },
+  {
+    slug: "garbage-disposal-replacement",
+    shortName: "garbage disposal replacement",
+    longName: "garbage disposal replacement",
+    base: { tripLow: 230, tripHigh: 500 },
+    hourly: { low: 85, high: 175 },
+    jobDescription:
+      "mid-range 3/4 HP disposal swap including the unit and labor",
+  },
+  {
+    slug: "water-heater-replacement",
+    shortName: "water heater replacement",
+    longName: "water heater replacement",
+    base: { tripLow: 900, tripHigh: 1800 },
+    hourly: { low: 85, high: 175 },
+    jobDescription:
+      "40-50 gallon gas tank water heater swap, like-for-like install",
+  },
 ];
 
 /** Apply a tier's multiplier band to a national base range. */

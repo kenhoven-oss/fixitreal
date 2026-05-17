@@ -421,6 +421,364 @@ export const glossary: GlossaryEntry[] = [
       { path: "/advice/soft-spot-in-laminate-or-wood-floor", label: "Soft spot in laminate or wood floor" },
     ],
   },
+  {
+    slug: "btu",
+    term: "BTU (British Thermal Unit)",
+    short:
+      "The standard unit of heating and cooling capacity — how the size of a furnace, AC, water heater, or stove is measured.",
+    body: [
+      "One BTU is the energy needed to raise one pound of water by one degree Fahrenheit. Bigger numbers = more heating or cooling power.",
+      "Residential equipment ratings homeowners encounter: gas water heater (30,000–40,000 BTU), tankless water heater (140,000–200,000 BTU), gas furnace (60,000–120,000 BTU for typical homes), central AC (24,000–60,000 BTU = 2–5 'tons'), gas range burners (5,000–18,000 BTU per burner).",
+      "Bigger isn't better — oversized HVAC equipment short-cycles, runs less efficiently, and shortens its own lifespan. Proper Manual J load calculations are how an installer matches equipment to your home's actual heating/cooling needs.",
+    ],
+  },
+  {
+    slug: "seer-rating",
+    term: "SEER rating",
+    alsoCalled: ["SEER2", "Seasonal Energy Efficiency Ratio"],
+    short:
+      "An AC and heat pump efficiency rating — total cooling output over a season divided by total electrical energy used. Higher is better.",
+    body: [
+      "U.S. minimum SEER for new central AC is 14 in northern states, 15 in southern states (SEER2 ratings effective 2023). Premium units reach SEER 20+. Each step up costs more upfront but uses less electricity over the unit's 15–20 year life.",
+      "The payback math: going from SEER 14 to SEER 18 typically saves 20–25% on cooling electricity. In a hot climate where AC runs 6+ months, that often pays back the higher upfront cost in 4–7 years. In cooler climates, the math is less favorable.",
+      "Federal tax credits and utility rebates often apply to higher-SEER units — check before buying. The total installed cost difference is often smaller than the equipment-price difference after incentives.",
+    ],
+  },
+  {
+    slug: "wye-vs-tee",
+    term: "Wye vs tee (plumbing fittings)",
+    short:
+      "Wye and tee are drain-pipe fittings shaped like a Y and a T respectively — used to merge drain lines. They're not interchangeable in code-compliant plumbing.",
+    body: [
+      "Tees are 90° fittings — appropriate for vent piping where airflow direction doesn't matter. Wyes have a sweeping 45° branch — required for horizontal drain lines because the gentler angle keeps waste flowing instead of pooling in the corner.",
+      "Many DIY plumbing mistakes come from using a tee where a wye is required. The result is a slow drain or recurring clog at the junction. If you're working on horizontal drain lines, wye-with-eighth-bend is the right pattern.",
+      "When a plumber's quote shows 'reset drain stack with proper wye fittings,' they're often correcting an earlier DIY installation. The reset is worth it; ongoing clogs are not.",
+    ],
+  },
+  {
+    slug: "r-value",
+    term: "R-value",
+    short:
+      "A measure of insulation's resistance to heat transfer. Higher R-value = better insulation. Used to spec attic, wall, and floor insulation.",
+    body: [
+      "U.S. Department of Energy recommends attic insulation in the R-49 to R-60 range for most climate zones. Walls are typically R-13 to R-21. Crawl space and basement walls vary by climate zone.",
+      "R-value-per-inch varies by material: fiberglass batt (~R-3.2/inch), blown-in cellulose (~R-3.5/inch), spray foam closed-cell (~R-7/inch), rigid foam board (~R-5/inch). The right material depends on the space and budget, not just R-value alone.",
+      "Adding insulation has diminishing returns. Going from R-13 to R-30 in a wall returns much more energy savings than going from R-30 to R-50. Spend the first dollars on the lowest-R area in your home.",
+    ],
+  },
+  {
+    slug: "footing-vs-foundation",
+    term: "Footing vs foundation",
+    short:
+      "The footing is the wide concrete base buried below grade; the foundation wall is the vertical structure that sits on the footing and supports the house above.",
+    body: [
+      "Footings spread the house's weight over a wider area, preventing the foundation from settling into soft soil. They're typically 16–24 inches wide and 8–12 inches deep, sitting below the frost line (typically 36–48 inches in cold climates).",
+      "Foundation walls (often poured concrete or concrete block) rise from the footing to support the house. Most homes have either a basement foundation (8+ ft walls), a crawl-space foundation (4-ft walls), or a slab (no walls, just thickened-edge slab).",
+      "Cracks in foundation walls are common and usually cosmetic. Cracks in footings are rare but serious — they indicate soil failure or major structural settlement. An engineer's evaluation is mandatory if footings are cracked.",
+    ],
+    related: [
+      { path: "/glossary/settling-vs-foundation-problem", label: "Settling vs foundation problem" },
+    ],
+  },
+  {
+    slug: "sweating-vs-leaking-pipe",
+    term: "Sweating vs leaking pipe",
+    short:
+      "Sweating is condensation on a cold pipe in humid air; leaking is water escaping from a damaged or failed joint. They look similar but require different fixes.",
+    body: [
+      "Cold water pipes in unconditioned spaces (basements, crawl spaces) develop condensation when the pipe's surface temperature is below the dew point of surrounding air. The water drips down and looks exactly like a slow leak — but the source is the air, not the pipe.",
+      "Diagnostic test: dry the pipe thoroughly, wrap a paper towel around it for an hour. If the towel gets wet from outside-in, it's sweating; if the wetness shows at a specific joint, it's leaking.",
+      "Fix for sweating: foam pipe insulation ($5–$15 for a standard run) and improved ventilation in the space. Fix for leaking: depends on whether the joint is soldered (resolder), threaded (re-tape and tighten), or compression (replace washer or compression ring).",
+    ],
+  },
+  {
+    slug: "kilowatt-hour",
+    term: "Kilowatt-hour (kWh)",
+    alsoCalled: ["kWh"],
+    short:
+      "The unit utility companies use to bill electricity — using 1,000 watts (1 kW) for one hour equals one kWh.",
+    body: [
+      "Average U.S. residential rate is 15-18¢ per kWh, with big variation: Hawaii and parts of New England exceed 35¢; Washington and Idaho run under 12¢. Knowing your local rate lets you do real energy-cost math on appliances.",
+      "Example: a 1,500-watt space heater run for 8 hours = 12 kWh = $1.80–$2.16 per day at average rates. A 4,000-watt water heater running 3 hours/day = 12 kWh = same cost. Standby loads (TVs, game consoles, chargers) typically add up to ~10% of a home's total bill.",
+      "Smart meters now report by hour or day. Look at your utility's online portal for usage breakdowns — most homeowners find one or two appliances they didn't realize were big draws.",
+    ],
+  },
+  {
+    slug: "code-cycle",
+    term: "Code cycle",
+    short:
+      "The 3-year update cycle for U.S. model building codes (IRC, IPC, NEC). Different states adopt different versions of the same model code.",
+    body: [
+      "The International Code Council updates the IRC every 3 years (2018, 2021, 2024, etc.). States and cities pick which version to adopt, when, and with what local amendments. As a result, two homes a state border apart can be built to different code editions.",
+      "What this means for homeowners: 'the code' isn't one document. When a contractor says 'that's not to code,' the right follow-up is 'which code edition?' and 'is that the version our AHJ enforces?'",
+      "Older homes are typically grandfathered to the code edition in effect when built. Renovations and additions usually trigger current code on the new work, not on the existing structure. This is why you can't always 'just match' what's already there.",
+    ],
+    related: [
+      { path: "/glossary/ahj", label: "AHJ (Authority Having Jurisdiction)" },
+    ],
+  },
+  {
+    slug: "p-vs-s-trap",
+    term: "P-trap vs S-trap",
+    short:
+      "Both hold water to block sewer gas, but P-traps vent properly while S-traps siphon themselves dry — S-traps are a code violation in most modern plumbing codes.",
+    body: [
+      "An S-trap (curves down then back up, like an S) can siphon itself empty when water drains through it. Once empty, sewer gas comes back up the drain into your home. P-traps (curve down then sideways with a vent) don't have this problem.",
+      "S-traps are common in older homes — many were installed before plumbing codes required venting. Most jurisdictions still allow them as grandfathered installations, but any drain modification triggers a code-required upgrade to a P-trap with proper venting.",
+      "If you smell sewer gas at a particular fixture and you can see the trap is S-shaped, that's almost certainly the cause. The fix involves rerouting and adding a vent — usually a plumber's job, not DIY.",
+    ],
+    related: [
+      { path: "/glossary/p-trap", label: "P-trap" },
+      { path: "/glossary/drain-vent", label: "Drain vent" },
+    ],
+  },
+  {
+    slug: "service-panel",
+    term: "Service panel",
+    alsoCalled: ["breaker box", "main panel", "load center"],
+    short:
+      "The metal box where utility power enters the home and gets divided into individual breakered circuits that feed everything inside.",
+    body: [
+      "Inside the service panel: the main disconnect breaker at the top (typically 100-amp, 150-amp, or 200-amp), and a column of individual breakers below that each serve one or more circuits. Larger homes may have a subpanel — a smaller panel fed from the main, used to serve a distant area like a detached garage.",
+      "Panel age and brand matter. Federal Pacific (FPE) and Zinsco panels installed in the 1960s–1980s have well-documented failure modes (breakers don't trip during faults) and many insurers require them to be replaced. Modern Square D, Eaton, GE, and Siemens panels are all reliable.",
+      "Panel upgrades are major work — $2,500–$6,000 typical. Reasons to upgrade: insufficient amperage for modern loads (older 60-amp or 100-amp panels can't handle EV chargers, heat pumps, induction stoves), a problematic brand, or rusted/corroded equipment.",
+    ],
+    related: [
+      { path: "/glossary/main-disconnect", label: "Main disconnect" },
+    ],
+  },
+  {
+    slug: "house-trap",
+    term: "House trap",
+    alsoCalled: ["building trap"],
+    short:
+      "An older sewer-line component installed at the main drain exit, designed to block sewer gas from entering the home. Replaced by individual fixture P-traps in modern plumbing.",
+    body: [
+      "Houses built before the 1980s often have a house trap — a U-shaped fitting in the main sewer line near where it leaves the building. The trap holds water that blocks sewer gas entering through the main line.",
+      "Modern plumbing codes generally don't require house traps because individual P-traps at every fixture already handle the job, and house traps become clog points and inspection-access challenges. Many cities have outlawed them entirely.",
+      "If your home has a house trap and the main sewer keeps clogging, removal might be advised. This is non-trivial work — usually requires breaking concrete or excavating, $1,500–$5,000 depending on accessibility.",
+    ],
+  },
+  {
+    slug: "snake-vs-auger",
+    term: "Snake vs auger",
+    short:
+      "Both clear drain clogs. A 'snake' usually means a small hand-cranked tool; an 'auger' usually means a larger motorized version used by plumbers for main lines.",
+    body: [
+      "Homeowners can clear most fixture clogs with a basic hand snake (drum auger) for $15–$50. These reach 15–25 feet into a drain — far enough for almost any sink, tub, or bathroom-fixture clog.",
+      "Toilet augers are a specific subtype with a protective rubber sleeve to avoid scratching porcelain — they're shorter (3–6 feet) but designed to navigate the toilet's curve. Standard drain snakes can damage toilet bowls; use the right tool.",
+      "Power augers (electric or gas drum machines) are for mainline work — sewer line clogs, deep blockages 50+ feet from the house. Renting one from a hardware store is $50–$100/day; hiring a plumber is usually the better call for mainline issues because the diagnosis matters as much as the clearing.",
+    ],
+    related: [
+      { path: "/tools/best-drain-snakes-for-homeowners", label: "Best drain snakes for homeowners" },
+    ],
+  },
+  {
+    slug: "tankless-water-heater",
+    term: "Tankless water heater",
+    alsoCalled: ["on-demand water heater", "instant water heater"],
+    short:
+      "A water heater that heats water as it flows through a heat exchanger, instead of storing hot water in a tank. Higher efficiency, higher upfront cost.",
+    body: [
+      "Tankless units only run when hot water is being drawn — eliminating the 'standby losses' of keeping a 50-gallon tank hot 24/7. Typical energy savings: 8–34% per year depending on usage patterns.",
+      "Downsides: higher upfront cost ($1,200–$3,500 installed vs. $800–$2,000 for a tank), required gas line upgrade in some retrofits (the high BTU output exceeds older 1/2-inch gas line capacity), and limited simultaneous use (one shower + dishwasher works; two showers + a tub fill may overwhelm a single unit).",
+      "Best fit: homes with infrequent peak demand (couples, small families) or homes that need hot water at remote points (a tankless dedicated to a master bath suite). Worse fit: homes with simultaneous-use patterns and no plans to add capacity.",
+    ],
+    related: [
+      { path: "/diy-or-hire/water-heater", label: "Should I replace my own water heater?" },
+    ],
+  },
+  {
+    slug: "lvl-beam",
+    term: "LVL beam",
+    alsoCalled: ["laminated veneer lumber", "engineered beam"],
+    short:
+      "Engineered structural lumber made by laminating thin wood veneers together. Stronger than dimensional lumber for the same size — used to span openings created by removing load-bearing walls.",
+    body: [
+      "When you remove a load-bearing wall, the load above needs a new beam. For most residential spans (8–14 feet), an engineered LVL is the cheaper, simpler answer compared to steel. A typical LVL beam to replace an 8-foot wall costs $200–$500 in materials.",
+      "LVLs come in standard widths (1.75 inches, 3.5 inches) and depths (5.5 inches to 16 inches). The engineer specs the size based on load + span. Don't substitute a smaller size to save money — undersized beams sag.",
+      "LVLs need to bear on solid posts at each end, transferred down to the foundation. The new post locations matter: 'where the beam ends' often means cutting into walls or floors to add posts. Plan the post path with the engineer.",
+    ],
+    related: [
+      { path: "/glossary/joist-vs-beam", label: "Joist vs beam" },
+    ],
+  },
+  {
+    slug: "manual-j",
+    term: "Manual J",
+    short:
+      "The ACCA-published heat-load calculation method used to properly size HVAC equipment for a specific home — required by code in many jurisdictions.",
+    body: [
+      "Manual J calculates how much heating and cooling capacity a home actually needs, based on square footage, insulation, window area, climate zone, sun exposure, and dozens of other variables. A real Manual J calculation takes 2–4 hours and produces a multi-page report.",
+      "Why this matters: HVAC equipment that's too big short-cycles (turns on/off rapidly), wears out faster, uses more electricity, and produces poor humidity control. Equipment that's too small can't keep up on extreme days.",
+      "Most rule-of-thumb sizing ('500 square feet per ton') produces oversized systems. If your contractor is sizing without a Manual J, they're guessing. Ask for the calculation report before you sign — it's free with any major HVAC quote.",
+    ],
+  },
+  {
+    slug: "duct-static-pressure",
+    term: "Duct static pressure",
+    short:
+      "A measure of the resistance your HVAC system's blower has to overcome to push air through the ductwork. High static pressure means restricted airflow.",
+    body: [
+      "Manufacturer specs typically call for total external static pressure of 0.5 inches of water column for residential HVAC. Many real-world systems run at 0.8–1.2 — meaning the blower works much harder than designed, uses more electricity, and dies sooner.",
+      "Causes of high static pressure: dirty filter, undersized return-air ducts (very common), too many tight bends in the supply ducts, closed registers in unused rooms, or oversized blower motors. A technician with a manometer can measure yours in 10 minutes.",
+      "If your HVAC is loud, blows hard out of some vents and weakly out of others, or burns through blower motors faster than expected, static pressure is the likely culprit. Fixing it usually means adding return-air capacity — sometimes a single new return-air grille in a central hallway dramatically improves the whole system.",
+    ],
+  },
+  {
+    slug: "shrubs-vs-trees-near-foundation",
+    term: "Shrubs and trees near foundation",
+    short:
+      "Plantings within 18 inches of the foundation hold moisture against the wall, attract pests, and (with large trees) push or crack the foundation with root growth.",
+    body: [
+      "Best practice: keep all plantings at least 18 inches from the foundation wall, and large trees (mature trunk diameter 12+ inches) at least 15–25 feet away depending on species. Maples, oaks, and willows are the most foundation-damaging; ornamental shrubs are mostly cosmetic risk.",
+      "Existing close plantings don't have to be removed — but the soil right against the foundation should slope away (1 inch per foot for at least 6 feet), and mulch beds should be thin (2 inches max) to avoid trapping moisture.",
+      "When you see efflorescence (white mineral residue) on the inside basement wall behind a planted exterior, the planting is part of the cause. Pruning back is the cheapest first move; full removal only when efflorescence keeps progressing or cracks appear.",
+    ],
+  },
+  {
+    slug: "grading-vs-drainage",
+    term: "Grading vs drainage",
+    short:
+      "Grading is the slope of the soil around the foundation (should slope away from the house); drainage is how water moves through and off the property (gutters, downspouts, French drains, dry wells).",
+    body: [
+      "Most homeowner basement-leak issues trace to one of these two. Grading: soil should drop at least 6 inches over the first 10 feet from the foundation. Anything flat or sloping toward the house pushes rainwater right against the foundation.",
+      "Drainage: gutters and downspouts move roof water away from the house. Downspouts should extend 4–6 feet from the foundation before discharging — even better with a buried pipe to a dry well or daylighted outlet further from the house.",
+      "Fixing grading is relatively cheap ($200–$800 for a typical yard, $2,000–$5,000 if extensive earthwork is needed). Fixing drainage is also cheap if it's just downspout extensions ($30–$80 each). Foundation waterproofing — the much more expensive fix — is rarely necessary if grading and drainage are correct.",
+    ],
+  },
+  {
+    slug: "efflorescence",
+    term: "Efflorescence",
+    short:
+      "White, powdery mineral residue on the inside of a basement wall or concrete. Indicates that water is moving through the wall and depositing minerals as it dries.",
+    body: [
+      "Efflorescence is the visible signature of past water intrusion. It's not active damage on its own, but it tells you water has been there. Persistent or progressing efflorescence means active water issues.",
+      "Causes (in order of frequency): poor grading sending rainwater at the foundation, downspouts discharging too close, missing or failed perimeter drains, cracks in the foundation wall. The fix is always at the source, not at the wall — sealing efflorescence with paint just hides it.",
+      "If you're buying a home with efflorescence in the basement, get a quote for grading + drainage work and factor it into the price negotiation. The damage isn't structural yet, but ignoring it leads to mold, finishing damage, and sometimes structural concerns over years.",
+    ],
+  },
+  {
+    slug: "wattage-budget",
+    term: "Circuit wattage budget",
+    short:
+      "The maximum power a single electrical circuit can handle before its breaker trips. 15-amp circuits hold ~1,800 watts; 20-amp circuits hold ~2,400 watts.",
+    body: [
+      "Power (watts) = voltage (120V residential) × amps. So a 15-amp breaker = 120 × 15 = 1,800 watts maximum. Code says you shouldn't run a circuit at more than 80% of that for continuous loads (loads running 3+ hours), so 1,440 watts is the practical safe ceiling.",
+      "Why this matters: a 1,500-watt space heater + a 1,200-watt microwave on the same circuit = 2,700 watts = breaker trips. Knowing which outlets are on which circuit helps you spread big loads across multiple circuits.",
+      "A clamp meter or a circuit-mapper tool ($30–$80) lets you test which outlets are on which breaker. Worth doing once and documenting in your panel — saves time every future repair.",
+    ],
+    related: [
+      { path: "/glossary/watt-vs-amp-vs-volt", label: "Watts vs amps vs volts" },
+      { path: "/advice/breaker-keeps-tripping", label: "Breaker keeps tripping" },
+    ],
+  },
+  {
+    slug: "concrete-curing",
+    term: "Concrete curing",
+    short:
+      "The chemical process where freshly poured concrete gains strength over time. Concrete reaches ~70% strength in 7 days and ~95% in 28 days.",
+    body: [
+      "Concrete doesn't 'dry' — it cures via a chemical reaction between cement and water. Drying too fast (high heat, low humidity, direct sun) weakens the final concrete. Curing too cold (below ~40°F) stops the reaction entirely and ruins the pour.",
+      "What this means for homeowners: don't drive on a new driveway for 7 days, don't park heavy vehicles for 28 days. Foundation work scheduled in extreme weather may need to be delayed or use specialty cold-weather or hot-weather mixes.",
+      "Cracking in the first year is normal — concrete shrinks slightly as it cures. Control joints (the cuts you see in driveways and slabs) are placed deliberately to give the cracking a place to happen. Cracks outside control joints, wider than 1/8 inch, or growing over time may indicate other issues.",
+    ],
+  },
+  {
+    slug: "sister-joist",
+    term: "Sister joist",
+    short:
+      "A new joist installed alongside a damaged or undersized existing joist, bolted or nailed to it for additional strength.",
+    body: [
+      "Sistering is the standard fix for joists that are cracked, sagging, or undersized. The new joist runs the full length (or at least the damaged portion plus several feet on each side) and gets fastened along the existing joist with structural fasteners spaced per code.",
+      "Cost: $400–$1,200 for a single sistered joist depending on access. The job involves shoring (temporarily supporting the floor above), cutting the new joist to fit through tight crawl spaces or basements, fastening, then removing the shoring.",
+      "Sistering is also used to add structural capacity for a new load (a tile floor over wood, a heavy bath fixture, a hot tub on a deck). When a contractor quotes 'we'll sister the joists in that area,' verify the engineer specified the lumber size and fastening pattern — undersized sister-joists don't fix the problem.",
+    ],
+  },
+  {
+    slug: "ice-dam",
+    term: "Ice dam",
+    short:
+      "A ridge of ice that forms at the edge of a roof in winter when snow on the upper roof melts and refreezes at the colder eave — backing water up under the shingles.",
+    body: [
+      "Ice dams form when warm air leaking from the house heats the upper roof above 32°F, melting snow that runs down to the cold eave (overhang) and refreezes. The refrozen ice creates a dam; subsequent snowmelt pools behind it and works under shingles into the attic.",
+      "The root cause is almost always inadequate attic insulation or air sealing — the house is heating the roof from below. Long-term fixes: add attic insulation, seal air leaks from living spaces to the attic, ensure ridge and soffit vents are clear.",
+      "Short-term fixes during a freeze: have a roofer remove snow from the lower 3–4 feet of roof with a roof rake before refreeze, install heat-trace cable along eaves (an electric defrost wire, $400–$1,000 installed). Avoid hammering or chipping at ice dams — that damages shingles.",
+    ],
+  },
+  {
+    slug: "service-line",
+    term: "Water service line",
+    short:
+      "The pipe that carries water from the municipal main (under the street) into your home. Homeowner-responsible from the property line to the house.",
+    body: [
+      "Two parts: the city's responsibility from the main to the curb/property line, and the homeowner's responsibility from the property line to the house. A broken service line means a homeowner-paid repair, often $2,000–$8,000 depending on length and access.",
+      "Older homes (built before 1986) often have lead service lines. EPA's 2024 lead and copper rule requires utilities to identify and replace all lead service lines within 10 years; many cities are accelerating that. Free water testing kits are available from most municipalities — request one if your home is pre-1986.",
+      "When you suspect a leak in the service line (low pressure, soggy spot in the yard, water-bill spike), don't dig. Call the utility for a free locate first, and get a quote from a licensed plumber for the dig + replace. PEX or HDPE service lines have largely replaced copper and galvanized for new installs.",
+    ],
+  },
+  {
+    slug: "main-water-shutoff",
+    term: "Main water shutoff",
+    short:
+      "The valve that stops all water entering the house. Usually inside the home near where the service line enters, or outside in a curbside meter box.",
+    body: [
+      "Every homeowner should be able to find and operate the main water shutoff in under 60 seconds. In an emergency (burst pipe, failed water heater, overflowing fixture), every minute of unchecked flow is gallons of damage.",
+      "Inside main: typically in the basement, crawl space, or utility room, near where the service line enters the foundation. Two valve types: gate valve (multi-turn wheel — older, prone to seizing) or ball valve (quarter-turn lever — newer, reliable). Test yours once a year by turning it off briefly to verify it still works.",
+      "Outside main: the meter shutoff at the curb (usually in a concrete box). This needs a special water key, sometimes a long screwdriver works. The utility owns this; you can use it in emergencies but they may relock it.",
+    ],
+    related: [
+      { path: "/glossary/shut-off-valve", label: "Shut-off valve" },
+      { path: "/emergency-repairs/pipe-burst-first-10-minutes", label: "Pipe burst: first 10 minutes" },
+    ],
+  },
+  {
+    slug: "vent-stack",
+    term: "Vent stack",
+    short:
+      "The vertical drain pipe that extends from the lowest drain up through the roof. Vents the drain system to the atmosphere and lets water flow properly.",
+    body: [
+      "Every plumbing drain system needs vents. The main vent stack typically rises from the lowest drain (often the basement utility sink or floor drain) straight up through the roof. Smaller branch vents tie individual fixtures into the system.",
+      "On the roof you'll see one or two 2- to 4-inch pipes sticking up — those are vent stack terminations. They shouldn't be capped (the cap blocks the vent and causes slow drains). Birds, ice, leaves, and tennis balls occasionally block them.",
+      "Symptoms of a blocked vent stack: drains that gurgle when they empty, slow drainage that improves after standing for a while, sewer gas smell from one or more fixtures. A plumber with a small camera and a long auger can diagnose and clear in one visit.",
+    ],
+    related: [
+      { path: "/glossary/drain-vent", label: "Drain vent" },
+    ],
+  },
+  {
+    slug: "deflection",
+    term: "Floor deflection",
+    short:
+      "How much a floor flexes under load. Code limits are tight (L/360 — 1 inch of flex per 30 feet of span for residential floors).",
+    body: [
+      "A floor that visibly bounces, that feels 'spongy' as you walk across it, or where furniture vibrates as you move is exhibiting deflection beyond residential code limits. Causes include undersized joists, joists at the maximum allowed span, water-damaged subfloor, or excessive load.",
+      "Fixes range from cheap to expensive depending on cause. Adding a single new mid-span beam can stiffen a long-span floor for $1,500–$4,000. Sistering joists for the full length is $800–$3,000 depending on number of joists. Replacing damaged subfloor: $1,500–$4,000+ for a large area.",
+      "Tile floors are especially sensitive to deflection — tile cracks at deflection limits stricter than wood floors tolerate. If you're planning to install tile, an engineer's assessment of floor stiffness is cheaper than a cracked-tile redo.",
+    ],
+  },
+  {
+    slug: "knockout",
+    term: "Knockout",
+    short:
+      "A pre-cut circular section of metal in an electrical box, panel, or appliance designed to be removed (knocked out) when you need to feed a cable or conduit through.",
+    body: [
+      "Every electrical box and appliance with hard-wired connections has knockouts — little circular tabs that pop out with a screwdriver and hammer. Each knockout corresponds to a standard cable connector size.",
+      "Common homeowner mistake: removing the wrong knockout (one you don't need a cable through) and leaving the hole open. NEC requires every open knockout to be sealed with a metal knockout cover ($2–$5 at any hardware store) to maintain the box's enclosure.",
+      "When connecting a dishwasher or garbage disposal: the knockout on the wiring side typically needs to be knocked out for the cable connector. The knockout on the dishwasher drain (inside the disposal) does too — but only for the dishwasher side. Not knowing which is a common cause of leaks and back-flow.",
+    ],
+  },
+  {
+    slug: "shutoff-vs-isolation-valve",
+    term: "Shutoff valve vs isolation valve",
+    short:
+      "Functionally similar — both stop water flow to a specific area. 'Isolation valve' is more common in commercial/industrial contexts; residential plumbing almost always says 'shutoff.'",
+    body: [
+      "In residential plumbing, 'shutoff valve' is the standard term. You may see 'isolation valve' on appliance install instructions or in technical documents — they mean the same thing.",
+      "Residential code requires accessible shutoff valves at: every fixture (sink, toilet, dishwasher, washing machine, ice maker), the water heater (cold inlet), each branch line if a house has multiple zones. Newer construction sometimes adds a manifold near the main shutoff with individual valves for each line.",
+      "A house without functional shutoffs at every fixture forces the entire house to be shut off for any repair — annoying for the user, expensive when the plumber has to drain and refill the whole system.",
+    ],
+  },
 ];
 
 export function getGlossaryEntry(slug: string): GlossaryEntry | undefined {
