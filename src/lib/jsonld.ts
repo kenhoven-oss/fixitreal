@@ -251,6 +251,15 @@ export function collectionPageSchema(c: CollectionInput): JsonLd {
     name: c.name,
     description: c.description,
     url: absoluteUrl(c.url),
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    // Speakable: mark the H1 + the hub's intro paragraph as the passages
+    // voice assistants should read aloud. Matches the same selectors used
+    // in articleSchema().
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".article-lede", "p.lead"],
+    },
     ...(c.hasPart?.length
       ? {
           hasPart: c.hasPart.map((p) => ({

@@ -9,6 +9,35 @@ readingMinutes: 6
 verdict: "maybe-diy"
 costLow: 20
 costHigh: 250
+howTo:
+  name: "Replace a GFCI outlet (like-for-like swap)"
+  totalMinutes: 25
+  estimatedCostLow: 20
+  estimatedCostHigh: 50
+  tools:
+    - "Non-contact voltage tester"
+    - "Number-2 Phillips screwdriver"
+    - "Wire strippers"
+    - "Painter's tape and a pen"
+  supplies:
+    - "Replacement GFCI outlet (15A or 20A — match the existing)"
+  steps:
+    - name: "Identify the breaker and turn it off"
+      text: "Go to the electrical panel, find the breaker that feeds this outlet, and switch it off."
+    - name: "Confirm the outlet is dead"
+      text: "Plug a lamp in or touch a voltage tester to both slots. If anything lights up, stop — the wrong breaker is off."
+    - name: "Remove the wall plate and pull the outlet from the box"
+      text: "Take off the wall plate, then unscrew the outlet from the box and pull it out without disconnecting wires yet."
+    - name: "Identify Line vs. Load and label"
+      text: "If two cables enter the box, label the one feeding into the LINE terminals as Line with painter's tape. The other is Load (downstream)."
+    - name: "Disconnect the old outlet"
+      text: "Loosen the terminal screws, pull each wire off, and note the colors so reassembly is identical."
+    - name: "Connect the new GFCI"
+      text: "Black to brass on Line, white to silver on Line. Black to brass on Load, white to silver on Load (leave Load empty if there's no downstream cable). Bare or green to the ground screw."
+    - name: "Tuck wires in and seat the outlet"
+      text: "Fold the wires back without sharp bends. Push the GFCI into the box, screw it in, and replace the wall plate."
+    - name: "Restore power and verify protection"
+      text: "Turn the breaker back on. Press TEST — the outlet should click off (red LED). Press RESET — power restored. Plug a lamp in and confirm downstream outlets are also protected."
 relatedAdvice:
   - "gfci-outlet-keeps-tripping"
   - "breaker-keeps-tripping"
