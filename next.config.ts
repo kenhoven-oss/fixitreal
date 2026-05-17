@@ -43,6 +43,24 @@ const nextConfig: NextConfig = {
         destination: "/diy-or-hire/garage-door-opener",
         permanent: true,
       },
+      // Pass 10: 3 additional duplicates whose job records didn't carry an
+      // explicit relatedArticles.decision field but whose slugs map clearly
+      // to existing /diy-or-hire/<article> long-form content.
+      {
+        source: "/tools/diy-or-hire/replace-water-heater",
+        destination: "/diy-or-hire/water-heater",
+        permanent: true,
+      },
+      {
+        source: "/tools/diy-or-hire/unclog-drain",
+        destination: "/diy-or-hire/unclog-drain",
+        permanent: true,
+      },
+      {
+        source: "/tools/diy-or-hire/replace-outlet-gfci",
+        destination: "/diy-or-hire/gfci-outlet",
+        permanent: true,
+      },
     ];
   },
 };

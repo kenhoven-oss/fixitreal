@@ -34,6 +34,7 @@ const staticRoutes: Route[] = [
   { path: "/terms", priority: 0.2, changeFrequency: "yearly" },
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },
   { path: "/topics", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/glossary", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 /**
@@ -93,6 +94,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "install-ceiling-fan",
     "install-dishwasher",
     "install-garage-door-opener",
+    "replace-water-heater",
+    "unclog-drain",
+    "replace-outlet-gfci",
   ]);
   const toolEntries: MetadataRoute.Sitemap = getAllJobSlugs()
     .filter((slug) => !redirectedJobSlugs.has(slug))
@@ -125,5 +129,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...toolEntries, ...articleEntries, ...topicEntries];
+  // Glossary entries: each is a small Article page targeting a single
+  // long-tail "what is a <term>" query.
+  const { getAllGlossarySlugs } = await import("@/content/glossary");
+  const glossaryEntries: MetadataRoute.Sitemap = getAllGlossarySlugs().map(
+    (slug) => ({
+      url: fullUrl(`/glossary/${slug}`),
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.55,
+    })
+  );
+
+  return [
+    ...staticEntries,
+    ...toolEntries,
+    ...articleEntries,
+    ...topicEntries,
+    ...glossaryEntries,
+  ];
 }

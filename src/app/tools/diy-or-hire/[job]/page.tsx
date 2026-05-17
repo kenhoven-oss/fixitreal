@@ -32,6 +32,9 @@ const REDIRECTED_JOB_SLUGS = new Set([
   "install-ceiling-fan",
   "install-dishwasher",
   "install-garage-door-opener",
+  "replace-water-heater",
+  "unclog-drain",
+  "replace-outlet-gfci",
 ]);
 
 export function generateStaticParams() {
