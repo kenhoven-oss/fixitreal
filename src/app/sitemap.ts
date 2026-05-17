@@ -141,11 +141,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
+  // State-level cost pages: programmatic at /costs/<slug>/<state> for the
+  // 25 priority states × 2 cost guides = 50 indexable URLs targeting
+  // "[trade] cost in [state]" long-tail queries.
+  const { getAllStateCostParams } = await import("@/content/state-cost-data");
+  const stateCostEntries: MetadataRoute.Sitemap = getAllStateCostParams().map(
+    ({ slug, state }) => ({
+      url: fullUrl(`/costs/${slug}/${state}`),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
+    })
+  );
+
   return [
     ...staticEntries,
     ...toolEntries,
     ...articleEntries,
     ...topicEntries,
     ...glossaryEntries,
+    ...stateCostEntries,
   ];
 }
