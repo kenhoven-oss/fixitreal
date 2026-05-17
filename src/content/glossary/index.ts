@@ -180,6 +180,247 @@ export const glossary: GlossaryEntry[] = [
       { path: "/home-inspection-repairs", label: "Home inspection repairs" },
     ],
   },
+  {
+    slug: "afci",
+    term: "AFCI (Arc Fault Circuit Interrupter)",
+    alsoCalled: ["arc-fault breaker", "AFCI breaker"],
+    short:
+      "A circuit breaker that trips when it detects the electrical signature of an arc — preventing fires from damaged or loose wiring.",
+    body: [
+      "Where a regular breaker trips on overload and a GFCI trips on ground-fault current, an AFCI trips on the high-frequency electrical noise pattern produced by an arcing wire. Arcs are how aging or damaged wiring starts most residential electrical fires.",
+      "National Electrical Code now requires AFCI protection on most residential circuits — bedrooms first (since 1999), then living areas, then kitchens. Older homes are grandfathered, but adding AFCI breakers during a panel upgrade is one of the highest-value safety upgrades.",
+      "AFCI breakers cost more than standard ($35–$60 each vs. $5–$15), and they can be sensitive to certain motor loads (especially refrigerator compressors), so nuisance trips are common after install. The trade-off: meaningfully lower fire risk for a meaningfully higher device price.",
+    ],
+  },
+  {
+    slug: "ahj",
+    term: "AHJ (Authority Having Jurisdiction)",
+    alsoCalled: ["building department", "code authority"],
+    short:
+      "The local government body — usually the building department — that enforces building codes and issues permits in your specific city or county.",
+    body: [
+      "The same job that's a routine 1-day permit in one city can require a 3-week review and structural drawings in another. The AHJ is the office that decides which.",
+      "Contractor questions often have only one correct answer: 'check with your AHJ.' Permit fees, inspection schedules, allowed materials, who can perform what work — all set by the local AHJ, not by national code books. National codes (IRC, NEC, IPC) are model codes; each AHJ adopts a version and amends it.",
+      "Find yours by searching '[your city/county] building department.' Most have a public-facing FAQ and a phone number that answers permit questions for free.",
+    ],
+  },
+  {
+    slug: "load-calculation",
+    term: "Load calculation",
+    alsoCalled: ["panel load calc", "service load calculation"],
+    short:
+      "A formal estimate of how much electrical power a home actually draws, used to verify the main electrical service can handle current and added loads.",
+    body: [
+      "Before any major electrical upgrade — adding a hot tub, EV charger, sub-panel, kitchen remodel — a licensed electrician runs a load calculation per NEC Article 220. The math factors in square footage, appliances, heating, cooling, and the new load.",
+      "If the calculation shows the existing 100-amp or 200-amp panel can't handle the new load, the project requires a service upgrade — typically $2,500–$6,000 for residential — before anything else gets installed. Contractors who skip this step can leave you with an overloaded panel that trips constantly.",
+      "Ask any electrician quoting major work: 'What did the load calculation show?' If they didn't run one, they're not doing the job right.",
+    ],
+  },
+  {
+    slug: "main-disconnect",
+    term: "Main disconnect",
+    alsoCalled: ["main breaker", "service disconnect"],
+    short:
+      "The single switch or breaker that shuts off all electricity entering the house — found at the top of the main panel or in a separate outdoor box.",
+    body: [
+      "In a residential setting, the main disconnect is typically a 100-amp, 150-amp, or 200-amp double-pole breaker at the top of the electrical panel. Flipping it cuts all power downstream — every circuit, every outlet, every light.",
+      "Knowing where yours is and being able to operate it under stress is essential. During a flood, fire, or electrical-fault emergency, killing the main disconnect protects you before first responders arrive.",
+      "Some homes have a separate exterior service disconnect mounted on the wall near the meter — that's even safer to operate in an emergency because you can reach it without going inside.",
+    ],
+  },
+  {
+    slug: "expansion-tank",
+    term: "Expansion tank",
+    alsoCalled: ["thermal expansion tank", "water heater expansion tank"],
+    short:
+      "A small (typically 2-gallon) bladder tank mounted on the cold-water inlet of a water heater that absorbs the thermal expansion of heated water.",
+    body: [
+      "When water heats up, it expands roughly 4% by volume. In a 'closed' plumbing system — one with a backflow preventer, pressure regulator, or check valve at the meter — that expanding water has nowhere to go and forces the water heater's T&P relief valve to drip.",
+      "An expansion tank gives the water a small space to push into, preserving safe pressure and saving the T&P valve from constant cycling. Required by most modern plumbing codes in any home with a closed system.",
+      "Costs $150–$300 installed. If your water heater's T&P valve drips repeatedly, missing or failed expansion tank is the first thing a plumber should check. Tanks last 5–10 years; tap the side annually — solid sound throughout means the bladder failed.",
+    ],
+    related: [
+      { path: "/what-is-this/valve-near-water-heater", label: "What is this valve near my water heater?" },
+    ],
+  },
+  {
+    slug: "anode-rod",
+    term: "Anode rod",
+    alsoCalled: ["sacrificial anode", "tank anode"],
+    short:
+      "A magnesium or aluminum rod inside a water heater tank that corrodes preferentially, preventing the steel tank from rusting through.",
+    body: [
+      "Every traditional tank water heater contains an anode rod — a long metal rod threaded into the top of the tank. The rod is more reactive than the tank's steel lining, so corrosion attacks the rod instead of the tank wall.",
+      "Anode rods sacrifice themselves over 3–7 years. Once depleted, the tank itself starts rusting and a leak is months to years away. Replacing the anode rod ($30–$80 in parts, 30 minutes if accessible) every 5 years can roughly double a tank's lifespan.",
+      "Tanks with depleted anode rods often start producing smelly hot water (rotten-egg sulfur smell) — that's a sign to check. The job is moderate DIY: drain the tank a few inches, unscrew the old rod, install the new one with thread sealant. If your tank's anode is in a tight space or seized, a plumber visit is cheaper than a wrecked tank.",
+    ],
+    related: [
+      { path: "/diy-or-hire/water-heater", label: "Should I replace my own water heater?" },
+    ],
+  },
+  {
+    slug: "shut-off-valve",
+    term: "Shut-off valve",
+    alsoCalled: ["shutoff", "stop valve", "fixture valve"],
+    short:
+      "A valve that stops water flow to a specific fixture or to the whole house — used for repairs, emergencies, and isolating leaks.",
+    body: [
+      "Every house has multiple shut-off valves layered in priority: a main shut-off where water enters the building, secondary shut-offs at the water heater, and individual fixture shut-offs at every sink, toilet, and water-using appliance.",
+      "Two common types: ball valves (quarter-turn lever; reliable, common in modern homes) and gate valves (multi-turn wheel; older, prone to seizing and leaking after years of disuse). Gate valves that won't move are a real emergency hazard — replace them proactively, not when you actually need them.",
+      "Test every shut-off in your house once a year by turning each on and off briefly. A valve that has seized open is useless when a pipe bursts and you can't stop the flow.",
+    ],
+    related: [
+      { path: "/emergency-repairs/pipe-burst-first-10-minutes", label: "Pipe burst: first 10 minutes" },
+    ],
+  },
+  {
+    slug: "pex-vs-copper",
+    term: "PEX vs copper plumbing",
+    short:
+      "PEX is flexible plastic plumbing pipe used in most new residential construction since 2010; copper is the older rigid metal standard. Both are code-approved.",
+    body: [
+      "PEX (cross-linked polyethylene) costs 30–60% less to install than copper, doesn't corrode, doesn't burst as easily on freezing, and can be run through walls in long single pieces with fewer joints. It's now the dominant residential standard.",
+      "Copper still has advantages: longer expected lifespan (50+ years vs. 25–50 for PEX), better resistance to UV (so it works outdoors), accepted by every jurisdiction without question, and many plumbers prefer working with it. PEX is more sensitive to UV degradation and certain chlorine concentrations.",
+      "If you're remodeling, PEX is usually the right choice unless you have an existing all-copper system and a specific reason to match. Mixing PEX and copper inline works fine with the right transition fittings.",
+    ],
+  },
+  {
+    slug: "drain-vent",
+    term: "Drain vent (plumbing vent)",
+    alsoCalled: ["vent stack", "plumbing vent", "soil stack"],
+    short:
+      "The pipes — usually exiting through the roof — that admit air into the drain system so water can flow freely and trap seals stay intact.",
+    body: [
+      "Every drain in a code-compliant house ties into a vent system. Vents do two jobs: let air in so water can flow (a sealed drain glugs and drains slowly, like a soda bottle) and let sewer gas escape outside instead of accumulating in the trap.",
+      "A drain that gurgles, drains slowly even when not clogged, or smells of sewer gas in a fixture you use regularly often points to a blocked vent — birds, leaves, ice, or a fallen ball can plug a roof vent. A plumber with a small camera can confirm.",
+      "Vent issues are easy to misdiagnose as drain clogs. If your drain still misbehaves after snaking the line, the vent is the next suspect.",
+    ],
+  },
+  {
+    slug: "joist-vs-beam",
+    term: "Joist vs beam",
+    short:
+      "Joists are the horizontal framing members that support floors and ceilings; beams are larger structural members that carry joist loads across longer spans.",
+    body: [
+      "When a homeowner says 'I want to remove this wall to open the kitchen,' the first question is whether that wall sits on top of joists (probably not load-bearing) or perpendicular to joists (likely load-bearing and would need a beam to replace).",
+      "Beams come in three forms: dimensional lumber (e.g., a triple 2×12), engineered lumber (LVL or glulam), or steel. Engineered or steel beams are required for longer spans and bigger loads. The size is calculated by an engineer based on load and span — never guessed.",
+      "Drilling or notching joists carelessly weakens them. Most codes allow a hole up to 1/3 the joist depth in the middle 1/3 of the span — outside that envelope, you're compromising structure. Beams should never be notched or drilled without engineering sign-off.",
+    ],
+    related: [
+      { path: "/glossary/load-bearing-wall", label: "Load-bearing wall" },
+    ],
+  },
+  {
+    slug: "weep-hole",
+    term: "Weep hole",
+    alsoCalled: ["weep gap"],
+    short:
+      "Small openings in masonry, brick veneer, window frames, or other building components designed to let water that gets behind them drain out.",
+    body: [
+      "Brick veneer walls have weep holes at the bottom of each brick run — small gaps every few feet at the base of the wall. They look like cosmetic flaws but are critical: rainwater that gets behind the brick (it always does eventually) has to drain back out, or it rots the framing behind.",
+      "Windows have weep holes at the bottom of the frame's exterior face. Painting them shut, plugging them with debris, or sealing them with caulk traps water inside the frame — leading to rotted sills and interior water damage.",
+      "If your home's weep holes are blocked, clear them with a thin tool (a clothes hanger works). Never seal them, no matter how 'wrong' they look.",
+    ],
+  },
+  {
+    slug: "soft-water-vs-hard-water",
+    term: "Soft water vs hard water",
+    short:
+      "Hard water contains dissolved minerals (calcium, magnesium); soft water doesn't. Hardness affects plumbing wear, appliance lifespan, soap effectiveness, and skin/hair.",
+    body: [
+      "Hard water leaves white mineral deposits on faucets, dishes, and shower walls; reduces soap and detergent effectiveness; shortens the lifespan of water heaters and dishwashers; and can clog tankless heaters within a few years if not addressed.",
+      "Soft water — produced by a water softener that swaps the minerals out for sodium or potassium — solves all of those problems but adds a small amount of sodium to drinking water (mild concern for low-sodium diets, easily addressed by routing a separate hard-water line to the kitchen tap).",
+      "Test strips at any hardware store ($5) tell you what you have. If your hardness is over 7 grains per gallon, a softener pays back in equipment longevity within 5 years.",
+    ],
+  },
+  {
+    slug: "egress-window",
+    term: "Egress window",
+    short:
+      "A bedroom window large enough for a person to escape through during a fire — required by code in every bedroom in modern construction.",
+    body: [
+      "Bedroom egress windows must meet specific dimensions: minimum 5.7 square feet of clear opening, minimum 24 inches in height and 20 inches in width, with the sill no more than 44 inches off the floor. Basement bedrooms often need an egress well (a sunken pit outside the window).",
+      "Adding a bedroom to a basement or attic without proper egress isn't just a code violation — it can void homeowners insurance and complicate resale. Egress window installation in an existing basement runs $2,500–$6,000 depending on whether excavation is needed.",
+      "If you're buying a house with a 'bonus bedroom' that lacks egress, it isn't a legal bedroom for resale — the price should reflect that.",
+    ],
+  },
+  {
+    slug: "vapor-barrier",
+    term: "Vapor barrier",
+    alsoCalled: ["vapor retarder"],
+    short:
+      "A plastic sheet or coated material installed in walls, floors, or crawl spaces to slow water vapor from passing through the building envelope.",
+    body: [
+      "Vapor barriers serve different purposes in different climates: in cold climates, they sit on the warm (interior) side of insulation to prevent indoor humidity from condensing inside cold walls; in hot climates, they often go on the exterior side to keep outdoor humidity from soaking insulation.",
+      "Crawl spaces in humid climates benefit dramatically from a thick (10+ mil) vapor barrier on the dirt floor, with edges sealed and seams overlapped. The reduction in moisture under the home protects subfloor, joists, and indoor air quality.",
+      "Wrong-side vapor barriers (installed on the wrong face of insulation for the climate) create moisture traps and cause hidden rot. Climate-appropriate placement matters more than barrier presence.",
+    ],
+  },
+  {
+    slug: "settling-vs-foundation-problem",
+    term: "Settling vs. foundation problem",
+    short:
+      "Normal settling produces small, even, hairline cracks; foundation problems show as wider cracks, uneven floors, sticking doors, and cracks that grow over time.",
+    body: [
+      "Every house settles. New construction settles in the first 5–10 years; older homes continue to shift slightly with seasonal moisture cycles. Settling cracks are typically thin (under 1/8 inch), short, and stop growing once the home stabilizes.",
+      "Foundation problems look different: cracks wider than 1/4 inch, cracks that step diagonally through brick courses, doors and windows that no longer close squarely, floors that slope noticeably, gaps between the wall and the floor or between trim and the wall.",
+      "A licensed structural engineer's evaluation ($300–$600) is the right first step if you suspect foundation issues. Don't accept a foundation contractor's free 'inspection' as the diagnosis — they sell the repair. Pay the engineer for an independent opinion, then take that to the foundation contractors.",
+    ],
+  },
+  {
+    slug: "load-bearing-vs-partition-wall",
+    term: "Partition wall",
+    alsoCalled: ["non-load-bearing wall"],
+    short:
+      "An interior wall that doesn't carry any structural weight from the floor or roof above — safe to remove without engineering replacement.",
+    body: [
+      "Partition walls divide rooms but don't support anything above them. They typically run parallel to floor joists (not perpendicular), aren't directly above another wall on the floor below, and aren't near the center of the structure.",
+      "Removing a partition wall is straightforward — much less invasive than a load-bearing wall removal. Cost is usually $500–$1,500 including drywall repair, depending on electrical and plumbing that may be in the wall.",
+      "Confirm with an engineer or contractor before swinging a hammer. The cost of an engineer's 15-minute site visit is tiny compared to the cost of cutting through structure by accident.",
+    ],
+    related: [
+      { path: "/glossary/load-bearing-wall", label: "Load-bearing wall" },
+    ],
+  },
+  {
+    slug: "rough-in-vs-finish-plumbing",
+    term: "Rough-in vs finish plumbing",
+    short:
+      "Rough-in is the in-wall pipe work done before drywall; finish is the visible fixtures and trim installed at the end of the project.",
+    body: [
+      "A new bathroom or kitchen project has two distinct plumbing phases. Rough-in: running supply lines, drain pipes, and vents through framing before walls close up. Finish: installing the toilet, sink, faucet, shower trim, and connecting everything.",
+      "On a remodel, the rough-in inspection happens before drywall closes — a critical milestone because errors caught here are cheap; errors caught after drywall and tile go up are 5–10× more expensive to fix.",
+      "Most quotes split labor by phase. A 'plumbing rough-in' line on a bathroom remodel should be itemized separately from 'fixture installation.' Lump-sum quotes that don't separate them are the easiest to over-charge on.",
+    ],
+  },
+  {
+    slug: "watt-vs-amp-vs-volt",
+    term: "Watts vs amps vs volts",
+    short:
+      "Volts measure electrical pressure; amps measure flow; watts measure power. Power (watts) = voltage × current — the formula behind every appliance rating.",
+    body: [
+      "U.S. residential power comes in two flavors: 120V circuits for most outlets and lights, and 240V circuits for high-draw appliances like dryers, ovens, water heaters, and EV chargers. The voltage tells you which receptacle and breaker type the appliance needs.",
+      "Amps measure how much current flows through a wire. A 15-amp circuit can carry up to 15 amps of current at 120 volts — that's 1,800 watts. A 20-amp circuit handles 2,400 watts. Going over the amperage rating trips the breaker.",
+      "When buying an appliance, check the watts (or amps × volts) it draws. A 1,500-watt space heater on a 15-amp circuit (1,800W max) leaves only 300W for anything else — which is why running a heater plus a microwave on the same circuit trips constantly.",
+    ],
+    related: [
+      { path: "/advice/breaker-keeps-tripping", label: "Breaker keeps tripping" },
+    ],
+  },
+  {
+    slug: "subfloor-vs-flooring",
+    term: "Subfloor vs flooring",
+    short:
+      "The subfloor is the structural plywood or OSB layer attached to joists; flooring (hardwood, tile, vinyl, carpet) is the visible surface above it.",
+    body: [
+      "Subfloor failures show up as soft spots, bouncing floors, or popped nails — usually caused by water damage to the plywood. Replacing damaged subfloor sections is part of any major water-damage remediation.",
+      "Many homes have an additional 'underlayment' layer (thin plywood, foam, or cement board) between subfloor and finish flooring, especially under tile. Tile installations on inadequate subfloor crack within months; pay attention to the underlayment spec on any tile job.",
+      "When buying a home, walk slowly across every floor with your full weight. Soft spots, especially near bathrooms, kitchens, or exterior doors, often indicate subfloor damage that costs $1,500–$4,000+ to remediate.",
+    ],
+    related: [
+      { path: "/advice/soft-spot-in-laminate-or-wood-floor", label: "Soft spot in laminate or wood floor" },
+    ],
+  },
 ];
 
 export function getGlossaryEntry(slug: string): GlossaryEntry | undefined {

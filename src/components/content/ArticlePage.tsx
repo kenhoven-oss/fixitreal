@@ -19,6 +19,7 @@ import { FairPriceChecker } from "@/components/content/FairPriceChecker";
 import { DIYorHireVerdict } from "@/components/content/DIYorHireVerdict";
 import { ContractorRedFlagsBlock } from "@/components/content/ContractorRedFlagsBlock";
 import { ArticleProof } from "@/components/content/ArticleProof";
+import { StateCostLinks } from "@/components/content/StateCostLinks";
 import { ChecklistCTA } from "@/components/marketing/ChecklistCTA";
 import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
@@ -56,6 +57,7 @@ const mdxComponents = {
   DIYorHireVerdict,
   ContractorRedFlagsBlock,
   ArticleProof,
+  StateCostLinks,
   ChecklistCTA,
   PrintReadyFormsCTA,
   a: ({ href, children }: { href?: string; children?: React.ReactNode }) =>
