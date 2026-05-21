@@ -1,14 +1,21 @@
+/**
+ * Numeric props accept number OR string. This is deliberate: MDX's
+ * `next-mdx-remote/rsc` pipeline can lose JSX expression attributes
+ * (`low={300}`) under some plugin configurations, leaving them
+ * undefined or stringified. Accepting strings lets MDX authors write
+ * `low="300"` reliably, and the component coerces to number internally.
+ */
 type FairPriceCheckerProps = {
   /** Low end of what most homeowners pay. */
-  low: number;
+  low: number | string;
   /** Fair / typical median quote. */
-  fair: number;
+  fair: number | string;
   /** High end of legitimate pricing (premium contractor, expensive metro, complex install). */
-  high: number;
+  high: number | string;
   /** Threshold above which a quote should be questioned. */
-  suspicious: number;
+  suspicious: number | string;
   /** Threshold above which a quote is almost certainly padded. */
-  walkAway: number;
+  walkAway: number | string;
   /** Optional notes — units, scope assumptions, region caveats. */
   notes?: string;
   /** Optional label for the job (e.g. "Garbage disposal replacement"). */
@@ -18,6 +25,18 @@ type FairPriceCheckerProps = {
   /** Date or month/year these ranges were last sanity-checked. */
   asOf?: string;
 };
+
+/** Coerce a maybe-stringified number to a real number. Returns null on
+ *  unparseable input so the component can degrade gracefully instead of
+ *  emitting "$NaN". */
+function toNum(v: number | string | undefined | null): number | null {
+  if (v === null || v === undefined) return null;
+  if (typeof v === "number") return Number.isFinite(v) ? v : null;
+  const trimmed = v.trim();
+  if (!trimmed) return null;
+  const n = Number(trimmed);
+  return Number.isFinite(n) ? n : null;
+}
 
 const usd = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -54,16 +73,36 @@ export function FairPriceChecker({
   unit,
   asOf,
 }: FairPriceCheckerProps) {
+  const lowN = toNum(low);
+  const fairN = toNum(fair);
+  const highN = toNum(high);
+  const suspiciousN = toNum(suspicious);
+  const walkAwayN = toNum(walkAway);
+
+  // Don't render if every tier failed to parse — silent degrade beats
+  // a row of "$NaN" boxes leaking the bug to readers.
+  if (
+    lowN === null &&
+    fairN === null &&
+    highN === null &&
+    suspiciousN === null &&
+    walkAwayN === null
+  ) {
+    return null;
+  }
+
   const tiers = [
-    { label: "Low", value: low, tone: "bg-emerald-100 text-emerald-900 border-emerald-200" },
-    { label: "Fair", value: fair, tone: "bg-emerald-50 text-emerald-900 border-emerald-200" },
-    { label: "High", value: high, tone: "bg-amber-50 text-amber-900 border-amber-200" },
-    { label: "Suspicious", value: suspicious, tone: "bg-amber-100 text-amber-900 border-amber-300" },
-    { label: "Walk away", value: walkAway, tone: "bg-red-100 text-red-900 border-red-300" },
+    { label: "Low", value: lowN, tone: "bg-emerald-100 text-emerald-900 border-emerald-200" },
+    { label: "Fair", value: fairN, tone: "bg-emerald-50 text-emerald-900 border-emerald-200" },
+    { label: "High", value: highN, tone: "bg-amber-50 text-amber-900 border-amber-200" },
+    { label: "Suspicious", value: suspiciousN, tone: "bg-amber-100 text-amber-900 border-amber-300" },
+    { label: "Walk away", value: walkAwayN, tone: "bg-red-100 text-red-900 border-red-300" },
   ] as const;
 
-  const formatValue = (n: number) =>
-    unit ? `${usd.format(n)}${unit}` : usd.format(n);
+  const formatValue = (n: number | null) => {
+    if (n === null) return "—";
+    return unit ? `${usd.format(n)}${unit}` : usd.format(n);
+  };
 
   return (
     <aside
