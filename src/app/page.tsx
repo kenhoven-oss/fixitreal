@@ -279,11 +279,11 @@ export default async function Home() {
                 "What lenders require, what buyers can ask for, and when a closing credit beats a rushed contractor visit.",
             },
             {
-              href: "/home-inspection-repairs/which-inspection-repairs-sellers-must-fix",
-              eyebrow: "Got an inspection report",
-              title: "How do I respond to the buyer's repair list?",
+              href: "/emergency-repairs",
+              eyebrow: "Something's leaking / smoking / dead",
+              title: "What do I do RIGHT NOW?",
               blurb:
-                "Sort line items into must-fix, should-fix, and won't-fix — without the agent push.",
+                "First-10-minutes guidance on toilet overflows, burst pipes, smoking outlets, and ceiling leaks — what to shut off and when to call a pro.",
             },
             {
               href: "/tools",

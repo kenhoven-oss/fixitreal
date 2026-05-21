@@ -12,6 +12,8 @@ import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
+import { itemListSchema } from "@/lib/jsonld";
 
 /* --------------------------------------------------------------------------
    PRODUCTS
@@ -39,6 +41,13 @@ const products: RecommendedProduct[] = [
       "A 25-foot manual hand auger hits the sweet spot for homeowner use — long enough to reach most kitchen and bathroom clogs, short enough to control without a mess. A rotating drum keeps the cable tidy and lets you feed it slowly without kinking.",
     keyBuyingNotes:
       "Look for a steel cable in the 1/4-inch range, a drum with a secure lid, and a rubber hand grip. A thumb lock on the drum is worth the upgrade if you can find one.",
+    avoidIf:
+      "The clog is past 20 ft of pipe, or you're working a main sewer line.",
+    typicalUse: "1–3 clogs per year for most homeowners.",
+    skillLevel: "Beginner",
+    riskLevel: "Low on PVC/ABS; moderate on old cast iron",
+    verdict:
+      "The one drain tool most homeowners should own. Handles 80% of fixture clogs.",
     affiliateUrl: "https://amzn.to/4tZgObP",
     buttonText: "Check price on Amazon",
   },
@@ -51,6 +60,14 @@ const products: RecommendedProduct[] = [
       "For a lot of bathroom clogs, the blockage is a wad of hair within six inches of the drain — not something a full auger can help with. A long plastic barbed strip pulls those out in seconds and costs very little.",
     keyBuyingNotes:
       "These are disposable by design. Buy a short multi-pack rather than one expensive unit; the tool takes the beating so your drain doesn't.",
+    avoidIf:
+      "The clog is deeper than ~6 inches in or in a kitchen sink with grease.",
+    typicalUse:
+      "Once or twice a year per bathroom drain that handles long hair.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict:
+      "Cheap, disposable, and exactly right for hair clogs in tub drains.",
     affiliateUrl: "https://amzn.to/4cwgbzh",
     buttonText: "Check price on Amazon",
   },
@@ -63,6 +80,13 @@ const products: RecommendedProduct[] = [
       "Bathtub drains have an unusual geometry — a trip-waste lever and a low P-trap. A flat-tape snake threads past both more reliably than a round cable, and it takes up almost no space in a utility closet.",
     keyBuyingNotes:
       "Check the total length; 20 feet handles almost any tub clog. A plastic guide sleeve at the tip prevents finish scratches on the overflow plate.",
+    avoidIf:
+      "Your clog is in a kitchen sink — flat tape lacks the torque for grease.",
+    typicalUse: "Used a handful of times per year on a stubborn tub.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict:
+      "If a hand auger keeps catching at the trip lever, the flat tape fixes it.",
     affiliateUrl: "https://amzn.to/4vC5Zy0",
     buttonText: "Check price on Amazon",
   },
@@ -75,6 +99,13 @@ const products: RecommendedProduct[] = [
       "Once a clog is more than 20 feet in or involves roots and grease, a manual cable stops making progress. A compact powered drum auger gives homeowners a middle option between renting a sewer machine and calling a plumber every time.",
     keyBuyingNotes:
       "Match cable length to the run you're trying to reach. Look for variable speed, a foot pedal if possible, and a properly sized cutter head for the line diameter. If the clog is in the main sewer line, call a pro instead — a wrong move can damage the line.",
+    avoidIf:
+      "You only clog a sink once a year — overkill, and the wrong cable can damage old pipes.",
+    typicalUse: "Rural / older homes with recurring stack or laundry-line clogs.",
+    skillLevel: "Intermediate (read the manual; mismatched cutter heads damage pipes)",
+    riskLevel: "Moderate; high on degraded cast iron — call a plumber instead",
+    verdict:
+      "Right tool for recurring stack or branch clogs. Not the right tool for the main sewer.",
     affiliateUrl: "https://amzn.to/4sNWsBb",
     buttonText: "Check price on Amazon",
   },
@@ -223,12 +254,41 @@ export default function BestDrainSnakesGuide() {
               Four options that cover almost every homeowner drain job.
               Start at the top for general-purpose clogs; jump to the
               tub-specific or powered option if your situation matches.
+              The comparison table below summarizes each in one line.
+              Specs, current prices, and customer reviews change — verify
+              before buying.
             </p>
           }
           products={products}
-          // Leave `comparison` undefined to show the placeholder for now.
-          // When you're ready, pass a `comparison` object — see the type
-          // definition in RecommendedProductsSection.tsx.
+        />
+
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Homeowners who own a single-family home and have had at least one clog in the last two years.",
+            "Renters in long-term leases with persistent slow drains the landlord won't address quickly.",
+            "Anyone who has paid a plumber more than $200 for a clog clearance and doesn't want to do it twice.",
+          ]}
+          whoShouldSkip={[
+            "Renters in short-term leases — the landlord owns the clog.",
+            "Anyone with old cast-iron drains showing rust at joints. The wrong cable can punch through degraded pipe.",
+            "Anyone facing a whole-house backup. That's a main-line clog and needs a licensed plumber with a sewer machine and a camera.",
+          ]}
+          commonMistakes={[
+            "Buying a 50-ft cable when 25 ft is enough. Long thin cables kink under torque and tangle in the drum.",
+            "Skipping the rubber grip and protective sleeve — they save your bathroom finishes from the cable.",
+            "Using a powered snake on the main sewer line without a camera. You can punch holes in joints you can't see.",
+            "Reaching for chemical drain cleaners first. They damage old pipes and make any later plumber visit hazardous.",
+          ]}
+          safety={
+            <>
+              A drain snake is fine for branch lines and fixture drains.
+              For main-line backups, gas-line crossings, or any drain in a
+              wall behind a finished surface, call a licensed plumber. Old
+              cast-iron drains can fail when a cable forces past a
+              degraded joint — that&apos;s an expensive repair pretending
+              to be a cheap one.
+            </>
+          }
         />
 
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
@@ -306,8 +366,10 @@ export default function BestDrainSnakesGuide() {
           </ul>
         </div>
 
-        {/* Schema — Article + FAQPage + BreadcrumbList. No Product schema
-            because we don't publish verified prices/ratings here. */}
+        {/* Schema — Article + FAQPage + BreadcrumbList + ItemList. We
+            deliberately do NOT emit Product schema because we don't
+            publish verified prices, availability, or ratings; an ItemList
+            of editorial picks is the truthful structured-data shape. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={jsonLdScript([
@@ -317,12 +379,21 @@ export default function BestDrainSnakesGuide() {
               description: pageDescription,
               url: path,
               datePublished: "2026-04-20",
-              dateModified: "2026-04-20",
+              dateModified: "2026-05-16",
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

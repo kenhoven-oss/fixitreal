@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 /* --------------------------------------------------------------------------
@@ -36,6 +38,11 @@ const products: RecommendedProduct[] = [
       "A non-contact tester is the first tool out of the bag for almost every electrical check in a house. Hold it near a hot conductor and it lights up and beeps; hold it on a dead one and it stays quiet. It doesn't replace a meter, but it tells you whether to keep working.",
     keyBuyingNotes:
       "Look for an adjustable-sensitivity model that covers roughly 12–1000 V AC. Test the tester on a known-live outlet before every use — dead batteries are the single most common way people get surprised. Treat a silent reading as provisional, not proof.",
+    avoidIf: "You need a confirmed-isolation guarantee — that's a two-point contact tester or multimeter, not an NCVT.",
+    typicalUse: "Every single time you open a switch, outlet, or fixture box.",
+    skillLevel: "Beginner — but verify the tester on a known-live source before trusting a quiet reading.",
+    riskLevel: "Tool itself is low risk; the work it enables is electrical — treat all wiring as live until proven dead.",
+    verdict: "The first tool every homeowner should own. Cheap, idiot-proof, and lifesaving.",
     affiliateUrl: "https://amzn.to/4cyACvH",
     buttonText: "Check price on Amazon",
   },
@@ -48,6 +55,11 @@ const products: RecommendedProduct[] = [
       "Plug it into an outlet and a three-light pattern tells you whether hot and neutral are correct, whether the ground is connected, and whether the GFCI trips when you press the button. That's a lot of useful information for almost no effort.",
     keyBuyingNotes:
       "These don't detect every wiring fault (notably a bootleg ground), so a clean reading isn't a guarantee the outlet is wired to code. Use the decoder on the case rather than memorizing light patterns; they vary by brand.",
+    avoidIf: "You're chasing a hard fault that this tester's light pattern can't reveal — multimeter time.",
+    typicalUse: "Before/after every outlet swap, and any time you suspect a GFCI isn't tripping.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict: "Cheap, fast outlet sanity check. Should live in every electrical drawer.",
     affiliateUrl: "https://amzn.to/4vCRsC6",
     buttonText: "Check price on Amazon",
   },
@@ -60,6 +72,11 @@ const products: RecommendedProduct[] = [
       "When a non-contact tester or a GFCI tester tells you something is off, a multimeter tells you how far off. Reading actual voltage is how you distinguish a loose neutral, a backfed circuit, or a tired transformer.",
     keyBuyingNotes:
       "A CAT III 600 V rated meter with fused leads is the floor for residential work — don't buy the cheapest unrated unit. Auto-ranging makes life easier. Stick to measuring circuits you've already isolated; reading inside a panel is a different risk category.",
+    avoidIf: "Your only need is 'is this hot?' — an NCVT is faster and safer for that.",
+    typicalUse: "Diagnosing low-voltage issues (thermostats, doorbells), confirming exact voltage at outlets.",
+    skillLevel: "Intermediate — read the manual and the CAT-rating section before measuring at a live panel.",
+    riskLevel: "Moderate — measurement inside a panel is licensed-electrician territory.",
+    verdict: "Worth owning once you outgrow the NCVT. Buy the CAT-rated meter, not the bargain bin.",
     affiliateUrl: "https://amzn.to/4ttXQdK",
     buttonText: "Check price on Amazon",
   },
@@ -72,6 +89,11 @@ const products: RecommendedProduct[] = [
       "Half the hassle of any electrical project is figuring out which breaker to shut off. A transmitter plugs into the outlet and a receiver scans the panel until it beeps over the matching breaker. What was a ten-minute guessing game becomes thirty seconds.",
     keyBuyingNotes:
       "Accuracy varies — always verify with a non-contact tester at the outlet after turning the breaker off. Shared neutrals in older panels can cause false positives, so scan with the outlet's lamp plugged in as a confirmation.",
+    avoidIf: "Your panel is clearly labeled and the breakers actually match the labels.",
+    typicalUse: "Periodic — a few times per year during electrical projects.",
+    skillLevel: "Beginner",
+    riskLevel: "Low — but ALWAYS verify with an NCVT after flipping the breaker.",
+    verdict: "Big time-saver. Just never trust it alone — pair with an NCVT.",
     affiliateUrl: "https://amzn.to/4czxXBY",
     buttonText: "Check price on Amazon",
   },
@@ -229,6 +251,34 @@ export default function BestVoltageTestersGuide() {
           products={products}
         />
 
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Every homeowner — an NCVT plus a GFCI tester is under $40 and prevents every common 'is this hot?' surprise.",
+            "Anyone planning to swap an outlet, switch, or light fixture themselves.",
+            "Homeowners in older houses with two-prong outlets, aluminum wiring, or breakers that don't match the labels.",
+          ]}
+          whoShouldSkip={[
+            "Renters — wiring is your landlord's problem, and you shouldn't be opening their boxes.",
+            "Anyone planning panel work or a service upgrade. Stop and call a licensed electrician.",
+            "Buyers expecting a multimeter to replace an NCVT — they answer different questions.",
+          ]}
+          commonMistakes={[
+            "Trusting an NCVT without first verifying it on a known-live outlet.",
+            "Reading a GFCI tester's lights without checking the brand-specific decoder; light patterns vary.",
+            "Probing inside an open panel with an uncalibrated meter. CAT-rated leads and proper PPE — or hire a pro.",
+            "Treating a circuit-breaker finder result as final. Always verify with the NCVT after switching the breaker.",
+          ]}
+          safety={
+            <>
+              These tools tell you about electricity; they do not protect you
+              from it. For service panel work, sub-panels, service-entrance
+              wiring, knob-and-tube, aluminum branch circuits, or anything
+              behind a sealed wall, hire a licensed electrician. Inadequately
+              tested wiring is a leading residential fire and shock cause.
+            </>
+          }
+        />
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           When not to DIY
         </h2>
@@ -319,12 +369,22 @@ export default function BestVoltageTestersGuide() {
               description: pageDescription,
               url: path,
               datePublished: "2026-04-20",
-              dateModified: "2026-04-20",
+              // 2026-05-16: enrichment + ItemList pass.
+              dateModified: "2026-05-16",
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 const products: RecommendedProduct[] = [
@@ -24,6 +26,11 @@ const products: RecommendedProduct[] = [
       "ABC dry chemical handles all three home-fire classes: ordinary combustibles (wood, paper, fabric), flammable liquids (cooking oil, paint, gasoline), and energized electrical equipment. The 5-lb size is the practical sweet spot — large enough to actually fight a fire, small enough to lift and aim under stress. Look for UL ratings of at least 3-A:40-B:C.",
     keyBuyingNotes:
       "Buy units with a pressure gauge, metal valve assembly (not plastic), and a service tag for annual inspection. Avoid 'disposable' 2.5-lb units as primary extinguishers — they discharge in under 10 seconds and can't be refilled.",
+    avoidIf: "You can't physically lift and aim a 5-lb extinguisher under stress — get a fire blanket instead.",
+    typicalUse: "Mounted permanently. Inspected monthly; serviced annually; replaced or refilled per the gauge.",
+    skillLevel: "Beginner — PASS technique: Pull pin, Aim at base, Squeeze handle, Sweep.",
+    riskLevel: "Tool is low-risk; the fire is high-risk. Evacuate first if the fire is bigger than a wastebasket.",
+    verdict: "The primary home extinguisher — one per floor. Metal valve + gauge + service tag are non-negotiable.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -37,6 +44,11 @@ const products: RecommendedProduct[] = [
       "ABC dry chemical works on cooking fires, but Class K wet chemical works better — it creates a foam that smothers oil and prevents reignition. For homes that cook frequently with deep oil (frying, wok cooking), this is the right primary extinguisher in the kitchen. Skip if you only cook lightly.",
     keyBuyingNotes:
       "Mount near the stove but not above it — you don't want to reach over flames to grab it. Class K is a supplement, not a replacement, for a general-purpose ABC unit. Wet chemical leaves residue requiring cleanup, so use is reserved for the actual emergency.",
+    avoidIf: "You only cook lightly. A fire blanket + ABC unit is enough.",
+    typicalUse: "Supplement to the primary ABC. Specifically for grease/oil cooking fires.",
+    skillLevel: "Beginner — same PASS technique.",
+    riskLevel: "Tool low-risk; cooking fires spread fast — evacuate if not contained in 10 seconds.",
+    verdict: "Worth adding only if you deep-fry or wok-cook regularly. ABC alone is fine for light cooks.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -50,6 +62,11 @@ const products: RecommendedProduct[] = [
       "For a small stovetop fire (skillet, pot), a fire blanket smothers flames faster than an extinguisher and leaves no chemical residue on appliances or food prep surfaces. Faster to deploy than reading an extinguisher manual under stress. Effective on clothing fires.",
     keyBuyingNotes:
       "Look for tested compliance with BS EN 1869 (the standard for fire blankets). Sizes 39\"×39\" or 47\"×47\" are typical residential. Reusable models exist, but most are single-use after deployment. Mount in a quick-release pouch within 6 feet of the stove.",
+    avoidIf: "You'd rather have the extinguisher residue than a single-use blanket. Both have a place.",
+    typicalUse: "Hangs by the kitchen exit. Pulled in seconds for stovetop or clothing fires.",
+    skillLevel: "Beginner — pull, drape, leave for 15 minutes.",
+    riskLevel: "Low if used correctly. Don't put your hands inside the blanket while smothering.",
+    verdict: "The fastest no-residue response to a small kitchen fire. Add to every home.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -63,6 +80,11 @@ const products: RecommendedProduct[] = [
       "A 5-lb extinguisher is heavy and bulky for a vehicle. Compact 1.5-lb ABC units mount with a bracket, weigh under 3 pounds full, and discharge for ~8 seconds — long enough to fight a small vehicle or workshop fire while you back away to call 911. Not a primary home extinguisher; a supplement for the spaces a 5-lb doesn't fit.",
     keyBuyingNotes:
       "Look for SAE / DOT-listed automotive models for vehicle use. UL 1-A:10-B:C is a useful minimum rating. Replace after any partial discharge — the powder settles and pressure drops over time once disturbed.",
+    avoidIf: "You only need household-fire coverage; a 5-lb ABC is the right primary tool.",
+    typicalUse: "Vehicle bracket, garage workshop, lawn equipment area.",
+    skillLevel: "Beginner.",
+    riskLevel: "Tool low-risk; vehicle fires escalate fast — call 911 and back away as you fight.",
+    verdict: "A supplement for vehicles and tight workshop spaces. Not your primary home extinguisher.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -213,6 +235,37 @@ export default function BestFireExtinguishersForHomePage() {
           products={products}
         />
 
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Every U.S. home — minimum one 5-lb ABC per floor; one in the kitchen vicinity.",
+            "Anyone who deep-fries, wok-cooks, or runs a propane grill near the house. Add a Class K or a fire blanket.",
+            "Anyone with a detached garage / workshop / lawn tractor — add a compact ABC there.",
+          ]}
+          whoShouldSkip={[
+            "Renters whose landlord supplies and services extinguishers (verify the inspection tag is current).",
+            "Anyone planning to use an extinguisher in lieu of evacuation in a serious fire. Extinguishers buy seconds, not minutes.",
+            "Buyers tempted by plastic-valve disposable units. They're worse than nothing in a real fire.",
+          ]}
+          commonMistakes={[
+            "Skipping the monthly gauge check. The needle in the red zone = pressure loss, the extinguisher won't work.",
+            "Mounting the kitchen extinguisher above the stove — you'd reach over the fire to grab it.",
+            "Buying one extinguisher for the whole house. Travel distance to grab it during a fire = seconds you don't have.",
+            "Letting an extinguisher age past 12 years without recharge service. Powder cakes; pressure drops; it fails.",
+          ]}
+          safety={
+            <>
+              <strong>Evacuate first. Fight fires only when (1) everyone
+              else is out, (2) the fire is smaller than a wastebasket,
+              (3) you have a clear exit behind you, and (4) the fire isn&apos;t
+              between you and that exit.</strong> Use the PASS technique:
+              Pull, Aim, Squeeze, Sweep. Call 911 before, during, or after —
+              not instead of. Grease, electrical, and structural fires beyond
+              stovetop scale require the fire department; no homeowner
+              extinguisher will stop them.
+            </>
+          }
+        />
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           Where to mount each unit
         </h2>
@@ -326,6 +379,15 @@ export default function BestFireExtinguishersForHomePage() {
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

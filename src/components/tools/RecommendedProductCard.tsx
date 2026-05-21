@@ -28,6 +28,21 @@ export type RecommendedProduct = {
   buttonText?: string;
   /** Optional category tag (e.g. "Manual drain snake"). */
   category?: string;
+  /* ------------------------------------------------------------------
+     Optional fields used to auto-build the at-a-glance comparison table.
+     Fill these in to surface a row in the comparison table for this
+     product. Leave any field blank and that cell shows "—".
+  ------------------------------------------------------------------ */
+  /** When NOT to buy this — the disqualifying use case. */
+  avoidIf?: string;
+  /** How often a homeowner is likely to use this (e.g. "Once a year"). */
+  typicalUse?: string;
+  /** "Beginner" | "Intermediate" | "Advanced" — keep it short. */
+  skillLevel?: string;
+  /** "Low" | "Moderate" | "High" — physical / damage risk if misused. */
+  riskLevel?: string;
+  /** One-sentence plain-English verdict. */
+  verdict?: string;
 };
 
 type RecommendedProductCardProps = {
@@ -91,11 +106,7 @@ export function RecommendedProductCard({ product, children }: RecommendedProduct
         >
           {buttonText} ↗
         </a>
-      ) : (
-        <p className="mt-auto text-xs italic text-ink-500">
-          Buying link coming soon.
-        </p>
-      )}
+      ) : null}
     </article>
   );
 }

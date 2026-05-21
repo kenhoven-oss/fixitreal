@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 /* --------------------------------------------------------------------------
@@ -35,6 +37,11 @@ const products: RecommendedProduct[] = [
       "A pin meter drives two short probes into the material and measures electrical resistance between them. It gives you a direct reading on the material you're actually testing, which is what most homeowners need when they're trying to answer the simple question of whether something is wet.",
     keyBuyingNotes:
       "The pin holes are small but real — don't use one on a finished surface you care about. Look for a unit with separate scales for wood and drywall, and replacement pins available, because pins bend.",
+    avoidIf: "You don't want to leave pin holes (hardwood floors, finished cabinetry) — use a pinless.",
+    typicalUse: "A few readings per year during seasonal inspections or after a leak.",
+    skillLevel: "Beginner",
+    riskLevel: "Low — just don't probe live wiring inside a wall.",
+    verdict: "The most direct, most defensible reading for a homeowner.",
     affiliateUrl: "https://amzn.to/48HfL88",
     buttonText: "Check price on Amazon",
   },
@@ -47,6 +54,11 @@ const products: RecommendedProduct[] = [
       "A pinless meter uses a sensor pad and reads roughly the top inch of material. It's faster than pin testing, leaves no holes, and is how you sweep a whole wall to find where the wet spot actually peaks before confirming with pins if you need to.",
     keyBuyingNotes:
       "Readings are relative, not absolute — always take a baseline on a known-dry area in the same material and compare. Metal behind drywall (studs, fasteners, foil insulation) will throw readings off, so expect some false highs.",
+    avoidIf: "You need an absolute moisture-content reading to satisfy an insurance claim — pin meters are the standard there.",
+    typicalUse: "Sweeping a wall or ceiling after a leak; periodic basement checks.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict: "The right way to find a wet spot without putting holes in the wall.",
     affiliateUrl: "https://amzn.to/4vC70Gk",
     buttonText: "Check price on Amazon",
   },
@@ -59,6 +71,11 @@ const products: RecommendedProduct[] = [
       "A combined meter saves you owning two tools and lets you use the right mode for the situation — pinless to find the spot, pins to verify. For most homeowners who expect to use the tool a handful of times a year, this is the right answer.",
     keyBuyingNotes:
       "Combined units are usually larger and a bit more expensive, but if you're only going to buy one meter, this is it. Check that both modes have their own calibrated scales and that the pinless depth is at least 3/4 inch.",
+    avoidIf: "You only need one mode and want a smaller / cheaper tool.",
+    typicalUse: "The 'one moisture meter I own' for ongoing house monitoring.",
+    skillLevel: "Beginner — but read the calibration notes for each mode.",
+    riskLevel: "Low",
+    verdict: "If you can only buy one moisture meter, this is the one.",
     affiliateUrl: "https://amzn.to/4mC7I2e",
     buttonText: "Check price on Amazon",
   },
@@ -211,6 +228,35 @@ export default function BestMoistureMetersGuide() {
           products={products}
         />
 
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Owners of older homes with crawlspaces, basements, or any past water-intrusion history.",
+            "Anyone confirming a leak repair worked before closing up the wall.",
+            "Buyers walking pre-inspection on a house with stained ceilings or musty smells.",
+          ]}
+          whoShouldSkip={[
+            "First-time homeowners with no current moisture concern — your inspector will bring one.",
+            "Anyone needing forensic-grade documentation for an insurance claim — that's a remediation specialist's calibrated equipment.",
+            "Renters — building moisture is the landlord's problem.",
+          ]}
+          commonMistakes={[
+            "Trusting a single reading. Always baseline against a known-dry area in the same material.",
+            "Buying pinless-only and being surprised when stud lines and metal fasteners spike the reading.",
+            "Reading drywall on the wood scale (or vice versa). Different materials, different calibrated ranges.",
+            "Treating a low reading as 'no leak' instead of 'no current moisture' — slow leaks dry between readings.",
+          ]}
+          safety={
+            <>
+              A moisture meter measures, it doesn&apos;t fix. If you find
+              elevated moisture in a structural member, near electrical, or
+              behind a finished wall older than 24–48 hours of suspected
+              wetness, stop and call a licensed water-damage / mold
+              remediation contractor. Hidden mold and rotten framing are
+              outside DIY territory.
+            </>
+          }
+        />
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           When a meter isn&apos;t enough
         </h2>
@@ -302,12 +348,21 @@ export default function BestMoistureMetersGuide() {
               description: pageDescription,
               url: path,
               datePublished: "2026-04-20",
-              dateModified: "2026-04-20",
+              dateModified: "2026-05-16",
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>
