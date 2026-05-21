@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 /* --------------------------------------------------------------------------
@@ -35,6 +37,11 @@ const products: RecommendedProduct[] = [
       "A dripless gun pulls pressure off the tube the moment you release the trigger, which is the difference between a clean finish and a long smear down the tub. The improvement over a basic ratchet gun is immediate, even for someone who has never caulked anything.",
     keyBuyingNotes:
       "Look for a smooth-rod (not ratchet) frame with a 10:1 thrust ratio for most household sealants. A built-in seal punch and nozzle cutter save time at the start of every tube. Metal frames last longer than plastic.",
+    avoidIf: "You'll caulk one bead in your life — borrow a friend's gun.",
+    typicalUse: "One project per quarter for an active homeowner.",
+    skillLevel: "Beginner — dripless mechanism does most of the work.",
+    riskLevel: "Low.",
+    verdict: "Worth every dollar over a basic ratchet gun. The bead quality difference is immediate.",
     affiliateUrl: "https://amzn.to/3QiVH5Q",
     buttonText: "Check price on Amazon",
   },
@@ -47,6 +54,11 @@ const products: RecommendedProduct[] = [
       "Pure silicone stays flexible through years of thermal and moisture cycling. Siliconized-acrylic caulks look similar on the shelf and are easier to tool, but they fail faster in wet joints — which is where caulk mostly lives.",
     keyBuyingNotes:
       "Read the tube: you want a product labeled 100% silicone, not siliconized. Pick a mildew-resistant formulation for bathrooms. Plan on a full cure time of 24 hours before the joint gets wet; faster formulations exist if you need to shower the same day.",
+    avoidIf: "You're caulking a paintable trim joint. Silicone doesn't take paint — use a paintable acrylic-silicone hybrid.",
+    typicalUse: "One or two tubes per recaulking project.",
+    skillLevel: "Beginner.",
+    riskLevel: "Low — but ventilation matters; silicone outgasses acetic acid as it cures.",
+    verdict: "The only sealant that lasts in genuinely wet joints. 100% silicone, not siliconized.",
     affiliateUrl: "https://amzn.to/42hjzcB",
     buttonText: "Check price on Amazon",
   },
@@ -59,6 +71,11 @@ const products: RecommendedProduct[] = [
       "The hardest part of a recaulking job is removing the old bead without gouging the tub or countertop. A dedicated removal tool has angled blades that hook under the caulk and ride along the substrate, which a utility knife can't do safely on acrylic or cultured marble.",
     keyBuyingNotes:
       "Plastic-bladed versions are safest on soft surfaces; metal blades cut faster but leave marks if you're heavy-handed. After mechanical removal, follow with mineral spirits or a dedicated silicone remover to clean residue — new silicone won't bond over old.",
+    avoidIf: "There's no existing caulk to remove (new install). Skip it.",
+    typicalUse: "Once per recaulking project — about 15 minutes of work per linear foot.",
+    skillLevel: "Beginner.",
+    riskLevel: "Low — careful around tile glaze and acrylic tub finishes.",
+    verdict: "The right tool. A utility knife will gouge cultured marble and acrylic tubs.",
     affiliateUrl: "https://amzn.to/3QOjrig",
     buttonText: "Check price on Amazon",
   },
@@ -71,6 +88,11 @@ const products: RecommendedProduct[] = [
       "A finishing kit with shaped silicone tips pulls a bead at a consistent radius that a fingertip never quite manages. For the long runs behind a tub or along a counter, the difference between an amateur result and a clean one is almost entirely the finishing pass.",
     keyBuyingNotes:
       "Different tips match different bead sizes; pick one that matches the joint width you have. Keep a cup of soapy water on hand — dipping the tip before each pull prevents silicone from dragging.",
+    avoidIf: "You're only sealing one short joint and don't care about appearance.",
+    typicalUse: "Long bath, kitchen, and trim runs where a clean look matters.",
+    skillLevel: "Beginner.",
+    riskLevel: "Low.",
+    verdict: "The cheap upgrade that takes a result from amateur to clean.",
     affiliateUrl: "https://amzn.to/42hjBkJ",
     buttonText: "Check price on Amazon",
   },
@@ -224,6 +246,36 @@ export default function BestCaulkGuide() {
           products={products}
         />
 
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Anyone with an existing tub, shower, or kitchen counter showing failed (cracked, mildewed) caulk.",
+            "Homeowners doing a pre-sale touch-up of bathrooms and kitchens. Fresh caulk lines are the single highest-ROI cosmetic fix.",
+            "Buyers tackling a small wet-area refresh without remodeling.",
+          ]}
+          whoShouldSkip={[
+            "Anyone seeing black mold growing through the caulk into the substrate. That's a remediation contractor's job, not a recaulking job.",
+            "Anyone considering caulk for structural sealing (foundation cracks, roof flashing). Wrong product class — use proper sealants / call a pro.",
+            "Renters whose landlord owns the cosmetic upkeep.",
+          ]}
+          commonMistakes={[
+            "Caulking over old caulk. Nothing bonds. Strip and clean to bare substrate first.",
+            "Using siliconized-acrylic in genuinely wet joints. It fails in a year — use 100% silicone.",
+            "Skipping ventilation. Silicone outgasses acetic acid during cure; open a window.",
+            "Re-using the tub before the cure window. 24 hours minimum for standard 100% silicone.",
+          ]}
+          safety={
+            <>
+              Caulk is low-risk, but the joints it seals are not — mold
+              behind failed caulk is a mold remediation issue, not a caulk
+              issue. If you see black staining extending past the caulk line
+              into grout or substrate, stop and consult a licensed mold
+              remediation professional before recaulking over the problem.
+              Ventilate the room during cure (acetic acid outgassing) and
+              never caulk over wet substrate; the bond will fail.
+            </>
+          }
+        />
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           When not to DIY
         </h2>
@@ -314,12 +366,21 @@ export default function BestCaulkGuide() {
               description: pageDescription,
               url: path,
               datePublished: "2026-04-20",
-              dateModified: "2026-04-20",
+              dateModified: "2026-05-16",
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

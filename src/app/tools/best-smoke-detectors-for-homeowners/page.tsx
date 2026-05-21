@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 /* --------------------------------------------------------------------------
@@ -29,6 +31,11 @@ const products: RecommendedProduct[] = [
       "Sealed 10-year lithium units remove the failure mode that kills users — homeowners pulling the battery on a chirping alarm and forgetting to replace it. Photoelectric sensors respond faster to smoldering fires (the type that kills at night) than ionization-only units.",
     keyBuyingNotes:
       "Check the manufacture date stamped on the back — shelf time counts against the 10-year clock. Look for UL 217 listing and a hush button that silences nuisance trips without disabling the alarm.",
+    avoidIf: "You have hardwired interconnected alarms already — like-for-like replacement preserves the interconnect.",
+    typicalUse: "Set-and-forget for 10 years. One unit per bedroom + one per floor minimum.",
+    skillLevel: "Beginner",
+    riskLevel: "Low — the alarm itself. Replacement is screwdriver-only.",
+    verdict: "The default choice for almost every home. Sealed lithium beats every annual-battery alarm.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -42,6 +49,11 @@ const products: RecommendedProduct[] = [
       "Two life-safety detectors in one location means one ceiling penetration and one device to maintain. Especially valuable on hallways outside sleeping areas, where CO needs detection alongside smoke. Photoelectric smoke + electrochemical CO is the right sensor combo for most homes.",
     keyBuyingNotes:
       "Verify UL 217 (smoke) AND UL 2034 (CO) listings — some 'combo' units only meet one standard. CO sensors have a 7–10 year life; the combo unit's life is limited by whichever sensor expires first.",
+    avoidIf: "Your home has no fuel-burning appliances, attached garage, or fireplace — a smoke-only is enough.",
+    typicalUse: "Hallways outside sleeping areas in any home with gas, oil, propane, fireplace, or attached garage.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict: "The right combo for most U.S. homes. UL 217 + UL 2034 is the spec to check.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -55,6 +67,11 @@ const products: RecommendedProduct[] = [
       "If your existing alarms are hardwired and interconnected (one trips, they all sound), a like-for-like hardwired replacement preserves that interconnection. Mixing hardwired with new battery-only units breaks the interconnect — when one alarm trips, the others don't sound.",
     keyBuyingNotes:
       "Match the brand of your existing units (Kidde, First Alert, BRK) — wiring harness connectors are not universal. Brand-mismatched hardwired alarms require splicing inside the junction box. See our [DIY smoke detector replacement guide](/diy-or-hire/smoke-detector).",
+    avoidIf: "Your home doesn't already have hardwired alarms — installing new circuits is electrician work.",
+    typicalUse: "Like-for-like replacement of an existing hardwired interconnected system.",
+    skillLevel: "Intermediate — comfortable with a multi-conductor connector and turning off the circuit.",
+    riskLevel: "Moderate — work behind a junction-box plate is electrical work; mismatch the connector and the interconnect fails silently.",
+    verdict: "If you have a hardwired interconnected system, keep it. Replace brand-for-brand.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -68,6 +85,11 @@ const products: RecommendedProduct[] = [
       "Smart alarms push a phone notification when they trip — useful if you're away from home or live alone. The added value is monitoring, not better fire detection (the sensor inside is the same UL-listed sensor). Worth the cost only if remote notification matters for your situation.",
     keyBuyingNotes:
       "Avoid models that rely on a single proprietary hub — those die when the company changes its app. Stick to brands that integrate with Apple Home, Google Home, or Alexa as well as their own app. UL 217 + UL 2034 listings still required.",
+    avoidIf: "You're at home reliably and remote notification adds no value — basic UL-listed alarms are equally protective.",
+    typicalUse: "Frequent-traveler, second-home, or remote-elderly-monitoring scenarios.",
+    skillLevel: "Beginner (battery models) to Intermediate (hardwired smart units).",
+    riskLevel: "Low — same UL-listed sensor as basic units. Risk is service / app lifecycle, not safety.",
+    verdict: "Worth it only when remote-notification matters. Don't pay for smart features as a safety upgrade.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -220,6 +242,36 @@ export default function BestSmokeDetectorsForHomeownersPage() {
           products={products}
         />
 
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Every U.S. homeowner — code requires one per bedroom, one outside each sleeping area, and one per floor.",
+            "Anyone whose existing alarms are 8+ years old. UL-listed alarms are date-stamped and degrade.",
+            "Anyone with fuel-burning appliances, an attached garage, or a fireplace — combo smoke + CO is the right buy.",
+          ]}
+          whoShouldSkip={[
+            "Renters whose units already have working alarms — that's the landlord's compliance burden.",
+            "Anyone planning to install where there's no existing junction box — that's a new circuit, not a swap.",
+            "Buyers who think 'smart' makes alarms safer. It makes them more remotely visible, which is different.",
+          ]}
+          commonMistakes={[
+            "Buying any unit without checking the UL listing (UL 217 for smoke, UL 2034 for CO).",
+            "Mixing brands of hardwired interconnected alarms — connectors are not universal and the interconnect fails silently.",
+            "Skipping the manufacture date — sealed-lithium 10-year alarms with two years on the shelf have eight years left.",
+            "Ignoring placement rules (10 ft from cooking appliances; not in bathrooms; minimum mounting heights).",
+          ]}
+          safety={
+            <>
+              Smoke and CO alarms are life-safety equipment. Buy UL-listed
+              units only (UL 217 for smoke, UL 2034 for CO), replace on the
+              manufacture-date cycle the manufacturer specifies, and verify
+              monthly that they sound. <strong>Hardwired interconnected
+              systems require a licensed electrician</strong> if any new
+              wiring or a junction-box change is involved — a silent
+              interconnect failure can be fatal.
+            </>
+          }
+        />
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           Where to place each alarm
         </h2>
@@ -351,6 +403,15 @@ export default function BestSmokeDetectorsForHomeownersPage() {
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

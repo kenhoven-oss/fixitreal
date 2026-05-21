@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 const products: RecommendedProduct[] = [
@@ -24,6 +26,11 @@ const products: RecommendedProduct[] = [
       "Plug-in models stay powered without battery dependence. The digital readout shows the actual ppm reading at any time — useful both for spotting a low-grade chronic leak (under the alarm threshold) and for confirming the sensor is working. Battery backup keeps it alive during power loss when CO risk often spikes (generator use, gas heat during outages).",
     keyBuyingNotes:
       "Look for UL 2034 listing. Sensor life is 7–10 years; the unit will signal end-of-life with a chirp pattern. Avoid units without a digital display — they leave you guessing whether 35 ppm or 250 ppm is causing the alarm.",
+    avoidIf: "Your only available locations are battery-only (no outlet near required hallway spots).",
+    typicalUse: "Permanent fixture in any hallway adjacent to sleeping areas in a fuel-burning home.",
+    skillLevel: "Beginner",
+    riskLevel: "Low for the device; the work it monitors is high-risk if the alarm sounds.",
+    verdict: "The right default if you have a wall outlet at the required location. Digital readout matters.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -37,6 +44,11 @@ const products: RecommendedProduct[] = [
       "Two life-safety devices in one ceiling penetration. The 10-year sealed lithium battery removes the disable-and-forget failure mode. Photoelectric smoke + electrochemical CO is the right sensor combo for the most-required residential location (hallway adjacent to sleeping areas).",
     keyBuyingNotes:
       "Verify both UL 217 (smoke) and UL 2034 (CO) listings — some 'combo' units only certify to one. The unit's life is limited by whichever sensor expires first — typically 7–10 years.",
+    avoidIf: "You want the digital readout — combo units usually display alarm-state only, not real-time ppm.",
+    typicalUse: "Hallway location outside bedrooms — the single most-required residential alarm spot.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict: "Two sensors, one penetration, one device to maintain. The right pick where outlets aren't available.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -50,6 +62,11 @@ const products: RecommendedProduct[] = [
       "Standard UL 2034 alarms don't trigger until 70 ppm (sustained 1–4 hours) or higher concentrations briefly. Below those thresholds, the alarm stays silent — but chronic exposure at 15–50 ppm can cause headaches, fatigue, and cognitive symptoms. Low-level monitors (NSI 3000, Defender models) sound at much lower thresholds.",
     keyBuyingNotes:
       "Not a replacement for a code-required UL 2034 alarm — it's a supplement. Pricier ($100–$200) and aimed at occupants who suspect a low-grade leak. Common scenarios: attached garages, older furnaces, fuel-burning fireplaces, basement apartments.",
+    avoidIf: "Your home is electric-only with no attached garage and no chronic-exposure suspicion.",
+    typicalUse: "As a supplement to a UL 2034 alarm — only if a leak is suspected.",
+    skillLevel: "Beginner — plug-in operation; interpreting low-ppm readings is a separate skill.",
+    riskLevel: "Low for the device; chronic CO exposure is a clinical concern — see a doctor if symptomatic.",
+    verdict: "Not for everyone. Worth it if family is symptomatic and standard alarms are silent.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -63,6 +80,11 @@ const products: RecommendedProduct[] = [
       "If your existing detectors are hardwired and interconnected (one trips, all sound), a like-for-like replacement preserves that interconnection. The wiring harness varies by brand — match what you have.",
     keyBuyingNotes:
       "Match the brand of existing units (Kidde, First Alert, BRK). Different harnesses are not compatible without splicing inside the junction box. UL 2034 still required. See our [DIY smoke detector replacement guide](/diy-or-hire/smoke-detector) for the same approach with combination units.",
+    avoidIf: "Your home doesn't already have hardwired interconnected detection. New circuits are electrician work.",
+    typicalUse: "Like-for-like replacement only — same brand, same harness.",
+    skillLevel: "Intermediate — circuit shut-off + harness matching required.",
+    riskLevel: "Moderate — mismatched connector breaks the interconnect silently.",
+    verdict: "Stay brand-for-brand or hire a licensed electrician. Don't improvise the harness.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -207,6 +229,36 @@ export default function BestCarbonMonoxideDetectorsPage() {
           products={products}
         />
 
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Every home with gas appliances (range, water heater, dryer, furnace, fireplace) — code requires CO detection.",
+            "Every home with an attached garage. Vehicle-exhaust CO infiltration is a documented cause of residential CO incidents.",
+            "Anyone with an aging furnace, generator, or fuel-burning fireplace and chronic headache/fatigue concerns.",
+          ]}
+          whoShouldSkip={[
+            "All-electric homes with no garage, no fireplace, and no fuel-burning equipment — code may not require detection.",
+            "Renters in buildings with already-installed CO detection — that's the building's compliance burden.",
+            "Anyone treating a low-level monitor as a replacement for a UL 2034 alarm. They're a supplement, not a substitute.",
+          ]}
+          commonMistakes={[
+            "Buying a CO-only when a smoke + CO combo is the right pick for the same hallway location.",
+            "Trusting an alarm older than 7 years. CO sensors degrade silently — replace on the manufacturer cycle.",
+            "Placing CO detectors at ceiling height in homes with high ceilings (CO mixes — 4–5 ft is the standard).",
+            "Confusing 'no alarm' with 'no CO.' Standard alarms trigger above 70 ppm; chronic 20–50 ppm exposure stays under threshold.",
+          ]}
+          safety={
+            <>
+              CO is invisible, odorless, and fatal at high concentrations.{" "}
+              <strong>If an alarm sounds, get everyone outside and call 911
+              from outside the building.</strong> Do not re-enter. Do not
+              vent the house yourself — first responders carry calibrated
+              meters and need the air-mass intact for the initial reading.
+              After the incident, a licensed HVAC / gas-utility tech must
+              identify the source before re-occupancy.
+            </>
+          }
+        />
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           The low-level CO problem
         </h2>
@@ -330,6 +382,15 @@ export default function BestCarbonMonoxideDetectorsPage() {
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

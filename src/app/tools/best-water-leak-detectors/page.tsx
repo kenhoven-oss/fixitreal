@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 const products: RecommendedProduct[] = [
@@ -24,6 +26,11 @@ const products: RecommendedProduct[] = [
       "A small puck with two contacts on the bottom. When water bridges the contacts, an 85+ dB siren sounds. No Wi-Fi, no hub, no app — just a loud noise. Set one under the water heater, behind the washing machine, under the kitchen sink, and you'll know about a leak before the floor warps.",
     keyBuyingNotes:
       "Look for at least 85 dB volume, replaceable battery (not sealed), and a low-battery indicator. Multi-pack value is real — buy enough for every fixture you care about (typically 5–8 per home).",
+    avoidIf: "You travel more than a week a month — local siren is no help when no one's home.",
+    typicalUse: "Permanent under every water-using appliance. Battery-replace every 1–2 years.",
+    skillLevel: "Beginner — set under the appliance and walk away.",
+    riskLevel: "Tool low-risk; what it monitors (water + electrical / structural) is high.",
+    verdict: "The $15 you spend before you need it. Buy a multi-pack.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -37,6 +44,11 @@ const products: RecommendedProduct[] = [
       "Pushes a phone notification the instant water is detected — not 'next time I'm home.' For an unattended house, this is the difference between a wet rug and a destroyed subfloor. Most models work over standard Wi-Fi without a separate hub.",
     keyBuyingNotes:
       "Verify the brand still updates firmware (some Wi-Fi sensors lose support when the company pivots). Pick brands integrated with Apple Home, Google Home, or Alexa — not proprietary apps. Battery life of 1+ year is typical; some models have a USB-power option for permanent install.",
+    avoidIf: "You're not reliably reachable by phone notification. Local-siren puck is more useful then.",
+    typicalUse: "Houses with travelers, second homes, finished basements.",
+    skillLevel: "Beginner — but you do need a Wi-Fi network and a working notification setup.",
+    riskLevel: "Low for the device.",
+    verdict: "Worth the upgrade if you're away from home regularly. Otherwise the puck is enough.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -50,6 +62,11 @@ const products: RecommendedProduct[] = [
       "Installed at the water main, this category of device monitors flow and automatically shuts off the entire house when it detects abnormal use (a burst pipe, an overflowing fixture). Saves homes from catastrophic damage when no one is there to respond.",
     keyBuyingNotes:
       "Professional install required ($400-$900 depending on plumbing access). Device itself runs $400-$700. Some insurance companies offer 5-15% premium discounts for installing one — ask before buying. Pair with Wi-Fi puck sensors for fixture-level early warning.",
+    avoidIf: "Renters, or homes with simple-access water mains. Spend the money on pucks instead.",
+    typicalUse: "Permanent at the water main — set-and-forget for years.",
+    skillLevel: "Hire a licensed plumber for install. The device is owner-operable after install.",
+    riskLevel: "Cutting into the water main is plumber work. Do not DIY.",
+    verdict: "The right move for finished basements or repeat-leak households. Insurance often discounts it.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -63,6 +80,11 @@ const products: RecommendedProduct[] = [
       "Instead of a single contact point, this uses a sensing cable that detects water anywhere along its length. Useful for places where a leak could appear in any of several spots — under a long row of plumbing, around the full base of a water heater, or along a basement wall. One sensor covers what would otherwise need 4–6 pucks.",
     keyBuyingNotes:
       "Standalone units have a siren only; some models pair with a Wi-Fi hub for phone alerts. Cable length matters — 6-foot is standard, 12+ foot is available for wider perimeter. Replacement cable is sometimes sold separately.",
+    avoidIf: "You have only single point-source risks (one washer, one heater). A puck is cheaper and simpler.",
+    typicalUse: "Around long appliance pans, perimeter of basement walls, around water-heater bases.",
+    skillLevel: "Beginner.",
+    riskLevel: "Low.",
+    verdict: "The right pick when a leak could appear anywhere along a perimeter, not at one point.",
     affiliateUrl: "",
     buttonText: "Check price on Amazon",
   },
@@ -213,6 +235,39 @@ export default function BestWaterLeakDetectorsPage() {
           products={products}
         />
 
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Owners of finished basements, multi-story homes, or any home over 20 years old (aging supply lines).",
+            "Travelers and second-home owners — combine a Wi-Fi sensor or a smart shutoff with phone alerts.",
+            "Anyone whose homeowner's insurance offers a premium discount for leak protection — usually pays back in 1–3 years.",
+          ]}
+          whoShouldSkip={[
+            "Renters whose appliances and supply lines are the landlord's responsibility.",
+            "Anyone treating the detector as a leak STOPPER — pucks alert; only a smart shutoff valve actually closes the water.",
+            "Anyone planning to DIY a whole-home shutoff valve install. That's licensed-plumber work.",
+          ]}
+          commonMistakes={[
+            "Placing the puck where condensation drips — false alarms desensitize the household and the unit gets ignored.",
+            "Relying on Wi-Fi alerts without checking firmware update history. Discontinued products go silent.",
+            "Buying one local-siren puck and assuming it covers the house. Each fixture needs its own.",
+            "Treating a smart shutoff as a substitute for routine plumbing inspection. Aging supply lines fail with or without electronics.",
+          ]}
+          safety={
+            <>
+              Leak detectors{" "}
+              <em>alert</em> — they do not stop the leak. Until a smart
+              shutoff valve closes flow, every leak still requires you to
+              shut off the main supply (or the fixture stop), which can be
+              difficult during a 2 a.m. burst pipe. For active leaks behind a
+              wall, inside a slab, or anywhere structural water damage is
+              suspected, call a licensed plumber and (if soaked &gt; 24
+              hours) a water-damage remediation contractor. Electrical
+              outlets and panels touched by water are an electrocution risk
+              until inspected.
+            </>
+          }
+        />
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           Where to put each sensor
         </h2>
@@ -324,6 +379,15 @@ export default function BestWaterLeakDetectorsPage() {
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

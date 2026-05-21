@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 /* --------------------------------------------------------------------------
@@ -39,6 +41,11 @@ const products: RecommendedProduct[] = [
       "A flange plunger has a soft rubber sleeve that folds out of the cup and seats into the drain opening at the bottom of the bowl. That seal is what lets you actually push water — a flat cup just pushes air around the rim.",
     keyBuyingNotes:
       "Look for a one-piece rubber head (no glued-on flange) and a wooden or stout plastic handle long enough to keep your hand above the waterline. A drip tray or caddy is worth it just so the thing isn't sitting on the bathroom floor between uses.",
+    avoidIf: "You're trying to clear a flat-bottomed sink or tub drain — the flange won't seal.",
+    typicalUse: "Once or twice a year per toilet in normal use.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict: "The right tool for almost every toilet clog. Owning one is non-negotiable.",
     affiliateUrl: "https://amzn.to/3Qvj5Np",
     buttonText: "Check price on Amazon",
   },
@@ -51,6 +58,11 @@ const products: RecommendedProduct[] = [
       "A simple flat-cup plunger seals against a flat drain opening better than a flange plunger, which is designed for a curved toilet outlet. Keeping a dedicated one under the kitchen sink means you're not dragging the bathroom plunger into the kitchen — which matters more than people like to think about.",
     keyBuyingNotes:
       "Smaller-diameter cups seal better on bathroom sinks; larger ones work for kitchen sinks and tubs. Before you plunge a double sink, block the other drain with a wet rag, or the pressure just vents out the other side.",
+    avoidIf: "The clog is in a toilet — use a flange plunger instead.",
+    typicalUse: "A few times a year for routine sink and tub clogs.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict: "A second, dedicated plunger that stays under the kitchen sink. Worth it.",
     affiliateUrl: "https://amzn.to/487GZVl",
     buttonText: "Check price on Amazon",
   },
@@ -63,6 +75,11 @@ const products: RecommendedProduct[] = [
       "An accordion plunger uses a bellows of hard plastic to generate much higher pressure per stroke than a soft rubber cup. It's a useful second tool, not a first tool — the hard plastic is awkward to seat and easy to splash with.",
     keyBuyingNotes:
       "Keep a towel handy; these launch water if the seal breaks mid-stroke. They scratch delicate finishes, so check the rim material before using on a new toilet or pedestal sink. Treat it as a last resort before reaching for an auger.",
+    avoidIf: "You haven't tried a regular plunger yet, or the fixture has a delicate finish.",
+    typicalUse: "Occasional — only when a standard plunger has failed.",
+    skillLevel: "Intermediate (easy to splash water across the room)",
+    riskLevel: "Moderate (scratches finishes if misseated)",
+    verdict: "A useful third tool, not your first choice. Hold it for the genuinely stubborn clogs.",
     affiliateUrl: "https://amzn.to/48d9Vez",
     buttonText: "Check price on Amazon",
   },
@@ -205,9 +222,37 @@ export default function BestPlungersGuide() {
               Three plungers that cover the realistic range of household
               clogs. The first two belong in every house; the third is for
               stubborn situations that a standard plunger can&apos;t move.
+              Specs and prices change — verify before buying.
             </p>
           }
           products={products}
+        />
+
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Every homeowner — a flange and a cup plunger together cost under $30 and prevent dozens of $200 plumber calls.",
+            "Renters who don't want to wait on the landlord for a Saturday-night toilet clog.",
+            "Anyone with a septic system, where chemical drain cleaners are off the table.",
+          ]}
+          whoShouldSkip={[
+            "Buyers expecting a single 'best' plunger — you actually want a dedicated one per fixture type.",
+            "Anyone with a whole-house backup; a plunger pressurizes a line that's already struggling.",
+            "Anyone whose clog has resisted ten firm strokes — that's a snake situation, not a stronger-plunger situation.",
+          ]}
+          commonMistakes={[
+            "Using the toilet plunger on the kitchen sink. Two cheap plungers are the answer, not one premium one.",
+            "Plunging a sink without blocking the second drain on a double basin — the pressure vents out the other side.",
+            "Reaching for an accordion / hard-plastic plunger first and splashing waste water across the bathroom.",
+            "Pouring drain cleaner before plunging. If the plunge fails afterwards, the next person on the job is dealing with caustic water.",
+          ]}
+          safety={
+            <>
+              Stop plunging if water is rising or coming up through other
+              fixtures — that&apos;s a main-line or vent issue and pressurizing
+              the line further can push waste water through other drains. Call
+              a licensed plumber.
+            </>
+          }
         />
 
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
@@ -296,12 +341,21 @@ export default function BestPlungersGuide() {
               description: pageDescription,
               url: path,
               datePublished: "2026-04-20",
-              dateModified: "2026-04-20",
+              dateModified: "2026-05-16",
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

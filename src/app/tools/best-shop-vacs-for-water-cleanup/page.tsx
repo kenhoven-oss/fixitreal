@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
+  itemListSchema,
   articleSchema,
   breadcrumbSchema,
   faqSchema,
@@ -11,6 +12,7 @@ import {
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
+import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 
 /* --------------------------------------------------------------------------
@@ -35,6 +37,11 @@ const products: RecommendedProduct[] = [
       "Six to nine gallons is the size most people actually have room to store and can still carry up a flight of stairs when full. It handles the vast majority of household water events without forcing you to empty it every two minutes.",
     keyBuyingNotes:
       "Check the weight with a full tank — a 9-gallon tank of water is over 70 pounds. Look for a proper foam filter included for wet pickup; running a paper cartridge filter on water ruins it. A drain port on the tank lets you dump without tipping.",
+    avoidIf: "You only have one closet's worth of storage — a compact 2–3 gal is easier to keep ready.",
+    typicalUse: "First-response cleanup once or twice a year in most homes.",
+    skillLevel: "Beginner",
+    riskLevel: "Low (clean water) — call a remediation pro for sewage or category-3 water.",
+    verdict: "The best balance of capacity and storability. Right tool for the average homeowner.",
     affiliateUrl: "https://amzn.to/3OBSCx3",
     buttonText: "Check price on Amazon",
   },
@@ -47,6 +54,11 @@ const products: RecommendedProduct[] = [
       "A small wet/dry vac earns its keep by being nearby. The tank fills fast, but for the three-gallon incidents that make up most household water events, it's out of the closet and running in the time a bigger vac takes to wheel in.",
     keyBuyingNotes:
       "Short hoses are the compromise on most compact units; the vac itself is light enough to just carry instead. Confirm the motor is rated for wet pickup — some small shop-style vacs are dry-only.",
+    avoidIf: "You're cleaning up more than a few gallons — you'll spend all your time emptying it.",
+    typicalUse: "Small spills, dishwasher puddles, planter overflow — handful of times a year.",
+    skillLevel: "Beginner",
+    riskLevel: "Low",
+    verdict: "The vac that earns its place by being out of the closet in 60 seconds.",
     affiliateUrl: "https://amzn.to/41NOXzk",
     buttonText: "Check price on Amazon",
   },
@@ -59,6 +71,11 @@ const products: RecommendedProduct[] = [
       "Once you're past a few gallons of water, the bottleneck is how often you have to stop and dump. A large tank with a built-in pump-out port lets the vac drain to a floor drain or outside while it works, turning an all-day job into a manageable one.",
     keyBuyingNotes:
       "The pump-out feature is what you're paying for — without it, the big tank is just a heavier version of the mid-size. Check the discharge port thread size against a standard garden hose. These are loud; ear protection isn't optional.",
+    avoidIf: "Your water event is sewage or contaminated — that's a remediation pro's job, not a shop-vac job.",
+    typicalUse: "Bigger water events. Most homeowners pull this out a handful of times in a decade.",
+    skillLevel: "Intermediate (heavy, loud, needs setup planning)",
+    riskLevel: "Moderate — wear hearing protection, GFCI-protect the cord, and never run over a wet extension.",
+    verdict: "Only worth it if you're cleaning more than 10 gallons or have ongoing basement-water risk.",
     affiliateUrl: "https://amzn.to/3QjvCU9",
     buttonText: "Check price on Amazon",
   },
@@ -212,6 +229,35 @@ export default function BestShopVacsGuide() {
           products={products}
         />
 
+        <BuyingGuideSections
+          whoShouldBuy={[
+            "Homeowners with a basement, slab, or older home with any water-intrusion history.",
+            "Anyone with a finished basement — minutes matter when you're racing carpet damage.",
+            "Households on private wells / sump pumps where outage = flooded utility room.",
+          ]}
+          whoShouldSkip={[
+            "Renters in upper-floor apartments where leaks are the building's problem.",
+            "Anyone whose 'water event' is sewage backup. That's a remediation contractor's job.",
+            "Buyers expecting one vac to handle dust and water — the wet filter and the dry cartridge are different parts and don't interchange cleanly.",
+          ]}
+          commonMistakes={[
+            "Running the wrong filter on water — paper cartridges ruin in seconds and clog the motor.",
+            "Trying to lift a full tank up a flight of stairs. Pump-out or drain port matters more than capacity.",
+            "Using a non-GFCI outlet near standing water. Always GFCI-protect the cord.",
+            "Vacuuming up category-2 or -3 water (sewage / contaminated). Tank, hose, and filter contaminate permanently.",
+          ]}
+          safety={
+            <>
+              Electrical safety around standing water is non-negotiable —
+              always use a GFCI outlet or in-line GFCI on the vac&apos;s cord
+              and never plug in a vac whose own cord has touched water. For
+              sewage, building-deep moisture, or any water that&apos;s been
+              standing more than 24–48 hours, call a licensed water-damage
+              remediation contractor.
+            </>
+          }
+        />
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           When not to DIY
         </h2>
@@ -303,12 +349,21 @@ export default function BestShopVacsGuide() {
               description: pageDescription,
               url: path,
               datePublished: "2026-04-20",
-              dateModified: "2026-04-20",
+              dateModified: "2026-05-16",
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
             }),
             faqSchema(faqs),
+            itemListSchema({
+              name: pageTitle,
+              description: pageDescription,
+              url: path,
+              items: products.map((p) => ({
+                name: p.name,
+                url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+              })),
+            }),
           ])}
         />
       </Section>

@@ -61,6 +61,44 @@ const nextConfig: NextConfig = {
         destination: "/diy-or-hire/gfci-outlet",
         permanent: true,
       },
+      // ----------------------------------------------------------------------
+      // Inspection cluster: 301 from the shorter /inspection/<slug> path to
+      // the canonical /home-inspection-repairs/<slug> URLs. Some editorial
+      // references and external link campaigns use the shorter path; these
+      // redirects consolidate the link equity onto the live articles.
+      // ----------------------------------------------------------------------
+      {
+        source: "/inspection/seller-repair-credit-vs-repairs",
+        destination: "/home-inspection-repairs/repair-credit-vs-fix-before-closing",
+        permanent: true,
+      },
+      {
+        source: "/inspection/can-seller-refuse-repairs",
+        destination: "/home-inspection-repairs/seller-refuse-repair-requests",
+        permanent: true,
+      },
+      {
+        source: "/inspection/what-repairs-are-required-after-home-inspection",
+        destination: "/home-inspection-repairs/which-inspection-repairs-sellers-must-fix",
+        permanent: true,
+      },
+      {
+        source: "/inspection/buyer-repair-request-response",
+        destination: "/home-inspection-repairs/buyer-repair-request-response",
+        permanent: true,
+      },
+      {
+        source: "/inspection/smoke-detector-replacement-before-selling",
+        destination: "/home-inspection-repairs/sellers-replace-smoke-detectors-before-closing",
+        permanent: true,
+      },
+      // Catch-all for any other /inspection/<slug> references; rewrites to
+      // the same slug under the canonical pillar path.
+      {
+        source: "/inspection/:slug*",
+        destination: "/home-inspection-repairs/:slug*",
+        permanent: true,
+      },
     ];
   },
 };

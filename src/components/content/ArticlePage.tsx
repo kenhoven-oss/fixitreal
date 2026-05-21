@@ -13,6 +13,7 @@ import { Citation } from "@/components/content/Citation";
 import { AffiliateDisclosure } from "@/components/content/AffiliateDisclosure";
 import { KeyTakeaway } from "@/components/content/KeyTakeaway";
 import { CostEstimateBox } from "@/components/content/CostEstimateBox";
+import { CostMethodology } from "@/components/content/CostMethodology";
 import { SafetyWarning } from "@/components/content/SafetyWarning";
 import { KensTake } from "@/components/content/KensTake";
 import { FairPriceChecker } from "@/components/content/FairPriceChecker";
@@ -51,6 +52,7 @@ const mdxComponents = {
   Citation,
   KeyTakeaway,
   CostEstimateBox,
+  CostMethodology,
   SafetyWarning,
   KensTake,
   FairPriceChecker,
