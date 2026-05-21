@@ -1,8 +1,10 @@
 import type { ReactNode } from "react";
 
 type CostEstimateBoxProps = {
-  low: number;
-  high: number;
+  /** Accepts number or string (MDX expression attributes can stringify). */
+  low: number | string;
+  /** Accepts number or string (MDX expression attributes can stringify). */
+  high: number | string;
   unit?: string;
   label?: string;
   asOf?: string;
@@ -37,7 +39,16 @@ export function CostEstimateBox({
   asOf,
   children,
 }: CostEstimateBoxProps) {
-  const range = `${usdFormatter.format(low)}–${usdFormatter.format(high)}${unit ? ` ${unit}` : ""}`;
+  const toNum = (v: number | string): number | null => {
+    if (typeof v === "number") return Number.isFinite(v) ? v : null;
+    const n = Number(String(v).trim());
+    return Number.isFinite(n) ? n : null;
+  };
+  const lowN = toNum(low);
+  const highN = toNum(high);
+  if (lowN === null && highN === null) return null;
+  const fmt = (n: number | null) => (n === null ? "—" : usdFormatter.format(n));
+  const range = `${fmt(lowN)}–${fmt(highN)}${unit ? ` ${unit}` : ""}`;
   return (
     <aside
       role="note"
