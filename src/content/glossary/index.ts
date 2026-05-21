@@ -779,6 +779,257 @@ export const glossary: GlossaryEntry[] = [
       "A house without functional shutoffs at every fixture forces the entire house to be shut off for any repair — annoying for the user, expensive when the plumber has to drain and refill the whole system.",
     ],
   },
+  {
+    slug: "flashing",
+    term: "Flashing (roof and wall)",
+    short:
+      "Thin metal or rubber pieces installed at roof penetrations, valleys, and wall-roof junctions to direct water away from the building envelope.",
+    body: [
+      "Anywhere a roof's surface is interrupted — chimneys, plumbing vents, dormers, skylights, the junction of a roof with a wall — flashing is the system that keeps water from getting underneath. The shingle itself sheds water; flashing handles the edge cases where water could otherwise creep in.",
+      "Almost all roof leaks trace to failed flashing, not failed shingles. When a roofer says they need to 'tear off and re-flash around the chimney,' that's usually the right diagnosis. Step flashing (along walls) and counter-flashing (above it) work together; missing either is a leak waiting to happen.",
+      "DIY flashing repair is the wrong place to learn — it's a high-stakes detail and bad work hides until it pours down a wall months later. Hire a roofer for any flashing work.",
+    ],
+  },
+  {
+    slug: "asphalt-vs-metal-roof",
+    term: "Asphalt shingle vs metal roof",
+    short:
+      "Asphalt is cheaper, lasts 20–30 years; metal is 2–3× more expensive but lasts 40–70 years and handles weather extremes better.",
+    body: [
+      "Asphalt shingle roofs install for $4–$8 per square foot (a typical 2,000 sq ft home roof = $8,000–$16,000). They handle most US climates fine, are widely understood by every roofer, and the materials are readily available. Lifespan: 20–30 years depending on quality and climate.",
+      "Standing-seam metal roofs install for $9–$18 per square foot — 2–3× the cost. They last 40–70 years, shed snow well, handle wind better, and reflect heat (reducing AC bills in hot climates). The downside: harder to find a qualified installer, and a botched install leaks aggressively.",
+      "The math: over 60 years, a metal roof is usually cheaper because you avoid the second-and-third asphalt replacements. If you're staying in the home long-term, metal often wins. For homes you'll sell in 5–10 years, asphalt is the better value because the next owner gets the longevity benefit, not you.",
+    ],
+  },
+  {
+    slug: "soffit-and-fascia",
+    term: "Soffit and fascia",
+    short:
+      "Soffit is the underside of the roof overhang (eave); fascia is the vertical board at the edge where gutters attach. Together they're the visible 'frame' around your roof.",
+    body: [
+      "Soffits typically have vents that admit air into the attic — part of the home's roof-ventilation system. Fascia carries the gutter system and protects the rafter ends from weather.",
+      "Damage to either is almost always water-related: failed gutters dumping water against the fascia, missing flashing at the wall-roof junction soaking down into the soffit, or animals (squirrels, raccoons) breaking through.",
+      "Replacement cost: $1,500–$6,000 for a typical home depending on extent. Painted wood is cheapest and most common; aluminum or vinyl is more expensive but never needs painting again. Don't paint soffit vents shut — that defeats the attic ventilation they were installed to provide.",
+    ],
+  },
+  {
+    slug: "gable-vs-hip-roof",
+    term: "Gable roof vs hip roof",
+    short:
+      "Gable roofs have two sloped sides meeting at a peak with triangular walls at the ends. Hip roofs slope on all four sides, with no flat end walls.",
+    body: [
+      "Gable roofs are cheaper to build, easier to vent (the triangular end walls hold vents), and shed water and snow well off the two sides. Their weakness: high winds can catch the flat end walls and lift the roof off.",
+      "Hip roofs handle wind better because they have no flat end wall to catch wind — every side is sloped. They're more expensive to build, harder to vent (no end walls), and shed snow more evenly but in smaller amounts per side.",
+      "In hurricane and high-wind zones (Gulf Coast, parts of the Midwest), insurance discounts for hip roofs are common — sometimes 10–20% off the wind portion of the premium. Worth pricing if you're rebuilding a roof in those areas.",
+    ],
+  },
+  {
+    slug: "weep-screed",
+    term: "Weep screed",
+    short:
+      "A metal strip at the bottom of a stucco wall that creates an intentional gap for water to drain out before it accumulates inside the wall.",
+    body: [
+      "Stucco walls (and some brick veneer applications) can let small amounts of water through. Weep screeds at the bottom of the wall (typically 4 inches above the foundation, 2 inches above paving) give that water a path out. Blocked or missing weep screeds trap water inside the wall — leading to rotted framing.",
+      "Common problems: landscape mulch piled above the weep screed (covers the drainage opening), painted-over weep screeds (sealed shut), wood debris stuffed in the gap. Each one defeats the purpose.",
+      "When inspecting a stucco home, check the bottom of every exterior wall. You should see a 2-inch metal strip with a small gap below it. If you don't, that's a maintenance issue and a potential moisture-damage signal.",
+    ],
+  },
+  {
+    slug: "purlin",
+    term: "Purlin",
+    short:
+      "A horizontal structural member that runs perpendicular to and supports the rafters in a roof structure — common in older homes and barns.",
+    body: [
+      "Modern home framing often uses pre-engineered trusses, which don't need purlins. Older homes (and any home with conventional rafter framing) often use purlins as intermediate supports between the ridge board and the exterior wall — they distribute the roof load.",
+      "When a home inspector says 'the purlins look fine' or 'one purlin is sagging,' they're talking about these horizontal members. Sagging purlins can be sistered (like joists) or replaced; both are real structural work, not DIY.",
+      "Some homes have collar ties (horizontal members near the ridge) that are confused with purlins. The difference matters to a structural engineer; both serve to keep the roof from spreading outward under load.",
+    ],
+  },
+  {
+    slug: "fenestration",
+    term: "Fenestration",
+    short:
+      "The design and placement of windows, doors, and other glazed openings in a building. Often used as a technical term in energy codes and architectural drawings.",
+    body: [
+      "Fenestration's biggest cost-impact for homeowners is in window/door energy ratings (U-factor, Solar Heat Gain Coefficient). Energy codes set minimums; high-end installs exceed them.",
+      "Replacing windows is one of the lowest-ROI home improvements in resale terms (typical 65–70% recovery), so don't replace just for resale. Replace for actual energy savings if your current windows are visibly failing, or for comfort if you have a specific cold-spot or hot-spot issue.",
+      "If you're getting a window quote, the term 'fenestration' showing up usually signals a contractor versed in energy-code compliance, not just glass installation. That's a positive sign for premium installs; for a like-for-like replacement, basic window contractors are usually cheaper for the same outcome.",
+    ],
+  },
+  {
+    slug: "transfer-switch",
+    term: "Generator transfer switch",
+    alsoCalled: ["automatic transfer switch", "ATS"],
+    short:
+      "A required electrical device that isolates a home's circuits from the utility grid before energizing them from a generator — prevents backfeed that can kill utility workers.",
+    body: [
+      "Connecting a generator to a home without a transfer switch is illegal in nearly every jurisdiction. The danger: if you energize your house wiring from a portable generator while the grid is also fed, your power flows backward into the utility lines and can electrocute lineworkers restoring service.",
+      "Transfer switches come in two types: manual (you flip the switch when grid power fails) or automatic (the switch senses the loss and starts the generator + transfers load on its own). Manual switches are $300–$600 installed; automatic are $1,500–$3,500+.",
+      "Whole-home automatic generator systems (Generac, Kohler, etc.) include the transfer switch as part of the install. For homeowners using a portable generator only occasionally, a manual transfer switch with an exterior inlet is the right setup — $600–$1,500 installed by a licensed electrician.",
+    ],
+    related: [
+      { path: "/glossary/main-disconnect", label: "Main disconnect" },
+    ],
+  },
+  {
+    slug: "service-drop-vs-service-lateral",
+    term: "Service drop vs service lateral",
+    short:
+      "Service drop = overhead utility power line from the pole to the house. Service lateral = underground power line. Different installation, different repair costs.",
+    body: [
+      "If you can see wires coming from a utility pole to your house, you have a service drop (overhead). If your electrical service comes up out of the ground, you have a service lateral (underground). Both serve the same purpose; their failure modes are different.",
+      "Service drop issues: physical damage from falling trees, age-related insulation failure, mast-and-weatherhead corrosion. Repairs involve a bucket truck and usually the utility (they own most of the line up to the mast).",
+      "Service lateral issues: rare but more expensive when they happen — locating the underground fault requires specialized equipment, and excavation can run $2,000–$5,000+. The utility owns the lateral from the transformer to the meter; you own from the meter into the house.",
+    ],
+  },
+  {
+    slug: "amperage",
+    term: "Amperage (home electrical service)",
+    short:
+      "The capacity of the home's main electrical service, measured in amps. Most modern homes have 100A, 150A, or 200A service.",
+    body: [
+      "Older homes (1960s and earlier) often have 60A or 100A service — adequate for the lighting and small-appliance loads of that era, inadequate for modern loads (EV chargers, heat pumps, induction stoves, central air).",
+      "A 60A service to an older home should be considered for upgrade if you're planning any new high-draw appliances. 100A is the practical minimum for most modern homes; 150A or 200A is recommended if you're adding an EV charger, heat pump, or considering future electrification.",
+      "Upgrade cost (panel + service entrance): $2,500–$6,000 typical for residential. Higher in NYC and similar dense urban areas, often subsidized by utility company programs in green-energy-incentive states.",
+    ],
+    related: [
+      { path: "/glossary/service-panel", label: "Service panel" },
+      { path: "/glossary/watt-vs-amp-vs-volt", label: "Watts vs amps vs volts" },
+    ],
+  },
+  {
+    slug: "dedicated-circuit",
+    term: "Dedicated circuit",
+    short:
+      "An electrical circuit that serves only one appliance or outlet — required by code for high-draw or critical-safety equipment like refrigerators, dishwashers, and bathroom GFCIs.",
+    body: [
+      "Code requires dedicated circuits for: refrigerator, dishwasher, garbage disposal, microwave, electric range, washer, electric dryer (240V), kitchen counter outlets (small-appliance circuit). Other appliances may also benefit (window AC units, space heaters, sump pumps).",
+      "Why dedicated: shared circuits trip breakers when too many loads run at once. A microwave + toaster on the same circuit is the most common kitchen trip-the-breaker scenario.",
+      "Adding a dedicated circuit involves running new wire from the panel to the outlet, $150–$400 typical for an accessible run. Worth doing for any space heater, window AC, or workshop tool that currently shares with other loads.",
+    ],
+    related: [
+      { path: "/glossary/wattage-budget", label: "Circuit wattage budget" },
+    ],
+  },
+  {
+    slug: "termite-damage-vs-water-damage",
+    term: "Termite damage vs water damage",
+    short:
+      "Termites eat wood from inside out, leaving thin shells. Water-damaged wood swells, darkens, and becomes spongy. Both can look like 'soft spots' on inspection but require different fixes.",
+    body: [
+      "Termite damage typically looks intact from the outside but hollow when tapped — termites prefer the soft inner wood and avoid the harder outer layer. You may see mud tubes (small dirt tunnels) on foundation walls, baseboard, or framing. Treatment requires licensed pest control + structural repair.",
+      "Water damage shows differently: darkened or stained wood, soft to the touch on the surface, sometimes visible mold or mineral residue. Treatment requires identifying the moisture source first, drying the area, then replacing damaged framing or subfloor.",
+      "An inspector who finds 'soft spots' in subfloor or framing should specifically test which it is — a tool called a moisture meter distinguishes. Termite damage to a moisture meter shows dry; water damage shows wet (or wet-then-dried). The diagnosis dictates the repair scope.",
+    ],
+  },
+  {
+    slug: "polybutylene-pipe",
+    term: "Polybutylene (PB) pipe",
+    short:
+      "Plastic plumbing pipe widely installed 1978–1995, later found to fail prematurely. If a home has it, expect insurance issues and eventual full repipe.",
+    body: [
+      "Polybutylene was sold as a cheaper alternative to copper for residential water-supply piping. Over time, the pipe and its fittings (often a gray or brass color) became brittle and developed pinhole leaks. By the late 1990s, a class-action settlement covered some replacements; today, homeowners with PB face it on their own.",
+      "Insurance companies treat homes with active PB plumbing as higher-risk. Some refuse coverage entirely; many charge premiums or require replacement within a window. If you're buying a home built 1978–1995, ask specifically whether the supply lines are PB.",
+      "Full repipe with PEX or copper runs $4,000–$15,000 for a typical home, depending on accessibility. It's worth the cost — PB leaks tend to be catastrophic (failing inside walls and ceilings) rather than slow drips.",
+    ],
+  },
+  {
+    slug: "radon",
+    term: "Radon",
+    short:
+      "A naturally occurring radioactive gas from soil that can accumulate in basements. The EPA links long-term high-level exposure to lung cancer; mitigation costs are usually modest.",
+    body: [
+      "Radon comes from uranium decay in soil and rock. It enters homes through foundation cracks and sumps, accumulating mostly in basements and ground-floor levels. EPA's action threshold is 4 pCi/L (picocuries per liter); levels above warrant mitigation, levels above 8 pCi/L are considered urgent.",
+      "Testing is cheap ($15–$30 for a DIY kit, $150–$300 for a professional test). Home inspectors increasingly include short-term radon tests by default. Many states require disclosure on home sales.",
+      "Mitigation is straightforward: a sub-slab depressurization system (a fan-and-pipe arrangement that pulls radon-laden air from beneath the foundation and vents it above the roofline). Cost: $1,200–$3,500 installed. Highly effective — most systems drop levels below 2 pCi/L.",
+    ],
+  },
+  {
+    slug: "egress-vs-emergency-escape",
+    term: "Egress vs emergency escape opening",
+    short:
+      "Egress is a code-compliant exit from any habitable space; emergency escape opening is the specific code term for the window or door that satisfies it in bedrooms.",
+    body: [
+      "Every bedroom needs an emergency escape opening that meets IRC standards: minimum 5.7 sq ft of clear opening, minimum 24 inches in height, minimum 20 inches in width, sill no more than 44 inches off the floor. Basement bedrooms typically need an egress well outside the window.",
+      "These dimensions exist so a firefighter in full gear can enter and a person can exit during a fire. A 'bonus room' marketed as a bedroom but lacking a code-compliant escape opening isn't legally a bedroom — it can't be listed as one in real-estate disclosures and affects appraisal.",
+      "Adding a code-compliant egress to an existing room (especially a basement bedroom) requires excavation for the window well and cutting through the foundation. Cost: $2,500–$6,000. Worth the investment if you're trying to convert a basement room into a legal bedroom.",
+    ],
+    related: [
+      { path: "/glossary/egress-window", label: "Egress window" },
+    ],
+  },
+  {
+    slug: "manometer",
+    term: "Manometer",
+    short:
+      "A pressure-measuring instrument used by HVAC techs to diagnose duct static pressure, gas pressure, and combustion air problems.",
+    body: [
+      "Most home HVAC issues that aren't obvious (broken thermostat, dead motor) trace to airflow or pressure problems. A manometer measures both. Without one, a technician is guessing; with one, they can diagnose in 10 minutes.",
+      "When you call an HVAC company and they send a tech without a manometer, that's a quality signal. Reputable HVAC service companies measure static pressure on every diagnostic call — it's the difference between treating symptoms and finding root cause.",
+      "Manometers also measure gas pressure at appliance regulators, combustion-air supply, and chimney draft. Issues with any of those affect efficiency, safety, and equipment lifespan. A combustion-air problem can produce carbon monoxide; a draft problem can backfeed into the home. Both are detected with a manometer.",
+    ],
+  },
+  {
+    slug: "wye-strainer",
+    term: "Wye strainer",
+    short:
+      "A Y-shaped pipe fitting with a removable screen inside that traps debris in a water line. Common in tankless water heaters and irrigation systems.",
+    body: [
+      "Tankless water heaters require clean water supply; debris from older galvanized pipes or municipal water can clog the heat exchanger. The wye strainer at the cold-water inlet traps debris before it reaches the unit.",
+      "Strainers need cleaning periodically (annually for most installs; quarterly in hard-water areas). A clogged strainer reduces flow to the heater and triggers low-flow shutoff codes. If your tankless is throwing 'low flow' errors, check the strainer before calling a tech.",
+      "DIY cleaning: shut off the inlet valve, open the strainer cap (usually a hex-head plug), remove and rinse the screen, reinstall. 10 minutes once a year. Cheap maintenance that significantly extends tankless lifespan.",
+    ],
+  },
+  {
+    slug: "vapor-retarder-vs-vapor-barrier",
+    term: "Vapor retarder vs vapor barrier",
+    short:
+      "Both slow water vapor through walls or floors. A vapor 'barrier' aims for near-zero permeability; a vapor 'retarder' allows some movement. Modern building science prefers retarders in most climates.",
+    body: [
+      "Old building codes called for vapor barriers (typically 6-mil polyethylene) on the warm side of insulation. Modern building science finds barriers can trap moisture against the wrong side of a wall, leading to mold and rot.",
+      "Vapor retarders (lower-permeability materials like Class II latex paint or specialty membranes) allow walls to dry in both directions. They reduce moisture flow without eliminating it. Climate zone determines which to use and where to install it.",
+      "For most homeowners this matters during remodeling or wall repair: don't blindly install 'plastic sheeting behind the drywall.' Check current code for your climate zone, or use a building-science consultant on larger projects.",
+    ],
+    related: [
+      { path: "/glossary/vapor-barrier", label: "Vapor barrier" },
+    ],
+  },
+  {
+    slug: "roof-pitch",
+    term: "Roof pitch (slope)",
+    short:
+      "The angle of a roof, expressed as rise over run — e.g., '6:12' means the roof rises 6 inches for every 12 inches of horizontal distance.",
+    body: [
+      "Common residential roof pitches: 4:12 (low slope, allows for walking), 6:12 (standard, most common), 8:12 (steeper, more attic space), 12:12 (very steep, dramatic appearance).",
+      "Steeper pitches shed water and snow better but cost more to roof (more surface area for the same footprint, more difficult labor). Roofers charge by 'squares' (100 sq ft of roof surface) — a 6:12 pitch home has ~118 sq ft of roof per 100 sq ft of floor footprint; 12:12 jumps to ~142 sq ft.",
+      "Low pitches (under 3:12) generally can't use standard asphalt shingles — they need membrane roofing (TPO, EPDM) which is a different material and skill set. If you have a low-slope roof, hire a roofer who specifically works in that material; generalists don't.",
+    ],
+  },
+  {
+    slug: "header-vs-lintel",
+    term: "Header vs lintel",
+    short:
+      "Both span the top of a door or window opening to carry the load above. 'Header' is the framing term; 'lintel' is the masonry term. Same job, different materials.",
+    body: [
+      "When you cut a hole in a load-bearing wall to add a door or window, the load above that hole needs to transfer around the opening. A header (in wood-framed homes) is the horizontal beam at the top of the opening that does this; in masonry walls, the equivalent is called a lintel.",
+      "Sizing headers and lintels is engineering — too small and the wall sags; too big and you waste material and create awkward ceiling heights. Engineers spec these based on the load above and the span width.",
+      "Renovations that move a door or window without resizing the header create immediate problems: cracking around the opening, sagging trim, sticking doors. If a contractor proposes relocating a header-bearing opening, get the engineering calculation in writing — verbal 'should be fine' isn't enough.",
+    ],
+  },
+  {
+    slug: "ufer-vs-ground-rod",
+    term: "Ufer ground vs ground rod",
+    short:
+      "Both connect a home's electrical system to earth for safety. Ufer ground uses rebar in the foundation; ground rod is a copper-coated steel rod driven into the ground.",
+    body: [
+      "Modern code requires both in most jurisdictions: the Ufer ground (primary, when a poured concrete foundation exists) and supplementary ground rods (8-foot copper-coated steel, driven 8 feet into the ground).",
+      "If you're rebuilding a panel or doing a service upgrade, make sure the Ufer ground stays connected. Some contractors disconnect it for convenience, which violates code and can fail an inspection.",
+      "For older homes without a Ufer ground, two driven rods plus the metal water service (if present and properly bonded) make up the grounding system. The cold-water pipe used to be the primary ground; many older homes still rely on it.",
+    ],
+    related: [
+      { path: "/glossary/ufer-ground", label: "Ufer ground (concrete-encased electrode)" },
+    ],
+  },
 ];
 
 export function getGlossaryEntry(slug: string): GlossaryEntry | undefined {
