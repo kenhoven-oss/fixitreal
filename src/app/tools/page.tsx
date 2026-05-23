@@ -87,13 +87,12 @@ export default function ToolsHub() {
         </div>
       </Section>
 
-      {/* Interactive decision tools */}
+      {/* Decision & vetting tools */}
       <Section padding="md" size="lg">
-        <h2 className="font-serif text-2xl text-navy-900">Live tools</h2>
+        <h2 className="font-serif text-2xl text-navy-900">Decision &amp; vetting tools</h2>
         <p className="mt-2 text-ink-700 max-w-3xl">
-          The fastest way to settle a common repair question: should you do it
-          yourself, or pay a pro? And the reference that prevents budget
-          surprises across the whole year.
+          Interactive tools for the two questions a homeowner asks most:{" "}
+          <em>should I do this myself?</em> and <em>is this quote fair?</em>
         </p>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           <Card
@@ -103,10 +102,52 @@ export default function ToolsHub() {
             description="Pick a job. Get a verdict, a cost comparison, permit rules, and our reasoning. No quiz — just the answer."
           />
           <Card
+            href="/tools/contractor-quote-checker"
+            eyebrow="11 red flags"
+            title="Contractor Quote Checker"
+            description="Run a contractor quote through the 11-question checklist. Outputs risk level + clarifying questions to bring back before signing."
+          />
+        </div>
+      </Section>
+
+      {/* Cost tools */}
+      <Section padding="md" size="lg">
+        <h2 className="font-serif text-2xl text-navy-900">Cost tools</h2>
+        <p className="mt-2 text-ink-700 max-w-3xl">
+          Real 2026 cost ranges for the projects homeowners actually price out.
+          Use these before you call a contractor — and to sanity-check a bid
+          when you get one.
+        </p>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <Card
+            href="/tools/repair-cost-estimator"
+            eyebrow="Repair lookup"
+            title="Repair Cost Estimator"
+            description="Pick a common home repair. Get the 2026 DIY and hired cost range, a verdict, and what drives the price."
+          />
+          <Card
+            href="/tools/home-renovation-cost-estimator"
+            eyebrow="Project planning"
+            title="Home Renovation Cost Estimator"
+            description="Kitchen, bath, addition, deck. Project type + finish level + sq ft + region returns a planning cost range."
+          />
+          <Card
+            href="/tools/diy-project-cost-tracker"
+            eyebrow="DIY tracker"
+            title="DIY Project Cost Tracker"
+            description="Log materials, tools, permits, and your time on a DIY project. Optional contractor quote for savings comparison."
+          />
+          <Card
+            href="/tools/home-cleaning-cost-calculator"
+            eyebrow="Service quote"
+            title="Home Cleaning Cost Calculator"
+            description="What a one-time deep clean or recurring service should cost for your home size and add-ons."
+          />
+          <Card
             href="/home-repair-cost-calendar"
             eyebrow="Free PDF · Seasonal"
             title="Home Repair Cost Calendar"
-            description="Every month of the year with real 2026 cost ranges for the maintenance tasks that come due. Prevents expensive surprises."
+            description="Every month with 2026 cost ranges for the maintenance tasks that come due. Prevents expensive surprises."
           />
         </div>
       </Section>
@@ -154,6 +195,12 @@ export default function ToolsHub() {
             url: "/tools",
             hasPart: [
               { name: "DIY or Hire", url: "/tools/diy-or-hire" },
+              { name: "Contractor Quote Checker", url: "/tools/contractor-quote-checker" },
+              { name: "Repair Cost Estimator", url: "/tools/repair-cost-estimator" },
+              { name: "Home Renovation Cost Estimator", url: "/tools/home-renovation-cost-estimator" },
+              { name: "DIY Project Cost Tracker", url: "/tools/diy-project-cost-tracker" },
+              { name: "Home Cleaning Cost Calculator", url: "/tools/home-cleaning-cost-calculator" },
+              { name: "Home Repair Cost Calendar", url: "/home-repair-cost-calendar" },
               ...buyingGuides.map((g) => ({ name: g.title, url: g.href })),
             ],
           }),
@@ -162,6 +209,20 @@ export default function ToolsHub() {
             description:
               "Pick a home repair job and get a verdict — DIY or hire a pro — with cost comparison, permit rules, and our reasoning.",
             url: "/tools/diy-or-hire",
+            applicationCategory: "UtilityApplication",
+          }),
+          webApplicationSchema({
+            name: "Contractor Quote Checker",
+            description:
+              "Interactive 11-question checklist for residential contractor quotes. Outputs risk level + clarifying questions.",
+            url: "/tools/contractor-quote-checker",
+            applicationCategory: "UtilityApplication",
+          }),
+          webApplicationSchema({
+            name: "Repair Cost Estimator",
+            description:
+              "2026 cost ranges for common home repairs with DIY-or-hire verdict and what drives the price.",
+            url: "/tools/repair-cost-estimator",
             applicationCategory: "UtilityApplication",
           }),
         ])}
