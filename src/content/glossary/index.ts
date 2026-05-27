@@ -169,8 +169,7 @@ export const glossary: GlossaryEntry[] = [
     slug: "knob-and-tube",
     term: "Knob and tube wiring",
     alsoCalled: ["K&T", "K&T wiring"],
-    short:
-      "Pre-1950s electrical wiring that runs hot and neutral wires separately through ceramic insulators and tubes — functional but limited in capacity and now a problem with modern loads.",
+    short: "Pre-1950s electrical wiring that runs hot and neutral wires separately through ceramic insulators and tubes — functional but limited in capacity and now a problem.",
     body: [
       "Knob and tube wiring was the standard residential electrical method from roughly 1880 to 1940. Hot and neutral wires run separately, supported by ceramic 'knobs' on framing and routed through ceramic 'tubes' where they pass through wood.",
       "K&T isn't inherently dangerous when intact — what makes it a problem today is age, modification, and insulation. Original K&T relied on air for cooling; newer attic insulation packed around it traps heat and is a fire risk. Many K&T circuits have been modified over decades, often poorly, creating splice failures and overloads.",
@@ -592,8 +591,7 @@ export const glossary: GlossaryEntry[] = [
     slug: "lvl-beam",
     term: "LVL beam",
     alsoCalled: ["laminated veneer lumber", "engineered beam"],
-    short:
-      "Engineered structural lumber made by laminating thin wood veneers together. Stronger than dimensional lumber for the same size — used to span openings created by removing load-bearing walls.",
+    short: "Engineered structural lumber made by laminating thin wood veneers together. Stronger than dimensional lumber for the same size — used to span openings created by.",
     body: [
       "When you remove a load-bearing wall, the load above needs a new beam. For most residential spans (8–14 feet), an engineered LVL is the cheaper, simpler answer compared to steel. A typical LVL beam to replace an 8-foot wall costs $200–$500 in materials.",
       "LVLs come in standard widths (1.75 inches, 3.5 inches) and depths (5.5 inches to 16 inches). The engineer specs the size based on load + span. Don't substitute a smaller size to save money — undersized beams sag.",
@@ -639,8 +637,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "grading-vs-drainage",
     term: "Grading vs drainage",
-    short:
-      "Grading is the slope of the soil around the foundation (should slope away from the house); drainage is how water moves through and off the property (gutters, downspouts, French drains, dry wells).",
+    short: "Grading is the slope of the soil around the foundation (should slope away from the house); drainage is how water moves through and off the property (gutters.",
     body: [
       "Most homeowner basement-leak issues trace to one of these two. Grading: soil should drop at least 6 inches over the first 10 feet from the foundation. Anything flat or sloping toward the house pushes rainwater right against the foundation.",
       "Drainage: gutters and downspouts move roof water away from the house. Downspouts should extend 4–6 feet from the foundation before discharging — even better with a buried pipe to a dry well or daylighted outlet further from the house.",
@@ -771,8 +768,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "shutoff-vs-isolation-valve",
     term: "Shutoff valve vs isolation valve",
-    short:
-      "Functionally similar — both stop water flow to a specific area. 'Isolation valve' is more common in commercial/industrial contexts; residential plumbing almost always says 'shutoff.'",
+    short: "Functionally similar — both stop water flow to a specific area. 'Isolation valve' is more common in commercial/industrial contexts; residential plumbing almost.",
     body: [
       "In residential plumbing, 'shutoff valve' is the standard term. You may see 'isolation valve' on appliance install instructions or in technical documents — they mean the same thing.",
       "Residential code requires accessible shutoff valves at: every fixture (sink, toilet, dishwasher, washing machine, ice maker), the water heater (cold inlet), each branch line if a house has multiple zones. Newer construction sometimes adds a manifold near the main shutoff with individual valves for each line.",
@@ -900,8 +896,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "dedicated-circuit",
     term: "Dedicated circuit",
-    short:
-      "An electrical circuit that serves only one appliance or outlet — required by code for high-draw or critical-safety equipment like refrigerators, dishwashers, and bathroom GFCIs.",
+    short: "An electrical circuit that serves only one appliance or outlet — required by code for high-draw or critical-safety equipment like refrigerators, dishwashers, and.",
     body: [
       "Code requires dedicated circuits for: refrigerator, dishwasher, garbage disposal, microwave, electric range, washer, electric dryer (240V), kitchen counter outlets (small-appliance circuit). Other appliances may also benefit (window AC units, space heaters, sump pumps).",
       "Why dedicated: shared circuits trip breakers when too many loads run at once. A microwave + toaster on the same circuit is the most common kitchen trip-the-breaker scenario.",
@@ -914,8 +909,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "termite-damage-vs-water-damage",
     term: "Termite damage vs water damage",
-    short:
-      "Termites eat wood from inside out, leaving thin shells. Water-damaged wood swells, darkens, and becomes spongy. Both can look like 'soft spots' on inspection but require different fixes.",
+    short: "Termites eat wood from inside out, leaving thin shells. Water-damaged wood swells, darkens, and becomes spongy. Both can look like 'soft spots' on inspection but.",
     body: [
       "Termite damage typically looks intact from the outside but hollow when tapped — termites prefer the soft inner wood and avoid the harder outer layer. You may see mud tubes (small dirt tunnels) on foundation walls, baseboard, or framing. Treatment requires licensed pest control + structural repair.",
       "Water damage shows differently: darkened or stained wood, soft to the touch on the surface, sometimes visible mold or mineral residue. Treatment requires identifying the moisture source first, drying the area, then replacing damaged framing or subfloor.",
@@ -936,8 +930,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "radon",
     term: "Radon",
-    short:
-      "A naturally occurring radioactive gas from soil that can accumulate in basements. The EPA links long-term high-level exposure to lung cancer; mitigation costs are usually modest.",
+    short: "A naturally occurring radioactive gas from soil that can accumulate in basements. The EPA links long-term high-level exposure to lung cancer; mitigation costs are.",
     body: [
       "Radon comes from uranium decay in soil and rock. It enters homes through foundation cracks and sumps, accumulating mostly in basements and ground-floor levels. EPA's action threshold is 4 pCi/L (picocuries per liter); levels above warrant mitigation, levels above 8 pCi/L are considered urgent.",
       "Testing is cheap ($15–$30 for a DIY kit, $150–$300 for a professional test). Home inspectors increasingly include short-term radon tests by default. Many states require disclosure on home sales.",
@@ -983,8 +976,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "vapor-retarder-vs-vapor-barrier",
     term: "Vapor retarder vs vapor barrier",
-    short:
-      "Both slow water vapor through walls or floors. A vapor 'barrier' aims for near-zero permeability; a vapor 'retarder' allows some movement. Modern building science prefers retarders in most climates.",
+    short: "Both slow water vapor through walls or floors. A vapor 'barrier' aims for near-zero permeability; a vapor 'retarder' allows some movement. Modern building science.",
     body: [
       "Old building codes called for vapor barriers (typically 6-mil polyethylene) on the warm side of insulation. Modern building science finds barriers can trap moisture against the wrong side of a wall, leading to mold and rot.",
       "Vapor retarders (lower-permeability materials like Class II latex paint or specialty membranes) allow walls to dry in both directions. They reduce moisture flow without eliminating it. Climate zone determines which to use and where to install it.",

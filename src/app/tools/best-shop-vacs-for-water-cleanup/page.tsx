@@ -88,7 +88,7 @@ const products: RecommendedProduct[] = [
 const path = "/tools/best-shop-vacs-for-water-cleanup";
 const pageTitle = "Best shop vacs for water cleanup";
 const pageDescription =
-  "Which wet/dry vacuum actually fits a homeowner — capacity, filter type, pump-out ports, and the kinds of water cleanup that should go straight to a restoration company instead.";
+  "Which wet/dry vacuum actually fits a homeowner — capacity, filter type, pump-out ports, and the kinds of water cleanup that should go straight to a restoration.";
 
 export const metadata = buildMetadata({
   title: pageTitle,

@@ -105,7 +105,7 @@ const products: RecommendedProduct[] = [
 const path = "/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen";
 const pageTitle = "Best caulk and caulk guns for bath and kitchen";
 const pageDescription =
-  "A practical pick-list for recaulking a tub, shower, or sink — the right sealant for wet areas, the right gun for clean beads, and the prep that keeps the new bead from peeling.";
+  "A practical pick-list for recaulking a tub, shower, or sink — the right sealant for wet areas, the right gun for clean beads, and the prep that keeps the new.";
 
 export const metadata = buildMetadata({
   title: pageTitle,

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Params }) {
   if (!entry) return buildMetadata({ title: "Term not found", noIndex: true });
 
   return buildMetadata({
-    title: `What is a ${entry.term}? — homeowner definition`,
+    title: `What is ${entry.term}?`,
     description: entry.short,
     path: `/glossary/${entry.slug}`,
     type: "article",

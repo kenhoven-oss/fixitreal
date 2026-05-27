@@ -88,7 +88,7 @@ const products: RecommendedProduct[] = [
 const path = "/tools/best-moisture-meters-for-homeowners";
 const pageTitle = "Best moisture meters for homeowners";
 const pageDescription =
-  "How to pick a moisture meter that actually helps you diagnose a wet wall or floor, how to read the numbers honestly, and when a meter tells you it's time to bring in a pro.";
+  "How to pick a moisture meter that actually helps diagnose a wet wall or floor, read the numbers honestly, and know when to call a pro.";
 
 export const metadata = buildMetadata({
   title: pageTitle,
