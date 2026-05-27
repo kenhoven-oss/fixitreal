@@ -17,7 +17,7 @@ import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 export const metadata = buildMetadata({
   title: "Honest home repair advice and 2026 cost guides",
   description:
-    "A consumer-advocate home repair site. Honest answers on what to fix yourself, what repairs should cost in 2026, and when to call a pro — from an independent editor with no warranty advertisers or affiliate farms.",
+    "A consumer-advocate home repair site. Honest answers on what to fix yourself, what repairs should cost in 2026, and when to call a pro.",
   path: "/",
 });
 

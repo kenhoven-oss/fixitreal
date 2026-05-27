@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata = buildMetadata({
   title: "Disclaimer — limits of FixItReal's editorial guidance",
   description:
-    "FixItReal publishes general homeowner guidance, not professional advice. Cost ranges are estimates. Safety-sensitive work belongs with licensed pros — here's what we do and don't claim.",
+    "FixItReal publishes general homeowner guidance, not professional advice. Cost ranges are estimates; always verify with local pros and code.",
   path: "/disclaimer",
 });
 

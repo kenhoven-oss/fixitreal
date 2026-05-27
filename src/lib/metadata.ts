@@ -39,7 +39,13 @@ export function buildMetadata({
   section,
   image,
 }: BuildMetadataInput = {}): Metadata {
-  const fullTitle = title ? `${title} | ${site.name}` : `${site.name} — ${site.tagline}`;
+  // SEO: drop the " | FixItReal" suffix when the per-page title is long enough
+  // to be self-identifying. Google renders the site name from og:site_name + the
+  // favicon anyway, so the suffix wastes SERP pixels on long titles. Keep the
+  // suffix only for short utility-page titles where it adds useful brand context.
+  const fullTitle = title
+    ? (title.length >= 30 ? title : `${title} | ${site.name}`)
+    : `${site.name} — ${site.tagline}`;
   const desc = description ?? site.description;
   const url = new URL(path, env.siteUrl).toString();
   const canonicalUrl = canonicalPath

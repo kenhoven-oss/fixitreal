@@ -14,7 +14,7 @@ import { loadArticlesByPillar } from "@/lib/articles-loader";
 import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 
 export const metadata = buildMetadata({
-  title: "Contractor red flags — how to spot a bad quote, a bad pro, a bad job",
+  title: "Contractor Red Flags — Bad Quote, Bad Pro, Bad Job",
   description:
     "The specific signals that a contractor quote is overpriced, the licensing checks every homeowner should run, and the warning signs of work that won't last.",
   path: "/contractor-red-flags",

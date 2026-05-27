@@ -13,7 +13,7 @@ import {
 import { HomeRenovationCostEstimatorCalculator } from "./Calculator";
 
 export const metadata = buildMetadata({
-  title: "Home Renovation Cost Estimator — what your project should actually cost",
+  title: "Home Renovation Cost Estimator — 2026 Project Cost",
   description:
     "Free home renovation cost estimator for homeowners. Pick project, finish level, square footage, region — get the cost range a contractor should bid. 2026 benchmarks.",
   path: "/tools/home-renovation-cost-estimator",

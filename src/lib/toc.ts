@@ -36,6 +36,15 @@ function cleanHeading(raw: string): string {
     .replace(/\*\*([^*]+)\*\*/g, "$1") // bold
     .replace(/\*([^*]+)\*/g, "$1") // italic
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // links → text
+    // Decode common HTML entities so the TOC slug matches rehype-slug, which
+    // operates on the parsed MDX AST (entities already decoded by then).
+    // Without this, headings written as "What I&apos;d Do" produce slugs like
+    // "what-iaposd-do" because the entity letters survive punctuation-stripping.
+    .replace(/&apos;|&#39;|&rsquo;|&lsquo;/g, "'")
+    .replace(/&quot;|&#34;|&rdquo;|&ldquo;/g, '"')
+    .replace(/&mdash;/g, "—")
+    .replace(/&ndash;/g, "–")
+    .replace(/&amp;/g, "&")
     .trim();
 }
 

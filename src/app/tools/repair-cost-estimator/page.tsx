@@ -13,7 +13,7 @@ import { jobs } from "@/content/jobs";
 import { RepairCostEstimator } from "./Estimator";
 
 export const metadata = buildMetadata({
-  title: "Repair Cost Estimator — 2026 ranges for the home repairs people actually price out",
+  title: "Repair Cost Estimator — 2026 Home Repair Cost Ranges",
   description:
     "Free repair cost estimator. Pick a common home repair, see 2026 DIY and hired ranges, get a DIY-or-hire verdict, and know what drives the price.",
   path: "/tools/repair-cost-estimator",

@@ -15,7 +15,7 @@ import {
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 
 export const metadata = buildMetadata({
-  title: "Home Inspection Repairs — what sellers must fix, what's negotiable",
+  title: "Home Inspection Repairs — Sellers' Must-Fix vs Negotiable",
   description:
     "Honest, lender-aware guidance on inspection-report repairs: which fixes sellers must complete, which to push back on, and when a repair credit beats a contractor visit.",
   path: "/home-inspection-repairs",

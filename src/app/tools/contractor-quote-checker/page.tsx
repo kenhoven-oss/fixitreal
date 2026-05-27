@@ -15,7 +15,7 @@ import { ContractorQuoteChecker } from "./Checker";
 export const metadata = buildMetadata({
   title: "Contractor Quote Checker — spot the 11 red flags before you sign",
   description:
-    "Free 11-question checker for residential contractor quotes. Spots missing license, vague scope, oversized deposits, cash-only requests. Outputs risk level and clarifying questions.",
+    "Free 11-question checker for residential contractor quotes. Spots missing license, vague scope, overpayment risk, and red flags.",
   path: "/tools/contractor-quote-checker",
 });
 

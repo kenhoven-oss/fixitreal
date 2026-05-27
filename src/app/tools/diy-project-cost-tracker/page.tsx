@@ -13,7 +13,7 @@ import {
 import { DiyProjectCostTrackerCalculator } from "./Calculator";
 
 export const metadata = buildMetadata({
-  title: "DIY Project Cost Tracker — what you really spent vs. what hiring would have cost",
+  title: "DIY Project Cost Tracker — DIY Cost vs Hiring Cost",
   description:
     "Free DIY project cost tracker. Log materials, tools, permits, and your time. Compare against a contractor quote to see real savings.",
   path: "/tools/diy-project-cost-tracker",

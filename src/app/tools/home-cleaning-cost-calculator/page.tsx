@@ -12,7 +12,7 @@ import {
 import { HomeCleaningCostCalculator } from "./Calculator";
 
 export const metadata = buildMetadata({
-  title: "Home Cleaning Cost Calculator — what a fair quote looks like in 2026",
+  title: "Home Cleaning Cost Calculator — 2026 Fair Quote",
   description:
     "Free home cleaning cost calculator. Pick home size, service type, and add-ons; see what a fair 2026 quote should be for residential cleaning service.",
   path: "/tools/home-cleaning-cost-calculator",
