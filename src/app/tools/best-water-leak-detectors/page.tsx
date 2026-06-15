@@ -328,6 +328,33 @@ export default function BestWaterLeakDetectorsPage() {
             <li>
               →{" "}
               <Link
+                href="/advice/water-leak-detection"
+                className="no-underline text-navy-700 hover:text-navy-900"
+              >
+                Water leak detection: how to find a hidden leak
+              </Link>
+            </li>
+            <li>
+              →{" "}
+              <Link
+                href="/advice/smart-water-leak-detectors"
+                className="no-underline text-navy-700 hover:text-navy-900"
+              >
+                Smart water leak detectors: when Wi-Fi is worth it
+              </Link>
+            </li>
+            <li>
+              →{" "}
+              <Link
+                href="/advice/slab-leak-warning-signs"
+                className="no-underline text-navy-700 hover:text-navy-900"
+              >
+                Slab leak warning signs
+              </Link>
+            </li>
+            <li>
+              →{" "}
+              <Link
                 href="/emergency-repairs/water-leaking-from-ceiling"
                 className="no-underline text-navy-700 hover:text-navy-900"
               >

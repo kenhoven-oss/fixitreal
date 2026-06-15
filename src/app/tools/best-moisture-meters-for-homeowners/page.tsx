@@ -320,6 +320,12 @@ export default function BestMoistureMetersGuide() {
           <ul className="mt-4 space-y-2 text-ink-700">
             <li>
               →{" "}
+              <Link href="/advice/water-leak-detection" className="no-underline text-navy-700 hover:text-navy-900">
+                Water leak detection — how to find a hidden leak
+              </Link>
+            </li>
+            <li>
+              →{" "}
               <Link href="/advice/ceiling-water-stain" className="no-underline text-navy-700 hover:text-navy-900">
                 Ceiling water stain — what it tells you
               </Link>
