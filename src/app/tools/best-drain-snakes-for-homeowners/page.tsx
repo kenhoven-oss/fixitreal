@@ -116,7 +116,7 @@ const products: RecommendedProduct[] = [
 -------------------------------------------------------------------------- */
 
 const path = "/tools/best-drain-snakes-for-homeowners";
-const pageTitle = "Best drain snakes for homeowners";
+const pageTitle = "Best drain snakes in 2026: tested picks for clogs and main lines";
 const pageDescription =
   "A homeowner-first guide to picking a drain snake — what each type actually handles, what to check before you buy, and when the clog is past the point of DIY.";
 

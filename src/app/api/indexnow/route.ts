@@ -5,33 +5,40 @@ import { loadAllArticles } from "@/lib/articles-loader";
 import { getAllJobSlugs } from "@/content/jobs";
 
 /**
- * Manual IndexNow trigger.
+ * IndexNow trigger — manual or via Vercel Cron.
  *
- * GET /api/indexnow?token=<INDEXNOW_AUTH_TOKEN>
+ * Auth accepts EITHER:
+ *   - GET /api/indexnow?token=<INDEXNOW_AUTH_TOKEN>   (manual trigger)
+ *   - GET /api/indexnow with header: Authorization: Bearer <CRON_SECRET>
+ *     (Vercel Cron — Vercel auto-injects this header when CRON_SECRET
+ *     is set in Project Settings → Environment Variables.)
  *
- * - With token: submits every published article + tool + job URL to IndexNow.
- *   Use after a content batch ships.
- * - Without token: returns 401.
+ * To wire daily cron: vercel.json includes
+ *   { "crons": [{ "path": "/api/indexnow", "schedule": "0 6 * * *" }] }
+ * and you set CRON_SECRET in Vercel env (generate: openssl rand -hex 32).
  *
- * To wire to Vercel Cron, add a vercel.json entry:
- *   { "crons": [{ "path": "/api/indexnow?token=<token>", "schedule": "0 6 * * *" }] }
+ * INDEXNOW_AUTH_TOKEN is for ad-hoc curl/postman triggers.
  *
- * The token is read from process.env.INDEXNOW_AUTH_TOKEN. Set it in
- * Vercel → Settings → Environment Variables (Production + Preview).
- * Generate with: openssl rand -hex 32.
+ * Both env vars are independent — set whichever you need.
  */
 export async function GET(req: Request) {
   const url = new URL(req.url);
   const provided = url.searchParams.get("token");
-  const expected = process.env.INDEXNOW_AUTH_TOKEN;
+  const manualToken = process.env.INDEXNOW_AUTH_TOKEN;
+  const cronSecret = process.env.CRON_SECRET;
+  const authHeader = req.headers.get("authorization");
+  const expectedCronHeader = cronSecret ? `Bearer ${cronSecret}` : null;
 
-  if (!expected) {
+  const isCronCall = expectedCronHeader !== null && authHeader === expectedCronHeader;
+  const isManualCall = manualToken !== undefined && provided === manualToken;
+
+  if (!manualToken && !cronSecret) {
     return NextResponse.json(
-      { error: "INDEXNOW_AUTH_TOKEN not configured" },
+      { error: "Neither INDEXNOW_AUTH_TOKEN nor CRON_SECRET is configured" },
       { status: 503 }
     );
   }
-  if (provided !== expected) {
+  if (!isCronCall && !isManualCall) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
@@ -57,7 +64,32 @@ export async function GET(req: Request) {
     "/tools",
   ].map((p) => `${env.siteUrl}${p}`);
 
-  const allUrls = [...staticUrls, ...articleUrls, ...jobUrls];
+  // Programmatic state-cost pages: STATES × STATE_COST_GUIDES.
+  const { getAllStateCostParams } = await import("@/content/state-cost-data");
+  const stateCostUrls = getAllStateCostParams().map(
+    ({ slug, state }) => `${env.siteUrl}/costs/${slug}/${state}`
+  );
+
+  // Programmatic metro-cost pages: CITIES × STATE_COST_GUIDES.
+  const { getAllCityCostParams } = await import("@/content/city-cost-data");
+  const metroCostUrls = getAllCityCostParams().map(
+    ({ slug, city }) => `${env.siteUrl}/costs/${slug}/metro/${city}`
+  );
+
+  // Glossary pages.
+  const { getAllGlossarySlugs } = await import("@/content/glossary");
+  const glossaryUrls = getAllGlossarySlugs().map(
+    (slug) => `${env.siteUrl}/glossary/${slug}`
+  );
+
+  const allUrls = [
+    ...staticUrls,
+    ...articleUrls,
+    ...jobUrls,
+    ...stateCostUrls,
+    ...metroCostUrls,
+    ...glossaryUrls,
+  ];
 
   // IndexNow accepts up to 10,000 URLs per request. We chunk at 1,000 to
   // be friendly and let us see per-batch status.

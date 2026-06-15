@@ -159,6 +159,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
+  // Metro-level cost pages: programmatic at /costs/<slug>/metro/<city> for
+  // top-36 US metros × 5 cost guides = 180 indexable URLs targeting
+  // "[trade] cost in [city]" long-tail queries. Higher purchase intent than
+  // the state-level variant; less crowded with aggregator listings.
+  const { getAllCityCostParams } = await import("@/content/city-cost-data");
+  const metroCostEntries: MetadataRoute.Sitemap = getAllCityCostParams().map(
+    ({ slug, city }) => ({
+      url: fullUrl(`/costs/${slug}/metro/${city}`),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })
+  );
+
   return [
     ...staticEntries,
     ...toolEntries,
@@ -166,5 +180,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...topicEntries,
     ...glossaryEntries,
     ...stateCostEntries,
+    ...metroCostEntries,
   ];
 }
