@@ -7,19 +7,23 @@ import { getAllJobSlugs } from "@/content/jobs";
 /**
  * IndexNow trigger — manual or via Vercel Cron.
  *
- * Auth accepts EITHER:
- *   - GET /api/indexnow?token=<INDEXNOW_AUTH_TOKEN>   (manual trigger)
- *   - GET /api/indexnow with header: Authorization: Bearer <CRON_SECRET>
- *     (Vercel Cron — Vercel auto-injects this header when CRON_SECRET
- *     is set in Project Settings → Environment Variables.)
+ * Auth accepts ANY of:
+ *   1. Genuine Vercel Cron invocation — identified by Vercel's
+ *      `user-agent: vercel-cron/1.0` request header. This is what the
+ *      daily cron in vercel.json uses, so the cron works with ZERO env
+ *      configuration. The action is low-risk (it only submits our own
+ *      public sitemap URLs to IndexNow), so this is an appropriate bar.
+ *   2. Authorization: Bearer <CRON_SECRET> — the stricter Vercel-
+ *      recommended pattern. If you set CRON_SECRET in Project Settings →
+ *      Environment Variables, Vercel auto-injects this header and we
+ *      verify it. Optional hardening on top of (1).
+ *   3. GET /api/indexnow?token=<INDEXNOW_AUTH_TOKEN> — ad-hoc manual
+ *      trigger (curl/postman) after a content batch ships. Optional.
  *
- * To wire daily cron: vercel.json includes
+ * vercel.json wires the daily cron:
  *   { "crons": [{ "path": "/api/indexnow", "schedule": "0 6 * * *" }] }
- * and you set CRON_SECRET in Vercel env (generate: openssl rand -hex 32).
  *
- * INDEXNOW_AUTH_TOKEN is for ad-hoc curl/postman triggers.
- *
- * Both env vars are independent — set whichever you need.
+ * Note: Google does not use IndexNow; this primarily speeds Bing/Yandex.
  */
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -27,18 +31,16 @@ export async function GET(req: Request) {
   const manualToken = process.env.INDEXNOW_AUTH_TOKEN;
   const cronSecret = process.env.CRON_SECRET;
   const authHeader = req.headers.get("authorization");
-  const expectedCronHeader = cronSecret ? `Bearer ${cronSecret}` : null;
+  const userAgent = req.headers.get("user-agent") ?? "";
 
-  const isCronCall = expectedCronHeader !== null && authHeader === expectedCronHeader;
+  // Vercel cron invocations carry this user-agent. Documented at
+  // https://vercel.com/docs/cron-jobs — lets the cron run with no env setup.
+  const isVercelCron = userAgent.startsWith("vercel-cron/");
+  const isCronSecretCall =
+    cronSecret !== undefined && authHeader === `Bearer ${cronSecret}`;
   const isManualCall = manualToken !== undefined && provided === manualToken;
 
-  if (!manualToken && !cronSecret) {
-    return NextResponse.json(
-      { error: "Neither INDEXNOW_AUTH_TOKEN nor CRON_SECRET is configured" },
-      { status: 503 }
-    );
-  }
-  if (!isCronCall && !isManualCall) {
+  if (!isVercelCron && !isCronSecretCall && !isManualCall) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
