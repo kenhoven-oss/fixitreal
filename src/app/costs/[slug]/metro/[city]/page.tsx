@@ -13,6 +13,7 @@ import {
 import {
   STATE_COST_GUIDES,
   getGuideBySlug,
+  getStateByslug,
 } from "@/content/state-cost-data";
 
 const METRO_COST_UPDATED = "2026-06-14";
@@ -86,6 +87,12 @@ export default async function MetroCostPage({ params }: { params: Params }) {
   const stateCitySiblings = CITIES.filter(
     (c) => c.stateAbbr === cityData.stateAbbr && c.slug !== cityData.slug
   ).slice(0, 4);
+
+  // Statewide cost page only exists for the subset of states in the
+  // STATE_COST data file. Only link to it when it actually resolves —
+  // otherwise the cross-link 404s (e.g. Hawaii, Alaska, Idaho metros).
+  const stateSlug = cityData.stateName.toLowerCase().replace(/\s+/g, "-");
+  const statewidePageExists = getStateByslug(stateSlug) !== undefined;
 
   const faqs = [
     {
@@ -320,15 +327,17 @@ export default async function MetroCostPage({ params }: { params: Params }) {
                   </Link>
                 </li>
               ))}
-              <li>
-                →{" "}
-                <Link
-                  href={`/costs/${slug}/${cityData.stateName.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="no-underline text-navy-700 hover:text-navy-900"
-                >
-                  Statewide {guide.shortName} cost for {cityData.stateName}
-                </Link>
-              </li>
+              {statewidePageExists && (
+                <li>
+                  →{" "}
+                  <Link
+                    href={`/costs/${slug}/${stateSlug}`}
+                    className="no-underline text-navy-700 hover:text-navy-900"
+                  >
+                    Statewide {guide.shortName} cost for {cityData.stateName}
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         )}
