@@ -148,10 +148,10 @@ export default async function JobResultPage({ params }: { params: Params }) {
         <section className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="rounded-lg border border-ink-200 bg-white p-6">
             <p className="text-xs font-semibold uppercase tracking-wider text-navy-700">
-              If you DIY
+              {j.verdict === "hire-a-pro" ? "Why this isn't a DIY job" : "If you DIY"}
             </p>
             <p className="mt-3 text-ink-800 leading-relaxed">{j.ifYouDiy}</p>
-            {j.toolsNeeded.length > 0 && (
+            {j.verdict !== "hire-a-pro" && j.toolsNeeded.length > 0 && (
               <>
                 <p className="mt-5 text-xs font-semibold uppercase tracking-wider text-ink-500">
                   Tools needed
