@@ -31,7 +31,7 @@ export const costCalendar: readonly CalendarMonth[] = [
       {
         title: "Book a spring HVAC tune-up",
         cost: "$150–$250 pro visit",
-        why: "Spring schedules fill by March. Book now for $20–$40 off off-peak pricing.",
+        why: "Spring schedules fill by March. Book now for $20–$40 off-peak pricing.",
       },
     ],
   },
