@@ -22,11 +22,14 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link href="/" className="inline-block no-underline" aria-label={site.name}>
+              {/* See Header.tsx: `sizes` keeps next/image from serving the
+                  2048px variant for a logo that renders at ~282px. */}
               <Image
                 src="/FIXitREALlogo.png"
-                alt={site.name}
+                alt=""
                 width={964}
                 height={329}
+                sizes="(min-width: 768px) 282px, 188px"
                 className="h-16 w-auto md:h-24"
               />
             </Link>

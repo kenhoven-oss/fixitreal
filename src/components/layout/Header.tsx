@@ -11,11 +11,22 @@ export function Header() {
           className="flex items-center gap-3 shrink-0 no-underline"
           aria-label={site.name}
         >
+          {/*
+            `sizes` is required here even though the logo is a fixed size.
+            Without it, next/image builds the srcset from the `width` prop
+            (964) and offers 1x/2x candidates — so every retina visitor was
+            downloading the 2048px variant of a logo that renders at ~235px,
+            on every page, as a `priority` (render-blocking) LCP candidate.
+            Declaring the real display width lets next/image serve a ~256px
+            file instead. The link already carries aria-label={site.name},
+            so alt="" avoids screen readers announcing the name twice.
+          */}
           <Image
             src="/FIXitREALlogo.png"
-            alt={site.name}
+            alt=""
             width={964}
             height={329}
+            sizes="(min-width: 768px) 235px, 165px"
             priority
             className="h-14 w-auto md:h-20"
           />

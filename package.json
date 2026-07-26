@@ -7,12 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check-links": "node scripts/check-affiliate-links.mjs"
+    "check-links": "node scripts/check-affiliate-links.mjs",
+    "check-entities": "node scripts/check-html-entities.mjs",
+    "affiliate-coverage": "node scripts/affiliate-coverage.mjs",
+    "sync-product-links": "node scripts/sync-product-links.mjs",
+    "check-anchors": "node scripts/check-toc-anchors.mjs"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
+    "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "next": "16.2.4",
     "next-mdx-remote": "^6.0.0",

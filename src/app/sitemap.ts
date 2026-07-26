@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { readdir } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { env } from "@/lib/env";
 import { getAllJobSlugs } from "@/content/jobs";
@@ -8,7 +8,41 @@ import { getAllTopics } from "@/lib/topics";
 
 const now = new Date();
 
-type Route = { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] };
+/**
+ * `lastmod` has to be TRUE, not merely present.
+ *
+ * Google's documented position is that it uses lastmod only while a site
+ * proves the value is reliable, and starts ignoring it site-wide once it is
+ * demonstrably not. Stamping `new Date()` on a URL whose content did not
+ * change means every unrelated rebuild claims ~700 pages were updated. That
+ * doesn't make Google recrawl them faster — it teaches Google to distrust the
+ * signal, which then also devalues the ~106 article URLs where our lastmod
+ * genuinely is accurate.
+ *
+ * So: `now` is used ONLY for hub/index pages, whose content really is derived
+ * from the full article set and really does change whenever anything ships.
+ * Everything else reads a real content date.
+ */
+
+/**
+ * Last substantive review of the programmatic cost datasets (state, metro)
+ * and the reference content built from them (glossary, topics).
+ *
+ * BUMP THIS when the underlying rate tables are refreshed — not on every
+ * deploy. It is deliberately a hand-maintained constant rather than a file
+ * mtime: Vercel does a fresh clone on every build, so mtimes there are just
+ * the checkout time, which would silently reintroduce the exact problem this
+ * constant exists to solve.
+ */
+const CONTENT_DATA_REVIEWED = new Date("2026-05-16T00:00:00.000Z");
+
+type Route = {
+  path: string;
+  priority: number;
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  /** Real content date. Falls back to `now` only for true hub pages. */
+  lastModified?: Date;
+};
 
 const staticRoutes: Route[] = [
   { path: "/", priority: 1.0, changeFrequency: "weekly" },
@@ -45,18 +79,42 @@ const staticRoutes: Route[] = [
 /**
  * Discover every /tools/best-* buying-guide folder at build time so new
  * guides get picked up in the sitemap without touching this file.
+ *
+ * Each guide declares `const updatedAt = "YYYY-MM-DD"` as the single source of
+ * truth for its dates (OG metadata, visible byline, Article JSON-LD). We read
+ * that same constant here so the sitemap agrees with the page instead of
+ * claiming a build-time edit that never happened.
  */
 async function discoverBuyingGuideRoutes(): Promise<Route[]> {
   const toolsDir = path.join(process.cwd(), "src", "app", "tools");
   try {
     const entries = await readdir(toolsDir, { withFileTypes: true });
-    return entries
-      .filter((e) => e.isDirectory() && e.name.startsWith("best-"))
-      .map((e) => ({
-        path: `/tools/${e.name}`,
-        priority: 0.75,
-        changeFrequency: "monthly" as const,
-      }));
+    const guides = entries.filter(
+      (e) => e.isDirectory() && e.name.startsWith("best-")
+    );
+
+    return await Promise.all(
+      guides.map(async (e) => {
+        let lastModified: Date | undefined;
+        try {
+          const source = await readFile(
+            path.join(toolsDir, e.name, "page.tsx"),
+            "utf8"
+          );
+          const match = /const updatedAt = "([\d-]{10})"/.exec(source);
+          if (match) lastModified = new Date(`${match[1]}T00:00:00.000Z`);
+        } catch {
+          // Fall through to the hub-page default below.
+        }
+
+        return {
+          path: `/tools/${e.name}`,
+          priority: 0.75,
+          changeFrequency: "monthly" as const,
+          lastModified,
+        };
+      })
+    );
   } catch {
     return [];
   }
@@ -84,7 +142,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticEntries: MetadataRoute.Sitemap = allStaticRoutes.map((r) => ({
     url: fullUrl(r.path),
-    lastModified: now,
+    // Hub/index pages genuinely re-render from the whole article set, so a
+    // build-time lastmod is honest for them. Buying guides supply their own.
+    lastModified: r.lastModified ?? now,
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }));
@@ -107,7 +167,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .filter((slug) => !redirectedJobSlugs.has(slug))
     .map((slug) => ({
       url: fullUrl(`/tools/diy-or-hire/${slug}`),
-      lastModified: now,
+      lastModified: CONTENT_DATA_REVIEWED,
       changeFrequency: "monthly" as const,
       priority: 0.75,
     }));
@@ -140,7 +200,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const glossaryEntries: MetadataRoute.Sitemap = getAllGlossarySlugs().map(
     (slug) => ({
       url: fullUrl(`/glossary/${slug}`),
-      lastModified: now,
+      lastModified: CONTENT_DATA_REVIEWED,
       changeFrequency: "yearly" as const,
       priority: 0.55,
     })
@@ -153,7 +213,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const stateCostEntries: MetadataRoute.Sitemap = getAllStateCostParams().map(
     ({ slug, state }) => ({
       url: fullUrl(`/costs/${slug}/${state}`),
-      lastModified: now,
+      lastModified: CONTENT_DATA_REVIEWED,
       changeFrequency: "monthly" as const,
       priority: 0.65,
     })
@@ -167,7 +227,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const metroCostEntries: MetadataRoute.Sitemap = getAllCityCostParams().map(
     ({ slug, city }) => ({
       url: fullUrl(`/costs/${slug}/metro/${city}`),
-      lastModified: now,
+      lastModified: CONTENT_DATA_REVIEWED,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })

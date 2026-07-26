@@ -12,22 +12,36 @@
  * the body content) and ignore H4+ (too granular to be useful for skimming).
  */
 
+import GithubSlugger from "github-slugger";
+
 export type TocItem = { depth: 2 | 3; text: string; slug: string };
 
 /**
- * github-slugger-style slug generation. Matches rehype-slug's default,
- * which uses github-slugger under the hood. Kept inline so we don't pull
- * github-slugger into the runtime bundle.
+ * Slugs MUST come from github-slugger itself, not a re-implementation.
+ *
+ * This was previously hand-rolled "to keep github-slugger out of the runtime
+ * bundle" — but extractToc only ever runs in a server component at render
+ * time, so there was no client bundle to protect, and the copy had drifted
+ * from the real algorithm in two ways that silently broke anchors:
+ *
+ *   1. It collapsed whitespace runs (`\s+` -> "-"). github-slugger replaces
+ *      each single space individually and does NOT collapse.
+ *   2. It collapsed hyphen runs (`-+` -> "-"). github-slugger does not.
+ *
+ * Any heading containing an em dash hit both. github-slugger strips the "—"
+ * but leaves the spaces that surrounded it, producing a DOUBLE hyphen:
+ *
+ *   "SEER rating — what's worth paying for"
+ *     rehype-slug (truth) -> "seer-rating--whats-worth-paying-for"
+ *     old slugify (TOC)   -> "seer-rating-whats-worth-paying-for"
+ *
+ * The TOC therefore linked to an id that did not exist, and every jump link
+ * on an em-dash heading was dead. Em dashes are used heavily in our headings,
+ * so this affected a large share of long-form pages.
+ *
+ * Importing the same package rehype-slug uses makes divergence impossible
+ * by construction. Do not reintroduce a local copy.
  */
-function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[^\p{L}\p{N}\s-]/gu, "") // strip punctuation
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
-}
 
 /** Strip inline MDX/markdown noise so the visible TOC text reads cleanly. */
 function cleanHeading(raw: string): string {
@@ -55,7 +69,9 @@ export function extractToc(mdxSource: string): TocItem[] {
   const stripped = body.replace(/```[\s\S]*?```/g, "");
 
   const items: TocItem[] = [];
-  const seen = new Map<string, number>();
+  // A fresh slugger per document: it carries the duplicate-heading counter
+  // (foo, foo-1, foo-2) exactly as rehype-slug does for the same document.
+  const slugger = new GithubSlugger();
 
   for (const line of stripped.split("\n")) {
     const m = /^(#{2,3})\s+(.+?)\s*$/.exec(line);
@@ -63,12 +79,7 @@ export function extractToc(mdxSource: string): TocItem[] {
     const depth = m[1].length as 2 | 3;
     const text = cleanHeading(m[2]);
     if (!text) continue;
-    let slug = slugify(text);
-    // Handle duplicate slugs the same way github-slugger does: -1, -2, ...
-    const dupeCount = seen.get(slug) ?? 0;
-    if (dupeCount > 0) slug = `${slug}-${dupeCount}`;
-    seen.set(slug, dupeCount + 1);
-    items.push({ depth, text, slug });
+    items.push({ depth, text, slug: slugger.slug(text) });
   }
 
   return items;
