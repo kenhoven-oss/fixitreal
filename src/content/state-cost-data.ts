@@ -295,6 +295,10 @@ export const STATES: StateCostData[] = [
  * The cost guides that get state-level expansion. Slug must match the
  * existing /costs/<slug> article so the parent canonical works.
  */
+
+/** ISO date these state pages were last materially updated. */
+export const STATE_COST_UPDATED = "2026-05-16";
+
 export type CostGuideForState = {
   slug: string;
   /** Used in titles ("Electrician service call cost in <State>"). */

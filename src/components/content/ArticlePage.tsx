@@ -27,6 +27,8 @@ import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import { jsonLdScript, articleSchema, howToSchema } from "@/lib/jsonld";
 import type { LoadedArticle } from "@/lib/articles-loader";
+import { loadArticleTitle } from "@/lib/articles-loader";
+import { getJob } from "@/content/jobs";
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { site } from "@/content/site";
 import { extractToc } from "@/lib/toc";
@@ -72,9 +74,27 @@ const mdxComponents = {
     ),
 };
 
-export function ArticlePage({ article }: ArticlePageProps) {
+export async function ArticlePage({ article }: ArticlePageProps) {
   const { frontmatter, content, path } = article;
   const pillar = frontmatter.pillar;
+
+  const [relatedDecisionTitle, relatedCostTitle, relatedAdviceTitles] =
+    await Promise.all([
+      frontmatter.relatedDecision
+        ? loadArticleTitle("diy-or-hire", frontmatter.relatedDecision)
+        : Promise.resolve(null),
+      frontmatter.relatedCost
+        ? loadArticleTitle("costs", frontmatter.relatedCost)
+        : Promise.resolve(null),
+      frontmatter.relatedAdvice
+        ? Promise.all(
+            frontmatter.relatedAdvice.map((s) => loadArticleTitle("advice", s))
+          )
+        : Promise.resolve([]),
+    ]);
+  const relatedJobData = frontmatter.relatedJob
+    ? getJob(frontmatter.relatedJob)
+    : undefined;
   const publishDate = new Date(frontmatter.publishedAt);
   const updateDate = frontmatter.updatedAt
     ? new Date(frontmatter.updatedAt)
@@ -291,7 +311,7 @@ export function ArticlePage({ article }: ArticlePageProps) {
                   href={`/diy-or-hire/${frontmatter.relatedDecision}`}
                   className="no-underline text-navy-700 hover:text-navy-900"
                 >
-                  → DIY or hire: {frontmatter.relatedDecision.replace(/-/g, " ")}
+                  → {relatedDecisionTitle ?? frontmatter.relatedDecision.replace(/-/g, " ")}
                 </Link>
               </li>
             )}
@@ -301,17 +321,17 @@ export function ArticlePage({ article }: ArticlePageProps) {
                   href={`/costs/${frontmatter.relatedCost}`}
                   className="no-underline text-navy-700 hover:text-navy-900"
                 >
-                  → Cost guide: {frontmatter.relatedCost.replace(/-/g, " ")}
+                  → {relatedCostTitle ?? frontmatter.relatedCost.replace(/-/g, " ")}
                 </Link>
               </li>
             )}
-            {frontmatter.relatedAdvice?.map((slug) => (
+            {frontmatter.relatedAdvice?.map((slug, i) => (
               <li key={slug}>
                 <Link
                   href={`/advice/${slug}`}
                   className="no-underline text-navy-700 hover:text-navy-900"
                 >
-                  → Advice: {slug.replace(/-/g, " ")}
+                  → {relatedAdviceTitles[i] ?? slug.replace(/-/g, " ")}
                 </Link>
               </li>
             ))}
@@ -321,7 +341,7 @@ export function ArticlePage({ article }: ArticlePageProps) {
                   href={`/tools/diy-or-hire/${frontmatter.relatedJob}`}
                   className="no-underline text-navy-700 hover:text-navy-900"
                 >
-                  → Tool verdict: {frontmatter.relatedJob.replace(/-/g, " ")}
+                  → {relatedJobData?.shortTitle ?? frontmatter.relatedJob.replace(/-/g, " ")}
                 </Link>
               </li>
             )}

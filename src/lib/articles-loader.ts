@@ -65,6 +65,15 @@ export async function loadAllArticles(): Promise<LoadedArticle[]> {
   );
 }
 
+/** Load only the title for a single article — fast, no content parsing. */
+export async function loadArticleTitle(
+  pillar: Pillar,
+  slug: string
+): Promise<string | null> {
+  const article = await loadArticle(pillar, slug);
+  return article?.frontmatter.title ?? null;
+}
+
 export async function loadArticlesByPillar(pillar: Pillar): Promise<LoadedArticle[]> {
   const slugs = await listArticleSlugs(pillar);
   const loaded = await Promise.all(slugs.map((s) => loadArticle(pillar, s)));

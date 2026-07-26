@@ -14,6 +14,7 @@ import {
   STATES,
   STATE_COST_GUIDES,
   TIER_MULTIPLIERS,
+  STATE_COST_UPDATED,
   adjustRange,
   getAllStateCostParams,
   getGuideBySlug,
@@ -38,15 +39,16 @@ export async function generateMetadata({ params }: { params: Params }) {
     stateData.tier
   );
   const title = `${guide.shortName} cost in ${stateData.name}`;
-  const description = `${stateData.name} ${guide.longName} pricing typically runs $${tripRange.low}–$${tripRange.high} for the trip plus first hour, with regional licensing and permit notes. May 2026.`;
+  const updatedLabel = new Date(STATE_COST_UPDATED).toLocaleDateString("en-US", { month: "long", year: "numeric" });
+  const description = `${stateData.name} ${guide.longName} pricing typically runs $${tripRange.low}–$${tripRange.high} for the trip plus first hour, with regional licensing and permit notes. ${updatedLabel}.`;
 
   return buildMetadata({
     title: capitalize(title),
     description,
     path: `/costs/${slug}/${state}`,
     type: "article",
-    publishedAt: "2026-05-16",
-    updatedAt: "2026-05-16",
+    publishedAt: STATE_COST_UPDATED,
+    updatedAt: STATE_COST_UPDATED,
     authorName: kenHoven.name,
     section: "State Cost Guide",
   });
@@ -122,7 +124,7 @@ export default async function StateCostPage({ params }: { params: Params }) {
               {kenHoven.name}
             </Link>
           </span>
-          <span>Updated May 2026</span>
+          <span>Updated {new Date(STATE_COST_UPDATED).toLocaleDateString("en-US", { month: "long", year: "numeric" })}</span>
           <span>
             Tier: {tierMult.label}
           </span>
