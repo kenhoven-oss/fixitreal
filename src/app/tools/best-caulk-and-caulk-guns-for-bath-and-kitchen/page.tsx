@@ -107,10 +107,21 @@ const pageTitle = "Best caulk and caulk guns for bath and kitchen";
 const pageDescription =
   "A practical pick-list for recaulking a tub, shower, or sink — the right sealant for wet areas, the right gun for clean beads, and the prep that keeps the new.";
 
+// Single source of truth for this page's dates: OG metadata, the visible
+// byline, and the Article JSON-LD all read from these two constants so they
+// can never drift apart again.
+const publishedAt = "2026-04-20";
+const updatedAt = "2026-05-16";
+
 export const metadata = buildMetadata({
   title: pageTitle,
   description: pageDescription,
   path,
+  type: "article",
+  publishedAt,
+  updatedAt,
+  authorName: kenHoven.name,
+  section: "Buying guide",
 });
 
 /* --------------------------------------------------------------------------
@@ -176,7 +187,7 @@ export default function BestCaulkGuide() {
               {kenHoven.name}
             </Link>
           </span>
-          <span>Updated April 20, 2026</span>
+          <span>Updated May 16, 2026</span>
           <span>6 min read</span>
         </p>
 
@@ -365,8 +376,8 @@ export default function BestCaulkGuide() {
               headline: pageTitle,
               description: pageDescription,
               url: path,
-              datePublished: "2026-04-20",
-              dateModified: "2026-05-16",
+              datePublished: publishedAt,
+              dateModified: updatedAt,
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",

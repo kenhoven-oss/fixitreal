@@ -116,14 +116,34 @@ const products: RecommendedProduct[] = [
 -------------------------------------------------------------------------- */
 
 const path = "/tools/best-drain-snakes-for-homeowners";
-const pageTitle = "Best drain snakes in 2026: tested picks for clogs and main lines";
+// NOTE: this page recommends drain snake *types*, not specific tested units —
+// there are no hands-on measurements, no original photography, and no model
+// numbers here. The title therefore must not claim "tested picks". Doing so
+// contradicts the homepage promise ("no product reviews of tools we haven't
+// used"), is an FTC endorsement-guides exposure, and cannot compete in a SERP
+// where Google's reviews system rewards demonstrable first-hand testing.
+// If this guide is ever upgraded with real testing — named models, measured
+// cable diameters, photos of each unit on a real clog — restore a testing
+// claim then, and not before.
+const pageTitle = "Best drain snakes in 2026: which type clears which clog";
 const pageDescription =
   "A homeowner-first guide to picking a drain snake — what each type actually handles, what to check before you buy, and when the clog is past the point of DIY.";
+
+// Single source of truth for this page's dates: OG metadata, the visible
+// byline, and the Article JSON-LD all read from these two constants so they
+// can never drift apart again.
+const publishedAt = "2026-04-20";
+const updatedAt = "2026-05-16";
 
 export const metadata = buildMetadata({
   title: pageTitle,
   description: pageDescription,
   path,
+  type: "article",
+  publishedAt,
+  updatedAt,
+  authorName: kenHoven.name,
+  section: "Buying guide",
 });
 
 /* --------------------------------------------------------------------------
@@ -149,7 +169,7 @@ const faqs = [
   {
     question: "How far in can a homeowner safely snake?",
     answer:
-      "Branch lines from a fixture to the nearest vent are fair game with a manual auger. Once you&apos;re past the P-trap and into a shared stack or the main sewer, call a plumber — a wrong cable pass can punch through a degraded joint.",
+      "Branch lines from a fixture to the nearest vent are fair game with a manual auger. Once you're past the P-trap and into a shared stack or the main sewer, call a plumber — a wrong cable pass can punch through a degraded joint.",
   },
   {
     question: "Is a drain snake worth owning if I only clog once a year?",
@@ -189,7 +209,7 @@ export default function BestDrainSnakesGuide() {
               {kenHoven.name}
             </Link>
           </span>
-          <span>Updated April 20, 2026</span>
+          <span>Updated May 16, 2026</span>
           <span>6 min read</span>
         </p>
 
@@ -378,8 +398,8 @@ export default function BestDrainSnakesGuide() {
               headline: pageTitle,
               description: pageDescription,
               url: path,
-              datePublished: "2026-04-20",
-              dateModified: "2026-05-16",
+              datePublished: publishedAt,
+              dateModified: updatedAt,
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",

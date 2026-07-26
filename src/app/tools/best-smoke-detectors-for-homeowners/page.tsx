@@ -36,7 +36,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner",
     riskLevel: "Low — the alarm itself. Replacement is screwdriver-only.",
     verdict: "The default choice for almost every home. Sealed lithium beats every annual-battery alarm.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4wyKpun",
     buttonText: "Check price on Amazon",
   },
   {
@@ -54,7 +54,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner",
     riskLevel: "Low",
     verdict: "The right combo for most U.S. homes. UL 217 + UL 2034 is the spec to check.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4wohlG1",
     buttonText: "Check price on Amazon",
   },
   {
@@ -72,7 +72,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Intermediate — comfortable with a multi-conductor connector and turning off the circuit.",
     riskLevel: "Moderate — work behind a junction-box plate is electrical work; mismatch the connector and the interconnect fails silently.",
     verdict: "If you have a hardwired interconnected system, keep it. Replace brand-for-brand.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4vOc6hG",
     buttonText: "Check price on Amazon",
   },
   {
@@ -90,7 +90,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner (battery models) to Intermediate (hardwired smart units).",
     riskLevel: "Low — same UL-listed sensor as basic units. Risk is service / app lifecycle, not safety.",
     verdict: "Worth it only when remote-notification matters. Don't pay for smart features as a safety upgrade.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4x2nM18",
     buttonText: "Check price on Amazon",
   },
 ];
@@ -100,13 +100,19 @@ const pageTitle = "Best smoke detectors for homeowners";
 const pageDescription =
   "Sealed 10-year lithium photoelectric units win for most homes. Here's what spec actually matters, what to avoid, and how many alarms a typical house needs.";
 
+// Single source of truth for this page's dates: OG metadata, the visible
+// byline, the Article JSON-LD and the sitemap all read from these two
+// constants so they can never drift apart.
+const publishedAt = "2026-05-16";
+const updatedAt = "2026-05-16";
+
 export const metadata = buildMetadata({
   title: pageTitle,
   description: pageDescription,
   path,
   type: "article",
-  publishedAt: "2026-05-16",
-  updatedAt: "2026-05-16",
+  publishedAt,
+  updatedAt,
   authorName: kenHoven.name,
   section: "Buying guide",
 });
@@ -396,8 +402,8 @@ export default function BestSmokeDetectorsForHomeownersPage() {
               headline: pageTitle,
               description: pageDescription,
               url: path,
-              datePublished: "2026-05-16",
-              dateModified: "2026-05-16",
+              datePublished: publishedAt,
+              dateModified: updatedAt,
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",

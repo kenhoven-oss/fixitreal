@@ -31,7 +31,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — set under the appliance and walk away.",
     riskLevel: "Tool low-risk; what it monitors (water + electrical / structural) is high.",
     verdict: "The $15 you spend before you need it. Buy a multi-pack.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4hyvBHr",
     buttonText: "Check price on Amazon",
   },
   {
@@ -49,7 +49,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — but you do need a Wi-Fi network and a working notification setup.",
     riskLevel: "Low for the device.",
     verdict: "Worth the upgrade if you're away from home regularly. Otherwise the puck is enough.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4bM1ngp",
     buttonText: "Check price on Amazon",
   },
   {
@@ -67,7 +67,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Hire a licensed plumber for install. The device is owner-operable after install.",
     riskLevel: "Cutting into the water main is plumber work. Do not DIY.",
     verdict: "The right move for finished basements or repeat-leak households. Insurance often discounts it.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4vWr2u9",
     buttonText: "Check price on Amazon",
   },
   {
@@ -85,7 +85,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "The right pick when a leak could appear anywhere along a perimeter, not at one point.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/3RS0qfT",
     buttonText: "Check price on Amazon",
   },
 ];
@@ -95,13 +95,19 @@ const pageTitle = "Best water leak detectors";
 const pageDescription =
   "A $15 puck sensor catches most leaks before they ruin floors. Wi-Fi adds remote alerts. A whole-home shutoff valve stops disasters cold. Here's what fits each home.";
 
+// Single source of truth for this page's dates: OG metadata, the visible
+// byline, the Article JSON-LD and the sitemap all read from these two
+// constants so they can never drift apart.
+const publishedAt = "2026-05-16";
+const updatedAt = "2026-05-16";
+
 export const metadata = buildMetadata({
   title: pageTitle,
   description: pageDescription,
   path,
   type: "article",
-  publishedAt: "2026-05-16",
-  updatedAt: "2026-05-16",
+  publishedAt,
+  updatedAt,
   authorName: kenHoven.name,
   section: "Buying guide",
 });
@@ -399,8 +405,8 @@ export default function BestWaterLeakDetectorsPage() {
               headline: pageTitle,
               description: pageDescription,
               url: path,
-              datePublished: "2026-05-16",
-              dateModified: "2026-05-16",
+              datePublished: publishedAt,
+              dateModified: updatedAt,
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",

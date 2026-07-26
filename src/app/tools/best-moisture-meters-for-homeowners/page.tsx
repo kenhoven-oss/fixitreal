@@ -90,10 +90,21 @@ const pageTitle = "Best moisture meters for homeowners";
 const pageDescription =
   "How to pick a moisture meter that actually helps diagnose a wet wall or floor, read the numbers honestly, and know when to call a pro.";
 
+// Single source of truth for this page's dates: OG metadata, the visible
+// byline, and the Article JSON-LD all read from these two constants so they
+// can never drift apart again.
+const publishedAt = "2026-04-20";
+const updatedAt = "2026-05-16";
+
 export const metadata = buildMetadata({
   title: pageTitle,
   description: pageDescription,
   path,
+  type: "article",
+  publishedAt,
+  updatedAt,
+  authorName: kenHoven.name,
+  section: "Buying guide",
 });
 
 /* --------------------------------------------------------------------------
@@ -159,7 +170,7 @@ export default function BestMoistureMetersGuide() {
               {kenHoven.name}
             </Link>
           </span>
-          <span>Updated April 20, 2026</span>
+          <span>Updated May 16, 2026</span>
           <span>5 min read</span>
         </p>
 
@@ -353,8 +364,8 @@ export default function BestMoistureMetersGuide() {
               headline: pageTitle,
               description: pageDescription,
               url: path,
-              datePublished: "2026-04-20",
-              dateModified: "2026-05-16",
+              datePublished: publishedAt,
+              dateModified: updatedAt,
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",

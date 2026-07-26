@@ -23,7 +23,7 @@ import type { RecommendedProduct } from "@/components/tools/RecommendedProductCa
      1. Open this file.
      2. Add an entry to the `products` array below, or edit an existing one.
      3. Paste your affiliate short link into the `affiliateUrl` field
-        (example format: "https://amzn.to/4cyACvH").
+        (example format: "https://amzn.to/4tlV9dU").
      4. Leave `affiliateUrl: ""` to publish the card without a buy button
         (useful while drafting).
 -------------------------------------------------------------------------- */
@@ -43,7 +43,11 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — but verify the tester on a known-live source before trusting a quiet reading.",
     riskLevel: "Tool itself is low risk; the work it enables is electrical — treat all wiring as live until proven dead.",
     verdict: "The first tool every homeowner should own. Cheap, idiot-proof, and lifesaving.",
-    affiliateUrl: "https://amzn.to/4cyACvH",
+    // Klein NCVT3P (B08DQMX7YF). Replaces the previous NCVT5KIT link, which
+    // Amazon retired and which had been serving a 404 to every reader.
+    // Verified resolving 2026-07-26; adjustable sensitivity, 12–1000 V AC,
+    // which is what this card's buying notes call for.
+    affiliateUrl: "https://amzn.to/4fWFw8o",
     buttonText: "Check price on Amazon",
   },
   {
@@ -108,10 +112,21 @@ const pageTitle = "Best voltage testers for homeowners";
 const pageDescription =
   "Which electrical testers actually belong in a homeowner's kit, how to use them safely, and the hard line between DIY verification and licensed electrician work.";
 
+// Single source of truth for this page's dates: OG metadata, the visible
+// byline, and the Article JSON-LD all read from these two constants so they
+// can never drift apart again.
+const publishedAt = "2026-04-20";
+const updatedAt = "2026-05-16";
+
 export const metadata = buildMetadata({
   title: pageTitle,
   description: pageDescription,
   path,
+  type: "article",
+  publishedAt,
+  updatedAt,
+  authorName: kenHoven.name,
+  section: "Buying guide",
 });
 
 /* --------------------------------------------------------------------------
@@ -177,7 +192,7 @@ export default function BestVoltageTestersGuide() {
               {kenHoven.name}
             </Link>
           </span>
-          <span>Updated April 20, 2026</span>
+          <span>Updated May 16, 2026</span>
           <span>7 min read</span>
         </p>
 
@@ -368,9 +383,9 @@ export default function BestVoltageTestersGuide() {
               headline: pageTitle,
               description: pageDescription,
               url: path,
-              datePublished: "2026-04-20",
+              datePublished: publishedAt,
               // 2026-05-16: enrichment + ItemList pass.
-              dateModified: "2026-05-16",
+              dateModified: updatedAt,
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",

@@ -31,7 +31,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — PASS technique: Pull pin, Aim at base, Squeeze handle, Sweep.",
     riskLevel: "Tool is low-risk; the fire is high-risk. Evacuate first if the fire is bigger than a wastebasket.",
     verdict: "The primary home extinguisher — one per floor. Metal valve + gauge + service tag are non-negotiable.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/3TW9q44",
     buttonText: "Check price on Amazon",
   },
   {
@@ -49,7 +49,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — same PASS technique.",
     riskLevel: "Tool low-risk; cooking fires spread fast — evacuate if not contained in 10 seconds.",
     verdict: "Worth adding only if you deep-fry or wok-cook regularly. ABC alone is fine for light cooks.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4x12HUK",
     buttonText: "Check price on Amazon",
   },
   {
@@ -67,7 +67,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — pull, drape, leave for 15 minutes.",
     riskLevel: "Low if used correctly. Don't put your hands inside the blanket while smothering.",
     verdict: "The fastest no-residue response to a small kitchen fire. Add to every home.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4fmegQH",
     buttonText: "Check price on Amazon",
   },
   {
@@ -85,7 +85,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Tool low-risk; vehicle fires escalate fast — call 911 and back away as you fight.",
     verdict: "A supplement for vehicles and tight workshop spaces. Not your primary home extinguisher.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/3TWGKbd",
     buttonText: "Check price on Amazon",
   },
 ];
@@ -95,13 +95,19 @@ const pageTitle = "Best fire extinguishers for home";
 const pageDescription =
   "One 5-lb ABC extinguisher per floor, a Class K in the kitchen, a fire blanket near the stove. Here's what each does, where to mount it, and when to replace.";
 
+// Single source of truth for this page's dates: OG metadata, the visible
+// byline, the Article JSON-LD and the sitemap all read from these two
+// constants so they can never drift apart.
+const publishedAt = "2026-05-16";
+const updatedAt = "2026-05-16";
+
 export const metadata = buildMetadata({
   title: pageTitle,
   description: pageDescription,
   path,
   type: "article",
-  publishedAt: "2026-05-16",
-  updatedAt: "2026-05-16",
+  publishedAt,
+  updatedAt,
   authorName: kenHoven.name,
   section: "Buying guide",
 });
@@ -372,8 +378,8 @@ export default function BestFireExtinguishersForHomePage() {
               headline: pageTitle,
               description: pageDescription,
               url: path,
-              datePublished: "2026-05-16",
-              dateModified: "2026-05-16",
+              datePublished: publishedAt,
+              dateModified: updatedAt,
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",

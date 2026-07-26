@@ -49,7 +49,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner",
     riskLevel: "Low",
     verdict: "Two sensors, one penetration, one device to maintain. The right pick where outlets aren't available.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/44QoL8J",
     buttonText: "Check price on Amazon",
   },
   {
@@ -67,7 +67,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — plug-in operation; interpreting low-ppm readings is a separate skill.",
     riskLevel: "Low for the device; chronic CO exposure is a clinical concern — see a doctor if symptomatic.",
     verdict: "Not for everyone. Worth it if family is symptomatic and standard alarms are silent.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4wqNcG0",
     buttonText: "Check price on Amazon",
   },
   {
@@ -85,7 +85,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Intermediate — circuit shut-off + harness matching required.",
     riskLevel: "Moderate — mismatched connector breaks the interconnect silently.",
     verdict: "Stay brand-for-brand or hire a licensed electrician. Don't improvise the harness.",
-    affiliateUrl: "",
+    affiliateUrl: "https://amzn.to/4yxZrls",
     buttonText: "Check price on Amazon",
   },
 ];
@@ -95,13 +95,19 @@ const pageTitle = "Best carbon-monoxide detectors";
 const pageDescription =
   "Plug-in CO detectors with battery backup and a digital display win for most homes. Here's why standard alarms miss chronic low-level exposure.";
 
+// Single source of truth for this page's dates: OG metadata, the visible
+// byline, the Article JSON-LD and the sitemap all read from these two
+// constants so they can never drift apart.
+const publishedAt = "2026-05-16";
+const updatedAt = "2026-05-16";
+
 export const metadata = buildMetadata({
   title: pageTitle,
   description: pageDescription,
   path,
   type: "article",
-  publishedAt: "2026-05-16",
-  updatedAt: "2026-05-16",
+  publishedAt,
+  updatedAt,
   authorName: kenHoven.name,
   section: "Buying guide",
 });
@@ -375,8 +381,8 @@ export default function BestCarbonMonoxideDetectorsPage() {
               headline: pageTitle,
               description: pageDescription,
               url: path,
-              datePublished: "2026-05-16",
-              dateModified: "2026-05-16",
+              datePublished: publishedAt,
+              dateModified: updatedAt,
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
