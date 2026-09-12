@@ -31,7 +31,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner",
     riskLevel: "Low for the device; the work it monitors is high-risk if the alarm sounds.",
     verdict: "The right default if you have a wall outlet at the required location. Digital readout matters.",
-    affiliateUrl: "",
+    affiliateUrl: "https://www.amazon.com/s?k=kidde+plug+in+co+detector+digital+display+battery+backup&tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
