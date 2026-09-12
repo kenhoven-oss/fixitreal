@@ -72,6 +72,7 @@ const staticRoutes: Route[] = [
   { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },
   { path: "/terms", priority: 0.2, changeFrequency: "yearly" },
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/reports/2026-state-repair-cost-index", priority: 0.8, changeFrequency: "monthly" },
   { path: "/topics", priority: 0.7, changeFrequency: "weekly" },
   { path: "/glossary", priority: 0.7, changeFrequency: "monthly" },
 ];
