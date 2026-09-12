@@ -389,6 +389,7 @@ export default function BestVoltageTestersGuide() {
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
+              image: "/opengraph-image",
             }),
             faqSchema(faqs),
             itemListSchema({
