@@ -91,9 +91,9 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-fire-extinguishers-for-home";
-const pageTitle = "Best fire extinguishers for home";
+const pageTitle = "Best fire extinguisher for home (2026): kitchen, garage, and whole-house picks";
 const pageDescription =
-  "One 5-lb ABC extinguisher per floor, a Class K in the kitchen, a fire blanket near the stove. Here's what each does, where to mount it, and when to replace.";
+  "The best home fire extinguisher isn't one extinguisher — it's the right class in the right room. Kitchen, garage, and whole-house picks, with sizing.";
 
 // Single source of truth for this page's dates: OG metadata, the visible
 // byline, the Article JSON-LD and the sitemap all read from these two
