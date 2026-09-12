@@ -50,6 +50,66 @@ const buyingGuides: BuyingGuide[] = [
     description:
       "Silicone vs. siliconized-acrylic, plus the prep tools that separate a clean bead from a lumpy mess.",
   },
+  {
+    href: "/tools/best-carbon-monoxide-detectors",
+    title: "Best carbon monoxide detectors",
+    description:
+      "Plug-in with digital readout, sealed 10-year combos, and why standard alarms miss chronic low-level exposure.",
+  },
+  {
+    href: "/tools/best-smoke-detectors-for-homeowners",
+    title: "Best smoke detectors for homeowners",
+    description:
+      "Photoelectric vs. ionization, sealed 10-year units, and matching hardwired replacements to your existing harness.",
+  },
+  {
+    href: "/tools/best-fire-extinguishers-for-home",
+    title: "Best fire extinguishers for home",
+    description:
+      "Kitchen class-K, garage ABC, and where each one actually belongs — most homes have the wrong extinguisher in the wrong room.",
+  },
+  {
+    href: "/tools/best-water-leak-detectors",
+    title: "Best water leak detectors",
+    description:
+      "Wi-Fi sensors, cable perimeter alarms, and automatic shutoffs — which one prevents the $10,000 claim.",
+  },
+  {
+    href: "/tools/best-toilet-flappers-and-fill-valves",
+    title: "Best toilet flappers and fill valves",
+    description:
+      "A running toilet wastes 200 gallons a day. Which $5–$12 part you need, and the 2-minute food-coloring test that tells you.",
+  },
+  {
+    href: "/tools/best-stud-finders-for-homeowners",
+    title: "Best stud finders for homeowners",
+    description:
+      "Why a $12 magnetic finder beats most electronic ones on standard drywall — and when you actually need the electronic kind.",
+  },
+  {
+    href: "/tools/best-drywall-repair-kits",
+    title: "Best drywall repair kits",
+    description:
+      "Spackling for nail holes, mesh patches for doorknob holes, clip backers for the big ones — matched to hole size.",
+  },
+  {
+    href: "/tools/best-pipe-repair-clamps",
+    title: "Best pipe repair clamps for emergency leaks",
+    description:
+      "Stainless clamps for pinholes, Fernco couplings for drain lines, silicone tape for the first 20 minutes.",
+  },
+  {
+    href: "/tools/best-home-water-pressure-gauges",
+    title: "Best home water pressure gauges",
+    description:
+      "A $12 gauge tells you if pressure over 80 PSI is quietly destroying your fixtures — and the PRV that fixes it.",
+  },
+  {
+    href: "/tools/best-circuit-breaker-finders",
+    title: "Best circuit breaker finders",
+    description:
+      "Label an unlabeled panel in an afternoon instead of flipping every breaker in the house.",
+  },
 ];
 
 export const metadata = buildMetadata({
