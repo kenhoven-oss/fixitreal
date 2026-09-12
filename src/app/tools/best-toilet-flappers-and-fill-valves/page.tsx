@@ -286,6 +286,7 @@ export default function BestToiletFlappersPage() {
               authorUrl: kenHoven.url,
               authorName: kenHoven.name,
               articleSection: "Buying guide",
+              image: "/opengraph-image",
             }),
             faqSchema(faqs),
             itemListSchema({
