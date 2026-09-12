@@ -50,7 +50,15 @@ export default async function CostsHub() {
               <a href="/about/methodology" className="no-underline text-navy-700 hover:text-navy-900">
                 methodology page
               </a>{" "}
-              for where our numbers come from.
+              for where our numbers come from. And for how much your state
+              changes the picture, see the{" "}
+              <a
+                href="/reports/2026-state-repair-cost-index"
+                className="no-underline text-navy-700 hover:text-navy-900"
+              >
+                2026 State Repair Cost Index
+              </a>
+              .
             </p>
           </div>
         </div>
