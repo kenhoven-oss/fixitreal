@@ -110,6 +110,26 @@ const buyingGuides: BuyingGuide[] = [
     description:
       "Label an unlabeled panel in an afternoon instead of flipping every breaker in the house.",
   },
+  {
+    href: "/tools/best-pipe-insulation-and-heat-cable",
+    title: "Best pipe insulation and heat cable for winter",
+    description: "Foam sleeves slow heat loss, heat cable adds it — which pipe needs which, and the fire-safety rule for old heat tape.",
+  },
+  {
+    href: "/tools/best-furnace-filters",
+    title: "Best furnace filters: which MERV rating you need",
+    description: "MERV 8 for most homes, 11 for allergies and pets, 13 only if the furnace can handle it. Sizes, schedules, and the backwards-arrow mistake.",
+  },
+  {
+    href: "/tools/best-gfci-outlets-for-homeowners",
+    title: "Best GFCI outlets for kitchens, bathrooms, and garages",
+    description: "Self-testing 20A as the default, weather-resistant with an in-use cover outdoors, and the LINE/LOAD wiring mistake that silently disables protection.",
+  },
+  {
+    href: "/tools/best-automatic-water-shutoff-valves",
+    title: "Best automatic water shutoff valves",
+    description: "Smart valves that close the main when a pipe bursts while you're away — and the insurance discount that often pays for them.",
+  },
 ];
 
 export const metadata = buildMetadata({
