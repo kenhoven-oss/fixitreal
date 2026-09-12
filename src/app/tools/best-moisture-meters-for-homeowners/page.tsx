@@ -86,9 +86,9 @@ const products: RecommendedProduct[] = [
 -------------------------------------------------------------------------- */
 
 const path = "/tools/best-moisture-meters-for-homeowners";
-const pageTitle = "Best moisture meters for homeowners";
+const pageTitle = "Best moisture meters for home inspection and DIY (2026)";
 const pageDescription =
-  "How to pick a moisture meter that actually helps diagnose a wet wall or floor, read the numbers honestly, and know when to call a pro.";
+  "The best moisture meter for home inspection and homeowner use: pin vs. pinless, what the readings mean, and which one finds a leak inside a wall.";
 
 // Single source of truth for this page's dates: OG metadata, the visible
 // byline, and the Article JSON-LD all read from these two constants so they
