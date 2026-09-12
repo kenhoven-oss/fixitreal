@@ -234,6 +234,28 @@ export default function BestDrainSnakesGuide() {
         </div>
 
         <h2 className="mt-10 font-serif text-2xl text-navy-900">
+          Types of drain snakes (and which to use)
+        </h2>
+        <div className="mt-3 space-y-4 text-ink-700 leading-relaxed">
+          <p>
+            <strong className="text-navy-900">Zip-it / hair snake (manual):</strong>{" "}
+            A thin flexible plastic strip with barbs, designed for bathroom sink and tub drains clogged with hair. No rotation — just push in and pull out. Costs $3–$6.
+          </p>
+          <p>
+            <strong className="text-navy-900">Drum auger (cable snake):</strong>{" "}
+            A steel cable in a drum housing, hand-cranked or drill-powered. Reaches 15–50 feet into a drain to break up or retrieve blockages. The standard homeowner snake for sink and tub clogs past the trap. Costs $25–$80.
+          </p>
+          <p>
+            <strong className="text-navy-900">Toilet auger (closet auger):</strong>{" "}
+            A specialized snake with a protective sleeve designed to reach through the toilet trap without scratching the porcelain. Not interchangeable with a drain snake — the toilet-specific shape matters.
+          </p>
+          <p>
+            <strong className="text-navy-900">Sectional / sewer snake (professional):</strong>{" "}
+            Heavy-duty cable in sections, driven by a dedicated motor. For main-line clogs — roots, grease buildup, serious blockages 50–150 feet from the cleanout. This is a plumber tool; homeowner rental is possible but awkward to operate solo.
+          </p>
+        </div>
+
+        <h2 className="mt-10 font-serif text-2xl text-navy-900">
           What matters most
         </h2>
         <div className="mt-3 space-y-4 text-ink-700 leading-relaxed">
