@@ -76,7 +76,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — but read the calibration notes for each mode.",
     riskLevel: "Low",
     verdict: "If you can only buy one moisture meter, this is the one.",
-    affiliateUrl: "https://amzn.to/4mC7I2e",
+    affiliateUrl: "https://www.amazon.com/s?k=dual+moisture+meter+pin+and+pinless+2+in+1&tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];

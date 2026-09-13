@@ -87,7 +87,7 @@ const products: RecommendedProduct[] = [
     riskLevel: "Low",
     verdict:
       "If a hand auger keeps catching at the trip lever, the flat tape fixes it.",
-    affiliateUrl: "https://amzn.to/4vC5Zy0",
+    affiliateUrl: "https://www.amazon.com/s?k=flat+tape+tub+drain+snake+20+ft&tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
