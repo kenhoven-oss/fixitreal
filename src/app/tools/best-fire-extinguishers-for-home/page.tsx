@@ -49,7 +49,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — same PASS technique.",
     riskLevel: "Tool low-risk; cooking fires spread fast — evacuate if not contained in 10 seconds.",
     verdict: "Worth adding only if you deep-fry or wok-cook regularly. ABC alone is fine for light cooks.",
-    affiliateUrl: "https://amzn.to/4x12HUK",
+    affiliateUrl: "https://www.amazon.com/s?k=Class+K+wet+chemical+fire+extinguisher+kitchen&tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -71,13 +71,13 @@ const products: RecommendedProduct[] = [
     buttonText: "Check price on Amazon",
   },
   {
-    name: "Compact 1.5-lb automotive/garage extinguisher",
+    name: "Compact 1.5–2.5 lb automotive/garage extinguisher",
     badge: "Best for Vehicle/Garage",
     category: "ABC, compact",
     bestFor:
       "Vehicles, workshop spaces, riding mowers, motorcycles.",
     whyItMadeTheList:
-      "A 5-lb extinguisher is heavy and bulky for a vehicle. Compact 1.5-lb ABC units mount with a bracket, weigh under 3 pounds full, and discharge for ~8 seconds — long enough to fight a small vehicle or workshop fire while you back away to call 911. Not a primary home extinguisher; a supplement for the spaces a 5-lb doesn't fit.",
+      "A 5-lb extinguisher is heavy and bulky for a vehicle. Compact ABC units in the 1.5–2.5 lb class mount with a bracket, stay light enough to keep in a car, and discharge for roughly 8–10 seconds — long enough to fight a small vehicle or workshop fire while you back away to call 911. Not a primary home extinguisher; a supplement for the spaces a 5-lb doesn't fit.",
     keyBuyingNotes:
       "Look for SAE / DOT-listed automotive models for vehicle use. UL 1-A:10-B:C is a useful minimum rating. Replace after any partial discharge — the powder settles and pressure drops over time once disturbed.",
     avoidIf: "You only need household-fire coverage; a 5-lb ABC is the right primary tool.",

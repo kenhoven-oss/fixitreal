@@ -55,11 +55,13 @@ const LIVE = {
   cupPlunger: "https://amzn.to/487GZVl",
   moistureMeterPin: "https://amzn.to/48HfL88",
   leakPuck: "https://amzn.to/4hyvBHr",
-  // NOTE: docs/product-links.csv flags the smoke-alarm and NCVT rows as
-  // resolving to the wrong product ("REDO"). Those ids are deliberately
-  // absent here — new blocks use a tagged Amazon search link instead, so a
-  // known-bad destination is not propagated to more pages. Swap them back
-  // to SiteStripe links once the CSV rows are corrected.
+  smokeHardwired: "https://amzn.to/4vOc6hG", // Siterlink GS562A — verified 2026-09-13
+  ncvt: "https://amzn.to/4fWFw8o", // Klein NCVT3P — verified 2026-09-13
+  // Two slots deliberately use amazonSearch() instead of a SiteStripe link:
+  // the 10-year sealed photoelectric alarm (destination is a UL 217 smoke
+  // alarm, but photoelectric + sealed could not be confirmed) and the GFCI
+  // outlet (amzn.to/4sCNRRP returns HTTP 404). See
+  // docs/affiliate-destination-audit.md.
   breakerFinder: "https://amzn.to/4czxXBY",
   gfciTester: "https://amzn.to/4vCRsC6",
   smokeCombo: "https://amzn.to/4wohlG1",
@@ -187,7 +189,7 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Hardwired interconnected photoelectric alarm with battery backup",
         why: "For the hardwired job above. Match the existing harness connector — the same brand as the installed units is the safe bet — and keep battery backup, which is code in most jurisdictions.",
-        href: amazonSearch("hardwired interconnected photoelectric smoke alarm battery backup"),
+        href: LIVE.smokeHardwired,
         label: "See the hardwired alarm we recommend",
       },
       {
@@ -310,8 +312,8 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Non-contact voltage tester",
         why: "Step 2 does not work without one. This is the tool that confirms the box is actually dead before your hands go in, and it is the cheapest item on this page.",
-        href: amazonSearch("non contact voltage tester dual range"),
-        label: "Shop non-contact voltage testers on Amazon",
+        href: LIVE.ncvt,
+        label: "See the voltage tester we recommend",
       },
       {
         name: "Wire strippers",
@@ -328,8 +330,8 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Non-contact voltage tester",
         why: "Step 2. A fan is on a lighting circuit shared with outlets in adjacent rooms, which is why killing the wrong breaker is such a common way to get shocked on this job.",
-        href: amazonSearch("non contact voltage tester dual range"),
-        label: "Shop non-contact voltage testers on Amazon",
+        href: LIVE.ncvt,
+        label: "See the voltage tester we recommend",
       },
       {
         name: "Fan-rated ceiling box or brace",
@@ -352,8 +354,8 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Non-contact voltage tester",
         why: "The $25 of basic tools in the paragraph above is mostly this. Verifying the box is dead is what separates a DIY-friendly fan swap from a genuinely dangerous one.",
-        href: amazonSearch("non contact voltage tester dual range"),
-        label: "Shop non-contact voltage testers on Amazon",
+        href: LIVE.ncvt,
+        label: "See the voltage tester we recommend",
       },
     ],
     guides: [GUIDES.voltageTester],
