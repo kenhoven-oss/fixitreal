@@ -17,6 +17,11 @@
  *   precision we can't defend.
  * - `notes` carries the genuinely-distinct regional context that makes
  *   the page worth indexing (license rules, permit norms, climate, code).
+ *
+ * Two different pricing models live in this file — see `PricingModel`.
+ * Getting this wrong is how a $230-$500 *installed* garbage disposal ends
+ * up rendered as a "trip / dispatch fee", so the discriminator is
+ * mandatory on every guide and the templates branch on it.
  */
 
 export type StateCostTier = "low" | "mid" | "high" | "premium";
@@ -292,12 +297,28 @@ export const STATES: StateCostData[] = [
 ];
 
 /**
- * The cost guides that get state-level expansion. Slug must match the
- * existing /costs/<slug> article so the parent canonical works.
+ * ISO date the state pages were last materially reviewed.
+ *
+ * Single source of truth: page metadata, the visible "Updated" line, the
+ * Article JSON-LD and the fair-price band all read this. Bump it when the
+ * rate tables or the page copy change materially — not on every deploy.
  */
+export const STATE_COST_UPDATED = "2026-09-13";
 
-/** ISO date these state pages were last materially updated. */
-export const STATE_COST_UPDATED = "2026-05-16";
+/**
+ * Which cost model a guide follows. The two behave nothing alike and must
+ * not share body copy.
+ *
+ * - "service-call": you are buying a pro's time. The headline number is a
+ *   trip / dispatch fee that includes the first 30-60 minutes, and an
+ *   hourly rate applies after that. Bundling extra items onto one visit is
+ *   genuinely the biggest lever the homeowner has.
+ * - "fixed-job": you are buying a completed replacement. The headline
+ *   number is an all-in installed price (equipment + labor + haul-away)
+ *   that already absorbs the trip. There is no separate dispatch fee to
+ *   quote, and "bundle two of them into one visit" is not a real scenario.
+ */
+export type PricingModel = "service-call" | "fixed-job";
 
 export type CostGuideForState = {
   slug: string;
@@ -305,12 +326,25 @@ export type CostGuideForState = {
   shortName: string;
   /** Used in body copy. */
   longName: string;
-  /** Base trip/setup fee range (national). */
-  base: { tripLow: number; tripHigh: number };
-  /** Base hourly range (national). */
+  /** Which cost model the page renders. See PricingModel. */
+  model: PricingModel;
+  /**
+   * The national range this page scales from.
+   *
+   * - service-call: trip / dispatch fee including the first 30-60 minutes.
+   * - fixed-job: all-in installed total, parts and labor.
+   *
+   * MUST reconcile with the published figure on the parent /costs/<slug>
+   * article. `nationalBasis` records the parent's wording so a drift is
+   * visible in review.
+   */
+  base: { low: number; high: number };
+  /** Base hourly range (national) for time beyond the base scope. */
   hourly: { low: number; high: number };
-  /** What the state-adjusted range applies to (job description). */
+  /** What the adjusted range applies to (job description). */
   jobDescription: string;
+  /** The parent guide's published figure, verbatim, for the methodology box. */
+  nationalBasis: string;
 };
 
 export const STATE_COST_GUIDES: CostGuideForState[] = [
@@ -318,59 +352,110 @@ export const STATE_COST_GUIDES: CostGuideForState[] = [
     slug: "electrician-service-call",
     shortName: "electrician service call",
     longName: "electrician service call",
-    base: { tripLow: 80, tripHigh: 200 },
+    model: "service-call",
+    base: { low: 80, high: 200 },
     hourly: { low: 75, high: 150 },
     jobDescription:
       "single small electrical fix — one outlet, one breaker, one fixture",
+    nationalBasis:
+      "$80–$200 for the trip plus the first hour, then $75–$150/hour",
   },
   {
     slug: "plumber-service-call",
     shortName: "plumber service call",
     longName: "plumber service call",
-    base: { tripLow: 75, tripHigh: 200 },
+    model: "service-call",
+    base: { low: 75, high: 200 },
     hourly: { low: 85, high: 175 },
     jobDescription:
       "single small plumbing fix — leaky faucet, slow drain, stuck disposal",
+    nationalBasis:
+      "$75–$200 for the trip plus the first hour, then $85–$175/hour",
   },
   {
     slug: "smoke-detector-replacement",
     shortName: "smoke detector replacement",
     longName: "smoke detector replacement",
-    base: { tripLow: 105, tripHigh: 210 },
+    model: "fixed-job",
+    base: { low: 105, high: 210 },
     hourly: { low: 80, high: 150 },
     jobDescription:
-      "single hardwired smoke alarm swap with brand-match replacement",
+      "single hardwired smoke alarm swap, brand-match, no new wiring",
+    nationalBasis: "$105–$210 per hardwired location, installed",
   },
   {
     slug: "garbage-disposal-replacement",
     shortName: "garbage disposal replacement",
     longName: "garbage disposal replacement",
-    base: { tripLow: 230, tripHigh: 500 },
+    model: "fixed-job",
+    base: { low: 230, high: 500 },
     hourly: { low: 85, high: 175 },
     jobDescription:
-      "mid-range 3/4 HP disposal swap including the unit and labor",
+      "like-for-like ¾ HP disposal swap — unit, labor and haul-away",
+    nationalBasis: "$230–$500 hired, including a mid-range ¾ HP unit",
   },
   {
     slug: "water-heater-replacement",
     shortName: "water heater replacement",
     longName: "water heater replacement",
-    base: { tripLow: 900, tripHigh: 1800 },
+    model: "fixed-job",
+    // Was 900–1800, which reconciled with nothing. The parent guide
+    // publishes $1,350–$2,400 installed; that is the only defensible base.
+    base: { low: 1350, high: 2400 },
     hourly: { low: 85, high: 175 },
     jobDescription:
-      "40-50 gallon gas tank water heater swap, like-for-like install",
+      "like-for-like 40–50 gallon tank swap — unit, labor, permit and haul-away",
+    nationalBasis: "$1,350–$2,400 installed for a standard 50-gallon swap",
   },
 ];
 
-/** Apply a tier's multiplier band to a national base range. */
+/**
+ * Round to a step that matches the magnitude of the number.
+ *
+ * Publishing "$3,847" implies a precision this model does not have. Small
+ * numbers round to $5, four-figure numbers to $50.
+ */
+function roundToStep(value: number): number {
+  const step = value >= 1000 ? 50 : 5;
+  return Math.round(value / step) * step;
+}
+
+/**
+ * Apply a tier's multiplier band to a national base range.
+ *
+ * The low end of the national range is scaled by the low end of the tier
+ * band and the high end by the high end, so the published local range is
+ * deliberately wider than the national one. That is stated on the page in
+ * the "How we calculated this local price" block — it is a modeled range,
+ * not a survey of local quotes.
+ */
 export function adjustRange(
   base: { low: number; high: number },
   tier: StateCostTier
 ): { low: number; high: number } {
   const mult = TIER_MULTIPLIERS[tier];
   return {
-    low: Math.round((base.low * mult.low) / 5) * 5,
-    high: Math.round((base.high * mult.high) / 5) * 5,
+    low: roundToStep(base.low * mult.low),
+    high: roundToStep(base.high * mult.high),
   };
+}
+
+/** Percentage band a tier represents, for honest "x%-y% of national" copy. */
+export function tierPercentBand(tier: StateCostTier): { low: number; high: number } {
+  const mult = TIER_MULTIPLIERS[tier];
+  return { low: Math.round(mult.low * 100), high: Math.round(mult.high * 100) };
+}
+
+/**
+ * "a" vs "an" for a dynamically inserted noun phrase.
+ *
+ * Exists because the FAQ headings are built from `guide.shortName`, and
+ * "How much does a electrician service call cost" shipped to ~655 pages
+ * and into FAQPage structured data before anyone noticed.
+ */
+export function withIndefiniteArticle(phrase: string): string {
+  const first = phrase.trim().charAt(0).toLowerCase();
+  return `${"aeiou".includes(first) ? "an" : "a"} ${phrase}`;
 }
 
 /** All (slug, state) combinations for generateStaticParams. */
