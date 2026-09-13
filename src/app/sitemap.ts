@@ -34,7 +34,7 @@ const now = new Date();
  * the checkout time, which would silently reintroduce the exact problem this
  * constant exists to solve.
  */
-const CONTENT_DATA_REVIEWED = new Date("2026-05-16T00:00:00.000Z");
+const CONTENT_DATA_REVIEWED = new Date("2026-09-13T00:00:00.000Z");
 
 type Route = {
   path: string;
@@ -206,9 +206,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  // State-level cost pages: programmatic at /costs/<slug>/<state> for the
-  // 25 priority states × 2 cost guides = 50 indexable URLs targeting
-  // "[trade] cost in [state]" long-tail queries.
+  // State-level cost pages: programmatic at /costs/<slug>/<state>, one per
+  // (cost guide × priority state), targeting "[trade] cost in [state]"
+  // long-tail queries. Count comes from the data files, not this comment.
   const { getAllStateCostParams } = await import("@/content/state-cost-data");
   const stateCostEntries: MetadataRoute.Sitemap = getAllStateCostParams().map(
     ({ slug, state }) => ({
@@ -219,8 +219,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  // Metro-level cost pages: programmatic at /costs/<slug>/metro/<city> for
-  // top-36 US metros × 5 cost guides = 180 indexable URLs targeting
+  // Metro-level cost pages: programmatic at /costs/<slug>/metro/<city>, one
+  // per (cost guide × metro), targeting
   // "[trade] cost in [city]" long-tail queries. Higher purchase intent than
   // the state-level variant; less crowded with aggregator listings.
   const { getAllCityCostParams } = await import("@/content/city-cost-data");

@@ -11,7 +11,8 @@
     "check-entities": "node scripts/check-html-entities.mjs",
     "affiliate-coverage": "node scripts/affiliate-coverage.mjs",
     "sync-product-links": "node scripts/sync-product-links.mjs",
-    "check-anchors": "node scripts/check-toc-anchors.mjs"
+    "check-anchors": "node scripts/check-toc-anchors.mjs",
+    "check-text": "node scripts/check-rendered-text.mjs"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",

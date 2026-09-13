@@ -22,6 +22,16 @@
 import type { StateCostTier } from "@/content/state-cost-data";
 import { STATE_COST_GUIDES, TIER_MULTIPLIERS, adjustRange } from "@/content/state-cost-data";
 
+/**
+ * ISO date the metro pages were last materially reviewed.
+ *
+ * Lives beside the data it describes rather than inside the route file, so
+ * page metadata, the visible "Updated" line and the Article JSON-LD cannot
+ * drift apart the way they previously did (metadata said June, JSON-LD
+ * said May).
+ */
+export const METRO_COST_UPDATED = "2026-09-13";
+
 export type CityCostData = {
   /** URL slug — lowercase, hyphenated, includes state abbr for disambiguation. */
   slug: string;
