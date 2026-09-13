@@ -1,0 +1,32 @@
+Block id,Page,Product Name,Amazon Search Hint,SiteStripe URL (paste here),Status,Notes
+dryer-vent-tools,/diy-or-hire/clean-dryer-vent,Dryer vent cleaning brush kit with extendable rods,"""dryer vent cleaning brush kit extendable rods""",,Search link,Drill-compatible kit preferred; rods must couple to reach the full run
+dryer-vent-tools,/diy-or-hire/clean-dryer-vent,Semi-rigid aluminum dryer duct,"""semi rigid aluminum dryer duct""",,Search link,NEVER link vinyl/plastic slinky duct - the article calls it a fire hazard
+drain-clog-kit,/diy-or-hire/unclog-drain,Channel-lock (tongue-and-groove) pliers,"""tongue and groove channel lock pliers""",,Search link,For P-trap slip nuts
+disposal-replacement-units,/diy-or-hire/garbage-disposal,InSinkErator Badger 5 (1/2 HP),"""InSinkErator Badger 5 garbage disposal""",,Search link,Article names this model explicitly
+disposal-replacement-units,/diy-or-hire/garbage-disposal,InSinkErator Evolution Compact (3/4 HP),"""InSinkErator Evolution Compact garbage disposal""",,Search link,Article's best-value pick
+smoke-alarm-swap,/diy-or-hire/smoke-detector,10-year sealed lithium photoelectric alarm,"""10 year sealed battery photoelectric smoke alarm UL 217""",,Search link,"Deliberately NOT reusing amzn.to/4wyKpun - product-links.csv flags that row REDO (resolves to a CO detector)"
+smoke-alarm-swap,/diy-or-hire/smoke-detector,Hardwired interconnected photoelectric alarm,"""hardwired interconnected photoelectric smoke alarm battery backup""",,Search link,"Deliberately NOT reusing amzn.to/4vOc6hG - product-links.csv flags that row REDO (duplicate of the battery combo)"
+toilet-cost-diy-parts,/costs/toilet-replacement,Wax-free toilet seal,"""wax free toilet seal flange""",,Search link,Re-seatable alternative to wax
+drywall-small-patch-kit,/diy-or-hire/repair-drywall,Taping knife set + sanding sponges,"""drywall taping knife set sanding sponge""",,Search link,Bundle - 6 in and 10 in knives
+dishwasher-install-kit,/diy-or-hire/dishwasher,Dishwasher installation kit,"""dishwasher installation kit water supply line""",,Search link,Must include the 90-degree brass inlet elbow
+dishwasher-install-kit,/diy-or-hire/dishwasher,Braided stainless dishwasher supply line,"""braided stainless dishwasher supply line""",,Search link,
+dishwasher-install-kit,/diy-or-hire/dishwasher,Dishwasher power cord kit (90-degree plug),"""dishwasher power cord kit 90 degree plug""",,Search link,Right-angle plug so the unit sits flush
+gfci-swap-parts,/diy-or-hire/gfci-outlet,Non-contact voltage tester,"""non contact voltage tester dual range""",,Search link,"Deliberately NOT reusing amzn.to/4fWFw8o - product-links.csv marks that row's previous link dead"
+gfci-swap-parts,/diy-or-hire/gfci-outlet,Wire strippers,"""wire strippers 10-22 awg electrician""",,Search link,
+ceiling-fan-install-parts,/diy-or-hire/ceiling-fan,Non-contact voltage tester,"""non contact voltage tester dual range""",,Search link,Same NCVT caveat as above
+ceiling-fan-install-parts,/diy-or-hire/ceiling-fan,Fan-rated ceiling box or brace,"""fan rated ceiling box brace""",,Search link,Load-rated for fan support - a standard lighting box is not
+ceiling-fan-install-parts,/diy-or-hire/ceiling-fan,Fan blade balancing kit,"""ceiling fan blade balancing kit""",,Search link,
+ceiling-fan-cost-diy,/costs/ceiling-fan-installation,Non-contact voltage tester,"""non contact voltage tester dual range""",,Search link,Same NCVT caveat as above
+furnace-filter-merv,/advice/how-often-to-change-air-filter,MERV 11 pleated filters (multipack),"""MERV 11 pleated furnace filter multipack""",,Search link,"NEVER link MERV 13+ here - the article says confirm static pressure first"
+furnace-filter-merv,/advice/how-often-to-change-air-filter,MERV 8 pleated filters (multipack),"""MERV 8 pleated furnace filter multipack""",,Search link,For systems over 15 years old
+running-toilet-parts,/advice/why-does-my-toilet-keep-running,Universal toilet flapper,"""universal toilet flapper replacement""",,Search link,
+running-toilet-parts,/advice/why-does-my-toilet-keep-running,Universal fill valve (Fluidmaster style),"""universal toilet fill valve fluidmaster""",,Search link,
+water-pressure-gauge,/advice/why-is-my-water-pressure-low,Hose-bib water pressure gauge,"""water pressure test gauge hose bib""",,Search link,
+leak-sensor-stack,/advice/smart-water-leak-detectors,Wi-Fi leak sensor with phone alerts,"""wifi water leak detector phone alert no hub""",,Search link,"Deliberately NOT reusing amzn.to/4bM1ngp - product-links.csv flags that row REDO"
+pipe-burst-aftermath,/emergency-repairs/pipe-burst-first-10-minutes,Stainless pipe repair clamp,"""stainless steel pipe repair clamp""",,Search link,Stopgap only - copy must keep saying the section still gets replaced
+grab-bar-categories,/senior-home-safety/best-grab-bars-for-showers,Concealed-screw stainless grab bar,"""concealed screw stainless steel grab bar ADA""",,Search link,Listing MUST publish a load rating
+grab-bar-categories,/senior-home-safety/best-grab-bars-for-showers,ADA exposed-screw grab bar,"""ADA grab bar 250 lb rated stainless""",,Search link,Listing MUST publish a load rating
+grab-bar-categories,/senior-home-safety/best-grab-bars-for-showers,Grab-bar-rated toggle anchors,"""grab bar toggle anchor WingIts drywall rated""",,Search link,"NEVER link plastic drywall anchors - the article warns against them"
+inline,/advice/water-under-the-bathroom-sink,Wi-Fi water leak alarm (multi-sensor set),"""water leak detector wifi multi pack""",,Search link,Replaced the dead amzn.to/4dTjQtq link on 2026-09-13
+gfci-swap-parts,/diy-or-hire/gfci-outlet,Self-testing GFCI outlet (15A/20A),"""15 amp self test GFCI outlet""",,Search link,"Replaced amzn.to/4sCNRRP on 2026-09-13 - that short link now 404s"
+inline,/advice/gfci-outlet-keeps-tripping,Replacement GFCI outlet (15A or 20A),"""15 amp self test GFCI outlet""",,Search link,"Replaced the dead amzn.to/4sCNRRP link on 2026-09-13"

@@ -25,6 +25,7 @@ import { ChecklistCTA } from "@/components/marketing/ChecklistCTA";
 import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { ExternalLink } from "@/components/ui/ExternalLink";
+import { ProductPicks } from "@/components/content/ProductPicks";
 import { jsonLdScript, articleSchema, howToSchema } from "@/lib/jsonld";
 import type { LoadedArticle } from "@/lib/articles-loader";
 import { loadArticleTitle } from "@/lib/articles-loader";
@@ -64,6 +65,7 @@ const mdxComponents = {
   StateCostLinks,
   ChecklistCTA,
   PrintReadyFormsCTA,
+  ProductPicks,
   a: ({ href, children }: { href?: string; children?: React.ReactNode }) =>
     href && /^https?:/.test(href) ? (
       <ExternalLink href={href}>{children}</ExternalLink>
@@ -77,6 +79,21 @@ const mdxComponents = {
 export async function ArticlePage({ article }: ArticlePageProps) {
   const { frontmatter, content, path } = article;
   const pillar = frontmatter.pillar;
+
+  /**
+   * Show the affiliate banner only on articles that actually carry an
+   * affiliate link.
+   *
+   * It used to render on all ~106 articles, including pure
+   * consumer-advocate pieces with nothing to sell. "This article may
+   * contain affiliate links" on a page with none reads as boilerplate,
+   * which is exactly how a disclosure stops being read. Tying it to the
+   * content means it is conspicuous where it matters and absent where it
+   * would be noise. `content` is the raw MDX, so it covers both inline
+   * markdown links and <ProductPicks> blocks.
+   */
+  const hasAffiliateLinks =
+    /amzn\.to\/|amazon\.[a-z.]+\/[^\s")']*[?&]tag=|<ProductPicks\b/.test(content);
 
   const [relatedDecisionTitle, relatedCostTitle, relatedAdviceTitles] =
     await Promise.all([
@@ -163,7 +180,7 @@ export async function ArticlePage({ article }: ArticlePageProps) {
           </Link>
         </p>
 
-        <AffiliateDisclosure variant="banner" />
+        {hasAffiliateLinks && <AffiliateDisclosure variant="banner" />}
 
         {frontmatter.howTo && (
           <section
