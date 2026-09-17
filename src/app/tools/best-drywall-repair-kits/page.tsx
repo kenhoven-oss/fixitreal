@@ -24,7 +24,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "The right tool for the most common drywall repair. Every homeowner should have one tube.",
-    affiliateUrl: "https://www.amazon.com/s?k=3m+high+strength+small+hole+repair+spackling&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00CAOB8GY?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -41,7 +41,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner to intermediate.",
     riskLevel: "Low.",
     verdict: "Correct fix for the most-googled drywall repair scenario. Clean results with two coats.",
-    affiliateUrl: "https://www.amazon.com/s?k=drywall+self+adhesive+mesh+patch+kit+6+inch&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B077972N5H?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -58,7 +58,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Intermediate.",
     riskLevel: "Low — but matching texture before painting requires practice.",
     verdict: "The right system for large patches. Clip backers make the job manageable without a helper.",
-    affiliateUrl: "https://www.amazon.com/s?k=drywall+clip+patch+backer+repair+kit&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B002NGH8SQ?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -75,7 +75,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "A required component for any patch larger than a nail hole. Buy the small tub.",
-    affiliateUrl: "https://www.amazon.com/s?k=all+purpose+joint+compound+small+tub+drywall&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B002YC3YLY?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
