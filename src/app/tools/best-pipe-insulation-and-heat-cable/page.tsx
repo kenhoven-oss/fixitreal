@@ -22,7 +22,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — zip ties, foam sleeve, and an outlet.",
     riskLevel: "Low when installed per instructions on GFCI; moderate if overlapped or damaged.",
     verdict: "The definitive fix for a line that freezes every winter. Cheaper than one plumber visit.",
-    affiliateUrl: "https://www.amazon.com/s?k=self+regulating+heat+cable+pipe+freeze+protection+kit&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B07331J2J8?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -37,7 +37,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "The right first step on every exposed pipe. Cheap, fast, and it pays for itself on hot-water lines.",
-    affiliateUrl: "https://www.amazon.com/s?k=foam+pipe+insulation+split+self+sealing+6ft&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B01MZEEUDS?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -52,7 +52,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — 30 seconds each.",
     riskLevel: "Low.",
     verdict: "The cheapest prevention on the whole list, and it addresses the most common failure.",
-    affiliateUrl: "https://www.amazon.com/s?k=outdoor+faucet+cover+winter+freeze+protection&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B01251Q67W?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -67,7 +67,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "Fills the gaps foam sleeves leave. Buy one roll.",
-    affiliateUrl: "https://www.amazon.com/s?k=foil+faced+pipe+wrap+insulation+roll&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B000BQSMCG?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
