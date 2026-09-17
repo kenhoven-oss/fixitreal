@@ -99,6 +99,19 @@ const nextConfig: NextConfig = {
         destination: "/home-inspection-repairs/:slug*",
         permanent: true,
       },
+      // ----------------------------------------------------------------------
+      // Author rename: the site's founder byline was renamed from
+      // "lee-hoven" to "ken-hoven" (see commit a60f267). The old author-page
+      // URL was live long enough for Google to index it and is still being
+      // recrawled — it currently 404s (GSC: "Not found (404)", first
+      // detected 6/2/26). Redirect the old slug to the current one instead
+      // of leaving a dead link for anyone who bookmarked or linked to it.
+      // ----------------------------------------------------------------------
+      {
+        source: "/about/authors/lee-hoven",
+        destination: "/about/authors/ken-hoven",
+        permanent: true,
+      },
     ];
   },
 };
