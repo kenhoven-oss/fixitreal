@@ -1,0 +1,347 @@
+From e347941f8d8381c9b6b21190ba07a97ef48aee31 Mon Sep 17 00:00:00 2001
+From: Ken Hoven <ken.hoven@gmail.com>
+Date: Thu, 17 Sep 2026 22:30:24 +0000
+Subject: [PATCH] content: real author bio, pillar-aware lead magnet, trim long
+ SEO titles
+
+- Author bio now reflects Ken's actual background (20+ years industrial
+  plant management / vendor-quote scrutiny) instead of the generic
+  "homeowner, 15+ years DIY repairs" placeholder. Single source of truth
+  (src/content/authors/ken-hoven.ts) updates it site-wide.
+- NewsletterBlock is now pillar-aware: home-inspection-repairs articles
+  and the pillar hub now pitch the Inspection Repair Negotiation
+  Checklist instead of the generic Cost Calendar, matching what the
+  reader just read. Still no email required for either PDF; email
+  capture stays opt-in via the existing Beehiiv-backed subscribe form.
+- Shortened 12 of the 19 page titles over 65 characters (Google's rough
+  SERP truncation point) across advice/costs/tools pages, keeping the
+  primary keyword phrase first. Verified via a meta-audit script against
+  the full static build: 0 missing titles, 0 duplicate titles/descriptions,
+  long titles down from 19 to 5.
+
+Verified: npm run build, npm run lint, and
+scripts/check-rendered-text.mjs (927/927 pages clean) all pass.
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_013QjD7DVFM56pZ9Dcwn2KMj
+---
+ src/app/home-inspection-repairs/page.tsx      |  2 +-
+ .../best-fire-extinguishers-for-home/page.tsx |  2 +-
+ .../tools/best-water-leak-detectors/page.tsx  |  2 +-
+ src/components/content/ArticlePage.tsx        |  2 +-
+ src/components/marketing/NewsletterBlock.tsx  | 61 ++++++++++++++-----
+ .../advice/drywall-damage-after-a-leak.mdx    |  2 +-
+ .../hardwired-vs-battery-smoke-detectors.mdx  |  2 +-
+ .../how-often-to-replace-smoke-detectors.mdx  |  2 +-
+ .../advice/interconnected-smoke-alarms.mdx    |  2 +-
+ .../advice/slab-leak-warning-signs.mdx        |  2 +-
+ .../advice/smart-water-leak-detectors.mdx     |  2 +-
+ .../advice/smoke-detector-chirping.mdx        |  2 +-
+ .../articles/advice/water-leak-detection.mdx  |  2 +-
+ .../where-to-install-smoke-detectors.mdx      |  2 +-
+ .../advice/why-do-my-lights-flicker.mdx       |  2 +-
+ .../costs/electrician-service-call.mdx        |  2 +-
+ .../costs/plumber-hourly-rate-canada.mdx      |  2 +-
+ src/content/authors/ken-hoven.ts              |  6 +-
+ 18 files changed, 65 insertions(+), 34 deletions(-)
+
+diff --git a/src/app/home-inspection-repairs/page.tsx b/src/app/home-inspection-repairs/page.tsx
+index 78e312a..37fab24 100644
+--- a/src/app/home-inspection-repairs/page.tsx
++++ b/src/app/home-inspection-repairs/page.tsx
+@@ -169,7 +169,7 @@ export default async function HomeInspectionRepairsHub() {
+       </Section>
+ 
+       <Section padding="lg" size="lg">
+-        <NewsletterBlock variant="inline" />
++        <NewsletterBlock variant="inline" pillar="home-inspection-repairs" />
+       </Section>
+ 
+       <script
+diff --git a/src/app/tools/best-fire-extinguishers-for-home/page.tsx b/src/app/tools/best-fire-extinguishers-for-home/page.tsx
+index 29ef798..822771e 100644
+--- a/src/app/tools/best-fire-extinguishers-for-home/page.tsx
++++ b/src/app/tools/best-fire-extinguishers-for-home/page.tsx
+@@ -91,7 +91,7 @@ const products: RecommendedProduct[] = [
+ ];
+ 
+ const path = "/tools/best-fire-extinguishers-for-home";
+-const pageTitle = "Best fire extinguisher for home (2026): kitchen, garage, and whole-house picks";
++const pageTitle = "Best fire extinguishers for home (2026)";
+ const pageDescription =
+   "The best home fire extinguisher isn't one extinguisher — it's the right class in the right room. Kitchen, garage, and whole-house picks, with sizing.";
+ 
+diff --git a/src/app/tools/best-water-leak-detectors/page.tsx b/src/app/tools/best-water-leak-detectors/page.tsx
+index bafcb78..df2fc4f 100644
+--- a/src/app/tools/best-water-leak-detectors/page.tsx
++++ b/src/app/tools/best-water-leak-detectors/page.tsx
+@@ -91,7 +91,7 @@ const products: RecommendedProduct[] = [
+ ];
+ 
+ const path = "/tools/best-water-leak-detectors";
+-const pageTitle = "Best water leak detectors for home (2026): sensors, systems, and shutoffs";
++const pageTitle = "Best water leak detectors for home (2026)";
+ const pageDescription =
+   "The best water leak detector for home use depends on where water sits: point sensors, Wi-Fi systems, and automatic shutoffs, ranked by what they prevent.";
+ 
+diff --git a/src/components/content/ArticlePage.tsx b/src/components/content/ArticlePage.tsx
+index 5aec9fc..fca8ba5 100644
+--- a/src/components/content/ArticlePage.tsx
++++ b/src/components/content/ArticlePage.tsx
+@@ -384,7 +384,7 @@ export async function ArticlePage({ article }: ArticlePageProps) {
+       </Section>
+ 
+       <Section padding="lg" size="md">
+-        <NewsletterBlock variant="inline" />
++        <NewsletterBlock variant="inline" pillar={pillar} />
+       </Section>
+ 
+       <script
+diff --git a/src/components/marketing/NewsletterBlock.tsx b/src/components/marketing/NewsletterBlock.tsx
+index 71616c8..734b246 100644
+--- a/src/components/marketing/NewsletterBlock.tsx
++++ b/src/components/marketing/NewsletterBlock.tsx
+@@ -3,10 +3,44 @@ import { CalendarSignupForm } from "@/components/marketing/CalendarSignupForm";
+ 
+ type NewsletterBlockProps = {
+   variant?: "default" | "inline";
++  /**
++   * When set to "home-inspection-repairs", swaps the pitch from the
++   * general Cost Calendar to the Inspection Repair Negotiation Checklist —
++   * the lead magnet that's actually relevant to a reader on a buyer/seller
++   * repair-negotiation article. Any other value (or omitted) falls back
++   * to the calendar, which is the right default everywhere else on the site.
++   */
++  pillar?: string;
+ };
+ 
+-export function NewsletterBlock({ variant = "default" }: NewsletterBlockProps) {
++const PITCHES = {
++  calendar: {
++    heading: "The Home Repair Cost Calendar",
++    body: "One task list for every month of the year — with real 2026 cost ranges for each. Free PDF, no email required. Or subscribe for seasonal reminders when the next month's tasks come due.",
++    href: "/home-repair-cost-calendar",
++    cta: "Get the calendar →",
++  },
++  checklist: {
++    heading: "The Home Inspection Repair Negotiation Checklist",
++    body: "The exact triage table for a buyer's repair list — what to fix, what to credit, what to refuse — plus lender concession caps by loan type. Free PDF, no email required. Or subscribe for more negotiation guides like this one.",
++    href: "/downloads/home-inspection-repair-checklist.pdf",
++    cta: "Get the checklist →",
++  },
++} as const;
++
++export function NewsletterBlock({ variant = "default", pillar }: NewsletterBlockProps) {
+   const isInline = variant === "inline";
++  const pitch = pillar === "home-inspection-repairs" ? PITCHES.checklist : PITCHES.calendar;
++  // A PDF served by a route handler is a file download, not a page — a
++  // plain anchor with `download` does what the reader expects. next/link
++  // would attempt a client-side RSC navigation to it, which is wrong here
++  // (same reasoning as ChecklistCTA).
++  const isPdf = /\.pdf$/i.test(pitch.href);
++
++  const ctaClassName = isInline
++    ? "inline-flex items-center rounded-md bg-navy-900 px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-navy-800"
++    : "inline-flex items-center rounded-md bg-amber-500 px-5 py-2.5 text-sm font-semibold text-navy-900 no-underline hover:bg-amber-400";
++
+   return (
+     <div
+       className={
+@@ -18,29 +52,26 @@ export function NewsletterBlock({ variant = "default" }: NewsletterBlockProps) {
+       <p
+         className={`font-serif text-2xl ${isInline ? "text-navy-900" : "text-white"}`}
+       >
+-        The Home Repair Cost Calendar
++        {pitch.heading}
+       </p>
+       <p
+         className={`mt-2 text-sm max-w-lg ${
+           isInline ? "text-ink-600" : "text-ink-200"
+         }`}
+       >
+-        One task list for every month of the year — with real 2026 cost ranges
+-        for each. Free PDF, no email required. Or subscribe for seasonal
+-        reminders when the next month&apos;s tasks come due.
++        {pitch.body}
+       </p>
+ 
+       <div className="mt-5 flex flex-wrap gap-3">
+-        <Link
+-          href="/home-repair-cost-calendar"
+-          className={
+-            isInline
+-              ? "inline-flex items-center rounded-md bg-navy-900 px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-navy-800"
+-              : "inline-flex items-center rounded-md bg-amber-500 px-5 py-2.5 text-sm font-semibold text-navy-900 no-underline hover:bg-amber-400"
+-          }
+-        >
+-          Get the calendar →
+-        </Link>
++        {isPdf ? (
++          <a href={pitch.href} download className={ctaClassName}>
++            {pitch.cta}
++          </a>
++        ) : (
++          <Link href={pitch.href} className={ctaClassName}>
++            {pitch.cta}
++          </Link>
++        )}
+       </div>
+ 
+       <div className="mt-6">
+diff --git a/src/content/articles/advice/drywall-damage-after-a-leak.mdx b/src/content/articles/advice/drywall-damage-after-a-leak.mdx
+index 00dc240..133da99 100644
+--- a/src/content/articles/advice/drywall-damage-after-a-leak.mdx
++++ b/src/content/articles/advice/drywall-damage-after-a-leak.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Drywall repair after a leak: check this before you patch water damage"
++title: "Drywall repair after a leak: check this first"
+ slug: "drywall-damage-after-a-leak"
+ pillar: "advice"
+ description: "Drywall water damage: what to check behind the wall before you patch, when to replace vs. repair, and the order that keeps you from sealing in mold."
+diff --git a/src/content/articles/advice/hardwired-vs-battery-smoke-detectors.mdx b/src/content/articles/advice/hardwired-vs-battery-smoke-detectors.mdx
+index bc5924f..0f48e15 100644
+--- a/src/content/articles/advice/hardwired-vs-battery-smoke-detectors.mdx
++++ b/src/content/articles/advice/hardwired-vs-battery-smoke-detectors.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Hardwired vs. battery smoke detectors: which you have, which you need"
++title: "Hardwired vs. battery smoke detectors"
+ description: "How to tell hardwired from battery alarms, why hardwired units still need a battery, whether you can swap one for the other, and which to buy for each spot."
+ author: "ken-hoven"
+ ymyl: false
+diff --git a/src/content/articles/advice/how-often-to-replace-smoke-detectors.mdx b/src/content/articles/advice/how-often-to-replace-smoke-detectors.mdx
+index 55b64c1..b52000d 100644
+--- a/src/content/articles/advice/how-often-to-replace-smoke-detectors.mdx
++++ b/src/content/articles/advice/how-often-to-replace-smoke-detectors.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "How often to replace smoke detectors (and how to read the date on yours)"
++title: "How often to replace smoke detectors"
+ description: "Smoke alarms expire 10 years after manufacture — not install. Where the date is printed, what CO and combo alarms get instead, and what an expired alarm does."
+ author: "ken-hoven"
+ ymyl: false
+diff --git a/src/content/articles/advice/interconnected-smoke-alarms.mdx b/src/content/articles/advice/interconnected-smoke-alarms.mdx
+index 9ab053a..2a237f6 100644
+--- a/src/content/articles/advice/interconnected-smoke-alarms.mdx
++++ b/src/content/articles/advice/interconnected-smoke-alarms.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Interconnected smoke alarms: what they are and how to retrofit an older home"
++title: "Interconnected smoke alarms: how to retrofit"
+ description: "Interconnected alarms all sound when one detects smoke. Why that matters at night, when code requires it, and how to add it to an older home without new wiring."
+ author: "ken-hoven"
+ ymyl: false
+diff --git a/src/content/articles/advice/slab-leak-warning-signs.mdx b/src/content/articles/advice/slab-leak-warning-signs.mdx
+index f9e224b..5f4ff82 100644
+--- a/src/content/articles/advice/slab-leak-warning-signs.mdx
++++ b/src/content/articles/advice/slab-leak-warning-signs.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Slab leak warning signs: 10 ways to catch it before the foundation goes"
++title: "Slab leak warning signs: 10 things to watch for"
+ description: "A slab leak is a pressurized line failing under your foundation. The 10 warning signs, cheap confirmation tests, and what slab leak repair really costs."
+ author: "ken-hoven"
+ ymyl: true
+diff --git a/src/content/articles/advice/smart-water-leak-detectors.mdx b/src/content/articles/advice/smart-water-leak-detectors.mdx
+index e348d85..37599f2 100644
+--- a/src/content/articles/advice/smart-water-leak-detectors.mdx
++++ b/src/content/articles/advice/smart-water-leak-detectors.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Smart water leak detectors: when Wi-Fi is worth it (and when it isn't)"
++title: "Smart water leak detectors: worth it?"
+ description: "Smart leak detectors push phone alerts and pair with smart-home hubs. A clear-eyed breakdown of where they pay off, where they don't, and what to look for."
+ author: "ken-hoven"
+ ymyl: false
+diff --git a/src/content/articles/advice/smoke-detector-chirping.mdx b/src/content/articles/advice/smoke-detector-chirping.mdx
+index c0a2aee..6205d48 100644
+--- a/src/content/articles/advice/smoke-detector-chirping.mdx
++++ b/src/content/articles/advice/smoke-detector-chirping.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Smoke detector chirping: how to make it stop (and when it means replace)"
++title: "Smoke detector chirping: how to make it stop"
+ description: "A chirp every 30–60 seconds means a low battery or an expired unit — not smoke. How to tell which, why it chirps at 2 AM, and when the detector needs replacing."
+ author: "ken-hoven"
+ ymyl: false
+diff --git a/src/content/articles/advice/water-leak-detection.mdx b/src/content/articles/advice/water-leak-detection.mdx
+index d1f670f..d9ea036 100644
+--- a/src/content/articles/advice/water-leak-detection.mdx
++++ b/src/content/articles/advice/water-leak-detection.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Water leak detection: how to find a hidden leak (and systems that do it for you)"
++title: "Water leak detection: how to find a hidden leak"
+ description: "Water leak detection for homeowners: the meter test, toilets, walls, slabs, and outdoor lines — plus home leak detection systems and when a pro is worth it."
+ author: "ken-hoven"
+ ymyl: true
+diff --git a/src/content/articles/advice/where-to-install-smoke-detectors.mdx b/src/content/articles/advice/where-to-install-smoke-detectors.mdx
+index c635e72..da8dc02 100644
+--- a/src/content/articles/advice/where-to-install-smoke-detectors.mdx
++++ b/src/content/articles/advice/where-to-install-smoke-detectors.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Where to install smoke detectors: placement rules that actually matter"
++title: "Where to install smoke detectors"
+ description: "Every bedroom, outside each sleeping area, every level. Ceiling vs. wall, distance from the stove, sloped ceilings, and where an alarm does more harm than good."
+ author: "ken-hoven"
+ ymyl: false
+diff --git a/src/content/articles/advice/why-do-my-lights-flicker.mdx b/src/content/articles/advice/why-do-my-lights-flicker.mdx
+index 0cbc0af..ddd3022 100644
+--- a/src/content/articles/advice/why-do-my-lights-flicker.mdx
++++ b/src/content/articles/advice/why-do-my-lights-flicker.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Why do my lights flicker? 7 causes (and when it's actually dangerous)"
++title: "Why do my lights flicker? 7 real causes"
+ description: "Lights flickering has 7 common causes. Most are harmless; two are serious electrical hazards. Here's how to tell which one and what to do."
+ author: "ken-hoven"
+ ymyl: true
+diff --git a/src/content/articles/costs/electrician-service-call.mdx b/src/content/articles/costs/electrician-service-call.mdx
+index 09db6d9..d914918 100644
+--- a/src/content/articles/costs/electrician-service-call.mdx
++++ b/src/content/articles/costs/electrician-service-call.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Electrician service call cost: what a local residential visit runs (2026)"
++title: "Electrician service call cost (2026)"
+ description: "A local electrician's residential service call runs $80–$200 to show up, then $75–$150/hour. What's billable, what isn't, and how to keep the trip cheap."
+ author: "ken-hoven"
+ ymyl: false
+diff --git a/src/content/articles/costs/plumber-hourly-rate-canada.mdx b/src/content/articles/costs/plumber-hourly-rate-canada.mdx
+index 4e05cbd..26cd6ec 100644
+--- a/src/content/articles/costs/plumber-hourly-rate-canada.mdx
++++ b/src/content/articles/costs/plumber-hourly-rate-canada.mdx
+@@ -1,5 +1,5 @@
+ ---
+-title: "Plumber hourly rate in Canada (2026): Toronto, Vancouver, Montreal + more"
++title: "Plumber hourly rate in Canada (2026)"
+ description: "Honest Canadian plumber rates in 2026 — Toronto, Vancouver, Calgary, Montreal, Ottawa. CAD pricing, service call fees, HST/GST, and what to budget all-in."
+ author: "ken-hoven"
+ ymyl: false
+diff --git a/src/content/authors/ken-hoven.ts b/src/content/authors/ken-hoven.ts
+index 113f48e..3718c9c 100644
+--- a/src/content/authors/ken-hoven.ts
++++ b/src/content/authors/ken-hoven.ts
+@@ -3,14 +3,14 @@ export const kenHoven = {
+   name: "Ken Hoven",
+   role: "Founder & Editor",
+   url: "/about/authors/ken-hoven",
+-  bio: "Ken Hoven is the founder and editor of FixItReal. After years of homeowner repairs, contractor quotes, and the occasional $600 disaster that should have been a $120 afternoon, Ken started FixItReal to help other homeowners fix the right things, skip the wrong ones, and know a fair price when they hear it.",
+-  shortBio: "Founder and editor of FixItReal — writing honest home repair cost data, DIY-vs-pro decisions, and contractor-vetting advice for US homeowners.",
++  bio: "Ken Hoven is the founder and editor of FixItReal. He spent 20+ years running industrial manufacturing plants — reading vendor quotes, catching padded scopes of work, and deciding what actually needs fixing versus what can wait — before turning that same scrutiny on home repairs. After one too many contractor quotes that didn't survive a second look, Ken started FixItReal to give homeowners the same plain-numbers approach: what a repair should actually cost, when DIY makes sense, and how to spot a quote that's built to pad the bill.",
++  shortBio: "Founder and editor of FixItReal — a former plant manager applying 20+ years of vendor-quote and cost-control experience to honest home repair pricing, DIY-vs-pro decisions, and contractor vetting for US homeowners.",
+   photo: "/authors/ken-hoven.jpg",
+   social: {
+     linkedin: null as string | null,
+     twitter: null as string | null,
+   },
+-  credentials: ["Homeowner", "15+ years DIY repairs"] as const,
++  credentials: ["20+ years manufacturing operations", "Plant management background"] as const,
+   expertiseAreas: [
+     "Repair cost analysis",
+     "DIY-vs-pro decisions",
+-- 
+2.43.0
+

@@ -29,6 +29,23 @@ type RecommendedProductsSectionProps = {
     columns: string[];
     rows: ComparisonRow[];
   };
+  /**
+   * How the picks were arrived at. Rendered as a plain label under the
+   * heading so the reader never has to guess whether a guide is a
+   * hands-on test or a research piece. Defaults to "researched" because
+   * that is what every guide on the site is today; set "tested" only on
+   * a page that has named models, real measurements, and original photos.
+   * This is the mechanism behind the homepage promise "every buying guide
+   * says whether a pick was tested or researched".
+   */
+  basis?: "tested" | "researched";
+};
+
+const BASIS_LABEL: Record<NonNullable<RecommendedProductsSectionProps["basis"]>, string> = {
+  tested:
+    "Hands-on tested: we bought or borrowed these units and used them on real jobs.",
+  researched:
+    "Editorially researched, not hands-on tested: picks are based on manufacturer specs, safety listings, verified owner reports, and our own repair experience — not on lab testing of each unit.",
 };
 
 /**
@@ -100,6 +117,7 @@ export function RecommendedProductsSection({
   intro,
   products,
   comparison,
+  basis = "researched",
 }: RecommendedProductsSectionProps) {
   // Explicit override wins; otherwise try to auto-build.
   const table = comparison ?? autoComparison(products);
@@ -107,6 +125,12 @@ export function RecommendedProductsSection({
   return (
     <section className="mt-10">
       <h2 className="font-serif text-3xl text-navy-900">{heading}</h2>
+      <p className="mt-2 inline-flex items-start gap-2 rounded-md border border-ink-200 bg-ink-50 px-3 py-2 text-xs text-ink-700 leading-relaxed max-w-3xl">
+        <span className="font-semibold uppercase tracking-wider text-amber-700 shrink-0">
+          {basis === "tested" ? "Tested" : "Researched"}
+        </span>
+        <span>{BASIS_LABEL[basis]}</span>
+      </p>
       {intro && (
         <div className="mt-3 text-ink-700 leading-relaxed max-w-3xl">{intro}</div>
       )}

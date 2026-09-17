@@ -119,8 +119,8 @@ const path = "/tools/best-drain-snakes-for-homeowners";
 // NOTE: this page recommends drain snake *types*, not specific tested units —
 // there are no hands-on measurements, no original photography, and no model
 // numbers here. The title therefore must not claim "tested picks". Doing so
-// contradicts the homepage promise ("no product reviews of tools we haven't
-// used"), is an FTC endorsement-guides exposure, and cannot compete in a SERP
+// contradicts the homepage promise ("every buying guide says whether a pick
+// was tested or researched"), is an FTC endorsement-guides exposure, and cannot compete in a SERP
 // where Google's reviews system rewards demonstrable first-hand testing.
 // If this guide is ever upgraded with real testing — named models, measured
 // cable diameters, photos of each unit on a real clog — restore a testing

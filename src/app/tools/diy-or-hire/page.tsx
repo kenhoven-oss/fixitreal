@@ -73,8 +73,8 @@ export default function DiyOrHireTool() {
               For higher-risk jobs — electrical, gas, structural, water under
               pressure — we&apos;re deliberately conservative. Saving $300 on a
               water heater swap doesn&apos;t matter if an unpermitted install
-              voids your homeowners insurance or a gas leak sends you to the
-              hospital. Read our full{" "}
+              creates a code, resale, or insurance-claim problem later, or a
+              gas leak sends you to the hospital. Read our full{" "}
               <a href="/about/methodology" className="no-underline text-navy-700 hover:text-navy-900">
                 methodology
               </a>

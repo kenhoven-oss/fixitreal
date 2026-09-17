@@ -251,7 +251,7 @@ export default function BestSmokeDetectorsForHomeownersPage() {
         <BuyingGuideSections
           whoShouldBuy={[
             "Every U.S. homeowner — code requires one per bedroom, one outside each sleeping area, and one per floor.",
-            "Anyone whose existing alarms are 8+ years old. UL-listed alarms are date-stamped and degrade.",
+            "Anyone whose existing alarms are at or near 10 years old — the replacement age the U.S. Fire Administration gives for smoke alarms. UL-listed alarms are date-stamped and degrade.",
             "Anyone with fuel-burning appliances, an attached garage, or a fireplace — combo smoke + CO is the right buy.",
           ]}
           whoShouldSkip={[

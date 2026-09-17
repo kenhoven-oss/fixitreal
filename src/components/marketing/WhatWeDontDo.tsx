@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const items = [
   "No home warranty affiliates, ever",
-  "No product reviews of tools we haven't used",
+  "No fake hands-on reviews — every buying guide says whether a pick was tested or researched",
   "No AI-written content without human review",
   "No claim that every contractor in a lead-gen network has been personally vetted",
   "No sponsored posts disguised as editorial",

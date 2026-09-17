@@ -39,7 +39,7 @@ const redFlagsList = [
   {
     title: "Asking for >50% deposit",
     body:
-      "Most pros front material costs from their working capital. A 10–33% deposit is normal. A 50%+ ask suggests the contractor is funding one job with the next homeowner's deposit.",
+      "Most pros front material costs from their working capital. A 10–33% deposit is normal where state law doesn't set a lower cap (check yours — California's is 10% or $1,000). A 50%+ ask suggests the contractor is funding one job with the next homeowner's deposit.",
   },
   {
     title: "Vague line items on the quote",
@@ -67,7 +67,7 @@ const hubFaq = [
   {
     question: "What's the single biggest contractor red flag?",
     answer:
-      "Asking for more than 33% deposit on a residential job. Legitimate contractors don't fund their cash flow from your deposit — they front materials from their own working capital and bill progressively. A large up-front demand is the most common signal of a contractor who's about to take your money and disappear, or who's so undercapitalized they'll abandon the job mid-scope.",
+      "Asking for more than 33% deposit on a residential job — or more than your state allows, which can be far lower (California caps home-improvement deposits at 10% or $1,000, whichever is less). Legitimate contractors don't fund their cash flow from your deposit — they front materials from their own working capital and bill progressively. A large up-front demand is the most common signal of a contractor who's about to take your money and disappear, or who's so undercapitalized they'll abandon the job mid-scope.",
   },
   {
     question: "How do I verify a contractor is actually licensed?",

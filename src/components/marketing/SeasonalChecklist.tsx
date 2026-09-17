@@ -154,7 +154,7 @@ const SPRING: SeasonSet = {
     {
       title: "Replace chirping or expired smoke alarms",
       description:
-        "Check the manufacture date on the back of every alarm — anything 8+ years old gets swapped now. Combo smoke+CO if you have gas.",
+        "Check the manufacture date on the back of every alarm — replace smoke alarms at 10 years, and CO alarms at the service life printed on the unit (usually 5–10 years). Combo smoke+CO if you have gas.",
       timeEstimate: "30–60 min",
       href: "/diy-or-hire/smoke-detector",
       icon: Icon.alarm,
@@ -264,7 +264,7 @@ const FALL: SeasonSet = {
     {
       title: "Test smoke + CO alarms",
       description:
-        "Daylight savings is the classic test reminder. Any unit 8+ years old gets replaced now.",
+        "Daylight savings is the classic test reminder. Replace smoke alarms at 10 years from the date on the back; replace CO alarms at the manufacturer's stated end-of-life.",
       timeEstimate: "15 min",
       href: "/diy-or-hire/smoke-detector",
       icon: Icon.alarm,
