@@ -343,6 +343,25 @@ export type CostGuideForState = {
   hourly: { low: number; high: number };
   /** What the adjusted range applies to (job description). */
   jobDescription: string;
+  /**
+   * Optional DIY alternative, only for jobs the site's own /diy-or-hire
+   * verdict rates as DIY-recommended. Parts are national retail and do not
+   * scale with the tier; the local saving is the local installed range minus
+   * these parts. Absent on service-call guides and on hire-a-pro jobs
+   * (water heater), where suggesting DIY would contradict the site.
+   */
+  diy?: {
+    /** National retail parts range for the like-for-like job. */
+    parts: { low: number; high: number };
+    /** Realistic hands-on time for a first-timer. */
+    time: string;
+    /** One sentence on what makes it DIY-able (or the one catch). */
+    note: string;
+    /** The long-form DIY-or-hire verdict article. */
+    decisionPath: string;
+    /** Optional buying guide for the parts. */
+    guidePath?: string;
+  };
   /** The parent guide's published figure, verbatim, for the methodology box. */
   nationalBasis: string;
 };
@@ -382,6 +401,13 @@ export const STATE_COST_GUIDES: CostGuideForState[] = [
     jobDescription:
       "single hardwired smoke alarm swap, brand-match, no new wiring",
     nationalBasis: "$105–$210 per hardwired location, installed",
+    diy: {
+      parts: { low: 15, high: 60 },
+      time: "15–30 minutes per alarm",
+      note: "A like-for-like swap plugs into the existing harness; the breaker goes off first and the brand should match so the alarms stay interconnected.",
+      decisionPath: "/diy-or-hire/smoke-detector",
+      guidePath: "/tools/best-smoke-detectors-for-homeowners",
+    },
   },
   {
     slug: "garbage-disposal-replacement",
@@ -393,6 +419,12 @@ export const STATE_COST_GUIDES: CostGuideForState[] = [
     jobDescription:
       "like-for-like ¾ HP disposal swap — unit, labor and haul-away",
     nationalBasis: "$230–$500 hired, including a mid-range ¾ HP unit",
+    diy: {
+      parts: { low: 85, high: 150 },
+      time: "about an hour",
+      note: "Mounting rings are standardized across brands and the wiring is a plug or three wires; the one catch is a corroded old mounting flange that will not budge.",
+      decisionPath: "/diy-or-hire/garbage-disposal",
+    },
   },
   {
     slug: "water-heater-replacement",
