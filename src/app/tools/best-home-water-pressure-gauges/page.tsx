@@ -22,7 +22,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — thread on, read the dial.",
     riskLevel: "Low.",
     verdict: "The correct first diagnostic tool for any water pressure problem. Costs less than 10 minutes of a plumber's time.",
-    affiliateUrl: "https://www.amazon.com/s?k=water+pressure+gauge+hose+thread+psi&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B000YMU8JC?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -37,7 +37,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "Worth the extra $10–$20 over analog if pressure fluctuations are the suspected issue.",
-    affiliateUrl: "https://www.amazon.com/s?k=digital+water+pressure+gauge+max+min+memory&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B084ZV8VK3?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -52,7 +52,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Advanced (plumber install).",
     riskLevel: "Moderate — involves shutting off main supply and cutting into the supply line.",
     verdict: "The correct fix when pressure is high. A $60 part; $150–$350 installed. Worth every dollar in avoided fixture damage.",
-    affiliateUrl: "https://www.amazon.com/s?k=pressure+reducing+valve+watts+residential+3%2F4+inch&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B004JJ5FYE?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
