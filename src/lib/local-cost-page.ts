@@ -224,8 +224,33 @@ export function buildLocalCostModel(
         },
       ];
 
+  /**
+   * DIY alternative — only when the guide declares one (i.e. the site's own
+   * /diy-or-hire verdict is DIY-recommended). Parts are national retail and
+   * don't scale with tier; the saving is what the local labor would have
+   * cost. Rendered as a pointer to the site's DIY verdict and buying guide,
+   * never as a product listing — these are cost pages, not affiliate pages.
+   */
+  const diy = guide.diy
+    ? (() => {
+        const savingLow = Math.max(0, step(baseRange.low - guide.diy.parts.high));
+        const savingHigh = Math.max(0, step(baseRange.high - guide.diy.parts.low));
+        return {
+          partsText: usdRange(guide.diy.parts),
+          time: guide.diy.time,
+          note: guide.diy.note,
+          savingText: usdRange({ low: savingLow, high: savingHigh }),
+          decisionPath: guide.diy.decisionPath,
+          guidePath: guide.diy.guidePath,
+          heading: `Doing it yourself in ${place.label}`,
+          body: `The parts for a like-for-like ${guide.longName} are ${usdRange(guide.diy.parts)} at national retail and don't change by state — what you save by doing it yourself is the ${place.label} labor, roughly ${usdRange({ low: savingLow, high: savingHigh })} against the installed range above. ${guide.diy.note} Plan on ${guide.diy.time}.`,
+        };
+      })()
+    : null;
+
   return {
     isServiceCall,
+    diy,
     baseRange,
     hourlyRange,
     baseRangeText: usdRange(baseRange),
