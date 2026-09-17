@@ -22,7 +22,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — slides in.",
     riskLevel: "Low.",
     verdict: "The right filter for most homes. Buy the multi-pack and set a calendar reminder.",
-    affiliateUrl: "https://www.amazon.com/s?k=merv+8+pleated+furnace+filter+6+pack&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00CK01P2A?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -37,7 +37,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low — watch for short-cycling.",
     verdict: "The right upgrade for allergy homes, within the limits of your furnace.",
-    affiliateUrl: "https://www.amazon.com/s?k=merv+11+pleated+furnace+filter+4+pack&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00CJZA02W?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -52,7 +52,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner to install; check compatibility first.",
     riskLevel: "Moderate for the furnace if unsupported.",
     verdict: "Powerful, but only on systems that can handle it. Ask before you install.",
-    affiliateUrl: "https://www.amazon.com/s?k=merv+13+furnace+filter+1+inch+2+pack&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00CJZ77FK?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -67,7 +67,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "If your furnace has the cabinet, this is the best filter you can buy for it.",
-    affiliateUrl: "https://www.amazon.com/s?k=4+inch+furnace+filter+merv+11+16x25x4&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00CK03VQI?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
