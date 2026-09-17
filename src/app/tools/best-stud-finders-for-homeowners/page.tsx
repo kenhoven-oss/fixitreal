@@ -24,7 +24,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "The right tool for standard modern drywall. Simpler and more reliable than electronic options.",
-    affiliateUrl: "https://www.amazon.com/s?k=magnetic+stud+finder+studpop&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00FRI5TMY?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -41,7 +41,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — though accuracy requires a slow, steady scan.",
     riskLevel: "Low.",
     verdict: "Best electronic option by a margin. Multiple sensors mean you see the stud, not guess at it.",
-    affiliateUrl: "https://www.amazon.com/s?k=franklin+sensors+prosensor+710&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B0195K8OT4?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -58,7 +58,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low — but always turn off circuits before drilling near electrical regardless of detector reading.",
     verdict: "Good choice when wire-path confidence matters. Accept a slight accuracy trade-off vs. the Franklin.",
-    affiliateUrl: "https://www.amazon.com/s?k=zircon+multiscanner+i520+stud+finder&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B01J39MJEI?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
