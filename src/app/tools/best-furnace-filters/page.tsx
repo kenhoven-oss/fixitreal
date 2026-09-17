@@ -41,7 +41,7 @@ const products: RecommendedProduct[] = [
     buttonText: "Check price on Amazon",
   },
   {
-    name: "MERV 13 pleated filter, 2-pack",
+    name: "MERV 13 pleated filter, 4-pack",
     badge: "For Wildfire Smoke and Medical Needs",
     category: "Highest residential rating",
     bestFor: "Homes in wildfire regions, immunocompromised occupants, or where a doctor has recommended maximum filtration.",

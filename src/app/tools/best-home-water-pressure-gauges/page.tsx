@@ -26,12 +26,12 @@ const products: RecommendedProduct[] = [
     buttonText: "Check price on Amazon",
   },
   {
-    name: "Digital water pressure gauge with max/min memory",
+    name: "Water pressure gauge with max-pressure memory",
     badge: "Best for Fluctuation Diagnosis",
-    category: "Digital gauge with memory",
+    category: "Gauge with max-pressure memory",
     bestFor: "Diagnosing pressure fluctuations — finding out if pressure spikes at night or drops during peak morning use.",
-    whyItMadeTheList: "A digital gauge with max/min memory records the highest and lowest pressure seen during the measurement period. Leave it on overnight and you'll know if you have pressure spikes above 80 PSI while sleeping — a documented cause of pinhole leaks and fixture damage. More diagnostic than an analog gauge that only shows current pressure.",
-    keyBuyingNotes: "Look for a glycerin-filled or digital unit rated to 200 PSI minimum. Max/min memory is the key feature — not all digital gauges have it. Thread on at the hose bib the same way as an analog gauge.",
+    whyItMadeTheList: "A max-pressure memory gauge carries a second hand that stays at the highest reading it has seen. Thread it on and leave it overnight, and in the morning it still shows the peak — so you catch the 3 a.m. spikes above 80 PSI that cause pinhole leaks and fixture damage, which a plain gauge showing only current pressure will never reveal.",
+    keyBuyingNotes: "Rated to 200 PSI minimum, with a lazy-hand or memory pointer — that feature is the whole point, and plenty of gauges at this price do not have it. Threads onto the hose bib the same way as a plain gauge.",
     avoidIf: "You just need a one-time reading — the analog gauge is simpler and cheaper.",
     typicalUse: "Ongoing pressure monitoring; diagnosing unexplained pinhole leaks or banging pipes (water hammer from pressure spikes).",
     skillLevel: "Beginner.",
@@ -52,7 +52,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Advanced (plumber install).",
     riskLevel: "Moderate — involves shutting off main supply and cutting into the supply line.",
     verdict: "The correct fix when pressure is high. A $60 part; $150–$350 installed. Worth every dollar in avoided fixture damage.",
-    affiliateUrl: "https://www.amazon.com/dp/B004JJ5FYE?tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00CBIF9K0?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
@@ -68,7 +68,7 @@ export const metadata = buildMetadata({ title: pageTitle, description: pageDescr
 const faqs = [
   { question: "What is normal water pressure for a house?", answer: "The accepted residential range is 40–80 PSI. Below 40 PSI and you'll notice weak flow at showers and multiple fixtures running simultaneously. Above 80 PSI and fixtures, appliances, and supply lines are under stress — accelerated wear, pinhole leaks, and water hammer are common results. Most codes require a PRV when street pressure exceeds 80 PSI." },
   { question: "Can high water pressure cause pinhole leaks in copper pipes?", answer: "Yes. Chronic high pressure (over 80 PSI) plus normal water velocity erosion is one of the primary causes of pinhole leaks in copper supply lines. The inside wall of the pipe corrodes faster under high pressure-driven flow. A PRV, installed and set to 50–70 PSI, is the correct preventive measure." },
-  { question: "Why does my water pressure change throughout the day?", answer: "Municipal water pressure follows demand curves — lower when the whole neighborhood is running water in the morning, higher in the middle of the night. A max/min digital gauge left on overnight captures the actual range. Pressure regulators installed by utilities also fluctuate. Internally, a failing PRV can stick at different positions and produce variable pressure at the tap." },
+  { question: "Why does my water pressure change throughout the day?", answer: "Municipal water pressure follows demand curves — lower when the whole neighborhood is running water in the morning, higher in the middle of the night. A gauge with a max-pressure memory hand, left on overnight, captures the peak. Pressure regulators installed by utilities also fluctuate. Internally, a failing PRV can stick at different positions and produce variable pressure at the tap." },
 ];
 
 const breadcrumbItems = [{ name: "Home", href: "/" }, { name: "Tools", href: "/tools" }, { name: pageTitle, href: path }];
@@ -89,7 +89,7 @@ export default function BestWaterPressureGaugesPage() {
           <p>Water pressure is behind more unexplained plumbing problems than most homeowners realize — pinhole leaks, banging pipes, running toilets, appliance failures, and weak showers all trace back to pressure being too high, too low, or inconsistent. A $12 gauge gives you the actual number in 60 seconds.</p>
           <p>Below: the gauge to buy, what to do with the reading, and the fix when pressure is out of range.</p>
         </div>
-        <RecommendedProductsSection heading="Our picks" intro={<p>Three products: the gauge to take the reading, the digital version for fluctuation diagnosis, and the PRV that fixes high pressure permanently.</p>} products={products} />
+        <RecommendedProductsSection heading="Our picks" intro={<p>Three products: the gauge to take the reading, the memory-hand version that catches overnight spikes, and the PRV that fixes high pressure permanently.</p>} products={products} />
         <BuyingGuideSections
           whoShouldBuy={["Anyone troubleshooting weak flow at multiple fixtures.", "Homeowners who've had multiple pinhole leaks — high pressure is often the cause.", "Anyone buying a house — check street pressure at the hose bib during the inspection.", "Anyone installing a water heater, irrigation system, or appliance with a max-pressure specification."]}
           whoShouldSkip={["Anyone in a rental — pressure is the landlord's infrastructure issue.", "Anyone who already has a calibrated and recently serviced PRV with no complaints."]}

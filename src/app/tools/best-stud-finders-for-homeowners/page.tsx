@@ -58,7 +58,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low — but always turn off circuits before drilling near electrical regardless of detector reading.",
     verdict: "Good choice when wire-path confidence matters. Accept a slight accuracy trade-off vs. the Franklin.",
-    affiliateUrl: "https://www.amazon.com/dp/B01J39MJEI?tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B001ACRPKK?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
