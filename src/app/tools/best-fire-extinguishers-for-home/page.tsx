@@ -91,7 +91,7 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-fire-extinguishers-for-home";
-const pageTitle = "Best fire extinguisher for home (2026): kitchen, garage, and whole-house picks";
+const pageTitle = "Best fire extinguishers for home (2026)";
 const pageDescription =
   "The best home fire extinguisher isn't one extinguisher — it's the right class in the right room. Kitchen, garage, and whole-house picks, with sizing.";
 

@@ -169,7 +169,7 @@ export default async function HomeInspectionRepairsHub() {
       </Section>
 
       <Section padding="lg" size="lg">
-        <NewsletterBlock variant="inline" />
+        <NewsletterBlock variant="inline" pillar="home-inspection-repairs" />
       </Section>
 
       <script

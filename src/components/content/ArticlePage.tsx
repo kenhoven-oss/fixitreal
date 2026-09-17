@@ -384,7 +384,7 @@ export async function ArticlePage({ article }: ArticlePageProps) {
       </Section>
 
       <Section padding="lg" size="md">
-        <NewsletterBlock variant="inline" />
+        <NewsletterBlock variant="inline" pillar={pillar} />
       </Section>
 
       <script
