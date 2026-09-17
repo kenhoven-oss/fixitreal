@@ -22,7 +22,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Advanced — plumber install.",
     riskLevel: "Low once installed.",
     verdict: "The complete solution. The insurance discount often pays for the install within a few years.",
-    affiliateUrl: "https://www.amazon.com/s?k=moen+flo+smart+water+monitor+shutoff&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00C03D01Q?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -37,7 +37,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Advanced — plumber install.",
     riskLevel: "Low.",
     verdict: "The most sensitive detection on the market. Worth considering if slow leaks are the concern.",
-    affiliateUrl: "https://www.amazon.com/s?k=phyn+plus+smart+water+shutoff&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B0DZ9SBCPX?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -52,7 +52,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner to intermediate — threaded fittings, no cutting.",
     riskLevel: "Low.",
     verdict: "Targeted, cheap, and DIY. The right first step if a full smart valve isn't in the budget.",
-    affiliateUrl: "https://www.amazon.com/s?k=automatic+water+shutoff+valve+leak+sensor+water+heater+kit&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00HYHXBE4?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -67,7 +67,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "Cheap detection at the source. Pairs with any of the valves above.",
-    affiliateUrl: "https://www.amazon.com/s?k=wifi+water+leak+sensor+3+pack&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B0BDF94TMV?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
