@@ -13,20 +13,13 @@ dishwasher-install-kit,/diy-or-hire/dishwasher,Dishwasher power cord kit (90-deg
 gfci-swap-parts,/diy-or-hire/gfci-outlet,Wire strippers,"""wire strippers 10-22 awg electrician""",,Search link,
 ceiling-fan-install-parts,/diy-or-hire/ceiling-fan,Fan-rated ceiling box or brace,"""fan rated ceiling box brace""",,Search link,Load-rated for fan support - a standard lighting box is not
 ceiling-fan-install-parts,/diy-or-hire/ceiling-fan,Fan blade balancing kit,"""ceiling fan blade balancing kit""",,Search link,
-furnace-filter-merv,/advice/how-often-to-change-air-filter,MERV 11 pleated filters (multipack),"""MERV 11 pleated furnace filter multipack""",,Search link,"NEVER link MERV 13+ here - the article says confirm static pressure first"
-furnace-filter-merv,/advice/how-often-to-change-air-filter,MERV 8 pleated filters (multipack),"""MERV 8 pleated furnace filter multipack""",,Search link,For systems over 15 years old
-running-toilet-parts,/advice/why-does-my-toilet-keep-running,Universal toilet flapper,"""universal toilet flapper replacement""",,Search link,
-running-toilet-parts,/advice/why-does-my-toilet-keep-running,Universal fill valve (Fluidmaster style),"""universal toilet fill valve fluidmaster""",,Search link,
-water-pressure-gauge,/advice/why-is-my-water-pressure-low,Hose-bib water pressure gauge,"""water pressure test gauge hose bib""",,Search link,
-leak-sensor-stack,/advice/smart-water-leak-detectors,Wi-Fi leak sensor with phone alerts,"""wifi water leak detector phone alert no hub""",,Search link,"Deliberately NOT reusing amzn.to/4bM1ngp - product-links.csv flags that row REDO"
-pipe-burst-aftermath,/emergency-repairs/pipe-burst-first-10-minutes,Stainless pipe repair clamp,"""stainless steel pipe repair clamp""",,Search link,Stopgap only - copy must keep saying the section still gets replaced
 grab-bar-categories,/senior-home-safety/best-grab-bars-for-showers,Concealed-screw stainless grab bar,"""concealed screw stainless steel grab bar ADA""",,Search link,Listing MUST publish a load rating
 grab-bar-categories,/senior-home-safety/best-grab-bars-for-showers,ADA exposed-screw grab bar,"""ADA grab bar 250 lb rated stainless""",,Search link,Listing MUST publish a load rating
 grab-bar-categories,/senior-home-safety/best-grab-bars-for-showers,Grab-bar-rated toggle anchors,"""grab bar toggle anchor WingIts drywall rated""",,Search link,"NEVER link plastic drywall anchors - the article warns against them"
 inline,/advice/water-under-the-bathroom-sink,Wi-Fi water leak alarm (multi-sensor set),"""water leak detector wifi multi pack""",,Search link,Replaced the dead amzn.to/4dTjQtq link on 2026-09-13
-gfci-swap-parts,/diy-or-hire/gfci-outlet,Self-testing GFCI outlet (15A/20A),"""15 amp self test GFCI outlet""",,Search link,"Replaced amzn.to/4sCNRRP on 2026-09-13 - that short link now 404s"
 inline,/advice/gfci-outlet-keeps-tripping,Replacement GFCI outlet (15A or 20A),"""15 amp self test GFCI outlet""",,Search link,"Replaced the dead amzn.to/4sCNRRP link on 2026-09-13"
 flat-tape slot,/tools/best-drain-snakes-for-homeowners,Flat-tape tub drain snake,"""flat tape tub drain snake 20 ft""",,Search link,"2026-09-13: old link landed on a 33 ft heavy-duty drum auger"
 dual-mode slot,/tools/best-moisture-meters-for-homeowners,Dual-mode (pin + pinless) moisture meter,"""dual moisture meter pin and pinless 2 in 1""",,Search link,"2026-09-13: old link landed on the Klein ET140, which is pinless only"
 class-K slot,/tools/best-fire-extinguishers-for-home,Kitchen Class K wet chemical extinguisher,"""Class K wet chemical fire extinguisher kitchen""",,Search link,"Safety-critical - must be WET CHEMICAL Class K, not ABC powder. Try Amerex B260 or Buckeye"
 smoke-alarm-swap,/diy-or-hire/smoke-detector,10-year sealed lithium photoelectric alarm,"""10 year sealed battery photoelectric smoke alarm UL 217""",,Search link,"amzn.to/4wyKpun is a UL 217 smoke alarm but photoelectric + 10-yr sealed could not be confirmed"
+NOTE,,"Rows above still need a SiteStripe or verified /dp/ link.","Rows for flappers, fill valves, pressure gauges, MERV filters, GFCI outlets, pipe clamps and Wi-Fi leak sensors were removed on 2026-09-17 - those now point at verified ASINs from the buying guides added on main.",,,

@@ -25,8 +25,6 @@ function tierIndex(tier: StateCostTier): number {
   return Math.round(((m.low + m.high) / 2) * 100);
 }
 
-const TIER_ORDER: StateCostTier[] = ["premium", "high", "mid", "low"];
-
 const plumber = STATE_COST_GUIDES.find((g) => g.slug === "plumber-service-call")!;
 const waterHeater = STATE_COST_GUIDES.find(
   (g) => g.slug === "water-heater-replacement"
@@ -39,15 +37,17 @@ export default function StateRepairCostIndexPage() {
   });
 
   // Shared rank within a tier (1, 1, 1, 4, 4, ... style ranking).
-  let rank = 0;
-  let lastTier: StateCostTier | null = null;
-  const rows = ranked.map((s, i) => {
-    if (s.tier !== lastTier) {
-      rank = i + 1;
-      lastTier = s.tier;
-    }
-    return { state: s, rank };
-  });
+  // Built with a fold rather than by mutating a closure variable during
+  // map(): the lint rule is right that reassigning across a render is a
+  // footgun, and this is equivalent without the mutable state.
+  const rows = ranked.reduce<
+    Array<{ state: (typeof ranked)[number]; rank: number }>
+  >((acc, s, i) => {
+    const prev = acc[acc.length - 1];
+    const rank = prev && prev.state.tier === s.tier ? prev.rank : i + 1;
+    acc.push({ state: s, rank });
+    return acc;
+  }, []);
 
   const premiumStates = ranked.filter((s) => s.tier === "premium");
   const lowStates = ranked.filter((s) => s.tier === "low");
@@ -91,12 +91,12 @@ export default function StateRepairCostIndexPage() {
           on an index where the national average is 100. In dollars: the same
           water heater swap that runs about $
           {adjustRange(
-            { low: waterHeater.base.tripLow, high: waterHeater.base.tripHigh },
+            { low: waterHeater.base.low, high: waterHeater.base.high },
             "low"
           ).low.toLocaleString()}{" "}
           in the lowest-cost states starts around $
           {adjustRange(
-            { low: waterHeater.base.tripLow, high: waterHeater.base.tripHigh },
+            { low: waterHeater.base.low, high: waterHeater.base.high },
             "premium"
           ).low.toLocaleString()}{" "}
           in the highest-cost coastal markets — before anyone has quoted you
@@ -181,13 +181,13 @@ export default function StateRepairCostIndexPage() {
                 <tbody className="text-ink-700">
                   {rows.map(({ state, rank: r }) => {
                     const p = adjustRange(
-                      { low: plumber.base.tripLow, high: plumber.base.tripHigh },
+                      { low: plumber.base.low, high: plumber.base.high },
                       state.tier
                     );
                     const w = adjustRange(
                       {
-                        low: waterHeater.base.tripLow,
-                        high: waterHeater.base.tripHigh,
+                        low: waterHeater.base.low,
+                        high: waterHeater.base.high,
                       },
                       state.tier
                     );

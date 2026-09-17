@@ -88,7 +88,24 @@ const GUIDES = {
   smoke: { href: "/tools/best-smoke-detectors-for-homeowners", label: "Smoke alarm buying guide" },
   co: { href: "/tools/best-carbon-monoxide-detectors", label: "CO detector buying guide" },
   caulk: { href: "/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen", label: "Caulk buying guide" },
+  // Guides added on main; wired in here so the article layer feeds them.
+  furnaceFilter: { href: "/tools/best-furnace-filters", label: "Furnace filter buying guide" },
+  toiletParts: { href: "/tools/best-toilet-flappers-and-fill-valves", label: "Flapper & fill valve guide" },
+  pressureGauge: { href: "/tools/best-home-water-pressure-gauges", label: "Water pressure gauge guide" },
+  gfciOutlets: { href: "/tools/best-gfci-outlets-for-homeowners", label: "GFCI outlet buying guide" },
+  pipeClamps: { href: "/tools/best-pipe-repair-clamps", label: "Pipe repair clamp guide" },
+  drywallKits: { href: "/tools/best-drywall-repair-kits", label: "Drywall repair kit guide" },
+  breakerFinders: { href: "/tools/best-circuit-breaker-finders", label: "Circuit breaker finder guide" },
+  shutoffValves: { href: "/tools/best-automatic-water-shutoff-valves", label: "Automatic shutoff valve guide" },
 } as const;
+
+/**
+ * Verified product ASINs, confirmed by fetching each listing and reading
+ * its title (see docs/affiliate-destination-audit.md). Preferred over a
+ * search link wherever one covers the same product: a reader who lands on
+ * the exact item converts; one who lands on a search page often does not.
+ */
+const DP = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=fixitreal-20`;
 
 export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
   /* ---------------- Dryer vent ---------------- */
@@ -261,6 +278,7 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         label: "Shop taping knives and sanding sponges on Amazon",
       },
     ],
+    guides: [GUIDES.drywallKits],
   },
   "drywall-patch-cost-diy": {
     title: "If you are doing the small ones yourself",
@@ -306,8 +324,8 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Self-testing GFCI outlet (match 15A or 20A to the circuit)",
         why: "Self-test models check their own sensing circuit and are now the standard. Match the amperage to the existing device — a 20A receptacle on a 15A circuit is the wrong direction to guess.",
-        href: amazonSearch("15 amp self test GFCI outlet"),
-        label: "See current options on Amazon",
+        href: DP("B019YJPKWU"),
+        label: "Check on Amazon",
       },
       {
         name: "Non-contact voltage tester",
@@ -322,7 +340,7 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         label: "Shop wire strippers on Amazon",
       },
     ],
-    guides: [GUIDES.voltageTester],
+    guides: [GUIDES.voltageTester, GUIDES.gfciOutlets],
   },
   "ceiling-fan-install-parts": {
     title: "The two parts people discover they need halfway up the ladder",
@@ -368,16 +386,17 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "MERV 11 pleated filters (multipack)",
         why: "The default above: real filtration without straining a typical residential blower. Buy the multipack — the reason filters go unchanged is that the right one is not in the house.",
-        href: amazonSearch("MERV 11 pleated furnace filter multipack"),
+        href: DP("B00CJZA02W"),
         label: "Shop MERV 11 filters on Amazon",
       },
       {
         name: "MERV 8 pleated filters (multipack)",
         why: "The right choice if the system is over fifteen years old or the blower sounds strained. Less restriction, and a clean MERV 8 outperforms a loaded MERV 11 every time.",
-        href: amazonSearch("MERV 8 pleated furnace filter multipack"),
+        href: DP("B00CK01P2A"),
         label: "Shop MERV 8 filters on Amazon",
       },
     ],
+    guides: [GUIDES.furnaceFilter],
   },
   "furnace-ignition-filter": {
     title: "If the filter is the problem",
@@ -388,6 +407,7 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         href: LIVE.pleatedFilters,
       },
     ],
+    guides: [GUIDES.furnaceFilter],
   },
 
   /* ---------------- Caulk ---------------- */
@@ -420,16 +440,17 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Universal toilet flapper",
         why: "Fix #1. Take the old one to match if you can — universal flappers fit most toilets but not all, and a flapper that nearly seals wastes more water than a visible drip.",
-        href: amazonSearch("universal toilet flapper replacement"),
-        label: "See current options on Amazon",
+        href: DP("B00E5ICW0E"),
+        label: "Check on Amazon",
       },
       {
         name: "Fluidmaster-style universal fill valve",
         why: "Fix #3, for a valve that will not shut off or hisses. The universal anti-siphon design is the standard replacement and adjusts to tank height out of the box.",
-        href: amazonSearch("universal toilet fill valve fluidmaster"),
-        label: "See current options on Amazon",
+        href: DP("B00002ND6R"),
+        label: "Check on Amazon",
       },
     ],
+    guides: [GUIDES.toiletParts],
   },
 
   /* ---------------- Water pressure ---------------- */
@@ -439,10 +460,11 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Hose-bib water pressure gauge",
         why: "Screws onto an outside spigot or the laundry tap and tells you in ten seconds whether the problem is the house supply or one fixture. Every fix further down this page depends on knowing that number.",
-        href: amazonSearch("water pressure test gauge hose bib"),
+        href: DP("B000YMU8JC"),
         label: "Shop water pressure gauges on Amazon",
       },
     ],
+    guides: [GUIDES.pressureGauge],
   },
 
   /* ---------------- Leak detection ---------------- */
@@ -458,11 +480,11 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Wi-Fi leak sensor with phone alerts",
         why: "Layer 2, for the two or three highest-risk spots. Check whether it needs a proprietary hub before buying — a sensor that only sirens in an empty basement is barely useful.",
-        href: amazonSearch("wifi water leak detector phone alert no hub"),
+        href: DP("B0BDF94TMV"),
         label: "Shop Wi-Fi leak sensors on Amazon",
       },
     ],
-    guides: [GUIDES.leakDetector],
+    guides: [GUIDES.leakDetector, GUIDES.shutoffValves],
   },
   "ceiling-stain-diagnosis": {
     title: "Two tools that answer \"is it still wet?\"",
@@ -490,7 +512,7 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       {
         name: "Stainless pipe repair clamp",
         why: "A temporary hold on a split or pinholed copper or PEX run so you can turn the main back on while you wait for the plumber. It is a stopgap, not a repair — the section still gets replaced.",
-        href: amazonSearch("stainless steel pipe repair clamp"),
+        href: DP("B0069QVSAA"),
         label: "Shop pipe repair clamps on Amazon",
       },
       {
@@ -506,7 +528,7 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         label: "See the puck sensors we recommend",
       },
     ],
-    guides: [GUIDES.shopVac, GUIDES.leakDetector],
+    guides: [GUIDES.shopVac, GUIDES.leakDetector, GUIDES.pipeClamps],
   },
   "ceiling-leak-aftermath": {
     title: "After the calls — drying out",
@@ -544,7 +566,7 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         label: "See the outlet tester we recommend",
       },
     ],
-    guides: [GUIDES.voltageTester],
+    guides: [GUIDES.voltageTester, GUIDES.breakerFinders],
   },
 
   /* ---------------- Disposal jam ---------------- */

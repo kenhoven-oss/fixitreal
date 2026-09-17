@@ -102,7 +102,7 @@ export default function BestFurnaceFiltersPage() {
         <AmazonDisclosure products={products} />
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>The furnace filter is the cheapest part of the HVAC system and the one most likely to cause an expensive service call when ignored. A clogged filter overheats the furnace, trips the limit switch, and shortens the life of the blower motor — all for want of a $10 part every 60–90 days.</p>
-          <p>Below: what the MERV number means in plain terms, why higher isn't automatically better, and the picks for standard, allergy, and pet households.</p>
+          <p>Below: what the MERV number means in plain terms, why higher isn&apos;t automatically better, and the picks for standard, allergy, and pet households.</p>
         </div>
         <RecommendedProductsSection heading="Our picks" intro={<p>Match the MERV rating to the household, not the highest number on the shelf. Check the arrow on the frame points toward the furnace.</p>} products={products} />
         <BuyingGuideSections

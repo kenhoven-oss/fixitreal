@@ -86,7 +86,7 @@ export default function BestPipeRepairClampsPage() {
         </p>
         <AmazonDisclosure products={products} />
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
-          <p>A pinhole leak in a copper supply line or a hairline crack in a PVC drain line is a "stop the bleeding" situation. The right emergency repair buys you days to weeks while you schedule a permanent fix — or confirms the pipe is too far gone to clamp and a plumber is the next call.</p>
+          <p>A pinhole leak in a copper supply line or a hairline crack in a PVC drain line is a &quot;stop the bleeding&quot; situation. The right emergency repair buys you days to weeks while you schedule a permanent fix — or confirms the pipe is too far gone to clamp and a plumber is the next call.</p>
           <p>Below: three products covering pressurized supply lines, drain lines, and the first 20 minutes of any pipe emergency.</p>
         </div>
         <RecommendedProductsSection heading="Our picks" intro={<p>Three products that cover every common residential pipe leak scenario. Start with the stainless clamp for accessible mid-pipe leaks on supply lines; Fernco for drain lines; silicone tape for anything awkward or as a first-response measure.</p>} products={products} />
