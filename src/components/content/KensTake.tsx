@@ -4,13 +4,21 @@ import { kenHoven } from "@/content/authors/ken-hoven";
 
 type KensTakeProps = {
   /** One-sentence summary of the recommendation. */
-  summary: ReactNode;
+  summary?: ReactNode;
   /** What Ken would actually do in this situation. */
-  whatIWouldDo: ReactNode;
+  whatIWouldDo?: ReactNode;
   /** A common homeowner mistake to avoid. */
   commonMistake?: ReactNode;
   /** A red flag to watch for (in a quote, a contractor, or the work itself). */
   redFlag?: ReactNode;
+  /**
+   * Prose form. Newer articles write the take as a paragraph between
+   * <KensTake> tags instead of the structured props. Before this was
+   * supported, that content was silently dropped and the page rendered an
+   * empty "Ken's Take" box — on 11 live articles. Children render as the
+   * body when the structured props are absent.
+   */
+  children?: ReactNode;
 };
 
 /**
@@ -35,7 +43,9 @@ export function KensTake({
   whatIWouldDo,
   commonMistake,
   redFlag,
+  children,
 }: KensTakeProps) {
+  const isProse = !summary && !whatIWouldDo && children != null;
   return (
     <aside
       role="note"
@@ -56,28 +66,36 @@ export function KensTake({
           <p className="text-xs font-semibold uppercase tracking-[0.15em] text-amber-700">
             Ken&apos;s Take
           </p>
-          <p className="mt-1 font-serif text-lg text-navy-900 leading-snug">
-            {summary}
-          </p>
-
-          <dl className="mt-4 space-y-3 text-sm text-ink-800 leading-relaxed">
-            <div>
-              <dt className="font-semibold text-navy-900">What I&apos;d do</dt>
-              <dd className="mt-1">{whatIWouldDo}</dd>
+          {isProse ? (
+            <div className="mt-2 text-[0.95rem] text-ink-800 leading-relaxed [&>p]:mt-3 [&>p:first-child]:mt-0">
+              {children}
             </div>
-            {commonMistake && (
-              <div>
-                <dt className="font-semibold text-navy-900">Common mistake</dt>
-                <dd className="mt-1">{commonMistake}</dd>
-              </div>
-            )}
-            {redFlag && (
-              <div>
-                <dt className="font-semibold text-red-800">Red flag</dt>
-                <dd className="mt-1">{redFlag}</dd>
-              </div>
-            )}
-          </dl>
+          ) : (
+            <>
+              <p className="mt-1 font-serif text-lg text-navy-900 leading-snug">
+                {summary}
+              </p>
+
+              <dl className="mt-4 space-y-3 text-sm text-ink-800 leading-relaxed">
+                <div>
+                  <dt className="font-semibold text-navy-900">What I&apos;d do</dt>
+                  <dd className="mt-1">{whatIWouldDo}</dd>
+                </div>
+                {commonMistake && (
+                  <div>
+                    <dt className="font-semibold text-navy-900">Common mistake</dt>
+                    <dd className="mt-1">{commonMistake}</dd>
+                  </div>
+                )}
+                {redFlag && (
+                  <div>
+                    <dt className="font-semibold text-red-800">Red flag</dt>
+                    <dd className="mt-1">{redFlag}</dd>
+                  </div>
+                )}
+              </dl>
+            </>
+          )}
         </div>
       </div>
     </aside>
