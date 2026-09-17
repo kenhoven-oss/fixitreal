@@ -4,6 +4,7 @@ import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { FairPriceChecker } from "@/components/content/FairPriceChecker";
 import { ContractorRedFlagsBlock } from "@/components/content/ContractorRedFlagsBlock";
+import { DiyAlternative } from "@/components/content/DiyAlternative";
 import { LocalPriceMethodology } from "@/components/content/LocalPriceMethodology";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, articleSchema, faqSchema } from "@/lib/jsonld";
@@ -230,6 +231,8 @@ export default async function StateCostPage({ params }: { params: Params }) {
             </li>
           ))}
         </ul>
+
+        {model.diy && <DiyAlternative diy={model.diy} />}
 
         <ContractorRedFlagsBlock
           redFlags={[
