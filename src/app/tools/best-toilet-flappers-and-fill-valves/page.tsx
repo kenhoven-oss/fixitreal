@@ -24,7 +24,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — no tools, 10 minutes.",
     riskLevel: "Low.",
     verdict: "Start here. Fixes 80% of running toilets for under $8.",
-    affiliateUrl: "https://www.amazon.com/s?k=korky+universal+flapper&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00E5ICW0E?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -41,7 +41,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — wrench + 15 minutes.",
     riskLevel: "Low — shut off supply first.",
     verdict: "The standard fix. If the flapper didn't stop the running, this will.",
-    affiliateUrl: "https://www.amazon.com/s?k=fluidmaster+400a+fill+valve&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B00002ND6R?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -58,7 +58,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — complete instructions included.",
     riskLevel: "Low.",
     verdict: "Best value when the toilet is old enough that all three parts are near end-of-life.",
-    affiliateUrl: "https://www.amazon.com/s?k=fluidmaster+400crp14+complete+toilet+repair+kit&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B007TUHQWY?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -75,7 +75,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "Essential if you have a Kohler one-piece — a 2-inch flapper will not seal it.",
-    affiliateUrl: "https://www.amazon.com/s?k=korky+3+inch+flapper+toilet&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B0034LX2BG?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
