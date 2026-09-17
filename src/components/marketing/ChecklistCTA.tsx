@@ -45,12 +45,23 @@ export function ChecklistCTA({
     </>
   );
 
+  const cls =
+    "group my-8 block rounded-lg border border-ink-200 bg-ink-50 px-5 py-5 no-underline transition-colors hover:bg-white hover:shadow-sm";
+
   if (href) {
+    // A PDF served by a route handler is a file download, not a page.
+    // next/link would attempt a client-side RSC navigation to it, which is
+    // the wrong thing; a plain anchor with `download` does what the reader
+    // expects (same pattern as CalendarSignupForm).
+    if (/\.pdf$/i.test(href)) {
+      return (
+        <a href={href} download className={cls}>
+          {body}
+        </a>
+      );
+    }
     return (
-      <Link
-        href={href}
-        className="group my-8 block rounded-lg border border-ink-200 bg-ink-50 px-5 py-5 no-underline transition-colors hover:bg-white hover:shadow-sm"
-      >
+      <Link href={href} className={cls}>
         {body}
       </Link>
     );
