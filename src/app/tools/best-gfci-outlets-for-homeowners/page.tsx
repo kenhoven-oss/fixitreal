@@ -22,7 +22,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Intermediate — turn off the breaker and verify with a tester.",
     riskLevel: "Moderate — wrong LINE/LOAD wiring disables protection silently.",
     verdict: "The right outlet for most replacements. Self-test is the feature that matters.",
-    affiliateUrl: "https://www.amazon.com/s?k=leviton+20a+self+test+gfci+outlet+tamper+resistant&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B013OVCMMA?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -37,7 +37,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Intermediate.",
     riskLevel: "Moderate.",
     verdict: "The economical option for a house full of old GFCIs on 15A circuits.",
-    affiliateUrl: "https://www.amazon.com/s?k=15a+self+test+gfci+outlet+multi+pack&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B019YJPKWU?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -52,7 +52,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Intermediate.",
     riskLevel: "Moderate — outdoor boxes are frequently corroded; inspect before rewiring.",
     verdict: "Required outdoors. The WR rating and the in-use cover together are what make it work.",
-    affiliateUrl: "https://www.amazon.com/s?k=weather+resistant+gfci+outlet+with+in+use+cover&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B0G3P42YYW?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
