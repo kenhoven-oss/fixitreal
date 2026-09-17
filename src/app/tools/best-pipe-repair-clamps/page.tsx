@@ -22,7 +22,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner — tighten the clamp bolts evenly with a screwdriver.",
     riskLevel: "Low for the repair; the underlying leak is moderate if uncontrolled.",
     verdict: "The correct emergency fix for pinhole and crack leaks. Keep one in the house.",
-    affiliateUrl: "https://www.amazon.com/s?k=pipe+repair+clamp+stainless+neoprene&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B0069QVSAA?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -37,7 +37,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low — but don't leave as a permanent fix.",
     verdict: "Worth having in the emergency kit for the first-response window.",
-    affiliateUrl: "https://www.amazon.com/s?k=rescue+tape+self+fusing+silicone+pipe+repair&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B07BLZ3812?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -52,7 +52,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Intermediate — requires cutting the pipe.",
     riskLevel: "Low.",
     verdict: "The correct permanent fix for drain line cracks and breaks.",
-    affiliateUrl: "https://www.amazon.com/s?k=fernco+flexible+pipe+coupling+pvc+repair&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B000BQQU52?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
