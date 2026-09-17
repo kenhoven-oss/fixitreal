@@ -22,7 +22,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low — no panel opening required.",
     verdict: "The right tool for unlabeled panels. One-time purchase that pays for itself the first use.",
-    affiliateUrl: "https://www.amazon.com/s?k=klein+tools+ET310+circuit+breaker+finder&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B07QNMCVWP?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
   {
@@ -37,7 +37,7 @@ const products: RecommendedProduct[] = [
     skillLevel: "Beginner.",
     riskLevel: "Low.",
     verdict: "Adequate for a standard home. Save $15–$20 vs. the Klein if you'll use it only occasionally.",
-    affiliateUrl: "https://www.amazon.com/s?k=sperry+instruments+circuit+breaker+finder+CS550A&tag=fixitreal-20",
+    affiliateUrl: "https://www.amazon.com/dp/B000ET403A?tag=fixitreal-20",
     buttonText: "Check price on Amazon",
   },
 ];
