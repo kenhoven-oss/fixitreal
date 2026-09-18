@@ -506,6 +506,23 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
   },
 
   /* ---------------- Emergencies (after the shutoff steps, never before) -- */
+  "storm-tarp-stabilize": {
+    title: "For the tarp-and-stabilize step — the one thing worth buying tonight",
+    picks: [
+      {
+        name: "Heavy-duty poly tarp (12 mil or thicker, sized 4 ft past the damage on every side)",
+        why: "The blue 5-mil tarps at the register shred in the first night of wind. A 12-mil or heavier tarp lasts the week or two until the roofer gets there, and a claim adjuster will reimburse it as mitigation. Buy it bigger than you think — it has to run over the ridge and be fastened on the far side, not at the damage.",
+        href: amazonSearch("heavy duty tarp 12 mil waterproof 20x30"),
+        label: "Shop heavy-duty tarps on Amazon",
+      },
+      {
+        name: "Cap nails or 1x3 furring strips + roofing screws",
+        why: "A tarp held down with bricks is a sail. Screw 1x3 strips through the tarp into the roof deck along every edge, or use cap nails every 12 inches — the holes are small and the roofer patches them with the rest. This is what keeps the tarp on through the second storm.",
+        href: amazonSearch("plastic cap roofing nails 1 inch"),
+        label: "Shop cap nails on Amazon",
+      },
+    ],
+  },
   "pipe-burst-aftermath": {
     title: "After the water is off — what helps next",
     picks: [
