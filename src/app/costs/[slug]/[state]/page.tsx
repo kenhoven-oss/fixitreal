@@ -6,6 +6,8 @@ import { FairPriceChecker } from "@/components/content/FairPriceChecker";
 import { ContractorRedFlagsBlock } from "@/components/content/ContractorRedFlagsBlock";
 import { DiyAlternative } from "@/components/content/DiyAlternative";
 import { LocalPriceMethodology } from "@/components/content/LocalPriceMethodology";
+import { LocalLicensing } from "@/components/content/LocalLicensing";
+import { getStateLicensing, tradeForGuide } from "@/content/state-licensing";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, articleSchema, faqSchema } from "@/lib/jsonld";
 import { buildLocalCostModel } from "@/lib/local-cost-page";
@@ -181,6 +183,13 @@ export default async function StateCostPage({ params }: { params: Params }) {
           </p>
         </div>
 
+        {(() => {
+          const lic = getStateLicensing(state);
+          return lic ? (
+            <LocalLicensing stateName={stateData.name} licensing={lic} trade={tradeForGuide(slug)} />
+          ) : null;
+        })()}
+
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           {`Common ${stateData.name} job totals`}
         </h2>
@@ -250,7 +259,7 @@ export default async function StateCostPage({ params }: { params: Params }) {
             "Materials marked up more than 3× retail (a $5 part billed at $25+).",
             "A quote that doesn't separate labor, parts, permit and disposal.",
             "Pressure to approve extra repairs on the same visit without a written estimate.",
-            "No license number published on the truck, the quote or the invoice.",
+            "Can't or won't give you a license (or local registration) number you can look up.",
           ]}
           whatToAskInstead={`Ask for an itemized written estimate before any work starts, and check the license number against whichever body licenses this trade in ${stateData.name} — a state board in most states, a city or county office in the rest.`}
           whenToWalkAway="The contractor won't put scope and price in writing, or can't give you a license number you can verify."

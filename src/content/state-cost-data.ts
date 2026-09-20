@@ -68,7 +68,7 @@ export const STATES: StateCostData[] = [
     abbr: "AL",
     tier: "low",
     notes:
-      "Alabama licenses electricians and plumbers at the state level. Permit fees are typically modest ($25–$75 for residential work). Service-call rates trend below the U.S. average.",
+      "Permit fees are typically modest ($25–$75 for residential work). Service-call rates trend below the U.S. average.",
   },
   {
     slug: "arizona",
@@ -76,7 +76,7 @@ export const STATES: StateCostData[] = [
     abbr: "AZ",
     tier: "mid",
     notes:
-      "Arizona's Registrar of Contractors licenses both electrical and plumbing trades. Phoenix-area pricing runs above the state average; Tucson is closer to national. Summer-heat demand pushes HVAC-adjacent rates up June–September.",
+      "Phoenix-area pricing runs above the state average; Tucson is closer to national. Summer-heat demand pushes HVAC-adjacent rates up June–September.",
   },
   {
     slug: "california",
@@ -84,7 +84,7 @@ export const STATES: StateCostData[] = [
     abbr: "CA",
     tier: "premium",
     notes:
-      "California requires state-issued contractor licensing through the CSLB. Bay Area, LA, and San Diego carry the highest service rates in the U.S. Title 24 energy code adds compliance steps that often increase total project cost.",
+      "Bay Area, LA, and San Diego carry the highest service rates in the U.S. Title 24 energy code adds compliance steps that often increase total project cost.",
   },
   {
     slug: "colorado",
@@ -100,7 +100,7 @@ export const STATES: StateCostData[] = [
     abbr: "FL",
     tier: "mid",
     notes:
-      "Florida licenses contractors at the state level via DBPR. Service-call rates are near national average outside South Florida. Miami-Dade and Broward push toward high-tier pricing. Hurricane-season permit demand increases lead times May–November.",
+      "Service-call rates are near national average outside South Florida. Miami-Dade and Broward push toward high-tier pricing. Hurricane-season permit demand increases lead times May–November.",
   },
   {
     slug: "georgia",
@@ -108,7 +108,7 @@ export const STATES: StateCostData[] = [
     abbr: "GA",
     tier: "mid",
     notes:
-      "Georgia State Construction Industry Licensing Board licenses electricians and plumbers. Atlanta-metro rates run high-tier; rural Georgia is closer to low-tier. Most counties require permits for new circuits or fixture relocations.",
+      "Atlanta-metro rates run high-tier; rural Georgia is closer to low-tier. Most counties require permits for new circuits or fixture relocations.",
   },
   {
     slug: "illinois",
@@ -116,7 +116,7 @@ export const STATES: StateCostData[] = [
     abbr: "IL",
     tier: "high",
     notes:
-      "Chicago has its own electrical code (Chicago Electrical Code) and licensing on top of state rules — service calls in Cook County run premium-tier. Downstate Illinois is closer to mid-tier.",
+      "Chicago enforces its own Chicago Electrical Code, and service calls in Cook County run premium-tier. Downstate Illinois is closer to mid-tier.",
   },
   {
     slug: "indiana",
@@ -124,7 +124,7 @@ export const STATES: StateCostData[] = [
     abbr: "IN",
     tier: "low",
     notes:
-      "Indiana licenses plumbers at the state level; electrical licensing is by city or county. Indianapolis pricing is near national average; smaller cities run below.",
+      "Indianapolis pricing is near national average; smaller cities run below.",
   },
   {
     slug: "kentucky",
@@ -132,7 +132,7 @@ export const STATES: StateCostData[] = [
     abbr: "KY",
     tier: "low",
     notes:
-      "Kentucky State Plumbing Code and Kentucky Board of Electrical Examiners govern licensing. Permit fees are usually under $50 for residential service work.",
+      "Permit fees are usually under $50 for residential service work.",
   },
   {
     slug: "louisiana",
@@ -140,7 +140,7 @@ export const STATES: StateCostData[] = [
     abbr: "LA",
     tier: "low",
     notes:
-      "Louisiana State Plumbing Board and the State Licensing Board for Contractors handle licensing. Post-hurricane periods (typically late summer) increase demand and waiting times.",
+      "Post-hurricane periods (typically late summer) increase demand and waiting times.",
   },
   {
     slug: "maryland",
@@ -148,7 +148,7 @@ export const STATES: StateCostData[] = [
     abbr: "MD",
     tier: "high",
     notes:
-      "Maryland licenses both trades at the state level. DC-metro counties (Montgomery, Prince George's) push pricing toward premium-tier; Western Maryland is closer to mid-tier.",
+      "DC-metro counties (Montgomery, Prince George's) push pricing toward premium-tier; Western Maryland is closer to mid-tier.",
   },
   {
     slug: "massachusetts",
@@ -156,7 +156,7 @@ export const STATES: StateCostData[] = [
     abbr: "MA",
     tier: "premium",
     notes:
-      "Massachusetts has some of the strictest state electrical and plumbing codes in the U.S. Boston-metro service rates lead the country. The state requires master-licensed plumbers and electricians for most non-trivial work.",
+      "Massachusetts has some of the strictest state electrical and plumbing codes in the U.S. Boston-metro service rates lead the country.",
   },
   {
     slug: "michigan",
@@ -164,7 +164,7 @@ export const STATES: StateCostData[] = [
     abbr: "MI",
     tier: "mid",
     notes:
-      "Michigan licenses electricians and plumbers through LARA. Detroit-metro and Grand Rapids run high-tier; the U.P. is closer to low-tier.",
+      "Detroit-metro and Grand Rapids run high-tier; the U.P. is closer to low-tier.",
   },
   {
     slug: "minnesota",
@@ -172,7 +172,7 @@ export const STATES: StateCostData[] = [
     abbr: "MN",
     tier: "high",
     notes:
-      "Minnesota Department of Labor and Industry licenses both trades. Twin Cities pricing runs high-tier. Cold-climate water heater and pipe-burst work peaks December–February.",
+      "Twin Cities pricing runs high-tier. Cold-climate water heater and pipe-burst work peaks December–February.",
   },
   {
     slug: "missouri",
@@ -180,7 +180,7 @@ export const STATES: StateCostData[] = [
     abbr: "MO",
     tier: "low",
     notes:
-      "Missouri licenses plumbers at the state level; electrical licensing is largely municipal. St. Louis and Kansas City run mid-tier; outstate Missouri is below.",
+      "St. Louis and Kansas City run mid-tier; outstate Missouri is below.",
   },
   {
     slug: "nevada",
@@ -188,7 +188,7 @@ export const STATES: StateCostData[] = [
     abbr: "NV",
     tier: "high",
     notes:
-      "Nevada State Contractors Board licenses both trades. Las Vegas-metro runs high-tier; rural Nevada is closer to mid. Strict permit enforcement on new construction.",
+      "Las Vegas-metro runs high-tier; rural Nevada is closer to mid. Strict permit enforcement on new construction.",
   },
   {
     slug: "new-jersey",
@@ -196,7 +196,7 @@ export const STATES: StateCostData[] = [
     abbr: "NJ",
     tier: "premium",
     notes:
-      "New Jersey requires state-issued master electrician and master plumber licenses. NYC-metro counties (Bergen, Hudson, Essex) run premium-tier. The state's per-permit fees and inspection cycles are among the country's stricter.",
+      "NYC-metro counties (Bergen, Hudson, Essex) run premium-tier. The state's per-permit fees and inspection cycles are among the country's stricter.",
   },
   {
     slug: "new-york",
@@ -204,7 +204,7 @@ export const STATES: StateCostData[] = [
     abbr: "NY",
     tier: "premium",
     notes:
-      "New York City runs the highest service rates in the country — boroughs require NYC-issued licenses on top of state ones. Upstate New York is closer to high-tier or mid-tier outside Buffalo and Albany.",
+      "New York City runs the highest service rates in the country; upstate is closer to high- or mid-tier outside Buffalo and Rochester. Upstate New York is closer to high-tier or mid-tier outside Buffalo and Albany.",
   },
   {
     slug: "north-carolina",
@@ -212,7 +212,7 @@ export const STATES: StateCostData[] = [
     abbr: "NC",
     tier: "mid",
     notes:
-      "North Carolina State Board of Examiners licenses both trades. Charlotte and Raleigh-Durham metros push toward high-tier; Eastern NC and the mountains are closer to low-tier.",
+      "Charlotte and Raleigh-Durham metros push toward high-tier; Eastern NC and the mountains are closer to low-tier.",
   },
   {
     slug: "ohio",
@@ -220,7 +220,7 @@ export const STATES: StateCostData[] = [
     abbr: "OH",
     tier: "mid",
     notes:
-      "Ohio licenses plumbers and electricians through the state Construction Industry Examining Board. Columbus, Cincinnati, and Cleveland metros run high-tier; rural Ohio is below.",
+      "Columbus, Cincinnati, and Cleveland metros run high-tier; rural Ohio is below.",
   },
   {
     slug: "oregon",
@@ -228,7 +228,7 @@ export const STATES: StateCostData[] = [
     abbr: "OR",
     tier: "high",
     notes:
-      "Oregon Building Codes Division licenses both trades. Portland-metro runs premium-tier; Southern Oregon and the Eastern half of the state are closer to mid-tier.",
+      "Portland-metro runs premium-tier; Southern Oregon and the Eastern half of the state are closer to mid-tier.",
   },
   {
     slug: "pennsylvania",
@@ -236,7 +236,7 @@ export const STATES: StateCostData[] = [
     abbr: "PA",
     tier: "mid",
     notes:
-      "Pennsylvania has no statewide electrical licensing — it's municipal (Philadelphia, Pittsburgh have their own). Master-plumber licensing is also municipal. Major-metro pricing runs high-tier; rural is below.",
+      "Major-metro pricing runs high-tier; rural is below.",
   },
   {
     slug: "south-carolina",
@@ -244,7 +244,7 @@ export const STATES: StateCostData[] = [
     abbr: "SC",
     tier: "low",
     notes:
-      "South Carolina Contractor's Licensing Board licenses both trades. Charleston and Greenville run mid-tier; the rest of the state is closer to low-tier.",
+      "Charleston and Greenville run mid-tier; the rest of the state is closer to low-tier.",
   },
   {
     slug: "tennessee",
@@ -252,7 +252,7 @@ export const STATES: StateCostData[] = [
     abbr: "TN",
     tier: "low",
     notes:
-      "Tennessee Department of Commerce and Insurance licenses contractors. Nashville-metro runs mid-tier and rising; Memphis, Knoxville, and rural Tennessee are closer to low-tier.",
+      "Nashville-metro runs mid-tier and rising; Memphis, Knoxville, and rural Tennessee are closer to low-tier.",
   },
   {
     slug: "texas",
@@ -260,7 +260,7 @@ export const STATES: StateCostData[] = [
     abbr: "TX",
     tier: "mid",
     notes:
-      "Texas Department of Licensing and Regulation handles electrical and plumbing licensing. Austin, Houston, and Dallas-Fort Worth metros run high-tier; West Texas and the Panhandle are below. No state income tax — labor markups can be slightly lower than mid-tier states for the same work.",
+      "Austin, Houston, and Dallas-Fort Worth metros run high-tier; West Texas and the Panhandle are below. No state income tax — labor markups can be slightly lower than mid-tier states for the same work.",
   },
   {
     slug: "utah",
@@ -268,7 +268,7 @@ export const STATES: StateCostData[] = [
     abbr: "UT",
     tier: "mid",
     notes:
-      "Utah Division of Professional Licensing handles both trades. Salt Lake City and Provo-Orem run mid-to-high tier; St. George (rapidly growing) is rising fast.",
+      "Salt Lake City and Provo-Orem run mid-to-high tier; St. George (rapidly growing) is rising fast.",
   },
   {
     slug: "virginia",
@@ -276,7 +276,7 @@ export const STATES: StateCostData[] = [
     abbr: "VA",
     tier: "high",
     notes:
-      "Virginia DPOR licenses contractors. Northern Virginia (DC-metro) runs premium-tier; Hampton Roads is high-tier; Southwest Virginia is closer to low-tier.",
+      "Northern Virginia (DC-metro) runs premium-tier; Hampton Roads is high-tier; Southwest Virginia is closer to low-tier.",
   },
   {
     slug: "washington",
@@ -284,7 +284,7 @@ export const STATES: StateCostData[] = [
     abbr: "WA",
     tier: "premium",
     notes:
-      "Washington Department of Labor and Industries licenses electricians and plumbers. Seattle-metro service rates are among the country's highest. State has unusually rigorous permit enforcement.",
+      "Seattle-metro service rates are among the country's highest. State has unusually rigorous permit enforcement.",
   },
   {
     slug: "wisconsin",
@@ -292,7 +292,7 @@ export const STATES: StateCostData[] = [
     abbr: "WI",
     tier: "mid",
     notes:
-      "Wisconsin Department of Safety and Professional Services licenses both trades. Madison and Milwaukee metros run high-tier; rural Wisconsin is closer to low-tier. Winter pipe-burst work peaks January–February.",
+      "Madison and Milwaukee metros run high-tier; rural Wisconsin is closer to low-tier. Winter pipe-burst work peaks January–February.",
   },
 ];
 
