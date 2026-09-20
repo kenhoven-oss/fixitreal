@@ -11,7 +11,6 @@ import { buildMetadata } from "@/lib/metadata";
 import {
   jsonLdScript,
   articleSchema,
-  howToSchema,
   breadcrumbSchema,
 } from "@/lib/jsonld";
 import { getJob, getRenderedJobSlugs } from "@/content/jobs";
@@ -244,21 +243,9 @@ export default async function JobResultPage({ params }: { params: Params }) {
             authorName: kenHoven.name,
             articleSection: "DIY or Hire",
           }),
-          ...(j.verdict !== "hire-a-pro"
-            ? [
-                howToSchema({
-                  name: j.longTitle,
-                  description: j.reasoning,
-                  url: path,
-                  totalMinutes: j.time.diyMinutes,
-                  estimatedCostLow: j.cost.diy.low,
-                  estimatedCostHigh: j.cost.diy.high,
-                  supplies: j.partsNeeded,
-                  tools: j.toolsNeeded,
-                  steps: [{ name: "Overview", text: j.ifYouDiy }],
-                }),
-              ]
-            : []),
+          // No HowTo here: a verdict page has no step-by-step procedure, and a
+          // one-step "Overview" HowTo is schema that doesn't match visible content.
+
         ])}
       />
     </>
