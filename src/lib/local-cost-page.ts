@@ -33,6 +33,13 @@ import {
   type CostGuideForState,
   type StateCostTier,
 } from "@/content/state-cost-data";
+import {
+  DEFAULT_INCLUDED_MINUTES,
+  emergencyTotalForWindow,
+  jobTotalForWindow,
+  thresholds,
+  type ServiceCallInputs,
+} from "@/lib/service-call-math";
 
 export type LocalCostPlace = {
   /** "Ohio" or "Austin" — used inside sentences. */
@@ -60,11 +67,18 @@ const usd = (n: number) => `$${n.toLocaleString("en-US")}`;
 const usdRange = (r: { low: number; high: number }) =>
   `${usd(r.low)}–${usd(r.high)}`;
 
-/** Round a derived threshold the same way the base ranges are rounded. */
+/** Round a derived figure the same way the base ranges are rounded. */
 function step(value: number): number {
   const s = value >= 1000 ? 50 : 5;
   return Math.round(value / s) * s;
 }
+
+/** The job windows the service-call table publishes, in minutes. */
+export const SERVICE_CALL_ROWS = {
+  single: { min: 30, max: 60 },
+  twoItems: { min: 60, max: 120 },
+  emergency: { min: 30, max: 60 },
+} as const;
 
 export function buildLocalCostModel(
   guide: CostGuideForState,
@@ -78,9 +92,19 @@ export function buildLocalCostModel(
   const tier = TIER_MULTIPLIERS[place.tier];
   const pct = tierPercentBand(place.tier);
 
-  const fair = step((baseRange.low + baseRange.high) / 2);
-  const suspicious = step(baseRange.high * 1.4);
-  const walkAway = step(baseRange.high * 1.8);
+  const { fair, suspicious, walkAway } = thresholds(baseRange);
+
+  /**
+   * Every service-call number below comes from this one input set, run
+   * through src/lib/service-call-math.ts (unit-tested). If a figure on the
+   * page can't be reproduced from these inputs, it is a bug.
+   */
+  const svc: ServiceCallInputs = {
+    base: guide.base,
+    hourly: guide.hourly,
+    includedMinutes: DEFAULT_INCLUDED_MINUTES,
+    multiplier: { low: tier.low, high: tier.high },
+  };
 
   /**
    * One-line description of what `baseRange` actually measures. This is the
@@ -92,7 +116,7 @@ export function buildLocalCostModel(
     : "installed, parts and labor together";
 
   const lede = isServiceCall
-    ? `${place.label} ${guide.longName} pricing typically runs ${usdRange(baseRange)} for the trip plus the first hour, then ${usdRange(hourlyRange)}/hour. Local licensing and permit notes below, plus how we arrived at the range.`
+    ? `${place.label} ${guide.longName} pricing typically runs ${usdRange(baseRange)} for the trip plus the first hour of work, then ${usdRange(hourlyRange)}/hour after that. Local licensing and permit notes below, plus how we arrived at the range.`
     : `A ${guide.longName} in ${place.label} typically runs ${usdRange(baseRange)} installed — equipment and labor together, with no separate trip fee on a planned job. Local licensing and permit notes below, plus how we arrived at the range.`;
 
   const metaDescription = isServiceCall
@@ -102,10 +126,15 @@ export function buildLocalCostModel(
   /**
    * Job-totals table.
    *
-   * service-call: a second small item adds roughly an hour of labor to the
-   * same visit, so the honest range is (low base + low hourly) to (high
-   * base + high hourly). The old formula started at the HIGH base, which
-   * made the "bundled" low end higher than a single full-price visit.
+   * service-call: each row is total(minutes) = base + max(0, minutes −
+   * included) / 60 × hourly, at the low end of the band for the shortest
+   * plausible visit and the high end for the longest. So:
+   *   single fix, 30–60 min  → inside the included hour → the base range
+   *   two items, 60–120 min  → low: base.low (60 min is still inside the
+   *                             window); high: base.high + 1 h × hourly.high
+   *   emergency, 30–60 min   → single-fix total × 1.5 (low) … × 2 (high)
+   * The previous formula charged a full extra hour at the LOW end of the
+   * two-item row, so a 60-minute visit showed as base + hourly.
    *
    * fixed-job: there is no bundling scenario. The only real variable is
    * extra labor hours when the swap is not like-for-like, so that is what
@@ -115,24 +144,24 @@ export function buildLocalCostModel(
     ? [
         {
           job: sentenceCase(guide.jobDescription),
-          time: "30–60 min",
-          total: usdRange(baseRange),
+          time: `${SERVICE_CALL_ROWS.single.min}–${SERVICE_CALL_ROWS.single.max} min`,
+          total: usdRange(
+            jobTotalForWindow(SERVICE_CALL_ROWS.single.min, SERVICE_CALL_ROWS.single.max, svc)
+          ),
         },
         {
           job: "Two small items handled on the same visit",
-          time: "60–120 min",
-          total: usdRange({
-            low: step(baseRange.low + hourlyRange.low),
-            high: step(baseRange.high + hourlyRange.high),
-          }),
+          time: `${SERVICE_CALL_ROWS.twoItems.min}–${SERVICE_CALL_ROWS.twoItems.max} min`,
+          total: usdRange(
+            jobTotalForWindow(SERVICE_CALL_ROWS.twoItems.min, SERVICE_CALL_ROWS.twoItems.max, svc)
+          ),
         },
         {
           job: "Emergency / after-hours single fix",
-          time: "30–60 min",
-          total: usdRange({
-            low: step(baseRange.low * 1.5),
-            high: step(baseRange.high * 2),
-          }),
+          time: `${SERVICE_CALL_ROWS.emergency.min}–${SERVICE_CALL_ROWS.emergency.max} min`,
+          total: usdRange(
+            emergencyTotalForWindow(SERVICE_CALL_ROWS.emergency.min, SERVICE_CALL_ROWS.emergency.max, svc)
+          ),
         },
       ]
     : [
@@ -147,7 +176,7 @@ export function buildLocalCostModel(
       ];
 
   const tableNote = isServiceCall
-    ? `Modeled from the national service-call range for this trade, scaled to the ${place.label} tier. Pricing varies by ${place.subdivision}, scope and contractor.`
+    ? `Modeled from the national service-call range for this trade, scaled to the ${place.label} tier. The base fee covers the first ${DEFAULT_INCLUDED_MINUTES} minutes; time beyond that is billed at the hourly rate, so a 60-minute visit costs the base fee and a 120-minute visit costs the base fee plus one hour. Emergency rows apply a 1.5–2× after-hours multiplier to the whole total. Pricing varies by ${place.subdivision}, scope and contractor.`
     : `Modeled from the national installed price for this job, scaled to the ${place.label} tier. After-hours and weekend bookings raise the labor portion — typically 1.5–2× — but not the equipment cost. Pricing varies by ${place.subdivision}, scope and contractor.`;
 
   /**
@@ -159,7 +188,7 @@ export function buildLocalCostModel(
     {
       question: `How much does ${withIndefiniteArticle(guide.shortName)} cost in ${place.label}?`,
       answer: isServiceCall
-        ? `In ${place.label}, expect ${usdRange(baseRange)} for the trip plus the first 30–60 minutes, then ${usdRange(hourlyRange)}/hour after that. That first window normally covers the whole job on a ${guide.jobDescription}. Evening, weekend and overnight calls typically run 1.5–2× these numbers.`
+        ? `In ${place.label}, expect ${usdRange(baseRange)} for the trip plus the first hour, then ${usdRange(hourlyRange)}/hour after that. A ${guide.jobDescription} normally takes 30–60 minutes, so it fits inside that first hour. Evening, weekend and overnight calls typically run 1.5–2× these numbers.`
         : `In ${place.label}, expect ${usdRange(baseRange)} installed for a ${guide.jobDescription}. A planned replacement does not usually carry a separate trip or dispatch fee; work that goes beyond a like-for-like swap is billed at roughly ${usdRange(hourlyRange)}/hour on top.`,
     },
     {

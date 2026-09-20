@@ -20,6 +20,11 @@ type LocalPriceMethodologyProps = {
   localRangeMeaning: string;
   /** Human date, e.g. "September 2026". */
   reviewedOn: string;
+  /**
+   * Service-call pages only: the job-total formula, so the table rows can
+   * be reconciled by a reader. Omit on fixed-price pages.
+   */
+  jobTotalFormula?: { includedMinutes: number; hourlyRange: string };
 };
 
 /**
@@ -48,6 +53,7 @@ export function LocalPriceMethodology({
   localRange,
   localRangeMeaning,
   reviewedOn,
+  jobTotalFormula,
 }: LocalPriceMethodologyProps) {
   const steps: Array<{ label: string; body: ReactNode }> = [
     {
@@ -73,8 +79,16 @@ export function LocalPriceMethodology({
       label: "3. Result",
       body: `${localRange} ${localRangeMeaning} in ${place}.`,
     },
+    ...(jobTotalFormula
+      ? [
+          {
+            label: "4. Job totals",
+            body: `The base fee covers the first ${jobTotalFormula.includedMinutes} minutes on site. Time beyond that is billed at the local hourly rate (${jobTotalFormula.hourlyRange}/hour), prorated. So: total = base fee + (minutes − ${jobTotalFormula.includedMinutes}) ÷ 60 × hourly rate, rounded the same way. Emergency rows multiply that total by 1.5 (low end) to 2 (high end). Every figure in the job table above is produced by that formula from the two ranges here.`,
+          },
+        ]
+      : []),
     {
-      label: "4. Source category",
+      label: jobTotalFormula ? "5. Source category" : "4. Source category",
       body: "National ranges are cross-referenced from published contractor-quote aggregators and industry cost data; the regional bands follow published occupational wage and cost-of-living differences. We have not collected contractor quotes in this market, so treat the range as a modeled estimate for spotting outliers — not as a quote.",
     },
   ];

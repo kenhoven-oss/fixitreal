@@ -9,6 +9,7 @@ import { LocalPriceMethodology } from "@/components/content/LocalPriceMethodolog
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, articleSchema, faqSchema } from "@/lib/jsonld";
 import { buildLocalCostModel } from "@/lib/local-cost-page";
+import { DEFAULT_INCLUDED_MINUTES } from "@/lib/service-call-math";
 import {
   STATES,
   STATE_COST_GUIDES,
@@ -221,6 +222,11 @@ export default async function StateCostPage({ params }: { params: Params }) {
           localRange={model.baseRangeText}
           localRangeMeaning={model.baseMeaning}
           reviewedOn={REVIEWED_LABEL}
+          jobTotalFormula={
+            model.isServiceCall
+              ? { includedMinutes: DEFAULT_INCLUDED_MINUTES, hourlyRange: model.hourlyRangeText }
+              : undefined
+          }
         />
 
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
