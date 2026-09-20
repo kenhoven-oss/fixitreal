@@ -210,8 +210,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // State-level cost pages: programmatic at /costs/<slug>/<state>, one per
   // (cost guide × priority state), targeting "[trade] cost in [state]"
   // long-tail queries. Count comes from the data files, not this comment.
-  const { getAllStateCostParams } = await import("@/content/state-cost-data");
-  const stateCostEntries: MetadataRoute.Sitemap = getAllStateCostParams().map(
+  const { getAllStateCostParams, LOCAL_COST_PAGES_INDEXABLE } = await import("@/content/state-cost-data");
+  // Noindexed pages must not be in the sitemap — Google treats that as a
+  // contradiction and it wastes crawl budget on a young domain.
+  const stateCostEntries: MetadataRoute.Sitemap = (LOCAL_COST_PAGES_INDEXABLE ? getAllStateCostParams() : []).map(
     ({ slug, state }) => ({
       url: fullUrl(`/costs/${slug}/${state}`),
       lastModified: CONTENT_DATA_REVIEWED,
@@ -225,7 +227,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // "[trade] cost in [city]" long-tail queries. Higher purchase intent than
   // the state-level variant; less crowded with aggregator listings.
   const { getAllCityCostParams } = await import("@/content/city-cost-data");
-  const metroCostEntries: MetadataRoute.Sitemap = getAllCityCostParams().map(
+  const metroCostEntries: MetadataRoute.Sitemap = (LOCAL_COST_PAGES_INDEXABLE ? getAllCityCostParams() : []).map(
     ({ slug, city }) => ({
       url: fullUrl(`/costs/${slug}/metro/${city}`),
       lastModified: CONTENT_DATA_REVIEWED,

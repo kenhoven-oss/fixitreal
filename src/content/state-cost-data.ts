@@ -306,6 +306,20 @@ export const STATES: StateCostData[] = [
 export const STATE_COST_UPDATED = "2026-09-13";
 
 /**
+ * Whether the programmatic state and metro cost pages are submitted to
+ * search engines (sitemap + index directive). One switch controls both so
+ * the sitemap can never advertise a noindexed URL.
+ *
+ * Currently TRUE. 30 days of analytics (to 2026-09-20) showed these ~678
+ * pages produced 3 search visits, and a uniqueness inventory is being
+ * produced (docs/programmatic-page-inventory.md). Do not flip this to false
+ * until that inventory has been reviewed and the impact signed off —
+ * flipping it sets index:false, follow:true on every state/metro page and
+ * removes them from the sitemap.
+ */
+export const LOCAL_COST_PAGES_INDEXABLE = true;
+
+/**
  * Which cost model a guide follows. The two behave nothing alike and must
  * not share body copy.
  *

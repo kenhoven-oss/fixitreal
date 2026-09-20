@@ -16,6 +16,7 @@ import {
   getAllStateCostParams,
   getGuideBySlug,
   getStateByslug,
+  LOCAL_COST_PAGES_INDEXABLE,
 } from "@/content/state-cost-data";
 import { kenHoven } from "@/content/authors/ken-hoven";
 
@@ -58,6 +59,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     updatedAt: STATE_COST_UPDATED,
     authorName: kenHoven.name,
     section: "State Cost Guide",
+    noIndexFollow: !LOCAL_COST_PAGES_INDEXABLE,
   });
 }
 

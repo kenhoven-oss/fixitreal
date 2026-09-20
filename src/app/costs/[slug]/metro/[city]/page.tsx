@@ -13,6 +13,7 @@ import {
   STATE_COST_GUIDES,
   getGuideBySlug,
   getStateByslug,
+  LOCAL_COST_PAGES_INDEXABLE,
 } from "@/content/state-cost-data";
 import {
   CITIES,
@@ -63,6 +64,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     updatedAt: METRO_COST_UPDATED,
     authorName: kenHoven.name,
     section: "Metro Cost Guide",
+    noIndexFollow: !LOCAL_COST_PAGES_INDEXABLE,
   });
 }
 

@@ -18,6 +18,13 @@ type BuildMetadataInput = {
    */
   canonicalPath?: string;
   noIndex?: boolean;
+  /**
+   * Drop the page from search indexes but keep crawlers following its
+   * links. Used for programmatic pages that exist for internal linking and
+   * direct navigation but are too template-driven to earn a ranking on
+   * their own. Reversible by flipping one flag.
+   */
+  noIndexFollow?: boolean;
   type?: "website" | "article";
   publishedAt?: string;
   updatedAt?: string;
@@ -32,6 +39,7 @@ export function buildMetadata({
   path = "/",
   canonicalPath,
   noIndex = false,
+  noIndexFollow = false,
   type = "website",
   publishedAt,
   updatedAt,
@@ -79,6 +87,8 @@ export function buildMetadata({
     },
     robots: noIndex
       ? { index: false, follow: false }
+      : noIndexFollow
+      ? { index: false, follow: true }
       : {
           index: true,
           follow: true,
