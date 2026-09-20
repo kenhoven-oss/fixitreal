@@ -47,9 +47,9 @@ const redFlagsList = [
       "'Labor and materials — $X' isn't a quote, it's a guess. Real quotes itemize parts, labor, permits, and disposal separately.",
   },
   {
-    title: "No license number on the truck or quote",
+    title: "Won't give you a license number",
     body:
-      "In every state that licenses trades, the license number is required on advertising and quotes. No number = unlicensed work = no recourse when it fails.",
+      "Many licensing states require the license number on advertising, quotes or contracts (California, Florida and Arizona do, for example), but not all do, and some trades are licensed locally rather than by the state. The red flag is not a missing number on the truck — it is a contractor who can't or won't give you a number you can look up. Ask for it; if there is no licensing body for that trade where you live, ask for proof of insurance instead.",
   },
   {
     title: "Quote is dramatically above or below the others",
@@ -72,7 +72,7 @@ const hubFaq = [
   {
     question: "How do I verify a contractor is actually licensed?",
     answer:
-      "Every state licenses construction trades through a state board (the Contractors State License Board, Department of Consumer Affairs, or similar). Search the contractor's license number on the state board's lookup tool — it'll show their license status, classification, bond status, and complaint history. Don't trust what's printed on the truck; verify on the state site directly.",
+      "It depends on your state and trade. Most states license electricians and plumbers at the state level; general and home-improvement contractors are licensed by the state in some places (California's CSLB, Florida's DBPR), by the city or county in others, and not at all in a few. Search '[your state] contractor license lookup' — where a license exists, the board's site shows status, classification, bond and complaint history. Don't rely on what's printed on the truck; verify on the board's site directly, and if your state has no licensing for that trade, verify insurance and references instead.",
   },
   {
     question: "Are three quotes enough?",

@@ -27,7 +27,7 @@ const hubFaq = [
   {
     question: "When should I call the fire department vs. a contractor?",
     answer:
-      "Fire department for active fire, gas smell that doesn't go away after opening windows, or carbon-monoxide alarm activation. 911 for medical emergencies. Power company for downed wires or burning-smell from the panel. Plumber for active water leaks that aren't gas-line related. Electrician for sparks, smoke from outlets, or any panel issue without active fire.",
+      "911 for active fire, any gas smell (leave first, call from outside — don't wait to see if it clears), or a carbon-monoxide alarm. 911 for medical emergencies. Power company for downed wires or burning-smell from the panel. Plumber for active water leaks that aren't gas-line related. Electrician for sparks, smoke from outlets, or any panel issue without active fire.",
   },
   {
     question: "Should I shut off the main breaker during a water leak?",
@@ -73,7 +73,7 @@ export default async function EmergencyRepairsHub() {
             </p>
             <p>
               <strong className="text-navy-900">Call 911 first</strong> for
-              fire, gas smells that don&apos;t clear with ventilation,
+              fire, any gas smell (leave first, then call from outside),
               carbon-monoxide alarms, or medical emergencies. These guides
               cover what to do <em>after</em> 911 (or when the situation
               doesn&apos;t require them) to keep damage contained.

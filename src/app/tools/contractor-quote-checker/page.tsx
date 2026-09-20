@@ -28,7 +28,7 @@ const FAQ_ITEMS = [
   {
     question: "How do I verify a contractor's license?",
     answer:
-      "Every US state with contractor licensing has a public lookup tool — search '[your state] contractor license lookup' to find it. You'll see active/inactive status, license class, any complaints, and the bond amount. Cross-reference the license number on the quote against the lookup. If the number doesn't match the business name or the license is inactive, walk away.",
+      "Where a state licenses a trade, there is nearly always a public lookup — search '[your state] contractor license lookup'. Note that general-contractor licensing is state-level in some states, city/county-level in others, and absent in a few, so a missing state license isn't automatically a red flag; a contractor who can't point you to any license or insurance is. You'll see active/inactive status, license class, any complaints, and the bond amount. Cross-reference the license number on the quote against the lookup. If the number doesn't match the business name or the license is inactive, walk away.",
   },
   {
     question: "Is cash-only really a deal-breaker?",

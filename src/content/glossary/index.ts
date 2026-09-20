@@ -358,7 +358,7 @@ export const glossary: GlossaryEntry[] = [
       "A bedroom window large enough for a person to escape through during a fire — required by code in every bedroom in modern construction.",
     body: [
       "Bedroom egress windows must meet specific dimensions: minimum 5.7 square feet of clear opening, minimum 24 inches in height and 20 inches in width, with the sill no more than 44 inches off the floor. Basement bedrooms often need an egress well (a sunken pit outside the window).",
-      "Adding a bedroom to a basement or attic without proper egress isn't just a code violation — it can void homeowners insurance and complicate resale. Egress window installation in an existing basement runs $2,500–$6,000 depending on whether excavation is needed.",
+      "Adding a bedroom to a basement or attic without proper egress isn't just a code violation — it can be excluded from an insurance claim, blocks the room from counting as a bedroom at appraisal, and complicates resale. Egress window installation in an existing basement runs $2,500–$6,000 depending on whether excavation is needed.",
       "If you're buying a house with a 'bonus bedroom' that lacks egress, it isn't a legal bedroom for resale — the price should reflect that.",
     ],
   },
@@ -882,7 +882,7 @@ export const glossary: GlossaryEntry[] = [
     short:
       "A required electrical device that isolates a home's circuits from the utility grid before energizing them from a generator — prevents backfeed that can kill utility workers.",
     body: [
-      "Connecting a generator to a home without a transfer switch is illegal in nearly every jurisdiction. The danger: if you energize your house wiring from a portable generator while the grid is also fed, your power flows backward into the utility lines and can electrocute lineworkers restoring service.",
+      "Connecting a generator to house wiring without a transfer switch or interlock violates the National Electrical Code (NEC 702) as adopted in nearly every U.S. jurisdiction, and utilities prohibit it in their service terms. The danger: if you energize your house wiring from a portable generator while the grid is also fed, your power flows backward into the utility lines and can electrocute lineworkers restoring service.",
       "Transfer switches come in two types: manual (you flip the switch when grid power fails) or automatic (the switch senses the loss and starts the generator + transfers load on its own). Manual switches are $300–$600 installed; automatic are $1,500–$3,500+.",
       "Whole-home automatic generator systems (Generac, Kohler, etc.) include the transfer switch as part of the install. For homeowners using a portable generator only occasionally, a manual transfer switch with an exterior inlet is the right setup — $600–$1,500 installed by a licensed electrician.",
     ],

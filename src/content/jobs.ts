@@ -276,7 +276,7 @@ export const jobs: readonly Job[] = [
     ifYouHire:
       "A $1,350–$2,400 quote for a standard 50-gallon replacement is fair. Verify it includes: the permit, haul-away of the old unit, the expansion tank, any code-required upgrades (drip pan, straps), and labor to route the T&P discharge. $2,500–$3,500 is reasonable for tankless conversions or complex installs (moving location, upsizing, gas line work). Anything over $4,000 on a simple swap without clear justification is overpriced — get another quote. Ask for the permit number before you pay.",
     safetyNote:
-      "Water heaters involve natural gas or 240V electric, pressurized water, and carbon-monoxide-producing combustion (gas units). Mistakes cause flooding, explosions, carbon monoxide poisoning, or fire. This is a licensed-plumber-and-permit job in almost every US jurisdiction. If you proceed without professional help and a permit, you may void homeowners insurance coverage for any resulting damage.",
+      "Water heaters involve natural gas or 240V electric, pressurized water, and carbon-monoxide-producing combustion (gas units). Mistakes cause flooding, explosions, carbon monoxide poisoning, or fire. This is a licensed-plumber-and-permit job in almost every US jurisdiction. If you proceed without a permit, an insurer can deny a claim for resulting damage, and the install becomes a disclosure item at resale.",
     faq: [
       {
         question: "Why do I need a permit for a like-for-like replacement?",
@@ -512,7 +512,7 @@ export const jobs: readonly Job[] = [
     risk: "extreme",
     permit: {
       commonlyRequired: true,
-      notes: "Permit required in every US jurisdiction. Utility coordination needed to de-energize the service drop. Inspection mandatory.",
+      notes: "A permit and inspection are required for a service-panel replacement essentially everywhere the NEC is adopted (all 50 states, though enforcement is local). Utility coordination is needed to de-energize the service drop.",
     },
     time: { diyMinutes: 0, proMinutes: 480 },
     cost: {
@@ -530,7 +530,7 @@ export const jobs: readonly Job[] = [
     ifYouHire:
       "A panel replacement quote in the $1,500–$4,500 range is normal, varying based on amp service (100 vs 200), panel brand (basic Square D vs premium Siemens/Eaton), any wiring remediation, and whether the meter and service drop need upgrades. Over $5,000 on a standard residential 200-amp swap without clear justification (buried service, ground-mount enclosure, service upgrade from 100 to 200 amp) warrants a second quote. Verify the permit number is pulled before work starts, and hold final payment until the inspection passes.",
     safetyNote:
-      "Electrical panel work involves live 240V service conductors that can kill instantly. No DIY homeowner should perform this work. Every US jurisdiction requires a permit and licensed electrician for panel replacement. Insurance policies generally void coverage for damage resulting from unpermitted electrical work.",
+      "Electrical panel work involves live 240V service conductors that can kill instantly. No DIY homeowner should perform this work. A permit is required essentially everywhere, and most jurisdictions require the work to be done by a licensed electrician (a few allow an owner-occupant to pull the permit). Insurers can deny a claim for damage traced to unpermitted electrical work.",
     faq: [
       {
         question: "Can I at least replace breakers myself?",

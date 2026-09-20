@@ -106,7 +106,7 @@ const CHECKLIST: CheckItem[] = [
     id: "permits",
     question: "Is there no language about who pulls permits (or does the contractor say no permits are needed)?",
     detail:
-      "Permit responsibility belongs in the contract. A common scam: contractor avoids permits to save time and money, leaves you exposed at sale-of-home (unpermitted work is a disclosure liability) and at insurance claim time (unpermitted work can void coverage). Many jurisdictions require permits for electrical, plumbing, structural, and HVAC work — even on small projects.",
+      "Permit responsibility belongs in the contract. A common scam: contractor avoids permits to save time and money, leaves you exposed at sale-of-home (unpermitted work is a disclosure liability) and at insurance claim time (an insurer can deny a claim traced to unpermitted work). Many jurisdictions require permits for electrical, plumbing, structural, and HVAC work — even on small projects.",
     severity: "high",
     clarifyingQuestion:
       "Will permits be required for this work? If yes, who pulls them — you or me? Can the contract explicitly state that permits are the contractor's responsibility and that work will be inspected?",
