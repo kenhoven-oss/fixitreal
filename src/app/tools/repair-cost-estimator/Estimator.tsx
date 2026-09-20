@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import type { Job, Verdict } from "@/content/jobs";
+import { jobHref, type Job, type Verdict } from "@/content/jobs";
 
 /**
  * Repair Cost Estimator — pick a repair type, see what it should cost and
@@ -253,7 +253,7 @@ function JobCard({ job }: { job: Job }) {
               </Link>
             )}
             <Link
-              href={`/tools/diy-or-hire/${job.slug}`}
+              href={jobHref(job.slug)}
               className="no-underline text-navy-700 hover:text-navy-900"
             >
               → Full decision card with reasoning

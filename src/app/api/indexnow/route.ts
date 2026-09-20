@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { env } from "@/lib/env";
 import { submitToIndexNow } from "@/lib/indexnow";
 import { loadAllArticles } from "@/lib/articles-loader";
-import { getAllJobSlugs } from "@/content/jobs";
+import { getRenderedJobSlugs } from "@/content/jobs";
 
 /**
  * IndexNow trigger — manual or via Vercel Cron.
@@ -48,7 +48,7 @@ export async function GET(req: Request) {
   const articles = await loadAllArticles();
   const articleUrls = articles.map((a) => `${env.siteUrl}${a.path}`);
 
-  const jobUrls = getAllJobSlugs().map(
+  const jobUrls = getRenderedJobSlugs().map(
     (slug) => `${env.siteUrl}/tools/diy-or-hire/${slug}`
   );
 

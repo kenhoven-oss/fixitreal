@@ -14,9 +14,10 @@
     "check-anchors": "node scripts/check-toc-anchors.mjs",
     "check-text": "node scripts/check-rendered-text.mjs",
     "check-affiliate-tags": "node scripts/check-affiliate-tags.mjs",
-    "check-all": "npm run lint && npm run test:unit && npm run check-entities && npm run check-anchors && npm run check-affiliate-tags && npm run check-text",
+    "check-all": "npm run lint && npm run test:unit && npm run check-entities && npm run check-anchors && npm run check-affiliate-tags && npm run check-text && npm run content-qa",
     "audit-affiliate-destinations": "node scripts/audit-affiliate-destinations.mjs",
-    "test:unit": "node --experimental-strip-types --test \"tests/**/*.test.ts\""
+    "test:unit": "node --experimental-strip-types --test \"tests/**/*.test.ts\"",
+    "content-qa": "node scripts/content-qa.mjs"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",

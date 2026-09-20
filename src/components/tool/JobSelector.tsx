@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Job } from "@/content/jobs";
+import { jobHref, type Job } from "@/content/jobs";
 
 type JobSelectorProps = {
   jobs: readonly Job[];
@@ -23,7 +23,7 @@ export function JobSelector({ jobs }: JobSelectorProps) {
       {jobs.map((j) => (
         <Link
           key={j.slug}
-          href={`/tools/diy-or-hire/${j.slug}`}
+          href={jobHref(j.slug)}
           className="group block rounded-lg border border-ink-200 bg-white p-5 no-underline transition-colors hover:border-navy-300 hover:shadow-sm"
         >
           <div className="flex items-start justify-between gap-3">

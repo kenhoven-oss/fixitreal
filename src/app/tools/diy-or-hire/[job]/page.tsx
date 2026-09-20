@@ -14,7 +14,7 @@ import {
   howToSchema,
   breadcrumbSchema,
 } from "@/lib/jsonld";
-import { getJob, getAllJobSlugs } from "@/content/jobs";
+import { getJob, getRenderedJobSlugs } from "@/content/jobs";
 import { kenHoven } from "@/content/authors/ken-hoven";
 
 type Params = Promise<{ job: string }>;
@@ -26,21 +26,8 @@ type Params = Promise<{ job: string }>;
  * at the edge. The runtime page handler also notFound()s them as a
  * defense-in-depth check in case the redirect ever misfires.
  */
-const REDIRECTED_JOB_SLUGS = new Set([
-  "replace-toilet",
-  "replace-garbage-disposal",
-  "install-ceiling-fan",
-  "install-dishwasher",
-  "install-garage-door-opener",
-  "replace-water-heater",
-  "unclog-drain",
-  "replace-outlet-gfci",
-]);
-
 export function generateStaticParams() {
-  return getAllJobSlugs()
-    .filter((job) => !REDIRECTED_JOB_SLUGS.has(job))
-    .map((job) => ({ job }));
+  return getRenderedJobSlugs().map((job) => ({ job }));
 }
 
 export async function generateMetadata({ params }: { params: Params }) {

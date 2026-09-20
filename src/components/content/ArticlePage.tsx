@@ -29,7 +29,7 @@ import { ProductPicks } from "@/components/content/ProductPicks";
 import { jsonLdScript, articleSchema, howToSchema } from "@/lib/jsonld";
 import type { LoadedArticle } from "@/lib/articles-loader";
 import { loadArticleTitle } from "@/lib/articles-loader";
-import { getJob } from "@/content/jobs";
+import { getJob, jobHref } from "@/content/jobs";
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { site } from "@/content/site";
 import { extractToc } from "@/lib/toc";
@@ -352,17 +352,33 @@ export async function ArticlePage({ article }: ArticlePageProps) {
                 </Link>
               </li>
             ))}
-            {frontmatter.relatedJob && (
+            {frontmatter.relatedJob &&
+              jobHref(frontmatter.relatedJob) !==
+                (frontmatter.relatedDecision ? `/diy-or-hire/${frontmatter.relatedDecision}` : "") && (
               <li>
                 <Link
-                  href={`/tools/diy-or-hire/${frontmatter.relatedJob}`}
+                  href={jobHref(frontmatter.relatedJob)}
                   className="no-underline text-navy-700 hover:text-navy-900"
                 >
                   → {relatedJobData?.shortTitle ?? frontmatter.relatedJob.replace(/-/g, " ")}
                 </Link>
               </li>
             )}
-            {frontmatter.related?.map((r) => {
+            {frontmatter.related
+              ?.filter((r) => {
+                // Skip anything the typed shortcuts above already rendered —
+                // the same href twice in one "Related" list reads as a
+                // template bug and is one in crawler audits.
+                const typed = new Set<string>([
+                  frontmatter.relatedDecision ? `/diy-or-hire/${frontmatter.relatedDecision}` : "",
+                  frontmatter.relatedCost ? `/costs/${frontmatter.relatedCost}` : "",
+                  frontmatter.relatedJob ? jobHref(frontmatter.relatedJob) : "",
+                  ...(frontmatter.relatedAdvice ?? []).map((a) => `/advice/${a}`),
+                ]);
+                return !typed.has(r.path);
+              })
+              .filter((r, i, arr) => arr.findIndex((x) => x.path === r.path) === i)
+              .map((r) => {
               const fallbackLabel = r.path
                 .replace(/^\//, "")
                 .split("/")

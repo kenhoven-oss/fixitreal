@@ -556,6 +556,38 @@ export const jobs: readonly Job[] = [
   },
 ] as const;
 
+/**
+ * Where each job's decision page actually lives.
+ *
+ * Eight of the ten jobs were folded into hand-written /diy-or-hire/<slug>
+ * articles; the old /tools/diy-or-hire/<job> URLs 301 to them (see
+ * next.config.ts). Internal links must point at the destination, not the
+ * redirect — a link that lands on a 301 leaks link equity and shows up as a
+ * "redirected internal link" in every crawler audit. Every component that
+ * links to a job goes through this, and the sitemap/search index only list
+ * the two jobs that still render at /tools/diy-or-hire/<job>.
+ */
+export const JOB_PAGE_OVERRIDES: Readonly<Record<string, string>> = {
+  "replace-toilet": "/diy-or-hire/toilet",
+  "replace-garbage-disposal": "/diy-or-hire/garbage-disposal",
+  "install-ceiling-fan": "/diy-or-hire/ceiling-fan",
+  "install-dishwasher": "/diy-or-hire/dishwasher",
+  "install-garage-door-opener": "/diy-or-hire/garage-door-opener",
+  "replace-water-heater": "/diy-or-hire/water-heater",
+  "unclog-drain": "/diy-or-hire/unclog-drain",
+  "replace-outlet-gfci": "/diy-or-hire/gfci-outlet",
+};
+
+/** Canonical href for a job's decision page. */
+export function jobHref(slug: string): string {
+  return JOB_PAGE_OVERRIDES[slug] ?? `/tools/diy-or-hire/${slug}`;
+}
+
+/** Jobs that still render at /tools/diy-or-hire/<job> (not redirected). */
+export function getRenderedJobSlugs(): string[] {
+  return jobs.map((j) => j.slug).filter((s) => !(s in JOB_PAGE_OVERRIDES));
+}
+
 export function getJob(slug: string): Job | undefined {
   return jobs.find((j) => j.slug === slug);
 }

@@ -35,6 +35,7 @@ export const articleFrontmatterSchema = z.object({
   relatedCost: z.string().optional(),
   relatedDecision: z.string().optional(),
   relatedAdvice: z.array(z.string()).optional(),
+  /** Must be a slug from src/content/jobs.ts — validated at build. */
   relatedJob: z.string().optional(),
 
   /**

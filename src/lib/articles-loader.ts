@@ -1,5 +1,7 @@
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
+import { getJob } from "@/content/jobs";
+import { existsSync } from "node:fs";
 import matter from "gray-matter";
 import {
   articleFrontmatterSchema,
@@ -30,6 +32,28 @@ export async function loadArticle(
       slug,
       pillar,
     });
+    // Cross-reference checks the schema can't express: every typed
+    // shortcut must point at something that exists, or the page renders a
+    // link to a 404 / a redirect. Fail the build instead.
+    if (frontmatter.relatedJob && !getJob(frontmatter.relatedJob)) {
+      throw new Error(
+        `${pillar}/${slug}.mdx: relatedJob "${frontmatter.relatedJob}" is not a job slug in src/content/jobs.ts`
+      );
+    }
+    for (const [key, targetPillar] of [
+      ["relatedDecision", "diy-or-hire"],
+      ["relatedCost", "costs"],
+    ] as const) {
+      const v = frontmatter[key];
+      if (v && !existsSync(path.join(CONTENT_ROOT, targetPillar, `${v}.mdx`))) {
+        throw new Error(`${pillar}/${slug}.mdx: ${key} "${v}" has no article at ${targetPillar}/${v}.mdx`);
+      }
+    }
+    for (const a of frontmatter.relatedAdvice ?? []) {
+      if (!existsSync(path.join(CONTENT_ROOT, "advice", `${a}.mdx`))) {
+        throw new Error(`${pillar}/${slug}.mdx: relatedAdvice "${a}" has no article at advice/${a}.mdx`);
+      }
+    }
     return { frontmatter, content, path: `/${pillar}/${slug}` };
   } catch (err) {
     if ((err as NodeJS.ErrnoException).code === "ENOENT") return null;

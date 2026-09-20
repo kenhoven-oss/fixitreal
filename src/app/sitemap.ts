@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { env } from "@/lib/env";
-import { getAllJobSlugs } from "@/content/jobs";
+import { getRenderedJobSlugs } from "@/content/jobs";
 import { loadAllArticles } from "@/lib/articles-loader";
 import { getAllTopics } from "@/lib/topics";
 
@@ -154,18 +154,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // next.config.ts. Sitemaps should list canonical URLs only; including a
   // redirect source wastes Google's crawl budget and can suppress the
   // canonical destination in mixed-signal cases.
-  const redirectedJobSlugs = new Set([
-    "replace-toilet",
-    "replace-garbage-disposal",
-    "install-ceiling-fan",
-    "install-dishwasher",
-    "install-garage-door-opener",
-    "replace-water-heater",
-    "unclog-drain",
-    "replace-outlet-gfci",
-  ]);
-  const toolEntries: MetadataRoute.Sitemap = getAllJobSlugs()
-    .filter((slug) => !redirectedJobSlugs.has(slug))
+    const toolEntries: MetadataRoute.Sitemap = getRenderedJobSlugs()
     .map((slug) => ({
       url: fullUrl(`/tools/diy-or-hire/${slug}`),
       lastModified: CONTENT_DATA_REVIEWED,

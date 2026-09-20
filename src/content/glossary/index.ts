@@ -22,7 +22,25 @@ export type GlossaryEntry = {
   alsoCalled?: string[];
   /** Optional related links into the rest of the site. */
   related?: Array<{ path: string; label: string }>;
+  /**
+   * Indefinite article for the "What is ___?" heading. Defaults to a/an by
+   * first letter. Set "" for uncountable or comparison terms ("What is
+   * amperage?", "What is asphalt shingle vs metal roof?"). Set "a" for
+   * vowel-spelled, consonant-sounding terms ("a Ufer ground").
+   */
+  article?: "a" | "an" | "";
 };
+
+/** "What is an AFCI…?" / "What is amperage…?" — the H1 and Article headline. */
+export function glossaryHeading(entry: GlossaryEntry): string {
+  const art =
+    entry.article !== undefined
+      ? entry.article
+      : /^[aeiou]/i.test(entry.term)
+        ? "an"
+        : "a";
+  return art ? `What is ${art} ${entry.term}?` : `What is ${entry.term}?`;
+}
 
 export const glossary: GlossaryEntry[] = [
   {
@@ -156,6 +174,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "ufer-ground",
     term: "Ufer ground (concrete-encased electrode)",
+    article: "a",
     alsoCalled: ["concrete-encased grounding electrode"],
     short:
       "A grounding system that uses the rebar in the home's foundation as the primary path to earth — required in most new construction since 2008.",
@@ -457,6 +476,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "r-value",
     term: "R-value",
+    article: "an",
     short:
       "A measure of insulation's resistance to heat transfer. Higher R-value = better insulation. Used to spec attic, wall, and floor insulation.",
     body: [
@@ -590,6 +610,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "lvl-beam",
     term: "LVL beam",
+    article: "an",
     alsoCalled: ["laminated veneer lumber", "engineered beam"],
     short: "Engineered structural lumber made by laminating thin wood veneers together. Stronger than dimensional lumber for the same size — used to span openings created by.",
     body: [
@@ -647,6 +668,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "efflorescence",
     term: "Efflorescence",
+    article: "",
     short:
       "White, powdery mineral residue on the inside of a basement wall or concrete. Indicates that water is moving through the wall and depositing minerals as it dries.",
     body: [
@@ -789,6 +811,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "asphalt-vs-metal-roof",
     term: "Asphalt shingle vs metal roof",
+    article: "",
     short:
       "Asphalt is cheaper, lasts 20–30 years; metal is 2–3× more expensive but lasts 40–70 years and handles weather extremes better.",
     body: [
@@ -881,6 +904,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "amperage",
     term: "Amperage (home electrical service)",
+    article: "",
     short:
       "The capacity of the home's main electrical service, measured in amps. Most modern homes have 100A, 150A, or 200A service.",
     body: [
@@ -940,6 +964,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "egress-vs-emergency-escape",
     term: "Egress vs emergency escape opening",
+    article: "",
     short:
       "Egress is a code-compliant exit from any habitable space; emergency escape opening is the specific code term for the window or door that satisfies it in bedrooms.",
     body: [
@@ -1011,6 +1036,7 @@ export const glossary: GlossaryEntry[] = [
   {
     slug: "ufer-vs-ground-rod",
     term: "Ufer ground vs ground rod",
+    article: "",
     short:
       "Both connect a home's electrical system to earth for safety. Ufer ground uses rebar in the foundation; ground rod is a copper-coated steel rod driven into the ground.",
     body: [

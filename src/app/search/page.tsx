@@ -3,7 +3,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SearchClient, type SearchItem } from "@/components/search/SearchClient";
 import { buildMetadata } from "@/lib/metadata";
 import { loadAllArticles } from "@/lib/articles-loader";
-import { jobs } from "@/content/jobs";
+import { jobs, jobHref } from "@/content/jobs";
 
 export const metadata = buildMetadata({
   title: "Search",
@@ -47,7 +47,7 @@ export default async function SearchPage({
   const jobItems: SearchItem[] = jobs.map((j) => ({
     title: j.longTitle,
     description: j.reasoning,
-    path: `/tools/diy-or-hire/${j.slug}`,
+    path: jobHref(j.slug),
     pillarLabel: "Decision tool",
     // Derive searchable keywords from trade, verdict, and slug tokens.
     keywords: [

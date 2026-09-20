@@ -7,6 +7,7 @@ import { jsonLdScript, articleSchema } from "@/lib/jsonld";
 import {
   getAllGlossarySlugs,
   getGlossaryEntry,
+  glossaryHeading,
 } from "@/content/glossary";
 import { kenHoven } from "@/content/authors/ken-hoven";
 
@@ -57,7 +58,7 @@ export default async function GlossaryEntryPage({ params }: { params: Params }) 
           Glossary
         </p>
         <h1 className="mt-3 font-serif text-4xl md:text-5xl text-navy-900 leading-tight">
-          What is a {entry.term}?
+          {glossaryHeading(entry)}
         </h1>
         {entry.alsoCalled && entry.alsoCalled.length > 0 && (
           <p className="mt-2 text-sm text-ink-500">
@@ -106,7 +107,7 @@ export default async function GlossaryEntryPage({ params }: { params: Params }) 
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLdScript([
           articleSchema({
-            headline: `What is a ${entry.term}?`,
+            headline: glossaryHeading(entry),
             description: entry.short,
             url: path,
             datePublished: "2026-05-16",
