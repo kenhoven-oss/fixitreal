@@ -140,12 +140,31 @@ function fullUrl(path: string): string {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const buyingGuides = await discoverBuyingGuideRoutes();
   const allStaticRoutes = [...staticRoutes, ...buyingGuides];
+  const articlesForHubs = await loadAllArticles();
+
+  /**
+   * lastmod for a hub is the newest updatedAt/publishedAt among the
+   * articles it lists — not the build time. A build-time stamp says
+   * "changed every deploy", which is false and teaches crawlers to ignore
+   * the field. Hubs whose pillar has no articles (about, legal, tools)
+   * fall back to the newest article on the site, which is the last time
+   * their listings could have changed.
+   */
+  const newest = (list: typeof articlesForHubs) =>
+    list.reduce<Date | undefined>((acc, a) => {
+      const d = new Date(`${a.frontmatter.updatedAt ?? a.frontmatter.publishedAt}T00:00:00.000Z`);
+      return !acc || d > acc ? d : acc;
+    }, undefined);
+  const siteNewest = newest(articlesForHubs) ?? now;
+  const hubLastmod = (path: string): Date => {
+    const pillar = path.replace(/^\//, "");
+    const inPillar = articlesForHubs.filter((a) => a.frontmatter.pillar === pillar);
+    return inPillar.length ? (newest(inPillar) ?? siteNewest) : siteNewest;
+  };
 
   const staticEntries: MetadataRoute.Sitemap = allStaticRoutes.map((r) => ({
     url: fullUrl(r.path),
-    // Hub/index pages genuinely re-render from the whole article set, so a
-    // build-time lastmod is honest for them. Buying guides supply their own.
-    lastModified: r.lastModified ?? now,
+    lastModified: r.lastModified ?? hubLastmod(r.path),
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }));
@@ -179,7 +198,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const topics = await getAllTopics();
   const topicEntries: MetadataRoute.Sitemap = topics.map((t) => ({
     url: fullUrl(`/topics/${t.slug}`),
-    lastModified: now,
+    lastModified: siteNewest,
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }));
