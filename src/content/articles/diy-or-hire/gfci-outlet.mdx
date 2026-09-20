@@ -22,22 +22,22 @@ howTo:
   supplies:
     - "Replacement GFCI outlet (15A or 20A — match the existing)"
   steps:
-    - name: "Identify the breaker and turn it off"
-      text: "Go to the electrical panel, find the breaker that feeds this outlet, and switch it off."
+    - name: "Identify the breaker"
+      text: "Go to the panel and find the breaker feeding this outlet. Turn it off."
     - name: "Confirm the outlet is dead"
-      text: "Plug a lamp in or touch a voltage tester to both slots. If anything lights up, stop — the wrong breaker is off."
-    - name: "Remove the wall plate and pull the outlet from the box"
-      text: "Take off the wall plate, then unscrew the outlet from the box and pull it out without disconnecting wires yet."
-    - name: "Identify Line vs. Load and label"
-      text: "If two cables enter the box, label the one feeding into the LINE terminals as Line with painter's tape. The other is Load (downstream)."
+      text: "Plug a lamp in or use the voltage tester at both slots. No power."
+    - name: "Remove the wall plate and outlet"
+      text: "Pull the outlet out of the box. Don't disconnect anything yet."
+    - name: "Identify Line vs. Load"
+      text: "If there are two cables in the box: one is Line (incoming, from breaker), one is Load (outgoing, to downstream outlets). With the breaker on, the Line is the one that's hot. With the breaker off, you can't tell electrically — so this is the moment to label them with painters tape *before* disconnecting anything. If you're replacing an existing GFCI, the wires going to \"LINE\" on the old unit are Line; same for Load."
     - name: "Disconnect the old outlet"
-      text: "Loosen the terminal screws, pull each wire off, and note the colors so reassembly is identical."
+      text: "Loosen the terminal screws, pull each wire off, note the colors."
     - name: "Connect the new GFCI"
-      text: "Black to brass on Line, white to silver on Line. Black to brass on Load, white to silver on Load (leave Load empty if there's no downstream cable). Bare or green to the ground screw."
-    - name: "Tuck wires in and seat the outlet"
-      text: "Fold the wires back without sharp bends. Push the GFCI into the box, screw it in, and replace the wall plate."
-    - name: "Restore power and verify protection"
-      text: "Turn the breaker back on. Press TEST — the outlet should click off (red LED). Press RESET — power restored. Plug a lamp in and confirm downstream outlets are also protected."
+      text: "Line: black wire on Line brass terminal, white wire on Line silver terminal. Load: black wire on Load brass terminal, white wire on Load silver terminal. *(If there's no Load cable, leave the Load terminals empty and don't remove the warning sticker over them.)* Ground: bare or green wire on the green grounding screw."
+    - name: "Tuck wires into the box"
+      text: "Fold the wires into the box without bending them sharply. Push the outlet in, screw it to the box, and replace the wall plate."
+    - name: "Restore power"
+      text: "Press the TEST button — outlet should click off (red LED). Press RESET — power restored. Plug a lamp in to verify, and confirm any downstream outlets work and are protected."
 relatedAdvice:
   - "gfci-outlet-keeps-tripping"
   - "breaker-keeps-tripping"
@@ -103,19 +103,10 @@ What you'll need:
 - Wire strippers.
 - Painters tape and a pen for labeling.
 
-Steps:
+The steps:
 
-1. **Identify the breaker.** Go to the panel and find the breaker feeding this outlet. Turn it off.
-2. **Confirm the outlet is dead.** Plug a lamp in or use the voltage tester at both slots. No power.
-3. **Remove the wall plate and outlet.** Pull the outlet out of the box. Don't disconnect anything yet.
-4. **Identify Line vs. Load.** If there are two cables in the box: one is Line (incoming, from breaker), one is Load (outgoing, to downstream outlets). With the breaker on, the Line is the one that's hot. With the breaker off, you can't tell electrically — so this is the moment to label them with painters tape *before* disconnecting anything. If you're replacing an existing GFCI, the wires going to "LINE" on the old unit are Line; same for Load.
-5. **Disconnect the old outlet.** Loosen the terminal screws, pull each wire off, note the colors.
-6. **Connect the new GFCI.**
-   - Line: black wire on Line brass terminal, white wire on Line silver terminal.
-   - Load: black wire on Load brass terminal, white wire on Load silver terminal. *(If there's no Load cable, leave the Load terminals empty and don't remove the warning sticker over them.)*
-   - Ground: bare or green wire on the green grounding screw.
-7. **Tuck wires into the box** without bending them sharply. Push the outlet into the box. Screw it in. Replace the wall plate.
-8. **Restore power.** Press the TEST button — outlet should click off (red LED). Press RESET — power restored. Plug a lamp in to verify, and confirm any downstream outlets work and are protected.
+The eight steps, including which wire goes to which terminal, are in the step-by-step block at the top of this page. The one that matters most is labeling Line vs. Load *before* you disconnect anything — with the breaker off you cannot tell them apart electrically.
+
 
 <ProductPicks id="gfci-swap-parts" />
 
