@@ -1,3 +1,4 @@
+import { getContentStats } from "@/lib/content-stats";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -139,9 +140,11 @@ export const metadata = buildMetadata({
   path: "/tools",
 });
 
-export default function ToolsHub() {
-  const verdictCount = jobs.length;
-  const buyingGuideCount = buyingGuides.length;
+export default async function ToolsHub() {
+  // Derived from the content collections at build time — see content-stats.ts.
+  const stats = await getContentStats();
+  const verdictCount = stats.diyVerdicts;
+  const buyingGuideCount = stats.buyingGuides;
 
   return (
     <>
@@ -177,7 +180,7 @@ export default function ToolsHub() {
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           <Card
             href="/tools/diy-or-hire"
-            eyebrow={`Decision database · ${verdictCount} jobs`}
+            eyebrow={`Decision database · ${jobs.length} jobs`}
             title="DIY or Hire"
             description="Pick a job. Get a verdict, a cost comparison, permit rules, and our reasoning. No quiz — just the answer."
           />
