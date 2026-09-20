@@ -56,7 +56,6 @@ const shingles = (text, n = 8) => {
 
 const files = walk(BUILD);
 const all = files.map((f) => ({ path: pathOf(f), html: readFileSync(f, "utf8") }));
-const byPath = new Map(all.map((p) => [p.path, p]));
 
 // inbound internal links across the whole site
 const inbound = new Map();
