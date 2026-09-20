@@ -238,7 +238,7 @@ export default function BestFireExtinguishersForHomePage() {
               5-lb won&apos;t fit.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "UL 711 ratings and NFPA 10 sizing guidance", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections

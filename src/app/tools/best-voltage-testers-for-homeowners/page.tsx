@@ -263,7 +263,7 @@ export default function BestVoltageTestersGuide() {
               finder is an optional convenience.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "UL 61010 / CAT ratings", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections

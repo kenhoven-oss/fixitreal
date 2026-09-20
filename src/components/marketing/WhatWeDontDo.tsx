@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const items = [
   "No home warranty affiliates, ever",
-  "No fake hands-on reviews — every buying guide says whether a pick was tested or researched",
+  "No fake hands-on reviews — every buying guide is labeled Hands-on tested, Personally used, or Editorial research only, with who checked it and when",
   "No AI-written content without human review",
   "No claim that every contractor in a lead-gen network has been personally vetted",
   "No sponsored posts disguised as editorial",

@@ -73,7 +73,7 @@ export default function BestCircuitBreakerFindersPage() {
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>An unlabeled electrical panel is more than an annoyance — it means every small repair requires either guessing or flipping every breaker in the house. A circuit breaker finder solves this once, correctly, in an afternoon.</p>
         </div>
-        <RecommendedProductsSection heading="Our picks" intro={<p>Two options at different price points — both do the same job in a standard residential panel.</p>} products={products} />
+        <RecommendedProductsSection heading="Our picks" intro={<p>Two options at different price points — both do the same job in a standard residential panel.</p>} products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "Manufacturer accuracy specifications", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }} />
         <BuyingGuideSections
           whoShouldBuy={["Anyone with an unlabeled or incorrectly labeled electrical panel.", "Anyone doing their own electrical work and needing to confirm which breaker to flip.", "Homeowners buying a house with an unlabeled panel — label it on move-in day."]}
           whoShouldSkip={["Anyone whose panel is already accurately labeled."]}

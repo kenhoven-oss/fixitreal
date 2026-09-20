@@ -245,7 +245,7 @@ export default function BestSmokeDetectorsForHomeownersPage() {
               hardwired option is for like-for-like replacement only.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "UL 217 listing and NFPA 72 placement guidance", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections

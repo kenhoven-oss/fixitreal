@@ -238,7 +238,7 @@ export default function BestWaterLeakDetectorsPage() {
               had a major leak.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "Independent product-safety listings where available", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections

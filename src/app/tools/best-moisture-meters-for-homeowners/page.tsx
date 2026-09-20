@@ -236,7 +236,7 @@ export default function BestMoistureMetersGuide() {
               who&apos;d rather not decide.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "ASTM D4444 moisture-meter guidance", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections

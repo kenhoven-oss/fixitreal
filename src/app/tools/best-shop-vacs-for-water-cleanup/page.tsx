@@ -237,7 +237,7 @@ export default function BestShopVacsGuide() {
               whole-floor events are a real risk.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "Manufacturer CFM/water-lift specifications", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections

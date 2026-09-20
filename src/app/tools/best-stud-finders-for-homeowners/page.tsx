@@ -181,7 +181,7 @@ export default function BestStudFindersPage() {
               genuinely the better tool for standard drywall.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "Manufacturer detection-depth specifications", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections

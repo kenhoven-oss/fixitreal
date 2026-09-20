@@ -187,7 +187,7 @@ export default function BestDrywallRepairKitsPage() {
               for nail holes, or spackling for a 4-inch hole.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections

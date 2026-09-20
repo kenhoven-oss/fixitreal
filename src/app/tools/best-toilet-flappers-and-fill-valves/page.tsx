@@ -199,7 +199,7 @@ export default function BestToiletFlappersPage() {
               $8. Move to the fill valve if a flapper swap doesn&apos;t stop it.
             </p>
           }
-          products={products}
+          products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }}
         />
 
         <BuyingGuideSections
