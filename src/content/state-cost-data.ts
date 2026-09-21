@@ -42,19 +42,22 @@ export type StateCostData = {
  * Multiplier bands for each tier. Applied to the base range from the
  * parent cost article to produce a state-adjusted range.
  *
- * - "low":     ~0.75× — rural / lower wage states
- * - "mid":     ~1.00× — national average
- * - "high":    ~1.20× — major metros, higher wage states
- * - "premium": ~1.45× — highest-cost coastal markets
+ * - "low":     0.70–0.85× — below the national average
+ * - "mid":     0.90–1.10× — near the national average
+ * - "high":    1.10–1.30× — above the national average
+ * - "premium": 1.30–1.60× — the highest-cost markets
  */
 export const TIER_MULTIPLIERS: Record<
   StateCostTier,
   { low: number; high: number; label: string }
 > = {
-  low: { low: 0.7, high: 0.85, label: "Lower-wage rural" },
-  mid: { low: 0.9, high: 1.1, label: "National average" },
-  high: { low: 1.1, high: 1.3, label: "Major-metro / higher-wage" },
-  premium: { low: 1.3, high: 1.6, label: "High-cost coastal" },
+  // Labels describe the PRICE LEVEL, not the geography. "Lower-wage rural"
+  // was being printed on Cleveland, Detroit, Memphis and other major metros
+  // that sit in the low band; "High-cost coastal" on Denver and Anchorage.
+  low: { low: 0.7, high: 0.85, label: "Below national average" },
+  mid: { low: 0.9, high: 1.1, label: "Near national average" },
+  high: { low: 1.1, high: 1.3, label: "Above national average" },
+  premium: { low: 1.3, high: 1.6, label: "Highest-cost markets" },
 };
 
 /**
@@ -310,14 +313,13 @@ export const STATE_COST_UPDATED = "2026-09-13";
  * search engines (sitemap + index directive). One switch controls both so
  * the sitemap can never advertise a noindexed URL.
  *
- * Currently TRUE. 30 days of analytics (to 2026-09-20) showed these ~678
- * pages produced 3 search visits, and a uniqueness inventory is being
- * produced (docs/programmatic-page-inventory.md). Do not flip this to false
- * until that inventory has been reviewed and the impact signed off —
- * flipping it sets index:false, follow:true on every state/metro page and
- * removes them from the sitemap.
+ * Currently FALSE (2026-09-21, Ken's decision after the programmatic-page
+ * inventory in docs/programmatic-page-inventory.md): every state and metro
+ * page renders robots {index:false, follow:true} and is excluded from the
+ * sitemap. The pages stay live and linked. Flip back per the inventory's
+ * "enrich a small set" plan once a place has real local data.
  */
-export const LOCAL_COST_PAGES_INDEXABLE = true;
+export const LOCAL_COST_PAGES_INDEXABLE = false;
 
 /**
  * Which cost model a guide follows. The two behave nothing alike and must

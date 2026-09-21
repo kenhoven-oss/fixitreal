@@ -28,6 +28,10 @@ export async function generateMetadata({ params }: { params: Params }) {
     title: `${topic.label}: every FixItReal guide`,
     description: `Honest home repair guidance for ${topic.label.toLowerCase()} — cost ranges, DIY-or-hire verdicts, and troubleshooting in one place.`.slice(0, 158),
     path: `/topics/${topic.slug}`,
+    // Keyword-cluster pages are auto-generated lists of articles that are
+    // each indexable on their own. Keep them for navigation; keep them out
+    // of the index so they don't compete with the articles they list.
+    noIndexFollow: true,
   });
 }
 

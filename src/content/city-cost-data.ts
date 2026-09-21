@@ -204,7 +204,7 @@ export const CITIES: CityCostData[] = [
     stateAbbr: "WA",
     tier: "premium",
     notes:
-      "Seattle requires state-issued LNI electrical and plumbing certifications. Service rates are among the highest in the country, especially for code-compliance work in older Capitol Hill and Ballard housing stock. Winter water-heater failures during cold snaps create extended wait times January through February.",
+      "Service rates are among the highest in the country, especially for code-compliance work in older Capitol Hill and Ballard housing stock. Winter water-heater failures during cold snaps create extended wait times January through February.",
   },
   {
     slug: "denver-co",

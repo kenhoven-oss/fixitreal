@@ -2,45 +2,74 @@ import type { MetadataRoute } from "next";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { env } from "@/lib/env";
-import { getRenderedJobSlugs } from "@/content/jobs";
+import { getRenderedJobSlugs, getJob, jobs } from "@/content/jobs";
+import { STATE_COST_UPDATED } from "@/content/state-cost-data";
 import { loadAllArticles } from "@/lib/articles-loader";
 import { getAllTopics } from "@/lib/topics";
-
-const now = new Date();
 
 /**
  * `lastmod` has to be TRUE, not merely present.
  *
- * Google's documented position is that it uses lastmod only while a site
- * proves the value is reliable, and starts ignoring it site-wide once it is
- * demonstrably not. Stamping `new Date()` on a URL whose content did not
- * change means every unrelated rebuild claims ~700 pages were updated. That
- * doesn't make Google recrawl them faster — it teaches Google to distrust the
- * signal, which then also devalues the ~106 article URLs where our lastmod
- * genuinely is accurate.
+ * Google uses lastmod only while a site proves the value is reliable and
+ * ignores it site-wide once it is demonstrably not. Stamping `new Date()` on
+ * a URL whose content did not change claims hundreds of pages changed on
+ * every deploy and teaches Google to distrust the field — which also
+ * devalues the article URLs where our lastmod is accurate.
  *
- * So: `now` is used ONLY for hub/index pages, whose content really is derived
- * from the full article set and really does change whenever anything ships.
- * Everything else reads a real content date.
+ * So there is no build-time date anywhere in this file:
+ *   - articles         → frontmatter updatedAt ?? publishedAt
+ *   - buying guides    → the guide's own `const updatedAt`
+ *   - job pages        → the job's lastReviewed
+ *   - hub pages        → the newest date among the pages they list
+ *   - other static     → STATIC_LASTMOD (last commit that changed the copy)
+ *
+ * Vercel does a fresh clone on every build, so file mtimes are checkout
+ * times and must not be used.
  */
 
+const d = (iso: string) => new Date(`${iso}T00:00:00.000Z`);
+
 /**
- * Last substantive review of the programmatic cost datasets (state, metro)
- * and the reference content built from them (glossary, topics).
- *
- * BUMP THIS when the underlying rate tables are refreshed — not on every
- * deploy. It is deliberately a hand-maintained constant rather than a file
- * mtime: Vercel does a fresh clone on every build, so mtimes there are just
- * the checkout time, which would silently reintroduce the exact problem this
- * constant exists to solve.
+ * Last content change for pages that don't list articles (so "newest
+ * article" would be a lie). Each date is the last commit that changed the
+ * page's copy. Update the date when you edit the page — same contract as
+ * `updatedAt` in an article's frontmatter.
  */
-const CONTENT_DATA_REVIEWED = new Date("2026-09-13T00:00:00.000Z");
+const STATIC_LASTMOD: Record<string, Date> = {
+  "/about": d("2026-05-15"),
+  "/about/editorial-standards": d("2026-04-19"),
+  "/about/methodology": d("2026-04-19"),
+  "/about/contact": d("2026-04-19"),
+  "/affiliate-disclosure": d("2026-05-16"),
+  "/corrections": d("2026-05-16"),
+  "/privacy": d("2026-04-20"),
+  "/terms": d("2026-04-20"),
+  "/disclaimer": d("2026-05-27"),
+  "/contractor-red-flags": d("2026-09-20"),
+  "/home-repair-cost-calendar": d("2026-04-19"),
+  "/tools/contractor-quote-checker": d("2026-09-20"),
+  "/tools/repair-cost-estimator": d("2026-09-20"),
+  "/tools/home-renovation-cost-estimator": d("2026-05-27"),
+  "/tools/diy-project-cost-tracker": d("2026-05-27"),
+  "/tools/home-cleaning-cost-calculator": d("2026-05-27"),
+};
+
+/** Glossary entries carry no per-entry date; this is the glossary file's last content change. */
+const GLOSSARY_UPDATED = d("2026-09-20");
+
+/**
+ * URLs that are live but noindexed (robots {index:false, follow:true}) and
+ * therefore must never appear in the sitemap: the programmatic state and
+ * metro cost pages, and the auto-generated keyword topic pages. Applied to
+ * the final list as a hard filter so no future entry can slip through.
+ */
+const SITEMAP_EXCLUDE = [/^\/costs\/[^/]+\/.+/, /^\/topics\//];
 
 type Route = {
   path: string;
   priority: number;
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
-  /** Real content date. Falls back to `now` only for true hub pages. */
+  /** Real content date. Hubs without one get the newest date among what they list. */
   lastModified?: Date;
 };
 
@@ -155,10 +184,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const d = new Date(`${a.frontmatter.updatedAt ?? a.frontmatter.publishedAt}T00:00:00.000Z`);
       return !acc || d > acc ? d : acc;
     }, undefined);
-  const siteNewest = newest(articlesForHubs) ?? now;
+  const siteNewest = newest(articlesForHubs) ?? d("2026-04-19");
+  const newestGuide = buyingGuides.reduce<Date | undefined>(
+    (acc, g) => (g.lastModified && (!acc || g.lastModified > acc) ? g.lastModified : acc),
+    undefined
+  );
+  const newestJob = jobs.reduce<Date | undefined>((acc, j) => {
+    const x = d(j.lastReviewed);
+    return !acc || x > acc ? x : acc;
+  }, undefined);
   const hubLastmod = (path: string): Date => {
+    if (STATIC_LASTMOD[path]) return STATIC_LASTMOD[path];
+    if (path === "/tools") return newestGuide ?? siteNewest;
+    if (path === "/tools/diy-or-hire") return newestJob ?? siteNewest;
+    if (path === "/glossary") return GLOSSARY_UPDATED;
+    if (path.startsWith("/reports/")) return d(STATE_COST_UPDATED);
     const pillar = path.replace(/^\//, "");
     const inPillar = articlesForHubs.filter((a) => a.frontmatter.pillar === pillar);
+    // Pillar hubs list their pillar; "/", "/topics" and the author page list
+    // articles from across the site.
     return inPillar.length ? (newest(inPillar) ?? siteNewest) : siteNewest;
   };
 
@@ -173,10 +217,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // next.config.ts. Sitemaps should list canonical URLs only; including a
   // redirect source wastes Google's crawl budget and can suppress the
   // canonical destination in mixed-signal cases.
-    const toolEntries: MetadataRoute.Sitemap = getRenderedJobSlugs()
+  const toolEntries: MetadataRoute.Sitemap = getRenderedJobSlugs()
     .map((slug) => ({
       url: fullUrl(`/tools/diy-or-hire/${slug}`),
-      lastModified: CONTENT_DATA_REVIEWED,
+      lastModified: d(getJob(slug)!.lastReviewed),
       changeFrequency: "monthly" as const,
       priority: 0.75,
     }));
@@ -184,9 +228,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const articles = await loadAllArticles();
   const articleEntries: MetadataRoute.Sitemap = articles.map((a) => ({
     url: fullUrl(a.path),
-    lastModified: new Date(
-      a.frontmatter.updatedAt ?? a.frontmatter.publishedAt
-    ),
+    lastModified: d(a.frontmatter.updatedAt ?? a.frontmatter.publishedAt),
     changeFrequency: a.frontmatter.pillar === "costs" ? "monthly" : "yearly",
     priority: 0.8,
     // Image sitemap entry: every article has a route-prerendered OG image at
@@ -198,7 +240,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const topics = await getAllTopics();
   const topicEntries: MetadataRoute.Sitemap = topics.map((t) => ({
     url: fullUrl(`/topics/${t.slug}`),
-    lastModified: siteNewest,
+    lastModified: newest(t.articles) ?? siteNewest,
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }));
@@ -209,7 +251,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const glossaryEntries: MetadataRoute.Sitemap = getAllGlossarySlugs().map(
     (slug) => ({
       url: fullUrl(`/glossary/${slug}`),
-      lastModified: CONTENT_DATA_REVIEWED,
+      lastModified: GLOSSARY_UPDATED,
       changeFrequency: "yearly" as const,
       priority: 0.55,
     })
@@ -224,7 +266,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const stateCostEntries: MetadataRoute.Sitemap = (LOCAL_COST_PAGES_INDEXABLE ? getAllStateCostParams() : []).map(
     ({ slug, state }) => ({
       url: fullUrl(`/costs/${slug}/${state}`),
-      lastModified: CONTENT_DATA_REVIEWED,
+      lastModified: d(STATE_COST_UPDATED),
       changeFrequency: "monthly" as const,
       priority: 0.65,
     })
@@ -238,13 +280,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const metroCostEntries: MetadataRoute.Sitemap = (LOCAL_COST_PAGES_INDEXABLE ? getAllCityCostParams() : []).map(
     ({ slug, city }) => ({
       url: fullUrl(`/costs/${slug}/metro/${city}`),
-      lastModified: CONTENT_DATA_REVIEWED,
+      lastModified: d(STATE_COST_UPDATED),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })
   );
 
-  return [
+  const all: MetadataRoute.Sitemap = [
     ...staticEntries,
     ...toolEntries,
     ...articleEntries,
@@ -253,4 +295,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...stateCostEntries,
     ...metroCostEntries,
   ];
+  return all.filter((e) => !SITEMAP_EXCLUDE.some((re) => re.test(new URL(e.url).pathname)));
 }

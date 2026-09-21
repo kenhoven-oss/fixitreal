@@ -8,6 +8,7 @@ import { DiyAlternative } from "@/components/content/DiyAlternative";
 import { LocalPriceMethodology } from "@/components/content/LocalPriceMethodology";
 import { LocalLicensing } from "@/components/content/LocalLicensing";
 import { getStateLicensing, tradeForGuide } from "@/content/state-licensing";
+import { notesForTrade } from "@/lib/local-notes";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, articleSchema, faqSchema } from "@/lib/jsonld";
 import { buildLocalCostModel } from "@/lib/local-cost-page";
@@ -49,7 +50,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     label: stateData.name,
     stateName: stateData.name,
     tier: stateData.tier,
-    notes: stateData.notes,
+    notes: notesForTrade(stateData.notes, tradeForGuide(slug)),
     subdivision: "city",
   });
 
@@ -77,7 +78,7 @@ export default async function StateCostPage({ params }: { params: Params }) {
     label: stateData.name,
     stateName: stateData.name,
     tier: stateData.tier,
-    notes: stateData.notes,
+    notes: notesForTrade(stateData.notes, tradeForGuide(slug)),
     subdivision: "city" as const,
   };
   const model = buildLocalCostModel(guide, place);
@@ -134,8 +135,8 @@ export default async function StateCostPage({ params }: { params: Params }) {
           asOf={REVIEWED_LABEL}
           notes={
             model.isServiceCall
-              ? `${stateData.name} ${model.tierLabel} tier. After the first hour, the hourly rate runs ${model.hourlyRangeText}.`
-              : `${stateData.name} ${model.tierLabel} tier. Installed price, parts and labor. Work beyond a like-for-like swap is billed at about ${model.hourlyRangeText}/hour.`
+              ? `${stateData.name} pricing tier: ${model.tierLabel.toLowerCase()}. After the first hour, the hourly rate runs ${model.hourlyRangeText}.`
+              : `${stateData.name} pricing tier: ${model.tierLabel.toLowerCase()}. Installed price, parts and labor. Work beyond a like-for-like swap is billed at about ${model.hourlyRangeText}/hour.`
           }
         />
 
@@ -175,12 +176,14 @@ export default async function StateCostPage({ params }: { params: Params }) {
             Marked up 20–60% over retail at most shops. A $10 part can appear
             on your invoice at $15–$25.
           </p>
-          <p>
-            <strong className="text-navy-900">
-              {`${stateData.name}-specific factors.`}
-            </strong>{" "}
-            {stateData.notes}
-          </p>
+          {notesForTrade(stateData.notes, tradeForGuide(slug)) && (
+            <p>
+              <strong className="text-navy-900">
+                {`${stateData.name}-specific factors.`}
+              </strong>{" "}
+              {notesForTrade(stateData.notes, tradeForGuide(slug))}
+            </p>
+          )}
         </div>
 
         {(() => {

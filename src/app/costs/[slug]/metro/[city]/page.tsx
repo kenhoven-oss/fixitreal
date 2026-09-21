@@ -8,6 +8,7 @@ import { DiyAlternative } from "@/components/content/DiyAlternative";
 import { LocalPriceMethodology } from "@/components/content/LocalPriceMethodology";
 import { LocalLicensing } from "@/components/content/LocalLicensing";
 import { getStateLicensing, tradeForGuide } from "@/content/state-licensing";
+import { notesForTrade } from "@/lib/local-notes";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, articleSchema, faqSchema } from "@/lib/jsonld";
 import { buildLocalCostModel } from "@/lib/local-cost-page";
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     label: `${cityData.name}, ${cityData.stateAbbr}`,
     stateName: cityData.stateName,
     tier: cityData.tier,
-    notes: cityData.notes,
+    notes: notesForTrade(cityData.notes, tradeForGuide(slug)),
     subdivision: "neighborhood",
   });
 
@@ -83,7 +84,7 @@ export default async function MetroCostPage({ params }: { params: Params }) {
     label: placeLabel,
     stateName: cityData.stateName,
     tier: cityData.tier,
-    notes: cityData.notes,
+    notes: notesForTrade(cityData.notes, tradeForGuide(slug)),
     subdivision: "neighborhood",
   });
 
@@ -150,8 +151,8 @@ export default async function MetroCostPage({ params }: { params: Params }) {
           asOf={REVIEWED_LABEL}
           notes={
             model.isServiceCall
-              ? `${cityData.name} ${model.tierLabel} tier. After the first hour, the hourly rate runs ${model.hourlyRangeText}.`
-              : `${cityData.name} ${model.tierLabel} tier. Installed price, parts and labor. Work beyond a like-for-like swap is billed at about ${model.hourlyRangeText}/hour.`
+              ? `${cityData.name} pricing tier: ${model.tierLabel.toLowerCase()}. After the first hour, the hourly rate runs ${model.hourlyRangeText}.`
+              : `${cityData.name} pricing tier: ${model.tierLabel.toLowerCase()}. Installed price, parts and labor. Work beyond a like-for-like swap is billed at about ${model.hourlyRangeText}/hour.`
           }
         />
 
@@ -191,12 +192,14 @@ export default async function MetroCostPage({ params }: { params: Params }) {
             Marked up 20–60% over retail at most shops. A $10 part can appear
             on your invoice at $15–$25.
           </p>
-          <p>
-            <strong className="text-navy-900">
-              {`${cityData.name}-specific factors.`}
-            </strong>{" "}
-            {cityData.notes}
-          </p>
+          {notesForTrade(cityData.notes, tradeForGuide(slug)) && (
+            <p>
+              <strong className="text-navy-900">
+                {`${cityData.name}-specific factors.`}
+              </strong>{" "}
+              {notesForTrade(cityData.notes, tradeForGuide(slug))}
+            </p>
+          )}
         </div>
 
         {(() => {
