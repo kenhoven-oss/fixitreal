@@ -9,7 +9,6 @@ export function Header() {
         <Link
           href="/"
           className="flex items-center gap-3 shrink-0 no-underline"
-          aria-label={site.name}
         >
           {/*
             `sizes` is required here even though the logo is a fixed size.
@@ -18,12 +17,13 @@ export function Header() {
             downloading the 2048px variant of a logo that renders at ~235px,
             on every page, as a `priority` (render-blocking) LCP candidate.
             Declaring the real display width lets next/image serve a ~256px
-            file instead. The link already carries aria-label={site.name},
-            so alt="" avoids screen readers announcing the name twice.
+            file instead. The image carries the accessible name (alt) so
+            the link needs no aria-label; one announcement, and image
+            search gets a real label.
           */}
           <Image
             src="/FIXitREALlogo.png"
-            alt=""
+            alt={`${site.name} — honest home repair advice`}
             width={964}
             height={329}
             sizes="(min-width: 768px) 235px, 165px"
