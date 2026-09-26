@@ -50,9 +50,9 @@ const products: RecommendedProduct[] = [
     buttonText: "Check price on Amazon",
   },
   {
-    name: "Cup plunger (sink/tub)",
+    name: "Flat cup plunger (sink/tub)",
     badge: "Best for Sinks & Tubs",
-    category: "Standard cup plunger",
+    category: "Flat cup plunger",
     bestFor: "Kitchen sinks, bathroom sinks, and tub drains with a flat drain surface.",
     whyItMadeTheList:
       "A simple flat-cup plunger seals against a flat drain opening better than a flange plunger, which is designed for a curved toilet outlet. Keeping a dedicated one under the kitchen sink means you're not dragging the bathroom plunger into the kitchen — which matters more than people like to think about.",
@@ -92,13 +92,13 @@ const products: RecommendedProduct[] = [
 const path = "/tools/best-plungers-for-homeowners";
 const pageTitle = "Best plungers for homeowners";
 const pageDescription =
-  "A practical guide to picking the right plunger — which cup shape fits which drain, why you want more than one, and when a clog has outgrown a plunger entirely.";
+  "Flat cup vs flange vs accordion: which plunger fits which drain, why you want two, and when a clog has outgrown a plunger entirely. Homeowner picks, no hype.";
 
 // Single source of truth for this page's dates: OG metadata, the visible
 // byline, and the Article JSON-LD all read from these two constants so they
 // can never drift apart again.
 const publishedAt = "2026-04-20";
-const updatedAt = "2026-05-16";
+const updatedAt = "2026-09-26";
 
 export const metadata = buildMetadata({
   title: pageTitle,
@@ -116,6 +116,16 @@ export const metadata = buildMetadata({
 -------------------------------------------------------------------------- */
 
 const faqs = [
+  {
+    question: "What is a flat cup plunger used for?",
+    answer:
+      "Sinks, tubs, and shower drains — any fixture where the drain opening sits in a flat surface. The plain rubber cup seals against that flat surface and pushes water straight down the drain. It is the wrong tool for a toilet: the bowl outlet is curved, so a flat cup pushes air around the rim instead of water through the trap.",
+  },
+  {
+    question: "Flat cup plunger vs flange plunger — which one do I need?",
+    answer:
+      "Both. The flange plunger's fold-out sleeve seats into a toilet's curved outlet; the flat cup plunger seals on a sink or tub's flat drain. Most flange plungers let you fold the sleeve up inside the cup to act like a flat cup in a pinch, but a toilet plunger has no business under the kitchen sink, so keep a dedicated flat cup there.",
+  },
   {
     question: "Can I use the same plunger on a toilet and a sink?",
     answer:

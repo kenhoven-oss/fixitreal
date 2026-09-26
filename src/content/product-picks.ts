@@ -193,6 +193,56 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
     ],
   },
 
+  "disposal-cost-best-value": {
+    title: "The three ¾ HP units the cost guide points to",
+    picks: [
+      {
+        name: "InSinkErator Evolution Compact (¾ HP)",
+        why: "The most-recommended family-kitchen unit: quieter than a Badger, grinds finer, and mounts on the same three-bolt ring most sinks already have, so a like-for-like swap stays a 45-minute job.",
+        href: amazonSearch("InSinkErator Evolution Compact garbage disposal"),
+        label: "See current Evolution Compact options on Amazon",
+      },
+      {
+        name: "Moen GX75C (¾ HP)",
+        why: "Comparable build to the Evolution Compact and a touch quieter in most kitchens. Ships with its own mounting assembly if you are switching brands.",
+        href: amazonSearch("Moen GX75C garbage disposal 3/4 HP"),
+        label: "See current Moen GX75C options on Amazon",
+      },
+      {
+        name: "Waste King L-8000 (1 HP)",
+        why: "The value pick per horsepower — a little louder, but the stainless grind chamber and plug-in cord (no hardwiring) make it the easiest DIY install of the three.",
+        href: amazonSearch("Waste King L-8000 garbage disposal"),
+        label: "See current Waste King L-8000 options on Amazon",
+      },
+    ],
+  },
+
+  /* ---------------- Bathroom exhaust fans ---------------- */
+  "bath-fan-replacement-parts": {
+    title: "For a like-for-like fan swap",
+    picks: [
+      {
+        name: "Panasonic WhisperCeiling (80–110 CFM)",
+        why: "The quiet, long-life unit the repair-vs-replace table assumes at the top of the range. Rated well under 1 sone, and the DC models adjust CFM at install so one fan fits most bathrooms.",
+        href: amazonSearch("Panasonic WhisperCeiling bathroom exhaust fan 110 CFM"),
+        label: "See current WhisperCeiling options on Amazon",
+      },
+      {
+        name: "Broan-NuTone basic fan (50–80 CFM)",
+        why: "The builder-grade replacement for a small bathroom when you want the $25–$60 parts number from the table. Match the duct size (usually 3 or 4 in) and the housing footprint so the ceiling cut stays the same.",
+        href: amazonSearch("Broan NuTone bathroom exhaust fan 80 CFM"),
+        label: "See current Broan fan options on Amazon",
+      },
+      {
+        name: "4-inch wall vent cap with backdraft damper",
+        why: "The through-wall termination for the re-route. A damper keeps cold air and insects out; a louvered cap with a bird screen is the one to buy.",
+        href: amazonSearch("4 inch wall vent cap with damper bathroom exhaust"),
+        label: "Shop wall vent caps on Amazon",
+      },
+    ],
+    guides: [GUIDES.moistureMeter],
+  },
+
   /* ---------------- Smoke alarms ---------------- */
   "smoke-alarm-swap": {
     title: "What to buy for the swap",
