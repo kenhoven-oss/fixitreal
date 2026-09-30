@@ -66,6 +66,13 @@ const mdxComponents = {
   ChecklistCTA,
   PrintReadyFormsCTA,
   ProductPicks,
+  // Wide comparison tables scroll inside their own box on phones instead of
+  // stretching the whole page sideways.
+  table: ({ children }: { children?: React.ReactNode }) => (
+    <div className="my-6 overflow-x-auto">
+      <table className="w-full text-sm border-collapse">{children}</table>
+    </div>
+  ),
   a: ({ href, children }: { href?: string; children?: React.ReactNode }) =>
     href && /^https?:/.test(href) ? (
       <ExternalLink href={href}>{children}</ExternalLink>

@@ -90,7 +90,7 @@ export function DiyProjectCostTrackerCalculator() {
     return (
       <>
         {list.map((line) => (
-          <div key={line.id} className="grid grid-cols-[1fr_120px_auto] gap-2 items-start">
+          <div key={line.id} className="grid grid-cols-[minmax(0,1fr)_100px_auto] gap-2 items-start">
             <input
               type="text"
               value={line.description}
@@ -98,7 +98,7 @@ export function DiyProjectCostTrackerCalculator() {
                 updateLine(list, setList, line.id, { description: e.target.value })
               }
               placeholder={placeholder}
-              className="rounded-md border border-ink-300 bg-white px-3 py-2 text-sm text-navy-900 focus:border-navy-700 focus:outline-none focus:ring-2 focus:ring-amber-400/50"
+              className="rounded-md border border-ink-300 bg-white px-3 py-2 text-sm text-navy-900 focus:border-navy-700 focus:outline-none focus:ring-2 focus:ring-amber-400/50 w-full min-w-0"
             />
             <input
               type="number"
@@ -111,7 +111,7 @@ export function DiyProjectCostTrackerCalculator() {
                 })
               }
               placeholder="$0.00"
-              className="rounded-md border border-ink-300 bg-white px-3 py-2 text-sm text-navy-900 focus:border-navy-700 focus:outline-none focus:ring-2 focus:ring-amber-400/50"
+              className="rounded-md border border-ink-300 bg-white px-3 py-2 text-sm text-navy-900 focus:border-navy-700 focus:outline-none focus:ring-2 focus:ring-amber-400/50 w-full min-w-0"
             />
             <button
               type="button"
@@ -153,14 +153,14 @@ export function DiyProjectCostTrackerCalculator() {
           />
         </div>
 
-        <fieldset className="space-y-3">
+        <fieldset className="space-y-3 min-w-0">
           <legend className="text-sm font-semibold text-navy-900">
             Materials & parts
           </legend>
           {renderLineEditor(materials, setMaterials, "Materials description")}
         </fieldset>
 
-        <fieldset className="space-y-3">
+        <fieldset className="space-y-3 min-w-0">
           <legend className="text-sm font-semibold text-navy-900">
             Tools (rented or bought for this job)
           </legend>
