@@ -90,6 +90,7 @@ const GUIDES = {
   caulk: { href: "/tools/best-caulk-and-caulk-guns-for-bath-and-kitchen", label: "Caulk buying guide" },
   // Guides added on main; wired in here so the article layer feeds them.
   furnaceFilter: { href: "/tools/best-furnace-filters", label: "Furnace filter buying guide" },
+  pipeInsulation: { href: "/tools/best-pipe-insulation-and-heat-cable", label: "Pipe insulation & heat cable guide" },
   toiletParts: { href: "/tools/best-toilet-flappers-and-fill-valves", label: "Flapper & fill valve guide" },
   pressureGauge: { href: "/tools/best-home-water-pressure-gauges", label: "Water pressure gauge guide" },
   gfciOutlets: { href: "/tools/best-gfci-outlets-for-homeowners", label: "GFCI outlet buying guide" },
@@ -215,6 +216,32 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         label: "See current Waste King L-8000 options on Amazon",
       },
     ],
+  },
+
+  /* ---------------- Winterizing ---------------- */
+  "winterize-house-basics": {
+    title: "The three things on this list most houses are missing",
+    picks: [
+      {
+        name: "Foam outdoor faucet covers (multipack)",
+        why: "Item one on the checklist. One per spigot, slips on in ten seconds, and it is the difference between a hose bib that lasts and a pipe split inside the wall. Buy the pack — you have more spigots than you think.",
+        href: amazonSearch("outdoor faucet cover insulated foam winter"),
+        label: "Shop faucet covers on Amazon",
+      },
+      {
+        name: "Self-regulating pipe heat cable",
+        why: "For the one line that has frozen before — garage, crawl space, well pit. Insulation slows heat loss; this adds heat, only when it is cold, and it goes under the foam sleeve. Pick a length that reaches a GFCI outlet.",
+        href: amazonSearch("self regulating pipe heat cable GFCI"),
+        label: "Shop heat cable on Amazon",
+      },
+      {
+        name: "Door weatherstripping and sweep kit",
+        why: "If you can see daylight around an exterior door, this is a screwdriver job and the cheapest heating-bill fix in the house. Foam or silicone bulb strips for the jamb, a sweep for the threshold.",
+        href: amazonSearch("door weatherstripping kit with door sweep"),
+        label: "Shop weatherstripping on Amazon",
+      },
+    ],
+    guides: [GUIDES.pipeInsulation, GUIDES.furnaceFilter],
   },
 
   /* ---------------- Bathroom exhaust fans ---------------- */

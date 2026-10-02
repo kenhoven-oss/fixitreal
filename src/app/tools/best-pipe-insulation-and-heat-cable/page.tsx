@@ -120,6 +120,7 @@ export default function BestPipeInsulationPage() {
         <div className="mt-12">
           <h2 className="font-serif text-2xl text-navy-900">Related reading</h2>
           <ul className="mt-4 space-y-2 text-ink-700">
+            <li>→ <Link href="/advice/how-to-winterize-a-house" className="no-underline text-navy-700 hover:text-navy-900">How to winterize a house: the full checklist</Link></li>
             <li>→ <Link href="/advice/how-to-keep-pipes-from-freezing" className="no-underline text-navy-700 hover:text-navy-900">How to keep pipes from freezing</Link></li>
             <li>→ <Link href="/emergency-repairs/pipe-burst-first-10-minutes" className="no-underline text-navy-700 hover:text-navy-900">Pipe burst: the first 10 minutes</Link></li>
             <li>→ <Link href="/tools/best-pipe-repair-clamps" className="no-underline text-navy-700 hover:text-navy-900">Best pipe repair clamps</Link></li>
