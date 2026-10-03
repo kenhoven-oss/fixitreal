@@ -244,6 +244,31 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
     guides: [GUIDES.pipeInsulation, GUIDES.furnaceFilter],
   },
 
+  "drafty-window-fixes": {
+    title: "Find the leak, then seal it — the three things that do the job",
+    picks: [
+      {
+        name: "Infrared thermometer",
+        why: "The find-the-leak step. Point it at the trim, then the sash channel, then the meeting rail; a 10–20°F drop is the gap. Faster and more certain than incense, and it finds the frame-to-wall leak that smoke misses.",
+        href: amazonSearch("infrared thermometer gun for home drafts"),
+        label: "Shop infrared thermometers on Amazon",
+      },
+      {
+        name: "V-seal weatherstripping (tension seal)",
+        why: "For the side channels and meeting rail of a double-hung — the two most common leaks. Springs open to fill the gap, doesn't drag when the sash slides, and one roll does two or three windows.",
+        href: amazonSearch("V seal weatherstripping windows tension seal"),
+        label: "Shop V-seal weatherstripping on Amazon",
+      },
+      {
+        name: "Window shrink-film insulation kit",
+        why: "Seals every gap at once because it tapes to the trim, not the glass, and it is the only fix on the list that also helps with cold glass. Buy the multi-window kit; the patio-door size covers two normal windows.",
+        href: amazonSearch("window insulation shrink film kit indoor"),
+        label: "Shop window film kits on Amazon",
+      },
+    ],
+    guides: [GUIDES.caulk],
+  },
+
   /* ---------------- Bathroom exhaust fans ---------------- */
   "bath-fan-replacement-parts": {
     title: "For a like-for-like fan swap",
