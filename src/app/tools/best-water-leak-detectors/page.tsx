@@ -91,7 +91,7 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-water-leak-detectors";
-const pageTitle = "Best water leak detectors for home (2026)";
+const pageTitle = "Best home water leak detectors and detection systems (2026)";
 const pageDescription =
   "The best water leak detector for home use depends on where water sits: point sensors, Wi-Fi systems, and automatic shutoffs, ranked by what they prevent.";
 
@@ -99,7 +99,7 @@ const pageDescription =
 // byline, the Article JSON-LD and the sitemap all read from these two
 // constants so they can never drift apart.
 const publishedAt = "2026-05-16";
-const updatedAt = "2026-05-16";
+const updatedAt = "2026-10-12";
 
 export const metadata = buildMetadata({
   title: pageTitle,

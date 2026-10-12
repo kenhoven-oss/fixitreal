@@ -152,6 +152,11 @@ export const metadata = buildMetadata({
 
 const faqs = [
   {
+    question: "What are the different types of drain snakes?",
+    answer:
+      "For homeowners there are four: a hand-crank drum auger (¼-in cable, 15–25 ft) for sink, tub, and shower lines; a flat plastic zip-it strip for hair at the drain opening; a flat-tape tub snake that passes the overflow and drain crossbars; and a homeowner-grade powered drum auger that runs off a drill for longer runs. Toilet (closet) augers are a separate tool with a porcelain guard, and anything over ½-in cable or 50 ft is sewer-line equipment best left to a pro.",
+  },
+  {
     question: "Do I need a powered snake, or is manual enough?",
     answer:
       "For most kitchen and bathroom clogs inside 20 feet of pipe, a manual hand auger is enough. A powered drum auger makes sense if you deal with recurring clogs farther down the line, such as a laundry stack or main-line grease buildup.",
@@ -234,7 +239,7 @@ export default function BestDrainSnakesGuide() {
         </div>
 
         <h2 className="mt-10 font-serif text-2xl text-navy-900">
-          Types of drain snakes (and which to use)
+          Types of plumbing snakes (and which clog each one clears)
         </h2>
         <div className="mt-3 space-y-4 text-ink-700 leading-relaxed">
           <p>
