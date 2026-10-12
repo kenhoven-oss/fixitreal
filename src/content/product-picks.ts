@@ -76,12 +76,16 @@ const LIVE = {
   siliconeCaulk: "https://amzn.to/42hjzcB",
   caulkRemover: "https://amzn.to/3QOjrig",
   caulkGun: "https://amzn.to/3QiVH5Q",
+  // Reused from the buying guides where they are already published:
+  flangePlunger: "https://amzn.to/3Qvj5Np", // /tools/best-plungers-for-homeowners
+  leakWifi: "https://amzn.to/4bM1ngp", // /tools/best-water-leak-detectors
 } as const;
 
 const GUIDES = {
   shopVac: { href: "/tools/best-shop-vacs-for-water-cleanup", label: "Shop vac buying guide" },
   drainSnake: { href: "/tools/best-drain-snakes-for-homeowners", label: "Drain snake buying guide" },
   plunger: { href: "/tools/best-plungers-for-homeowners", label: "Plunger buying guide" },
+  studFinder: { href: "/tools/best-stud-finders-for-homeowners", label: "Stud finder buying guide" },
   voltageTester: { href: "/tools/best-voltage-testers-for-homeowners", label: "Voltage tester buying guide" },
   moistureMeter: { href: "/tools/best-moisture-meters-for-homeowners", label: "Moisture meter buying guide" },
   leakDetector: { href: "/tools/best-water-leak-detectors", label: "Leak detector buying guide" },
@@ -723,5 +727,134 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         label: "Shop grab-bar anchors on Amazon",
       },
     ],
+  },
+
+  /* ---------------- Grab bar install (cost page) ---------------- */
+  "grab-bar-diy-install-kit": {
+    title: "If you install it yourself",
+    picks: [
+      {
+        name: "ADA grab bar with a published load rating",
+        why: "The DIY section above hinges on one spec: a rated bar. Any listing without a stated load rating (typically 250 lb or higher) is a towel bar, however solid it looks.",
+        href: amazonSearch("ADA grab bar 250 lb rated stainless"),
+        label: "Shop rated grab bars on Amazon",
+      },
+      {
+        name: "Grab-bar-rated toggle anchors",
+        why: "For the case named above — tile or drywall with no stud where the bar needs to go. Ordinary plastic anchors are not rated for a falling adult.",
+        href: amazonSearch("grab bar toggle anchor WingIts drywall rated"),
+        label: "Shop grab-bar anchors on Amazon",
+      },
+      {
+        name: "Stud finder with AC-wire detection",
+        why: "Finding the stud reliably is the whole DIY/hire line in this article. A unit that also flags live wires keeps the drill out of the wiring behind a bathroom wall.",
+        href: amazonSearch("stud finder with AC wire detection"),
+        label: "Shop stud finders on Amazon",
+      },
+    ],
+    guides: [
+      { href: "/senior-home-safety/best-grab-bars-for-showers", label: "Best grab bars for showers" },
+      GUIDES.studFinder,
+    ],
+  },
+
+  /* ---------------- Water heater: protect the install ---------------- */
+  "water-heater-leak-protection": {
+    title: "Worth owning whoever installs it",
+    picks: [
+      {
+        name: "Battery leak sensor puck for the drip pan",
+        why: "A tank usually weeps for weeks before it fails. A $15 puck sitting in the pan turns that into a loud alarm instead of a wet floor.",
+        href: LIVE.leakPuck,
+        label: "Check on Amazon",
+      },
+      {
+        name: "Wi-Fi leak detector (phone alerts)",
+        why: "Same job as the puck, but it reaches you when nobody is home — which is when most tank failures are discovered.",
+        href: LIVE.leakWifi,
+        label: "Check on Amazon",
+      },
+      {
+        name: "Water heater drain pan with a drain fitting",
+        why: "Code-required in many areas and cheap. Confirm the diameter clears your tank by a couple of inches and that the fitting can be piped to a drain.",
+        href: amazonSearch("water heater drain pan with drain fitting"),
+        label: "Shop drain pans on Amazon",
+      },
+    ],
+    guides: [GUIDES.leakDetector],
+  },
+
+  /* ---------------- Water heater leaking (advice) ---------------- */
+  "water-heater-leak-diy-parts": {
+    title: "For the repairs this article calls reasonable DIY",
+    picks: [
+      {
+        name: "Braided stainless water heater supply line",
+        why: "The supply-line swap named above. Match the connection size on your existing lines and replace both while the water is off.",
+        href: LIVE.braidedSupply,
+        label: "Check on Amazon",
+      },
+      {
+        name: "Battery leak sensor puck",
+        why: "After the repair, this is how you find out quickly if the leak comes back — or if the tank itself is next.",
+        href: LIVE.leakPuck,
+        label: "Check on Amazon",
+      },
+      {
+        name: "Water heater drain pan",
+        why: "If the tank is on a finished floor with no pan under it, add one now. It is the difference between a damp pan and a ruined floor on the day the tank finally goes.",
+        href: amazonSearch("water heater drain pan with drain fitting"),
+        label: "Shop drain pans on Amazon",
+      },
+    ],
+    guides: [GUIDES.leakDetector],
+  },
+
+  /* ---------------- Shower seating ---------------- */
+  "shower-seating-first-upgrade": {
+    title: "Shopping the first-upgrade combination above",
+    picks: [
+      {
+        name: "Tub transfer bench (adjustable legs, 300 lb or higher rating)",
+        why: "The bench in the combination above. Look for a published weight rating, adjustable leg height, and a seat that can be reversed so the long side faces the transfer side.",
+        href: amazonSearch("tub transfer bench adjustable 300 lb"),
+        label: "Shop transfer benches on Amazon",
+      },
+      {
+        name: "Shower chair with back and arms",
+        why: "For a walk-in or curbless shower where a bench is not needed. Arms matter — they are what the user pushes on to stand up.",
+        href: amazonSearch("shower chair with arms and back 300 lb"),
+        label: "Shop shower chairs on Amazon",
+      },
+      {
+        name: "Non-slip bath mat with suction cups",
+        why: "The cheapest of the three and the one that addresses the slippery floor. Check the mat fits the tub floor without covering the drain.",
+        href: amazonSearch("non slip bath mat suction cups extra long"),
+        label: "Shop bath mats on Amazon",
+      },
+    ],
+    guides: [
+      { href: "/senior-home-safety/best-grab-bars-for-showers", label: "Best grab bars for showers" },
+    ],
+  },
+
+  /* ---------------- Toilet overflow ---------------- */
+  "toilet-overflow-tools": {
+    title: "The two tools in the sequence above",
+    picks: [
+      {
+        name: "Flange plunger (toilet)",
+        why: "The flanged bell is what seals against the toilet outlet. A flat cup sink plunger will not seal and mostly splashes.",
+        href: LIVE.flangePlunger,
+        label: "Check on Amazon",
+      },
+      {
+        name: "Toilet (closet) auger with a porcelain guard",
+        why: "Step 3 above. The rubber sleeve protects the bowl; a general drain snake run into a toilet will scratch the porcelain.",
+        href: amazonSearch("toilet auger 3 ft closet auger porcelain guard"),
+        label: "Shop toilet augers on Amazon",
+      },
+    ],
+    guides: [GUIDES.plunger, GUIDES.drainSnake],
   },
 };

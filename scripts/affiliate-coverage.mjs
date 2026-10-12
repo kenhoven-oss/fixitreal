@@ -100,7 +100,13 @@ function* walk(dir) {
 const byPillar = new Map();
 for (const file of walk(ARTICLES)) {
   const pillar = basename(dirname(file));
-  const has = readFileSync(file, "utf8").includes("amzn.to");
+  // Monetised = an inline SiteStripe link, a tagged Amazon search link, or a
+  // <ProductPicks id="…"> block resolved from src/content/product-picks.ts.
+  const src = readFileSync(file, "utf8");
+  const has =
+    src.includes("amzn.to") ||
+    /amazon\.[a-z.]+\/[^\s")']*[?&]tag=/.test(src) ||
+    /<ProductPicks\b/.test(src);
   if (!byPillar.has(pillar)) byPillar.set(pillar, { with: [], without: [] });
   byPillar.get(pillar)[has ? "with" : "without"].push(
     relative(ARTICLES, file).replace(/\.mdx$/, "")
