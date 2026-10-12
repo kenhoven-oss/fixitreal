@@ -79,6 +79,7 @@ const LIVE = {
   // Reused from the buying guides where they are already published:
   flangePlunger: "https://amzn.to/3Qvj5Np", // /tools/best-plungers-for-homeowners
   leakWifi: "https://amzn.to/4bM1ngp", // /tools/best-water-leak-detectors
+  drainPan28: "https://amzn.to/41JCEE9", // Oatey 28 in pan — inline on /advice/water-heater-leaking, verified 2026-10-12
 } as const;
 
 const GUIDES = {
@@ -775,10 +776,10 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         label: "Check on Amazon",
       },
       {
-        name: "Water heater drain pan with a drain fitting",
+        name: "Water heater drain pan with a drain fitting (28 in)",
         why: "Code-required in many areas and cheap. Confirm the diameter clears your tank by a couple of inches and that the fitting can be piped to a drain.",
-        href: amazonSearch("water heater drain pan with drain fitting"),
-        label: "Shop drain pans on Amazon",
+        href: LIVE.drainPan28,
+        label: "Check on Amazon",
       },
     ],
     guides: [GUIDES.leakDetector],
@@ -801,10 +802,10 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         label: "Check on Amazon",
       },
       {
-        name: "Water heater drain pan",
+        name: "Water heater drain pan (28 in)",
         why: "If the tank is on a finished floor with no pan under it, add one now. It is the difference between a damp pan and a ruined floor on the day the tank finally goes.",
-        href: amazonSearch("water heater drain pan with drain fitting"),
-        label: "Shop drain pans on Amazon",
+        href: LIVE.drainPan28,
+        label: "Check on Amazon",
       },
     ],
     guides: [GUIDES.leakDetector],

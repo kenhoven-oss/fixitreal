@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AffiliateAnchor } from "@/components/ui/AffiliateAnchor";
 import { isAffiliateUrl } from "@/lib/amazon";
 import { PRODUCT_PICKS, type ProductPick } from "@/content/product-picks";
 
@@ -79,15 +80,15 @@ export function ProductPicks({
           <li key={p.href + p.name} className="text-sm">
             <p className="font-semibold text-navy-900">{p.name}</p>
             <p className="mt-1 text-ink-700 leading-relaxed">{p.why}</p>
-            <a
+            <AffiliateAnchor
               href={p.href.trim()}
-              target="_blank"
-              rel="sponsored nofollow noopener noreferrer"
+              productName={p.name}
+              placement="product-picks"
               className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-navy-700 no-underline border-b border-amber-500 pb-0.5 hover:text-navy-900"
             >
               {p.label ?? "Check on Amazon"}
               <span aria-hidden>↗</span>
-            </a>
+            </AffiliateAnchor>
           </li>
         ))}
       </ul>
