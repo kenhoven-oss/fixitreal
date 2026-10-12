@@ -421,7 +421,7 @@ export const jobs: readonly Job[] = [
     toolsNeeded: ["plunger", "drain snake (25-foot)", "bucket", "gloves"],
     partsNeeded: ["drain snake", "optional: enzyme drain cleaner"],
     verdict: "diy-recommended",
-    reasoning: "The default answer. A $20 drain snake handles 90% of residential clogs without chemicals.",
+    reasoning: "The default answer. A $20 drain snake handles most residential clogs without chemicals.",
     rationale:
       "This is the most overcharged routine repair in home plumbing. A plumber will charge you $150–$400 to do a 10-minute job with a tool you can own for $20. For anything except main sewer-line backups (water coming up from multiple drains at once, sewage in the tub, etc.), a manual drain snake clears the clog. Chemical drain cleaners — especially Drano and Liquid-Plumr — are corrosive to older pipes and do not work on hair/grease clogs as well as a snake does. Skip them. For kitchen drains: hot water plus dish soap plus a plunger handles many clogs. For bathroom drains: remove the stopper, snake the trap, done. Call a pro only when multiple drains are slow simultaneously (suggests the main line) or when water is backing up into other fixtures.",
     ifYouDiy:

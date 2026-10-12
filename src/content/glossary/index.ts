@@ -459,7 +459,7 @@ export const glossary: GlossaryEntry[] = [
     body: [
       "U.S. minimum SEER for new central AC is 14 in northern states, 15 in southern states (SEER2 ratings effective 2023). Premium units reach SEER 20+. Each step up costs more upfront but uses less electricity over the unit's 15–20 year life.",
       "The payback math: going from SEER 14 to SEER 18 typically saves 20–25% on cooling electricity. In a hot climate where AC runs 6+ months, that often pays back the higher upfront cost in 4–7 years. In cooler climates, the math is less favorable.",
-      "Federal tax credits and utility rebates often apply to higher-SEER units — check before buying. The total installed cost difference is often smaller than the equipment-price difference after incentives.",
+      "Utility and state rebates often apply to higher-SEER units — check before buying (the federal tax credit ended for equipment placed in service after December 31, 2025). The total installed cost difference is often smaller than the equipment-price difference after incentives.",
     ],
   },
   {

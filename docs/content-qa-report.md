@@ -1,6 +1,6 @@
 # Content QA report
 
-Generated 2026-09-21 against 931 prerendered pages.
+Generated 2026-10-12 against 933 prerendered pages.
 
 ## ERROR · Glued text at a template boundary (missing space) — 0
 
@@ -48,5 +48,5 @@ Generated 2026-09-21 against 931 prerendered pages.
 - 66 chars: "How often to change HVAC air filter (real schedule by filter type)" — 1 page(s), e.g. `/advice/how-often-to-change-air-filter`
 - 68 chars: "Can a local plumber do the same thing as Roto-Rooter? Yes — for less" — 1 page(s), e.g. `/advice/roto-rooter-vs-local-plumber`
 - 67 chars: "Smoke detector going off for no reason: the 8 real causes, in order" — 1 page(s), e.g. `/advice/smoke-detector-going-off-for-no-reason`
-- 67 chars: "Heat pump cost in 2026: $5,500–$12,000 installed (with tax credits)" — 1 page(s), e.g. `/costs/heat-pump-cost`
+- 68 chars: "Heat pump cost in 2026: $5,500–$12,000 installed (tax credit update)" — 1 page(s), e.g. `/costs/heat-pump-cost`
 - 68 chars: "How to unclog a drain: the best way for each clog (and when to call)" — 1 page(s), e.g. `/diy-or-hire/unclog-drain`

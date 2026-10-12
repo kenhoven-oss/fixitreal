@@ -158,7 +158,7 @@ export const costCalendar: readonly CalendarMonth[] = [
       {
         title: "Clean the dishwasher filter and sprayer arms",
         cost: "Free · 20 minutes",
-        why: "Most modern dishwashers have a removable filter at the bottom. Cleaning it fixes 80% of 'my dishwasher isn't working' calls.",
+        why: "Most modern dishwashers have a removable filter at the bottom. Cleaning it fixes a large share of 'my dishwasher isn't working' calls.",
       },
       {
         title: "Test garage door balance and auto-reverse",
