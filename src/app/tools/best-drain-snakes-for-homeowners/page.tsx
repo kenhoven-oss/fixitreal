@@ -125,7 +125,7 @@ const path = "/tools/best-drain-snakes-for-homeowners";
 // If this guide is ever upgraded with real testing — named models, measured
 // cable diameters, photos of each unit on a real clog — restore a testing
 // claim then, and not before.
-const pageTitle = "Best drain snakes for homeowners 2026: by clog type";
+const pageTitle = "Best drain snakes 2026: the right type for each clog, ranked";
 const pageDescription =
   "Which drain snake clears which clog — hand auger, zip-it strip, tub snake, or powered drum — what to check before buying, and when a clog is past DIY.";
 

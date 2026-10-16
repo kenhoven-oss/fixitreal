@@ -91,7 +91,7 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-fire-extinguishers-for-home";
-const pageTitle = "Best fire extinguishers for home (2026)";
+const pageTitle = "Best fire extinguisher for home 2026: kitchen, garage, house";
 const pageDescription =
   "The best home fire extinguisher isn't one extinguisher — it's the right class in the right room. Kitchen, garage, and whole-house picks, with sizing.";
 
@@ -99,7 +99,7 @@ const pageDescription =
 // byline, the Article JSON-LD and the sitemap all read from these two
 // constants so they can never drift apart.
 const publishedAt = "2026-05-16";
-const updatedAt = "2026-05-16";
+const updatedAt = "2026-10-16";
 
 export const metadata = buildMetadata({
   title: pageTitle,

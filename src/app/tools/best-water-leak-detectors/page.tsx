@@ -91,9 +91,9 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-water-leak-detectors";
-const pageTitle = "Best home water leak detectors and detection systems (2026)";
+const pageTitle = "Best water leak detectors for home 2026: pucks, Wi-Fi, shutoff";
 const pageDescription =
-  "The best water leak detector for home use depends on where water sits: point sensors, Wi-Fi systems, and automatic shutoffs, ranked by what they prevent.";
+  "The best home water leak detector depends on who is home when it leaks: $15 siren pucks, Wi-Fi sensors that text you, and whole-house shutoff valves, ranked.";
 
 // Single source of truth for this page's dates: OG metadata, the visible
 // byline, the Article JSON-LD and the sitemap all read from these two
