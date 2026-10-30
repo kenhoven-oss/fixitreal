@@ -754,6 +754,12 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
         href: amazonSearch("stud finder with AC wire detection"),
         label: "Shop stud finders on Amazon",
       },
+      {
+        name: "Carbide or diamond tile drill bit set",
+        why: "For the tile rows in the surface table. The difference between a clean hole and a cracked tile is the bit: spear-point carbide for ceramic, a diamond core bit kept wet for porcelain and stone.",
+        href: amazonSearch("diamond tile drill bit set porcelain ceramic"),
+        label: "Shop tile drill bits on Amazon",
+      },
     ],
     guides: [
       { href: "/senior-home-safety/best-grab-bars-for-showers", label: "Best grab bars for showers" },
