@@ -13,6 +13,8 @@ type ComparisonRow = {
 };
 
 type RecommendedProductsSectionProps = {
+  /** Optional DOM id so in-page links ("compare all picks") can target the section. */
+  id?: string;
   /** Section heading, e.g. "Recommended drain snakes". */
   heading: string;
   /** Optional short paragraph under the heading. */
@@ -107,6 +109,7 @@ function autoComparison(
 }
 
 export function RecommendedProductsSection({
+  id,
   heading,
   intro,
   products,
@@ -118,7 +121,7 @@ export function RecommendedProductsSection({
   const table = comparison ?? autoComparison(products);
 
   return (
-    <section className="mt-10">
+    <section id={id} className="mt-10 scroll-mt-24">
       <h2 className="font-serif text-3xl text-navy-900">{heading}</h2>
       <EvidenceDisclosure
         basis={evidence.basis}

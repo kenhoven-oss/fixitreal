@@ -80,6 +80,7 @@ const LIVE = {
   flangePlunger: "https://amzn.to/3Qvj5Np", // /tools/best-plungers-for-homeowners
   leakWifi: "https://amzn.to/4bM1ngp", // /tools/best-water-leak-detectors
   drainPan28: "https://amzn.to/41JCEE9", // Oatey 28 in pan — inline on /advice/water-heater-leaking, verified 2026-10-12
+  abcExtinguisher: "https://amzn.to/3TW9q44", // 5-lb ABC extinguisher — /tools/best-fire-extinguishers-for-home, HTTP 200 in 2026-10-12 audit
 } as const;
 
 const GUIDES = {
@@ -103,6 +104,7 @@ const GUIDES = {
   drywallKits: { href: "/tools/best-drywall-repair-kits", label: "Drywall repair kit guide" },
   breakerFinders: { href: "/tools/best-circuit-breaker-finders", label: "Circuit breaker finder guide" },
   shutoffValves: { href: "/tools/best-automatic-water-shutoff-valves", label: "Automatic shutoff valve guide" },
+  fireExtinguisher: { href: "/tools/best-fire-extinguishers-for-home", label: "Fire extinguisher buying guide" },
 } as const;
 
 /**
@@ -857,5 +859,83 @@ export const PRODUCT_PICKS: Record<string, ProductPickBlock> = {
       },
     ],
     guides: [GUIDES.plunger, GUIDES.drainSnake],
+  },
+
+  /* ---------------- Outlet smoking (emergency) ---------------- */
+  "outlet-smoke-aftermath": {
+    title: "For the three things this page asks you to do",
+    picks: [
+      {
+        name: "5-lb ABC dry-chemical fire extinguisher",
+        why: "The only safe way to put out a small electrical fire — never water. Rated for Class C (energized electrical) as well as A and B; one per floor, mounted where you can reach it on the way out.",
+        href: LIVE.abcExtinguisher,
+        label: "See the ABC extinguisher we recommend",
+      },
+      {
+        name: "Circuit breaker finder",
+        why: "Step 1 is 'find the right breaker fast'. On an unlabelled panel this plug-in transmitter and handheld receiver identify the breaker in under a minute, so you are not flipping the main and resetting every clock in the house.",
+        href: LIVE.breakerFinder,
+        label: "See the breaker finder we recommend",
+      },
+      {
+        name: "Non-contact voltage tester",
+        why: "Confirms the outlet is actually dead after the breaker is off before anyone unplugs a melted cord. Hold it to the outlet face; no beep, no light, then proceed.",
+        href: LIVE.ncvt,
+        label: "See the voltage tester we recommend",
+      },
+    ],
+    guides: [GUIDES.fireExtinguisher, GUIDES.breakerFinders, GUIDES.voltageTester],
+  },
+
+  /* ---------------- Bath fan venting under porch (inspection) ---------------- */
+  "bath-fan-vent-reroute-parts": {
+    title: "Parts for the through-wall re-route",
+    picks: [
+      {
+        name: "4-inch wall vent cap with backdraft damper",
+        why: "The termination that makes the fix a fix: a louvered cap outside the building envelope with a damper to stop cold air and insects coming back in. Match the duct diameter (3 or 4 in).",
+        href: amazonSearch("4 inch wall vent cap with damper bathroom exhaust"),
+        label: "Shop wall vent caps on Amazon",
+      },
+      {
+        name: "Insulated 4-inch flexible duct",
+        why: "Insulated duct keeps the warm exhaust from condensing inside the run and dripping back into the fan — the sagging uninsulated flex duct this page warns against is the usual cause of ceiling stains.",
+        href: amazonSearch("4 inch insulated flexible duct bathroom exhaust fan 25 ft"),
+        label: "Shop insulated duct on Amazon",
+      },
+      {
+        name: "Pin-type moisture meter",
+        why: "Before patching the porch ceiling, confirm the framing has dried. Readings above about 19% mean the cavity still holds moisture and the mold problem is not over.",
+        href: LIVE.moistureMeterPin,
+        label: "See the moisture meter we recommend",
+      },
+    ],
+    guides: [GUIDES.moistureMeter],
+  },
+
+  /* ---------------- Water heater valves (what-is-this) ---------------- */
+  "water-heater-valve-maintenance": {
+    title: "For the two valves you will actually operate",
+    picks: [
+      {
+        name: "Brass replacement drain valve (3/4 in)",
+        why: "The plastic drain valve on most tanks weeps after its first use. Swapping it for a brass hose-bib style valve while the tank is drained for the annual flush ends that problem permanently.",
+        href: amazonSearch("brass water heater drain valve 3/4 inch replacement"),
+        label: "Shop brass drain valves on Amazon",
+      },
+      {
+        name: "Battery leak sensor puck for the drip pan",
+        why: "A dripping T&P valve or a weeping drain valve shows up as water in the pan long before it shows up on the floor. A $15 puck turns that into an alarm.",
+        href: LIVE.leakPuck,
+        label: "See the leak sensor we recommend",
+      },
+      {
+        name: "Water heater drain pan with a drain fitting (28 in)",
+        why: "If the tank sits on a finished floor without one, add it the next time the heater is moved. It catches the T&P discharge and a slow tank leak alike.",
+        href: LIVE.drainPan28,
+        label: "See the drain pan we recommend",
+      },
+    ],
+    guides: [GUIDES.leakDetector],
   },
 };

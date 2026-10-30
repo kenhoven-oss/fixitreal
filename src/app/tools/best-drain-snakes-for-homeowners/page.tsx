@@ -14,6 +14,7 @@ import { RecommendedProductsSection } from "@/components/tools/RecommendedProduc
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import { itemListSchema } from "@/lib/jsonld";
+import { AffiliateAnchor } from "@/components/ui/AffiliateAnchor";
 
 /* --------------------------------------------------------------------------
    PRODUCTS
@@ -133,7 +134,18 @@ const pageDescription =
 // byline, and the Article JSON-LD all read from these two constants so they
 // can never drift apart again.
 const publishedAt = "2026-04-20";
-const updatedAt = "2026-10-12";
+const updatedAt = "2026-10-30";
+// Visible byline derives from the same constant as the metadata and JSON-LD.
+const updatedLabel = new Date(updatedAt).toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
+// The "if you only buy one" pick is the Best Overall card; it must carry a
+// verified affiliate link or the quick-pick block is not rendered.
+const quickPick = products[0];
+const quickPickHref = quickPick.affiliateUrl?.trim() ?? "";
 
 export const metadata = buildMetadata({
   title: pageTitle,
@@ -155,6 +167,11 @@ const faqs = [
     question: "What are the different types of drain snakes?",
     answer:
       "For homeowners there are four: a hand-crank drum auger (¼-in cable, 15–25 ft) for sink, tub, and shower lines; a flat plastic zip-it strip for hair at the drain opening; a flat-tape tub snake that passes the overflow and drain crossbars; and a homeowner-grade powered drum auger that runs off a drill for longer runs. Toilet (closet) augers are a separate tool with a porcelain guard, and anything over ½-in cable or 50 ft is sewer-line equipment best left to a pro.",
+  },
+  {
+    question: "What is the best drain snake for a kitchen sink?",
+    answer:
+      "A 25-ft hand-crank drum auger with a ¼-inch cable. Kitchen clogs are grease and food packed past the P-trap, usually 5–15 feet in, which is exactly the range a drum auger covers. Remove the P-trap first and feed the cable into the wall pipe rather than down through the basket strainer — you get a straight run and you can see what comes back. A hair strip is useless here and a powered auger is more than the job needs.",
   },
   {
     question: "Do I need a powered snake, or is manual enough?",
@@ -214,7 +231,7 @@ export default function BestDrainSnakesGuide() {
               {kenHoven.name}
             </Link>
           </span>
-          <span>Updated May 16, 2026</span>
+          <span>Updated {updatedLabel}</span>
           <span>6 min read</span>
         </p>
 
@@ -237,6 +254,40 @@ export default function BestDrainSnakesGuide() {
             recommendations.
           </p>
         </div>
+
+        {quickPickHref && (
+        <aside
+          aria-label="Quick pick"
+          className="mt-6 rounded-lg border border-amber-200 border-l-4 border-l-amber-500 bg-amber-50/70 p-5"
+        >
+          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-amber-800">
+            If you only buy one
+          </p>
+          <p className="mt-2 text-navy-900 leading-relaxed">
+            A <strong>25-ft hand-crank drum auger</strong> clears about 80% of
+            sink, tub, and shower clogs a homeowner will ever meet, costs less
+            than a tenth of one plumber visit, and lasts for years stored in a
+            bucket. Buy the hair strip too if long hair goes down your tub
+            drain; skip the powered unit unless clogs keep coming back.
+          </p>
+          <p className="mt-3 text-sm">
+            <AffiliateAnchor
+              href={quickPickHref}
+              productName={quickPick.name}
+              placement="buying-guide-quick-pick"
+              className="inline-flex items-center gap-1 font-semibold text-navy-700 no-underline border-b border-amber-500 pb-0.5 hover:text-navy-900"
+            >
+              See the 25-ft hand auger we recommend <span aria-hidden>↗</span>
+            </AffiliateAnchor>
+            <span className="text-ink-600">
+              {" "}· or{" "}
+              <a href="#our-picks" className="no-underline text-navy-700 hover:text-navy-900 border-b border-ink-300">
+                compare all four types
+              </a>
+            </span>
+          </p>
+        </aside>
+        )}
 
         <h2 className="mt-10 font-serif text-2xl text-navy-900">
           Types of plumbing snakes (and which clog each one clears)
@@ -295,6 +346,7 @@ export default function BestDrainSnakesGuide() {
         </div>
 
         <RecommendedProductsSection
+          id="our-picks"
           heading="Our picks"
           intro={
             <p>
@@ -402,6 +454,24 @@ export default function BestDrainSnakesGuide() {
               →{" "}
               <Link href="/advice/water-under-the-bathroom-sink" className="no-underline text-navy-700 hover:text-navy-900">
                 Water under the bathroom sink — find the source
+              </Link>
+            </li>
+            <li>
+              →{" "}
+              <Link href="/diy-or-hire/unclog-drain" className="no-underline text-navy-700 hover:text-navy-900">
+                Should I unclog the drain myself or call a plumber?
+              </Link>
+            </li>
+            <li>
+              →{" "}
+              <Link href="/advice/why-does-my-drain-smell" className="no-underline text-navy-700 hover:text-navy-900">
+                Why does my drain smell? (and when a snake fixes it)
+              </Link>
+            </li>
+            <li>
+              →{" "}
+              <Link href="/advice/roto-rooter-vs-local-plumber" className="no-underline text-navy-700 hover:text-navy-900">
+                Roto-Rooter vs a local plumber — if the snake doesn&apos;t clear it
               </Link>
             </li>
             <li>

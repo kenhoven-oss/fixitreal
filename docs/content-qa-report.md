@@ -1,6 +1,6 @@
 # Content QA report
 
-Generated 2026-10-16 against 933 prerendered pages.
+Generated 2026-10-30 against 933 prerendered pages.
 
 ## ERROR · Glued text at a template boundary (missing space) — 0
 
