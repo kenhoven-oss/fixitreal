@@ -43,7 +43,25 @@ Known from earlier runs, so you need not rediscover it:
   codelibrary.amlegal.com (the last two are Cloudflare-fronted).
 - curl WORKS: seattle.gov, kingcounty.gov, mecknc.gov, ncosfm.gov, in.gov,
   hcd.ca.gov, up.codes, files.amlegal.com, codes.ohio.gov, le.utah.gov,
-  okc.gov (with curl's default user agent), codes.baltimorecity.gov.
+  okc.gov (with curl's default user agent), codes.baltimorecity.gov,
+  capecoral.gov, syr.gov, onondaga.gov, muni.org, dos.ny.gov, stlouis-mo.gov,
+  pittsburghpa.gov, sedgwick.gov, chattanooga.gov, dconc.gov,
+  permits.knoxvilletn.gov, online.encodeplus.com (use its doc-view.aspx URLs;
+  the doc-viewer.aspx ones are JS-only).
+- Also curl BLOCKED: gilbertaz.gov, anaheim.gov, bakersfieldcity.us (serves an
+  empty shell), wichita.gov, kcmo.gov, newarknj.gov, lincoln.ne.gov's
+  /Payments-Services/ paths (its /City/Departments/PDS/ paths work),
+  greensboro-nc.gov, durhamnc.gov, knoxvilletn.gov, cityofrochester.gov,
+  allencounty.in.gov, omaha.gov, mylubbock.us, jacksonms.gov's code host.
+
+Useful substitutions found this way: Wichita's facts all live on sedgwick.gov
+(MABCD is the joint Wichita-Sedgwick County authority); Pittsburgh's plumbing
+is Allegheny County's, Syracuse's is Onondaga County's, and Seattle's is
+Public Health - Seattle & King County, so check the county when a city
+publishes no plumbing fee.
+
+If a PDF extracts as garbage because revision strikethrough overlaps inserted
+text, render the pages with pdftoppm and read the PNGs instead.
 - up.codes is an allowed host and carries state codes plus several cities as
   separate jurisdictions — a good fallback for code editions and amendments.
 If curl returns 403 or an empty body for a site, note that source as

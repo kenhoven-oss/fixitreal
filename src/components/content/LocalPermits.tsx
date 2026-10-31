@@ -57,11 +57,20 @@ export function LocalPermits({
           <ExternalLink href={permit.sourceUrl}>
             {hostname(permit.sourceUrl)}
           </ExternalLink>
-          {permit.fee && permit.feeAsOf && (
-            <span className="block text-xs text-ink-600">
-              {`Per the fee schedule the city publishes, dated ${permit.feeAsOf}. Confirm the current figure before you budget.`}
-            </span>
-          )}
+          {permit.fee &&
+            (permit.feeAsOf ? (
+              <span className="block text-xs text-ink-600">
+                {`Per the fee schedule the city publishes, dated ${permit.feeAsOf}. Confirm the current figure before you budget.`}
+              </span>
+            ) : (
+              // Saying nothing here would leave a reader unable to tell an
+              // undated schedule from one we simply did not date. Many
+              // authorities publish fee tables as undated web pages, and that
+              // is worth knowing before budgeting against the number.
+              <span className="block text-xs text-ink-600">
+                {`${detail.authority.name} prints no effective date on this schedule, so its age cannot be established. Confirm the current figure before you budget.`}
+              </span>
+            ))}
         </dd>
 
         <dt className="font-semibold text-navy-900">Authority</dt>
