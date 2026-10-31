@@ -53,6 +53,18 @@ const OFFICIAL_CODE_HOSTS = [
   "up.codes",
 ];
 
+// Official municipal sites that do not sit on a .gov/.us domain. Each entry is
+// a city's own primary web presence, verified individually — this list is NOT
+// a general .org exemption, and a third-party document host (a DAM or
+// file-share CDN a city happens to publish through) does not belong here:
+// those URLs are share links that rot and do not read as official to a reader.
+// Add an entry only after confirming the host is the authority's own site.
+const OFFICIAL_CITY_HOSTS = [
+  "denvergov.org",      // City and County of Denver's primary site
+  "dallascityhall.com", // City of Dallas's primary site
+  "nyc.gov",            // already .gov, listed for clarity of intent
+];
+
 // Named and denied so a well-meaning future run cannot quietly reintroduce them.
 const DENIED_HOSTS = [
   "angi.com", "angieslist.com", "homeadvisor.com", "thumbtack.com",
@@ -93,7 +105,8 @@ function classifyUrl(url, errors, where) {
     host.endsWith(".us") ||
     host.endsWith(".mil") ||
     host.endsWith(".state.oh.us") ||
-    OFFICIAL_CODE_HOSTS.some((h) => host === h || host.endsWith(`.${h}`));
+    OFFICIAL_CODE_HOSTS.some((h) => host === h || host.endsWith(`.${h}`)) ||
+    OFFICIAL_CITY_HOSTS.some((h) => host === h || host.endsWith(`.${h}`));
   if (!official) {
     errors.push(
       `${where}: ${host} is not a recognised official source (.gov/.us or municipal code host)`

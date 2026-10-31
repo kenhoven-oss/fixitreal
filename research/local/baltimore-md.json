@@ -1,0 +1,78 @@
+{
+  "citySlug": "baltimore-md",
+  "cityName": "Baltimore",
+  "stateAbbr": "MD",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Baltimore City Department of Housing and Community Development (DHCD), Permits and Inspections",
+    "url": "https://www.baltimorecity.gov/dhcd/our-work/permits-inspections/building-permits"
+  },
+  "codeEdition": {
+    "text": "Baltimore enforces the Building, Fire, and Related Codes of Baltimore City, 2024 Edition, adopted by Ord. 24-341. It layers city amendments onto the Maryland Building Performance Standards (2021 IBC, 2021 IRC and 2021 IECC with state modifications, effective May 29, 2023), the 2020 National Electrical Code, the 2021 International Plumbing Code, and the 2021 International Fuel Gas, Mechanical and Fire Codes. Each code is a separate Part of the city compilation, with the Baltimore changes printed section by section.",
+    "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/I/index.full.html"
+  },
+  "permitPolicy": {
+    "text": "A homeowner cannot pull their own trade permit in Baltimore. DHCD states that electrical, mechanical, gas and plumbing work requires a licensed contractor, and that construction work on a one- or two-family dwelling requires a Maryland Home Improvement Commission licensed contractor. The contractor's license has to be registered in the city's E-Permits database before it can be attached to an application, and the registration access code is issued only to the license holder. Every permit requires inspections scheduled with DHCD building and trade inspectors.",
+    "sourceUrl": "https://www.baltimorecity.gov/dhcd/our-work/permits-inspections/building-permits"
+  },
+  "registration": {
+    "text": "Baltimore licenses electricians itself, through the city's Board of Electrical Examiners and Supervisors, on top of any state credential. A person or firm may not work as a master or maintenance electrician in the city without a city license. The published charges are $75 for a new or renewed master or master restricted license, $75 for a restricted license, $50 for a maintenance license, $35 for the examination, and a $35 delinquent fee if renewal is late. A master electrician must also file a $2,500 surety bond with the Board, conditioned on the faithful performance of the work.",
+    "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/13/index.full.html"
+  },
+  "codeItems": [
+    {
+      "text": "Baltimore adds a rule the IRC does not have: a circuit feeding a water heater must have a disconnecting means separate from the overcurrent device, and that disconnect has to be installed close to the water heater. An inspector looking at an electric water heater swap will expect a local disconnect, not just the breaker in the panel.",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/X/index.full.html"
+    },
+    {
+      "text": "Baltimore amends the hot water section of the plumbing code so that where hot water return piping is needed, it must be taken off the supply side of the backflow prevention device. The city also requires a certificate documenting backflow testing and inspection to be attached to the device itself.",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/VI/index.full.html"
+    },
+    {
+      "text": "Only a person licensed by the State of Maryland as a master or journeyman plumber may connect a backflow prevention device to the potable water supply in Baltimore. This is a city amendment to the plumbing code, separate from the general contractor-licensing rule.",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/VI/index.full.html"
+    },
+    {
+      "text": "Baltimore restricts two piping materials a national guide would treat as acceptable. Seamless Type M copper water tubing is not approved for underground water service, and polybutylene pipe is struck from the approved hydronic piping materials table.",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/VI/index.full.html"
+    },
+    {
+      "text": "Baltimore's fire code puts the smoke alarm duty for a one-, two- or three-family dwelling on the occupant: equip the unit with the required number of approved battery or AC primary electric powered detectors and maintain them per the manufacturer's instructions. In a rental the landlord owns installation and, on written notice, repair or replacement, and must supply a detector designed for a hearing-impaired tenant on written request.",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/VIII/index.full.html"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Baltimore takes a permit pulled by a licensed contractor, and the city's own code adds a required disconnect next to an electric unit; the permit fee for the heater itself is small but a flat application fee, a minimum charge and a 5% permit tax ride on top.",
+      "fee": "$20 each for electrical water heaters, new construction or replacement (Building Code § 109.6.3(j)); gas and other fuel-burning units are charged under § 109.6.3(a) at $30 for 0 to 200,000 BTU per hour input per unit; the minimum fee or service charge under § 109.3 is $25; a nonrefundable application fee of $25 applies to a 1- or 2-family dwelling permit that needs no plan review; and § 109.7 levies a Building Code permit tax of 5% of the final permit cost",
+      "feeAsOf": "2024 Edition of the Building, Fire, and Related Codes of Baltimore City (Ord. 24-437; Ord. 24-341)",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/II/109"
+    },
+    "plumber-service-call": {
+      "requirement": "Baltimore charges plumbing permits per fixture and per utility line rather than as one flat trade fee, and its published list of work exempt from permit for one- and two-family homes contains no plumbing exemptions, so replacement plumbing work is permit work done by a licensed contractor.",
+      "fee": "$5 each to install, replace or reconstruct plumbing fixtures; $20 to remove plumbing fixtures only; $25 for a new or replacement water service pipe at a 1- or 2-family dwelling; $25 for a new or replacement sanitary connection at a 1- or 2-family dwelling; $20 per utility to reconstruct water, sanitary or storm lines on the premises; $25 each for a backflow prevention device under 2 inches; minimum fee or service charge $25 under § 109.3, plus a $25 application fee for a 1- or 2-family permit with no plan review and the 5% Building Code permit tax",
+      "feeAsOf": "2024 Edition of the Building, Fire, and Related Codes of Baltimore City (Ord. 24-437; Ord. 24-341)",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/II/109"
+    },
+    "electrician-service-call": {
+      "requirement": "Baltimore prices electrical permits by what was actually done — amperage for a service, a per-circuit rate for branch wiring, a per-device rate for fixtures — and only a city-licensed electrician may do the work; replacing lamps and reconnecting approved portable equipment are exempt.",
+      "fee": "Service wiring and equipment by rating: $25 for 0 to 100 amperes, $30 for over 100 to 200 amperes, $40 for over 200 to 400 amperes; $6 for each new, extended or replaced branch circuit; $25 for 1 to 25 fixtures or devices only, plus $5 for each additional 25; $25 per permit for electrical work not otherwise classified; minimum fee or service charge $25 under § 109.3, plus a $25 application fee for a 1- or 2-family permit with no plan review and the 5% Building Code permit tax",
+      "feeAsOf": "2024 Edition of the Building, Fire, and Related Codes of Baltimore City (Ord. 24-437; Ord. 24-341)",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/II/109"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Baltimore requires a permit to change, install or replace any electrical, gas, mechanical or plumbing system, and a disposer swap touches both the drain and a branch circuit, so it is permit work that a licensed contractor has to perform rather than a homeowner.",
+      "sourceUrl": "https://www.baltimorecity.gov/dhcd/our-work/permits-inspections/building-permits"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Baltimore's fire code makes the occupant of a one-, two- or three-family dwelling responsible for having the required number of approved smoke detectors and keeping them maintained; in a rental that duty shifts to the landlord, who must also provide a detector for a hearing-impaired tenant on written request.",
+      "sourceUrl": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/building-codes/VIII/index.full.html"
+    }
+  },
+  "notVerified": [
+    "Whether a stand-alone permit is required just to swap a smoke alarm, and any fee for one — the city fee schedule has no smoke alarm line and the exempt-work list does not name alarms",
+    "The specific permit fee line that applies to a food waste disposer replacement — the fee schedule charges per plumbing fixture and per electrical circuit but does not name disposers",
+    "Whether Baltimore requires a separate city plumber registration or bond on top of the state plumbing license — only the city electrical licensing scheme and bond could be sourced",
+    "Current dollar amounts for the city electrician licensing fees beyond what the codified ordinance prints (the fee list in the City Code dates to Ord. 90-628)"
+  ]
+}

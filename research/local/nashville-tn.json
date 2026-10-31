@@ -1,0 +1,73 @@
+{
+  "citySlug": "nashville-tn",
+  "cityName": "Nashville",
+  "stateAbbr": "TN",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Metro Nashville & Davidson County Department of Codes and Building Safety",
+    "url": "https://www.nashville.gov/departments/codes"
+  },
+  "codeEdition": {
+    "text": "Metro Nashville adopted the 2024 International Building, Residential, Existing Building, Fuel Gas, Mechanical, Plumbing, Swimming Pool and Spa, and Energy Conservation Codes, each with local amendments, by ordinance BL2025-898. Electrical work is under the 2023 National Electrical Code, and accessibility under ICC A117.1-2017.",
+    "sourceUrl": "https://www.nashville.gov/departments/codes/codes-administration/adopted-codes-list"
+  },
+  "permitPolicy": {
+    "text": "A Nashville property owner who lives in, or intends to live in, a single-family house may pull their own building permit as a self permit, taking on full responsibility for meeting the zoning, building and trades codes, and the city requires a notarized Affidavit of Exemption and Self Permit Affidavit. A self permit is not allowed for a detached accessory dwelling unit. Trade permits are a tighter case: only a licensed contractor with an ePermits account can apply online, and anyone else has to apply in person at the Codes department.",
+    "sourceUrl": "https://www.nashville.gov/departments/codes/construction-and-permits/residential-building-permits"
+  },
+  "registration": {
+    "text": "Nashville runs its own contractor registration on top of the state credential. A master plumber registers as a Metropolitan Plumbing Contractor under Metropolitan Code chapter 6.52, section 140, and an electrician registers as a Metropolitan Electrical Contractor under chapter 6, sections 6.20 and 140. Registration also requires a continuous permit bond running to the Metropolitan Government, which covers damage to public property and the cost of repairs a property owner incurs if the contractor does not follow the city's codes.",
+    "sourceUrl": "https://filetransfer.nashville.gov/portals/0/sitecontent/Codes/docs/public_docs/Bond%20Permit%20Form-2010.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Nashville rewrote the plastic vent rules in the 2024 IRC and the 2024 International Fuel Gas Code. Plastic piping used to vent an appliance must be listed and labeled to UL 1738, the venting standard, not merely to a plumbing standard, and must be installed to the vent manufacturer's instructions with a contrasting-color primer where primer is required. The city enforced this from July 15, 2025 and has required it on all projects since January 1, 2026, which matters for any high-efficiency water heater or furnace vented in PVC or CPVC.",
+      "sourceUrl": "https://www.nashville.gov/departments/codes/news/mechanical-code-amendments-offer-clarity-flue-venting"
+    },
+    {
+      "text": "Metro Nashville requires a backflow preventer with its meter on large residences as well as on pools, irrigation and sprinkler systems. It has to go directly behind and as close to the water meter as possible, outside the structure, at or near the meter with no service branches upstream, at least a foot above the 100-year floodplain, and on ground that drains. Only a licensed plumber may install it.",
+      "sourceUrl": "https://www.nashville.gov/departments/codes/construction-and-permits/building-permits-central/backflow"
+    },
+    {
+      "text": "A Nashville backflow preventer must pass an initial Metro Water Services inspection and then an inspection every year after that. The water is shut off during the test, the plumber has to have test ports in place, and the device and meter must be accessible. A failed test means the owner calls Metro Water Services to schedule a reinspection.",
+      "sourceUrl": "https://www.nashville.gov/departments/codes/construction-and-permits/building-permits-central/backflow"
+    },
+    {
+      "text": "Nashville's own code text lists a water heater or circulation tank as a gas or mechanical appliance in its own right, separate from the plumbing fixture count, which is why replacing a gas water heater can draw both a plumbing permit and a gas/mechanical permit on the same job.",
+      "sourceUrl": "https://www.nashville.gov/sites/default/files/2025-12/Building-Permit-Fee-Scheudle-2025.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Nashville prices a water heater swap as a line item on the trade permit, and because the city treats the heater as both a plumbing fixture and a gas or mechanical appliance, a gas unit can take two permits, each with its own minimum.",
+      "fee": "Plumbing permit: Minimum fee (each permit) $75.00; Hot water heater $43.00. Gas/mechanical permit: Minimum fee (each permit) $75.00; Hot water heater $21.00. Electrical permit: Minimum fee (each permit) $75.00; Water heaters, residential, each $15.00. Reinspection fee (each) $50.00.",
+      "feeAsOf": "2025",
+      "sourceUrl": "https://www.nashville.gov/sites/default/files/2025-12/Building-Permit-Fee-Scheudle-2025.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal in Nashville is plumbing work covered by the city's plumbing permit, which carries a flat minimum plus a charge for each fixture outlet, counted whether or not the fixture is actually set when the work is done.",
+      "fee": "Plumbing permit: Minimum fee (each permit) $75.00; Plumbing fixtures (each fixture) $11.00",
+      "feeAsOf": "2025",
+      "sourceUrl": "https://www.nashville.gov/sites/default/files/2025-12/Building-Permit-Fee-Scheudle-2025.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Nashville's plumbing permit fee schedule expressly covers repairs and alterations to an existing plumbing system, so a service call that changes the plumbing is permitted and starts at the city's flat minimum.",
+      "fee": "Minimum fee (each permit) $75.00; Plumbing fixtures (each fixture) $11.00; Each additional building drain $32.00; Sewer connection $80.00; Water service connection $80.00; Reinspection fee (each) $50.00",
+      "feeAsOf": "2025",
+      "sourceUrl": "https://www.nashville.gov/sites/default/files/2025-12/Building-Permit-Fee-Scheudle-2025.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit in Nashville covers additions, alterations and repairs to an existing system and never costs less than the city's flat minimum, and if the work starts before the permit is issued the fees are tripled.",
+      "fee": "Minimum fee (each permit) $75.00; 10 or fewer lighting outlets $6.00, each additional outlet over 10 $1.00; Service, new installation, increasing size, or relocation, per meter $12.00; Distribution, lighting or switch panels 200 amperes or less, each $10.00; Reinspection fee (each) $50.00; fees tripled where work begins before a permit is issued",
+      "feeAsOf": "2025",
+      "sourceUrl": "https://www.nashville.gov/sites/default/files/2025-12/Building-Permit-Fee-Scheudle-2025.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee as published by Metro Nashville",
+    "The dollar amount of the Metro Nashville permit bond (the city's bond form leaves the penal sum blank for the surety to fill in)",
+    "Metro Nashville contractor registration fee amounts",
+    "Whether Nashville amends the 2024 codes on expansion tanks, drain pans, TPR discharge or seismic strapping (the only amendments the department has published online concern plastic vent listing)",
+    "Whether a residential garbage disposal counts as its own fixture in the Nashville fixture list, which names commercial disposal units and kitchen sinks but not residential disposals"
+  ]
+}

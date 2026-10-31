@@ -1,0 +1,69 @@
+{
+  "citySlug": "detroit-mi",
+  "cityName": "Detroit",
+  "stateAbbr": "MI",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Detroit Buildings, Safety Engineering and Environmental Department (BSEED)",
+    "url": "https://detroitmi.gov/departments/buildings-safety-engineering-and-environmental-department-bseed"
+  },
+  "codeEdition": {
+    "text": "Detroit enforces the single state construction code rather than a code of its own. The Michigan Residential Code adopts the 2015 International Residential Code, with listed sections struck out and replaced by state amendments, and that rule set took its current effect on February 8, 2022.",
+    "sourceUrl": "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R%20408.30500%20%20to%20408.30547g.pdf"
+  },
+  "permitPolicy": {
+    "text": "In Michigan a city may issue a plumbing permit only to a licensed plumbing contractor, who must put the contractor license number and the supervising master plumber's license number on the application. The exception a homeowner can use is narrow: an owner may pull a permit and do their own plumbing, building sewer or private sewer work in their own single-family dwelling. A city may not run its own plumbing licensing scheme or exempt itself from the state one.",
+    "sourceUrl": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-339-6125"
+  },
+  "registration": {
+    "text": "A state-licensed plumbing contractor working in Detroit must register that license with the city's enforcing agency if the agency asks for it. State law caps what the city may charge for that registration at $15, and the registration runs until the contractor license expires.",
+    "sourceUrl": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-339-6125"
+  },
+  "codeItems": [
+    {
+      "text": "Michigan rewrites the relief-valve discharge rule, so a Detroit inspector checks the water heater's TPR line against state wording rather than the plain IPC. The pipe must end in the open air no more than four inches above the floor with an unthreaded end, carry no valves, be rigid pipe rated for at least 210 degrees Fahrenheit, drain by gravity, match the relief valve outlet in inside diameter, and discharge to the floor, the heater's pan or a waste receptor. It may never be connected straight into the drainage system.",
+      "sourceUrl": "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R%20408.30701%20%20to%20408.30796.pdf"
+    },
+    {
+      "text": "Michigan adds its own list of places a full-open valve is required, and one of them is the water supply pipe to every water heater. A replacement that leaves the tank without that shutoff fails inspection.",
+      "sourceUrl": "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R%20408.30701%20%20to%20408.30796.pdf"
+    },
+    {
+      "text": "Michigan makes any permitted work in an existing dwelling with fuel-fired appliances or an attached garage trigger carbon monoxide alarms to the new-construction standard. Pulling a permit to swap a gas water heater therefore brings the CO alarm requirement with it.",
+      "sourceUrl": "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R%20408.30500%20%20to%20408.30547g.pdf"
+    },
+    {
+      "text": "Michigan amends the smoke alarm retrofit trigger in both directions. Permitted alterations, repairs or additions make the whole dwelling unit meet the new-dwelling smoke alarm layout, but installation, alteration or repair of electrical, plumbing or mechanical systems is expressly exempt from that trigger, and existing interconnection is not required. Houses built before November 6, 1974 that are not under permit follow a separate location list: one alarm in each sleeping room and one on every floor including the basement.",
+      "sourceUrl": "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R%20408.30500%20%20to%20408.30547g.pdf"
+    },
+    {
+      "text": "A homeowner may do electrical work in a single-family home they own and occupy without an electrical license, but that work is not on the state's list of installations exempt from an electrical permit, so the permit is still needed.",
+      "sourceUrl": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-339-5737"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Detroit needs a plumbing permit, and the city may issue it only to a licensed plumbing contractor unless you own and live in the single-family house and do the work yourself. The inspector looks at the relief-valve discharge line, the shutoff valve on the heater's cold supply, and, on a fuel-fired heater, carbon monoxide alarms.",
+      "sourceUrl": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-339-6125"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Detroit may not start until the responsible plumbing contractor has a permit from the city, and only a licensed master or journey plumber may do the plumbing. Minor repair work is carved out of the license requirement, as is a homeowner plumbing their own single-family dwelling once a permit is secured.",
+      "sourceUrl": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-339-6107"
+    },
+    "electrician-service-call": {
+      "requirement": "Detroit follows the state electrical rules, which skip the permit for minor repair work such as swapping flush or snap switches, fuses, lamp sockets, receptacles and worn cords. Anything beyond that needs a permit, a copy of it has to stay readable at the job site, and the permit cannot be transferred to someone else.",
+      "sourceUrl": "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R%20408.30801%20%20to%20408.30880.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Swapping a smoke alarm is not itself the thing Detroit inspects for, but once a permit is pulled for an alteration, repair or addition, the dwelling unit has to carry smoke alarms laid out as for a new house. Permitted electrical, plumbing and mechanical work is exempt from that trigger, and existing alarms do not have to be interconnected.",
+      "sourceUrl": "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R%20408.30500%20%20to%20408.30547g.pdf"
+    }
+  },
+  "notVerified": [
+    "Every Detroit-published dollar figure. detroitmi.gov and the Detroit code on library.municode.com and codelibrary.amlegal.com all answered automated retrieval with a bot-check page, so no BSEED permit fee schedule, plumbing fee schedule or electrical fee schedule could be read and no fee is reported here.",
+    "Whether Detroit adds local amendments, registration requirements or bond amounts on top of the state code and the state licensing scheme",
+    "garbage-disposal-replacement permit requirement and fee in Detroit",
+    "Whether Detroit requires a thermal expansion tank or a drain pan on a replacement water heater (the Michigan plumbing amendments read do not add either beyond the base code)",
+    "Whether Detroit charges a separate reinspection fee"
+  ]
+}

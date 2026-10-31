@@ -1,0 +1,79 @@
+{
+  "citySlug": "houston-tx",
+  "cityName": "Houston",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Houston (City-Wide Fee Schedule, Building Code Enforcement fees)",
+    "url": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+  },
+  "codeEdition": {
+    "text": "Houston enforces its own separate Building, Residential, Plumbing, Mechanical and Electrical Codes rather than one combined code. The city's fee schedule cites each by section: permit fees sit in Building Code Chapter 118, the Residential Code uses IRC-style numbering such as R108.5 and R115.4, and the Electrical and Plumbing Codes carry their own numbering, for example Electrical Code Section 301.4 and Plumbing Code Section 103.3.1.",
+    "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+  },
+  "permitPolicy": null,
+  "registration": {
+    "text": "Houston licenses some trades at city level on top of the state credential. A contractor laying public or private sanitary or storm sewers and drains needs a City of Houston sewer and drain contractor licence, published at $33.56 under City Code Chapter 47 and Plumbing Code Sections 104.3 and 416. An irrigator pays a city registration fee of $32.52 under Plumbing Code Section 103.3.1. Both figures are the rates in force from January 1, 2026.",
+    "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+  },
+  "codeItems": [
+    {
+      "text": "Houston treats a garbage disposal as electrical work, not just plumbing. The city charges a per-unit electrical permit fee for a disposal under Building Code Section 118.6.2, in the same list as a dishwasher, oven, clothes dryer and window air-conditioner receptacle, so the appliance circuit is what gets inspected.",
+      "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+    },
+    {
+      "text": "Houston counts gas work by openings rather than by appliance. A gas permit and inspection covers up to four openings for one base charge under Building Code Section 118.5.1, with a smaller charge for each opening past the first four on the same permit, and the city lists a separate temporary gas inspection fee.",
+      "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+    },
+    {
+      "text": "Houston offers an annual electrical maintenance permit, charged per premises under Electrical Code Section 301.4, which lets a property cover routine electrical maintenance for the year instead of pulling a permit for each small job. The published rate from January 1, 2026 is $272.62 per premises.",
+      "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+    },
+    {
+      "text": "Houston's plumbing minimum permit fee is set higher than the minimum for every other permit type, so the floor on a plumbing job in Houston is above the floor on an electrical or mechanical one.",
+      "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+    },
+    {
+      "text": "The Houston Fire Department tells homeowners to put an alarm in every bedroom, in the hallway connecting the rooms, and in the living room, den and other living areas, with at least one on each floor. It gives mounting distances too: 4 to 12 inches below the ceiling on a wall, at least 4 inches off any wall on a ceiling, and 3 feet down from the peak on a high-pitched ceiling.",
+      "sourceUrl": "https://www.houstontx.gov/fire/safetyinfo/smokealarms.html"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Houston is permitted plumbing work, and because gas work is charged by the number of gas openings the permit covers the gas connection as well as the fixture.",
+      "fee": "Plumbing Minimum Permit Fee $97.56; Gas permit and Inspection Base Charge for up to 4 openings $45.53, plus $7.80 for each additional opening after the first 4 on the same permit",
+      "feeAsOf": "January 1, 2026",
+      "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Houston charges a per-unit electrical permit fee for a garbage disposal and a per-fixture plumbing fee for the sink connection, so a disposal swap can touch both trades.",
+      "fee": "Garbage Disposal - Fee per Unit $4.70 (Building Code Sec. 118.6.2); Plumbing Fixture Base Charge for 1 to 3 units $34.24, plus $11.41 for each additional fixture over 3 on the same permit; Plumbing Minimum Permit Fee $97.56",
+      "feeAsOf": "January 1, 2026",
+      "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+    },
+    "plumber-service-call": {
+      "requirement": "Houston sets a minimum plumbing permit fee that applies however small the job is, charges per plumbing fixture above that, and bills a separate fee when an inspector has to come back.",
+      "fee": "Plumbing Minimum Permit Fee $97.56; Plumbing Fixture Base Charge for 1 to 3 units $34.24, plus $11.41 for each additional fixture over 3; Re-Inspection Fee $94.00; Sewer Connection, each $53.71",
+      "feeAsOf": "January 1, 2026",
+      "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+    },
+    "electrician-service-call": {
+      "requirement": "Houston charges an electrical permit by the outlet, fixture and panel, but a minimum permit fee applies to the whole permit, so a one-outlet job still hits the floor; a return inspection is billed separately.",
+      "fee": "Electrical permit: Minimum Permit Fee $91.06; Electrical Outlet - Fee per Outlet $1.34; Electrical Lighting or appliance - Fee per Fixture $1.34; Electrical Panel with 8 or more circuits each $9.39; Electrical Meter Loop and Service up to 50kW $94.00; Re-Inspection Fee $94.00",
+      "feeAsOf": "January 1, 2026",
+      "sourceUrl": "https://cohweb.houstontx.gov/fin_feeschedule/default.aspx"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "The Houston Fire Department asks for an alarm in every bedroom, in the hallway linking them and in each living area, with at least one per floor, and gives the mounting distances off the ceiling and walls.",
+      "sourceUrl": "https://www.houstontx.gov/fire/safetyinfo/smokealarms.html"
+    }
+  },
+  "notVerified": [
+    "Whether a Houston homeowner may pull their own plumbing or electrical permit. Houston publishes its permitting guidance on houstonpermittingcenter.org, which is not an official .gov host, and the city's codified ordinances are hosted on library.municode.com, which blocked automated retrieval",
+    "The code edition years Houston has adopted for its Building, Residential, Plumbing, Mechanical and Electrical Codes, including the National Electrical Code edition now in force",
+    "Houston local amendments to the adopted model codes",
+    "A Houston permit fee line specific to a water heater (the fee schedule publishes none; the figures given are the plumbing minimum and the gas opening charges)",
+    "Whether replacing a smoke alarm in Houston needs a permit, and any Houston or Texas rule on sealed 10-year batteries (statutes.capitol.texas.gov serves its statute text only to a JavaScript client)",
+    "Whether a Houston inspector requires a thermal expansion tank, a drain pan or a particular TPR discharge termination on a replacement water heater"
+  ]
+}

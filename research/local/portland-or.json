@@ -1,0 +1,81 @@
+{
+  "citySlug": "portland-or",
+  "cityName": "Portland",
+  "stateAbbr": "OR",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Portland Permitting & Development (formerly Bureau of Development Services)",
+    "url": "https://www.portland.gov/bds"
+  },
+  "codeEdition": {
+    "text": "Portland does not write its own technical code. City Code 24.10.040 adopts the Oregon specialty codes by rule reference: the Oregon Structural, Residential, Energy Efficiency, Plumbing, Electrical and Mechanical Specialty Codes as adopted and amended in Oregon Administrative Rules chapter 918. As of October 1, 2026 those rules put the 2026 Oregon Residential Specialty Code (2024 IRC) in force, with the 2023 edition still usable through March 31, 2027, alongside the 2026 Oregon Plumbing Specialty Code (2024 Uniform Plumbing Code) and the 2026 Oregon Electrical Specialty Code (2026 NFPA 70).",
+    "sourceUrl": "https://www.portland.gov/code/24/10"
+  },
+  "permitPolicy": {
+    "text": "Portland lets a homeowner pull their own trade permits, with conditions. For plumbing, the city may issue an owner permit only to a bona fide owner of a single-family house who will do the work personally, who lives in it, and where the house is not being built or remodeled for resale or rent; the city weighs whether the owner has shown real knowledge of the work and may require a bond. For electrical, the homeowner must own and live in the home and be the recorded owner on county records rather than an LLC, and may not use the homeowner route on a rental, an ADU, or a house being prepared to sell or lease.",
+    "sourceUrl": "https://www.portland.gov/code/25/04"
+  },
+  "registration": {
+    "text": "Portland adds city paperwork on top of the state license. A plumbing permit application has to carry the contractor's State of Oregon plumbing contractor registration, the state contractors board registration, and the City's own Contractors Business License number, and the city will not issue a plumbing permit to a plumbing or sewer contractor until the state registration number is on file with the Plumbing Division. Electrical contractors must hold both an Oregon CCB license and a Building Codes Division electrical license, with both numbers on the application.",
+    "sourceUrl": "https://www.portland.gov/code/25/06"
+  },
+  "codeItems": [
+    {
+      "text": "Portland's published list of plumbing work needing a permit includes replacing a water heater, capping pipes where a fixture was removed, and installing or replacing fixtures. Simply fixing or maintaining an existing fixture or part, or replacing something that does not use water, needs no permit.",
+      "sourceUrl": "https://www.portland.gov/ppd/residential-permitting/residential-plumbing-permits"
+    },
+    {
+      "text": "Portland flags a crossover a national guide misses: swapping a metal water line, copper or galvanized steel, for a plastic one may also require an electrical permit and a new grounding electrode, because the old metal pipe was carrying the ground.",
+      "sourceUrl": "https://www.portland.gov/ppd/residential-permitting/residential-plumbing-permits"
+    },
+    {
+      "text": "Portland prices a thermal expansion tank as its own plumbing fixture on the permit fee schedule, so adding one during a water heater swap adds a second fixture charge rather than riding along free.",
+      "sourceUrl": "https://www.portland.gov/ppd/documents/plumbing-permit-fee-schedule-city-portland-effective-july-10-2026/download"
+    },
+    {
+      "text": "Small electrical jobs in Portland can run on a state minor electrical label instead of a regular electrical permit. The labels are sold by the Tri-County Service Center rather than by the city, and the city's Building Official still inspects the work and issues any correction notices.",
+      "sourceUrl": "https://www.portland.gov/code/26/09"
+    },
+    {
+      "text": "Oregon adds a 12 percent state surcharge to every Portland building, plumbing, electrical and mechanical permit, so the figure on the fee schedule is not the final number. A project can also pull fees from several tables at once, and the city is explicit that a residential addition may be billed from the building, site development, plumbing and electrical schedules together.",
+      "sourceUrl": "https://www.portland.gov/bds/fee-schedules"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Portland charges a flat per-fixture plumbing permit fee for a water heater, and if you add a thermal expansion tank at the same time that counts as a second fixture at the same rate.",
+      "fee": "$63.00 per water heater (expansion tank, if installed, is a separate $63.00 fixture); 12% Oregon state surcharge is added",
+      "feeAsOf": "July 10, 2026",
+      "sourceUrl": "https://www.portland.gov/ppd/documents/plumbing-permit-fee-schedule-city-portland-effective-july-10-2026/download"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is a named line on Portland's plumbing permit fee schedule and is charged at the same flat per-fixture rate as any other fixture.",
+      "fee": "$63.00 per garbage disposal; 12% Oregon state surcharge is added",
+      "feeAsOf": "July 10, 2026",
+      "sourceUrl": "https://www.portland.gov/ppd/documents/plumbing-permit-fee-schedule-city-portland-effective-july-10-2026/download"
+    },
+    "plumber-service-call": {
+      "requirement": "Portland bills a residential plumbing permit by the fixture or item, so a service call that touches one sink, tub, water closet, hose bibb or backflow preventer carries the single flat fixture charge, while repiping the water supply inside the house is priced by floor instead.",
+      "fee": "$63.00 per fixture or item; replacing in-building water supply lines, residential: $128.00 first floor + $52.00 each additional floor; 12% Oregon state surcharge is added",
+      "feeAsOf": "July 10, 2026",
+      "sourceUrl": "https://www.portland.gov/ppd/documents/plumbing-permit-fee-schedule-city-portland-effective-july-10-2026/download"
+    },
+    "electrician-service-call": {
+      "requirement": "Portland prices a small electrical job by the branch circuit, and the first circuit costs far more when you are not also buying a service or feeder fee on the same permit; a panel or service swap is priced by amperage.",
+      "fee": "Branch circuits without a service or feeder fee: $174.00 first branch circuit + $21.00 each additional; with a service or feeder fee: $21.00 per branch circuit; service or feeder up to 200 amps $212.00; reconnect only $190.00; 12% Oregon state surcharge is added",
+      "feeAsOf": "July 10, 2026",
+      "sourceUrl": "https://www.portland.gov/ppd/documents/electrical-permit-fee-schedule-city-portland-effective-july-10-2026/download"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Portland requires an electrical permit to install, change or repair a hard-wired electrical system, but not to replace a fuse, fix an appliance cord, or swap out an existing appliance, and the city notes an electrical permit can be needed even where no building permit is.",
+      "sourceUrl": "https://www.portland.gov/ppd/residential-permitting/residential-electrical-permits"
+    }
+  },
+  "notVerified": [
+    "A Portland minimum plumbing or electrical permit fee — neither trade fee schedule publishes a floor, only per-fixture and per-circuit rates",
+    "The dollar price of a state minor electrical label (Oregon sets it and the Tri-County Service Center sells it; no figure is published in Portland City Code)",
+    "Whether Portland requires a water heater drain pan, seismic strapping or a specific TPR discharge termination beyond the base Oregon Plumbing Specialty Code (the state amendment rule, OAR 918-750-0115, publishes no amendment text online)",
+    "Any permit requirement or fee specific to replacing a smoke alarm in Portland",
+    "The amount of the City Contractors Business License fee and of any bond the city may require from an owner-permittee"
+  ]
+}

@@ -69,6 +69,20 @@ E. **Code edition in force** — e.g. "2021 IRC as amended by <city>", plus the
 - Do not copy sentences from sources. Write each fact in your own words, short
   and factual. No long quotations.
 
+
+### When a city publishes its fee schedule off-domain
+
+Some cities host the actual file on a third-party service (Azure blob,
+Smartsheet, Widen and similar). Cite the city's own .gov page that publishes
+or links the schedule, not the storage URL: share links rot and do not read as
+official to a reader. If no .gov page states the figure, treat the fee as
+unpublished and omit it — the page is still worth having for its requirement
+and code items.
+
+Do NOT try to get past a bot check (Cloudflare, Akamai, a browser-check page)
+by spoofing a user agent or any similar trick. If a host blocks automated
+requests, note it under notVerified and move on.
+
 ## Output — write one JSON file per city, then stop
 
 Write to `/home/claude/fixitreal/research/local/<city-slug>.json` using the

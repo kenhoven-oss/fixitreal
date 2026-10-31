@@ -1,0 +1,66 @@
+{
+  "citySlug": "atlanta-ga",
+  "cityName": "Atlanta",
+  "stateAbbr": "GA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Atlanta Office of Buildings, Department of City Planning",
+    "url": "https://www.atlantaga.gov/government/departments/city-planning/about-dcp/office-of-buildings"
+  },
+  "codeEdition": {
+    "text": "Georgia sets mandatory statewide construction codes that apply in Atlanta. The current ones are the 2024 International Building, Residential, Plumbing, Mechanical, Fuel Gas and Swimming Pool and Spa Codes, each with Georgia Amendments, together with the 2023 National Electrical Code with Georgia Amendments and the 2015 International Energy Conservation Code with Georgia supplements. The Georgia Amendment packets for 2026 took effect January 1, 2026.",
+    "sourceUrl": "https://dca.georgia.gov/node/19231"
+  },
+  "permitPolicy": {
+    "text": "Georgia strips the administrative chapter out of its residential code and leaves Chapter 1 in only as a guide for local governments writing their own procedures. That means who may apply for a permit in Atlanta, what it costs and how it is inspected come from the city's own ordinances rather than from the state code. Georgia also deletes the plumbing and electrical chapters of the residential code outright and substitutes the state plumbing and electrical codes, so a water heater or wiring job in an Atlanta house is judged against the IPC and NEC, not against the IRC chapters a national guide would quote.",
+    "sourceUrl": "https://dca.georgia.gov/document/document/irc-2026-amendment-packet-2024-edition/download"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "Georgia rewrote the relief-valve discharge rules effective January 1, 2026. The pipe may not tie into the drainage system, must run full size to the air gap, must serve only that one relief device, and must end without a threaded connection and without any valve or tee. It has to terminate somewhere the occupants can see, no more than 6 inches above and at least two pipe diameters above the floor or the flood level rim of the waste receptor, and a trapped section must be drainable at its low point.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/ipc-2026-amendment-packet-2024-edition/download"
+    },
+    {
+      "text": "Georgia is unusually specific about the thermal expansion tank. One is required where the cold water reaching a storage water heater passes a check valve, pressure reducing valve or backflow preventer, and it must be connected downstream of all of those and of the shut-off valves, at least 18 inches in developed length from the heater's cold water inlet fitting, and sized so system pressure stays within the code limit.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/ipc-2026-amendment-packet-2024-edition/download"
+    },
+    {
+      "text": "Georgia added a minimum-size table for residential water heaters. A replacement has to meet a first-hour rating set by the number of bedrooms and bathrooms, running from 40 gallons for a small one-bedroom house up to 72 gallons at six bedrooms with three and a half baths. Tankless units and houses beyond six bedrooms or three and a half baths are sized to the manufacturer's instructions instead.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/ipc-2026-amendment-packet-2024-edition/download"
+    },
+    {
+      "text": "Georgia's electrical amendments widen ground-fault protection in a house: every 125-volt through 250-volt receptacle within six feet of the top inside edge of a sink bowl needs it, as do receptacles at bathtubs and showers within six feet, laundry areas and indoor damp or wet locations. Georgia also requires ground-fault protection on the circuit or outlet feeding a dishwasher or a sump pump, and replacing outdoor equipment means that outlet has to gain protection.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/nec-2026-amendment-packet-2023-edition/download"
+    },
+    {
+      "text": "Georgia replaces the national arc-fault list with its own. Arc-fault protection is required on 120-volt, 15- and 20-amp branch circuits serving family rooms, dining rooms, living rooms, parlors, libraries, dens, bedrooms, sunrooms, recreation rooms, closets, hallways and similar areas, which is a narrower list than the unamended code uses.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/nec-2026-amendment-packet-2023-edition/download"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A water heater in an Atlanta house is inspected against the Georgia plumbing code, and since January 2026 the inspector checks the relief-valve discharge pipe against a twelve-point list, the position of the thermal expansion tank, and whether the new tank meets Georgia's minimum first-hour rating for the house's bedroom and bathroom count.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/ipc-2026-amendment-packet-2024-edition/download"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in an Atlanta house follows the Georgia State Minimum Standard Plumbing Code, because Georgia deletes the plumbing chapters from the residential code and substitutes the International Plumbing Code with its own amendments.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/irc-2026-amendment-packet-2024-edition/download"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Atlanta is judged against the 2023 National Electrical Code as amended by Georgia, which puts ground-fault protection on any receptacle within six feet of a sink bowl and on dishwasher and sump pump circuits, and limits arc-fault protection to a named list of rooms.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/nec-2026-amendment-packet-2023-edition/download"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A disposal receptacle in an Atlanta kitchen sits within six feet of the sink bowl, so Georgia's electrical amendments require it to be on ground-fault protection.",
+      "sourceUrl": "https://dca.georgia.gov/document/document/nec-2026-amendment-packet-2023-edition/download"
+    }
+  },
+  "notVerified": [
+    "Every City of Atlanta permit fee, permit requirement and trade registration rule: atlantaga.gov returned HTTP 403 to every automated request during this research, so no city-published figure could be read. The Atlanta Code of Ordinances on library.municode.com also returned 403.",
+    "Whether a homeowner may pull their own plumbing or electrical permit in Atlanta",
+    "City of Atlanta trade registration or bond requirements and amounts",
+    "smoke-detector-replacement requirement specific to Atlanta (Georgia leaves IRC Section R314 unamended and the city's own rules were unreachable)",
+    "Any Atlanta amendment to the Georgia state codes"
+  ]
+}

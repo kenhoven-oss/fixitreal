@@ -1,0 +1,82 @@
+{
+  "citySlug": "miami-fl",
+  "cityName": "Miami",
+  "stateAbbr": "FL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Miami Building Department",
+    "url": "https://www.miami.gov/My-Government/Departments/Building"
+  },
+  "codeEdition": {
+    "text": "Miami enforces the statewide Florida Building Code. The 8th Edition (2023) has been the code in force, and the Florida Building Code Ninth (2026) Edition takes effect on December 31, 2026, after which every permit application and set of plans submitted must meet the new edition.",
+    "sourceUrl": "https://www.miamidade.gov/global/economy/building/home.page"
+  },
+  "permitPolicy": {
+    "text": "Florida's owner-builder exemption is what lets a Miami homeowner pull their own permit. It covers improving a one- or two-family home for the owner's own occupancy and not offered for sale or lease, and the owner must provide direct onsite supervision of all work not done by licensed contractors. The owner has to appear in person, sign the permit application, and sign a long disclosure statement accepting legal and financial responsibility; selling or leasing within a year of completion raises a presumption that the exemption was abused. Florida's electrical licensing law carries its own parallel exemption for an owner doing electrical work on a single-family or duplex residence for their own use.",
+    "sourceUrl": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0489/Sections/0489.103.html"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "Miami runs an Easy Permit program for small jobs that need no plan review, and a water heater change-out is on both the electrical and the plumbing Easy Permit lists, as are a disposal change-out, a residential service repair, re-piping or repairs, and setting an electric water heater. Only a licensed, qualified contractor in good standing can use it; the permit is emailed straight to the address on that contractor's file, so a homeowner cannot run a job through this route.",
+      "sourceUrl": "https://www.miami.gov/Permits-Construction/Permit-Catalog/Get-an-Easy-Permit"
+    },
+    {
+      "text": "Miami's electrical Easy Permit list carries a line for water heater replacement only, separate from the plumbing change-out line. A tank swap in Miami can therefore involve a plumbing permit and an electrical permit rather than one trade permit.",
+      "sourceUrl": "https://www.miami.gov/Permits-Construction/Permit-Catalog/Get-an-Easy-Permit"
+    },
+    {
+      "text": "Miami prices residential trade permits off the job's estimated cost rather than per fixture, and it says plainly that the published figures exclude the State of Florida and Miami-Dade County surcharges, so the schedule number is never the final bill.",
+      "sourceUrl": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/building/fee-schedule-exhibit-c-bldg-chpts-10-17-20-508.pdf"
+    },
+    {
+      "text": "Miami attaches a residential Solid Waste surcharge of $0.22 per $100 of estimated construction cost to the permit, with a floor of $26.00 and a ceiling of $600.00, plus a $40.00 non-refundable application fee on every permit.",
+      "sourceUrl": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/building/fee-schedule-exhibit-c-bldg-chpts-10-17-20-508.pdf"
+    },
+    {
+      "text": "Getting caught without a permit is priced into Miami's schedule. The after-the-fact permit carries a $110.00 base fee, doubled on homestead residential property and quadrupled on commercial, and a separate $500.00 case initiation fee applies to work without a permit.",
+      "sourceUrl": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/building/fee-schedule-exhibit-c-bldg-chpts-10-17-20-508.pdf"
+    },
+    {
+      "text": "Miami-Dade County's own permit guidance for the area spells out that altering or repairing an electrical or plumbing system needs a permit, and names replacing a hot water heater or a gas appliance as an example, while painting, wallpapering, or putting a ceiling fan into an existing outlet does not. It also notes that a permit is issued in the name of the person doing the work, and that an owner may do unlimited repairs on a single-family home they occupy even though owner-builder permits for new houses are limited to one every two years.",
+      "sourceUrl": "https://www.miamidade.gov/permits/library/brochures/home-renovation.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Miami needs a permit, and the city prices residential building, plumbing, mechanical and electrical permits as a percentage of the estimated job cost, with a flat charge for small jobs and a floor underneath every permit.",
+      "fee": "Residential up to 3 units: 0.50% of estimated construction cost; Residential less than estimated $2,500.00: $45.00; Minimum Permit Fee: $110.00; plus $40.00 non-refundable application fee (State of Florida and Miami-Dade County surcharges not included)",
+      "feeAsOf": "April 23, 2026",
+      "sourceUrl": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/building/fee-schedule-exhibit-c-bldg-chpts-10-17-20-508.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A disposal change-out is on Miami's plumbing Easy Permit list, so a licensed plumber can pull the permit with no plan review and get it by email the same day, and the fee is figured from the estimated job cost with a flat charge for work under $2,500.",
+      "fee": "Residential up to 3 units: 0.50% of estimated construction cost; Residential less than estimated $2,500.00: $45.00; Minimum Permit Fee: $110.00; plus $40.00 non-refundable application fee",
+      "feeAsOf": "April 23, 2026",
+      "sourceUrl": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/building/fee-schedule-exhibit-c-bldg-chpts-10-17-20-508.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Miami treats a plumbing service call as a permitted job priced off the estimated cost of the work, and a failed inspection is recharged, so a small repair can cost more in fees than the valuation alone suggests.",
+      "fee": "Residential up to 3 units: 0.50% of estimated construction cost; Residential less than estimated $2,500.00: $45.00; Minimum Permit Fee: $110.00; Re-inspection fee: $57.00; plus $40.00 non-refundable application fee",
+      "feeAsOf": "April 23, 2026",
+      "sourceUrl": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/building/fee-schedule-exhibit-c-bldg-chpts-10-17-20-508.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "A residential electrical service repair is on Miami's Easy Permit list and needs no plan review, but it is still a permit priced from the estimated cost of the work, with a minimum and a charge for any reinspection.",
+      "fee": "Residential up to 3 units: 0.50% of estimated construction cost; Residential less than estimated $2,500.00: $45.00; Minimum Permit Fee: $110.00; Re-inspection fee: $57.00; plus $40.00 non-refundable application fee",
+      "feeAsOf": "April 23, 2026",
+      "sourceUrl": "https://www.miami.gov/files/assets/public/v/1/document-resources/pdf-docs/building/fee-schedule-exhibit-c-bldg-chpts-10-17-20-508.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Miami's electrical Easy Permit list includes a smoke detector permit for multi-family buildings, so an alarm job in an apartment building goes through the no-plan-review route with a licensed contractor; the list shows no equivalent single-family smoke detector permit.",
+      "sourceUrl": "https://www.miami.gov/Permits-Construction/Permit-Catalog/Get-an-Easy-Permit"
+    }
+  },
+  "notVerified": [
+    "Whether the City of Miami requires a local trade registration on top of the Florida state license or the Miami-Dade County certificate of competency, and any fee or bond amount for it",
+    "The dollar amount of the State of Florida and Miami-Dade County surcharges the Miami fee schedule adds to a permit",
+    "Any Miami or Miami-Dade amendment on water heater specifics — drain pan, thermal expansion tank, TPR discharge termination or strapping. The Florida Building Code text is published on floridabuilding.org, which is not an official .gov host, and no city or county page read here states those requirements.",
+    "A single-family smoke detector permit requirement or fee in Miami",
+    "Whether the City of Miami publishes its own list of work exempt from a permit (the exempt-work list used here is Miami-Dade County's)"
+  ]
+}

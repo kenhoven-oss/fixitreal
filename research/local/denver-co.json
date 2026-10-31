@@ -1,0 +1,78 @@
+{
+  "citySlug": "denver-co",
+  "cityName": "Denver",
+  "stateAbbr": "CO",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Denver Community Planning and Development (Denver Permitting Office)",
+    "url": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Plan-Review-Permits-and-Inspections"
+  },
+  "codeEdition": {
+    "text": "Denver adopted the 2025 Denver Building and Fire Codes on June 13, 2025, effective December 31, 2025, with a second printing adopted November 24, 2025. They are built on the 2024 I-codes, except the energy code, which uses the 2021 IECC. Denver separately adopts the 2026 National Electrical Code unamended, matching the electrical code adopted by the State of Colorado.",
+    "sourceUrl": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Building-Codes-Policies-and-Guides"
+  },
+  "permitPolicy": {
+    "text": "Denver permits normally go to a contractor licensed with the City and County of Denver. The owner of a single-family home may instead pull their own permit, but must be the legal owner and live there, must show photo ID matching the Assessor's record, and must pass a city exam before doing electrical, plumbing or mechanical work, though a state electrical or plumbing license can stand in for that exam. The owner has to stay in the home for a year after the work. Homeowner permits are not available for accessory dwelling units, townhomes, condos or duplexes, even the unit the owner lives in.",
+    "sourceUrl": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Plan-Review-Permits-and-Inspections/Single-Family-and-Duplex-Projects/Homeowner-Permits"
+  },
+  "registration": {
+    "text": "A trade contractor must hold a City and County of Denver contractor license to be issued a permit, on top of any state credential. Denver charges $250 for a contractor license (classes A through D) every three years, $60 for a supervisor certificate and $40 for a journeyman certificate, and a plumbing license must be renewed every two years rather than every three. License and certificate fees are not refundable.",
+    "sourceUrl": "https://denvergov.org/files/assets/public/v/9/community-planning-and-development/documents/ds/building-codes/policies/admin_138.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "The Denver Energy Code sets a minimum room size for a water heater. The space has to measure at least 3 feet by 3 feet by 7 feet and either hold 760 cubic feet or have the equivalent of a 16-by-24-inch grill into heated space plus an 8-inch exhaust duct no longer than 10 feet. Electric heaters under 20 gallons are exempt, and a listed heat pump water heater may follow the manufacturer's reduced clearances instead.",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/1/community-planning-and-development/documents/ds/building-codes/2025_Denver_Building_Code.pdf"
+    },
+    {
+      "text": "Denver requires demand-responsive controls on an electric storage water heater of 40 to 120 gallons with a nameplate rating of 12 kW or less, so the utility can shed load. This is a Denver energy-code addition, not a national requirement.",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/1/community-planning-and-development/documents/ds/building-codes/2025_Denver_Building_Code.pdf"
+    },
+    {
+      "text": "Denver adds a rule that an indirectly heated hot water storage tank must be built to ASME standards and carry the ASME label once it holds 120 gallons or more, or exceeds 200,000 Btu/hr of heat input or 210 degrees Fahrenheit.",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/1/community-planning-and-development/documents/ds/building-codes/2025_Denver_Building_Code.pdf"
+    },
+    {
+      "text": "A battery-powered smoke alarm, carbon monoxide alarm or combination unit installed in Denver must be listed to UL 217, UL 2034 or both and must have a permanent built-in 10-year lithium battery. A replaceable-battery alarm does not satisfy the Denver amendment.",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/1/community-planning-and-development/documents/ds/building-codes/2025_Denver_Building_Code.pdf"
+    },
+    {
+      "text": "Denver carbon monoxide alarms must sit outside each sleeping area within 15 feet of the bedroom doorway and in a central spot on every occupiable level, and a bedroom containing a fuel-burning appliance needs an alarm inside the bedroom itself. Replacing a gas water heater is fuel-burning work, so a permitted job can pull these locations into scope.",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/1/community-planning-and-development/documents/ds/building-codes/2025_Denver_Building_Code.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Denver treats a water heater swap as a quick permit, issued over the counter with no plan review and checked by field inspection, and a gas heater needs the permit because the job disconnects and reconnects the gas line and the flue vent.",
+      "fee": "Valuation-based (Table 1): $20.00 for work valued $1 to $500; $35.00 for $501 to $2,000; $35.00 for the first $2,000 plus $8.00 for each additional $1,000 or fraction thereof to $25,000. No plan review fee on a quick permit. Reinspection $100.00 per hour.",
+      "feeAsOf": "May 21, 2024",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/9/community-planning-and-development/documents/ds/building-codes/policies/admin_138.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Denver does not require a plumbing permit to swap a garbage disposal for a like unit in a one- or two-family dwelling or townhouse, as long as the existing system is not altered.",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/1/community-planning-and-development/documents/ds/building-codes/2025_Denver_Building_Code.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "A general plumbing repair in a Denver house or townhouse needs no permit if it does not alter the existing system, which covers like-for-like sinks, disposals and toilets; other plumbing work is permitted and the fee runs off the value of the job.",
+      "fee": "Valuation-based (Table 1): $20.00 for work valued $1 to $500; $35.00 for $501 to $2,000; $35.00 for the first $2,000 plus $8.00 for each additional $1,000 or fraction thereof to $25,000. Reinspection $100.00 per hour.",
+      "feeAsOf": "May 21, 2024",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/9/community-planning-and-development/documents/ds/building-codes/policies/admin_138.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Denver requires an electrical permit unless the work is one the Colorado-adopted electrical code or state statute already exempts, and the permit fee is based on the value of the work with a $20 floor.",
+      "fee": "Valuation-based (Table 1): $20.00 for work valued $1 to $500; $35.00 for $501 to $2,000; $35.00 for the first $2,000 plus $8.00 for each additional $1,000 or fraction thereof to $25,000. Reinspection $100.00 per hour.",
+      "feeAsOf": "May 21, 2024",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/9/community-planning-and-development/documents/ds/building-codes/policies/admin_138.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Swapping a smoke alarm for one that serves the same purpose does not by itself trigger Denver's upgrade rule, but any alteration or addition that does need a permit requires smoke alarms throughout the dwelling to the standard for a new house, and a battery unit must have a sealed 10-year lithium battery.",
+      "sourceUrl": "https://denvergov.org/files/assets/public/v/1/community-planning-and-development/documents/ds/building-codes/2025_Denver_Building_Code.pdf"
+    }
+  },
+  "notVerified": [
+    "A separate per-fixture or flat plumbing or mechanical permit fee — Denver prices all trade permits off the valuation table instead",
+    "Whether Denver requires a thermal expansion tank, a drain pan or seismic strapping on a replacement water heater (its published plumbing amendments do not address these)",
+    "Any Denver amendment to the National Electrical Code — Denver adopts the 2026 NEC unamended, so AFCI/GFCI scope is the national rule",
+    "The published dollar fee for the homeowner permit exam"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "citySlug": "san-jose-ca",
+  "cityName": "San Jose",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of San Jose Development Services Permit Center (Building Division)",
+    "url": "https://sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters"
+  },
+  "codeEdition": {
+    "text": "San Jose enforces the California Building Standards Code, Title 24. The state's 2025 edition took effect January 1, 2026 as the result of the 2024 triennial adoption cycle, so current plumbing and electrical work is judged against the 2025 California codes rather than the 2022 set.",
+    "sourceUrl": "https://www.hcd.ca.gov/sites/default/files/docs/building-standards/ib-2025-03.pdf"
+  },
+  "permitPolicy": {
+    "text": "A property owner of record may sign their own permit application in San Jose, though the city strongly recommends a licensed contractor do it and points owners to its Owner-Builders Beware material. For permits bought through the city's online permit service, only a licensed contractor or the property owner may be the applicant; the plan-review route also allows an authorized agent or tenant. Whoever signs is responsible for all work done under the permit.",
+    "sourceUrl": "https://sanjoseca.gov/businesses/development-services-permit-center/start-your-project/who-can-apply-for-a-permit"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "San Jose will not accept a T&P relief drain that ends in the crawl space. The discharge has to run to the outside and stop pointing down between 6 inches and 2 feet above grade; in a garage it may instead end 6 to 12 inches above the floor, but a heater installed outside the garage cannot discharge into one.",
+      "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26033/637195315154070000"
+    },
+    {
+      "text": "The relief drain must be its own independent line, not tied into a condensate line or the pan drain, not connected to the sanitary sewer, with no trap, no shutoff valve anywhere in it, and the end left unthreaded. The city also wants a union in the drain line near the heater so the heater can be swapped out later.",
+      "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26033/637195315154070000"
+    },
+    {
+      "text": "Seismic strapping is counted by tank size in San Jose: two straps up to 52 gallons, three at 75 gallons, four at 100 gallons, and one more for every additional 25 gallons. The upper strap goes within the top third of the tank (about 9 inches down) and the lower strap at least 4 inches above the controls and within the bottom third. Bracing an existing heater on its own needs no permit.",
+      "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26033/637195315154070000"
+    },
+    {
+      "text": "A closed system, such as a house with a pressure reducing valve on the service, requires a thermal expansion tank. A heater in an attic or anywhere a leak would do damage needs an approved safe pan with a 3/4-inch minimum drain run to a visible point, and the city's basement detail also calls for a sediment trap downstream of the gas shutoff.",
+      "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26033/637195315154070000"
+    },
+    {
+      "text": "In a San Jose garage the pilot, burners, heating elements and switches must sit at least 18 inches above the floor and any stand or platform has to be anchored down. Gas-fired heaters are barred from bathrooms, clothes closets and sleeping rooms; direct-vent units are the exception.",
+      "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26033/637195315154070000"
+    },
+    {
+      "text": "Installing or replacing a water heater in San Jose takes a plumbing permit, and depending on the type of heater an electrical permit may be required as well. Heat pump water heaters need both, and the city points to a separate bulletin when the existing electrical panel is not adequate.",
+      "sourceUrl": "https://sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in San Jose requires a plumbing permit, which single-family and duplex owners can buy online; the city waives the online issuance fee for water heater replacements, but inspection time is still billed at the residential hourly rate.",
+      "fee": "$0 online permit issuance fee for water heater replacements (the stated exception to the online minimum issuance fee); residential plumbing permit inspection time charged at $315 per hour",
+      "feeAsOf": "FY 2024-25 Building Division Fee Schedule, effective August 12, 2024",
+      "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26047/638598545783230000"
+    },
+    "plumber-service-call": {
+      "requirement": "San Jose does not charge a flat plumbing permit fee; residential plumbing permits are billed by the inspection time the job needs, at a published hourly rate, plus an hourly permit-processing charge.",
+      "fee": "$315 per hour of required inspection time for residential plumbing permits; permit issuance charged at $227 per hour of processing and coordination time, whichever is greater than the listed amount",
+      "feeAsOf": "FY 2024-25 Building Division Fee Schedule, effective August 12, 2024",
+      "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26047/638598545783230000"
+    },
+    "electrician-service-call": {
+      "requirement": "Residential electrical permits in San Jose are priced the same way as plumbing: by the inspection time the work requires at a published hourly rate, with an hourly processing charge for issuing the permit.",
+      "fee": "$315 per hour of required inspection time for residential electrical permits; permit issuance charged at $227 per hour of processing and coordination time, whichever is greater than the listed amount",
+      "feeAsOf": "FY 2024-25 Building Division Fee Schedule, effective August 12, 2024",
+      "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26047/638598545783230000"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (not named in the San Jose fee schedule or on the city's project pages)",
+    "smoke-detector-replacement permit requirement and fee",
+    "Whether San Jose requires a city business tax certificate or trade registration before a contractor can pull a permit (the city's business tax registration page does not tie registration to permits and publishes no fee)",
+    "Whether a Building Division fee schedule newer than the FY 2024-25 edition is in force (the city's Building Fees index page could not be retrieved)",
+    "San Jose Municipal Code Title 24 local amendments to the California codes (amlegal.com and municode.com both refused automated requests)"
+  ]
+}

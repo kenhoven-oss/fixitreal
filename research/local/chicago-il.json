@@ -1,0 +1,73 @@
+{
+  "citySlug": "chicago-il",
+  "cityName": "Chicago",
+  "stateAbbr": "IL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Chicago Department of Buildings",
+    "url": "https://www.chicago.gov/city/en/depts/bldgs/provdrs/permits.html"
+  },
+  "codeEdition": {
+    "text": "Chicago writes its own Construction Codes in Title 14 of the Municipal Code, realigned in phases with the model codes. The Chicago Electrical Code was rebuilt on the National Electrical Code, adopted in September 2017 and mandatory from March 1, 2018. The 2019 Chicago Building Code and Building Rehabilitation Code became mandatory for permit applications started on or after August 1, 2020. Under Phase 3, new 2026 Chicago Fuel Gas, Mechanical and Energy Transformation Codes became optional on October 1, 2026 and are mandatory for applications started on or after December 1, 2026. The city still lists its Plumbing Code (Title 14P) as interim.",
+    "sourceUrl": "https://www.chicago.gov/city/en/depts/bldgs/supp_info/CodeModernization.html"
+  },
+  "permitPolicy": {
+    "text": "Chicago normally requires a licensed and bonded plumbing contractor for plumbing work, with one exception: the owner, occupant or lessee of a detached single-family residence may personally install, alter or repair the plumbing in that home. The exception only covers doing the work yourself, so a homeowner cannot use it to hire an unlicensed person, and the work is still inspected. Electrical work that needs a permit must be done by a licensed electrical contractor, so there is no equivalent do-it-yourself route for wiring.",
+    "sourceUrl": "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/plumbing-license.html"
+  },
+  "registration": {
+    "text": "Chicago licenses the trades itself on top of any state credential. A plumbing contractor already licensed by the State of Illinois must still hold a City of Chicago plumbing contractor license to work in the city. An electrical contractor needs a City of Chicago electrical contractor license and must be owned by or employ at least one licensed supervising electrician, who has to perform or direct all of the contractor's electrical work.",
+    "sourceUrl": "https://www.chicago.gov/city/en/depts/bldgs/provdrs/licenses/svcs/infocenter.html"
+  },
+  "codeItems": [
+    {
+      "text": "Chicago exempts an in-kind water heater replacement from the building permit requirement in a residential building up to four stories above grade, and in an accessory building such as a garage on the same lot. In-kind means the same type, size and shape as what came out. The exemption is only from the permit; the work still has to meet the Chicago Construction Codes, since the exemption section does not waive any technical requirement.",
+      "sourceUrl": "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/bldg-permit-not-required/worktype/plumbing.html"
+    },
+    {
+      "text": "Chicago draws a sharp line through small plumbing jobs. Stopping a leak, clearing a stoppage, or taking a toilet out and putting it back needs no permit, but removing a water, drain, soil, waste or vent pipe or a concealed trap and replacing it with new material does. The same cut-off applies within 5 feet of the building foundation; past that, the work leaves the exemption entirely.",
+      "sourceUrl": "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/bldg-permit-not-required/worktype/plumbing.html"
+    },
+    {
+      "text": "Chicago exempts only a short list of electrical jobs from a permit: changing a lamp, plugging cord-and-plug equipment into an existing receptacle, a temporary test setup, and a low-voltage fixture such as a doorbell, thermostat, security camera or speaker. Low-voltage or communication wiring itself is exempt only in a residential building up to four stories above grade, so running new low-voltage cable in a taller building is permitted work.",
+      "sourceUrl": "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/bldg-permit-not-required/worktype/electrical.html"
+    },
+    {
+      "text": "Illinois, and so Chicago, has required since January 1, 2023 that any new smoke alarm fitted in a single- or multi-family home carry a sealed 10-year battery. Alarms already in place before that date may stay until they pass 10 years from their manufacture date, fail a test, or malfunction. Homes built after 1988 that already have hardwired alarms, and homes with wireless integrated alarms, are exempt from the sealed-battery rule.",
+      "sourceUrl": "https://sfm.illinois.gov/about/divisions/fire-prevention-and-building-safety/illinois-smoke-alarm-law.html"
+    },
+    {
+      "text": "Chicago will not issue an Express Permit until the licensed contractor named on the application clicks an acceptance link emailed to them, a step the department added to stop applicants borrowing someone else's license.",
+      "sourceUrl": "https://www.chicago.gov/city/en/depts/bldgs/provdrs/permits/svcs/express-permits.html"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Chicago does not require a building permit to replace a water heater in-kind in a residential building up to four stories, and where a permit is needed the city issues it through its online Express Permit Program; outside the owner-occupant exception the work must be done by a licensed plumbing contractor.",
+      "sourceUrl": "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/bldg-permit-not-required/worktype/plumbing.html"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Replacing a garbage disposal in Chicago is repairing or replacing an existing plumbing fixture, which the city permits through its Express Permit Program rather than a full plan review.",
+      "sourceUrl": "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/EPP-eligible.html"
+    },
+    "plumber-service-call": {
+      "requirement": "A Chicago plumber needs no permit to stop a leak, clear a stoppage, or pull and reset a toilet, but replacing a pipe or a concealed trap with new material needs a permit, and only a licensed plumbing contractor may do the work unless the homeowner is doing it themselves in a detached single-family house.",
+      "sourceUrl": "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/bldg-permit-not-required/worktype/plumbing.html"
+    },
+    "electrician-service-call": {
+      "requirement": "Chicago requires a licensed electrical contractor for any electrical work that needs a building permit, and exempts only minor items such as changing a lamp, plugging in cord-and-plug equipment, or fitting a low-voltage fixture like a doorbell or thermostat.",
+      "sourceUrl": "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/bldg-permit-not-required/worktype/electrical.html"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "A smoke alarm newly fitted in a Chicago home must have a sealed 10-year battery under Illinois law, unless the house was built after 1988 with hardwired alarms or uses wireless integrated alarms.",
+      "sourceUrl": "https://sfm.illinois.gov/about/divisions/fire-prevention-and-building-safety/illinois-smoke-alarm-law.html"
+    }
+  },
+  "notVerified": [
+    "Every Chicago permit fee figure. The Department of Buildings publishes its Building Permit Fee Tables and trade licence fee schedules only as PDFs on chicago.gov, and every PDF on that host returned 403 to automated retrieval, as did the city's code publisher codelibrary.amlegal.com",
+    "The Chicago minimum permit fee and the Express Permit fee amount",
+    "City of Chicago plumbing contractor and electrical contractor licence fees and the plumbing contractor bond amount",
+    "Whether a Chicago inspector requires a thermal expansion tank, a drain pan or a particular TPR discharge termination on a replacement water heater (the interim Chicago Plumbing Code text was not reachable from an official host)",
+    "Whether replacing a hard-wired smoke alarm in Chicago needs an electrical permit (the city's exemption list does not name smoke alarms either way)"
+  ]
+}

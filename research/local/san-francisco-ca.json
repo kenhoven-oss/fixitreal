@@ -1,0 +1,75 @@
+{
+  "citySlug": "san-francisco-ca",
+  "cityName": "San Francisco",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "San Francisco Department of Building Inspection",
+    "url": "https://www.sf.gov/departments--department-building-inspection"
+  },
+  "codeEdition": {
+    "text": "Anything filed in San Francisco on or after January 1, 2026 is reviewed under the 2025 California codes together with the 2025 San Francisco amendments, and the department states there is no grace period. That set includes the 2025 San Francisco Building, Electrical, Mechanical, Plumbing, Green Building, Housing and Existing Building Codes layered over the 2025 California Building, Electrical, Mechanical, Plumbing, Energy and Green Building codes.",
+    "sourceUrl": "https://www.sf.gov/resource--2025--current-san-francisco-building-codes"
+  },
+  "permitPolicy": {
+    "text": "San Francisco ties permit eligibility to the state licence classification. A plumbing or mechanical permit generally goes to a contractor holding a C4, C16, C20, C36, C54, B or A licence, and an electrical permit to one holding a B, C7, C10, C45, C46, C61 or D34, with the permitted scope narrowed further by the class held. The one homeowner route the department publishes is the Homeowner's Electrical Permit: the Building Official may issue it for a single-family dwelling provided the owner does the work personally, and the owner signs a declaration under San Francisco Electrical Code Section 89.120E that no contractor will be hired. If that work fails inspection, the corrections must be made by a state-licensed electrical contractor under a separate permit.",
+    "sourceUrl": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+  },
+  "registration": {
+    "text": "On top of the state CSLB licence, San Francisco expects a contractor to hold a San Francisco Business Account Number, and the two are what the city asks for when a licence holder files a contractor authorization form to get an AUTH record in PermitSF. The AUTH record is what lets a contractor or their named agents skip staff review and pull eligible electrical, plumbing and mechanical, reroofing and kitchen or bath permits immediately; the city verifies the licence and the CSLB personnel listing within two business days, and the record does not have to be renewed. No fee is published for the AUTH record itself.",
+    "sourceUrl": "https://www.sf.gov/licensed-contractors-register-yourself-or-authorized-agents-on-permitsf"
+  },
+  "codeItems": [
+    {
+      "text": "San Francisco buys inspections with the permit rather than open-endedly. The single-residential-unit plumbing and mechanical categories each include a maximum of two inspections, and once those are used a re-inspection or extra inspection under Section 108A.8 is billed at $259 per half hour. Off-hours inspections run at an hourly rate with a two-hour minimum on weekday shoulders and a four-hour minimum nights and weekends.",
+      "sourceUrl": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    },
+    {
+      "text": "A water heater in a San Francisco building of six units or more can fall under the city's boiler Permit to Operate programme. A PTO is required where boilers or tankless water heaters total more than 200,000 Btu, or where storage capacity exceeds 120 gallons, counted singly or combined, and units in series each need their own PTO. Replacing a heat source with a heat pump does not need a PTO.",
+      "sourceUrl": "https://www.sf.gov/apply-pto-permit-operate-boiler"
+    },
+    {
+      "text": "San Francisco's plumbing fee schedule lists water heaters as a renewal trigger for the Permit to Operate: the certificate has to be renewed when a water-heater alteration or replacement permit is issued, alongside the annual renewal for low-pressure boilers.",
+      "sourceUrl": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    },
+    {
+      "text": "Where a San Francisco boiler or water heater system has a backflow prevention assembly, that assembly has to be tested and certified under the city's annual cross-connection control programme before the Permit to Operate will be issued.",
+      "sourceUrl": "https://www.sf.gov/apply-pto-permit-operate-boiler"
+    },
+    {
+      "text": "For fee purposes San Francisco counts appliances and utilization equipment each as one outlet or device on top of receptacles, switches and light outlets, so adding an appliance circuit can push a job into the next electrical fee tier. Under a Homeowner's Electrical Permit all wiring must stay exposed until the electrical inspector approves it for cover.",
+      "sourceUrl": "https://media.api.sf.gov/documents/Table_1A-E_-_Electrical_Permit_Issuance_and_Inspection_2026.pdf"
+    },
+    {
+      "text": "San Francisco's mechanical information sheet M-06, dated October 27, 2025, excuses Title-24 Certificate of Installation checklists for alterations to existing homes that need no HERS field verification, and names water heater and window replacements as the examples.",
+      "sourceUrl": "https://sf.gov/file/m-06"
+    }
+  ],
+  "byGuide": {
+    "plumber-service-call": {
+      "requirement": "San Francisco wants a plumbing permit before any pipe is cut into or replaced, and particularly before pipe that will be buried or closed into a wall, with the exemptions set out in San Francisco Plumbing Code Section 104.2; a single-unit job such as a water service, a sewer replacement or installing one fixture has its own flat issuance fee covering up to two inspections.",
+      "fee": "$290 CATEGORY 1P Single Residential Unit - water service, sewer replacement, single plumbing fixture installation, shower pan installation, or a single kitchen or bathroom remodel (maximum two inspections)",
+      "feeAsOf": "July 2026 (applies to permits issued on and after July 12, 2026)",
+      "sourceUrl": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit is needed in San Francisco before new wiring goes in or an existing installation is altered, extended or added to, with the exemptions listed in San Francisco Electrical Code Section 89.121, and a small residential job is priced by how many outlets and devices it touches rather than by labour.",
+      "fee": "$305 Up to 10 outlets and/or devices (1 inspection), Category 1 General Wiring: Residential Buildings up to 10,000 sq. ft.",
+      "feeAsOf": "July 2026 (applies to permits issued on and after July 12, 2026)",
+      "sourceUrl": "https://media.api.sf.gov/documents/Table_1A-E_-_Electrical_Permit_Issuance_and_Inspection_2026.pdf"
+    },
+    "water-heater-replacement": {
+      "requirement": "San Francisco issues water-heater alteration and replacement permits through the Plumbing Inspections Division, and in a building of six units or more a tankless or storage water heater above the city's size thresholds also needs an annual Permit to Operate that has to be renewed whenever a replacement permit is issued.",
+      "fee": "$145 Permit to operate or renew (certificate issued) - Online; $221 In-House; the Boiler Maintenance Program table requires renewal for water heaters when alteration or replacement permits are issued",
+      "feeAsOf": "July 2026 (applies to permits issued on and after July 12, 2026)",
+      "sourceUrl": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    }
+  },
+  "notVerified": [
+    "The flat fee category that applies specifically to a one- or two-unit water heater swap. The plumbing schedule names water service, sewer, single fixture, shower pan and gas appliance categories but not water heaters, so no figure is claimed for the plumbing permit itself.",
+    "garbage-disposal-replacement permit requirement and fee (San Francisco's published categories cover plumbing fixtures and gas appliances but no city page or schedule names food waste disposers)",
+    "smoke-detector-replacement permit requirement and fee (detectors appear as a scope line on the city's homeowner electrical permit application, but the city publishes no rule on whether a detector swap alone needs a permit, and the fee could fall in either the general wiring or the fire-warning-device category)",
+    "San Francisco's own amendments on water heater seismic bracing, drain pans, TPR discharge or expansion tanks. The 2025 San Francisco Plumbing Code text is hosted on codelibrary.amlegal.com, which refused automated requests, and only the superseded 2022 amendment PDF could be reached.",
+    "Whether San Francisco charges a fee for contractor registration or the PermitSF AUTH record (no figure published on the registration page)"
+  ]
+}

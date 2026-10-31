@@ -1,0 +1,80 @@
+{
+  "citySlug": "salt-lake-city-ut",
+  "cityName": "Salt Lake City",
+  "stateAbbr": "UT",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Salt Lake City Building Services (Department of Community and Neighborhoods)",
+    "url": "https://www.slc.gov/buildingservices/building-permits"
+  },
+  "codeEdition": {
+    "text": "Salt Lake City enforces the building and fire codes adopted and amended by the State of Utah, with a limited layer of city rules in Salt Lake City Code Title 18. The State Construction Code in force incorporates the 2024 International Building Code (with Appendices C and J), the 2021 International Residential Code, the 2024 International Plumbing Code, the 2024 International Mechanical Code, the 2024 International Fuel Gas Code, the 2023 National Electrical Code, the 2024 International Energy Conservation Code and the 2024 International Existing Building Code, each as modified by the statewide and local amendments in Utah Code Title 15A, Chapters 3 and 4. The city applies the codes in effect on the date a plan submission is accepted for review.",
+    "sourceUrl": "https://le.utah.gov/xcode/Title15A/Chapter2/C15A-2-S103_2026050620260701.html"
+  },
+  "permitPolicy": {
+    "text": "Salt Lake City requires a permit before any installation, alteration or improvement to a building's electrical, plumbing or mechanical system. Electrical, plumbing and mechanical work is permitted separately from the building permit, and the city publishes a reduced homeowner electrical remodel permit, so a homeowner is not locked out of trade permits. A homeowner pulling a permit for their primary residence has to file the Owner Builder Certification required by the Utah Construction Trades Licensing Act, in which they certify the work is for personal, non-commercial use and will be done by themselves, a licensed contractor, or their own insured employees; paying an unlicensed person more than token compensation is a Class A misdemeanor exposing the owner to a fine of up to $2,000 per day.",
+    "sourceUrl": "https://www.slc.gov/buildingservices/building-permits"
+  },
+  "registration": {
+    "text": "Utah licenses the trades at the state level through the Division of Professional Licensing, but a contractor working in Salt Lake City also needs a city business license. The Consolidated Fee Schedule charges every business a base license fee — $198 commercial effective September 2026 — plus a $34 annual Construction Business fee and a $29 annual fee per full or part-time employee where the business has more than one. The city publishes a Contractor Transfer Request form for moving a contractor between permits; no separate city trade examination or bond is published for plumbers or electricians.",
+    "sourceUrl": "https://tools.slc.gov/feeschedule/"
+  },
+  "codeItems": [
+    {
+      "text": "Utah replaces the IRC water heater bracing section outright with its own seismic rule, and Salt Lake City enforces it: a water heater has to be anchored or strapped against horizontal earthquake displacement, with the straps landing within the upper one-third and the lower one-third of the tank's height. A single mid-tank strap does not satisfy the inspector.",
+      "sourceUrl": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S205_2026050620260701.html"
+    },
+    {
+      "text": "Utah tightens the water heater drain pan rules. A pan drain may be tied directly into a soil, waste or branch drain only if the code official permits it, and then it must be individually trapped and vented, never connected to a vent, and the trap has to be protected by an ASSE 1018 or ASSE 1044 trap primer, an ASSE 1072 trap seal protection device, or a deep seal P-trap. A new section also designates the pan as an emergency receptor for the water heater alone, so the pan cannot be used to catch discharge from a washer, softener or condensate line.",
+      "sourceUrl": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S205_2026050620260701.html"
+    },
+    {
+      "text": "Utah adds a requirement to the relief valve discharge section: the TPR discharge pipe must follow the manufacturer's installation instructions and may not exceed 180 degrees of total directional change. A discharge line routed with more than two elbows' worth of turns is a correction item.",
+      "sourceUrl": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S205_2026050620260701.html"
+    },
+    {
+      "text": "Utah writes detailed mounting rules for backflow prevention assemblies into the residential code. An assembly may not sit more than five feet above the floor without a permanent platform, must be at least 12 inches above the floor and 12 inches clear of any wall, ceiling or obstruction, and a reduced pressure principle assembly must be horizontal, out of any pit, and never piped into a sewer, storm drain or vent. The assembly must be tested at installation, after any repair or relocation, and at least annually.",
+      "sourceUrl": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S205_2026050620260701.html"
+    },
+    {
+      "text": "Utah broadens the smoke and carbon monoxide alarm retrofit trigger by adding accessory dwelling units to the IRC sections that require new-construction alarm coverage whenever alterations, repairs or additions are done. A permitted remodel in an ADU therefore pulls in full alarm requirements, not just the alarms that were already there.",
+      "sourceUrl": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S202_2026050620260701.html"
+    },
+    {
+      "text": "Utah requires a shutoff valve on each fixture supply pipe to every plumbing appliance and fixture other than bathtubs and showers, unless the appliance or fixture has a wall-mount valve. It also caps a replacement lavatory faucet at 1.5 gpm at 60 psi and a shower head at 2 gpm at 80 psi, which are tighter than the base IRC table.",
+      "sourceUrl": "https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3-S205_2026050620260701.html"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Salt Lake City takes a plumbing permit, charged as a flat base fee plus a per-heater fee, and the inspector will check the Utah seismic strapping, the pan drain and the length of the TPR discharge run.",
+      "fee": "Plumbing Permits: $59 base fee plus $16 each for a water heater; a failed inspection costs a $132 re-inspection fee",
+      "feeAsOf": "Salt Lake City Consolidated Fee Schedule, amended 06/16/2026 by Ord. 2026-29",
+      "sourceUrl": "https://tools.slc.gov/feeschedule/"
+    },
+    "plumber-service-call": {
+      "requirement": "Salt Lake City requires a plumbing permit for any installation, alteration or improvement to a plumbing system, and prices it as a base fee plus a small charge for each pipe change, fixture or device involved, so a one-fixture repair is close to the base fee.",
+      "fee": "Plumbing Permits: $59 base fee, plus $8 to change, alter or replace soil, waste or vent pipe; $12 each to change or repair a drain, waste and vent system; $8 each for a plumbing fixture or trap roughed in for installation or relocation; $10 each for a vacuum breaker or backflow device; $58 each for a settling tank or grease trap; re-inspection $132",
+      "feeAsOf": "Salt Lake City Consolidated Fee Schedule, amended 06/16/2026 by Ord. 2026-29",
+      "sourceUrl": "https://tools.slc.gov/feeschedule/"
+    },
+    "electrician-service-call": {
+      "requirement": "Salt Lake City issues residential electrical permits separately from the building permit, with a base fee plus a flat charge for a small remodel, added circuits or a service change, and it publishes a cheaper homeowner permit for an owner doing their own remodel.",
+      "fee": "Electrical Permits (Residential): $59 base fee; $40 for a minor remodel and additional circuits; $40 for a service change with 1 or 2 new circuits; $40 for a service change or alteration; $48 for a homeowner electrical remodel permit; $40 for total renovation of the electrical system in an existing single family dwelling; re-inspection $132",
+      "feeAsOf": "Salt Lake City Consolidated Fee Schedule, amended 06/16/2026 by Ord. 2026-29",
+      "sourceUrl": "https://tools.slc.gov/feeschedule/"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A disposer is a home appliance connected to the building drainage system, which Salt Lake City charges for by the unit on a plumbing permit on top of the plumbing base fee.",
+      "fee": "Plumbing Permits: $59 base fee, plus $8 each for a store, restaurant or home appliance or device connected to the culinary water supply and/or building drainage system",
+      "feeAsOf": "Salt Lake City Consolidated Fee Schedule, amended 06/16/2026 by Ord. 2026-29",
+      "sourceUrl": "https://tools.slc.gov/feeschedule/"
+    }
+  },
+  "notVerified": [
+    "Whether Salt Lake City requires a permit to replace a smoke alarm on its own, and any fee for one — the Consolidated Fee Schedule has no residential smoke alarm line and no city exempt-work list naming alarms could be sourced",
+    "Whether a like-for-like water heater swap is exempt from permit in Salt Lake City — no published city exemption list was found, only the general rule that plumbing alterations need a permit",
+    "Whether the mechanical permit base fee applies instead of the plumbing fee for a gas-fired water heater — the water heater line appears under Plumbing Permits but the fee schedule does not say which permit type a gas unit falls under",
+    "Any Salt Lake City amendments to the state code specific to the city (Utah Code Title 15A Chapter 4 local amendments were not read in full)"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "citySlug": "san-antonio-tx",
+  "cityName": "San Antonio",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of San Antonio Development Services Department",
+    "url": "https://www.sa.gov/Directory/Departments/DSD"
+  },
+  "codeEdition": {
+    "text": "San Antonio's Chapter 10 Building-Related Codes, effective May 1, 2025, adopt the 2024 editions of the International Building, Residential, Mechanical, Plumbing, Existing Building, Fuel Gas, Fire and Swimming Pool and Spa Codes, the 2021 International Energy Conservation Code and the 2023 National Electrical Code, each with San Antonio amendments. The adopting ordinance is No. 2025-01-30-0075.",
+    "sourceUrl": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf"
+  },
+  "permitPolicy": {
+    "text": "A San Antonio homeowner may pull their own plumbing permit, but only on the homestead where they live and only if they do the installation themselves with no help from anyone else. The city makes them sign a plumbing affidavit stating the property is their residence and not a business or rental, and a city plumbing inspector checks the work. Otherwise plumbing permits go to a licensed Responsible Master Plumber registered with a company, and electrical work requires a state-licensed electrical contractor registered with the city.",
+    "sourceUrl": "https://docsonline.sanantonio.gov/FileUploads/dsd/PLUMBINGHOMEOWNERAFFIDAVIT.pdf"
+  },
+  "registration": {
+    "text": "San Antonio layers city registration on top of the state credential. A state-licensed electrical contractor must register with the city before doing any electrical work, and a state Responsible Master Plumber license must also be registered with the city. Registering a state electrical or plumbing license costs nothing; an optional City Electrical Master license runs $345.00 for two years, a city electrical maintenance technician registration $40.25 a year, and registering a state irrigator license $97.75. A plumber must carry at least $300,000 of general liability and completed-operations coverage to work in the city.",
+    "sourceUrl": "https://docsonline.sanantonio.gov/FileUploads/dsd/CurrentFeeSchedule.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "San Antonio rewrites the water heater relief-valve rule. The temperature-and-pressure discharge pipe may not connect to the drainage system, must discharge through an air gap in the same room as the heater, may not be trapped or fitted with valves or tees, must flow by gravity, and may not end in a threaded connection. Where it runs outside it has to terminate between six and twelve inches above finish grade.",
+      "sourceUrl": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf"
+    },
+    {
+      "text": "A San Antonio inspector looks for a union or flexible connector on the temperature-and-pressure relief valve placed within six inches of the valve, so the valve can be pulled and replaced. This is a city addition to the discharge-piping list.",
+      "sourceUrl": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf"
+    },
+    {
+      "text": "San Antonio restricts where a water heater may go. A storage-type heater is barred from an attic unless the attic is reached through a door on the same floor level, and the attic needs an unobstructed passageway at least 30 inches high and 22 inches wide, no more than 20 feet long, with continuous solid flooring 24 inches wide and a level 30-by-30-inch service space at the front of the heater.",
+      "sourceUrl": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf"
+    },
+    {
+      "text": "The city adds two placement rules of its own: an electric water heater is the only type allowed under a stairway or landing, and an electric water heater in a garage must sit at least 18 inches above the garage floor.",
+      "sourceUrl": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf"
+    },
+    {
+      "text": "San Antonio bars a fuel-fired water heater from a room used as a storage closet, and requires a heater in a bedroom or bathroom to sit in a sealed enclosure so it does not draw combustion air from the living space. A direct-vent heater does not need the enclosure.",
+      "sourceUrl": "https://docsonline.sanantonio.gov/DSDUploads/2024Ch10Building-RelatedCodesFinal.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A plumbing permit is required to replace a water heater in San Antonio, and the inspector checks the relief-valve discharge piping, the heater's location and the access to it. If the heater has to be swapped as an emergency, the city allows the permit application to be filed the next business day.",
+      "fee": "Plumbing - Permit Base Fee $57.50 plus Water Heater, Vent (gas/electric) $9.20",
+      "feeAsOf": "October 2026",
+      "sourceUrl": "https://docsonline.sanantonio.gov/FileUploads/dsd/CurrentFeeSchedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "San Antonio does not require a permit just to stop a leak, clear a stoppage or pull and reset a toilet, so long as no pipes, valves or fixtures are replaced or rearranged; once a concealed pipe or a fixture actually has to be replaced the city treats it as new work needing a permit and inspection.",
+      "fee": "Plumbing - Permit Base Fee $57.50 plus $8.05 per plumbing fixture; Re-inspection Fee $57.50",
+      "feeAsOf": "October 2026",
+      "sourceUrl": "https://docsonline.sanantonio.gov/FileUploads/dsd/CurrentFeeSchedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Minor electrical repairs and maintenance in San Antonio need no permit when a licensed electrical contractor does the work, and swapping a lamp or plugging equipment into an existing receptacle is never permitted work; installing receptacles, fixtures, sub-panels or other service equipment does need an electrical permit.",
+      "fee": "Electrical - Permit Base Fee $57.50 plus per-item charges (for example $3.74 for a 0-200 amp service, $5.58 per panelboard/loadcenter, $1.84 per ceiling fan); Re-inspection Fee $57.50",
+      "feeAsOf": "October 2026",
+      "sourceUrl": "https://docsonline.sanantonio.gov/FileUploads/dsd/CurrentFeeSchedule.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Replacing a garbage disposal in San Antonio falls under the city's general rule that replacing any regulated plumbing system component needs a permit, charged as the plumbing base fee plus a per-fixture amount.",
+      "fee": "Plumbing - Permit Base Fee $57.50 plus $8.05 per plumbing fixture",
+      "feeAsOf": "October 2026",
+      "sourceUrl": "https://docsonline.sanantonio.gov/FileUploads/dsd/CurrentFeeSchedule.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee in San Antonio (Chapter 10 publishes no residential smoke alarm amendment and the fee schedule lists no smoke alarm line)",
+    "Whether San Antonio requires a thermal expansion tank or a drain pan on a replacement residential water heater (its published plumbing amendments do not address either)",
+    "Whether a San Antonio homeowner may pull their own electrical permit (Chapter 10 lists a homeowner exception only for plumbing permits)",
+    "The registration fee for a San Antonio residential building and home improvement contractor registration",
+    "Any San Antonio amendment to the 2023 NEC AFCI or GFCI scope for existing dwellings"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "citySlug": "sacramento-ca",
+  "cityName": "Sacramento",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Sacramento Community Development Department, Building Division",
+    "url": "https://www.cityofsacramento.gov/community-development/building"
+  },
+  "codeEdition": {
+    "text": "Since January 1, 2026 Sacramento has required all new plan review and permit applications to comply with the 2025 California Building Standards Codes plus the city's own amendments. City Code Title 15 defines the governing editions as the 2025 California Building Code (Volumes 1 and 2), 2025 California Existing Building Code, 2025 California Electrical Code, 2025 California Energy Code, 2025 California Green Building Standards Code and 2025 California Historical Building Code. The local amendments were adopted by Ordinance 2025-0031 on December 2, 2025, effective January 1, 2026.",
+    "sourceUrl": "https://www.cityofsacramento.gov/community-development/building/building-codes"
+  },
+  "permitPolicy": {
+    "text": "Anyone may apply, but Sacramento can only issue the permit to a property owner, a licensed contractor, or an authorized agent. A property owner must sign the city's Owner Builder Verification form (CDD-0220) stating they are actually doing the work themselves and are exempt from carrying workers' compensation insurance, or else supply a certificate of insurance; a licensed contractor must supply a workers' compensation certificate. Homeowners can self-serve online for only three minor permits on a single-family home or duplex, a re-roof, an HVAC change-out and a water heater change-out, while other minor permits have to be emailed in with the application forms.",
+    "sourceUrl": "https://www.cityofsacramento.gov/community-development/building/permit-services/who-may-apply-for-a-permit"
+  },
+  "registration": {
+    "text": "Sacramento does not issue its own trade licence on top of the California state contractor licence, but a contractor has to register with the city's Public Permit Portal before pulling minor permits online, following the city's Online Permitting Registration Guide. Sacramento also adds a city operations tax to the permit, and that tax is charged only when a California licensed contractor, rather than the homeowner, is the permit holder. No registration fee or bond figure is published.",
+    "sourceUrl": "https://www.cityofsacramento.gov/community-development/building/permit-services/minor-permits"
+  },
+  "codeItems": [
+    {
+      "text": "Sacramento rewrites California Plumbing Code 312.4 because the city's farming history left many areas with caustic soils that eat buried metal pipe. Buried ferrous potable water and gas supply piping needs a machine-applied protective coating and cathodic protection. Galvanic anodes have to sit at least three feet below grade and below the pipe, at least four feet horizontally from any other buried metallic pipe, and be flooded with at least five gallons of water before backfill. Water supply piping must be isolated at the utility tap and again at the foundation next to the full-way shut-off valve; gas supply piping must be isolated at the foundation line or at the appliance; and isolation fittings must be at least six inches above grade except at the water tap.",
+      "sourceUrl": "https://www.cityofsacramento.gov/content/dam/portal/cdd/Building/building-codes/OR2025-0031-Ordinance-Deleting-Chapter-15.38-Amending-Various-Provisions-of-Title-15-Adopting-Local-Amendments-CA-BSC_2025-1202.pdf"
+    },
+    {
+      "text": "A water heater, panel swap, rewire, sewer repair or re-plumb is a Sacramento minor permit, which means no construction plans are submitted and all review for code compliance happens in the field. The inspector is the only review the job gets, so anything that would normally be caught on paper gets caught at the house.",
+      "sourceUrl": "https://www.cityofsacramento.gov/community-development/building/permit-services/minor-permits"
+    },
+    {
+      "text": "Sacramento carves EV charging out of its minor electrical permits. A new service panel, a rewire, whole house fans, ceiling fans and ordinary new circuits are all minor permits, but a new EV charger circuit requires a plan review submittal instead of a field-only permit.",
+      "sourceUrl": "https://www.cityofsacramento.gov/community-development/building/permit-services/minor-permits"
+    },
+    {
+      "text": "Sacramento adds a cost trigger to California Existing Building Code 304.3: a seismic evaluation of the building is required once the total construction cost, excluding furnishings, fixtures, equipment and normal maintenance, exceeds 25 percent of the cost of replacing the building. The running total counts earlier modifications made after the 1995 California Building Code was adopted that did not themselves require a seismic retrofit, so a series of remodels can push a later project over the line.",
+      "sourceUrl": "https://www.cityofsacramento.gov/content/dam/portal/cdd/Building/building-codes/OR2025-0031-Ordinance-Deleting-Chapter-15.38-Amending-Various-Provisions-of-Title-15-Adopting-Local-Amendments-CA-BSC_2025-1202.pdf"
+    },
+    {
+      "text": "Sacramento adds California Residential Code section R308.1.2 requiring the address on all new buildings to be illuminated at night, internally or externally. An externally lit address sign must read at an intensity of at least 5.0 foot-candles; an internally lit sign must give equivalent luminance.",
+      "sourceUrl": "https://www.cityofsacramento.gov/content/dam/portal/cdd/Building/building-codes/OR2025-0031-Ordinance-Deleting-Chapter-15.38-Amending-Various-Provisions-of-Title-15-Adopting-Local-Amendments-CA-BSC_2025-1202.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Sacramento requires a permit to install, replace or move a water heater, and it is handled as a minor permit with no plans and all code checking done in the field; a homeowner can pull a water heater change-out online, and the city publishes an average total permit cost.",
+      "fee": "$95.00 average total permit cost for a water heater (non-solar) new installation, replacement, or move",
+      "sourceUrl": "https://www.cityofsacramento.gov/community-development/building/building-fees/average-total-cost-for-common-residential-minor-permits"
+    },
+    "plumber-service-call": {
+      "requirement": "Sewer repair and replacement, water service repair and replacement, re-plumbing supply and drainage piping, and fixture replacement all need a Sacramento minor permit, and the city publishes the same average total cost for each.",
+      "fee": "$95.00 average total permit cost each for re-pipe (whole or partial dwelling), sewer service repair or replace, water service repair or replace, and gas line repair or replacement",
+      "sourceUrl": "https://www.cityofsacramento.gov/community-development/building/building-fees/average-total-cost-for-common-residential-minor-permits"
+    },
+    "electrician-service-call": {
+      "requirement": "A main or sub service panel change-out, a new or repaired circuit, a whole or partial rewire, and ceiling fans all need a Sacramento minor permit, with the published average total cost the same for each; a new EV charger circuit is the exception and needs plan review.",
+      "fee": "$95.00 average total permit cost each for an electrical panel change-out or replacement, adding or repairing an electrical circuit, and a whole or partial re-wire",
+      "sourceUrl": "https://www.cityofsacramento.gov/community-development/building/building-fees/average-total-cost-for-common-residential-minor-permits"
+    }
+  },
+  "notVerified": [
+    "feeAsOf dates for the Sacramento figures above (the Average Total Cost for Common Residential Minor Permits page carries no effective or revision date, and the itemised fee database pages behind it would not load, so no vintage could be read)",
+    "garbage-disposal-replacement permit requirement and fee (Sacramento lists fixture replacement as residential plumbing minor work but never names a food waste disposer, and no fee line covers it)",
+    "smoke-detector-replacement permit requirement and fee (not named in Sacramento's permit-required list, its exempt-work list, or any published fee line)",
+    "Any dollar amount for the Sacramento city operations tax, general plan fee, green building fee or technology fee that are added to a water heater permit (the fee-by-project page names each component but the linked fee-database detail pages require JavaScript and returned no content)",
+    "Whether Sacramento publishes a local amendment on water heater seismic strapping, drain pans, expansion tanks or TPR discharge (Ordinance 2025-0031 contains no such amendment; those requirements come from the statewide California Plumbing Code, which is not itself a city source)"
+  ]
+}

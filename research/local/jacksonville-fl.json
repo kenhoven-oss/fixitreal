@@ -1,0 +1,78 @@
+{
+  "citySlug": "jacksonville-fl",
+  "cityName": "Jacksonville",
+  "stateAbbr": "FL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Jacksonville Building Inspection Division",
+    "url": "https://www.jacksonville.gov/departments/public-works/building-inspection-division"
+  },
+  "codeEdition": {
+    "text": "Jacksonville enforces the Florida Building Code 8th Edition (2023) alongside the city's own building ordinances; anything submitted on or after January 1, 2024 has to comply with the 8th Edition. The city lists the 2023 Florida Building Code volumes for Building, Residential, Existing Buildings, Plumbing, Mechanical, Fuel Gas, Energy Conservation and Accessibility, the 2023 Florida Fire Prevention Code 8th Edition, and - worth noting - NFPA 70, the 2020 National Electrical Code, as the electrical code for Duval County.",
+    "sourceUrl": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/codes"
+  },
+  "permitPolicy": {
+    "text": "A Jacksonville homeowner may pull a permit in their own name for their primary residence, provided their name is on the deed and the property is not for sale or rent. They must sign an Owner's Affidavit stating they will do the work themselves or directly supervise it, and for work on an existing house they have to attach proof of homestead exemption. The catch for trade work: any licensed or registered contractor the owner hires for electrical, plumbing or mechanical work must pull their own permit tied to the homeowner's building permit. Starting work before applying for a permit carries a $250 fine.",
+    "sourceUrl": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/residential-permits"
+  },
+  "registration": {
+    "text": "Jacksonville licenses trades locally through its Construction Trades Qualifying Board under Ordinance Code Chapters 62 and 342, covering electrical, plumbing, HVAC, gas, water treatment and other categories, and it runs its own competency examinations. Published amounts include a $75.00 contractor certificate application fee, $25.00 for a certificate of competency, $65.00 for a journeyman craftsman examination and $115.00 for a master craftsman examination, with biennial renewals of $160.00 for a contractor certificate, $60.00 for a master craftsman and $50.00 for a journeyman. Separately, to pull permits a contractor must register with the Building Inspection Division using the New Contractor Registration Form, a Florida state construction license, photo ID and proof of workers' compensation coverage or exemption.",
+    "sourceUrl": "https://www.jacksonville.gov/departments/boards-and-commissions/construction-trades-qualifying-board"
+  },
+  "codeItems": [
+    {
+      "text": "At the final inspection a Jacksonville inspector checks the water heater against the project's energy form. A heater whose capacity or type does not match what the energy calculations specify is one of the division's listed reasons for failing a final.",
+      "sourceUrl": "https://www.jacksonville.gov/Departments/public-works/Building-Inspection-Division/Residential-Inspection"
+    },
+    {
+      "text": "Jacksonville expects a termite treatment sticker posted at both the electrical panel and the water heater. A missing sticker is on the division's published list of final-inspection failures - a Florida habit that no national water heater guide mentions.",
+      "sourceUrl": "https://www.jacksonville.gov/Departments/public-works/Building-Inspection-Division/Residential-Inspection"
+    },
+    {
+      "text": "For a slab-on-grade house, Jacksonville spells out the grounding electrode: at least 20 feet of #5 rebar with a minimum of 2 feet projecting out of the slab, and the vertical leg has to be visually marked so the inspector can tell it from the other vertical steel. If it is not marked at the slab inspection, the inspection fails.",
+      "sourceUrl": "https://www.jacksonville.gov/Departments/public-works/Building-Inspection-Division/Residential-Inspection"
+    },
+    {
+      "text": "Because much of Duval County sits in a wind-borne debris zone, missing window protection on a project in that zone is one of the division's listed final-inspection failures, and the city publishes a Wind Zone Verification under Ordinance Code section 320.103.",
+      "sourceUrl": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/guidelines"
+    },
+    {
+      "text": "Jacksonville reminds permit holders that a Notice of Commencement has to be recorded and a copy filed with the Building Inspection Division before any inspection can be scheduled, and that the permit number must appear on it. The city's own figures for when one is needed are improvements over $5,000, or $15,000 for mechanical work.",
+      "sourceUrl": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/residential-permits"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Jacksonville requires a permit to replace a water heater, and it says so twice over: water heater replacement is listed as permitted repair work, and the city's no-permit list covers replacing plumbing fixtures after the stop but specifically excludes water heaters.",
+      "fee": "Plumbing Permit Fees - Section 320.409: $11.00 for each roughing-in and fixture or plugged outlet, a list that includes hot water tanks or boosters; Minimum fee for a plumbing permit $60.00",
+      "sourceUrl": "https://www.jacksonville.gov/departments/finance/city-fees#Building%20Inspection%20Division"
+    },
+    "plumber-service-call": {
+      "requirement": "Jacksonville needs no permit to stop a plumbing leak, clear a drain stoppage, or replace a plumbing fixture downstream of the stop, as long as the work does not involve replacing or rearranging valves, pipes or fixtures - and water heaters are carved out of that exemption. Extending, remodeling or repairing water, waste, soil, vent, building drain or sewer pipe is permitted work charged on estimated cost.",
+      "fee": "Plumbing Permit Fees - Section 320.409: Repairs charged at $11.00 for each $100 of estimated cost or fractional part thereof; Minimum fee for a plumbing permit $60.00; failed inspection reinspection fee $45",
+      "sourceUrl": "https://www.jacksonville.gov/departments/finance/city-fees#Building%20Inspection%20Division"
+    },
+    "electrician-service-call": {
+      "requirement": "A new electrical service or rewiring needs a permit in Jacksonville, and the city's no-permit list does not exempt general electrical repairs. Residential service permits are priced by amperage and ordinary repair work falls under a flat repairs-and-miscellaneous charge.",
+      "fee": "Electrical Permit Fees - Section 320.409, Residential Service Charge: 0-100 ampere service $80.00; 101-200 ampere service $100.00; each additional 50 amperes or part thereof $20.00; Repairs and miscellaneous $60.00; Minimum fee $60.00; Safety inspection $60.00",
+      "sourceUrl": "https://www.jacksonville.gov/departments/finance/city-fees#Building%20Inspection%20Division"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Jacksonville's electrical fee schedule prices hardwired smoke detectors per device, but it excepts single-family homes, multifamily buildings and room additions from that per-detector charge, so work in a house falls under the city's ordinary repair or minimum electrical fee instead.",
+      "fee": "Electrical Permit Fees - Section 320.409: Smoke detectors wired into electrical systems (excepting single-family, multifamily and room additions), each $2.00; Repairs and miscellaneous $60.00; Minimum fee $60.00",
+      "sourceUrl": "https://www.jacksonville.gov/departments/finance/city-fees#Building%20Inspection%20Division"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Jacksonville lists replacement of plumbing fixtures after the stop as work needing no permit, with water heaters the stated exception, so a straight disposal swap that touches nothing else generally falls in that category; once valves, pipes or fixtures have to be replaced or rearranged the exemption no longer applies and the plumbing permit minimum is $60.00.",
+      "sourceUrl": "https://www.jacksonville.gov/departments/public-works/building-inspection-division/faqs"
+    }
+  },
+  "notVerified": [
+    "Effective or revision date for the Building Inspection Division permit fees, so no feeAsOf is given; the city publishes the amounts on its fees page as Ordinance Code Section 320.409 without a date, and the Municode host carrying the codified text blocked automated retrieval",
+    "The full text of Ordinance Code sections 320.103 (Wind Zone) and 320.105 (Passive Radon Area), for the same reason",
+    "Whether Jacksonville requires a thermal expansion tank, a drain pan or a particular relief-valve discharge termination on a replacement water heater (the division publishes no local amendment on these, so the unamended Florida Building Code - Plumbing governs)",
+    "Whether Jacksonville requires a smoke alarm upgrade throughout a house when an alteration or repair is permitted",
+    "A separate per-fixture or per-item charge for a garbage disposal, which the plumbing fee schedule does not name",
+    "The City of Jacksonville residential inspection guide used for several code items here is marked Revised January 2011, so its details may predate the current code edition"
+  ]
+}

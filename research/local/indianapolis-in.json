@@ -1,0 +1,55 @@
+{
+  "citySlug": "indianapolis-in",
+  "cityName": "Indianapolis",
+  "stateAbbr": "IN",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Indianapolis Department of Business and Neighborhood Services",
+    "url": "https://www.indy.gov/agency/department-of-business-and-neighborhood-services"
+  },
+  "codeEdition": {
+    "text": "Houses in Indianapolis are built and inspected to the Indiana Residential Code 2020, which is the 2018 IRC with Indiana amendments and took effect December 26, 2019. Other trades run on older base codes: the Indiana Plumbing Code 2012 is built on the 2006 IPC and took effect December 24, 2012, while the Indiana Building, Mechanical and Fuel Gas Codes are 2014 editions based on the 2012 I-Codes.",
+    "sourceUrl": "https://up.codes/codes/indiana"
+  },
+  "permitPolicy": null,
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "Indiana's residential code includes a replacement carve-out a national guide would not mention: if the old water heater had no pan drain, the code does not require one for the replacement heater. The pan itself is still required wherever a leak would cause damage, and it has to be at least 1 1/2 inches deep with a 3/4-inch minimum indirect drain.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+    },
+    {
+      "text": "Where a pan drain is installed, Indiana requires it to run full size and end either over an indirect waste receptor or outside the building, between 6 and 24 inches above the adjacent ground.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+    },
+    {
+      "text": "Seismic strapping of a water heater is not a general Indiana requirement. The code calls for anchoring or strapping in the upper and lower thirds of the tank only in Seismic Design Categories D0, D1 and D2, plus townhouses in Category C, so for most Indianapolis houses it is the manufacturer's instructions rather than a seismic rule that governs.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+    },
+    {
+      "text": "A water heater with an ignition source installed in a garage has to be raised so the ignition source sits at least 18 inches above the garage floor, unless the appliance is listed as flammable vapor ignition-resistant.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+    },
+    {
+      "text": "Indiana narrows the smoke-alarm retrofit trigger. A whole-house alarm upgrade to new-construction standards is required only when permitted alterations, additions or a complete replacement of the electrical system occur, and the code specifically exempts plumbing and mechanical work, electrical work in existing rooms other than new or relocated bedrooms, and work limited to replacing, relocating or upgrading a service panel or meter base.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/3/building-planning"
+    }
+  ],
+  "byGuide": {
+    "smoke-detector-replacement": {
+      "requirement": "Swapping a smoke alarm in Indianapolis does not by itself force a whole-house alarm upgrade; Indiana's code only requires alarms to be brought up to new-construction standards when permitted electrical alterations, additions or a full electrical system replacement are done, and it exempts plumbing or mechanical work and a plain service panel or meter base swap.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/3/building-planning"
+    },
+    "water-heater-replacement": {
+      "requirement": "Indiana's residential code governs the water heater swap itself: the inspector looks for the drain pan where a leak could cause damage, the pan drain terminating properly, and an 18-inch elevated ignition source in a garage, but a pan drain is not required if the old installation did not have one.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+    }
+  },
+  "notVerified": [
+    "Every Indianapolis permit requirement, fee and inspection fact. indy.gov serves its permit pages only as a client-rendered application, so no permit text or fee schedule could be read from the city site; the Indianapolis-Marion County code of ordinances on library.municode.com refused automated requests.",
+    "Whether a homeowner may pull their own plumbing or electrical permit in Indianapolis",
+    "Indianapolis contractor licensing or registration requirements and any bond amount",
+    "electrician-service-call, plumber-service-call and garbage-disposal-replacement permit requirements and fees",
+    "Current Indiana Electrical Code edition (listed as a 2023 NFPA 70 adoption but shown as inactive, so it was not treated as verified)"
+  ]
+}

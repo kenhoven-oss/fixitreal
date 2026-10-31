@@ -1,0 +1,80 @@
+{
+  "citySlug": "boston-ma",
+  "cityName": "Boston",
+  "stateAbbr": "MA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Boston Inspectional Services Department (ISD)",
+    "url": "https://www.boston.gov/departments/inspectional-services"
+  },
+  "codeEdition": {
+    "text": "Boston enforces the Massachusetts State Building Code, Tenth Edition. For a house or townhouse that is 780 CMR 51.00, the Massachusetts Residential Code, which adopts the 2021 International Residential Code and then amends it. Plumbing and gas-fired appliance work is not under the building code at all but under 248 CMR, the rules of the Board of State Examiners of Plumbers and Gas Fitters, and electrical work is under 527 CMR 12.00, the Massachusetts Electrical Code.",
+    "sourceUrl": "https://www.mass.gov/doc/10th-edition-residential-chapter-1-scope-and-application/download"
+  },
+  "permitPolicy": {
+    "text": "Boston does not let a homeowner pull a plumbing, gas or electrical permit. Inspectional Services issues these only to licensed contractors, the applicant has to be the licensed person actually doing the work, and an application filed in an office clerk's name is rejected. A homeowner has to hire a licensed contractor who applies for the permit and does the work.",
+    "sourceUrl": "https://www.boston.gov/permitting/permits/plumbing-permit"
+  },
+  "registration": {
+    "text": "Boston does not publish a separate local trade registration fee, but every plumbing, gas or electrical permit application must carry the front and back of the applicant's valid, unexpired state trade license, a current certificate of liability insurance and a Massachusetts workers' compensation affidavit. The name on the license has to match the applicant.",
+    "sourceUrl": "https://www.boston.gov/permitting/permits/electrical-permit"
+  },
+  "codeItems": [
+    {
+      "text": "Massachusetts requires a vacuum relief valve in the cold water supply above the top of a water heater or storage tank, to stop the tank siphoning dry if supply pressure is lost. On a bottom-fed heater the cold supply must be run up over the top of the tank before dropping to the connection, with the vacuum relief valve above the top of the tank. National guides rarely mention this.",
+      "sourceUrl": "https://www.mass.gov/doc/248-cmr-1000-uniform-state-plumbing-code-0/download"
+    },
+    {
+      "text": "A Massachusetts water heater or hot water storage tank set above an occupied space needs a safe waste pan at least two inches deep, piped indirectly to a properly trapped and vented fixture through a waste pipe of at least an inch and a quarter. The pan is not required where a floor drain or another acceptable point of indirect discharge is already there.",
+      "sourceUrl": "https://www.mass.gov/doc/248-cmr-1000-uniform-state-plumbing-code-0/download"
+    },
+    {
+      "text": "Massachusetts bars a check valve in the cold water supply to a water heater without special permission from the Board, and calls for a thermal expansion tank where a backflow preventer or pressure reducing valve turns the system into a closed one. Where a water meter or metering device with a check valve could cause an expansion problem, the expansion tank goes as close to the meter as possible.",
+      "sourceUrl": "https://www.mass.gov/doc/248-cmr-1000-uniform-state-plumbing-code-0/download"
+    },
+    {
+      "text": "Massachusetts holds shower water to 112 degrees Fahrenheit, not the 120 degrees used elsewhere. Each shower gets a thermostatic, pressure-balancing or combination valve that caps the deliverable hot water at 112 degrees, and a central mixing valve used instead has to be set by the installing plumber to 110 to 112 degrees before the final inspection, with a thermometer in its outlet piping.",
+      "sourceUrl": "https://www.mass.gov/doc/248-cmr-1000-uniform-state-plumbing-code-0/download"
+    },
+    {
+      "text": "The Massachusetts Electrical Code is the 2026 National Electrical Code with state amendments, and it widens ground-fault protection: a receptacle counts as being at a sink if it is within six feet of the top inside edge of the bowl or sits in the cabinet that supports the sink. It also replaces the arc-fault list so every 120-volt, 15- and 20-amp branch circuit feeding outlets or devices in a dwelling unit needs arc-fault protection.",
+      "sourceUrl": "https://www.mass.gov/doc/527-cmr-1200-massachusetts-electrical-code-effective-42426/download"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Boston takes a plumbing permit pulled by a licensed plumber, and a gas-fired unit also needs a separate gas permit from Inspectional Services, priced on its own schedule.",
+      "fee": "$20 application fee plus $5 for each fixture",
+      "feeAsOf": "September 11, 2026",
+      "sourceUrl": "https://www.boston.gov/permitting/permits/plumbing-permit"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal swap in Boston counts as plumbing work, so a licensed contractor has to pull the plumbing permit and the fee is the flat application charge plus a per-fixture amount.",
+      "fee": "$20 application fee plus $5 for each fixture",
+      "feeAsOf": "September 11, 2026",
+      "sourceUrl": "https://www.boston.gov/permitting/permits/plumbing-permit"
+    },
+    "plumber-service-call": {
+      "requirement": "Boston charges a flat application fee plus a per-fixture charge for a plumbing permit, all of it due up front, and only the licensed plumber doing the work may apply.",
+      "fee": "$20 application fee plus $5 for each fixture, such as toilets and sinks",
+      "feeAsOf": "September 11, 2026",
+      "sourceUrl": "https://www.boston.gov/permitting/permits/plumbing-permit"
+    },
+    "electrician-service-call": {
+      "requirement": "A Boston electrical permit is priced three different ways depending on whether the job changes the service, adds fixtures and outlets, or neither, and a homeowner cannot apply for it.",
+      "fee": "Upgrading or installing service: $20 application fee plus $0.25 per amp up to 240 volts, or $0.75 per amp over 480 volts. No change in service: $20 application fee plus $1 for each fixture, plug or outlet and $5 for each approved meter. Neither of the above: $20 application fee plus $10 per $1,000 of the estimated cost.",
+      "feeAsOf": "September 11, 2026",
+      "sourceUrl": "https://www.boston.gov/permitting/permits/electrical-permit"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Boston Fire inspects smoke and carbon monoxide alarms before most homes change hands: a seller of a pre-1975 residential property with one to five units needs a smoke alarm certificate of compliance, and every seller of a residential unit needs a carbon monoxide certificate whatever the building's age or size.",
+      "sourceUrl": "https://www.boston.gov/departments/fire-prevention/smoke-and-carbon-monoxide-detector-inspections"
+    }
+  },
+  "notVerified": [
+    "The published dollar fee for a Boston Fire smoke and carbon monoxide detector inspection (the city's page routes payment through its Fire Prevention Portal without printing an amount)",
+    "Whether Boston classes a gas water heater under the gas permit line for boilers, heaters and furnaces ($20 plus $50 each plus $0.09 per 1,000 BTU) or under the gas appliance line ($20 plus $5 per meter)",
+    "Any Boston amendment to the state codes beyond the statewide 780 CMR, 248 CMR and 527 CMR rules",
+    "A separate City of Boston trade registration or bond amount on top of the Massachusetts license"
+  ]
+}

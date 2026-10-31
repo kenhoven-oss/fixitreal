@@ -1,0 +1,71 @@
+{
+  "citySlug": "orlando-fl",
+  "cityName": "Orlando",
+  "stateAbbr": "FL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Orlando Permitting Services Division (Economic Development Department)",
+    "url": "https://orlando.gov/permits"
+  },
+  "codeEdition": {
+    "text": "Orlando reviews applications filed on or before December 30, 2026 under the 8th Edition (2023) Florida Building Code and the 8th Edition Florida Fire Prevention Code. Applications filed on or after December 31, 2026 are reviewed under the 9th Edition (2026) Florida Building Code volumes (Building, Residential, Existing Building, Accessibility, Energy Conservation, Mechanical, Plumbing, Fuel Gas), the 2023 National Electrical Code (NFPA 70), and the 9th Edition (2026) Florida Fire Prevention Code.",
+    "sourceUrl": "https://www.orlando.gov/Building-Development/Permits-Inspections/Get-a-Permit/Forms-Documents/Applicable-Codes-for-Permitting"
+  },
+  "permitPolicy": {
+    "text": "A homeowner may pull the permit as an owner-builder, but must appear in person at Permitting Services to sign the city's Owner/Builder Declaration. By signing, the owner becomes the responsible party of record, agrees to provide direct on-site supervision, and accepts that the state exemption covers a one- or two-family residence for the owner's own use and is presumed violated if the home is sold or leased within one year of completion. The owner may not hire an unlicensed person as contractor or supervisor. Otherwise the permit is pulled by a contractor whose license and insurance are on file with the city.",
+    "sourceUrl": "https://www.orlando.gov/files/sharedassets/public/departments/edv/permitting-services-division/bld/owner-builder-declaration-final-2021.pdf"
+  },
+  "registration": {
+    "text": "Orlando requires contractors to register with its Permitting Services Division on top of the state license. State-certified contractors must file a current Florida business tax receipt, a copy of the DBPR state certification, and proof of workers' compensation coverage or exemption made out to the City of Orlando. State-registered contractors must also file an original surety bond or continuation certificate. If the city does not hold current documents, permits cannot be issued and inspections cannot be scheduled. No city registration fee is published on the page.",
+    "sourceUrl": "https://www.orlando.gov/Building-Development/Permits-Inspections/Other/Register-a-Contractor"
+  },
+  "codeItems": [
+    {
+      "text": "Orlando will not let you schedule the first inspection on a job with a contract price over $5,000 until a Notice of Commencement has been recorded with the Orange County Comptroller and a copy filed with the city. A certified copy also has to be posted at the job site for the inspector to see. This catches homeowners on water-heater and panel jobs that cross $5,000 once labor is counted.",
+      "sourceUrl": "https://orlando.gov/Building-Development/Permits-Inspections/File-a-Recorded-Notice-of-Commencement"
+    },
+    {
+      "text": "Orlando's electrical permit application draws a hard line between a repair and a rewire. The Repair subtype only covers putting new equipment and materials back in the same location as the old. Rewiring one or more rooms, or opening walls, pushes the affected locations onto current code, so the inspector looks at those rooms against today's NEC rather than the vintage of the house.",
+      "sourceUrl": "https://orlando.gov/files/sharedassets/public/departments/edv/permitting-services-division/bld/electrical-permit-2.20.pdf"
+    },
+    {
+      "text": "An Orlando electrical permit application also has to name the serving utility, Orlando Utilities Commission or Duke Energy, and complete a service-type block giving phase, amperage and meter count before power can be released. A change in meter count or a new address triggers an extra Engineering and Zoning review of the allowable number of residential units.",
+      "sourceUrl": "https://orlando.gov/files/sharedassets/public/departments/edv/permitting-services-division/bld/electrical-permit-2.20.pdf"
+    },
+    {
+      "text": "Orlando stacks percentage surcharges on top of the trade permit fee itself: a 3% technology surcharge, a 1.5% Administrative Inspection Fund surcharge with a $2 minimum, a 1% state trust fund surcharge with a $2 minimum, and on building permits a 5% concurrency surcharge. A failed inspection is billed back at a $150 re-inspection fee, and an inspection cancelled with 24 hours notice or less costs $50.",
+      "sourceUrl": "https://www.orlando.gov/files/sharedassets/public/v/1/departments/edv/permitting-services-division/permitting-development-fees-residential-2026.pdf"
+    },
+    {
+      "text": "An Orlando permit expires if it sits six months without an inspection, and reviving it costs $50 or 25% of the original permit fee up to $1,000, whichever is greater, if done within six months of expiration. The city warns that an unclosed permit surfaces later when the property is sold.",
+      "sourceUrl": "https://orlando.gov/Building-Development/Permits-Inspections/Get-a-Permit"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Orlando is permitted as residential plumbing/gas work, and the city's published residential fee for that permit is a flat base charge plus a per-fixture amount, before surcharges.",
+      "fee": "$66.24 plus $7 per fixture (Plumbing/Gas Permit Fee—Residential)",
+      "feeAsOf": "Effective January 2026",
+      "sourceUrl": "https://www.orlando.gov/files/sharedassets/public/v/1/departments/edv/permitting-services-division/permitting-development-fees-residential-2026.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Orlando prices a residential plumbing or gas permit as a flat base charge plus a per-fixture amount, and the city states that Florida law requires a permit for most projects, even small ones.",
+      "fee": "$66.24 plus $7 per fixture (Plumbing/Gas Permit Fee—Residential)",
+      "feeAsOf": "Effective January 2026",
+      "sourceUrl": "https://www.orlando.gov/files/sharedassets/public/v/1/departments/edv/permitting-services-division/permitting-development-fees-residential-2026.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An Orlando residential electrical permit is priced from the estimated construction cost of the work, with flat $50 fees for some common service calls such as a change of service, a safety check, or residential low voltage.",
+      "fee": "$66.24 for the first $1,000 of construction cost or fraction thereof, plus $11.03 for each additional $1,000 up to and including $25,000, plus $8.28 for each additional $1,000 above $25,000; Change of Service $50; Safety Check $50; Low Voltage Fee Residential $50",
+      "feeAsOf": "Effective January 2026",
+      "sourceUrl": "https://www.orlando.gov/files/sharedassets/public/v/1/departments/edv/permitting-services-division/permitting-development-fees-residential-2026.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee (Orlando's residential fee schedule has a $50 residential low voltage line and a $40 low voltage alarm sticker, but both sit under security alarm systems and neither names smoke or CO alarm replacement, so the answer could not be pinned down)",
+    "garbage-disposal-replacement permit requirement (no Orlando exemption list or fee line names a food waste disposer; the plumbing/gas permit is per fixture but the city does not publish whether a disposer swap counts)",
+    "Whether Orlando publishes a dollar fee or bond amount for its own contractor registration (the Register a Contractor page lists required documents, including a surety bond for state-registered contractors, but no figure)",
+    "Any Orlando-specific water heater code amendments such as drain pan, expansion tank or TPR discharge rules (the city's plumbing permit application and inspection checklist PDFs returned 404 or were blocked, and Orlando publishes no local amendment document — it applies the statewide Florida Building Code)",
+    "Orlando city code text on building permit exemptions (library.municode.com returned a JavaScript challenge and could not be read)"
+  ]
+}

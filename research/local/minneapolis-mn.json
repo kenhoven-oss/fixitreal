@@ -1,0 +1,77 @@
+{
+  "citySlug": "minneapolis-mn",
+  "cityName": "Minneapolis",
+  "stateAbbr": "MN",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Minneapolis Development Review, Community Planning & Economic Development",
+    "url": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/"
+  },
+  "codeEdition": {
+    "text": "Minnesota sets one statewide code and Minneapolis enforces it. The 2020 Minnesota State Building Code took effect March 31, 2020, except the Minnesota Mechanical and Fuel Gas Code which took effect April 6, 2020, and it includes the 2020 Minnesota Residential Code and 2020 Minnesota Plumbing Code. Supplements have since been added for adult changing stations, effective August 15, 2025, and window cleaning safety features, effective November 7, 2025, and the 2024 Minnesota Commercial Energy Code took effect January 5, 2024. Electrical work is judged against the 2026 National Electrical Code, which Minnesota adopted without amendment effective August 17, 2026.",
+    "sourceUrl": "https://www.dli.mn.gov/business/codes-and-laws/2020-minnesota-state-building-code"
+  },
+  "permitPolicy": {
+    "text": "An individual who owns and lives in a unit of a one- to four-unit dwelling may pull their own Minneapolis construction permit and must show valid photo ID; a corporation, LLC or partnership cannot. An owner-occupant of an attached or detached single-family home may also do their own plumbing or mechanical work, but is specifically not allowed to work on gas-fired heating equipment. Anyone who builds or improves more than one property within any 24-month period must hold a State of Minnesota Residential Building Contractor or Residential Remodeler licence, and contractors applying for a building permit must show a residential specialty contractor licence or one of those state licences.",
+    "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/permits-overview/permit-applicants/"
+  },
+  "registration": {
+    "text": "Minneapolis licenses trade contractors itself on top of the state licence, and the 2026 city licence fee is $299 each for a Plumber, a Gas Fitter, and a Heating, Ventilation and Air Conditioning Installer. Separately, masters and journeymen need a city Certificate of Competency Card to work in Minneapolis in the fuel gas fitter, plumber/gas specific, refrigeration, warm air/ventilation, and steam and hot water trades. The card requires at least four years of work experience and a city exam, the plumbing/gas specific exam also requires a state plumbing licence at the equivalent trade level plus gas-specific education, and the city recognises reciprocity with Saint Paul.",
+    "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/business-licenses/contractors/competency-cards/"
+  },
+  "codeItems": [
+    {
+      "text": "Minneapolis does not issue electrical permits at all. The city tells applicants to get electrical and elevator permits from the Minnesota Department of Labor and Industry, so a panel or circuit job is permitted and inspected by the state while the plumbing on the same project is permitted by the city. That means two separate applications, two fee schedules and two inspectors on one water heater or remodel.",
+      "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/permits-overview/permit-types/"
+    },
+    {
+      "text": "Minneapolis's exemption for small plumbing repairs is conditional, and the conditions are what an inspector looks at. The exemption only holds in a one- or two-family dwelling if conditions are sanitary and not hazardous and if you do not alter or replace the existing water supply line or plumbing piping system. Touch the supply line or the piping system and the same job needs a permit.",
+      "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/exempt-from-permit/"
+    },
+    {
+      "text": "Installing a non-testable backflow preventer device is on Minneapolis's list of work that requires a plumbing permit, alongside water heaters, water piping and connecting gas appliances. Minneapolis also runs a separate regulated backflow assembly programme with its own testing requirements, forms and fees.",
+      "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/permits-overview/permit-types/plumbing-permits/"
+    },
+    {
+      "text": "If you start construction in Minneapolis before the permit is issued, the city may double your fees, and may require you to demolish some or all of the work either to bring it into compliance or simply so inspectors can see whether it complies. Emergency repairs are the exception: you can do the work first, but the permit application has to be filed by the next working business day.",
+      "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/permits-overview/fees/"
+    },
+    {
+      "text": "On the state-issued electrical permit, Minnesota requires every bit of wiring to be inspected before it is concealed by insulation, drywall, sheathing, panelling, backfilled trenches or poured concrete, and wiring covered before that inspection has to be opened back up. Checking the rough-in box commits you to a minimum of two inspection trips, and electrical inspectors audit the fee at the final inspection and can invoice more if the circuit count was understated.",
+      "sourceUrl": "https://www.dli.mn.gov/sites/default/files/pdf/ele-permit-instr.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Minneapolis requires a city plumbing permit to replace or install a water heater, and the permit cannot fall below the city's published minimum plumbing fee.",
+      "fee": "Minimum Fee - Residential & Commercial $85.20 (Includes $1.00 State Surcharge); a non-heating gas burner not exceeding 399,999 Btu is listed at $73.30",
+      "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/permits-overview/fees/plumbing/"
+    },
+    "plumber-service-call": {
+      "requirement": "Minneapolis requires a plumbing permit to replace or install fixtures or water piping, or to connect a gas appliance, and the permit is priced per fixture or per length of piping but never below the city minimum; small repairs such as a leaking fixture, a broken drain, waste or vent pipe, a sink faucet or a clean-out plug are exempt in a one- or two-family home as long as the water supply line and piping system are left alone.",
+      "fee": "Minimum Fee - Residential & Commercial $85.20 (Includes $1.00 State Surcharge); $41.40 for a full fixture, a fixture set only, or waste and vent only; $41.40 per each 100 lineal feet of water distribution piping replaced or extended; $41.40 per each $500 of alterations",
+      "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/permits-overview/fees/plumbing/"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Minneapolis is permitted and inspected by the Minnesota Department of Labor and Industry rather than the city, and a homeowner working on their own existing home pays a minimum inspection fee plus a statutory permit fee and surcharge, with a second inspection charged if any wiring will be concealed.",
+      "fee": "$55.00 minimum fee for inspection, plus another $55.00 if a rough-in inspection is required, plus a $25.00 permit fee imposed on every permit per M.S. 326B.37 and a $1.00 surcharge per M.S. 326B.148; alternatively the fee is calculated at $35 per power source for a 0-400 amp service and $12 per feeder or circuit where fewer than 15 are installed, whichever total is greater",
+      "feeAsOf": "REV 8.2025",
+      "sourceUrl": "https://www.dli.mn.gov/sites/default/files/pdf/ele-homeowner-existing.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Minneapolis does not require a permit to install a new garbage disposal or replace an existing one in a one- or two-family dwelling, provided conditions are sanitary and not hazardous and you do not alter or replace the existing water supply line or plumbing piping system.",
+      "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/exempt-from-permit/"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Minneapolis lists installing, replacing and repairing smoke alarms and carbon monoxide detectors as interior work that does not require a construction permit.",
+      "sourceUrl": "https://www.minneapolismn.gov/business-services/licenses-permits-inspections/construction-permits/exempt-from-permit/"
+    }
+  },
+  "notVerified": [
+    "feeAsOf date for the Minneapolis plumbing fee figures (the city's plumbing fee page says only that fees are updated upon City Council directive, and the embedded fee schedule itself carries no effective or revision date)",
+    "Minneapolis City Code Title 5, Chapter 91 permit fee text (both library.municode.com and codelibrary.amlegal.com returned HTTP 403, so the codified fee schedule could not be read directly)",
+    "Whether a Minneapolis mechanical permit is also needed alongside the plumbing permit for a gas water heater (the plumbing fee schedule carries the non-heating gas burner fee lines, but the city does not state which permit type a gas water heater falls under)",
+    "Any Minneapolis-specific amendment on water heater drain pans, expansion tanks or TPR discharge termination (Minnesota enforces a single statewide plumbing code and no city amendment on these was found)",
+    "City of Minneapolis bond amounts for its plumber, gas fitter or HVAC installer licences (the 2026 licence fee is published but no bond figure is)"
+  ]
+}

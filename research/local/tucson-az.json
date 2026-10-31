@@ -1,0 +1,73 @@
+{
+  "citySlug": "tucson-az",
+  "cityName": "Tucson",
+  "stateAbbr": "AZ",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Tucson Planning and Development Services Department",
+    "url": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Codes/Building-Codes"
+  },
+  "codeEdition": {
+    "text": "Tucson moved onto the 2024 International Codes and the 2023 National Electrical Code effective January 1, 2026, with the 2024 energy code following on July 1, 2026, under Ordinance 12171. Anything submitted on or after July 1, 2026 is reviewed against those editions as amended by the city; submittals made earlier stay under the editions in force when they were filed unless the Building Official approves otherwise. Tucson publishes its own amendment document for each code, and the department says both the model text and the amendments have to be read together.",
+    "sourceUrl": "https://www.tucsonaz.gov/Departments/Planning-Development-Services/Codes/Building-Codes"
+  },
+  "permitPolicy": {
+    "text": "Tucson's amendment to Section 105.3 of the 2024 IBC makes the applicant name the person or contractor who will actually do the work. Where Arizona law requires a licensed contractor, the application must carry the licence number, or else state which exemption under A.R.S. 32-1121 is being claimed to do the work without one, which is the route a homeowner uses on their own house. On the fee side, a trade permit covering more than one trade discipline has to identify a general contractor.",
+    "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf"
+  },
+  "registration": {
+    "text": "Tucson does not publish a separate city trade registration or bond on top of the state credential. The city's permit application amendment asks only for the Arizona licence number, or the A.R.S. 32-1121 exemption being claimed, and the adopted fee schedule carries no city contractor registration line.",
+    "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Tucson softens the water heater drain pan rule. Its amendment to Section 504.7.1 of the 2024 International Plumbing Code adds that a drain is not required for a replacement water heater in a location where no drain was previously installed, so an inspector will not fail a swap in a closet that never had one.",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-plumbing-code-amendments.pdf"
+    },
+    {
+      "text": "Tucson also edits the relief-valve discharge rules themselves: its plumbing amendments delete item 2 from Section 504.6, the model code's requirements for TPR discharge piping, so the discharge termination is judged against the remaining items rather than the full model list.",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-plumbing-code-amendments.pdf"
+    },
+    {
+      "text": "Tucson lets a dishwasher and a garbage disposer share one circuit. Its amendment to Section 210.11(C) of the 2023 NEC adds item (5), which permits both appliances on the same 20-amp branch circuit in a residential occupancy.",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2023-national-electrical-code-amendments.pdf"
+    },
+    {
+      "text": "Because of the desert heat, Tucson's NEC amendment sets the outdoor ambient temperature used for conductor ampacity at not less than 45 degrees C, which derates outdoor runs more heavily than the model tables would. The same amendments require disconnect identification labels to be engraved or raised lettering fixed with screws or rivets, and state that plastic tape does not count as durable.",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2023-national-electrical-code-amendments.pdf"
+    },
+    {
+      "text": "Tucson writes its own list of electrical work that needs no permit, added to IBC Section 105.2: repairing or replacing a fixed motor or transformer of the same type and rating in the same location, repairing or replacing the current-carrying parts of a switch, receptacle, contactor, control device or overcurrent device of the required capacity in the same location, temporary decorative lighting, and equipment running under 25 volts that cannot supply more than 50 volt-amps.",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-building-code-amendments.pdf"
+    },
+    {
+      "text": "Tucson requires a backwater valve wherever a finished floor sits less than 12 inches above the next upstream sewer manhole cover, under its amendment to IPC Section 714.1, and floors draining from above that point may not discharge through the same valve.",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/building-code/2024-international-plumbing-code-amendments.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Tucson takes a trade permit, which is a flat fee covering up to half an hour of staff review and two inspections, and the fee schedule prices a like-for-like swap and a swap that changes fuel type as separate listed items.",
+      "fee": "$150.00 Trade Permits (items J. Water Heater Installation (like for like) and K. Water Heater Installation (modify fuel type)); includes up to 1/2 hour of staff review and permit processing and 2 inspections, with extra review or inspection at the hourly rate, 1/2 hour minimum",
+      "feeAsOf": "Effective July 1, 2026 (FY27 fee schedule adopted by Mayor and Council May 19, 2026)",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/fee-schedule/fy27_fee_schedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "A plumbing fixture repair or replacement, a sewer line or building drain repair, and a water service line repair are each named items on Tucson's flat-fee trade permit list, and the fee buys two inspections; a job touching two or more listed items costs the base fee plus a smaller charge for each extra item.",
+      "fee": "$150.00 Trade Permits (items H. Plumbing Fixture Repair/Replace, I. Sewer Line/Building Drain Repair/Replace, L. Water Service Line Repair/Replace); Trade Permits - 2 or more items: $150.00 for first item + $50.00 for each additional item",
+      "feeAsOf": "Effective July 1, 2026 (FY27 fee schedule adopted by Mayor and Council May 19, 2026)",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/fee-schedule/fy27_fee_schedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Tucson needs no permit to repair or replace the current-carrying parts of a switch, receptacle, contactor, control or overcurrent device of the same capacity in the same place, but a new circuit, a service panel swap or a panel upgrade is a flat-fee trade permit that includes two inspections.",
+      "fee": "$150.00 Trade Permits (items C. Replace Electric Service Panel (like for like; up to 400 amps), D. Upgrade/Modify Electric Service Panel (up to 400 amps), E. New Electrical Circuit (max two 20 amp branches), A. Electric Clearance Only (no new work))",
+      "feeAsOf": "Effective July 1, 2026 (FY27 fee schedule adopted by Mayor and Council May 19, 2026)",
+      "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/fee-schedule/fy27_fee_schedule.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee. Tucson's trade permit list names a fixed appliance and a plumbing fixture repair or replacement but never a food waste disposer, so which item applies could not be confirmed.",
+    "smoke-detector-replacement permit requirement and fee (no Tucson amendment to IRC Section R314 was found, and neither the exempt-work list nor the trade permit list mentions alarms)",
+    "Whether Tucson requires a thermal expansion tank, seismic strapping or combustion air provisions beyond the unamended model code text (the city's amendment documents do not address these)"
+  ]
+}

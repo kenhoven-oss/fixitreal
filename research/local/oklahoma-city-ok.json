@@ -1,0 +1,79 @@
+{
+  "citySlug": "oklahoma-city-ok",
+  "cityName": "Oklahoma City",
+  "stateAbbr": "OK",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Oklahoma City Development Services, Development Center",
+    "url": "https://www.okc.gov/Services/Permits/Building-Trade-Permits"
+  },
+  "codeEdition": {
+    "text": "Oklahoma City's adopted codes are the 2018 International Building Code, the 2017 National Electrical Code, the 2018 International Plumbing Code, the 2018 International Mechanical Code, the 2009 International Energy Conservation Code, the 2018 International Fire Code, the 2018 International Residential Code, the 2018 International Fuel Gas Code, the 2018 International Existing Building Code and ANSI 2009. The city publishes its own supplement for each one — Residential Building, Commercial Building, Plumbing, Electrical, Mechanical, Fuel Gas, Fire and Existing Building — and those supplements contain the local changes an inspector enforces.",
+    "sourceUrl": "https://www.okc.gov/Infrastructure-Development/Development-Planning/Development-Center/Adopted-Building-Safety-Codes"
+  },
+  "permitPolicy": {
+    "text": "Oklahoma City expects a licensed contractor to submit for a residential permit, but it leaves a homeowner route open: the city's residential submittal requirements say a licensed contractor is required to submit unless the work is performed by the homeowner, and allow a notarized homeowners insurance exemption form in place of a licensed contractor's certificate of insurance. The same submittal list requires the plans to show the location of the hot water tank, the smoke detectors in each bedroom, and combination smoke and carbon monoxide detectors outside each bedroom area.",
+    "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/application-checklists/residential-construction.pdf"
+  },
+  "registration": {
+    "text": "Oklahoma licenses the trades through the Construction Industries Board, and Oklahoma City then requires its own annual registration of that state license before a contractor can work inside city limits. Published registration charges are $100 initial and annual for an electrical contractor, $100 initial and annual for a master plumbing contractor, $95 initial and annual per category for a mechanical contractor, $100 for a residential building contractor, and $115 the first year then $57 to renew for a boiler contractor (with a $100 charge after the 90-day grace period). A residential building contractor must also carry general liability of at least $50,000 per occurrence and workers' compensation of at least $100,000 per occurrence, or file the state's Affidavit of Exempt Status.",
+    "sourceUrl": "https://www.okc.gov/Infrastructure-Development/Business-Licensing/Contractor-Registration"
+  },
+  "codeItems": [
+    {
+      "text": "Oklahoma City adds a rule to the IRC that governs where a water heater can go. A fuel-burning central furnace or tank-type water heater may not be installed under a stairwell unless the space under the stairs is protected with fire suppression, and a fuel-burning tank-type water heater installed in a garage or other hazardous location has to be enclosed in a closet — the only way out of the closet is a direct-vent appliance protected from impact in an approved manner.",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/2018-irc-amendments-state-included.pdf"
+    },
+    {
+      "text": "Oklahoma City adds IRC Section P2801.7.1: where a water heater has to be elevated, it must sit on a stand or platform that is structurally appropriate for the load of the heater plus its water. An improvised platform is a correction item even if the clearance is right.",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/2018-irc-amendments-state-included.pdf"
+    },
+    {
+      "text": "Oklahoma City amends NEC 210.19(A) so branch circuit conductors may not be smaller than 12 AWG, deleting the code's references to 14 AWG. The 15-amp, 14 AWG lighting circuit that is normal in most of the country is not acceptable here, which matters on any rewire or added circuit.",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/2017-nec-resolution.pdf"
+    },
+    {
+      "text": "Oklahoma City writes several local electrical rules a national guide would not carry. A dwelling over 500 square feet must have a panelboard with capacity for at least 12 overcurrent devices, and a recessed panelboard needs a 3/4-inch empty raceway run from it into an attic or underfloor space for future use. Supplementary overcurrent protection may not be within three feet of a plumbing fixture. A bathroom wall switch has to be at least five feet horizontally from a tub or shower unless the circuit supplying the switch is GFCI protected. Receptacles may not be installed face up under countertops, sinks or tubs.",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/2017-nec-resolution.pdf"
+    },
+    {
+      "text": "On a service replacement, Oklahoma City requires the raceway of a service mast that supports the service drop or overhead service conductors to be rigid metal conduit, minimum trade size one and one-half inches. The city also caps the service disconnecting means for a water well at 40 amperes.",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/2017-nec-resolution.pdf"
+    },
+    {
+      "text": "Oklahoma City expands the access rules for backflow preventers: not less than twelve inches of access in five directions, access per the manufacturer's instructions, and a service platform wherever a preventer sits more than five feet above the floor or grade. The city also requires annual inspections of all backflow prevention assemblies and air gaps.",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/2018-ipc-amendments-state-included.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Swapping a gas water heater in Oklahoma City is charged as a gasfitting replacement of a residential appliance, and the city's own supplement controls where the new heater can sit — not under a stairwell, and enclosed in a closet if it is a fuel-burning tank type in a garage.",
+      "fee": "$50.00 for each appliance or fixture under Section 60-29-20, Gasfitting, replacement of residential appliance or fixture (rate effective 7/1/2024); where a building permit is involved the minimum permit fee for alterations, removal and repair under Section 60-12-7(a) is $75.00; reinspection or trip fee $50.00",
+      "feeAsOf": "City of Oklahoma City Development Services fee-change schedule, rates effective 7/1/2024 through 7/1/2026 (citywide fee study adopted by City Council in 2024)",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/development-services-fee-changes.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Oklahoma City charges residential plumbing work as an alteration base fee once the job is big enough to need a building permit, plus a flat charge for each sewer, soil pipe or water line that gets extended, and the work has to be done by a master plumbing contractor registered with the city.",
+      "fee": "$84.00 residential alteration base fee under Section 60-42-7(a), required when the alteration or addition is sufficient to require a building permit (rate effective 7/1/2026); $100.00 for each extended line under Section 60-42-7(d), extension of sanitary or storm sewer, soil pipe or water line (rate effective 7/1/2026); yard sprinkler system $30.00; reinspection or trip fee $50.00",
+      "feeAsOf": "City of Oklahoma City Development Services fee-change schedule, rates effective 7/1/2024 through 7/1/2026 (citywide fee study adopted by City Council in 2024)",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/development-services-fee-changes.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Oklahoma City has a specific flat fee for small electrical jobs — five outlets or fewer with no change in service — and separate flat fees for a remodel and for a service change, and an electrician has to hold a state Construction Industries Board license plus a city electrical contractor registration.",
+      "fee": "$100.00 for minor electrical wiring, five outlets or less, unrelated to building permits and requiring no change in service, residential dwelling unit, under Section 60-18-12(a) (rate effective 7/1/2026); $100.00 for a residential add-on, remodel or minor electrical wiring with no change in service under Section 60-18-16(a); $100.00 for a residential service charge up to 200 amps under Section 60-18-16(b), plus $50.00 for each additional 100 amperes or portion thereof; $50.00 for a meter base inspection where no electrical work has been done; $75.00 temporary construction service; reinspection or trip fee $50.00",
+      "feeAsOf": "City of Oklahoma City Development Services fee-change schedule, rates effective 7/1/2024 through 7/1/2026 (citywide fee study adopted by City Council in 2024)",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/development-services-fee-changes.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Oklahoma City checks alarm coverage on any permitted residential job: the submittal requirements make the plans show smoke detectors within each bedroom and combination smoke and carbon monoxide detectors outside each bedroom area, so a remodel can pull in alarms the house never had.",
+      "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/application-checklists/residential-construction.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee — Oklahoma City's per-fixture plumbing fees live in Chapter 60, Title 42 of the Municipal Code, which is hosted on a code platform that blocked automated retrieval, and the city's published fee-change sheet has no disposer line",
+    "The permit fee for replacing an electric (rather than gas) water heater — the published gasfitting line covers fuel-burning appliances and the plumbing fixture fees could not be read from the code host",
+    "Whether a stand-alone permit is required just to replace a smoke alarm, and any fee for one",
+    "The full Oklahoma City plumbing, electrical and mechanical fee tables — only the lines the 2024 citywide fee study changed are published on the city website; the complete schedules sit in Municipal Code Chapter 60",
+    "Whether a homeowner may pull an electrical, plumbing or mechanical trade permit in their own name — the homeowner exemption is documented for residential building permits, and the city separately requires trade contractors to be registered, but no page states which applies to a homeowner doing their own trade work"
+  ]
+}

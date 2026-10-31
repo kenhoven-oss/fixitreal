@@ -1,0 +1,83 @@
+{
+  "citySlug": "tampa-fl",
+  "cityName": "Tampa",
+  "stateAbbr": "FL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Tampa Development & Growth Management, Construction Services Division",
+    "url": "https://www.tampa.gov/construction-services"
+  },
+  "codeEdition": {
+    "text": "Tampa enforces the statewide Florida Building Code, and the city announced the 8th Edition as taking effect January 1, 2024, with a vesting process that let plans submitted and accepted by December 31, 2023 stay under the 7th Edition. The Florida Building Commission adopts a new edition every three years, starting from the current Florida code and then reviewing the international model codes.",
+    "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2023/building_code_announcement_2024.pdf"
+  },
+  "permitPolicy": {
+    "text": "A Tampa homeowner can pull their own permit as an owner-builder under the Florida statutory exemption, and the city sets out what that takes. The property must be deeded in the owner-builder's name and be for the owner's exclusive use, and it may not be offered for sale, lease or rent for a year after the project is finished. A property in trust qualifies only if the trustee is a natural person; corporations, LLCs and partnerships do not qualify and must hire a licensed contractor. Improvements to a one- or two-family home carry no valuation limit, a signed Owner-Builder Acknowledgement Form goes in with the application, and the city notes the permit fee is the same no matter who pulls it.",
+    "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/owner-builder_acknowledgement_form_ada.pdf"
+  },
+  "registration": {
+    "text": "Tampa requires a contractor to be registered with the city on top of the state credential. A state-certified contractor already registered with the Florida DBPR self-registers with the City of Tampa through the Accela Citizen Access portal; a specialty contractor whose license is not regulated by DBPR files the city's own Contractor License Registration Form instead. Every license type has to show proof of workers' compensation insurance or an exemption.",
+    "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/contractor-registration-form_rev10.27.26_ada.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Tampa publishes the exact photo checklist its inspector works from on a water heater replacement, and it goes well past the national basics. Besides the T&P valve and data plate, the inspector wants the relief drain line with the discharge area measured, the pan and pan drain line where required, a stand where required, insulation on the hot water outlet, impact protection such as a bollard or wheel stop where the location calls for it, and a vacuum relief valve, which Tampa says is required on bottom-feed units.",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/offline-field-report-checklist-water-heater-replacement_ada-1_0.pdf"
+    },
+    {
+      "text": "Tampa ties the thermal expansion requirement to backflow prevention: the water heater checklist calls for a thermal expansion device, or a water heating appliance that complies on its own, where a backflow device is installed. The checklist also asks for the electrical connection and wire size, the disconnecting means, and the breaker and panel schedule, so an electric heater swap is inspected as an electrical job too.",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/offline-field-report-checklist-water-heater-replacement_ada-1_0.pdf"
+    },
+    {
+      "text": "On an electrical device or fixture replacement, Tampa's checklist asks for photographs of GFCI and AFCI protection where it applies, at the device or at the breaker, the device's listing and labeling, arc shields where required, and the panel with the cover off showing cable type, size and markings, then with the cover on and circuits identified.",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/offline_field_report_checklist_electrical_device_and_fixture_replacement_ada.pdf"
+    },
+    {
+      "text": "Tampa publishes a hard boundary for its no-plan-review trade permits. A water heater replacement qualifies only in the same location with no conversion, such as gas to electric, and a fixture replacement only in the same location and like for like. Work past those limits needs a full building permit that goes through both application review and plan review. Work inside the limits can be inspected virtually through the city's VuSpex system, and once the required photos are uploaded the inspection is scheduled automatically for the next business day.",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/trade-permit-limitations-by-discipline.pdf"
+    },
+    {
+      "text": "Tampa's trade permit prices leave out the Florida Building Permit Surcharge of 2.5 percent of permit value, with a $4.00 minimum, which is added to every permit. A failed inspection costs $120.00 per discipline to redo, and getting a citation or stop work order released costs $339.00.",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/general_and_administrative_fee_schedule_ada.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in a Tampa house runs on a plumbing trade permit at one flat residential rate, with the state surcharge added on top; a solar water heater has its own line at the same price, and gas piping costs more.",
+      "fee": "Plumbing (general), residential one and two family dwellings: $120.00; Solar Water Heater: $120.00; Natural & LP Gas Piping: $162.00; plus Florida Building Permit Surcharge of 2.5% of permit value or $4.00 minimum",
+      "feeAsOf": "Updated February 16, 2023 (schedule effective October 1, 2018)",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/trade_permit_fee_schedule_ada.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Tampa has no separate garbage disposal line; a disposal swap falls under the general plumbing trade permit, which is one flat residential fee for plumbing work not listed on its own.",
+      "fee": "Plumbing (general), residential one and two family dwellings: $120.00; plus Florida Building Permit Surcharge of 2.5% of permit value or $4.00 minimum",
+      "feeAsOf": "Updated February 16, 2023 (schedule effective October 1, 2018)",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/trade_permit_fee_schedule_ada.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Tampa charges one flat residential fee for a plumbing trade permit covering plumbing work that has no line of its own, so a small service call and a bigger repair carry the same permit cost before the state surcharge.",
+      "fee": "Plumbing (general), residential one and two family dwellings: $120.00; plus Florida Building Permit Surcharge of 2.5% of permit value or $4.00 minimum",
+      "feeAsOf": "Updated February 16, 2023 (schedule effective October 1, 2018)",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/trade_permit_fee_schedule_ada.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical trade permit in Tampa is a flat residential fee, and a service upgrade is priced the same as general electrical work, with the state surcharge added to whatever the permit comes to.",
+      "fee": "Electrical (general), residential one and two family dwellings: $120.00; Service Upgrade: $120.00; plus Florida Building Permit Surcharge of 2.5% of permit value or $4.00 minimum",
+      "feeAsOf": "Updated February 16, 2023 (schedule effective October 1, 2018)",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/trade_permit_fee_schedule_ada.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Tampa's fee schedule has no smoke alarm line, so hardwired alarm work is billed on the general electrical trade permit, a single flat residential fee for electrical activities not listed separately, plus the state surcharge.",
+      "fee": "Electrical (general), residential one and two family dwellings: $120.00; plus Florida Building Permit Surcharge of 2.5% of permit value or $4.00 minimum",
+      "feeAsOf": "Updated February 16, 2023 (schedule effective October 1, 2018)",
+      "sourceUrl": "https://www.tampa.gov/sites/default/files/document/2026/trade_permit_fee_schedule_ada.pdf"
+    }
+  },
+  "notVerified": [
+    "Whether Tampa charges a fee for contractor registration with the city, and any bond amount — the registration form and portal instructions publish no figure",
+    "Whether Tampa publishes a list of work that needs no permit at all",
+    "Whether a smoke alarm replacement by itself triggers a permit in Tampa (the city's trade permit list covers fixture and device replacement generally and names no alarm)",
+    "Any Tampa local amendment to the Florida Building Code beyond the statewide edition",
+    "The Florida Building Code 9th Edition changeover date as stated by Tampa itself"
+  ]
+}

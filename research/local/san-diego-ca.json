@@ -1,0 +1,76 @@
+{
+  "citySlug": "san-diego-ca",
+  "cityName": "San Diego",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of San Diego Development Services Department",
+    "url": "https://www.sandiego.gov/development-services"
+  },
+  "codeEdition": {
+    "text": "San Diego is on the 2025 California Building Standards Code, effective for projects submitted on or after January 1, 2026, covering the California Building, Residential, Electrical, Mechanical, Plumbing, Fire, Green Building Standards and Existing Building Codes. The city's own amendments live in Chapters 12 and 14 of the Land Development Code; the plumbing and electrical articles were last amended by Ordinance O-22080 N.S., effective April 22, 2026, and the city adopts the 2025 California Electrical Code without modification.",
+    "sourceUrl": "https://www.sandiego.gov/development-services/codes-regulations"
+  },
+  "permitPolicy": {
+    "text": "A San Diego homeowner can pull their own permit. The city lets homeowners, property owners and licensed contractors obtain a Simple \"No-Plan\" Plumbing/Gas Permit for minor work such as replacing a water heater (tankless types excluded), repairing water or sewer piping, repairing gas lines, and repairing or replacing drains. If the owner is doing the work themselves or hiring separate contractors, they must sign an Owner-Builder Verification Form (DS-3042) before the permit is issued. Properties that are designated historical resources or sit in a historic district cannot use the simple permit path and must file plans instead.",
+    "sourceUrl": "https://www.sandiego.gov/development-services/permits/plumbing-permit"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "San Diego bans metallic potable water distribution piping under a concrete floor slab inside a dwelling unit. The only way around it is piping serving an island fixture or a trap seal primer, which must be run jointless inside a capped, watertight sleeve sealed at the ends so soil and water cannot reach the pipe.",
+      "sourceUrl": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art07Division02.pdf"
+    },
+    {
+      "text": "The city caps how many current-consuming outlets may sit on one residential circuit: four on an appliance circuit and fifteen on a lighting circuit. A lighting circuit feeding only permanent luminaires may carry more if the applicant provides a calculation based on actual wattages.",
+      "sourceUrl": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art06Division02.pdf"
+    },
+    {
+      "text": "San Diego has its own aluminum wiring rules: an approved inhibitor must be used on every nonplated stranded aluminum conductor termination, underground aluminum conductors must be in an approved raceway, and aluminum conduit, boxes or fittings may not be embedded in earth, concrete or plaster or sit within 18 inches of earth unless their finish is approved for it.",
+      "sourceUrl": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art06Division02.pdf"
+    },
+    {
+      "text": "A San Diego electrical inspector expects a circuit card at the rough wiring inspection: a complete schedule of circuits showing the number and arrangement of outlets on each one, on the Development Services circuit card (form DS-1779) or an approved wiring plan. The city requires it for electrical work added to a single dwelling unit or duplex unless electrical plans or single-line drawings are part of the approved plan set.",
+      "sourceUrl": "https://www.sandiego.gov/development-services/forms-publications/information-bulletins/103"
+    },
+    {
+      "text": "Where a homeowner upgrades the electrical system, including interior branch circuit wiring, on their own initiative, San Diego makes the current receptacle spacing requirements of California Electrical Code Article 210.52 apply to the work.",
+      "sourceUrl": "https://docs.sandiego.gov/municode/MuniCodeChapter14/Ch14Art06Division02.pdf"
+    },
+    {
+      "text": "San Diego requires plumbing and mechanical equipment, water heaters included, to stay out of a required side or rear yard in a residential zone unless the installation satisfies Municipal Code section 131.0461(a)(5). It also calls for structural calculations when equipment weighs more than 400 pounds or its center of mass is more than four feet above the supporting base.",
+      "sourceUrl": "https://www.sandiego.gov/development-services/forms-publications/information-bulletins/103"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in San Diego needs a plumbing/gas permit, and a straight tank-for-tank swap qualifies for the Simple \"No-Plan\" permit a homeowner can pull online; a tankless conversion does not qualify and a tankless replacement in a multi-dwelling or non-residential building needs plans and plan review.",
+      "fee": "Table 3B Plumbing Fee Schedule (per Item): Water Heater, Each, First Unit $122.97",
+      "feeAsOf": "May 2026",
+      "sourceUrl": "https://www.sandiego.gov/development-services/forms-publications/information-bulletins/103"
+    },
+    "plumber-service-call": {
+      "requirement": "San Diego does not require a plumbing permit to stop a leak in a drain, soil, waste or vent pipe, to clear a stoppage, to repair leaks in pipes, valves or fixtures, to replace an exposed trap, or to replace a plumbing fixture in kind - but the exemption ends the moment any drain, waste, vent or water supply piping has to be altered or replaced with new material, which then needs a permit.",
+      "fee": "Table 3B Plumbing Fee Schedule (per Item): Water/Waste Pipe Repair/Replacement - Residential, Per Dwelling Unit, First Unit $264.25 and $87.68 each additional; Building Drain, Per Floor $52.39",
+      "feeAsOf": "May 2026",
+      "sourceUrl": "https://www.sandiego.gov/development-services/forms-publications/information-bulletins/103"
+    },
+    "electrician-service-call": {
+      "requirement": "San Diego skips the electrical permit for minor work such as replacing a fuse, or repairing or replacing a switch, circuit breaker, lampholder, luminaire, ballast or receptacle with the same size and general type as the original, for changing lamps, and for wiring under 25 volts that cannot supply more than 50 watts; other electrical work needs a permit, and adding circuits or swapping a panel is charged per circuit or per panel.",
+      "fee": "Table 2 Electrical Fee Schedule (per Building): Circuits 15-45 Amps, First 5 Circuits $176.57, then $52.39 for circuits 6-10; Panel Replace/Upgrade up to 200 amp, Each $176.57",
+      "feeAsOf": "May 2026",
+      "sourceUrl": "https://www.sandiego.gov/development-services/forms-publications/information-bulletins/103"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "San Diego names garbage disposals directly: repairing or replacing a hardwired appliance such as a dishwasher or garbage disposal inside a dwelling unit needs no electrical permit as long as the work adds no electrical load to the existing circuit, and replacing a plumbing fixture in kind needs no plumbing permit unless drainage, waste, vent or water supply piping has to be altered or replaced.",
+      "sourceUrl": "https://docs.sandiego.gov/municode/MuniCodeChapter12/Ch12Art09Division03.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee in San Diego (the MEP fee schedule carries no smoke alarm line)",
+    "Whether San Diego requires any local trade registration on top of the state contractor license, and any fee or bond for it",
+    "Whether San Diego amends the state rules on water heater seismic strapping, drain pans, thermal expansion tanks or relief-valve discharge termination (its published local plumbing additions do not address them, so the unamended 2025 California Plumbing Code governs)",
+    "Whether an inspection is included in the quoted per-item MEP fees or billed separately, and the amount of any reinspection fee",
+    "The applicability of the $12.16 Mapping Fee to a simple no-plan water heater permit"
+  ]
+}

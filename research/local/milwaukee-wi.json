@@ -1,0 +1,80 @@
+{
+  "citySlug": "milwaukee-wi",
+  "cityName": "Milwaukee",
+  "stateAbbr": "WI",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Milwaukee Department of Neighborhood Services",
+    "url": "https://city.milwaukee.gov/DNS/permits/LicensedContractors"
+  },
+  "codeEdition": {
+    "text": "Milwaukee does not write its own plumbing code. The city adopts the State of Wisconsin plumbing code, chapters SPS 381 through 387, by ordinance, and its Plumbing Inspection Section enforces that text alongside the city's own permit and licensing ordinances.",
+    "sourceUrl": "https://city.milwaukee.gov/plumbing"
+  },
+  "permitPolicy": {
+    "text": "Milwaukee's position is that all plumbing work in the city has to be done under a permit from the Development Center, and the permit applicant has to hold one of four credentials: Master Plumber, Master Plumber Restricted - Service, Master Plumber Restricted - Appliance, or Utility Contractor with a plumber's performance bond and a certificate of liability insurance on file with the City Attorney. There is one homeowner exception: the owner of a one-family building who occupies it may apply for a permit for remodeling or alteration work inside that building. Whoever holds the permit calls the Plumbing Inspection Section for each inspection as the work progresses.",
+    "sourceUrl": "https://city.milwaukee.gov/plumbing"
+  },
+  "registration": {
+    "text": "Milwaukee licenses trades itself. The city states that electrical contractors and plumbing contractors must be licensed by the City of Milwaukee in order to take out permits, and that a home improvement contractor must be licensed by the city as well as by the State of Wisconsin. The licence lookup is run by the city, with electrical questions going to the DNS Electrical Inspection Section, plumbing to the Plumbing Inspection Section and home improvement to the City Clerk's License Division. No licence fee or bond figure is published on that page.",
+    "sourceUrl": "https://city.milwaukee.gov/DNS/permits/LicensedContractors"
+  },
+  "codeItems": [
+    {
+      "text": "Milwaukee has a plumbing licence class pitched at appliance work, Master Plumber Restricted - Appliance, and a separate Master Plumber Restricted - Service class. Which class a contractor holds decides what they may pull a Milwaukee plumbing permit for, so a water-heater or appliance job can legitimately be done by a holder of a restricted licence rather than a full master plumber.",
+      "sourceUrl": "https://city.milwaukee.gov/plumbing"
+    },
+    {
+      "text": "Milwaukee lists what its plumbing inspectors actually look at as work progresses: the grading of sewers and drains so flow keeps moving downhill, a leak test of the system, materials carrying the approval of a recognised testing laboratory, cross-connections between potable water and any questionable source, hazardous waste being discharged to the sewer, and the vent piping that balances pressure in the system.",
+      "sourceUrl": "https://city.milwaukee.gov/plumbing"
+    },
+    {
+      "text": "Milwaukee's electrical fee schedule itemises appliances separately from the plumbing permit: a water heater is its own $15 electrical line and an air conditioner outlet in a one- or two-family dwelling is $20, both on top of the one- and two-family minimum electrical permit fee.",
+      "sourceUrl": "https://city.milwaukee.gov/ImageLibrary/Groups/ccClerk/Ordinances/Volume-2/CH200-sub5.pdf"
+    },
+    {
+      "text": "Milwaukee charges escalating electrical reinspection fees of $50 for the first, $100 for the second and $200 for each one after that, and on the plumbing side sets a $75 minimum for any inspection, reinspection, test or retest, so a failed inspection has a published price rather than being absorbed.",
+      "sourceUrl": "https://city.milwaukee.gov/ImageLibrary/Groups/ccClerk/Ordinances/Volume-2/CH200-sub5.pdf"
+    },
+    {
+      "text": "For a new fire alarm system or an alteration to one, Milwaukee requires a full witness test coordinated with two DNS trades inspectors rather than a single sign-off.",
+      "sourceUrl": "https://city.milwaukee.gov/DNS/Inspections_Sections/Electrical"
+    },
+    {
+      "text": "Milwaukee's electrical inspection page states that the state has adopted the 2011 National Electrical Code and that the city adopts the state electrical code, SPS 316, by reference, with that state code in turn adopting NFPA 70. The page tells applicants to confirm their particular installation with their district inspector.",
+      "sourceUrl": "https://city.milwaukee.gov/DNS/Inspections_Sections/Electrical"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Milwaukee requires a permit for all plumbing work, so a water heater swap is permitted and inspected, and the charge is the city's minimum plumbing permit fee plus a per-appliance connection fee; an electric heater also picks up its own line on the electrical schedule.",
+      "fee": "Plumbing: minimum permit fee $75, which also applies to installations in one- and 2-family buildings, plus $15 for installation and connection of each plumbing fixture or appliance, plus a $10 processing fee per plumbing permit; Electrical schedule lists Water heater $15",
+      "feeAsOf": "Milwaukee Code s. 200-33-43, page printed 12/15/2020 (electrical lines in s. 200-33-11, page printed 12/14/2021)",
+      "sourceUrl": "https://city.milwaukee.gov/ImageLibrary/Groups/ccClerk/Ordinances/Volume-2/CH200-sub5.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "There is no small-job exemption in Milwaukee: the city says all plumbing work must be done under a permit from the Development Center, the fee starts at a published minimum even in a one- or two-family home, and any inspection, reinspection, test or retest carries its own minimum charge.",
+      "fee": "$75 minimum permit fee (also applies to installations in one- and 2-family buildings); $15 per plumbing fixture or appliance installed and connected; $10 processing fee per plumbing permit; $75 minimum for any inspection, reinspection, test or retest",
+      "feeAsOf": "Milwaukee Code s. 200-33-43, page printed 12/15/2020",
+      "sourceUrl": "https://city.milwaukee.gov/ImageLibrary/Groups/ccClerk/Ordinances/Volume-2/CH200-sub5.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Because Milwaukee requires a permit for all plumbing work and prices it per fixture or appliance installed and connected, a disposer swap is billed as the minimum plumbing permit fee plus the per-appliance charge rather than being treated as exempt maintenance.",
+      "fee": "$75 minimum permit fee plus $15 for installation and connection of each plumbing fixture or appliance, plus a $10 processing fee per plumbing permit",
+      "feeAsOf": "Milwaukee Code s. 200-33-43, page printed 12/15/2020",
+      "sourceUrl": "https://city.milwaukee.gov/ImageLibrary/Groups/ccClerk/Ordinances/Volume-2/CH200-sub5.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "A Milwaukee electrical permit for a one- or two-family dwelling starts at a published minimum fee and then adds a small amount for each switch, receptacle or device outlet, with a separate flat charge for a service and service switch, and reinspections are billed at rising rates.",
+      "fee": "Minimum permit fee: $85 for installations and repairs in one- and 2-family dwellings ($95 in other buildings); Outlet for switch, receptacle, device, etc.: $2; Service with one service switch up to 400 amps: $100, each additional service switch $25; Feeder up to 400 amps: $40; Reinspection $50 first, $100 second, $200 each additional; $10 processing fee per electrical permit",
+      "feeAsOf": "Milwaukee Code s. 200-33-11, page printed 12/14/2021",
+      "sourceUrl": "https://city.milwaukee.gov/ImageLibrary/Groups/ccClerk/Ordinances/Volume-2/CH200-sub5.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee (Milwaukee's smoke detector ordinance chapter could not be reached and neither the electrical fee schedule nor the inspection pages name alarms)",
+    "Water-heater-specific inspection items such as thermal expansion tanks, drain pans or TPR discharge termination. Milwaukee adopts Wisconsin chapters SPS 381-387 wholesale, but docs.legis.wisconsin.gov refused every connection through this run's network, so no state text was read and none is quoted.",
+    "City licence and bond fees for Milwaukee electrical and plumbing contractors (the city's licensed-contractor page publishes no figures)",
+    "Whether Milwaukee exempts any like-for-like plumbing or electrical repair from permitting (the city states all plumbing work needs a permit and publishes no exempt-work list that could be located)"
+  ]
+}

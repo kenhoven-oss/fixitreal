@@ -1,0 +1,54 @@
+{
+  "citySlug": "el-paso-tx",
+  "cityName": "El Paso",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of El Paso Planning and Inspections Department (One Stop Shop, 811 Texas Avenue)",
+    "url": "https://www.elpasotexas.gov/planning-and-inspections"
+  },
+  "codeEdition": {
+    "text": "El Paso's published list of currently adopted codes is the 2021 International Building Code, the 2021 International Residential Code, the 2021 International Energy Conservation Code, the 2021 International Mechanical Code, the 2020 NFPA 70 National Electrical Code, the 2021 International Plumbing Code, the 2021 International Fuel Gas Code, the 2021 International Existing Building Code, the 2021 International Fire Code, the 2021 International Swimming Pool and Spa Code and the 2021 International Property Maintenance Code, plus the Texas Accessibility Standards and ICC/ANSI A117.1 2009. The city also lists its own Outdoor Lighting Code and Landscape and Irrigation Code. Local amendments are carried in Title 18 of the El Paso City Code.",
+    "sourceUrl": "https://www.elpasotexas.gov/assets/Documents/CoEP/Planning-and-Inspections/Applications/Building-Permit-Applications/Adopted-Codes-and-Amendments.pdf"
+  },
+  "permitPolicy": {
+    "text": "El Paso runs permits through registered contractors. A contractor registration application has to be filed with the city annually to be eligible to obtain permits, under Section 18.02.104.5 of the El Paso City Code, and the registration is categorized by trade — General, Electrical, Mechanical, Plumbing, Irrigation, Barricade, Sign, Fire Systems and pavement cut. The city also warns that failing to close out a permit with a final inspection, certificate of completion or occupancy can put a hold on the company and get further permits denied, under Section 18.02.105.25.",
+    "sourceUrl": "https://www.elpasotexas.gov/assets/Documents/CoEP/Planning-and-Inspections/Applications/License-Applications/Contractor-Registration-Application-new.pdf"
+  },
+  "registration": {
+    "text": "El Paso requires its own annual contractor registration on top of the state license, and the requirements differ sharply by trade. Electrical, mechanical, plumbing and fire contractors pay no annual registration fee, but must submit the state credential — an Electrical Contractor's License plus a TDLR Master Electrician license showing the business name, a Master Mechanical state license, or a Master Plumbing license with the Plumbing Board showing the insurance expiration and business name. A general contractor, by contrast, pays a $100 annual fee plus a tech fee and must file a $50,000 blanket building construction bond and a general liability certificate of at least $100,000 naming the City of El Paso as certificate holder. Irrigation contractors and non-electrical sign contractors also pay $100 a year; a large sign installer pays $607.",
+    "sourceUrl": "https://www.elpasotexas.gov/assets/Documents/CoEP/Planning-and-Inspections/Business-Licensing/Contractor-Registration-Requirements.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Texas lets a licensed plumber perform the electrical work needed to install, service, maintain, repair or replace a plumbing fixture or appliance on existing circuits without an electrician's license, so a water heater or disposer changeout in El Paso does not pull in a second licensed trade. The state also exempts a person doing electrical work on a dwelling they own and reside in, but warns that municipal regulations may override these exemptions under Section 1305.201 of the Texas Electrical Safety and Licensing Act — and El Paso does require trade registration to obtain a permit.",
+      "sourceUrl": "https://www.tdlr.texas.gov/ELECTRICIANS/exemptions.htm"
+    },
+    {
+      "text": "El Paso breaks trade work into discrete numbered inspections scheduled against the permit, so a job is not signed off in one visit. Electrical work has separate underground, rough, slab, partial, service release and final inspections; plumbing has sewer, underground, rough-in, top out, gas, partial and final; mechanical has under-slab duct, rough, partial and final. An inspection can only be scheduled with the authorization code issued when the contractor's city registration was completed.",
+      "sourceUrl": "https://www.elpasotexas.gov/assets/Documents/CoEP/Planning-and-Inspections/Applications/License-Applications/inspectionIVRcodes.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "In El Paso the water heater work has to be done by a plumbing contractor holding a Master Plumbing license and registered with the city in the plumbing category, and the city will run its own plumbing inspections against the permit, including a gas inspection on a gas-fired unit.",
+      "sourceUrl": "https://www.elpasotexas.gov/assets/Documents/CoEP/Planning-and-Inspections/Business-Licensing/Contractor-Registration-Requirements.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "El Paso only lets a contractor who is registered with the city in the plumbing category and holds a Master Plumbing license pull plumbing permits, and that registration has to be renewed every year to stay eligible.",
+      "sourceUrl": "https://www.elpasotexas.gov/assets/Documents/CoEP/Planning-and-Inspections/Applications/License-Applications/Contractor-Registration-Application-new.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrician working in El Paso needs both a state Electrical Contractor's License and a TDLR Master Electrician license showing the business name, plus an annual city electrical contractor registration, before the city will issue an electrical permit; the registration itself carries no annual fee.",
+      "sourceUrl": "https://www.elpasotexas.gov/assets/Documents/CoEP/Planning-and-Inspections/Business-Licensing/Contractor-Registration-Requirements.pdf"
+    }
+  },
+  "notVerified": [
+    "Every permit fee figure for El Paso. The city's permit fees sit in Schedule C attached to the annual budget resolution rather than in the code or on the Planning and Inspections pages, and no current Schedule C could be reached on a city or county source; the department directs applicants to the Accela portal for invoices",
+    "Whether El Paso requires a permit for each of the five jobs specifically — the city's 'When Do I Need a Permit' handout is a scanned image with no extractable text, and El Paso City Code Title 18 is hosted on a code platform that blocked automated retrieval",
+    "El Paso's own amendments to the 2021 IRC, 2021 IPC and 2020 NEC — the city's chapter-by-chapter amendment PDFs have been removed in a website redesign and the replacement host was unreachable, so no El Paso-specific water heater, expansion tank, TPR or GFCI amendment could be sourced",
+    "garbage-disposal-replacement permit requirement and fee",
+    "smoke-detector-replacement permit requirement and fee",
+    "The scope of El Paso's Homeowner and Authorization Affidavit for Building Permits — the city lists the form, but it is hosted off-domain and its terms, including whether it reaches electrical or plumbing permits, could not be read from an official source"
+  ]
+}

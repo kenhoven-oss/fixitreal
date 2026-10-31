@@ -110,8 +110,11 @@ export function LocalPermits({
 
       {detail.codeItems.length > 0 && (
         <>
+          {/* Phrased without an indefinite article on purpose: "a ${placeName}"
+              produces "a Orlando" / "a Austin", and a vowel-letter heuristic
+              still gets names like Utica wrong. */}
           <h3 className="mt-6 font-semibold text-navy-900">
-            {`What a ${placeName} inspector checks`}
+            {`What inspectors check in ${placeName}`}
           </h3>
           {/* data-citations: several code items often share one source PDF, so
               content-qa's duplicate-href check does not apply here. */}

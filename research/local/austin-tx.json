@@ -1,0 +1,70 @@
+{
+  "citySlug": "austin-tx",
+  "cityName": "Austin",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Austin Development Services Department",
+    "url": "https://www.austintexas.gov/development-services"
+  },
+  "codeEdition": {
+    "text": "Austin's technical codes sit in City Code Chapter 25-12, with the current local amendments effective July 10, 2025. The city adopts the 2024 International Building, Energy Conservation, Existing Building, Fire, Property Maintenance, Residential, Swimming Pool and Spa and Wildland-Urban Interface Codes. Unusually for Texas, Austin uses the 2024 Uniform Plumbing Code and the 2024 Uniform Mechanical Code rather than the international plumbing and mechanical codes. Its electrical code is the 2023 National Electrical Code, with the 2026 NEC effective September 1, 2026.",
+    "sourceUrl": "https://www.austintexas.gov/page/building-technical-codes"
+  },
+  "permitPolicy": {
+    "text": "Austin lets an unlicensed homeowner do their own electrical, mechanical or plumbing work under a Homestead Permit, but the bar is specific: the owner must have a homestead exemption on file with the county appraisal district, must live in the house as their principal residence, must do the work personally, and must not have taken a homestead permit on another residence in the previous 12 months. The homestead permit does not cover the main electric service, refrigerant work on a ducted HVAC system, LP-gas plumbing or an auxiliary water system. Everyone else, including a homeowner acting as their own general contractor, has to register with Building and Trade Contractor Services before a building or trade permit can be issued.",
+    "sourceUrl": "https://www.austintexas.gov/development-services/homeowners-permit"
+  },
+  "registration": {
+    "text": "Austin requires city registration on top of the state credential. A mechanical, electrical or plumbing trade contractor must hold the state license for that trade and also register with Austin's Building and Trade Contractor Services before being assigned to a trade permit, and must update the city registration whenever the state license changes. A general contractor must register too, including a homeowner acting as their own general contractor, though Texas does not license general contractors. Registration has to be in place before a building or trade permit can be activated.",
+    "sourceUrl": "https://www.austintexas.gov/development-services/contractor-registration"
+  },
+  "codeItems": [
+    {
+      "text": "Austin amends the Uniform Plumbing Code to require an approved expansion tank in the cold water distribution piping downstream of the pressure regulator, to absorb thermal expansion and hold the regulator's pressure setting. A tank on a drinking water system has to meet NSF 61 and be sized and installed to the manufacturer's instructions. Only a system designed by a registered design professional may substitute relief valves set at 100 psi or less.",
+      "sourceUrl": "https://services.austintexas.gov/edims/document.cfm?id=453142"
+    },
+    {
+      "text": "In an Austin house, a storage water heater over 17 gallons may not go in an attic or above a ceiling unless it is reachable through a vertical door opening in an occupied space on the same floor level. A hatch in the ceiling does not satisfy the city's rule.",
+      "sourceUrl": "https://services.austintexas.gov/edims/document.cfm?id=453142"
+    },
+    {
+      "text": "Austin also limits how high a storage water heater over 17 gallons may be mounted. Above eight feet off the finished floor it needs permanent access rated for a 300-pound concentrated load, permanent lifting equipment designed by a registered professional, or lifting-equipment access from the entry point to the appliance.",
+      "sourceUrl": "https://services.austintexas.gov/edims/document.cfm?id=453142"
+    },
+    {
+      "text": "The city spells out where the water heater's drain can land: a hub drain taking the temperature-and-pressure valve discharge, the pan drain and condensate may be located under the kitchen sink cabinet, in the water heater closet, in a walk-in storage room or a similar accessible spot.",
+      "sourceUrl": "https://services.austintexas.gov/edims/document.cfm?id=453142"
+    },
+    {
+      "text": "An Austin inspector treats dishwasher drainage as indirect waste. The discharge may not tie straight into the drainage system or into a garbage disposal unless an approved air-gap fitting is used, or the hose is looped up and fastened to the underside of the counter and then connected to the disposal chamber, a wye between the disposal outlet and the trap inlet, or a branch tailpiece above the trap inlet.",
+      "sourceUrl": "https://services.austintexas.gov/edims/document.cfm?id=453142"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Austin handles a water heater swap as a stand-alone \"Plumbing Change Out\" permit that needs no plan review, and the applicant has to be registered with the city as a contractor before applying - or qualify for a Homestead Permit as the owner-occupant doing the work themselves.",
+      "sourceUrl": "https://www.austintexas.gov/development-services/types-permits"
+    },
+    "plumber-service-call": {
+      "requirement": "Austin needs no plumbing permit to stop a leak, clear a stoppage, pull and reset a toilet, or repair and replace fixtures, exposed traps, continuous waste piping, fixture supply valves and faucets, as long as no other trade or city department is involved; but if a concealed trap, drain, waste or vent pipe has gone bad and has to be replaced with new material, that counts as new work and needs a permit and inspection. Installing or replacing a shower, tub or tub-shower combination is specifically not exempt.",
+      "sourceUrl": "https://www.austintexas.gov/development-services/work-exempt-building-permits"
+    },
+    "electrician-service-call": {
+      "requirement": "Austin exempts a short list of residential electrical work from permits: reinstalling attachment plug receptacles (but not the outlets), swapping a branch circuit overcurrent device of the required capacity in the same location, systems under 25 volts that cannot deliver more than 50 watts, cord-and-plug decorative lighting, and minor repairs such as changing lamps. Other electrical repairs and upgrades need a stand-alone electrical permit, and the city requires the applicant to be a registered contractor first.",
+      "sourceUrl": "https://www.austintexas.gov/development-services/work-exempt-building-permits"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Austin publishes a residential plumbing exemption covering the repair or replacement of fixtures and of exposed traps, continuous waste piping, fixture supply valves and faucets where no other trade or city department is involved, and it lists no separate garbage disposal permit; the city does require the dishwasher drain into a disposal to be made up as indirect waste with an air gap or a high loop.",
+      "sourceUrl": "https://www.austintexas.gov/development-services/work-exempt-building-permits"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee in Austin (neither the residential fee schedule nor the published IRC amendments address replacing a smoke alarm)",
+    "A separate published dollar fee for the stand-alone Plumbing Repairs or Electrical Repairs permit itself, as opposed to the standalone-project inspection and change-out program lines quoted here",
+    "Whether a garbage disposal swap in Austin is treated as exempt fixture replacement or as permitted work (the city publishes no disposal-specific line either way)",
+    "Austin's local amendments to the 2023 National Electrical Code (the city links them only through a code-library host that blocked automated retrieval)",
+    "Whether Austin requires a water heater drain pan or seismic strapping on a replacement (its published plumbing amendments reference pan drains but do not state when a pan is required)",
+    "Austin trade permit fees — the only fee schedule found is served from the city's third-party asset host (austin.widen.net) as a share link, not from austintexas.gov. Not published rather than cited to a link that may rot and does not read as official."
+  ]
+}

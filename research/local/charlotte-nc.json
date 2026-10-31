@@ -1,0 +1,61 @@
+{
+  "citySlug": "charlotte-nc",
+  "cityName": "Charlotte",
+  "stateAbbr": "NC",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Mecklenburg County Code Enforcement (LUESA)",
+    "url": "https://code.mecknc.gov/permitting"
+  },
+  "codeEdition": {
+    "text": "North Carolina's 2018 code editions, effective January 1, 2019, are still the ones in force, including the 2018 NC Residential Code, which is based on the 2015 IRC and carries Building Code Council amendments adopted from December 2017 through December 2024. Electrical work follows the 2020 NC Electrical Code, effective November 1, 2021. A 2024 NC State Building Code has been approved but the state fire marshal issued separate correspondence on its effective date.",
+    "sourceUrl": "https://www.ncosfm.gov/codes/codes-current-and-past"
+  },
+  "permitPolicy": {
+    "text": "Charlotte permits are issued by Mecklenburg County, and a homeowner may pull their own permit only if they own the home, are named on the deed, and live there as their primary residence; trusts and powers of attorney do not qualify, and condominiums are excluded. A homeowner acting as their own electrical, mechanical or plumbing contractor must personally do the work and file a Homeowner Trade Work Certificate of Ownership. Homeowner accounts cover residential projects under $40,000; at $40,000 and above the homeowner must post a bond account and follow the contractor permitting process, plus sign an Owner Exemption Affidavit promising to live in the home for at least 12 months after the work.",
+    "sourceUrl": "https://code.mecknc.gov/permitting/hip"
+  },
+  "registration": {
+    "text": "Mecklenburg County does not run its own trade licence. It directs electrical contractors to the N.C. State Board of Examiners of Electrical Contractors, mechanical and plumbing contractors to the N.C. State Board of Examiners of Plumbing, Heating & Fire Sprinkler Contractors, and general contractors to the N.C. Licensing Board for General Contractors; the county's contractor-licensing page names no extra county registration or bond for the trades.",
+    "sourceUrl": "https://code.mecknc.gov/site-menu/code-information-appeals/nc-current-building-codes"
+  },
+  "codeItems": [
+    {
+      "text": "Mecklenburg County decides who the primary permit holder is by trade, which matters on a water heater job: the plumbing contractor is the primary contractor for an electric water heater change-out, the mechanical contractor is primary whenever mechanical, electrical and plumbing work are all involved, and electrical can be primary only on work needing no mechanical or plumbing, such as a service upgrade. The primary contractor has to apply and pay for all the sub-trades.",
+      "sourceUrl": "https://code.mecknc.gov/permitting/tip"
+    },
+    {
+      "text": "Because the county sends multi-trade inspectors and groups the inspections, sub-permits on equipment change-outs at one- and two-family dwellings are charged at half the primary trade's permit fee.",
+      "sourceUrl": "https://code.mecknc.gov/permitting/tip"
+    },
+    {
+      "text": "A standalone electrical permit in Mecklenburg County escapes plan review only if the work costs under $5,000, and never for life-safety systems, medical facilities, hazardous locations, electric car chargers, or load changes calculating over 200 amps. Even on the exempt jobs the contractor has to upload, on company letterhead, a signed definitive scope of work, a code load calculation and the fault-current information.",
+      "sourceUrl": "https://code.mecknc.gov/permitting/other"
+    },
+    {
+      "text": "Mecklenburg County runs a re-inspection fee program that prices failed inspections: at the end of a project the code defect rate (failed inspections divided by total inspections across all trades) is compared to a percent fee adjustment schedule and a charge or credit is applied against the original permit fee. On small jobs, meaning a permit fee of $200 or less or a construction value of $20,000 or less, the charge is not less than $25 per permit and no credits are given.",
+      "sourceUrl": "https://code.mecknc.gov/inspections/re-inspection-fee"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A water heater change-out in Charlotte takes a trade permit from Mecklenburg County, which a contractor can apply for, pay and print online without staff involvement; for an electric water heater the plumbing contractor is the one who pulls it and pays for any sub-trade permits.",
+      "sourceUrl": "https://code.mecknc.gov/permitting/tip"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Charlotte needs a county electrical permit; a standalone electrical job costing under $5,000 skips plan review, but the contractor still has to submit a signed scope of work, a load calculation and fault-current information, and the exemption does not apply to EV chargers or to load changes above 200 amps.",
+      "sourceUrl": "https://code.mecknc.gov/permitting/other"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Charlotte is permitted through Mecklenburg County, and change-out type jobs that need no building permit can be applied for, paid and printed online by the contractor at any hour, with inspections requestable as soon as the work is done.",
+      "sourceUrl": "https://code.mecknc.gov/permitting/tip"
+    }
+  },
+  "notVerified": [
+    "All Mecklenburg County permit fee amounts. The county publishes its LUESA Fee Ordinance only through its mecknc.widen.net document library, which is not an official .gov host and could not be accepted as a citable source; no .gov-hosted copy of the fee schedule was found.",
+    "garbage-disposal-replacement permit requirement and fee",
+    "smoke-detector-replacement permit requirement and fee",
+    "Mecklenburg County's own plumbing and electrical code interpretations, which would be the best source for local inspector checks (all of them are published on the county's widen.net document library rather than on a .gov host)",
+    "City of Charlotte role, if any, in trade permitting (all permitting material found was Mecklenburg County's)"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "citySlug": "kansas-city-mo",
+  "cityName": "Kansas City",
+  "stateAbbr": "MO",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Kansas City, Missouri City Planning & Development Department, Permits Division",
+    "url": "https://www.kcmo.gov/city-hall/departments/city-planning-development/permits-division"
+  },
+  "codeEdition": {
+    "text": "Kansas City enforces its own Building and Rehabilitation Code, built on the 2018 International Building Code, which Council approved effective June 28, 2020. The residential side was updated to the 2018 International Residential Code, and the 2018 International Swimming Pool and Spa Code replaced IRC Appendix G. The energy provisions moved to the 2021 International Energy Conservation Code with local amendments, effective July 1, 2023.",
+    "sourceUrl": "https://www.kcmo.gov/city-hall/departments/city-planning-development/building-and-rehabilitation-code/"
+  },
+  "permitPolicy": {
+    "text": "An owner who occupies a single-family home as a principal residence, or will occupy it once the work is finished, may pull their own electrical, plumbing or mechanical permit, but only if the owner and unpaid family or friends buy the materials and do all the work. Paying anyone to do the work ends the exception, and that person must hold the city license and pull the permit themselves. The owner files a homeowner affidavit with the application and has to schedule the city inspections. On anything other than a single-family home, trade permits are issued only to licensed contractors.",
+    "sourceUrl": "https://www.kcmo.gov/home/showpublisheddocument/15772/638973333692600000"
+  },
+  "registration": {
+    "text": "Kansas City licenses contractors itself on top of any state credential, through the City Planning & Development Contractor Licensing Branch. A certificate of qualification and a contractor license each cost a $60 non-refundable application fee, plus a $181 issuance fee on approval and $181 to renew every four years. Plumbing contractors must also carry at least $1,000,000 aggregate liability coverage per occurrence and leave a $500 cash deposit with the Finance Department before applying. A change of company name, ownership or organization means a new application at $60 plus the $181 issuance fee.",
+    "sourceUrl": "https://www.kcmo.gov/home/showpublisheddocument/16418/639089920136970000"
+  },
+  "codeItems": [
+    {
+      "text": "Kansas City treats smoke alarms as part of almost any permitted job. Its bulletin says alarms are required whenever an alteration, repair or addition needing a permit of any type happens, and compliance is checked at the inspection for that work. Only exterior-only work, including roof sheathing replacement, and work confined to plumbing or mechanical systems is excused.",
+      "sourceUrl": "https://www.kcmo.gov/home/showpublisheddocument/15882/638989685520370000"
+    },
+    {
+      "text": "In an existing Kansas City dwelling, battery alarms are allowed only where getting building wiring to the location would mean removing wall or finish material. Everywhere else the inspector looks for hardwired alarms with battery backup, interconnected so one alarm sounds them all, and the hardwiring itself takes an electrical permit.",
+      "sourceUrl": "https://www.kcmo.gov/home/showpublisheddocument/15882/638989685520370000"
+    },
+    {
+      "text": "Kansas City applies a specific spacing rule when one alarm is used to cover two sleeping areas: the alarm has to sit no further than half the listed maximum spacing from any sleeping-room door, with 30 feet on center the typical listed spacing unless the manufacturer says otherwise, and it must be audible inside each sleeping area with the door shut.",
+      "sourceUrl": "https://www.kcmo.gov/home/showpublisheddocument/15882/638989685520370000"
+    },
+    {
+      "text": "Kansas City's exempt-work list for trade permits is short and literal. Replacing a faucet or another plumbing fixture, replacing a component part of an appliance, and replacing a light switch or light fixture are the minor repairs named as needing no permit; most other electrical, plumbing or heating and ventilating work does need one before it starts.",
+      "sourceUrl": "https://www.kcmo.gov/city-hall/departments/city-planning-development/electrical-plumbing-and-mechanical-permits"
+    }
+  ],
+  "byGuide": {
+    "smoke-detector-replacement": {
+      "requirement": "Swapping an alarm on its own is not itself a listed permit item in Kansas City, but any permitted alteration or repair in the home triggers the full smoke-alarm requirement, and running new wiring to hardwire and interconnect the alarms needs an electrical permit.",
+      "sourceUrl": "https://www.kcmo.gov/home/showpublisheddocument/15882/638989685520370000"
+    },
+    "plumber-service-call": {
+      "requirement": "Kansas City needs a permit before most plumbing work starts; the only minor repairs it names as exempt are replacing a faucet or another plumbing fixture and replacing a component part of an appliance.",
+      "sourceUrl": "https://www.kcmo.gov/city-hall/departments/city-planning-development/electrical-plumbing-and-mechanical-permits"
+    },
+    "electrician-service-call": {
+      "requirement": "Replacing a light switch or a light fixture needs no Kansas City permit, but most other electrical work does, and on a single-family home only the occupying owner doing the work personally, or a city-licensed electrical contractor, may pull it.",
+      "sourceUrl": "https://www.kcmo.gov/city-hall/departments/city-planning-development/electrical-plumbing-and-mechanical-permits"
+    }
+  },
+  "notVerified": [
+    "All permit dollar fees. Kansas City puts the Development Fee Schedule in Article 1 Section 18 of its Building Code rather than on a web page, the department's own pages publish no figures, and the code text on library.municode.com could not be reached.",
+    "water-heater-replacement permit requirement (no city page, bulletin or code text found that names water heaters in either the permit-required or exempt list)",
+    "garbage-disposal-replacement permit requirement (the exempt list names plumbing fixtures and appliance component parts but not food waste disposers, so the answer could not be pinned down)",
+    "Water-heater-specific inspection items such as expansion tank, drain pan or TPR discharge termination (no Kansas City bulletin or amendment on these was found)"
+  ]
+}

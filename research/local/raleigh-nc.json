@@ -1,0 +1,71 @@
+{
+  "citySlug": "raleigh-nc",
+  "cityName": "Raleigh",
+  "stateAbbr": "NC",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Raleigh Planning and Development Department (Permits and Inspections)",
+    "url": "https://raleighnc.gov/permits"
+  },
+  "codeEdition": {
+    "text": "North Carolina enforces one statewide code set and Raleigh's inspectors apply it. The 2018 North Carolina Codes, including the 2018 NC Residential Code, took effect January 1, 2019 and remain in force; they are built on the 2015 International Codes with the 2018 NC Ad-Hoc Committee amendments. Electrical work is judged against the 2020 North Carolina Electrical Code, which is the 2020 NEC plus North Carolina amendments and has been effective since November 1, 2021. The 2024 North Carolina State Building Code has been approved but its effective date was pushed back by the State Fire Marshal.",
+    "sourceUrl": "https://www.ncosfm.gov/codes/codes-current-and-past"
+  },
+  "permitPolicy": {
+    "text": "A Raleigh homeowner may act as their own contractor, but must file the city's notarized Owner Exemption Affidavit under N.C.G.S. 87-1(b)(2) and 87-14(a)(1), checking each trade claimed (building, electrical, mechanical, plumbing) and stating the project cost. By signing, the owner agrees to personally superintend the work, to be present for every inspection required by the NC State Building Code, and to occupy the home for twelve months after completion without offering it for rent, lease or sale. Raleigh sends a copy to the NC Licensing Board for General Contractors, and the permit is revoked under N.C.G.S. 160D-1115 if the board finds the exemption does not apply. Otherwise a licensed contractor pulls the permit.",
+    "sourceUrl": "https://raleighnc.gov/permits/services/how-get-residential-permit"
+  },
+  "registration": {
+    "text": "Raleigh does not issue its own trade license on top of the North Carolina state license, but every general contractor and sub-contractor must be registered in the city's Permit and Development Portal, with the NC license number entered on the application, before anyone can manage the project, pay fees or schedule an inspection. Plans that are ready to issue but have incomplete contractor information are held at the Customer Service Center for six months and then voided, which can carry an administrative fee. No city registration fee or bond amount is published.",
+    "sourceUrl": "https://raleighnc.gov/permits/services/how-get-residential-permit"
+  },
+  "codeItems": [
+    {
+      "text": "Raleigh's Residential Permit Application has a Plumbing and Mechanical Changeout block specifically for water heater and A/C replacements. You must answer whether the new unit is the same type as the old one, the same size or smaller, and in the same location. If any answer is no, the city requires a Tier One site plan with the application, which turns a same-day changeout permit into a reviewed project.",
+      "sourceUrl": "https://raleighnc.gov/permits/services/how-get-residential-permit"
+    },
+    {
+      "text": "On a Raleigh plumbing final the water system has to be pressurized at the moment the inspector arrives, not simply installed and leak-free. The plumbing rough-in separately requires the drainage test, the water test, vent piping and a shower pan test, and the exterior underground inspection is only called in after the rough-in passes and before the plumbing final.",
+      "sourceUrl": "https://raleighnc.gov/permits/services/residential-inspections"
+    },
+    {
+      "text": "Raleigh's mechanical final requires the manufacturer's installation instructions to be left on site for the inspector to read, all gas piping to have been tested, and all carbon monoxide detectors to be in place before the inspection is approved.",
+      "sourceUrl": "https://raleighnc.gov/permits/services/residential-inspections"
+    },
+    {
+      "text": "Raleigh charges a reinspection fee for any inspection rescheduled or cancelled on the day it was booked, and field staff cannot cancel same-day, so a water heater or panel job that is not ready costs money rather than just time. The published reinspection fee is $122.00, or $127.00 with the city's 4% technology surcharge.",
+      "sourceUrl": "https://raleighnc.gov/permits/services/residential-inspections"
+    },
+    {
+      "text": "North Carolina requires a lien agent to be appointed for contractors and subcontractors on a project, but Raleigh's application notes the appointment is not required for improvements under $40,000 to the owner's existing residence. Most single-trade repairs therefore fall below the threshold, while a larger remodel does not.",
+      "sourceUrl": "https://raleighnc.gov/permits/services/how-get-residential-permit"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Raleigh requires a permit to replace a water heater but no plans, as long as the new heater is the same type, the same size or smaller, and in the same location as the old one; the fee falls to the city's minimum trade permit fee, charged per trade.",
+      "fee": "$124.00 Minimum Trade Permit Fee, per trade; $129.00 including the 4% technology surcharge",
+      "feeAsOf": "July 1, 2026 - June 30, 2027 (FY27 Development Fee Guide)",
+      "sourceUrl": "https://raleighnc.gov/permits/services/development-fee-guide-and-calculator"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical service upgrade, added circuits or outlets, and new switches or light fixtures all need a Raleigh permit but no plans, and because none of that work is itemised in the fee guide it is billed at the minimum trade permit fee.",
+      "fee": "$124.00 Minimum Trade Permit Fee, per trade; $129.00 including the 4% technology surcharge",
+      "feeAsOf": "July 1, 2026 - June 30, 2027 (FY27 Development Fee Guide)",
+      "sourceUrl": "https://raleighnc.gov/permits/services/development-fee-guide-and-calculator"
+    },
+    "plumber-service-call": {
+      "requirement": "Replacing existing water and sewer lines, and plumbing work inside a bathroom or kitchen renovation, need a Raleigh permit but no plans, and unlisted work is charged at the minimum trade permit fee per trade.",
+      "fee": "$124.00 Minimum Trade Permit Fee, per trade; $129.00 including the 4% technology surcharge",
+      "feeAsOf": "July 1, 2026 - June 30, 2027 (FY27 Development Fee Guide)",
+      "sourceUrl": "https://raleighnc.gov/permits/services/development-fee-guide-and-calculator"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee (Raleigh's residential work-type lists do not name smoke or CO alarm replacement, and the fee guide has no line for it)",
+    "garbage-disposal-replacement permit requirement (Raleigh's Replacements list names water heaters, HVAC, generators and driveways but not a food waste disposer; kitchen renovations appear under Alterations and Repairs, so a standalone disposer swap could not be pinned down)",
+    "Whether Raleigh publishes any fee for registering a contractor in its Permit and Development Portal (the process is described but no figure is given)",
+    "Orlando-style local code amendments on water heater drain pans, expansion tanks or TPR discharge (North Carolina enforces a single statewide code and Raleigh publishes no local amendments of its own)",
+    "Exact per-trade fee for a residential alteration or repair computed as a percentage of the calculated building permit fee (the Level 1 to Level 3 alteration percentages are published but the underlying residential building permit fee depends on declared construction value, so no single dollar figure can be quoted)"
+  ]
+}
