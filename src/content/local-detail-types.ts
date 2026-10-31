@@ -24,6 +24,18 @@ export type LocalPermitFact = {
   requirement: string;
   /** Published fee, verbatim from the fee schedule. Omit when unpublished. */
   fee?: string;
+  /**
+   * Effective or revision date the authority prints on the fee schedule the
+   * `fee` came from, e.g. "February 2003" or "FY2027".
+   *
+   * Not decoration. Cleveland still publishes a plumbing fee schedule marked
+   * effective February 2003; printing "$50" from it as the current fee, with
+   * only our own check date beside it, would read as a number we had just
+   * confirmed. Showing the schedule's own vintage lets a reader judge it, and
+   * keeps the site's promise that its figures can be checked. Omit only when
+   * the schedule carries no date at all.
+   */
+  feeAsOf?: string;
   sourceUrl: string;
 };
 

@@ -63,7 +63,19 @@ const GLOSSARY_UPDATED = d("2026-09-20");
  * metro cost pages, and the auto-generated keyword topic pages. Applied to
  * the final list as a hard filter so no future entry can slip through.
  */
-const SITEMAP_EXCLUDE = [/^\/costs\/[^/]+\/.+/, /^\/topics\//];
+// Paths that must never reach the sitemap, whatever assembled them.
+//
+// The first pattern covers the STATE-level cost pages (/costs/<guide>/<state>),
+// which are still globally suppressed via LOCAL_COST_PAGES_INDEXABLE. It is the
+// belt to that braces: a stray entry can never be advertised.
+//
+// The negative lookahead for `metro/` is load-bearing. Metro pages are gated
+// per page by isCityGuideIndexable, and a blanket /costs/<guide>/.+ pattern
+// here silently overrode that gate — pages rendered index,follow while the
+// sitemap dropped them, which is exactly the noindex-vs-sitemap contradiction
+// this file exists to prevent. Do not re-broaden it; suppress metro pages by
+// withholding their verified data, not here.
+const SITEMAP_EXCLUDE = [/^\/costs\/[^/]+\/(?!metro\/)/, /^\/topics\//];
 
 type Route = {
   path: string;

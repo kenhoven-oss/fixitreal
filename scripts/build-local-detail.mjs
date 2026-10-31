@@ -184,6 +184,17 @@ for (const file of files) {
         errors.push(`${w}: fee "${fee}" carries no currency figure — put prose in requirement`);
       } else {
         out.fee = fee;
+        const asOf = fact.feeAsOf;
+        if (typeof asOf === "string" && asOf.trim()) {
+          out.feeAsOf = asOf.trim();
+          // Surface stale schedules rather than letting them pass silently.
+          const year = Number((asOf.match(/\b(19|20)\d{2}\b/) ?? [])[0]);
+          if (year && year < new Date().getFullYear() - 5) {
+            warnings.push(`${w}: fee schedule is dated ${year} — page will disclose the vintage`);
+          }
+        } else {
+          warnings.push(`${w}: fee has no feeAsOf date — reader cannot judge how current it is`);
+        }
       }
     }
     byGuide[slug] = out;

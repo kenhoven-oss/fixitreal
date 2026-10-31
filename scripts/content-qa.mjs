@@ -203,7 +203,12 @@ for (const file of files) {
   }
 
   // --- related-links lists: same href twice inside one <ul>
+  // Skips lists marked data-citations: a citation list legitimately cites one
+  // source for several facts (five local code items can all come from one
+  // state rule PDF). The check is here to catch a related-links or nav list
+  // pointing at the same destination twice, which is a real bug.
   for (const ul of html.matchAll(/<ul\b[^>]*>([\s\S]*?)<\/ul>/g)) {
+    if (/\bdata-citations\b/.test(ul[0].slice(0, ul[0].indexOf(">") + 1))) continue;
     const inner = [...ul[1].matchAll(/href="([^"]*)"/g)].map((m) => m[1]);
     const seen = new Set();
     for (const h of inner) {

@@ -1,0 +1,72 @@
+{
+  "citySlug": "toledo-oh",
+  "cityName": "Toledo",
+  "stateAbbr": "OH",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Toledo Division of Building Inspection",
+    "url": "https://cdn.toledo.oh.gov/uploads/documents/Building-Inspection/Construction-Procedures.pdf"
+  },
+  "codeEdition": {
+    "text": "Toledo's Division of Building Inspection is a state-certified building department enforcing the Residential Code of Ohio for one-, two- and three-family dwellings, the Ohio Building Code, and Toledo Municipal Code Part 13. The city published that the updated Ohio Building, Mechanical and Plumbing Codes, drawn from the 2021 International codes, took effect for applications filed on or after March 1, 2024.",
+    "sourceUrl": "https://toledo.oh.gov/news/2024/03/01/ohio-board-of-building-standards-2024-code-update-information"
+  },
+  "permitPolicy": {
+    "text": "Toledo lets a homeowner apply for their own plumbing or electrical permit, but the application's certification commits the owner to performing all of the work personally; hiring a contractor under a homeowner permit can bring prosecution under Toledo Municipal Code 525.02 and revocation of the permit. A contractor applicant must give a licence number on the same form.",
+    "sourceUrl": "https://cdn.toledo.oh.gov/uploads/documents/Building-Inspection/Plumbing-Permit-Application.pdf"
+  },
+  "registration": {
+    "text": "The Appendix B building permit fee schedule used by the City of Toledo Division of Building Inspection and Lucas County Building Regulations (effective February 25, 2022) sets contractor registration, original or renewal, at $100.00 per contractor. Ohio licenses plumbing and electrical contractors at state level through the Ohio Construction Industry Licensing Board.",
+    "sourceUrl": "https://www.co.lucas.oh.us/DocumentCenter/View/80325/Fee-Schedule---Effective-2-25-22"
+  },
+  "codeItems": [
+    {
+      "text": "Toledo counts the water heater, the garbage disposal, a backflow device and a sanitary backwater device as separately listed fixtures on its plumbing permit application, so each one adds to the per-fixture charge on top of the base fee.",
+      "sourceUrl": "https://cdn.toledo.oh.gov/uploads/documents/Building-Inspection/Plumbing-Permit-Application.pdf"
+    },
+    {
+      "text": "Toledo charges a separate underground inspection, per run, on plumbing work and, for electrical, separate underground service and pool-bonding inspections, so buried or slab work is inspected and billed apart from the main permit.",
+      "sourceUrl": "https://cdn.toledo.oh.gov/uploads/documents/Building-Inspection/Electrical-Permit-Application.pdf"
+    },
+    {
+      "text": "Ohio's residential code bars a fuel-fired water heater from a room used as a storage closet, and a water heater placed in a bedroom or bathroom must sit in a sealed enclosure so it does not draw combustion air from the living space. Direct-vent units are exempt from the enclosure.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-20-01_eff_7_1_19.pdf"
+    },
+    {
+      "text": "Ohio rewrites the national GFCI rule for houses: it deletes NEC 210.8(D) (the dishwasher-outlet rule), exempts a single ceiling receptacle serving a garage door opener, and exempts a sump-pump receptacle when a GFCI duplex sits within six feet of the pump. Replacing equipment on an existing outdoor outlet also triggers adding GFCI protection there.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-34-01_eff_4_15_24.pdf"
+    },
+    {
+      "text": "Ohio requires both photoelectric and ionization smoke-alarm technology on every level of a dwelling unit, and exempts plumbing or mechanical repairs from triggering the retrofit that other alterations and repairs trigger.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-3-01_eff_7_1_19.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Toledo treats a water heater as a plumbing fixture on its plumbing permit application, so replacing one takes a plumbing permit charged as a base fee plus a per-fixture amount, subject to the city's permit minimum.",
+      "fee": "Existing Residential: $65 + $6 / Fixture; Permit Minimum of $75.00; plus State of Ohio Surcharge (Residential 1%)",
+      "sourceUrl": "https://cdn.toledo.oh.gov/uploads/documents/Building-Inspection/Plumbing-Permit-Application.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is a listed fixture on Toledo's plumbing permit application, so replacing one is permitted the same way as any other plumbing fixture.",
+      "fee": "Existing Residential: $65 + $6 / Fixture; Permit Minimum of $75.00",
+      "sourceUrl": "https://cdn.toledo.oh.gov/uploads/documents/Building-Inspection/Plumbing-Permit-Application.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Any plumbing alteration, replacement or repair in Toledo is permitted through the Division of Building Inspection, and no plumbing permit costs less than the city's stated minimum.",
+      "fee": "Permit Minimum of $75.00; Existing Residential: $65 + $6 / Fixture",
+      "sourceUrl": "https://cdn.toledo.oh.gov/uploads/documents/Building-Inspection/Plumbing-Permit-Application.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical alterations and replacements in an existing Toledo house take an electrical permit charged as a per-unit base fee plus amp- or item-based charges, subject to the city's permit minimum.",
+      "fee": "EXISTING RESIDENTIAL $60.00 per unit; Permit Minimum of $75.00; Existing Service Release $50/Unit",
+      "sourceUrl": "https://cdn.toledo.oh.gov/uploads/documents/Building-Inspection/Electrical-Permit-Application.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee",
+    "Whether Toledo's own contractor registration fee differs from the $100.00 in the joint Toledo/Lucas County Appendix B schedule",
+    "The exact Ohio Building and Residential Code edition years as published by Toledo (the city's Construction Procedures handout still cites the 2017 OBC and 2013 RCO and was last revised in 2018)",
+    "Whether plumbing permits for Toledo addresses are ever issued by the Toledo-Lucas County Health Department instead of the Division of Building Inspection"
+  ]
+}

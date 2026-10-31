@@ -711,3 +711,42 @@ Generated 2026-09-20 from the production build. 145 state pages, 510 metro pages
 3. **Do nothing.** Not recommended: the pages are not helping (3 visits) and, at this volume on a five-month-old domain, they are the most likely thing dragging the pages that do rank.
 
 **What must not happen without sign-off:** flipping the index switch, adding redirects, or deleting URLs. This report is the inventory that rule asked for; the decision is Ken's.
+
+
+## Update 2026-10-31 — option 1 implemented for the metro layer
+
+Ken chose option 1 ("enrich a small set, hold the rest") and then extended it
+to all 102 metros: research every metro, enrich and re-index the ones where
+the permitting authority actually publishes the fee or code requirement, and
+leave the rest noindexed.
+
+**What changed in the code.** The single `LOCAL_COST_PAGES_INDEXABLE` boolean
+now governs the state layer only. The metro layer moved to a per-page rule,
+`isCityGuideIndexable(citySlug, guideSlug)` in `src/lib/local-indexability.ts`:
+a metro x guide page is submitted if and only if the metro has a verified
+`byGuide` entry for that job. Per-guide, not per-city — a published
+water-heater permit fee for a city says nothing about what has been verified
+for smoke detectors there, so it re-indexes one page, not five.
+
+The predicate reads the same data the page renders. That is deliberate: the
+sitemap cannot advertise a noindexed URL, and a page cannot be indexed while
+the block that justifies indexing it is empty.
+
+**The sourcing gate.** `scripts/build-local-detail.mjs` generates
+`src/content/local-detail.generated.ts` from JSON under `research/local/` and
+fails the build rather than emit anything it cannot vouch for. It rejects:
+source hosts that are not `.gov`/`.us` or a municipal code publisher (Angi,
+Fixr, HomeAdvisor and similar are denied by name), `http://` sources, `fee`
+strings carrying no currency figure, unknown guide slugs, and research for
+metros the site does not publish. The generated file is never hand-edited.
+
+**What this does not do.** It does not add local quote samples — the third
+input the enrichment plan above asked for. Those require real quote data for
+each metro, which the site does not have, and inventing them is not an
+option. Pages carry permit fees and local code items only.
+
+**Consequence worth being explicit about.** Where a city does not publish its
+fees in a findable, citable form, that metro's pages stay noindexed
+permanently. That is the correct outcome rather than a gap to be filled with
+an estimate: an unsourced fee on a cost page is worse than no page, because
+the whole premise of the site is that its numbers can be checked.

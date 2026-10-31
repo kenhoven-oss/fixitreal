@@ -1,0 +1,71 @@
+{
+  "citySlug": "cleveland-oh",
+  "cityName": "Cleveland",
+  "stateAbbr": "OH",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Cleveland Department of Building and Housing",
+    "url": "https://www.clevelandohio.gov/city-hall/departments/building-housing"
+  },
+  "codeEdition": {
+    "text": "Cleveland enforces the state codes through its own Codified Ordinances: Ohio Building Code (Ch. 3111), Residential Building Code (Ch. 3121), Plumbing (Ch. 3133), Gas Piping and Appliances (Ch. 3135) and Electrical Wiring (Ch. 3137). The department's ordinance page lists those chapters but does not publish the model-code edition year.",
+    "sourceUrl": "https://www.clevelandohio.gov/city-hall/departments/building-housing/ordinances"
+  },
+  "permitPolicy": {
+    "text": "A contractor pulling a plumbing or electrical permit must be licensed with the State of Ohio, bonded and insured, and separately registered with the City of Cleveland. A homeowner doing the work personally does not have to register, but must file an Affidavit for Homeowner's Permit with the application.",
+    "sourceUrl": "https://www.clevelandohio.gov/city-hall/departments/building-housing/divisions/electrical-permits"
+  },
+  "registration": {
+    "text": "City registration is required on top of the state trade license: Cleveland states that contractors must be bonded, insured and registered with the city, and that plumbers and electricians must also hold a license. Registration and bond amounts are not published on the city's contractor page.",
+    "sourceUrl": "https://clevelandohio.gov/city-hall/departments/building-housing/divisions/permits/contractor-permits"
+  },
+  "codeItems": [
+    {
+      "text": "Plumbing, sewer and gas-piping work in Cleveland can also need a separate water permit from the city's Division of Water; Building and Housing forwards the plans to that division for review.",
+      "sourceUrl": "https://www.clevelandohio.gov/city-hall/departments/building-housing/divisions/plumbing-permits"
+    },
+    {
+      "text": "Ohio's residential code bars a fuel-fired water heater from a room used as a storage closet, and a water heater placed in a bedroom or bathroom must sit in a sealed enclosure so it does not draw combustion air from the living space. Direct-vent units are exempt from the enclosure.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-20-01_eff_7_1_19.pdf"
+    },
+    {
+      "text": "Ohio rewrites the national GFCI rule for houses: it deletes NEC 210.8(D) (the dishwasher-outlet rule), exempts a single ceiling receptacle serving a garage door opener, and exempts a sump-pump receptacle when a GFCI duplex sits within six feet of the pump.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-34-01_eff_4_15_24.pdf"
+    },
+    {
+      "text": "Under Ohio's amended NEC 210.8(F), replacing equipment fed from an existing outdoor outlet triggers a requirement to add GFCI protection to that outlet; listed HVAC equipment and most lighting outlets are excepted.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-34-01_eff_4_15_24.pdf"
+    },
+    {
+      "text": "Ohio requires both photoelectric and ionization smoke-alarm technology on every level of a dwelling unit, using either separate alarms or dual-sensing units, which goes beyond the national model code.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-3-01_eff_7_1_19.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Cleveland requires a plumbing permit to install or replace a water heater, and the permit fee is calculated per fixture or appliance against a flat minimum.",
+      "fee": "$50.00 minimum fee for any permit; $8.00 for each fixture, appliance or device, including hot water heating devices",
+      "feeAsOf": "January 2014",
+      "sourceUrl": "https://www.clevelandohio.gov/city-hall/departments/building-housing/divisions/construction-permitting/permit-fee-schedule"
+    },
+    "plumber-service-call": {
+      "requirement": "Repair work on an existing plumbing fixture or system in Cleveland takes a plumbing permit charged as a flat repair fee.",
+      "fee": "$50.00 for repairs to existing plumbing fixtures and/or systems ($50.00 minimum fee for any permit)",
+      "feeAsOf": "January 2014",
+      "sourceUrl": "https://www.clevelandohio.gov/city-hall/departments/building-housing/divisions/construction-permitting/permit-fee-schedule"
+    },
+    "electrician-service-call": {
+      "requirement": "Cleveland requires an electrical permit for electrical work, fixtures, equipment and devices, and repair work to an existing electrical fixture or system is charged as a flat fee.",
+      "fee": "$50.00 for repairs to existing electrical fixtures or systems ($50.00 minimum fee for any electrical permit)",
+      "feeAsOf": "January 2014",
+      "sourceUrl": "https://www.clevelandohio.gov/city-hall/departments/building-housing/divisions/construction-permitting/permit-fee-schedule"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (Cleveland's fixture schedule does not name garbage disposals)",
+    "smoke-detector-replacement permit requirement and fee",
+    "Cleveland contractor registration fee and bond amount (not published on the city's contractor page)",
+    "Model-code edition year adopted by Cleveland (city ordinance page lists chapters only; the Codified Ordinances library was unreachable)",
+    "Whether the published plumbing fee schedule, effective February 18 2003, has since been superseded"
+  ]
+}

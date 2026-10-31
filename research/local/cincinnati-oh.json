@@ -1,0 +1,74 @@
+{
+  "citySlug": "cincinnati-oh",
+  "cityName": "Cincinnati",
+  "stateAbbr": "OH",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Cincinnati Department of Buildings & Inspections",
+    "url": "https://www.cincinnati-oh.gov/buildings/building-permit-forms-applications/permit-costs/"
+  },
+  "codeEdition": {
+    "text": "Cincinnati enforces the 2019 Residential Code of Ohio for one-, two- and three-family dwellings, the 2024 Ohio Building, Plumbing, Mechanical and Existing Building Codes, and the 2024 Ohio Electrical Code; the city states the 2024 Ohio codes were adopted effective March 1, 2024. The local Cincinnati Building Code supplements them, with Chapter 1115 adopting the Residential Code of Ohio.",
+    "sourceUrl": "https://www.cincinnati-oh.gov/buildings/building-plan-examination/relevant-codes/"
+  },
+  "permitPolicy": {
+    "text": "A permit application in Cincinnati may be made by the owner, the person in control, or an authorized agent, architect, engineer or contractor. A homeowner is exempt from contractor registration only if they personally do the work and occupy the home for at least a year. Electrical permits are not pulled at the city counter: electrical plan review, permits and inspections are contracted out to Inspection Bureau, Inc.",
+    "sourceUrl": "https://www.cincinnati-oh.gov/buildings/old-apply-for-a-building-permit/permit-guide/residential-permit-guide/"
+  },
+  "registration": {
+    "text": "Cincinnati requires contractor registration on top of the state trade licence - the city's plumbing permit application has a required contractor section with a registration number and expiry date. The homeowner exemption applies only where the owner does the work and occupies the home for at least one year. Registration fee amounts are not published on the department's fee schedule.",
+    "sourceUrl": "https://vendorselfservice.cincinnati-oh.gov/buildings/building-permit-forms-applications/application-forms/all-forms-handouts-checklists-alphabetical-list/plumbing-permit-application/"
+  },
+  "codeItems": [
+    {
+      "text": "Electrical work in Cincinnati is reviewed, permitted and inspected by Inspection Bureau, Inc. under contract to the city rather than by the Department of Buildings & Inspections, so electrical and plumbing work on the same job go to two different offices.",
+      "sourceUrl": "https://www.cincinnati-oh.gov/buildings/old-apply-for-a-building-permit/permit-guide/residential-permit-guide/"
+    },
+    {
+      "text": "Cincinnati adds a 5% planning surcharge to every plumbing permit, plus a 1% state surcharge on Residential Code of Ohio permits, a 3% technology surcharge and a 1% financial recovery fee, so the figure on the fee table is not the amount paid.",
+      "sourceUrl": "https://www.cincinnati-oh.gov/sites/buildings/assets/FEE-SCHEDULE-FY-2027---Saved.pdf"
+    },
+    {
+      "text": "Cincinnati waives its permit processing fee for plumbing and HVAC repair or replacement applications that do not require plans, which is why a straight water-heater swap costs less here than a planned job.",
+      "sourceUrl": "https://www.cincinnati-oh.gov/sites/buildings/assets/FEE-SCHEDULE-FY-2027---Saved.pdf"
+    },
+    {
+      "text": "Ohio's residential code bars a fuel-fired water heater from a room used as a storage closet, and a water heater placed in a bedroom or bathroom must sit in a sealed enclosure so it does not draw combustion air from the living space. Direct-vent units are exempt from the enclosure.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-20-01_eff_7_1_19.pdf"
+    },
+    {
+      "text": "Ohio rewrites the national GFCI rule for houses: it deletes NEC 210.8(D) (the dishwasher-outlet rule), exempts a single ceiling receptacle serving a garage door opener, and exempts a sump-pump receptacle when a GFCI duplex sits within six feet of the pump.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-34-01_eff_4_15_24.pdf"
+    },
+    {
+      "text": "Ohio requires both photoelectric and ionization smoke-alarm technology on every level of a dwelling unit, using either separate alarms or dual-sensing units, which goes beyond the national model code.",
+      "sourceUrl": "https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-3-01_eff_7_1_19.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A water heater counts as a plumbing fixture on Cincinnati's plumbing permit application, so replacing one needs a plumbing permit priced from the city's replace-fixture column.",
+      "fee": "$68.00 replace fixture fee for 1 fixture; $33.00 for each additional fixture (plus a 5% planning surcharge and a 1% state surcharge on Residential Code of Ohio permits)",
+      "feeAsOf": "July 2026",
+      "sourceUrl": "https://www.cincinnati-oh.gov/sites/buildings/assets/FEE-SCHEDULE-FY-2027---Saved.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Cincinnati's plumbing permit application lists a disposal as a countable fixture, so swapping one is permitted and priced from the same replace-fixture column as any other fixture.",
+      "fee": "$68.00 replace fixture fee for 1 fixture; $33.00 for each additional fixture",
+      "feeAsOf": "July 2026",
+      "sourceUrl": "https://www.cincinnati-oh.gov/sites/buildings/assets/FEE-SCHEDULE-FY-2027---Saved.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Cincinnati prices a plumbing permit by how many fixtures are touched and whether they are new or replacements, with the smallest job being a single replacement fixture.",
+      "fee": "$68.00 for 1 replacement fixture; $97.00 for 1 new fixture; $33.00 each additional fixture",
+      "feeAsOf": "July 2026",
+      "sourceUrl": "https://www.cincinnati-oh.gov/sites/buildings/assets/FEE-SCHEDULE-FY-2027---Saved.pdf"
+    }
+  },
+  "notVerified": [
+    "electrician-service-call permit fee (Cincinnati contracts electrical permitting to Inspection Bureau, Inc. and publishes no electrical fees on its own fee schedule)",
+    "smoke-detector-replacement permit requirement and fee",
+    "Cincinnati contractor registration fee and bond amount",
+    "Whether a homeowner may personally pull a Cincinnati plumbing permit (the application's contractor section is marked required)"
+  ]
+}

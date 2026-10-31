@@ -57,6 +57,11 @@ export function LocalPermits({
           <ExternalLink href={permit.sourceUrl}>
             {hostname(permit.sourceUrl)}
           </ExternalLink>
+          {permit.fee && permit.feeAsOf && (
+            <span className="block text-xs text-ink-600">
+              {`Per the fee schedule the city publishes, dated ${permit.feeAsOf}. Confirm the current figure before you budget.`}
+            </span>
+          )}
         </dd>
 
         <dt className="font-semibold text-navy-900">Authority</dt>
@@ -108,7 +113,12 @@ export function LocalPermits({
           <h3 className="mt-6 font-semibold text-navy-900">
             {`What a ${placeName} inspector checks`}
           </h3>
-          <ul className="mt-2 list-disc pl-6 space-y-2 text-sm text-ink-700 leading-relaxed">
+          {/* data-citations: several code items often share one source PDF, so
+              content-qa's duplicate-href check does not apply here. */}
+          <ul
+            data-citations
+            className="mt-2 list-disc pl-6 space-y-2 text-sm text-ink-700 leading-relaxed"
+          >
             {detail.codeItems.map((item) => (
               <li key={item.text}>
                 {item.text}{" "}
