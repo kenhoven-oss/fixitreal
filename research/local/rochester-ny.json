@@ -1,0 +1,81 @@
+{
+  "citySlug": "rochester-ny",
+  "cityName": "Rochester",
+  "stateAbbr": "NY",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Rochester Department of Neighborhood and Business Development",
+    "url": "https://cityofrochester.gov/nbdpermits"
+  },
+  "codeEdition": {
+    "text": "Rochester enforces the New York State Uniform Fire Prevention and Building Code. The State repealed the 2020 edition and adopted the 2025 code books, including the 2025 Residential Code and 2025 Plumbing Code of New York State, effective December 31, 2025; permit applications filed on or after that date must comply with the 2025 code.",
+    "sourceUrl": "https://dos.ny.gov/notice-adoption"
+  },
+  "permitPolicy": {
+    "text": "Rochester lets a homeowner pull trade permits, but only a narrow kind of homeowner. An electrical permit must be applied for by a licensed electrician or by a single-family owner occupant doing their own work, and a plumbing permit works the same way. Both are filed through the city's online portal. An electrical reconnection permit, the one that gets power restored to a property, is the exception: anyone may apply for it.",
+    "sourceUrl": "https://cityofrochester.gov/nbdpermits"
+  },
+  "registration": {
+    "text": "Rochester licenses its own tradespeople on top of anything the state requires. A plumber holding a certificate of competency from the city's Examining Board of Plumbers must register with the Board before doing business in the city, paying a $10 license certificate charge plus a $75 license fee. Licenses run up to 24 months and the license fee is $200; a master plumber who misses the renewal date pays $230 to renew and may not perform any new or unfinished plumbing work until the license is current. Electrical inspection licensing carries a $150 annual license fee.",
+    "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Rochester runs electrical work through a certificate system on top of the permit: filing a certificate of electrical work under city code section 39-305 costs $80, and the city separately licenses the electrical inspection agencies that issue those certificates at a $150 annual license fee.",
+      "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+    },
+    {
+      "text": "Doing permitted work in Rochester without the permit is priced, not just warned about: the penalty is the applicable permit fee but no less than $235 for residential work and $475 for commercial work, and the permit fee itself is still owed on top.",
+      "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+    },
+    {
+      "text": "Rochester's fee code defines a plumbing fixture more broadly than most: for fee purposes a fixture is anything carrying or discharging waste or water connected directly or indirectly to the plumbing system, which it says expressly includes roof drains and conductors conveying storm water and any device accepting condensate drainage. A condensate drain from a high-efficiency appliance therefore counts as a fixture on the permit.",
+      "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+    },
+    {
+      "text": "Calling for an inspection before the work is actually ready costs money in Rochester: a reinspection or callback when work is not ready is $100 each on both the plumbing and electrical schedules, and an inspection requested on a Saturday, Sunday, holiday or outside regular hours is billed at $100 an hour with a four-hour minimum if the inspector was called in.",
+      "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+    },
+    {
+      "text": "A replacement air conditioning condenser in Rochester is a zoning question as well as a mechanical one: the city requires residential A/C units to be placed in the rear yard, placed to the manufacturer's specifications, and the application must include an instrument survey map showing the proposed location.",
+      "sourceUrl": "https://cityofrochester.gov/sites/default/files/2024-10/HVAC%20OCTOBER%202024_0.pdf"
+    },
+    {
+      "text": "Rochester is one of twenty-five New York cities the Department of Health designates a lead community of concern, so from October 7, 2026 the city's code enforcement program must document compliance with lead safety certifications on covered pre-1980 rental dwellings of two or more units.",
+      "sourceUrl": "https://dos.ny.gov/notice-adoption"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Rochester is plumbing-permit work, charged as a base fee plus a per-fixture charge; the July 2026 fee ordinance deleted the separate hot water heater line and now simply counts the heater as one of the fixtures. The permit goes to a licensed plumber or to a single-family owner occupant doing their own work.",
+      "fee": "$100 base fee for all plumbing permits, plus $20 per fixture for residential (3 units or less)",
+      "feeAsOf": "2026-07-01",
+      "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Rochester prices a plumbing permit as a flat base fee plus a charge for each fixture installed, removed or capped, with the residential rate applying to buildings of three units or less; a reinspection because the work was not ready is billed separately.",
+      "fee": "$100 base fee for all plumbing permits, plus $20 per fixture residential (3 units or less) or $25 per fixture commercial (4+ units or non-residential); $135 to renew a water service under 2 inches with no street work; $100 reinspection or callback when work is not ready",
+      "feeAsOf": "2026-07-01",
+      "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is counted as a plumbing fixture on a Rochester plumbing permit; the city's July 2026 fee ordinance removed the old separate garbage disposal line item and charges the standard per-fixture rate on top of the plumbing base fee.",
+      "fee": "$100 base fee for all plumbing permits, plus $20 per fixture for residential (3 units or less)",
+      "feeAsOf": "2026-07-01",
+      "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Rochester charges flat electrical inspection fees by the kind of job rather than by project cost, with separate published amounts for a small renovation, a service upgrade, a heat pump or A/C hookup and a safety inspection; filing the certificate of electrical work afterwards costs extra.",
+      "fee": "Residential renovation/addition $160 (200 sq ft or less), $200 (over 200 up to 1,000 sq ft), $235 (over 1,000 sq ft); new service installation or upgrade $160 for 200 amps or less and $220 over 200 amps, each plus $55 per additional meter; A/C or heat pump $100; alarm system $100; safety inspection $100 (2 meters or fewer); reinspection $100; certificate of electrical work filing fee $80",
+      "feeAsOf": "2026-07-01",
+      "sourceUrl": "https://ecode360.com/RO0104/laws/LF2730908.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement requirement and fee for Rochester - no city page or ordinance found stating what a one-for-one alarm replacement triggers",
+    "Whether a heating appliance such as a water heater is instead charged on the cost-of-work building permit scale under city code 39-221A (that subsection covers installation or replacement of a heating appliance or system and runs from $75 for work costing up to $2,000); the city does not say which schedule a water heater falls under, so only the plumbing fixture figures were recorded",
+    "Rochester's own amendments, if any, to the New York State Uniform Code - cityofrochester.gov and ecode360 both refuse automated requests for the codified chapters, so only the adopted fee ordinance could be read",
+    "Whether Rochester requires a contractor bond or insurance amount for a master plumber or licensed electrician",
+    "Rochester-specific water heater inspection items such as expansion tank or TPR discharge rules - no city document listing them was reachable"
+  ]
+}

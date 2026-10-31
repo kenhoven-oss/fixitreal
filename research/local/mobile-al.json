@@ -1,0 +1,87 @@
+{
+  "citySlug": "mobile-al",
+  "cityName": "Mobile",
+  "stateAbbr": "AL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Mobile Department of Building Safety (Build Mobile)",
+    "url": "https://www.cityofmobile.gov/departments/build-mobile/"
+  },
+  "codeEdition": {
+    "text": "Mobile adopted a full set of 2021 International codes on November 8, 2022, each by its own ordinance with city amendments attached, all effective sixty days after adoption: the 2021 International Building Code as 'The Building Code of the City of Mobile', the 2021 International Residential Code as the 'Residential Building Code of the City of Mobile', the 2021 International Plumbing Code, the 2021 International Existing Building Code, the 2021 International Property Maintenance Code, and the 2020 National Electrical Code as the 'Electrical Code of the City of Mobile'. The city's own code department is renamed Build Mobile in the residential code amendments.",
+    "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901183965-057.pdf"
+  },
+  "permitPolicy": {
+    "text": "A homeowner may pull a permit in Mobile only for work they physically do themselves on the home they own and occupy. For plumbing the homeowner must pass an in-house competency test given by the Code Official and sign an affidavit, with repairing or replacing an existing water service or sewer line excepted from the test; for electrical work the homeowner must pass an in-house test and execute an electrical affidavit. Anyone other than the owner doing the work counts as a contractor. An electrical permit application is granted only to a homeowner or to a licensed and bonded electrical contractor, and a plumbing permit is issued only once the application has been signed by a licensed master plumber.",
+    "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901163845-055.pdf"
+  },
+  "registration": {
+    "text": "Mobile registers and bonds trades on top of the state ticket. Plumbing contractors must hold the required City, County or State licence, register their name and place of business in the Code Official's book, and keep a current $10,000 licence and permit bond on file approved by the city Legal Department; a Master or Journeyman Plumber certified by Alabama must be on the job and in charge. Electricians must hold a certificate of competency from the City of Mobile Board of Electrical Examiners before working as a master, journeyman or low-voltage electrician, must carry a $10,000 licence and surety bond signed by the master certificate holder, and must show 14 classroom hours of approved continuing education every three years to renew. Published card and exam fees include $50 journeyman and maintenance electrician renewal, $30 master electrician renewal with a business licence, a $25 state issuance fee, $135 master exam, and $85 journeyman and maintenance exams.",
+    "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901131119-048.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Mobile strips the permit exemptions out of the residential code: the IRC's 'work exempt from permits' lists for electrical, gas, mechanical and plumbing are each deleted in their entirety, so the usual small-job carve-outs a national guide cites do not exist here.",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901183965-057.pdf"
+    },
+    {
+      "text": "Mobile also deletes the IRC's whole mechanical, fuel gas, plumbing and electrical parts, including Chapter 28 Water Heaters, Chapter 20 Boilers and Water Heaters and Chapter 17 Combustion Air. Water heater work on a house is judged against the 2021 International Plumbing Code, gas work against the 2021 International Fuel Gas Code and wiring against the 2020 National Electrical Code instead.",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901183965-057.pdf"
+    },
+    {
+      "text": "Attic and overhead water heaters get Mobile-specific rules. Every tank-type heater or storage tank in an attic or overhead space must be reachable by a permanent fixed staircase, the attic passageway must be at least 30 inches high and 22 inches wide with continuous solid flooring at least 24 inches wide and no more than 20 feet long, and a level service space at least 30 by 30 inches must sit at the service side. Tankless units are allowed in attics only with a pan, and no water heater may be installed above a drop ceiling.",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901163845-055.pdf"
+    },
+    {
+      "text": "Mobile rewrites the drain-pan rule so the pan must be at least 1 1/2 inches deep and drained by an indirect, hot-rated waste pipe of at least 1 inch diameter, and it narrows TPR and pan discharge to a waste receptor or to the outdoors only.",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901163845-055.pdf"
+    },
+    {
+      "text": "Two more Mobile additions an inspector will look for on a heater swap: non-metallic pipe is banned within 6 inches of the inlet, outlet or vent of any water heater unless an approved transition fitting on an electric heater is documented by the manufacturer, and the electrical disconnect, timers, controls and fuel shutoff must sit within 6 feet of the heater and no more than 6 feet above the finished floor, with an identifying label.",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901163845-055.pdf"
+    },
+    {
+      "text": "Mobile sets minimum water heater capacities of its own. Residential heaters must be sized from the city's added Table 506 by fuel and bedroom count, and commercial heaters must be sized by an Alabama-licensed design professional, with a 30-gallon minimum for any food or drink establishment.",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901163845-055.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater needs a plumbing permit in Mobile, and the city's plumbing fee schedule charges a $10 minimum plumbing permit plus $5 per fixture unit, with each inspection $5; a gas heater also needs a gas permit, whose minimum is $30. The city lets a state-certified Master Gas Fitter buy the water heater permit, held to the same qualifications as a plumber.",
+      "fee": "$10.00 minimum plumbing permit + $5.00 each fixture unit + $5.00 each inspection; gas permit minimum $30.00",
+      "feeAsOf": "Building Codes Permit Fee Schedule Ordinance adopted November 8, 2022, effective 60 days after adoption",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901145528-052.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Most plumbing work in Mobile needs a permit: the minimum plumbing permit is $10.00 plus $5.00 per fixture unit, and a $1.00 issuance fee is added to every permit. The only jobs the city exempts are stopping leaks in drains, water, soil, waste or vent pipe, clearing stoppages, repairing leaks in pipes, valves or fixtures, and pulling and resetting a water closet, and even then replacing a defective concealed pipe counts as new work needing a permit.",
+      "fee": "$10.00 minimum plumbing permit + $5.00 each fixture unit; $1.00 permit issuance fee on all permits",
+      "feeAsOf": "Building Codes Permit Fee Schedule Ordinance adopted November 8, 2022, effective 60 days after adoption",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901145528-052.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Mobile needs a permit from Build Mobile, pulled by the homeowner doing their own work or by a licensed and bonded electrical contractor with a master or journeyman electrician on the job and in charge. The electrical minimum permit fee is $10.00; the schedule then prices the specific job, for example $15.00 for a 200-amp or smaller service or service repair, $15.00 for repairs to outlets or fixtures, and $5.00 for a water heater circuit. Minor repair work such as changing lamps or plugging approved portable equipment into existing receptacles is exempt.",
+      "fee": "$10.00 minimum electrical permit; $15.00 main service or service repair up to 200 amps; $15.00 repairs to outlets or fixtures",
+      "feeAsOf": "Building Codes Permit Fee Schedule Ordinance adopted November 8, 2022, effective 60 days after adoption",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901145528-052.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is a plumbing fixture connection, and Mobile's plumbing fee schedule charges $5.00 per fixture unit against a $10.00 minimum plumbing permit. The city's only plumbing permit exemptions are leak stopping, clearing stoppages and removing and resetting a water closet where no valves, pipes or fixtures are replaced or rearranged, and Mobile deleted the IRC's residential plumbing exemption list outright.",
+      "fee": "$10.00 minimum plumbing permit + $5.00 each fixture unit",
+      "feeAsOf": "Building Codes Permit Fee Schedule Ordinance adopted November 8, 2022, effective 60 days after adoption",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901145528-052.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Mobile's electrical fee schedule prices smoke detectors in the same band as fixtures and ballasts, at $7.00 for 1 to 10 devices, rising with count, against a $10.00 electrical permit minimum. Because the city deleted the IRC's electrical permit exemptions, hardwired alarm work is judged against the 2020 National Electrical Code as adopted by Mobile rather than the IRC.",
+      "fee": "$7.00 for 1-10 fixtures, ballasts or smoke detectors; $10.00 minimum electrical permit",
+      "feeAsOf": "Building Codes Permit Fee Schedule Ordinance adopted November 8, 2022, effective 60 days after adoption",
+      "sourceUrl": "https://www.cityofmobile.gov/uploads/22110901145528-052.pdf"
+    }
+  },
+  "notVerified": [
+    "Whether Mobile has adopted a newer permit fee schedule since the November 8, 2022 ordinance (no later schedule is published on cityofmobile.gov)",
+    "Whether a battery-only smoke alarm swap needs a permit in Mobile (the schedule prices smoke detectors but states no threshold)",
+    "Mobile's codified City Code text (library.municode.com is behind a bot check)",
+    "Thermal expansion tank, sediment trap and seismic strapping requirements specific to Mobile (the city's plumbing amendments address pan, discharge, disconnect, capacity and location but add no local expansion-tank or sediment-trap rule)",
+    "Build Mobile's own permit guidance pages (published on buildmobile.org, not on the city's .gov host)"
+  ]
+}

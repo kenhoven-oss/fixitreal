@@ -1,0 +1,83 @@
+{
+  "citySlug": "fort-lauderdale-fl",
+  "cityName": "Fort Lauderdale",
+  "stateAbbr": "FL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Fort Lauderdale Development Services Department, Building Services Division",
+    "url": "https://www.fortlauderdale.gov/Government/Departments/Development-Services/Permitting-Services"
+  },
+  "codeEdition": {
+    "text": "Fort Lauderdale enforces the statewide Florida Building Code, 8th Edition (2023) — the city issues its own permit packages under that edition. Because the city sits in Broward County, the Broward County Board of Rules and Appeals also sets board policies the city applies at the permit counter, which is why a Fort Lauderdale water heater permit runs on a Broward County form rather than a city one.",
+    "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/2/development-services/documents/docs-forms/roof_package_fbc_8_edition.pdf"
+  },
+  "permitPolicy": {
+    "text": "A Fort Lauderdale property owner can pull the permit themselves as an owner-builder, but the city makes it deliberately formal: the owner has to appear in person at Development Services, receive the disclosure statement, and sign the Owner/Builder Permit Affidavit in front of a permit technician. The exemption covers improving a one- or two-family home for the owner's own use and occupancy, not for sale or lease, and the law presumes a violation if the home is sold or leased within one year of completion. The owner-builder must give direct on-site supervision, may not hire an unlicensed person to act as contractor or supervisor, and may not hand supervision to a contractor who is not licensed for that trade. The city's residential electrical service change worksheet has a signature line for either a licensed electrical contractor or the homeowner, so homeowner-signed electrical work is contemplated.",
+    "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/1/development-services/documents/docs-forms/ownerbuilderpermitaffidavitr5.pdf"
+  },
+  "registration": {
+    "text": "A contractor has to register with the City of Fort Lauderdale before it will issue a permit, on top of the state or county credential. Registration goes through the LauderBuild portal and requires either a State of Florida license or a Broward County Certificate of Competency with state registration, a certificate of liability insurance naming the City of Fort Lauderdale as certificate holder, proof of workers' compensation insurance or a state exemption letter, and a current Sunbiz.org filing matching the license. The qualifier's signature has to be notarized. Credentials must stay current: the city will not issue permits or even take fee payments from a contractor whose documents have expired.",
+    "sourceUrl": "https://www.fortlauderdale.gov/Government/Departments/Development-Services/Permitting-Services/Contractors-Licensed-Professionals"
+  },
+  "codeItems": [
+    {
+      "text": "Fort Lauderdale makes a water heater swap carry a Broward County Board of Rules and Appeals data form, adopted as Board Policy 22-02. The form has to state whether the heater stays in the same location or is being relocated, and it captures both the existing and the new unit. For an electric heater that means kW, voltage, wire size, breaker size and gallons, and whether the unit is cord connected or hardwired; for gas it means gas pipe size, flue size and type, BTUH and gallons, and whether the fuel is natural gas or LP. If a cord is used, the manufacturer's electrical installation instructions have to go in with the permit application, and efficiency has to be backed by manufacturer data or an approved certification such as an AHRI certificate.",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/1/development-services/documents/docs-forms/water-heater-replacement-data-form.pdf"
+    },
+    {
+      "text": "Flooding shapes even temporary electrical work in Fort Lauderdale. The city's temporary electrical pole diagram, signed off by the chief electrical inspector, has a blank the applicant has to fill in stating the minimum required elevation in NAVD 88 that the temporary pole will meet, and the filled-in sheet goes in with the permitting documents.",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/1/development-services/documents/docs-forms/temp-pole-diagram-r4.pdf"
+    },
+    {
+      "text": "Fort Lauderdale's own electrical service change worksheet shows what the chief electrical inspector expects an electrician to document on a residential overhead or underground service change. All conductors must be sized per NEC Article 220, overhead service conductors must comply with NEC 230 Part II, and an underground service run needs a warning ribbon 12 inches above the conduit under NEC 300.5(D)(3). The sheet also asks for service and sub-panel voltage, amp rating, main breaker size and AIC rating, the cold water bond size from NEC Table 250.66, the grounding electrode conductor size, ground rod length and material, and an external means for intersystem bonding connections under NEC 250.94.",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/1/development-services/documents/docs-forms/residential-overhead-or-underground-service-change-2.pdf"
+    },
+    {
+      "text": "Fort Lauderdale is inside Florida's High Velocity Hurricane Zone, and the city publishes its own HVHZ checklist under Florida Building Code Section 1524 that a roofing contractor has to walk the owner through item by item, with the owner initialing each point. It covers things a national guide would not raise, such as renailing an existing wood roof deck to current HVHZ Chapter 16 provisions once the old roof comes off, and adding overflow scuppers where a perimeter wall would block rainwater from leaving the roof.",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/1/development-services/documents/docs-forms/checklists/high-velocity-hurricane-zones-r2.pdf"
+    },
+    {
+      "text": "Fort Lauderdale adds county and state line items to every permit rather than folding them into the headline fee. On top of the permit itself a job pays the Florida DBPR surcharge of 1 percent of total permit fees with a $2 minimum, the Florida Building Code Administrators and Inspectors Fund surcharge of 1.5 percent with a $2 minimum, a $5 Construction Lien Law charge, and a Broward County Board of Rules and Appeals charge of $0.52 per $1,000 of construction cost with a $2 minimum. A failed inspection that has to be repeated costs $164.",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/3/development-services/documents/building-fees-august-2026-r10.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Fort Lauderdale needs a trade permit, and the under-$7,500 state exemption does not help because the city lists plumbing, electrical and gas work as still requiring a permit whatever the job costs; the application has to include the Broward County water heater replacement data form.",
+      "fee": "Trade Permit: Minimum $131 or 1.75% of construction cost; plus DBPR surcharge 1% of total permit fees or minimum $2, BCAI Fund surcharge 1.5% of total permit fees or minimum $2, Construction Lien Law $5, and Board of Rules and Appeals $0.52 per $1000 of construction cost or minimum $2",
+      "feeAsOf": "Rev: 10, Revision Date 9/17/2026",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/3/development-services/documents/building-fees-august-2026-r10.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A disposal swap is plumbing work with an electrical connection, and Fort Lauderdale says plumbing and electrical work still need a permit no matter the job cost, so it runs on the same trade permit with a minimum charge.",
+      "fee": "Trade Permit: Minimum $131 or 1.75% of construction cost; plus DBPR surcharge 1% of total permit fees or minimum $2, BCAI Fund surcharge 1.5% of total permit fees or minimum $2, Construction Lien Law $5, and Board of Rules and Appeals $0.52 per $1000 of construction cost or minimum $2",
+      "feeAsOf": "Rev: 10, Revision Date 9/17/2026",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/3/development-services/documents/building-fees-august-2026-r10.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Fort Lauderdale does not have a small-job plumbing exemption: the city's HB 803 notice lists plumbing work among the work that still needs a permit regardless of project cost, and the trade permit carries a minimum fee plus county and state surcharges.",
+      "fee": "Trade Permit: Minimum $131 or 1.75% of construction cost; plus DBPR surcharge 1% of total permit fees or minimum $2, BCAI Fund surcharge 1.5% of total permit fees or minimum $2, Construction Lien Law $5, and Board of Rules and Appeals $0.52 per $1000 of construction cost or minimum $2",
+      "feeAsOf": "Rev: 10, Revision Date 9/17/2026",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/3/development-services/documents/building-fees-august-2026-r10.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Fort Lauderdale needs a permit whatever it costs, and a residential service change also needs the city's own worksheet showing conductor sizing, panel ratings, bonding and grounding before the electrical division signs off.",
+      "fee": "Trade Permit: Minimum $131 or 1.75% of construction cost; plus DBPR surcharge 1% of total permit fees or minimum $2, BCAI Fund surcharge 1.5% of total permit fees or minimum $2, Construction Lien Law $5, and Board of Rules and Appeals $0.52 per $1000 of construction cost or minimum $2",
+      "feeAsOf": "Rev: 10, Revision Date 9/17/2026",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/3/development-services/documents/building-fees-august-2026-r10.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Fort Lauderdale publishes no separate smoke alarm permit line, but it does say electrical work is not covered by the under-$7,500 residential exemption, so hardwired alarm wiring is treated as permitted electrical work rather than exempt cosmetic work.",
+      "sourceUrl": "https://www.fortlauderdale.gov/files/assets/public/v/3/development-services/documents/docs-forms/hb-803-permitting-updates-r3.pdf"
+    }
+  },
+  "notVerified": [
+    "Any dollar fee specific to a smoke alarm or low-voltage alarm permit in Fort Lauderdale",
+    "Whether a battery-only smoke alarm swap needs any permit at all in Fort Lauderdale",
+    "Whether Fort Lauderdale charges a dollar fee for contractor registration with the city, and any bond amount — the registration form and the contractors page publish no figure",
+    "The Broward County Board of Rules and Appeals Chapter 1 administrative provisions, including its own list of work exempt from permit — broward.org returned 403 to automated requests",
+    "Whether Fort Lauderdale publishes its own list of work requiring no permit at all (the residential permit image map the city links sits on a third-party host, not on fortlauderdale.gov)",
+    "Any Fort Lauderdale city amendment to the Florida Building Code separate from the Broward County amendments",
+    "The Broward County Board of Rules and Appeals local amendments to the 8th Edition Florida Building Code (Plumbing and Residential), which tighten fixture flow limits below the state numbers — they are published only on the state Florida Building Commission's floridabuilding.org, which the source allowlist does not accept, and broward.org returned 403 to automated requests"
+  ]
+}

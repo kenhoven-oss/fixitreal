@@ -1,0 +1,45 @@
+{
+  "citySlug": "lubbock-tx",
+  "cityName": "Lubbock",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Lubbock Building Safety Department, Building Inspection Division",
+    "url": "https://www.mylubbock.us/530/FAQS-Reports"
+  },
+  "codeEdition": {
+    "text": "Lubbock's Building Safety Department lists the 2021 International Residential Code, 2021 International Building Code, 2021 International Plumbing Code, 2021 International Mechanical Code, 2021 International Fuel Gas Code, 2021 International Energy Conservation Code and the 2020 National Electrical Code as the codes in force. The city's ordinance page records the adopting ordinances — 2024-O0025 for the 2021 IBC (with a later amendment, 2025-O0116), 2024-O0026 for the 2021 IPC, 2024-O0027 for the 2021 IMC and 2024-O0028 for the 2020 NEC — and notes that the local amendments sit in Chapter 28, Building Regulations, of the city code. Lubbock warns that failing to meet these minimum standards is a Class C misdemeanour.",
+    "sourceUrl": "https://www.mylubbock.us/906/Ordinances"
+  },
+  "permitPolicy": {
+    "text": "Lubbock splits permit rights by who you are and which trade is involved. A homeowner living in the house as their homestead may take out structural, plumbing and mechanical permits, but the work has to be done by the homeowner or an immediate family member — and an electrical permit still requires a licensed electrical contractor or master electrician. An owner of a rental property who does not live there may take out only a structural permit, again with the work done by the owner or immediate family; plumbing, mechanical and electrical permits have to be pulled by licensed subcontractors. Subcontractors get their permits after the general contractor's main permit is issued. A permit is required before work starts on building construction or changes, or on electrical, gas, mechanical or plumbing systems regulated by the adopted codes, and a permit expires 180 days after the previous inspection.",
+    "sourceUrl": "https://www.mylubbock.us/530/FAQS-Reports"
+  },
+  "registration": {
+    "text": "Any building or general contractor working in Lubbock has to register with the city, and the registration application carries a $75.00 fee. The state-licensed trades — electrical, plumbing and mechanical — are marked exempt per state law on the city's own form, so those categories pay no city registration fee. Every applicant has to show financial responsibility either as commercial general liability coverage of at least $100,000 or a $20,000 compliance bond, and must list the people authorised to apply for permits. The registration and any live permits go void if the bond or insurance lapses or a required state licence expires, and the Building Official can suspend or revoke a registration for cause under Section 28.04 of the city code.",
+    "sourceUrl": "https://www.mylubbock.us/DocumentCenter/View/326/General-Contractors-Registration-Form-PDF"
+  },
+  "codeItems": [],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Lubbock requires a permit before a water heater is replaced, and the city issues it as one of its quick generic permits. A homeowner living in the house can pull the plumbing permit, but only if the work is done by the homeowner or an immediate family member — otherwise a licensed plumbing subcontractor has to take it out.",
+      "sourceUrl": "https://www.mylubbock.us/530/FAQS-Reports"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work on a system regulated by Lubbock's adopted codes needs a permit before the work starts, and the city issues generic permits for common jobs such as a sewer line, gas line or lawn sprinkler; the permit expires 180 days after the last inspection.",
+      "sourceUrl": "https://www.mylubbock.us/530/FAQS-Reports"
+    },
+    "electrician-service-call": {
+      "requirement": "Lubbock will not issue an electrical permit to a homeowner at all — an electrical permit requires a licensed electrical contractor or master electrician, even where the owner lives in the house, and the city has a generic permit type for an electrical service.",
+      "sourceUrl": "https://www.mylubbock.us/530/FAQS-Reports"
+    }
+  },
+  "notVerified": [
+    "Every Lubbock permit fee figure. The city's Form and Fee Schedule page could not be reached — mylubbock.us returns 403 to automated requests and the department landing page was blocked — and the only copy of Appendix A, Building Permit and Related Fees, that could be located is hosted on a third-party council-agenda service rather than a city page, so no fee can be quoted as published by the city",
+    "Lubbock-specific code items an inspector checks on water-heater or electrical work. The city's local amendments live in Chapter 28 of the Code of Ordinances, published on a third-party code platform that is not an accepted official host and could not be read, so no Lubbock amendment on expansion tanks, TPR discharge, drain pans, sediment traps, combustion air or AFCI/GFCI scope could be sourced",
+    "garbage-disposal-replacement permit requirement and fee",
+    "smoke-detector-replacement permit requirement and fee",
+    "Lubbock's Summary of Climatic and Geographic Design Criteria, which would carry the local design values an inspector applies — the city names the document but its URL could not be obtained",
+    "Whether Lubbock's contractor registration has to be renewed annually — the registration form does not print a renewal period"
+  ]
+}

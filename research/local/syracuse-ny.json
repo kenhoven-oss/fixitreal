@@ -1,0 +1,78 @@
+{
+  "citySlug": "syracuse-ny",
+  "cityName": "Syracuse",
+  "stateAbbr": "NY",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Syracuse Central Permit Office",
+    "url": "https://www.syr.gov/Departments/Central-Permit-Office"
+  },
+  "codeEdition": {
+    "text": "Syracuse enforces the New York State Uniform Fire Prevention and Building Code. The State repealed the 2020 edition and adopted the 2025 code books, including the 2025 Residential Code and 2025 Plumbing Code of New York State, effective December 31, 2025; permit applications filed on or after that date must comply with the 2025 code. Onondaga County's plumbing rules add local requirements on top of the state code through the Examining Board for Plumbers' implementation document.",
+    "sourceUrl": "https://dos.ny.gov/notice-adoption"
+  },
+  "permitPolicy": {
+    "text": "Syracuse splits the work between two authorities. The City's Central Permit Office issues residential construction permits for 1-2 family homes and the separate trade permits for HVAC, electrical, fire alarm and sprinkler work, but plumbing permits are not issued by the City at all - they must be obtained through Onondaga County. Every City construction permit gets an inspection after the work is finished, scheduled with the Division of Code Enforcement, and a permit is good for one year.",
+    "sourceUrl": "https://www.syr.gov/Departments/Central-Permit-Office/Permits/Residential-Construction-Permits"
+  },
+  "registration": {
+    "text": "Anyone doing plumbing work in Syracuse has to be licensed and registered with Onondaga County's Plumbing Control Division, and must carry the registration card on the job site. Registration runs on annual deadlines with late fees after them, and a lapse of more than a year triggers multiple fees. Journeyman and master applicants must first pass an exam and get a Certificate of Competency from the Onondaga County Examining Board for Plumbers.",
+    "sourceUrl": "https://onondaga.gov/wep/plumber-licensing/"
+  },
+  "codeItems": [
+    {
+      "text": "Onondaga County inspects a replacement water heater against its own checklist, which the plumber must submit with the permit. It calls for a thermal expansion tank wherever a pressure-reducing valve or RPZ is present, the temperature/pressure relief discharge tube piped to within 6 inches of the floor without reducing its size and with no exposed threaded end, a full-port valve on the cold-water inlet, the thermostat set to 120 degrees Fahrenheit, and a drain pan where applicable.",
+      "sourceUrl": "https://onondaga.gov/wep/wp-content/uploads/sites/219/2026/06/Water-Heater-Checklist-2026.pdf"
+    },
+    {
+      "text": "On a gas-fired tank in Onondaga County the inspector wants metal hot and cold lines for at least 18 inches off the heater, the flue or exhaust fitted and supported with three sheet metal screws and sealed, and a power-vent exhaust terminating outside with the manufacturer's clearances from openings plus animal or rodent screens. A vacuum relief valve is required on bottom-fed tanks.",
+      "sourceUrl": "https://onondaga.gov/wep/wp-content/uploads/sites/219/2026/06/Water-Heater-Checklist-2026.pdf"
+    },
+    {
+      "text": "The checklist is photo-documented rather than always inspected in person: the plumber supplies pictures of the listed items, including the rating plate and the vent termination, and one picture has to show the placard with the installation date, the plumber's name, the homeowner and the job address.",
+      "sourceUrl": "https://onondaga.gov/wep/wp-content/uploads/sites/219/2026/06/Water-Heater-Checklist-2026.pdf"
+    },
+    {
+      "text": "Onondaga County draws the no-permit line narrowly. The only plumbing work that needs no permit is an in-kind swap of a faucet, flush valve, supply tube, individual fixture stop, toilet fill valve or flushing mechanism. Emergency work may start first, but the permit must be taken out the next business day and the work cannot be covered, backfilled or concealed before Plumbing Control inspects it.",
+      "sourceUrl": "https://onondaga.gov/wep/plumbing-planreviews/"
+    },
+    {
+      "text": "An owner-occupant of a single-family home may hold a homeowner plumbing permit, but must apply in person, show proof of ownership and occupancy, submit plans with drainage and vent lines sized to code, do the work personally, and is barred from any plumbing work outside the house such as the water service or building sewer.",
+      "sourceUrl": "https://onondaga.gov/wep/wp-content/uploads/sites/219/2026/02/Homeowner-Plumbing-Permit-Conditions-Request-and-Review.pdf"
+    },
+    {
+      "text": "Inside the City of Syracuse the sewer side carries extra steps: a private sanitary or storm sewer connection needs City Engineer or DPW approval before the County will issue the plumbing permit, and the City must flush the sewer lateral before a plumber connects to it - Plumbing Control will not inspect without proof the lateral was flushed and televised to the main. A building drain backwater valve is a mandatory standard detail.",
+      "sourceUrl": "https://onondaga.gov/wep/wp-content/uploads/sites/219/2025/10/OnondagaCounty-ImplementationNYSCode2018.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Syracuse needs a plumbing permit from Onondaga County Plumbing Control before the work starts, and the permit covers one inspection trip in which the county checks its water-heater checklist items such as the expansion tank, the relief valve discharge and the 120-degree setting.",
+      "fee": "$15.00 water heater installation (1 inspection trip); $100.00 for each extra trip above the number allowed",
+      "sourceUrl": "https://onondaga.gov/wep/wp-content/uploads/sites/219/2026/02/Plumbing-Control-Fees.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing permits in Syracuse come from Onondaga County rather than the City, and the county's schedule prices small jobs by the fixture count with a set number of inspection trips included; only an in-kind swap of a faucet, valve or supply tube escapes the permit.",
+      "fee": "$100.00 single fixture replacement, less than 10 fixtures (1 inspection trip); $100.00 interior water piping repair or replacement; $100.00 water service repair or replacement; $100.00 for each extra inspection trip",
+      "sourceUrl": "https://onondaga.gov/wep/wp-content/uploads/sites/219/2026/02/Plumbing-Control-Fees.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is not on Onondaga County's short list of in-kind swaps that escape a permit, so replacing one is permitted plumbing work and is billed from the county's single-fixture replacement line.",
+      "fee": "$100.00 single fixture replacement, less than 10 fixtures (1 inspection trip)",
+      "sourceUrl": "https://onondaga.gov/wep/wp-content/uploads/sites/219/2026/02/Plumbing-Control-Fees.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Syracuse takes its own trade permit from the Central Permit Office, separate from any building permit, and the city charges per electrical item installed on top of the base filing fee it charges for the project.",
+      "fee": "Electrical permit fee $2/item (per electrical item installed), plus the base filing fee ($30/unit new construction or addition, $25/unit renovation or remodeling for residential 1-2 family) and a $25 certificate fee",
+      "sourceUrl": "https://www.syr.gov/files/sharedassets/public/v/2/departments/police/permits/documents/permit-fee-schedule-2025.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement requirement and fee for Syracuse - the city's residential permit lists do not mention smoke alarms either as requiring or not requiring a permit, and no city page states a rule",
+    "Any printed effective or revision date on the City of Syracuse permit fee schedule or the Onondaga County Plumbing Control fee sheet; neither document prints one, so no feeAsOf is recorded for those figures",
+    "Whether the City of Syracuse requires its own electrical contractor licence or registration on top of New York State requirements - no city page stating this was found",
+    "Syracuse HVAC and electrical permit pages: the city's own Permits page lists HVAC, Special HVAC, Solar and Electric as 'coming soon', so the requirement text for those trades is not published yet",
+    "Fee for a county plumbing remodel permit by fixture band (the residential one- and two-family remodeling rows in the county fee sheet are mis-aligned in the published PDF, so those figures were not recorded)",
+    "Any Syracuse-specific amendment to the New York State Uniform Code"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "citySlug": "scottsdale-az",
+  "cityName": "Scottsdale",
+  "stateAbbr": "AZ",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Scottsdale Planning and Development Services",
+    "url": "https://www.scottsdaleaz.gov/planning-development/permit-services"
+  },
+  "codeEdition": {
+    "text": "Scottsdale enforces the 2021 I-Codes with its own City Council amendments, together with the 2020 National Electrical Code as amended. The city publishes separate amendment documents for the 2021 IRC (effective Jan. 7, 2023), 2021 IBC, 2021 IPC, 2021 IMC, 2021 IFGC, 2021 IECC (effective Jan. 7, 2023), 2021 IEBC, 2021 ISPSC and the 2021 IgCC (mandatory from July 1, 2023). The IRC amendments sit in Scottsdale Revised Code Chapter 31, Article II.",
+    "sourceUrl": "https://www.scottsdaleaz.gov/codes-and-ordinances/building-codes"
+  },
+  "permitPolicy": {
+    "text": "Most single-family electrical, mechanical and plumbing work in Scottsdale needs no plan review and is handled as a 'minimum' permit obtained online through the Scottsdale SPUR portal, with the inspection doing the verifying. Work done without a permit is fined an amount equal to double the permit fee. Arizona law exempts property owners who do the work themselves on a structure they will occupy, and that is not for sale or rent, from contractor licensing, which is the state-level basis for a homeowner doing their own work.",
+    "sourceUrl": "https://www.scottsdaleaz.gov/planning-development/permit-services"
+  },
+  "registration": {
+    "text": "All businesses located in the city of Scottsdale must hold a city Business Registration License, and some trades need an additional Regulatory License. A service-type Business Registration License costs a $12.00 application fee plus a $50.00 license fee, with a $25 late penalty per license year if applied for after the business start date. Scottsdale publishes no separate plumber or electrician trade registration beyond this and the state contractor license.",
+    "sourceUrl": "https://www.scottsdaleaz.gov/licenses"
+  },
+  "codeItems": [
+    {
+      "text": "Scottsdale narrowed the exception that lets an appliance sit at floor level in a garage: only appliances listed as flammable-vapor-ignition-resistant and clothes dryers in private garages escape the ignition-source elevation rule, so a conventional gas water heater in a Scottsdale garage has to be raised.",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/codes---ordinances/building-codes/2021-international-mechanical-code-(imc)-amendments.pdf?sfvrsn=125f33ae_2"
+    },
+    {
+      "text": "Scottsdale added a sixth prohibited location for fuel-burning appliances: any room operating under negative pressure.",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/codes---ordinances/building-codes/2021-international-mechanical-code-(imc)-amendments.pdf?sfvrsn=125f33ae_2"
+    },
+    {
+      "text": "Scottsdale added a gas-vent termination exception for one- and two-family dwellings: on roof slopes from flat to 6:12, a Type B or BW vent 8 inches or smaller that sits at least 4 feet from a vertical wall or similar obstruction may terminate just 12 inches above the roof.",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/codes---ordinances/building-codes/2021-international-fuel-gas-code-(ifgc)-amendments.pdf?sfvrsn=2692bc2b_2"
+    },
+    {
+      "text": "Scottsdale's amended residential energy provisions force a demand-recirculation hot water system once the run from the water heater to the farthest fixture exceeds the city's table: more than 50 feet on 3/8-inch pipe, 43 feet on 1/2-inch, 32 feet on 5/8-inch or 21 feet on 3/4-inch. The pump must start from a user action or a flow sensor.",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/codes---ordinances/building-codes/2021-international-residential-code-(irc)-amendments.pdf?sfvrsn=87f78e0b_2"
+    },
+    {
+      "text": "Scottsdale rewrote the residential fixture flow table below national limits: 1.5 gpm at 60 psi for a lavatory faucet, 2.0 gpm at 80 psi for all shower outlets on one valve combined, 1.8 gpm at 60 psi for a kitchen faucet and 1.28 gallons per flush for a water closet, so replacement fittings have to meet the tighter numbers.",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/codes---ordinances/building-codes/2021-international-residential-code-(irc)-amendments.pdf?sfvrsn=87f78e0b_2"
+    },
+    {
+      "text": "Under Scottsdale's amended plumbing code a water service pipe must be at least 1 inch inside diameter, and a replaced water service pipe has to be at least the same size as the pipe it replaces. A single-family dwelling over 12,000 square feet under roof needs at least a 1 1/2-inch meter and a 2-inch supply from the meter.",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/codes---ordinances/building-codes/2021-international-plumbing-code-(ipc)-amendments.pdf?sfvrsn=ae75c74a_2"
+    },
+    {
+      "text": "Scottsdale added an EV-capable rule for new homes: the main electrical service panel must keep a reserved space for a full-size 2-pole breaker labeled 'Future EV Charging', and if the panel sits outside the garage wall a raceway has to run from the panel to a junction box or outlet inside the garage, also labeled.",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/codes---ordinances/building-codes/2021-international-residential-code-(irc)-amendments.pdf?sfvrsn=87f78e0b_2"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Scottsdale requires a plumbing permit to replace a water heater, gas or electric, and it is a 'minimum' permit with no plan review, just an inspection.",
+      "fee": "$63 (Water Heaters, except solar); Solar Water Heaters $90",
+      "feeAsOf": "Effective July 1, 2026",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/planning---develpment/fees-fy26-27/permit-fee-schedule---miscellaneous.pdf?sfvrsn=bcebac04_1"
+    },
+    "plumber-service-call": {
+      "requirement": "A plumbing permit is required in Scottsdale to install, alter, reconstruct or repair any plumbing system or gas system, including repairing or replacing an existing fixture in the same location, and single-trade residential work is charged as a minimum permit.",
+      "fee": "$121 Minimum Permit (one discipline); $379 Minimum Combination (all disciplines); $121 Reinspection",
+      "feeAsOf": "Effective July 1, 2026",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/planning---develpment/fees-fy26-27/permit-fee-schedule---miscellaneous.pdf?sfvrsn=bcebac04_1"
+    },
+    "electrician-service-call": {
+      "requirement": "Scottsdale requires an electrical permit to install, alter, reconstruct or repair electrical wiring on any building, structure, pool or mechanical equipment; adding or altering a circuit, relocating a panel, raising a mast, a service change-out up to 400 amps and replacing a main breaker are all listed as minimum-permit jobs.",
+      "fee": "$121 Minimum Permit (one discipline); $121 Temporary Power Pole; $121 Reinspection",
+      "feeAsOf": "Effective July 1, 2026",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/planning---develpment/fees-fy26-27/permit-fee-schedule---miscellaneous.pdf?sfvrsn=bcebac04_1"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Scottsdale requires a plumbing permit to install, alter, reconstruct or repair any plumbing system, and lists repair or replacement of an existing plumbing fixture in the same location as a minimum plumbing permit job; the city does not name garbage disposals as a separate line item.",
+      "fee": "$121 Minimum Permit (one discipline)",
+      "feeAsOf": "Effective July 1, 2026",
+      "sourceUrl": "https://www.scottsdaleaz.gov/docs/default-source/scottsdaleaz/planning---develpment/fees-fy26-27/permit-fee-schedule---miscellaneous.pdf?sfvrsn=bcebac04_1"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee (Scottsdale's no-permit list, minimum-permit examples and fee schedules do not mention smoke alarms)",
+    "Whether Scottsdale itself lets a homeowner pull a plumbing or electrical minimum permit on their own home (only the Arizona owner-builder licensing exemption was verified)",
+    "Scottsdale's 2020 NEC amendments in detail (the city's amendment PDF is a scanned image with no extractable text)",
+    "Whether an out-of-city contractor must hold a Scottsdale Business Registration License (the city's page states the requirement for businesses located in Scottsdale)",
+    "Scottsdale smoke-alarm or carbon-monoxide amendments to IRC Section R314/R315 (the city's IRC amendment document does not amend those sections)"
+  ]
+}

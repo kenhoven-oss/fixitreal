@@ -1,0 +1,77 @@
+{
+  "citySlug": "cape-coral-fl",
+  "cityName": "Cape Coral",
+  "stateAbbr": "FL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Cape Coral Department of Development Services, Permitting Services Division",
+    "url": "https://www.capecoral.gov/departments/development_services/permitting_services_division/index.php"
+  },
+  "codeEdition": {
+    "text": "Cape Coral enforces the 2023 Florida Building Code, including the Florida Building Code - Residential, together with NFPA 70, National Electrical Code, 2020 Edition. The Building Division also enforces the Cape Coral Code of Ordinances, the Land Development Code, the city's Engineering Design Standards and the floodplain management provisions in Article 9 of the LDC.",
+    "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Notice%20to%20Industry/2026/Advisory%20NTI%202020%20NEC%20Section%20210.8(F)%20%E2%80%93%20GFCI%20Protection%20for%20Outdoor%20HVAC%20Equipment.pdf"
+  },
+  "permitPolicy": {
+    "text": "Florida's HB 803 minor-residential-work exemption is not a blanket pass in Cape Coral: the Building Division states it does not apply to structural, electrical, plumbing, mechanical or fuel gas work regulated by the Florida Building Code, eligibility is never automatic, a written exemption request plus the contract has to go through the CSS portal, no exemption is considered inside a special flood hazard area, and a job may not be split into several contracts or phases to get under the $7,500 threshold. A homeowner may pull a permit as an owner-builder under Florida Statute 489.103 by signing the city's Owner-Builder Disclosure Statement, which limits the exemption to a one- or two-family residence for the owner's own use and not for sale or lease, and requires the owner to provide direct onsite supervision.",
+    "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Notice%20to%20Industry/2026/Advisory%20NTI%20Clarification%20Regarding%20Minor%20Residential%20Work%207500%20Exemptions%2006.26.2026(1).pdf"
+  },
+  "registration": {
+    "text": "A state-certified contractor must register with the City of Cape Coral before pulling permits. Registration takes a notarized and stamped registration form, a copy of the state certified license, the qualifier's identification, a certificate of insurance and a workers' compensation certificate each naming the City of Cape Coral as certificate holder, and an EnerGov Citizen Self-Service account created under the qualifier and company name exactly as they appear on the state license. The city publishes no dollar fee for this registration. A business located in Cape Coral also needs a city Business Tax Receipt and a Lee County Business Tax Receipt.",
+    "sourceUrl": "https://www.capecoral.gov/Documents/Document%20Hub/Permit%20Document%20Center/Contractor%20Registration/CONTRACTOR%20REGISTRATION.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Cape Coral makes the installer fill out a Water Heater Change-Out Form and attach it to the permit before inspection. The inspector checks that the relief valve is piped full size and not trapped, that the relief pipe has a visible air break next to the appliance, that a gas flue is connected properly, that the manufacturer's instructions are on site, and that heater elements are clearly identified and labeled.",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Document%20Hub/Permit%20Document%20Center/Miscellaneous%20Documents/WATER%20HEATER%20CHANGE-OUT%20FORM.pdf"
+    },
+    {
+      "text": "A Cape Coral water heater must be hard wired with no exceptions and must not be cord-and-receptacle connected, and there has to be an electrical disconnect within sight, per 2020 NEC Article 422. A cord-and-plug unit, or a change from tank to tankless, triggers a separate electrical sub-permit with load calculations, wire size, amperage and breaker size.",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Document%20Hub/Permit%20Document%20Center/Miscellaneous%20Documents/WATER%20HEATER%20CHANGE-OUT%20FORM.pdf"
+    },
+    {
+      "text": "On outdoor HVAC equipment, Cape Coral recognized the September 1, 2026 expiry of NEC 210.8(F) Exception No. 2 for installations not governed by the Florida Building Code - Residential, so condensing units, heat pumps and mini-split outdoor units on qualifying outdoor outlets need GFCI protection. Houses under the Florida Building Code - Residential keep the Florida-specific exception for listed and labeled HVAC equipment in Section E3408.1.",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Notice%20to%20Industry/2026/Advisory%20NTI%202020%20NEC%20Section%20210.8(F)%20%E2%80%93%20GFCI%20Protection%20for%20Outdoor%20HVAC%20Equipment.pdf"
+    },
+    {
+      "text": "From March 1, 2026 Cape Coral inspects the electrical concrete-encased electrode, the Ufer ground, as its own inspection rather than as part of the slab inspection. It must be looked at while the electrode, reinforcing steel and grounding conductor are fully visible and before concrete is placed, and missing it can mean removing concrete.",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Notice%20to%20Industry/2026/Electric%20Concrete%20Encased%20Electrode%20Inspection%20-%20NTI%2002-17-26%20Effective%203-1-26.pdf"
+    },
+    {
+      "text": "Cape Coral issued its own reading of the kitchen island and peninsula receptacle rule: one receptacle for the first 9 square feet of countertop and one more for each additional 18 square feet, so a 28 to 45 square foot island needs three.",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Notice%20to%20Industry/Electric%20-%20NTI%20Advisory%20Island%20and%20peninsula%20recepticle%20requirements.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Cape Coral requires a permit for an exact water heater change-out, and the installer must complete the city's Water Heater Change-Out Form and attach it to the permit for the inspection; a tank-to-tankless change also needs an electrical sub-permit.",
+      "fee": "Plumbing Misc - Miscellaneous Permits Other than New Construction $140.00; a 2.5% surcharge is added to all permits associated with enforcement of the Florida Building Code (the schedule carries no separate water heater line)",
+      "feeAsOf": "Effective January 1, 2026",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Building%20Permit%20Reports/Permitting%20Fees/Miscellaneous%20permit%20fees.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Cape Coral takes a miscellaneous plumbing permit and does not qualify for Florida's $7,500 minor-residential-work exemption.",
+      "fee": "Plumbing Misc - Miscellaneous Permits Other than New Construction $140.00; Plumbing Re-pipe $180.00; Revision Fee - Plumbing $136.00; re-inspection $48.00 first, $67.00 second, $86.00 third, $192.00 fourth and later; 2.5% Florida Building Code surcharge; building permit fees get a 15% discount when a Private Provider does plan review or inspections",
+      "feeAsOf": "Effective January 1, 2026",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Building%20Permit%20Reports/Permitting%20Fees/Miscellaneous%20permit%20fees.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Cape Coral takes an electrical permit, priced differently depending on whether plan review is needed, and electrical work is excluded from Florida's $7,500 minor-residential-work exemption.",
+      "fee": "Electrical Misc - with no Plan Review $80.00; Electrical Misc - with Plan Review $220.00; Temporary electrical pole - Residential $60.00; Revision Fee - Electrical $136.00; 2.5% Florida Building Code surcharge",
+      "feeAsOf": "Effective January 1, 2026",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Building%20Permit%20Reports/Permitting%20Fees/Miscellaneous%20permit%20fees.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Replacing a garbage disposal is plumbing work, which Cape Coral states is outside the Florida $7,500 minor-residential-work exemption, so it is handled as a miscellaneous plumbing permit; the city's fee schedule has no separate disposal line.",
+      "fee": "Plumbing Misc - Miscellaneous Permits Other than New Construction $140.00; 2.5% Florida Building Code surcharge",
+      "feeAsOf": "Effective January 1, 2026",
+      "sourceUrl": "https://www.capecoral.gov/Documents/Departments/Development%20Services/Building%20Permit%20Reports/Permitting%20Fees/Miscellaneous%20permit%20fees.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee (Cape Coral's miscellaneous fee schedule has no smoke alarm line and no city notice addresses alarm replacement)",
+    "Which exact permit type Cape Coral assigns to a water heater change-out and whether its fee differs from the Plumbing Misc line",
+    "Cape Coral's contractor registration fee, if any (the registration packet and FAQ list required documents but no dollar amount)",
+    "Cape Coral's cross-connection and backflow control requirements for residential plumbing work",
+    "Any Cape Coral amendment to the Florida Building Code beyond the Notices to Industry read here"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "citySlug": "st-paul-mn",
+  "cityName": "St. Paul",
+  "stateAbbr": "MN",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Saint Paul Department of Safety and Inspections (DSI)",
+    "url": "https://stpaul.gov/departments/safety-inspections"
+  },
+  "codeEdition": {
+    "text": "St. Paul enforces the Minnesota State Building Code. The residential code is the 2018 International Residential Code incorporated by reference and amended by Minnesota Rules chapter 1309; the IRC's own plumbing chapters are deleted and replaced by the Minnesota Plumbing Code (Minnesota Rules chapter 4714, an amended Uniform Plumbing Code), and its electrical chapters by the Minnesota Electrical Code (chapter 1315), with the IRC's smoke-alarm and carbon-monoxide sections R314 and R315 kept in force.",
+    "sourceUrl": "https://www.revisor.mn.gov/rules/1309.0010/"
+  },
+  "permitPolicy": {
+    "text": "Only licensed plumbing/gasfitter contractors and homesteading homeowners may pull plumbing, gas-fitting and inside-water-piping permits in St. Paul, and a homeowner's affidavit is required. A homeowner in a duplex may only do the general plumbing work in the half they live in, and homeowners may not do their own plumbing on new single-family or new duplex units, vacant buildings or commercial property. On the electrical side a permit may be bought only by a licensed Minnesota electrical contractor or by the homesteading homeowner who will personally do the work - a homeowner cannot buy the permit and have someone else do the job.",
+    "sourceUrl": "https://stpaul.gov/departments/safety-inspections/building-and-construction/construction-permits-and-inspections/plumbing-gas/gas-fitting"
+  },
+  "registration": {
+    "text": "A contractor working in St. Paul needs a city Business Trade License on top of the state license. The Plumbing/Gasfitter Business Trade License costs $188.00 a year, expires December 1, and requires a current City of Saint Paul Master Plumbing/Gasfitter Certificate of Competency, a $500,000 combined-single-limit liability certificate naming DSI as certificate holder, workers' compensation proof, and both a $25,000 Plumbing Contractor bond and a $25,000 Mechanical bond filed with the Minnesota Department of Labor and Industry.",
+    "sourceUrl": "https://stpaul.gov/departments/safety-inspections/building-and-construction/competency-cards-and-trade-worker-registration/gas-fitter-trade-license"
+  },
+  "codeItems": [
+    {
+      "text": "Before a single-family house in St. Paul is sold, a 120-volt hard-wired smoke alarm with battery backup must be installed - one in the hallway outside the bedrooms satisfies the ordinance. An electrical permit and an inspection are required even if the only work is replacing or reinstalling that alarm, and the power wiring for a newly wired alarm must be AFCI protected. A wall-mounted alarm has to sit between 6 and 12 inches below the ceiling under Saint Paul Legislative Code 58.03.",
+      "sourceUrl": "https://www.stpaul.gov/sites/default/files/2023-06/DSI.Bldg_Electrical_hard-wired%20smoke%20alarm%20installation%20guidelines.pdf"
+    },
+    {
+      "text": "St. Paul will enforce the 2026 National Electrical Code on every electrical permit obtained on or after August 17, 2026.",
+      "sourceUrl": "https://stpaul.gov/departments/safety-inspections/building-and-construction/construction-permits-and-inspections/electrical-permits-inspections"
+    },
+    {
+      "text": "Minnesota rewrites the UPC rule on water-heater relief discharge: the TPR discharge pipe must run full size, point down, discharge by gravity through an air gap to a safe place or within 18 inches of the floor, must not terminate in a crawl space, must not have a threaded end, and must not discharge into the water heater's drain pan.",
+      "sourceUrl": "https://www.revisor.mn.gov/rules/4714.0608/"
+    },
+    {
+      "text": "St. Paul tells inspectors to apply NEC 406.4(D)(4) on receptacle replacement, so a replaced receptacle in a dwelling has to be AFCI protected in the rooms NEC 210.12 covers - by an AFCI receptacle, an upstream AFCI receptacle or a combination AFCI breaker. An ungrounded two-prong receptacle can be replaced with a combination AFCI/GFCI device.",
+      "sourceUrl": "https://www.stpaul.gov/sites/default/files/2023-06/DSI.Bldg_Electrical_AFCI%20Protection.pdf"
+    },
+    {
+      "text": "A routine same-amperage panel swap in St. Paul now triggers the exterior emergency disconnect required by 2023 NEC 230.85(C), and the $85 service permit covers the service plus the existing circuits reconnected as part of the job. If the work is only storm repair to the service conductors, conduit or meter enclosure, the city will not require the exterior disconnect.",
+      "sourceUrl": "https://www.stpaul.gov/sites/default/files/2023-06/DSI.Bldg_Electrical_Residential%20Service%20Ugrades%20Replacements%20Etc.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "St. Paul issues a gas-fitting permit for a gas water heater, and an inspection follows; replacing, reinstalling or altering gas or water piping for a plumbing system requires the permit.",
+      "fee": "Minimum permit fee $85; Per unit - Gas $34; If unit BTU's greater than 100,000, additional fee for each 100,000 BTU's or fraction thereof $15; State Surcharge $1",
+      "feeAsOf": "Page last edited October 7, 2026",
+      "sourceUrl": "https://stpaul.gov/departments/safety-inspections/building-and-construction/construction-permits-and-inspections/plumbing-gas/gas-fitting"
+    },
+    "plumber-service-call": {
+      "requirement": "A plumbing permit is required in St. Paul to install new, alter, replace, repair, relocate or reinstall the waste, vent, water or gas piping of a plumbing system, and the fee is a flat initial charge plus a charge for each fixture or connection.",
+      "fee": "Initial permit fee $92; Per unit - Plumbing $36; Per unit - Water $6; Per unit - Gas $34; State Surcharge $1",
+      "feeAsOf": "Page last edited October 7, 2026",
+      "sourceUrl": "https://stpaul.gov/departments/safety-inspections/building-and-construction/construction-permits-and-inspections/plumbing-gas/plumbing-application-inspection-fees"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Replacing a garbage disposal is plumbing work on the waste side of the system, so St. Paul requires a plumbing permit, charged as the flat initial fee plus a per-unit charge.",
+      "fee": "Initial permit fee $92; Per unit - Plumbing $36; State Surcharge $1",
+      "feeAsOf": "Page last edited October 7, 2026",
+      "sourceUrl": "https://stpaul.gov/departments/safety-inspections/building-and-construction/construction-permits-and-inspections/plumbing-gas/plumbing-application-inspection-fees"
+    },
+    "electrician-service-call": {
+      "requirement": "St. Paul charges an electrical permit per service and per circuit, with a minimum that covers a single small job, and an inspection is scheduled with the inspector named on the permit.",
+      "fee": "Per Service; New, Altered, or Repaired $85.00; Per Circuit; New, Altered, or Repaired $15.00; Minimum Fee $85.00; State Surcharge (Minimum) $1.00",
+      "feeAsOf": "Page last edited July 11, 2023",
+      "sourceUrl": "https://stpaul.gov/departments/safety-inspections/building-and-construction/construction-permits-and-inspections/electrical-permits-inspections/circuits-service-electrical"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "An electrical permit and a final inspection are required in St. Paul even to replace or reinstall a hard-wired smoke alarm, and there is no per-unit charge if the alarm goes in alongside other electrical work without a new circuit.",
+      "fee": "Per Unit Installed, Per Circuit $15.00; Per Unit Installed, With Other Electrical Work, No New Circuit $0.00; Minimum Fee $85.00; State Surcharge (Minimum) $1.00",
+      "feeAsOf": "Page last edited October 7, 2026",
+      "sourceUrl": "https://stpaul.gov/departments/safety-inspections/building-and-construction/construction-permits-and-inspections/electrical-permits-inspections/smoke-detector-installation"
+    }
+  },
+  "notVerified": [
+    "whether a battery-only smoke alarm swap needs a permit in St. Paul - the city's guidance covers hard-wired alarms",
+    "St. Paul electrical contractor local licensing requirement (the city lists trade licenses for plumbing/gasfitting and other trades, but electrical licensing is handled by the state)",
+    "whether St. Paul adds its own technical amendments to the Minnesota State Building Code beyond the pre-sale smoke alarm ordinance"
+  ]
+}

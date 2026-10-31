@@ -1,0 +1,69 @@
+{
+  "citySlug": "huntsville-al",
+  "cityName": "Huntsville",
+  "stateAbbr": "AL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Huntsville Urban Development Department, Inspection Division",
+    "url": "https://www.huntsvilleal.gov/development/building-construction/building-license-permits/"
+  },
+  "codeEdition": {
+    "text": "Huntsville's Inspection Department lists the codes it enforces as the 2018 International Building, Mechanical, Plumbing, Fuel Gas, Swimming Pool and Spa, Existing Building and Residential Codes, the 2017 NFPA 70 National Electrical Code, and the 2015 International Energy Conservation Code as the Alabama Energy Code, plus amendments to those technical codes. The Fire and Rescue Department separately enforces the 2021 International Fire Code including Appendices C, D (less section D107) and E.",
+    "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/inspections/requirements/"
+  },
+  "permitPolicy": {
+    "text": "In Huntsville the trade permit and the building permit are pulled by different people. Plumbing, gas, mechanical and electrical contractors must be certified by the matching Alabama state board and must purchase the permits for their own trade, and specialty subcontractors cannot buy building permits at all. A homeowner can buy the building permit for their own house if they intend to live in it for at least a year after completion and all permits close, and must hand over a copy of the recorded deed; the city states in its own guidance that acting as your own contractor is not recommended.",
+    "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/building-license-permits/license-classification/"
+  },
+  "registration": {
+    "text": "Every contractor and subcontractor working inside the city limits needs a City of Huntsville privilege (general business) licence on top of the state certification, under Ordinance 93-725, plus a contractor's liability insurance certificate, and Zoning Administration must clear the licence for zoning compliance. The city's licence fee schedule prices electrical, plumbing, gas fitting, and heating and air conditioning contractors identically on annual gross receipts: $75.00 up to $24,999, $150.00 from $25,000 to $99,999, $250.00 from $100,000 to $999,999, $350.00 from $1,000,000 to $4,999,999 and $500.00 from $5,000,000 up. A general contractor must also show the inspector a full list of subcontractors with their licence numbers, and may not let a subcontractor start before that subcontractor shows a current city privilege licence.",
+    "sourceUrl": "https://www.huntsvilleal.gov/wp-content/uploads/2024/12/2025_City-of-Huntsville-License-Fee-Schedule.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Huntsville puts a flood step in front of nearly every permit: all building permits and most standalone trade permits require a completed Flood Development Permit to be issued before any other permit is approved, and a job in a FEMA Special Flood Hazard Area cannot be filed online at all, it must be submitted in person.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/building-license-permits/"
+    },
+    {
+      "text": "Huntsville still works from the 2017 National Electrical Code, not a 2020 or later edition, so the AFCI and GFCI scope an inspector applies here is the 2017 NEC's, and residential energy work is judged against the 2015 IECC as the Alabama Energy Code.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/inspections/requirements/"
+    },
+    {
+      "text": "At electrical rough-in Huntsville wants wires pulled and stapled with no insulation installed yet, and the electrical final is not passed until every fixture, receptacle and appliance is in, including the electrical side of the HVAC system.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/inspections/requirements/"
+    },
+    {
+      "text": "Who calls the inspection matters in Huntsville. The plumbing 30-day temporary has to be requested by the plumber, and gas and mechanical temporary finals have to be requested by the HVAC and gas permit holders, not by the general contractor.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/inspections/requirements/"
+    },
+    {
+      "text": "Two administrative holds stand between finished work and a Certificate of Occupancy in Huntsville: the Public Works Department's Engineering Hold and the Inspection Division's Sub-Contractors List Hold must both be released first.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/inspections/requirements/"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A water heater swap in Huntsville is permitted as plumbing, gas or mechanical work, and the city requires that permit to be bought by the appropriately licensed trade contractor rather than by the homeowner or the general contractor; most trade permits can be taken out through the city's online trade permitting system.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/building-license-permits/permit-costs/"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Huntsville needs its own permit, purchased by a plumbing contractor certified by the Alabama state board and holding a current City of Huntsville privilege licence; a specialty subcontractor must work under a licensed contractor or the property owner acting as contractor.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/building-license-permits/license-classification/"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Huntsville needs an electrical permit pulled by a state-certified electrical contractor who also holds a City of Huntsville privilege licence, and the work is inspected against the 2017 National Electrical Code that the city's Inspection Department enforces.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/inspections/requirements/"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Swapping a garbage disposal is plumbing and electrical work, and Huntsville requires any plumbing, electrical, gas or mechanical work to be permitted by the appropriate licensed contractor, separately from any building permit for the same project.",
+      "sourceUrl": "https://www.huntsvilleal.gov/development/building-construction/building-license-permits/permit-costs/"
+    }
+  },
+  "notVerified": [
+    "Every Huntsville trade permit fee figure: the city publishes only the building permit formula (residential 0.0055 of total contract price; new dwellings heated area x $15.00 plus unheated area x $7.50, then x 0.0055) and states no dollar amount for plumbing, electrical, gas or mechanical permits",
+    "Whether a smoke alarm replacement needs a permit in Huntsville, and any city smoke-alarm amendment",
+    "Huntsville's published amendments to the adopted technical codes (the inspection page says amendments exist but does not publish them)",
+    "Huntsville-specific water heater rules such as expansion tank, drain pan, TPR discharge termination or sediment trap",
+    "City of Huntsville Code of Ordinances text (library.municode.com and www.municode.com are behind a bot check)"
+  ]
+}

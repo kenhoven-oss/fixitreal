@@ -1,0 +1,75 @@
+{
+  "citySlug": "plano-tx",
+  "cityName": "Plano",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Plano Building Inspections Department (1520 K Ave, Suite 140)",
+    "url": "https://www.plano.gov/building-inspections"
+  },
+  "codeEdition": {
+    "text": "Plano moved to the 2024 I-Codes effective August 1, and the city publishes each adopted code as its own amending ordinance: the 2024 International Plumbing Code by Ordinance 2025-6-7, the 2024 International Residential Code by Ordinance 2025-6-15, and the 2023 National Electrical Code by Ordinance 2025-6-13, each repealing the city's 2021-cycle ordinance. The 2024 set also covers the International Building, Mechanical, Fuel Gas, Energy Conservation, Existing Building, Fire, Property Maintenance and Swimming Pool and Spa Codes. Each code is codified as its own division or article of Chapter 6 of the Plano Code of Ordinances, with Plano's additions, deletions and amendments written in.",
+    "sourceUrl": "https://www.plano.gov/building-codes-ordinances"
+  },
+  "permitPolicy": {
+    "text": "Plano's amended IRC Section R105.3 says that to obtain a permit the applicant has to be registered as a contractor with the building official, and electrical, irrigation, mechanical and plumbing contractors have to file proof of the required State of Texas licences and insurance. The exception is written straight into the ordinance: homeowners may obtain permits to do work at their own residence without being registered. A permit goes invalid if work does not start within 180 days of issuance, or if work stops for 180 days after it started, and every permit requires a final inspection.",
+    "sourceUrl": "https://www.plano.gov/asset/6a2b7a22-3b2f-41c5-844b-6f5d6bb15067"
+  },
+  "registration": {
+    "text": "Plano charges an annual contractor registration fee of $100.00 for a general contractor, an irrigation contractor, a mechanical contractor and a sign contractor; a solid waste disposal contractor pays $20.00 plus $10.00 for each additional identification tag and a $10.00 annual renewal per vehicle tag. Registration fees are non-refundable. A registration can be suspended if the contractor fails to close out permits by getting the required approved inspections, lets a structure be occupied before the required authorisation, or lets a required licence, bond or insurance lapse.",
+    "sourceUrl": "https://www.plano.gov/asset/bfaa296b-5965-4be9-8823-8ab0592567d6"
+  },
+  "codeItems": [
+    {
+      "text": "Plano wrote a replacement exemption into its water heater pan rule that national guides do not carry. Its amended IRC Section P2801.6.1 keeps the usual 1-1/2-inch-deep pan drained by a 3/4-inch indirect waste pipe, but adds that where a pan drain was not previously installed, no pan drain is required for a replacement water heater. The city also allows multiple pan drains to terminate into a single discharge system where the administrative authority approves it and the manufacturer's instructions permit it.",
+      "sourceUrl": "https://www.plano.gov/asset/6a2b7a22-3b2f-41c5-844b-6f5d6bb15067"
+    },
+    {
+      "text": "Plano rewrote the T&P relief discharge rules into a 14-point list. Among the points an inspector will look for: the line must discharge through an air gap and never be connected to the drainage system, must serve a single relief device, must terminate somewhere the occupants can readily see, must not be trapped and must flow by gravity, must end not more than 6 inches and not less than twice the pipe diameter above the floor or flood-level rim, must carry no threaded connection at the end and no valves or tee fittings, and must be one nominal size larger than the relief-valve outlet where insert fittings are used, with the outlet end fastened in place.",
+      "sourceUrl": "https://www.plano.gov/asset/6a2b7a22-3b2f-41c5-844b-6f5d6bb15067"
+    },
+    {
+      "text": "Plano is stricter than the model code about where a fuel-fired water heater may go. Its amended Section M2005.2 bans a fuel-fired water heater from a room used as a storage closet, and requires a water heater in a bedroom or bathroom to sit in a sealed enclosure so combustion air is not drawn from the living space. Access from the bedroom or bathroom is allowed only through a solid door weather-stripped to the energy code's exterior-door standard and fitted with an approved self-closing device. A direct-vent heater does not need the enclosure.",
+      "sourceUrl": "https://www.plano.gov/asset/6a2b7a22-3b2f-41c5-844b-6f5d6bb15067"
+    },
+    {
+      "text": "On a panel or service job Plano can ask for arithmetic. Its added NEC Article 220.6 requires a load calculation to be provided on request whenever modifications are made to the electrical installation. Its amendment to Article 230.85(C) applies the full emergency-disconnect requirements whenever service equipment is replaced, with an exception only where the existing installation already complies with 230.70 and nothing but meter sockets, service-entrance conductors or their raceways and fittings are being swapped.",
+      "sourceUrl": "https://www.plano.gov/asset/acb02c4a-8762-489f-b216-0c21fccc3743"
+    },
+    {
+      "text": "Plano wrote its own grounding electrode requirement into NEC 250.50. Any building or structure supplied by a service or feeder that has a foundation, footing or piers must have one of three things: a concrete-encased electrode, a ground ring using a 2/0 AWG grounding electrode conductor to connect two eight-foot driven rods spaced at least 20 feet apart joined by a 2/0 AWG bonding conductor buried in a trench at least 30 inches deep, or a chemical electrode. Existing buildings are excused from the concrete-encased electrode where the reinforcing steel cannot be reached without breaking concrete.",
+      "sourceUrl": "https://www.plano.gov/asset/acb02c4a-8762-489f-b216-0c21fccc3743"
+    },
+    {
+      "text": "Plano's amended NEC 210.8(A) stretches dwelling GFCI protection past the national list to cover laundry areas, boathouses, indoor damp and wet locations, any receptacle within 6 feet of the top inside edge of a sink bowl, and any receptacle within 6 feet of the outside edge of a bathtub or shower stall — and it applies to all 125-volt through 250-volt receptacles on single-phase circuits rated 150 volts or less to ground. The city then carved out four exceptions, including a receptacle serving only a permanently installed premises security system and factory-installed receptacles mounted inside exhaust fan assemblies.",
+      "sourceUrl": "https://www.plano.gov/asset/acb02c4a-8762-489f-b216-0c21fccc3743"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Plano handles a water heater changeout on the plumbing side of its residential simple trade permit, applied for on the city's Miscellaneous Simple Permit Application, and the inspector works to Plano's own amendments — no pan drain where one never existed, but a T&P discharge line meeting the city's 14-point rule and no fuel-fired heater in a storage closet.",
+      "fee": "$65.00 per residential simple trade permit (mechanical, electrical or plumbing); a first reinspection adds $50.00 and a same-day inspection $75.00 per trade",
+      "feeAsOf": "Building Inspections Department Fee Schedule, Exhibit A to Ordinance No. 2020-3-6",
+      "sourceUrl": "https://www.plano.gov/asset/bfaa296b-5965-4be9-8823-8ab0592567d6"
+    },
+    "plumber-service-call": {
+      "requirement": "A standalone residential plumbing job in Plano is pulled as a simple trade permit by a contractor registered with the city, or by the homeowner for work at their own residence; a plumbing service inspection is billed separately as a plumbing certificate.",
+      "fee": "$65.00 residential simple trade permit; plumbing certificate (service inspection) $75.00; reinspections $50.00, then $75.00, $100.00 and $125.00; after-hours or Saturday inspection $120.00",
+      "feeAsOf": "Building Inspections Department Fee Schedule, Exhibit A to Ordinance No. 2020-3-6",
+      "sourceUrl": "https://www.plano.gov/asset/bfaa296b-5965-4be9-8823-8ab0592567d6"
+    },
+    "electrician-service-call": {
+      "requirement": "Residential electrical work in Plano goes on the same flat-rate simple trade permit, and because Plano runs the 2023 NEC with its own amendments the electrician may be asked for a load calculation, has to meet the city's grounding electrode rule, and faces a wider GFCI list than the national code sets.",
+      "fee": "$65.00 per residential simple trade permit; same-day inspection $75.00 per trade; after-hours or Saturday inspection $120.00",
+      "feeAsOf": "Building Inspections Department Fee Schedule, Exhibit A to Ordinance No. 2020-3-6",
+      "sourceUrl": "https://www.plano.gov/asset/bfaa296b-5965-4be9-8823-8ab0592567d6"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement — Plano's permit application and fee schedule name no disposer, and the city's amended work-exempt list in IRC R105.2 only changes the Building category, so neither the requirement nor a fee could be sourced",
+    "smoke-detector-replacement — Plano's 2024 IRC and 2023 NEC amendment ordinances do not touch the smoke alarm sections, and no city page says whether replacing a hardwired alarm needs a permit",
+    "Whether Plano charges an annual registration fee to an electrical or plumbing contractor — the fee schedule lists an annual figure for general, irrigation, mechanical and sign contractors only, while the residential code amendment still requires those trades to register and file their state licence and insurance",
+    "Whether a fee schedule newer than Exhibit A to Ordinance No. 2020-3-6 is in force — that 2020 document is the one the city currently publishes as its Building Inspections Fee Schedule, so the figures above carry its date",
+    "Plano's water heater guidance sheets — the Residential Permits page carries a Water Heaters document group, but its content is served from the vendor content API rather than a city page and could not be read"
+  ]
+}

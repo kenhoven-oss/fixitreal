@@ -1,0 +1,74 @@
+{
+  "citySlug": "arlington-tx",
+  "cityName": "Arlington",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Arlington Planning & Development Services (101 W. Abram St.)",
+    "url": "https://www.arlingtontx.gov/Business/Planning-Development/Planning-Development/Permitting-Inspections"
+  },
+  "codeEdition": {
+    "text": "Arlington's City Council adopted the 2021 editions of the International Codes and the 2020 National Electrical Code on November 1, 2022, and permit applications have had to comply since January 1, 2023. The city places the 2021 IBC, IRC, IECC, IEBC and ISPSC in its Construction Chapter, the 2021 IMC in its Mechanical Chapter, the 2021 IPC and IFGC in its Plumbing Chapter, the 2021 IFC in its Fire Prevention Chapter and the 2020 NEC in its Electrical Chapter, each with the city's own amendments written into the chapter.",
+    "sourceUrl": "https://www.arlingtontx.gov/Business/Planning-Development/Building-Codes"
+  },
+  "permitPolicy": {
+    "text": "Arlington issues trade permits only to a business registered with the Building Official, and the plumbing chapter says only the designated Master Plumber on that registration may request the inspections. There is a homeowner exemption: registration does not apply to alteration or repair work on a residential structure where the person doing the work owns it, lives there as their legal residence, and is not helped by anyone being paid. That homeowner is automatically treated as a registrant, but the permit itself is still required. The electrical chapter sets the same homeowner exemption and charges no registration fee for it.",
+    "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/2/city-secretary/documents/city-code-of-ordinances/plumbing-chapter.pdf"
+  },
+  "registration": {
+    "text": "Arlington requires its own business registration on top of the state license before a contractor can pull a permit. The fee schedule prices a business registration recorded with the Building Official at $100.00 for one year or $175.00 for two years, and registration expires annually. An electrical registrant must file the TDLR-issued Electrical Contractor registration certificate and name a Master of Record registered with TDLR, and must carry general liability insurance of at least $300,000 per occurrence with a $600,000 aggregate plus a $300,000 products-and-completed-operations aggregate. A plumbing registrant must name the licensed Master Plumber or Landscape Irrigator who represents the firm; a registrant working in city right-of-way must carry $500,000 per-occurrence public liability insurance and name the city as certificate holder.",
+    "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/1/planning-and-development-services/documents/permit-applications-amp-forms/planning-development-services-fee-schedule_10.1.2026_1.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Arlington will not let a replacement water heater sit on the garage floor. The city's building inspections FAQ says an electric or gas water heater in or reachable from a garage has to be raised 18 inches above the floor when it is replaced, because the thermostat sparks when it cuts in and gasoline vapour settles at floor level. Arlington notes it once allowed electric heaters directly on a garage floor and no longer does.",
+      "sourceUrl": "https://www.arlingtontx.gov/Business/Planning-Development/Planning-Development/Permitting-Inspections/Building-Permits-Inspections-FAQs"
+    },
+    {
+      "text": "Arlington rewrote the attic water heater rules in its Plumbing Chapter. An attic holding a water heater needs an unobstructed passageway at least 30 inches high and 22 inches wide, no more than 20 feet long, with continuous solid flooring at least 24 inches wide, a level service space at least 30 by 30 inches at the service side, and a clear access opening of at least 20 by 30 inches. Access has to be by a permanent stair, a pull-down stair rated for 300 lb, or a door from an upper floor — an access panel only with the code official's prior approval. The city also added its own section requiring a light fixture switched at the passageway opening and a receptacle within 25 feet of the heater, and requires a stairway or fixed ladder where the platform is more than eight feet above the floor.",
+      "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/2/city-secretary/documents/city-code-of-ordinances/plumbing-chapter.pdf"
+    },
+    {
+      "text": "Arlington added its own rule for corrugated stainless steel gas tubing, which matters on a gas water heater changeout. A shutoff valve on a CSST system has to be supported by an approved termination fitting or equivalent support sized for the valve, and the support has to sit no more than 12 inches from the centre of the valve so vibration cannot work the valve loose.",
+      "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/2/city-secretary/documents/city-code-of-ordinances/plumbing-chapter.pdf"
+    },
+    {
+      "text": "Arlington amended NEC 230.70(A)(1) so the service disconnecting means must be at a readily accessible location either outside the building or inside at the nearest point where the service conductors enter. It also amended NEC 422.31(B) so that for a permanently connected appliance rated over 300 volt-amperes — a tank water heater or a disposer, for instance — the branch-circuit switch or breaker counts as the disconnect only where it is within sight of and readily accessible to the appliance, or can be locked open and is readily accessible to it.",
+      "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/2/city-secretary/documents/city-code-of-ordinances/electrical-code-chapter.pdf"
+    },
+    {
+      "text": "Arlington gives itself room on arc-fault breakers in older houses. Its amendment to NEC 210.12(A) waives AFCI breakers where an existing panelboard or breaker is simply being replaced, the branch circuit itself is not being repaired, replaced, extended or altered, and the dwelling was built before January 1, 2002.",
+      "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/2/city-secretary/documents/city-code-of-ordinances/electrical-code-chapter.pdf"
+    },
+    {
+      "text": "If a house in Arlington loses electric or gas service, the city runs a defined restoration path rather than leaving it to the utility. An electrician or plumber pulls the permit, a same-day inspection is requested (available for occupied homes and businesses only), and only then does the city send the release to Oncor or Atmos to turn the service back on. Same-day and after-hours inspections are both priced at $200.00 in the fee schedule.",
+      "sourceUrl": "https://www.arlingtontx.gov/Business/Planning-Development/Planning-Development/Permitting-Inspections/Emergency-Electrical-Gas-Services"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Arlington requires a permit and inspection to replace a water heater — the city names it as one of the most common homeowner permits — and the inspector will expect a unit in or off the garage to be raised 18 inches above the floor.",
+      "fee": "$100.00 base permit fee plus $20.00 for the first water heater (and $7.50 for each additional water heater) for plumbing work not tied to a building permit",
+      "feeAsOf": "Effective October 1, 2026 (Resolution No. 26-288)",
+      "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/1/planning-and-development-services/documents/permit-applications-amp-forms/planning-development-services-fee-schedule_10.1.2026_1.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Arlington that is not part of a building permit carries a base permit fee plus a charge for each item of work, and the permit can only be issued to a city-registered business that names its Master Plumber — unless you are the homeowner doing the repair yourself in the house you live in.",
+      "fee": "$100.00 base permit fee, plus item fees such as $15.00 water line, $15.00 sewer line, $30.00 to replace fixtures for the first five ($7.50 each after, capped at $600.00 per address), $30.00 for the first indoor backflow device",
+      "feeAsOf": "Effective October 1, 2026 (Resolution No. 26-288)",
+      "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/1/planning-and-development-services/documents/permit-applications-amp-forms/planning-development-services-fee-schedule_10.1.2026_1.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Arlington requires an electrical permit before any electrical equipment over 24 volts is installed, altered or added to, and electrical work not tied to a building permit is billed as a base fee plus per-item charges; a reinspection, emergency inspection or same-day inspection each costs extra.",
+      "fee": "$100.00 base permit fee, plus item fees such as $35.00 for a service or sub panel up to 200 amps, $60.00 for 201–400 amps, $75.00 over 400 amps, $0.50 per opening for the first 100 lights, outlets, fixtures, switches and receptacles, and $200.00 for a reinspection, emergency or same-day inspection",
+      "feeAsOf": "Effective October 1, 2026 (Resolution No. 26-288)",
+      "sourceUrl": "https://www.arlingtontx.gov/files/assets/city/v/1/planning-and-development-services/documents/permit-applications-amp-forms/planning-development-services-fee-schedule_10.1.2026_1.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement — Arlington's exempt-work bulletin does not list a disposer, and the fee schedule prices 'fixtures (lavatory, sink, water closet, tub, etc.)' without naming a food waste disposer, so neither the requirement nor the fee could be pinned to a published line",
+    "smoke-detector-replacement — the city's permit-exempt list covers minor electrical repair including lamp replacement but says nothing about swapping a hardwired smoke alarm, and no Arlington page or code section states whether a permit is needed",
+    "Whether Arlington amended the 2021 IPC on TPR relief-valve discharge, drain pans or thermal expansion control — the amendments adopted by Ord 22-058 do not touch IPC Section 504, and the earlier editions printed later in the same PDF are superseded, so no current Arlington-specific rule on these could be reported",
+    "Arlington's amendments to the 2015 I-Codes and 2017 NEC, and its code-adoption history — the city says these are available only by emailing the department"
+  ]
+}

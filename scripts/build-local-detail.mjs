@@ -49,6 +49,7 @@ const OFFICIAL_CODE_HOSTS = [
   "codepublishing.com",
   "generalcode.com",
   "sterlingcodifiers.com",
+  "encodeplus.com",
   "iccsafe.org",
   "up.codes",
 ];
@@ -81,6 +82,9 @@ const OFFICIAL_CITY_HOSTS = [
   // domain as the city, which is what separates this from third-party storage
   // like widen.net or an S3 bucket.
   "spokanecity.org",
+  "stpete.org",         // City of St. Petersburg, FL
+  "cityofws.org",       // City of Winston-Salem, NC
+  "muni.org",           // Municipality of Anchorage, AK (unified municipality)
   "nyc.gov",            // already .gov, listed for clarity of intent
 ];
 
@@ -220,7 +224,15 @@ for (const file of files) {
         if (typeof asOf === "string" && asOf.trim()) {
           out.feeAsOf = asOf.trim();
           // Surface stale schedules rather than letting them pass silently.
-          const year = Number((asOf.match(/\b(19|20)\d{2}\b/) ?? [])[0]);
+          // Two forms show up in real schedules: a 4-digit year ("July 2018")
+          // and a slash/dash date whose year is 2-digit ("08-01-18", St. Louis's
+          // electrical ordinance). Catching only the first silently passed an
+          // 8-year-old schedule as current.
+          let year = Number((asOf.match(/\b(19|20)\d{2}\b/) ?? [])[0]);
+          if (!year) {
+            const short = asOf.match(/\b\d{1,2}[-\/]\d{1,2}[-\/](\d{2})\b/);
+            if (short) year = 2000 + Number(short[1]);
+          }
           if (year && year < new Date().getFullYear() - 5) {
             warnings.push(`${w}: fee schedule is dated ${year} — page will disclose the vintage`);
           }

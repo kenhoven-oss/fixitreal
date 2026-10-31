@@ -1,0 +1,75 @@
+{
+  "citySlug": "newark-nj",
+  "cityName": "Newark",
+  "stateAbbr": "NJ",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Newark Department of Engineering (Office of Uniform Construction Code)",
+    "url": "https://newarknj.gov/departments/engineering"
+  },
+  "codeEdition": {
+    "text": "Newark enforces the New Jersey Uniform Construction Code. As of the August 17, 2026 adoption date the state subcodes are the 2024 International Residential Code (NJ edition) for one- and two-family homes, the 2024 National Standard Plumbing Code (NJ edition), the 2023 National Electrical Code (NFPA 70), the 2024 International Fuel Gas Code and the 2024 International Mechanical Code.",
+    "sourceUrl": "https://www.nj.gov/dca/codes/codreg/current.shtml"
+  },
+  "permitPolicy": {
+    "text": "Plumbing, electrical and HVAC work in New Jersey may only be done by someone licensed for that trade, with one exception: a single-family homeowner may do the work on his or her own dwelling. Newark's own Department of Engineering issues all construction permits; under the state code each municipality sets its own permit fees by ordinance, and every New Jersey permit also carries a state training surcharge of $1.90 per $1,000 of construction value with a $1.00 minimum.",
+    "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_2.pdf"
+  },
+  "registration": {
+    "text": "Newark's construction checklist requires the applicable New Jersey state trade license (State Electrical Business License, State Plumbing License, HVAC contractor license, Home Improvement Contractor or New Home Builder license) and, for commercial work, a separate City of Newark Contractor License. The city does not publish the registration fee or bond amount.",
+    "sourceUrl": "https://www.newarknj.gov/DocumentCenter/View/2842/CONSTRUCTION-CHECK-LIST-2026"
+  },
+  "codeItems": [
+    {
+      "text": "Newark asks for a fire technical sheet on a water heater installation or replacement in a building of two families or more, which is on top of the plumbing paperwork a one-family job needs.",
+      "sourceUrl": "https://www.newarknj.gov/DocumentCenter/View/2842/CONSTRUCTION-CHECK-LIST-2026"
+    },
+    {
+      "text": "New Jersey is one of the few states that does not use the IPC or UPC: its plumbing subcode is the National Standard Plumbing Code, 2024 NJ edition, so fixture and water-heater rules are cited from the NSPC rather than from a model I-code.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/current.shtml"
+    },
+    {
+      "text": "The New Jersey edition of the plumbing subcode defines hot water as potable water at not less than 120 and not more than 140 degrees F, which sets the window a replacement water heater's thermostat has to fall inside.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_3.pdf"
+    },
+    {
+      "text": "New Jersey strikes two national AFCI rules from the electrical subcode: NEC 210.12(E) on branch-circuit extensions, modifications and replacements, and NEC 406.4(D)(4) on arc-fault protection when a receptacle is replaced. A small electrical repair in Newark therefore does not trigger the AFCI upgrade a national guide would describe.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_3.pdf"
+    },
+    {
+      "text": "Homes built before January 1, 1977 must have 10-year sealed-battery smoke alarms, and one- and two-family houses have to comply before a sale or change of occupancy. Replacing an old alarm with a cheap removable-battery unit will not pass. AC hardwired alarms and CO alarms are not covered, but a combination smoke/CO single-station device must be the 10-year sealed type.",
+      "sourceUrl": "https://www.nj.gov/dca/divisions/dfs/pdf/10%20year%20sealed%20battery%20smoke%20alarm%20press%20release.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater with one of like capacity is classed as minor work in New Jersey: you still need a plumbing permit, but you may start once you have given the city notice, and the permit application follows within five business days.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_2.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "No permit is needed in Newark to swap a smoke alarm or detector head for a like device, or to put in a battery-powered smoke alarm, because the state code treats that as ordinary maintenance.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_2.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Swapping a plumbing fixture for a similar one with no change to the piping arrangement is ordinary maintenance and needs no permit; adding a fixture that was not there before is minor work and does need a permit.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_2.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Common service work is permit-free in Newark as ordinary maintenance: clearing a stoppage, repairing a leak by replacing piping, and replacing faucets, valves, traps or ball cocks. Rearranging or resizing water, waste or vent piping needs a plumbing permit.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_2.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Replacing a receptacle, switch or light fixture with a like item is ordinary maintenance and needs no permit, though a replacement in a GFCI, damp or tamper-resistant location has to meet NEC 406.4(D). Adding up to five outlets on adequate existing circuits is minor work and does need a permit.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_2.pdf"
+    }
+  },
+  "notVerified": [
+    "Newark's own construction permit fee ordinance and dollar fee schedule - the city publishes no fee schedule on its website and its codified ordinances are not reachable online",
+    "water-heater-replacement permit fee",
+    "plumber-service-call permit fee",
+    "electrician-service-call permit fee",
+    "garbage-disposal-replacement permit fee",
+    "City of Newark Contractor License fee and bond amount",
+    "whether Newark adds local amendments to the state subcodes"
+  ]
+}

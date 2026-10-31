@@ -1,0 +1,78 @@
+{
+  "citySlug": "winston-salem-nc",
+  "cityName": "Winston-Salem",
+  "stateAbbr": "NC",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Winston-Salem/Forsyth County Planning & Development Services Department, Inspections Division",
+    "url": "https://www.cityofws.org/343/Inspections-Division"
+  },
+  "codeEdition": {
+    "text": "North Carolina runs one statewide code and Winston-Salem's inspectors enforce it. The 2018 NC Codes took effect January 1, 2019 and remain the ones currently in force; they combine the 2015 International Codes with the 2018 NC Ad-Hoc Committee amendments adopted by the Building Code Council. Electrical work follows the 2020 North Carolina Electrical Code, effective November 1, 2021, which is the NEC plus North Carolina amendments, and accessibility follows ANSI A117.1-2009 under the 2018 building code. A 2024 North Carolina State Building Code has cleared the Rules Review Commission, and the State Fire Marshal issued separate correspondence in March 2025 about when it takes effect.",
+    "sourceUrl": "https://www.ncosfm.gov/codes/codes-current-and-past"
+  },
+  "permitPolicy": {
+    "text": "A Winston-Salem homeowner can pull their own trade permit, but the city makes them sign a notarized affidavit per trade and sets real conditions. Under the electrical affidavit, claiming the G.S. 87-43.1(a) exemption, the owner has to own and occupy the structure, keep occupying it for 12 months after the work is finished, and do the work personally — the city states that having anyone else do it, paid or free, violates state law. The owner also has to attest that they understand the principles of the wiring and are qualified to do a safe job, and the city warns that the inspector will not design or lay out the job. The plumbing affidavit is the same shape under G.S. 87-21(c). On a building permit rather than a trade permit, the separate Owner Exemption Affidavit under G.S. 87-1(b)(2) requires the owner to personally superintend the work, to be on site regularly and present for every required inspection unless the plans were drawn and sealed by a licensed architect, and the city transmits a copy to the NC Licensing Board for General Contractors, which can cause the permit to be revoked. Licensed contractors apply for plumbing, electrical and mechanical permits in the BuildIT portal; paper applications are no longer accepted.",
+    "sourceUrl": "https://www.cityofws.org/DocumentCenter/View/18100/Electrical-Installation-by-Property-Owner-Affidavit-Fillable-PDF"
+  },
+  "registration": {
+    "text": "Winston-Salem does not publish a separate city trade registration or licence; instead the Inspections Division controls who can buy a trade permit through its BuildIT portal. The city says it creates a contractor ID only for contractors who hold an active state license or a bond/escrow account and who have open or recently purchased permits, and that only a plumbing, mechanical, electrical or refrigeration contractor can purchase permits or schedule their own inspections through the portal. A general contractor can schedule inspections but cannot buy building permits there. Residential permit applications also require a completed Worker's Compensation Coverage Affidavit from whoever is listed as the contractor, including a property owner acting as their own contractor.",
+    "sourceUrl": "https://www.cityofws.org/470/BuildIT"
+  },
+  "codeItems": [
+    {
+      "text": "Winston-Salem publishes an electrical code split that national guides miss. The city states that the 2020 National Electrical Code took effect November 1, 2021, but that the 2017 NEC remains in effect for one- and two-family dwellings, and that an electrical permit may still use the 2017 NEC for wiring if it is tied to a parent building permit secured before November 1, 2021. So a house job in Winston-Salem can be inspected against an older NEC edition than a commercial job on the same street.",
+      "sourceUrl": "https://www.cityofws.org/470/BuildIT"
+    },
+    {
+      "text": "Winston-Salem bundles the electrical side of a water heater swap into the plumbing permit. Its fee schedule lists a plumbing water heater changeout permit as one flat fee and says in the line itself that it includes electrical, so a straight electric heater replacement does not need a second permit from the electrical side.",
+      "sourceUrl": "https://www.cityofws.org/DocumentCenter/View/1012/Inspections-Division-Fee-Schedule-PDF"
+    },
+    {
+      "text": "Failed inspections get expensive fast in Winston-Salem, and a homeowner permit can be shut off entirely. The fee schedule charges extra trip fees after the first failure of $50 for the second trip, $75 for the third and $100 for all others, charges $225 for a stop work order, and doubles the permit fee for starting work without a permit. On top of that, the property-owner electrical and plumbing affidavits say that if the job is turned down twice as not meeting the code, or if the city finds someone else did the work, the permit goes to stop-work status and a licensed contractor has to permit and finish the job.",
+      "sourceUrl": "https://www.cityofws.org/DocumentCenter/View/1012/Inspections-Division-Fee-Schedule-PDF"
+    },
+    {
+      "text": "Winston-Salem/Forsyth County Utilities sets out what it expects a plumber to do on a sewer backup, and it is more than clearing the line. City crews will investigate and clean any accessible part of the service line inside the public right-of-way at no cost, and will clean or repair a courtesy cleanout stack at the edge of the right-of-way. If the service line is blocked with no water visible at the cleanout, or no cleanout stack can be found, the homeowner hires a plumber, and the city requires that plumber to run a root machine or jet hose through the service line all the way to the sewer main rather than stopping at the cleanout, then CCTV the line and submit the footage to a Utilities field operations supervisor as proof of any damage in the right-of-way. Skipping those steps can cost the homeowner reimbursement under the city's Good Neighbor Policy.",
+      "sourceUrl": "https://www.cityofws.org/2953/Sewer-Backup-Info-for-Plumbers"
+    },
+    {
+      "text": "Who inspects your job in Winston-Salem is a county-wide question. The Inspections Division is a joint City-County agency that reviews and inspects building and zoning work throughout Forsyth County, with the exception of the town and city limits of High Point, Kernersville and King, and it enforces the zoning ordinances of Clemmons, Forsyth County, Lewisville, Walkertown and Winston-Salem. The city also notes that the permit office no longer takes walk-in customers or paper permit applications.",
+      "sourceUrl": "https://www.cityofws.org/343/Inspections-Division"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A water heater changeout in Winston-Salem is bought as a single flat plumbing permit that already covers the electrical work, and no plumbing permit can come to less than the city's minimum.",
+      "fee": "Plumbing water heater changeout permits (includes electrical) - Flat fee $100.00; Minimum fee for any Plumbing permit shall not be less than $75.00; in addition a Homeowner's Recovery Fund fee of $10.00 is collected in accordance with G.S. 87-15.6 for new single-family permits and alterations to single family dwellings issued to North Carolina licensed contractors",
+      "feeAsOf": "April 2026",
+      "sourceUrl": "https://www.cityofws.org/DocumentCenter/View/1012/Inspections-Division-Fee-Schedule-PDF"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Winston-Salem prices a disposal swap as a single plumbed appliance on the plumbing permit — disposals are named in the line — but the permit still cannot cost less than the city's plumbing minimum, so the per-fixture rate only matters once several fixtures are on one permit.",
+      "fee": "Plumbed fixtures, appliances, interceptors and sewer ejectors to be installed or replaced, including but not limited to sinks, water closets, floor drains, dishwashers, disposals and water heaters, each - Fee $10.00; Minimum fee for any Plumbing permit shall not be less than $75.00",
+      "feeAsOf": "April 2026",
+      "sourceUrl": "https://www.cityofws.org/DocumentCenter/View/1012/Inspections-Division-Fee-Schedule-PDF"
+    },
+    "plumber-service-call": {
+      "requirement": "Winston-Salem charges by the fixture or the run for plumbing work in an existing home, with a flat minimum under every plumbing permit, so a one-fixture service call lands on the minimum.",
+      "fee": "Plumbed fixtures, appliances, interceptors and sewer ejectors to be installed or replaced, each - Fee $10.00; Installation or replacement of building sewer, per 200 feet or part thereof - Fee $16.00; Installation or replacement of building water lines when not in conjunction with one of the items listed above - Fee $75.00; Installation or replacement of gas outlets or gas house connections, each - Fee $8.00; Minimum fee for any Plumbing permit shall not be less than $75.00",
+      "feeAsOf": "April 2026",
+      "sourceUrl": "https://www.cityofws.org/DocumentCenter/View/1012/Inspections-Division-Fee-Schedule-PDF"
+    },
+    "electrician-service-call": {
+      "requirement": "Winston-Salem prices residential electrical work by what is being done — a service change and a reconnect each have their own flat line, outlets and fixtures are banded, and individual appliances are charged per unit — with a flat minimum under every electrical permit.",
+      "fee": "Change of service: Residential - Fee $84.00; Reconnect current: Residential - Fee $75.00; Temporary current, individual meters - Fee $75.00; Temporary saw service - Fee $75.00; Rough hot outlets and fixtures: 1-50 - Fee $24.00, 51-100 - Fee $47.00; Appliances and equipment (including but not limited to ranges, furnaces, dishwashers, subpanels, etc.) each appliance - Fee $7.50; Minimum fee due for any Electrical permit shall not be less than $75.00",
+      "feeAsOf": "April 2026",
+      "sourceUrl": "https://www.cityofws.org/DocumentCenter/View/1012/Inspections-Division-Fee-Schedule-PDF"
+    }
+  },
+  "notVerified": [
+    "Whether replacing a smoke alarm by itself requires an electrical permit in Winston-Salem, and any fee for it — the city's fee schedule has no alarm or detector line and publishes no list of work exempt from permit",
+    "Winston-Salem's published list of work that needs no permit at all — no such handout was found on cityofws.org",
+    "Any dollar fee or bond amount for being set up as a contractor in the city's BuildIT permitting system",
+    "Any Winston-Salem or Forsyth County local amendment to the North Carolina codes beyond the city's published 2017 NEC carve-out for one- and two-family dwellings",
+    "City-specific water heater inspection items such as an expansion tank, drain pan or TPR discharge termination — Winston-Salem publishes no water heater handout or inspection checklist",
+    "The text of the Winston-Salem Code of Ordinances building provisions — the city's Code of Ordinances page served no reachable external code link to automated requests"
+  ]
+}

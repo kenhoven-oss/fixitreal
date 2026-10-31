@@ -1,0 +1,82 @@
+{
+  "citySlug": "st-petersburg-fl",
+  "cityName": "St. Petersburg",
+  "stateAbbr": "FL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of St. Petersburg Building Department, Construction Services and Permitting Division",
+    "url": "https://www.stpete.org/business/building_permitting/index.php"
+  },
+  "codeEdition": {
+    "text": "St. Petersburg publishes its own list of adopted codes, effective December 31, 2023: the 8th Edition (2023) Florida Building Code volumes for Residential, Building, Energy, Test Protocol, Plumbing, Mechanical, Existing Building, Fuel Gas and Accessibility, plus the 2023 Florida Fire Prevention Code. For electrical work the city names NEC 2020, NFPA 70, so the electrical edition in force lags the building code edition. The city points to the Pinellas County Construction Licensing Board for technical code amendments and to its own Municode Chapter 8-36 for administrative amendments.",
+    "sourceUrl": "https://www.stpete.org/Business/Building%20Forms%20&%20Applications/Current_Codes_Adopted.pdf"
+  },
+  "permitPolicy": {
+    "text": "A St. Petersburg homeowner can pull their own permit as an owner-builder, and the city's Owner/Contractor Disclosure Statement is the form that makes it official — the owner has to initial each of its numbered statements. It covers building or improving a one- or two-family residence for the owner's own use and occupancy, not for sale or lease, and the law presumes a violation if the home is sold or leased within one year of completion. The owner-builder must give direct on-site supervision, may not hire an unlicensed person as contractor or supervisor, and may not pass supervision to a contractor not licensed for the work. The city spells out the downside: violating the exemption is a first-degree misdemeanor carrying up to a year and a $1,000 fine, and the Building Official can withhold final approval or revoke the permit. Note the city also charges a property owner surcharge on owner-pulled permits.",
+    "sourceUrl": "https://www.stpete.org/csp_owner_contr_disclsoure.pdf"
+  },
+  "registration": {
+    "text": "Licensing in St. Petersburg runs through the Pinellas County Construction Licensing Board rather than the city alone. The city's own permit guidance states that the PCCLB requires anyone who advertises or markets themselves as a contractor to be registered and able to produce a PCCLB card, and that work meeting the PCCLB thresholds has to be done by a registered contractor even where the city has exempted the job from needing a permit. The city also points homeowners to the PCCLB to check whether a contractor is licensed in Pinellas County.",
+    "sourceUrl": "https://www.stpete.org/list_of_exempted_permits.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "St. Petersburg's published exemption list lets a plumber repair or replace an existing fixture in its present location without a permit, as long as the job does not involve replacing or rearranging valves, pipes or fixtures — and then carves water heaters straight back out, stating in so many words that the exemption does not apply to installing or replacing a water heater. So a heater swap is permitted work in St. Pete even though a like-for-like faucet or toilet swap in the same spot may not be.",
+      "sourceUrl": "https://www.stpete.org/list_of_exempted_permits.pdf"
+    },
+    {
+      "text": "The city draws a line inside drain repair that catches a lot of service calls. Stopping a leak in a drain, soil, waste or vent pipe is exempt, and so is clearing a stoppage or repairing a leak, valve or fixture. But if a concealed trap, drainpipe, soil, waste or vent pipe turns out to be defective and has to come out and be replaced with new material, the city treats that as new work needing a permit and an inspection under the Florida Building Code, Plumbing.",
+      "sourceUrl": "https://www.stpete.org/list_of_exempted_permits.pdf"
+    },
+    {
+      "text": "On the electrical side St. Petersburg exempts replacing a fixed motor or a fixed approved appliance of the same type and rating in the same location, reinstalling an attachment plug receptacle but not the outlet box for it, repairing an overcurrent device of the required capacity in the same location, and wiring under 25 volts that cannot supply more than 50 watts in a single-family or duplex structure. It also exempts low-voltage data, alarm and communication cable in a single-family or duplex home when it is not part of a larger project. Hurricane shutters wired directly to a power source are singled out as needing an electrical permit.",
+      "sourceUrl": "https://www.stpete.org/list_of_exempted_permits.pdf"
+    },
+    {
+      "text": "Gas appliance swaps get their own treatment: replacing an existing gas range, cook-top, oven or clothes dryer serving a one- or two-family dwelling needs no gas permit, but the city requires a Fuel Gas Testing Certification form. Relocating any of those appliances in a way that alters or changes the gas system does need a permit.",
+      "sourceUrl": "https://www.stpete.org/list_of_exempted_permits.pdf"
+    },
+    {
+      "text": "The exemptions do not survive a flood zone. St. Petersburg lists as an exception any project in a flood zone where a permit application and construction documents have been submitted showing work that would otherwise be exempt, and the city's own HB 803 notice limits the new small-project exemption to properties outside a flood hazard area. Separately, work in a locally or nationally designated historic district may not be exempt either, and the demolition of any structure supporting a roof load always needs a permit.",
+      "sourceUrl": "https://www.stpete.org/list_of_exempted_permits.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A water heater changeout in a St. Petersburg house or duplex always needs a permit — the city's fixture-replacement exemption specifically excludes water heaters — and it is priced as a flat service permit, with a separate line for a solar unit.",
+      "fee": "Service Permits, specified single-family and duplex residential permit fees: $65.00 (covers hot water heater unit changeout with no electric, no gas, with electric, with gas, with electric and gas, and the tankless equivalents with plumbing, gas and/or electric); Solar water heater (includes electric permit if required): $200.00; property owner surcharge $20.00 on each permit issued to a property owner for work costing more than $2,000.00",
+      "feeAsOf": "Revised 10/1/2017",
+      "sourceUrl": "https://www.stpete.org/Business/Building%20Forms%20&%20Applications/Fee_Schedule_Doc_Nov_2017.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "St. Petersburg publishes no garbage disposal line of its own; a like-for-like swap in the same spot can fall inside the city's exemptions for replacing an existing fixture in its present location and for replacing a fixed appliance of the same type and rating in the same location, with the Building Official holding the authority to decide what counts as minor work, and where a permit is needed it is the flat plumbing permit.",
+      "fee": "Other - Plumbing with no required plan review and one inspection: $65.00; permit fee where the valuation does not exceed $1,000.00: $50.00",
+      "feeAsOf": "Revised 10/1/2017",
+      "sourceUrl": "https://www.stpete.org/Business/Building%20Forms%20&%20Applications/Fee_Schedule_Doc_Nov_2017.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "A St. Petersburg plumbing permit that needs no plan review and one inspection is a flat fee, and the city sets a floor under its valuation-based fees for very small jobs; clearing a stoppage or repairing a leak, valve or fixture is on the exempt list and needs no permit at all.",
+      "fee": "Other - Plumbing with no required plan review and one inspection: $65.00; permit fee where the valuation does not exceed $1,000.00: $50.00; for a valuation over $1,000.00 up to $1,000,000.00, single family residential and duplexes $7.00 for each $1,000.00 or fraction thereof; property owner surcharge $20.00 on each permit issued to a property owner for work costing more than $2,000.00",
+      "feeAsOf": "Revised 10/1/2017",
+      "sourceUrl": "https://www.stpete.org/Business/Building%20Forms%20&%20Applications/Fee_Schedule_Doc_Nov_2017.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "St. Petersburg prices a residential electrical service change as its own flat permit, charges a smaller flat fee for electrical work that needs no plan review and one inspection, and sets a $50 floor for permits on work valued at $1,000 or less.",
+      "fee": "Electric Service Change - Residential: $100.00; Electric Service recertification (service and riser only): $175.00; Other - Electrical with no plan review and one inspection: $65.00; Electric pre-power inspection: $65.00; Saw pole: $120.00; permit fee where the valuation does not exceed $1,000.00: $50.00",
+      "feeAsOf": "Revised 10/1/2017",
+      "sourceUrl": "https://www.stpete.org/Business/Building%20Forms%20&%20Applications/Fee_Schedule_Doc_Nov_2017.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "St. Petersburg's exempt list covers wiring under 25 volts that cannot supply more than 50 watts in a single-family or duplex home, and low-voltage alarm cable in such a home when it is not part of a larger project, so battery and low-voltage alarm work is treated as exempt while a 120-volt hardwired alarm circuit is not named among the exemptions.",
+      "sourceUrl": "https://www.stpete.org/list_of_exempted_permits.pdf"
+    }
+  },
+  "notVerified": [
+    "Any St. Petersburg permit fee line specific to smoke alarms or hardwired detectors",
+    "Whether a hardwired 120-volt smoke alarm replacement by itself triggers an electrical permit in St. Petersburg — the exempt list neither names it nor exempts it",
+    "Whether the Pinellas County Construction Licensing Board charges a registration fee or requires a bond, and the amounts — no figure is published on the city pages reviewed",
+    "The Pinellas County technical code amendments to the Florida Building Code that the city points contractors to",
+    "The text of St. Petersburg Code of Ordinances Chapter 8 Article II (Building Code) and Chapter 12 section 12-6 (fee schedule) — Municode returned a Cloudflare challenge to automated requests, so only the city's own PDF fee schedule was used",
+    "Whether the city's PDF fee schedule revised 10/1/2017 has since been superseded by a figure adopted in the codified Chapter 12 fee schedule"
+  ]
+}

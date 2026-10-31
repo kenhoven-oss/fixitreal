@@ -1,0 +1,74 @@
+{
+  "citySlug": "jersey-city-nj",
+  "cityName": "Jersey City",
+  "stateAbbr": "NJ",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Jersey City Division of the Construction Code Official (Dept. of Housing, Economic Development & Commerce)",
+    "url": "https://www.jerseycitynj.gov/cityhall/HousingAndDevelopment/constructioncode"
+  },
+  "codeEdition": {
+    "text": "Jersey City administers and enforces the New Jersey Uniform Construction Code. As of the August 17, 2026 adoption date the state subcodes are the 2024 International Residential Code (NJ edition) for one- and two-family homes, the 2024 National Standard Plumbing Code (NJ edition), the 2023 National Electrical Code (NFPA 70), the 2024 International Fuel Gas Code and the 2024 International Mechanical Code.",
+    "sourceUrl": "https://www.nj.gov/dca/codes/codreg/current.shtml"
+  },
+  "permitPolicy": {
+    "text": "Jersey City issues permits centrally through its online permit portal; plumbing and electrical technical sections must be sealed by the licensed trade contractor. If the owner of a one- or two-family home does the work personally, a certification inside the permit folder covers it, which matches the state rule that only licensed tradespeople may do plumbing or electrical work except a single-family homeowner on his or her own dwelling. Anyone filing on someone else's behalf must be registered with the city as a Permit Processor. Every New Jersey permit also carries a state training surcharge of $1.90 per $1,000 of construction value with a $1.00 minimum.",
+    "sourceUrl": "https://www.jerseycitynj.gov/cityhall/HousingAndDevelopment/constructioncode/application___review_process/"
+  },
+  "registration": {
+    "text": "A Jersey City Contractor License is required for every contractor who does not hold a state trade license, and for all work on commercial property. Applications go through the city permit portal. The city does not publish the license fee or bond amount on this page.",
+    "sourceUrl": "https://www.jerseycitynj.gov/cityhall/HousingAndDevelopment/constructioncode/contractors___permit_processors/"
+  },
+  "codeItems": [
+    {
+      "text": "Jersey City runs its own ongoing backflow-preventer program: each device must be tested annually by a licensed plumber and the report filed with the plumbing subcode official, and the city bills a $75.00 administrative fee per device per year. Skipping it can draw a violation.",
+      "sourceUrl": "https://www.jerseycitynj.gov/cityhall/HousingAndDevelopment/constructioncode/ongoing_inspections___invoices/"
+    },
+    {
+      "text": "The Jersey City Division of Fire uses its own certification form on which an electrician, fire alarm company or the owner certifies that every battery-operated smoke detector on the premises is a 10-year sealed device and working, and that the carbon monoxide detectors work.",
+      "sourceUrl": "https://www.jerseycitynj.gov/UserFiles/Servers/Server_6189660/File/City%20Hall/Public%20Safety/Fire%20Prevention/SMOKE%20%20CARBON%20MONOXIDE%20DETECTOR%20CERTIFICATION%20FORM.pdf"
+    },
+    {
+      "text": "Homes built before January 1, 1977 must have 10-year sealed-battery smoke alarms, and one- and two-family houses have to comply before a sale or change of occupancy. AC hardwired alarms and CO alarms are outside the rule, but a combination smoke/CO single-station device must be the 10-year sealed type.",
+      "sourceUrl": "https://www.nj.gov/dca/divisions/dfs/pdf/10%20year%20sealed%20battery%20smoke%20alarm%20press%20release.pdf"
+    },
+    {
+      "text": "New Jersey does not use the IPC or UPC: its plumbing subcode is the National Standard Plumbing Code, 2024 NJ edition, and the NJ edition defines hot water as potable water at not less than 120 and not more than 140 degrees F, which sets the window a replacement water heater's thermostat has to fall inside.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_3.pdf"
+    },
+    {
+      "text": "New Jersey strikes two national AFCI rules from the electrical subcode: NEC 210.12(E) on branch-circuit extensions, modifications and replacements, and NEC 406.4(D)(4) on arc-fault protection when a receptacle is replaced. A small electrical repair in Jersey City therefore does not trigger the AFCI upgrade a national guide would describe.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_3.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater with one of like capacity is classed as minor work in New Jersey: a plumbing permit is still required, but you may start once the city has been given notice, with the permit application following within five business days.",
+      "sourceUrl": "https://www.nj.gov/dca/codes/codreg/pdf_regs/njac_5_23_2.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Jersey City lists swapping a smoke alarm or detector head for a like device, and installing battery-powered smoke alarms, as ordinary maintenance that needs no permit.",
+      "sourceUrl": "https://www.jerseycitynj.gov/cityhall/HousingAndDevelopment/constructioncode/ordinary_maintenance/"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Jersey City treats replacing a plumbing fixture with a similar fixture, with no change to the piping arrangement, as ordinary maintenance needing no permit; adding a fixture that was not there before is minor work and does need a permit.",
+      "sourceUrl": "https://www.jerseycitynj.gov/cityhall/HousingAndDevelopment/constructioncode/ordinary_maintenance/"
+    },
+    "plumber-service-call": {
+      "requirement": "Jersey City lists clearing a stoppage, repairing a leak by replacing piping, and replacing faucets, valves, traps or ball cocks as ordinary maintenance that needs no permit; rearranging or resizing water, waste or vent piping does need a plumbing permit.",
+      "sourceUrl": "https://www.jerseycitynj.gov/cityhall/HousingAndDevelopment/constructioncode/ordinary_maintenance/"
+    },
+    "electrician-service-call": {
+      "requirement": "Jersey City lists replacing a receptacle, switch or light fixture with a like item as ordinary maintenance needing no permit, provided a replacement in a GFCI, damp or tamper-resistant location meets NEC 406.4(D).",
+      "sourceUrl": "https://www.jerseycitynj.gov/cityhall/HousingAndDevelopment/constructioncode/ordinary_maintenance/"
+    }
+  },
+  "notVerified": [
+    "Jersey City construction permit fee amounts - the city's fee ordinances (Ch. 131 Uniform Construction Code and Ch. 160 Fees and Charges) are hosted only on a code library that blocks automated requests, and no fee figures appear on the city's own pages",
+    "water-heater-replacement permit fee",
+    "plumber-service-call permit fee",
+    "electrician-service-call permit fee",
+    "Jersey City Contractor License fee and bond amount",
+    "whether Jersey City adds local technical amendments to the state subcodes"
+  ]
+}

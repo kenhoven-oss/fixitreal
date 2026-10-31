@@ -1,0 +1,85 @@
+{
+  "citySlug": "vancouver-wa",
+  "cityName": "Vancouver",
+  "stateAbbr": "WA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Vancouver (WA) Community Development Department, Permit Center",
+    "url": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/"
+  },
+  "codeEdition": {
+    "text": "Vancouver enforces the 2021 I-Codes with Washington State Amendments, effective 03/15/2024, plus the 2023 National Electrical Code effective 04/01/2024. Named editions include the 2021 IRC with WAC 51-51, the 2021 Uniform Plumbing Code with WAC 51-56, the 2021 International Mechanical Code with WAC 51-52, the 2021 International Fuel Gas Code with WAC 51-52-21000, the 2021 Washington State Energy Code, and Vancouver Municipal Code Title 17.",
+    "sourceUrl": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/building-codes-and-regulations/"
+  },
+  "permitPolicy": {
+    "text": "Vancouver issues its own MPE (mechanical, plumbing, electrical) trade permits for standalone jobs such as minor repairs, replacements and alterations that can be inspected in two visits; if the work is part of a remodel it is folded into the Residential Building Permit instead. Under Washington law a person does not need an electrical license or a certified electrician to do electrical work at their own residence, and does not need a plumbing license to do plumbing work at their own residence, though the state exemptions do not override a city's own electrical or plumbing code.",
+    "sourceUrl": "https://www.cityofvancouver.us/business/building-construction/residential-building-permits/"
+  },
+  "registration": {
+    "text": "Vancouver requires a city business license (a state-issued license carrying a Vancouver city endorsement) for any business physically located in the city or whose staff engage in business inside city limits, which captures contractors coming in to work. As of January 1, 2026 the annual city fee is $0 for reported in-city gross income of $4,000 or less, $53.00 for over $4,000 through $53,000, and $347.00 plus $165.00 per calculated employee (minimum total $512.00) above $53,000. This is on top of Washington State contractor registration and trade certification.",
+    "sourceUrl": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/business-and-special-licenses/"
+  },
+  "codeItems": [
+    {
+      "text": "Washington's amended plumbing code, which Vancouver adopts, requires every water heater to be anchored or strapped against earthquake movement, with straps in the upper third and lower third of the tank's height and the lower strap kept at least four inches away from the controls.",
+      "sourceUrl": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0500"
+    },
+    {
+      "text": "Washington requires consumer electric storage water heaters to carry a modular demand-response communications port meeting the March 2018 ANSI/CTA-2045-A standard. Units built before January 1, 2022 (before January 1, 2021 for heat-pump types) are excepted, so this mostly affects what a new replacement tank must have.",
+      "sourceUrl": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0500"
+    },
+    {
+      "text": "A fuel-burning water heater in a Vancouver bedroom or bathroom has to sit in a closet used only for the water heater, with a listed gasketed self-closing door, a threshold and bottom seal, and all combustion air drawn from outdoors. The alternative is a direct-vent unit.",
+      "sourceUrl": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0500"
+    },
+    {
+      "text": "Washington's amended plumbing code sets a minimum first-hour rating for a replacement water heater based on the number of bedrooms and bathrooms, so a like-for-like swap can still fail if the new unit is undersized for the house.",
+      "sourceUrl": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-56-0500"
+    },
+    {
+      "text": "Vancouver sits in radon Zone 1 (High), so residential work is subject to Washington's radon protection and testing provisions in WAC 51-51-R332 and IRC Appendix F. Vancouver also assigns residential Seismic Design Category D1.",
+      "sourceUrl": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/building-codes-and-regulations/"
+    },
+    {
+      "text": "Vancouver requires duct testing on any single-family, mechanical or residential permit where a furnace or air conditioner is added or replaced, and the test affidavit must reach the city before final approval.",
+      "sourceUrl": "https://www.cityofvancouver.us/business/permits-licenses-and-inspections/building-codes-and-regulations/"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Vancouver takes an MPE trade permit, a plumbing permit for an electric unit and a mechanical permit for a gas one, and the inspector checks seismic strapping and the water heater's sizing against the number of bedrooms and bathrooms.",
+      "fee": "Plumbing: water heater $15.14 per item, with a minimum fee of $67.80 for an electric water heater. Mechanical: water heater $14.46 and flue vent for water heater $14.46 per item, with a minimum fee of $67.80 for a gas water heater. Two inspections are included per permit",
+      "feeAsOf": "Effective 1/1/2026; revised 12/15/2025",
+      "sourceUrl": "https://www.cityofvancouver.us/wp-content/uploads/2025/12/Electrical_Mechanical_and_Plumbing-2026.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is a listed plumbing fixture in Vancouver's fee schedule, so replacing one takes a plumbing permit charged per item against the standard MPE minimum fee.",
+      "fee": "Garbage disposal $15.14 per item; minimum fee $78.99 (consistent for all MPE permits), whichever is greater",
+      "feeAsOf": "Effective 1/1/2026; revised 12/15/2025",
+      "sourceUrl": "https://www.cityofvancouver.us/wp-content/uploads/2025/12/Electrical_Mechanical_and_Plumbing-2026.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Standalone plumbing repairs, replacements and alterations in Vancouver take an MPE plumbing permit priced per fixture or item, and the permit covers two inspections before trip fees start.",
+      "fee": "$15.14 per fixture or item for most fixtures; minimum fee $78.99 (consistent for all MPE permits); residential backflow preventer $24.36 with a $67.80 minimum; inspection requested but not ready, or each additional inspection over 2 per permit, $49.00; inspection of an existing installation $97.00",
+      "feeAsOf": "Effective 1/1/2026; revised 12/15/2025",
+      "sourceUrl": "https://www.cityofvancouver.us/wp-content/uploads/2025/12/Electrical_Mechanical_and_Plumbing-2026.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Vancouver runs its own electrical permit program and charges per item installed or altered, so a service call that adds or changes circuits or replaces a service needs an MPE electrical permit.",
+      "fee": "Residential branch circuits: 1-4 circuits $63.18, each additional circuit $7.25. Residential replacement or altered service 0-200 amps with feeder $88.20. Maintenance or repair of mast or meter $48.05. Minimum fee $78.99, or the calculated fee, whichever is greater",
+      "feeAsOf": "Effective 1/1/2026; revised 12/15/2025",
+      "sourceUrl": "https://www.cityofvancouver.us/wp-content/uploads/2025/12/Electrical_Mechanical_and_Plumbing-2026.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Under the Washington residential code Vancouver enforces, a permitted alteration, repair or addition forces the whole dwelling up to new-construction smoke alarm standards, but pure plumbing, electrical or mechanical installation, alteration or repair is expressly exempt from that trigger, and alarms installed under that retrofit rule may be battery powered.",
+      "sourceUrl": "https://app.leg.wa.gov/WAC/default.aspx?cite=51-51-0314"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee (Vancouver's MPE fee schedule has no smoke alarm line item)",
+    "Whether Vancouver itself allows a homeowner to pull an MPE electrical or plumbing permit on their own residence (the city's residential permit pages do not state it; only the Washington state licensing exemptions were verified)",
+    "Vancouver Municipal Code Title 17 text and VMC 17.08.090 permit provisions (vancouver.municipal.codes is behind a Cloudflare bot check)",
+    "Any Vancouver-specific amendment to the plumbing, mechanical or electrical code beyond the state amendments",
+    "Separate city trade registration for plumbers or electricians beyond the general city business license"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "citySlug": "corpus-christi-tx",
+  "cityName": "Corpus Christi",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Corpus Christi Development Services Department, Building Division (2406 Leopard St.)",
+    "url": "https://www.corpuschristitx.gov/department-directory/development-services/"
+  },
+  "codeEdition": {
+    "text": "Corpus Christi adopted the 2021 editions of the International Building Code, Existing Building Code, Fuel Gas Code, Mechanical Code, Plumbing Code, Residential Code and Swimming Pool and Spa Code, plus the 2020 National Electrical Code, with local amendments effective August 1, 2023. The city also lists the 2015 International Energy Conservation Code as adopted. The amendments are written into the adopting ordinance and carried in Chapter 14, Article II of the city code.",
+    "sourceUrl": "https://www.corpuschristitx.gov/department-directory/development-services/construction-codes-and-ordinances/"
+  },
+  "permitPolicy": {
+    "text": "Corpus Christi's amended IRC Section R105.10 lets the city issue a permit directly to a property owner for construction, alteration, installation or repair in a single-family home or mobile home they own and occupy as their homestead. There is one carve-out that matters for a gas water heater: the city will not issue a homeowner permit for work on natural gas service systems unless the owner personally holds a Texas master plumber licence.",
+    "sourceUrl": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+  },
+  "registration": {
+    "text": "Corpus Christi's published contractor programme — STAR (Safety, Training, Accountability and Registration) — is voluntary, and the city states contractors are not required to participate. Its three tiers run from Bronze (application, code of ethics acknowledgement, proof of general liability insurance and an approved criminal background check) to Gold (five years registered with the department, membership of a local professional body and an ICC certification held by one of the contractor's agents). In the Licenses/Registrations part of the fee schedule the city prices only a house mover at $194.73, a lawn irrigator at $197.65 and a backflow prevention assembly tester at $197.62 — no separate electrical or plumbing contractor registration fee is listed.",
+    "sourceUrl": "https://www.corpuschristitx.gov/media/vtiajsfh/ib016-contractor-registration-program-031425-updated.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Corpus Christi deepened the gas line burial rule, which bites on an outdoor gas run to a water heater or a generator. The city struck the International Fuel Gas Code's 12-inch minimum and wrote in 18 inches below grade, and where 18 inches of cover cannot be held, the pipe has to be run in conduit or bridged and shielded. The same amendments ban all threaded bushings and bar a spring-type mechanical gauge from being used for the gas pressure test.",
+      "sourceUrl": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+    },
+    {
+      "text": "The city widened the NEC's GFCI list well past the national text. Receptacles in laundry areas, boathouses, indoor damp and wet locations, and any receptacle within six feet of the outside edge of a bathtub or shower wall all need GFCI protection in Corpus Christi. The city then wrote in its own relief: a receptacle outlet feeding a refrigerator or freezer needs neither AFCI nor GFCI protection where it is a single-receptacle device on a dedicated 20-amp 120-volt circuit, and a receptacle supplying only a permanently installed fire or burglar alarm is exempt in a basement.",
+      "sourceUrl": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+    },
+    {
+      "text": "On a service upgrade Corpus Christi is stricter than the NEC about how the service is run. Its added Article 230.11 requires service-entrance conductors and sub feeds to distribution panels to be in conduit or raceway, and a masthead supporting the service drop must extend at least 42 inches above the roof in rigid metal conduit two inches or larger. The city also amended 230.70 so a service disconnect may not be installed in a bathroom.",
+      "sourceUrl": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+    },
+    {
+      "text": "Corpus Christi sits in a Texas Department of Insurance windstorm area, so the city's inspection is not the end of it. Its amendment at Section 110.3.4.1 states plainly that a city framing inspection does not include or substitute for the inspections or certifications TDI windstorm requirements call for, and the city's residential remodel checklists require a completed TDI WPI-1 form from the windstorm engineer or inspector. The city also added a hurricane inspection provision for periods NOAA designates.",
+      "sourceUrl": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+    },
+    {
+      "text": "Corpus Christi rewrote the plumbing inspection sequence and added a pressure test to it. The city renamed the IPC rough-in inspection a Top Out inspection, to be made once sanitary, storm and water distribution piping is roughed in and before wall or ceiling membranes go on, and requires a pressure test on all piping before that inspection can be approved. Rough inspection of plumbing, gas, LPG and electrical work must happen before anything is covered and before fixtures or appliances are set.",
+      "sourceUrl": "https://www.corpuschristitx.gov/media/2rpaite2/ordinance-2021-international-codes.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Corpus Christi needs a plumbing permit, and the city inspects before anything is covered and before the appliance is set. A homeowner can pull the permit for their own homestead, but not for the natural gas side of the job unless they hold a Texas master plumber licence.",
+      "fee": "Residential plumbing permit $.075 per square foot, minimum permit fee $146.41, plus a 4.5% surcharge",
+      "feeAsOf": "Rev. October 1, 2025 (FY2026 Development Fee Schedule, 10/1/2025–9/30/2026)",
+      "sourceUrl": "https://www.corpuschristitx.gov/media/c5dka34k/fy-2026-development-fee-schedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Corpus Christi charges a residential plumbing permit by the square foot with a floor of $146.41, so small plumbing jobs effectively pay the minimum; the permit holder is responsible for scheduling the city's inspections.",
+      "fee": "Residential plumbing permit $.075 per square foot, minimum permit fee $146.41, plus a 4.5% surcharge; after-hours inspection $250.00",
+      "feeAsOf": "Rev. October 1, 2025 (FY2026 Development Fee Schedule, 10/1/2025–9/30/2026)",
+      "sourceUrl": "https://www.corpuschristitx.gov/media/c5dka34k/fy-2026-development-fee-schedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit in Corpus Christi is priced per square foot of the home with a published minimum, and the city's own amendments to the 2020 NEC — conduit for service-entrance conductors, a 42-inch masthead, no service disconnect in a bathroom and an expanded GFCI list — are what the inspector checks against.",
+      "fee": "Residential electrical permit $.075 per square foot, minimum permit fee $146.41, plus a 4.5% surcharge",
+      "feeAsOf": "Rev. October 1, 2025 (FY2026 Development Fee Schedule, 10/1/2025–9/30/2026)",
+      "sourceUrl": "https://www.corpuschristitx.gov/media/c5dka34k/fy-2026-development-fee-schedule.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement — neither the adopting ordinance nor the fee schedule names a food waste disposer, and the city publishes no permit-exempt work list, so no requirement or fee could be sourced",
+    "smoke-detector-replacement — Corpus Christi's local amendments do not touch IRC Section R314 or the NEC on smoke alarms, and no city page states whether swapping a hardwired alarm needs a permit",
+    "Whether Corpus Christi mandates its own electrical or plumbing contractor registration on top of the state licence, and any fee or bond for it — the city's only published contractor programme (STAR) is voluntary, and Chapter 14 of the Code of Ordinances is hosted on a code platform that blocked automated retrieval",
+    "Any Corpus Christi amendment on TPR relief-valve discharge, water heater drain pans or thermal expansion control — the adopted local amendments to the 2021 IPC and IRC do not reach those sections"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "citySlug": "shreveport-la",
+  "cityName": "Shreveport",
+  "stateAbbr": "LA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Shreveport Division of Permits and Inspections (Department of Public Works)",
+    "url": "https://shreveportla.gov/469/Permits"
+  },
+  "codeEdition": {
+    "text": "Shreveport states that construction must conform to the 2021 International Building Code, 2021 International Existing Building Code, 2021 International Residential Code, 2021 International Mechanical Code, 2021 International Plumbing Code, 2021 International Fuel Gas Code and the 2020 National Electrical Code, with the state amendments adopted through the Louisiana State Uniform Construction Code. The city publishes that state code document (LAC Title 17, Part I), whose current amendments took effect January 1, 2023.",
+    "sourceUrl": "https://shreveportla.gov/475/Building-Codes"
+  },
+  "permitPolicy": {
+    "text": "A homeowner in Shreveport may apply for their own building permit, but the electrical, plumbing and HVAC work itself must be done by registered and licensed contractors, who register their trade permits against the homeowner's building permit. If the homeowner pulls the permit, residential work valued over $7,500 needs a Homeowner's Exemption from Licensure under Louisiana law, and commercial projects over $50,000 require a licensed contractor. Sub-contractors call in their own trade inspections; the owner or general contractor schedules only the building inspections. Starting work without a permit doubles the permit fee and adds a $100 penalty.",
+    "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/30216/Your-Guide-to-Permits-And-Inspections-MPC-2026"
+  },
+  "registration": {
+    "text": "Under Sec. 22-2 of the Shreveport Municipal Code, anyone who wants to do electrical, mechanical or plumbing work in the division's jurisdiction must register with the Permits and Inspections Division first. Registration is per person (master, journeyman or apprentice), renews annually for all trades, and requires a current liability insurance certificate. On top of that, electrical and HVAC contractors doing work over $10,000 need a State of Louisiana master license from the Licensing Board for Contractors, and plumbers need a journeyman or master license from the State Plumbing Board of Louisiana. The city does not publish the registration fee amount.",
+    "sourceUrl": "https://shreveportla.gov/477/Contractors-Registration"
+  },
+  "codeItems": [
+    {
+      "text": "Louisiana rewrites the water-heater pan rule that Shreveport enforces: the drain pan must be at least 2 inches deep, big enough and shaped to catch all dripping or condensate from the tank, and drained by an indirect waste pipe of not less than 1 inch diameter in a material listed in Table 605.4.",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/23348"
+    },
+    {
+      "text": "The state amendment to plumbing code Section 504.6 spells out where the temperature-and-pressure relief discharge may terminate: to the floor, to a waste receptor, to a mop sink or to the outdoors.",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/23348"
+    },
+    {
+      "text": "Carbon monoxide alarms are triggered by fuel-fired appliance work here. Louisiana adds an item to residential code Sections R315.2.1 and R315.2.2 requiring CO alarms inside each separate sleeping room and one in the living area when a dwelling uses a permanent fuel-fired appliance, including a standby generator installed outside, and the same addition applies to alterations, not just new work.",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/23348"
+    },
+    {
+      "text": "Louisiana edits the 2020 NEC's outdoor-outlet GFCI rule in Article 210.8(F) to add an exception saying GFCI protection is not required on HVAC equipment, and separately adopts a new Article 210.8(G) requiring GFCI protection on 125-volt, 15- and 20-amp receptacles where welders are operated.",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/23348"
+    },
+    {
+      "text": "On a service upgrade in an existing house, Louisiana's exception to NEC Article 230.71 lets pre-existing services, renovations, alterations, repairs and substantial improvements keep up to six switches or circuit breakers as the service disconnecting means rather than forcing the single-disconnect rule.",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/23348"
+    },
+    {
+      "text": "Shreveport requires backflow preventers on fire lines, yard sprinklers, and at funeral homes, high-rise buildings, hospitals, hotels, motels, restaurants and rest homes, and every backflow preventer must be tested when installed and every year afterwards.",
+      "sourceUrl": "https://shreveportla.gov/474/Back-Flow-Preventers"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Shreveport takes a plumbing permit, priced off the contract value against a flat minimum, and a registered plumber must do the work and call in the plumbing inspection.",
+      "fee": "Residential repairs, alterations and renovations: $4.20 per $1,000.00 of contract value, rounded to the next $1,000.00; minimum permit fee $31.50",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/30216/Your-Guide-to-Permits-And-Inspections-MPC-2026"
+    },
+    "plumber-service-call": {
+      "requirement": "Shreveport lets a plumber clear a stoppage, fix a leak, or pull and reset a toilet without a permit, but the moment a concealed trap, drain, water, soil, waste or vent pipe has to be removed and replaced with new material the city treats it as new work that needs a permit and an inspection.",
+      "fee": "Residential repairs, alterations and renovations: $4.20 per $1,000.00 of contract value, rounded to the next $1,000.00; minimum permit fee $31.50",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/30216/Your-Guide-to-Permits-And-Inspections-MPC-2026"
+    },
+    "electrician-service-call": {
+      "requirement": "Most electrical work in Shreveport needs a permit. The city's short exempt list covers only plug-in decorative lighting, resetting a receptacle plug (not the outlet box), swapping a branch-circuit breaker of the same rating in the same spot, under-25-volt low-energy wiring, and minor repairs such as changing lamps.",
+      "fee": "Residential repairs, alterations and renovations: $4.20 per $1,000.00 of contract value, rounded to the next $1,000.00; minimum permit fee $31.50. Inspections inside the city limits are $68.25 each, and a reinspection is $68.25",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/30216/Your-Guide-to-Permits-And-Inspections-MPC-2026"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Shreveport requires a permit for most remodeling work including most plumbing and electrical work, and its exempt list stops short of replacing a fixture, so a disposal swap is permit work priced off the contract value.",
+      "fee": "Residential repairs, alterations and renovations: $4.20 per $1,000.00 of contract value, rounded to the next $1,000.00; minimum permit fee $31.50",
+      "sourceUrl": "https://shreveportla.gov/DocumentCenter/View/30216/Your-Guide-to-Permits-And-Inspections-MPC-2026"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee in Shreveport",
+    "dollar amount of the Shreveport contractor's registration fee under Municipal Code Sec. 22-2",
+    "effective or revision date printed on the Sec. 22-1 fee schedule - the city's guide reproduces the schedule without printing one, and library.municode.com, which hosts the codified Shreveport ordinances, blocks automated requests",
+    "whether a separate stand-alone plumbing or electrical permit carries the $68.25 per-inspection charge (the schedule excepts stand-alone permits without defining them)"
+  ]
+}

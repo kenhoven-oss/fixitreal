@@ -1,0 +1,81 @@
+{
+  "citySlug": "anchorage-ak",
+  "cityName": "Anchorage",
+  "stateAbbr": "AK",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Municipality of Anchorage, Development Services Department (Building Safety)",
+    "url": "https://www.muni.org/departments/public_works_infrastructure/development_services/permits_inspections/permits.php"
+  },
+  "codeEdition": {
+    "text": "Anchorage adopts its own package of codes in Anchorage Municipal Code Title 23: the 2024 International Building, Mechanical, Residential, Fire, Energy Conservation, Existing Building and Fuel Gas Codes, the 2024 Uniform Plumbing Code (not the IPC), and the 2023 National Electrical Code, each by reference with local amendments. The current local amendments took effect May 18, 2026.",
+    "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.05.pdf"
+  },
+  "permitPolicy": {
+    "text": "Inside the Building Safety Service Area, any owner, contractor or authorized agent must apply to the building official and get a permit before replacing any electrical, gas, mechanical or plumbing system, unless the code specifically exempts the work. Outside that service area the building permit, plan review and inspection process is optional, and only land use permits are required for new buildings, additions or a change of use.",
+    "sourceUrl": "https://www.muni.org/departments/public_works_infrastructure/development_services/permits_inspections/residential_building_permits.php"
+  },
+  "registration": {
+    "text": "Anchorage licenses trades itself on top of the state. Work regulated by Title 23 has to be administered by contractors licensed by both the State of Alaska and the Municipality in the relevant trade, and that licensing applies even when the work is exempt from needing a permit. Any contractor or journeyman doing gas piping, plumbing or sheet metal work must be tested and licensed by the Municipality, and it is unlawful to work as a plumber, gas fitter or sheet metal journeyman without a municipal journeyman certificate of qualification, or as a plumber or sheet metal trainee without a trainee certificate. A property owner is excepted: an owner may administer alterations to an existing structure and may do the work on their own existing structure or their own residence.",
+    "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.10.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Anchorage requires seismic strapping on water heaters, and its local amendment only relaxes it for very small tanks: a tank-type gas or electric heater of 10 gallons or less needs just one approved strap, placed as near the vertical middle of the heater as possible without blocking access to the controls.",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.25.pdf"
+    },
+    {
+      "text": "Anchorage rewrote the drain pan rule. A water heater must sit in a watertight corrosion-resistant pan with a drain of at least 3/4 inch discharging to an approved location, and a water heater enclosure must have an approved floor drain. The floor drain is waived for a garage whose floor slopes to the exterior, for a heater with a listed flood-control safety device, and for an attic or above-ceiling install whose pan drains to an approved location; the pan itself is waived on a concrete slab on grade and in a garage where corrosion-resistant material covers the whole platform and turns up the adjoining walls at least two inches.",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.25.pdf"
+    },
+    {
+      "text": "Where a water heater is in an Anchorage garage, the local amendment requires the relief valve piping to discharge to the floor over the edge of the platform rather than terminating wherever the manufacturer's generic instructions allow.",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.25.pdf"
+    },
+    {
+      "text": "Anchorage lets a properly sized potable-water expansion tank stand in for water hammer arresters in a single-family or duplex home, provided it is installed on the cold water piping between the house shutoff valve and each water heater; if the expansion tank does not cure the water hammer, mechanical arresters are then required.",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.25.pdf"
+    },
+    {
+      "text": "Anchorage sets a minimum rather than only a maximum hot water temperature: the hot water supplied to showers, tub-and-shower combinations and tub fillers must be at least 110 degrees Fahrenheit, except for engineered systems.",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.25.pdf"
+    },
+    {
+      "text": "Anchorage's plumbing permit exemptions are narrow and specific: clearing stoppages, stopping leaks, pulling and resetting a water closet, and replacing a hose bibb, drinking fountain, wash fountain, sink or lavatory with its faucet, each only where no piping other than a trap or trap arm is replaced or rearranged. A water heater or other appliance swap is not on that list. On the electrical side the code does exempt repair or replacement of a fixed approved appliance of the same type and rating in the same location.",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.10.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Anchorage has a dedicated cheap permit for this job: a retrofit permit covers the like-for-like replacement of a water heater in a residential building of four or fewer dwelling units, needs no plan review, and includes two inspections in the fee. The inspector checks the Anchorage amendments - seismic strapping, the watertight pan with a 3/4-inch drain, and relief valve piping discharging over the platform edge in a garage.",
+      "fee": "$175, 2 inspections included (retrofit permit, like-for-like water heater replacement in a residential building of 4 or fewer dwelling units); extra inspections $175 per hour, 1 hour minimum",
+      "feeAsOf": "2026-05-18",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.10.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "An electrical, plumbing or mechanical alteration to an Anchorage home of four or fewer dwelling units is a retrofit permit with no plan review, priced at a flat fee that includes two inspections; a second re-inspection of the same correction issue is charged at a higher rate than the first.",
+      "fee": "$175, 2 inspections included (retrofit permit for an electrical, plumbing or mechanical alteration to a residential building of 4 or fewer dwelling units); inspections beyond those allotted $175 per hour (1 hour minimum); second and subsequent re-inspection of the same issue $265 per hour; unscheduled or after-hours inspection $350 per hour; Sunday or holiday inspection $400 per hour; backflow preventer test $175, 1 inspection",
+      "feeAsOf": "2026-05-18",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.10.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Swapping a garbage disposal is not one of Anchorage's listed plumbing permit exemptions, so it falls under the retrofit permit for the like-for-like replacement of plumbing, mechanical and electrical equipment, fixtures and appliances, at the same flat fee with two inspections included.",
+      "fee": "$175, 2 inspections included (retrofit permit, like-for-like replacement of plumbing, mechanical and electrical equipment, fixtures and appliances)",
+      "feeAsOf": "2026-05-18",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.10.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Small electrical jobs in Anchorage are priced as flat retrofit permits rather than by project value: one new 20-amp circuit with up to six general purpose receptacles or light fixtures, or up to six receptacles or fixtures added to existing 20-amp circuits, each carry the same flat fee with two inspections included, and no plan review is required.",
+      "fee": "$175, 2 inspections included (retrofit permit: one new 20 amp circuit with no more than six general purpose receptacles or light fixtures, or no more than six receptacles or fixtures added to existing 20 amp circuits); additional inspections $175 per hour, 1 hour minimum; code compliance inspection $175 per hour, 2 hour minimum, per inspector",
+      "feeAsOf": "2026-05-18",
+      "sourceUrl": "https://www.muni.org/Documents/Departments/Public%20Works%20and%20Infrastructure/Development%20Services%20home/codes-handouts/Code%20Archive%202018/CH%2023.10.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement requirement and fee for Anchorage - the Title 23 amendments to the International Residential Code contain no smoke alarm retrofit provision that was found, and it could not be confirmed whether a hardwired alarm swap falls under the electrical exemption for replacing a fixed appliance of the same type and rating",
+    "The effective date used for the Anchorage fee figures (May 18, 2026) is the date the Municipality's Codes page gives for the current Title 23 local amendments; the Chapter 23.10 PDF itself prints no date",
+    "Municipal contractor licence and journeyman certificate of qualification fee amounts, and any bond amount beyond the note that a building construction contractor may be asked to show the state-required bond",
+    "Whether a homeowner doing their own water heater or disposal swap pays the same retrofit permit fee as a contractor",
+    "Anchorage's amendments to the 2023 National Electrical Code (AMC 23.30) were not read, so no AFCI/GFCI scope item is recorded"
+  ]
+}

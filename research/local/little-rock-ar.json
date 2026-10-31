@@ -1,0 +1,82 @@
+{
+  "citySlug": "little-rock-ar",
+  "cityName": "Little Rock",
+  "stateAbbr": "AR",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Little Rock Planning and Development Department, Building Codes Division",
+    "url": "https://littlerock.gov/government/city-departments/planning-and-development/divisions/"
+  },
+  "codeEdition": {
+    "text": "Little Rock's enforced construction codes list, dated January 7, 2023, adopts the 2021 Arkansas Fire Prevention Code Vol. 2 as the building code and Vol. 3 as the residential code (both based on the 2021 International codes), the 2020 National Electrical Code as revised by Chapter 8 of the city's own ordinances, the 2018 Arkansas Plumbing Code with Appendices B, C, D and F, the 2018 Arkansas Fuel Gas Code, and the 2021 International Mechanical Code.",
+    "sourceUrl": "https://www.littlerock.gov/media/18644/enforced-construction-codes-2023-c-sized-sheet.pdf"
+  },
+  "permitPolicy": {
+    "text": "No electrical work may be done without a permit, and electrical permits are normally issued only to the master electrician in charge or to a licensed person. A homeowner can get a permit for work on the house they live in: they must show proof of ownership and that they occupy or will occupy it, and unless they already hold a State of Arkansas master or journeyman electrician license they pay a $35.00 consultation fee and sit down with the Electrical Inspections Supervisor, who judges their competence for the job before the permit is issued. If two consecutive inspections on the same work fail, the city can require a licensed electrician to finish it.",
+    "sourceUrl": "https://www.littlerock.gov/!userfiles/editor/docs/planning/Statics_Specialreports/Electric_code.pdf"
+  },
+  "registration": {
+    "text": "Before a permit is issued, Little Rock's permit desk wants a copy of the Arkansas Contractors License, a City of Little Rock contractor's (business/privilege) license from the Collector's Office, a $10,000 surety bond made out to the City of Little Rock, and for the special trades a copy of the master plumbing or master electrical license (Class A for mechanical). Electrical contracting firms must separately register their name, address and the master electrician supervising the business with the Building Codes Division permit section, and must report within three days if that master electrician leaves.",
+    "sourceUrl": "https://www.littlerock.gov/!userfiles/editor/docs/planning/building%20codes/Documents%20Needed%20For%20Permits%20030212.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Little Rock writes its own water-heater bonding rule: in one- and two-family dwellings a #6 copper minimum bonding conductor must run from the service enclosure to the water heater, with a jumper across the cold and hot water sides, and the gas house piping must be bonded from the service enclosure to the house side of the gas meter outside the house. All of these connections have to stay accessible.",
+      "sourceUrl": "https://www.littlerock.gov/!userfiles/editor/docs/planning/Statics_Specialreports/Electric_code.pdf"
+    },
+    {
+      "text": "Every outdoor convenience receptacle outlet in the city must be GFCI protected, with no exceptions carved out in the local article.",
+      "sourceUrl": "https://www.littlerock.gov/!userfiles/editor/docs/planning/Statics_Specialreports/Electric_code.pdf"
+    },
+    {
+      "text": "Smoke alarms in new one- and two-family homes must be hard-wired with battery backup, placed on each level, in each bedroom and in the hallway outside, and interconnected. The city applies that same new-construction standard to an existing home whenever its electrical system is rewired.",
+      "sourceUrl": "https://www.littlerock.gov/!userfiles/editor/docs/planning/Statics_Specialreports/Electric_code.pdf"
+    },
+    {
+      "text": "When new wiring goes into an existing building, the city will not approve it until existing hazardous wiring, open knife switches and open fuse blocks have been taken out. Any framing opened up during the work has to be rewired to current code.",
+      "sourceUrl": "https://www.littlerock.gov/!userfiles/editor/docs/planning/Statics_Specialreports/Electric_code.pdf"
+    },
+    {
+      "text": "The local article adds dedicated-circuit rules a national guide would not list: a refrigerator must have its own circuit, bathroom heat must be on its own circuit, a hydromassage tub circuit needs a readily accessible GFCI device, and a gas range needs a 120-volt receptacle placed behind it rather than above it.",
+      "sourceUrl": "https://www.littlerock.gov/!userfiles/editor/docs/planning/Statics_Specialreports/Electric_code.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Little Rock takes a plumbing permit, charged as a per-appliance unit fee against a flat minimum, with a data processing fee added on top.",
+      "fee": "$17.00 water heater (plumbing repair/alteration unit cost); minimum fee for any plumbing permit $50.00; data processing fee $25.00 in addition to the permit charge",
+      "feeAsOf": "December 6, 2022",
+      "sourceUrl": "https://www.littlerock.gov/media/19234/ord-22204-fees.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Repair or alteration of existing plumbing in Little Rock is permitted on a per-fixture basis against a $50 minimum, and a permit is required for any work over $5,000 or any work that requires an inspection.",
+      "fee": "$6.00 for each plumbing fixture outlet or appliance on repair/alteration/addition work; minimum fee for any plumbing permit $50.00; data processing fee $25.00",
+      "feeAsOf": "December 6, 2022",
+      "sourceUrl": "https://www.littlerock.gov/media/19234/ord-22204-fees.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "No electrical work may be performed in Little Rock without an electrical permit, and however small the itemized charges come to, the permit cannot cost less than the $50 minimum.",
+      "fee": "Minimum fee for permit for electrical work $50.00; itemized unit costs include $25.00 per inspection, $45.00 re-inspection and $45.00 investigation; data processing fee $25.00",
+      "feeAsOf": "December 6, 2022",
+      "sourceUrl": "https://www.littlerock.gov/media/19234/ord-22204-fees.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Little Rock's electrical fee schedule prices hard-wired smoke and carbon monoxide detectors by count, and the inspector will let five detectors be grouped into one inspection if they are all ready at the same time and in the same building.",
+      "fee": "$12.00 for 1-4 smoke or carbon monoxide detectors; $5.00 for each smoke detector over 4; minimum fee for permit for electrical work $50.00",
+      "feeAsOf": "December 6, 2022",
+      "sourceUrl": "https://www.littlerock.gov/media/19234/ord-22204-fees.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is a priced line item on both Little Rock's electrical and plumbing schedules, so the work is permittable, and a permit is required for any job over $5,000 or any job that requires an inspection.",
+      "fee": "Electrical: $6.00 for disposal/ceiling fan, vent hood, bath fan or exhaust fan (each). Plumbing: $6.00 per fixture outlet or appliance. Minimum fee $50.00 for either an electrical or a plumbing permit",
+      "feeAsOf": "December 6, 2022",
+      "sourceUrl": "https://www.littlerock.gov/media/19234/ord-22204-fees.pdf"
+    }
+  },
+  "notVerified": [
+    "whether a Little Rock homeowner may pull their own plumbing permit (the city's online electrical article states a homeowner path, but no equivalent published plumbing provision was found)",
+    "dollar amount of the City of Little Rock contractor's (business/privilege) license",
+    "whether the revised fee schedule proposed on the 16 December 2025 Board of Directors agenda was adopted (the Building Codes Division page still publishes Ord. No. 22,204 as the current Building Permit Fee Ordinance)",
+    "Little Rock plumbing-code local amendments (expansion tank, drain pan, TPR termination) - the adopted 2018 Arkansas Plumbing Code text was not reachable on an official host"
+  ]
+}

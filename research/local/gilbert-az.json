@@ -1,0 +1,80 @@
+{
+  "citySlug": "gilbert-az",
+  "cityName": "Gilbert",
+  "stateAbbr": "AZ",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Town of Gilbert Development Services, Plan Review & Inspection",
+    "url": "https://www.gilbertaz.gov/departments/development-services/plan-review-inspection"
+  },
+  "codeEdition": {
+    "text": "Gilbert enforces the 2018 I-Codes effective January 1, 2020: 2018 International Building Code, 2018 International Residential Code, 2018 International Mechanical Code, 2018 International Plumbing Code, 2018 International Fuel Gas Code, 2018 International Fire Code and 2018 International Energy Conservation Code, plus the 2017 National Electrical Code. The 2018 International Green Construction Code is adopted as a voluntary code. The town's own amendments are compiled as the Technical Codes of the Town of Gilbert, 2020 Edition.",
+    "sourceUrl": "https://www.gilbertaz.gov/departments/development-services/plan-review-inspection"
+  },
+  "permitPolicy": {
+    "text": "Gilbert's amended exempt-work list covers more than the model code does: solar photovoltaic, solar hot water and wind turbine systems, like-for-like water heater replacements, water softeners, and window replacement with the same style window in the same opening (egress must still be maintained). The solar, wind and water-heater exemption applies only when an Arizona licensed contractor does the installation. Arizona law separately exempts a property owner who does the work themselves on a structure they will occupy and that is not for sale or rent from contractor licensing.",
+    "sourceUrl": "https://gilbertaz.gov/home/showpublisheddocument/35111/637472746862800000"
+  },
+  "registration": {
+    "text": "Gilbert's published fee schedule lists a general Business License at $50 for most business types, first time or renewal, and a Homebased Business License at $50 per year. The schedule shows no separate plumbing or electrical contractor registration. Gilbert's code does require that work claiming the water heater and solar permit exemption be installed by an Arizona licensed contractor.",
+    "sourceUrl": "https://www.gilbertaz.gov/home/showpublisheddocument/5883/639184173264330000"
+  },
+  "codeItems": [
+    {
+      "text": "Gilbert spells out pan material for a water heater in an attic or furred space: galvanized steel at least 0.0236 inch thick, plastic at least 0.036 inch thick, or another approved pan.",
+      "sourceUrl": "https://gilbertaz.gov/home/showpublisheddocument/35111/637472746862800000"
+    },
+    {
+      "text": "Where structural conditions stop the pan drain from running outdoors, Gilbert lets it end between 6 and 24 inches above the adjacent garage floor, sloped so it drains outdoors.",
+      "sourceUrl": "https://gilbertaz.gov/home/showpublisheddocument/35111/637472746862800000"
+    },
+    {
+      "text": "Gilbert rewrote the temperature and pressure relief valve discharge rules: one of the model code's permitted terminations is deleted, discharge to an indirect waste receptor or outdoors is allowed, and the outdoor termination must sit not less than 6 inches and not more than 24 inches above the adjacent ground.",
+      "sourceUrl": "https://gilbertaz.gov/home/showpublisheddocument/35111/637472746862800000"
+    },
+    {
+      "text": "Gilbert narrowed arc-fault protection by striking kitchens and laundry areas from the first paragraph of the AFCI sections in both the NEC and the residential code, and deleted the laundry-area and dishwasher branch-circuit sections outright.",
+      "sourceUrl": "https://gilbertaz.gov/home/showpublisheddocument/35111/637472746862800000"
+    },
+    {
+      "text": "Gilbert added two GFCI exceptions for dwelling units: a receptacle that is not readily accessible, and a single or duplex receptacle in dedicated space for a cord-and-plug appliance that is not easily moved in normal use. The model code's kitchen dishwasher GFCI branch-circuit rule is deleted.",
+      "sourceUrl": "https://gilbertaz.gov/home/showpublisheddocument/35111/637472746862800000"
+    },
+    {
+      "text": "Gilbert added a new NEC section requiring service entrance equipment rated 1,000 amperes or more to be high-potential tested when first installed, with a written record kept.",
+      "sourceUrl": "https://gilbertaz.gov/home/showpublisheddocument/35111/637472746862800000"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Gilbert does not require a permit for a like-for-like water heater replacement when an Arizona licensed contractor installs it: a gas unit of equal or lower BTU/CFH rating or an electric unit of equal or lower amperage/voltage rating, not a tankless system, and listed and labeled by a nationally recognized third-party testing agency.",
+      "sourceUrl": "https://gilbertaz.gov/home/showpublisheddocument/35111/637472746862800000"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Gilbert that is not on the town's exempt list takes a plumbing permit, charged as a flat individual trade permit.",
+      "fee": "Individual Plumbing Permit - Residential $150; Commercial $300; Re-inspection Fee $150; inspection outside normal business hours $150 per hour (2 hour minimum)",
+      "feeAsOf": "Revised 7/1/2026",
+      "sourceUrl": "https://www.gilbertaz.gov/home/showpublisheddocument/5883/639184173264330000"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Gilbert takes an electrical permit, charged as a flat individual trade permit, and the town's own NEC amendments change what the inspector looks for on AFCI and GFCI protection.",
+      "fee": "Individual Electrical Permit - Residential $150; Commercial $300; Re-inspection Fee $150",
+      "feeAsOf": "Revised 7/1/2026",
+      "sourceUrl": "https://www.gilbertaz.gov/home/showpublisheddocument/5883/639184173264330000"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Gilbert's list of work exempt from a permit names water heaters, water softeners and window replacements but not garbage disposals, so replacing one falls under the town's residential plumbing permit.",
+      "fee": "Individual Plumbing Permit - Residential $150",
+      "feeAsOf": "Revised 7/1/2026",
+      "sourceUrl": "https://www.gilbertaz.gov/home/showpublisheddocument/5883/639184173264330000"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee (Gilbert's amendments touch smoke alarms only for R-4 occupancies and in-home child care, and the fee schedule has no smoke alarm line)",
+    "Which permit and fee apply to a water heater replacement that falls outside the exemption, such as a homeowner-installed unit, a tankless conversion or an upsized unit",
+    "The adopting ordinance number and effective date printed in the Technical Codes of the Town of Gilbert, 2020 Edition (the pages read carry no ordinance number; the town's code adoption log shows the water heater permit exemption originating with Ordinance 2238 on 6/30/2009)",
+    "Whether an out-of-town contractor must hold a Gilbert business license",
+    "Gilbert's backflow prevention ordinance (the town's Code Compliance, Ordinances & Backflow Prevention page could not be read)",
+    "Gilbert's expansion tank and sediment trap amendments, if any (none appear in the portion of the technical codes document that was readable)"
+  ]
+}

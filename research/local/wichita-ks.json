@@ -1,0 +1,90 @@
+{
+  "citySlug": "wichita-ks",
+  "cityName": "Wichita",
+  "stateAbbr": "KS",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Metropolitan Area Building and Construction Department (MABCD), the joint Wichita-Sedgwick County building authority",
+    "url": "https://www.sedgwick.gov/mabcd/"
+  },
+  "codeEdition": {
+    "text": "MABCD's adopted-code list for the City of Wichita and Sedgwick County: 2024 IBC and 2024 IEBC plus the 2018 IRC for building, 2023 NEC for electrical, 2024 IMC and 2021 IFGC for mechanical, and the 2021 Uniform Plumbing Code for plumbing. All of them are enforced as amended by the Wichita-Sedgwick County Unified Building and Trade Code (UBTC); the current consolidated UBTC the department publishes is dated 1/27/25.",
+    "sourceUrl": "https://www.sedgwick.gov/mabcd/codes-resolutions-ordinances/"
+  },
+  "permitPolicy": {
+    "text": "A homeowner can pull their own permit in Wichita only if they both own and occupy the home; if they own it but do not live in it, a licensed contractor must do the work. The homeowner files a Homeowner Declaration Form and then, for each trade, either names a licensed sub-contractor or sits a homeowner's exam, scored at 75% to pass. There is a separate water-heater exam alongside the electrical and plumbing ones. If an exam is failed, or if no exam is arranged before the permit issues, a licensed professional has to do that trade work. MABCD warns homeowners to refuse if a contractor asks them to pull the permit.",
+    "sourceUrl": "https://www.sedgwick.gov/mabcd/do-i-need-a-permit/"
+  },
+  "registration": {
+    "text": "MABCD licenses trade contractors itself, on top of any state credential, and no building permit is issued to a contractor who has not first obtained that license, is delinquent on the fee, or has had it suspended. Trade licences run two years and cost $360 each for Electrical, Plumbing, Gas Fitter, Mechanical, Air Conditioner & Heating, Drain Cleaner, Drain Layer, Refrigeration, Sheet Metal, Solar and others (trade licences expire in odd years). General licences run two years at $1,000 for Class A, $600 for Class B, $450 for Class C Residential and $360 for Class D Residential Maintenance, which is Wichita jurisdiction only. Liability insurance is also required.",
+    "sourceUrl": "https://www.sedgwick.gov/media/55369/fee-table-a.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Wichita turns the usual seismic-strap rule around. UBTC Sec. 3.1.086 amends UPC 507.2 so a water heater may be strapped rather than must be, and when it is, the straps go within the upper third and lower third of the tank height with at least 4 inches of clearance from the controls at the lower strap. The exception is the one that bites: a water heater elevated in an attic, or in or on an attic ceiling assembly, must be anchored or strapped.",
+      "sourceUrl": "https://www.sedgwick.gov/media/68299/wichita-sedgwick-county-unified-building-trade-code-ubtc-current-1-27-25-complete-ubtc.pdf"
+    },
+    {
+      "text": "Two local amendments give an installer a way out when the pan drain or the relief line cannot be run anywhere sensible, but both demand an alarm. Under Sec. 3.1.087 the pan drain may be capped if extending it is structurally impractical, provided a water alarm is installed; under Sec. 3.1.155 the temperature-and-pressure relief discharge piping may instead terminate into the water heater pan, again only with a water alarm.",
+      "sourceUrl": "https://www.sedgwick.gov/media/68299/wichita-sedgwick-county-unified-building-trade-code-ubtc-current-1-27-25-complete-ubtc.pdf"
+    },
+    {
+      "text": "Wichita deletes the water-heater section of the residential code outright. UBTC Sec. 2.4.900 removes IRC Section G2448 (624) and sends water heaters to Article 3 of the UBTC instead, so a water heater here is judged against the amended Uniform Plumbing Code, not the IRC chapter a national guide would cite.",
+      "sourceUrl": "https://www.sedgwick.gov/media/68299/wichita-sedgwick-county-unified-building-trade-code-ubtc-current-1-27-25-complete-ubtc.pdf"
+    },
+    {
+      "text": "The local amendment to UPC 414.3 lets a domestic dishwasher drain into the manufactured opening of a garbage disposal or into a wye branch tailpiece, and requires that the dishwasher discharge line be looped as high as possible inside the sink cabinet and securely fastened. An inspector looking at a disposal changeout will check that loop.",
+      "sourceUrl": "https://www.sedgwick.gov/media/68299/wichita-sedgwick-county-unified-building-trade-code-ubtc-current-1-27-25-complete-ubtc.pdf"
+    },
+    {
+      "text": "Wichita rewrites the 2023 NEC's GFCI scope. UBTC Sec. 4.2.165 drops GFCI protection for a cord-and-plug sewage ejector or sump pump on an individual motor branch circuit; Sec. 4.2.166 drops it for a cord-and-plug garage door opener on a single ceiling receptacle directly above the motor; and Secs. 4.2.167 and 4.2.169 push the NEC's 250-volt receptacle and 250-volt outdoor-outlet GFCI requirements out to January 1, 2027.",
+      "sourceUrl": "https://www.sedgwick.gov/media/68299/wichita-sedgwick-county-unified-building-trade-code-ubtc-current-1-27-25-complete-ubtc.pdf"
+    },
+    {
+      "text": "Two service-side local rules catch out-of-town electricians: UBTC Sec. 4.2.110 bans splicing service-entrance conductors except in five listed cases, and Sec. 4.2.120 requires any disconnecting means outside a building to sit at least six feet above finish grade unless it is a dead-front pullout or heavy-duty type.",
+      "sourceUrl": "https://www.sedgwick.gov/media/68299/wichita-sedgwick-county-unified-building-trade-code-ubtc-current-1-27-25-complete-ubtc.pdf"
+    },
+    {
+      "text": "Smoke-alarm placement is amended locally. UBTC Sec. 2.4.320 rewrites IRC R314.3 to require alarms outside each separate sleeping area in the immediate vicinity of the bedrooms and on each additional story including basements and cellars, and adds that the alarm must be clearly audible in all bedrooms over background noise with all intervening doors closed. The interconnection amendment accepts wireless alarms that all sound together in place of physical interconnection.",
+      "sourceUrl": "https://www.sedgwick.gov/media/68299/wichita-sedgwick-county-unified-building-trade-code-ubtc-current-1-27-25-complete-ubtc.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Wichita takes a plumbing permit, and MABCD prices the heater as its own line item on top of a flat permit issuance fee.",
+      "fee": "Water Heater New or Replacement $9.00; Permit Issuance Fee $25.00",
+      "feeAsOf": "Rev. 5/9/2019",
+      "sourceUrl": "https://www.sedgwick.gov/media/55343/fee-table-h.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing repair work in Wichita is permitted item by item against a flat permit issuance fee; plumbing work done under a one- or two-family building permit does not need a separate plumbing permit unless it starts more than 180 days after that permit was issued.",
+      "fee": "Permit Issuance Fee $25.00; Waste Openings $4.50; Water Service New or Replacement $5.00; Miscellaneous $9.00; Gas Opening / Pressure Test $9.00",
+      "feeAsOf": "Rev. 5/9/2019",
+      "sourceUrl": "https://www.sedgwick.gov/media/55343/fee-table-h.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Almost all electrical work in Wichita needs a permit: the only work the code exempts is listed cord-and-plug temporary decorative lighting and most communication wiring. Charges are per circuit, device or service against a flat permit issuance fee.",
+      "fee": "Permit Issuance Fee $25.00; 120 volt Circuit $2.00; Outlets Added to Existing Circuit $0.75; Service (new/change) 480 volts or less $11.00 per meter up to 100 amps plus $0.06 each additional amp; Miscellaneous $14.00",
+      "feeAsOf": "Rev. 5/9/2019",
+      "sourceUrl": "https://www.sedgwick.gov/media/55335/fee-table-i.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Hard-wired smoke detectors are a priced line on Wichita's electrical permit schedule, charged per detector on top of the flat permit issuance fee.",
+      "fee": "Smoke Detectors $0.75 each; Permit Issuance Fee $25.00",
+      "feeAsOf": "Rev. 5/9/2019",
+      "sourceUrl": "https://www.sedgwick.gov/media/55335/fee-table-i.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A disposal swap in Wichita is plumbing permit work - the code exempts no plumbing work from permit - and the inspector applies the local amendment requiring the dishwasher drain line to be looped high inside the sink cabinet and securely fastened.",
+      "fee": "Permit Issuance Fee $25.00",
+      "feeAsOf": "Rev. 5/9/2019",
+      "sourceUrl": "https://www.sedgwick.gov/media/55343/fee-table-h.pdf"
+    }
+  },
+  "notVerified": [
+    "a specific fee line item for a food-waste disposer - MABCD's plumbing fee table (Table H) does not list one",
+    "exact homeowner exam fees - the Fees page lists Homeowners Test Fees at $50.00 while the Do I Need a Permit page lists $50 for the electrical exam and $25 each for the plumbing and water-heater exams",
+    "City of Wichita Municipal Code text - library.municode.com, which hosts both the Wichita and Sedgwick County codes, blocks automated requests",
+    "the City of Wichita's own permit pages - www.wichita.gov returns 403 to automated requests, so all facts here come from the joint department's pages on sedgwick.gov"
+  ]
+}

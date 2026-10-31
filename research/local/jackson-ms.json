@@ -1,0 +1,58 @@
+{
+  "citySlug": "jackson-ms",
+  "cityName": "Jackson",
+  "stateAbbr": "MS",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Jackson Department of Planning and Development, Office of Code Services (Building Permits Division)",
+    "url": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+  },
+  "codeEdition": {
+    "text": "Jackson's Building Permits Division page lists the adopted codes: 2018 International Building Code with amendments, 2018 International Residential Code with amendments, 2018 International Plumbing Code with amendments, 2018 International Mechanical Code with amendments, 2018 International Fuel Gas Code with amendments, 2018 International Existing Building Code with no amendments, and the 2017 National Electrical Code with no amendments. The fire code and property maintenance code (both 2018 editions) are adopted by separate ordinances.",
+    "sourceUrl": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+  },
+  "permitPolicy": {
+    "text": "Jackson says a permit is required whenever an owner or the owner's authorized agent, usually a contractor, proposes to construct, enlarge, repair, move, demolish or change the occupancy of a building or structure, and the city lists electrical, plumbing, gas, heating and air conditioning, and furnaces or boilers among the work that needs one. The Building Permits Division also performs the inspections. Applications go through the city's online permitting portal.",
+    "sourceUrl": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+  },
+  "registration": {
+    "text": "Jackson requires an annual city business license, applied for through the Business Licensing Division with a notarized privilege tax form and a Mississippi Secretary of State certificate of good standing, and renewed every year in the month it expires. The city states that the fee varies by business type and size and does not publish an amount. No trade-specific electrical or plumbing registration separate from this license was found published on the city's site.",
+    "sourceUrl": "https://jacksonms.gov/business/business-licenses/"
+  },
+  "codeItems": [
+    {
+      "text": "Electrical work in Jackson is judged against the 2017 National Electrical Code, adopted with no local amendments. That is an older edition than the 2020 or 2023 NEC most national guidance is written to, so an inspector here applies the 2017 rules rather than the newer ones.",
+      "sourceUrl": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+    },
+    {
+      "text": "Jackson adopts the 2018 International Plumbing Code with amendments and pulls in Appendices A through F, so appendix material that many cities leave out, including the water-piping sizing appendix, is enforceable here.",
+      "sourceUrl": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+    },
+    {
+      "text": "Gas work is permitted under a separate code in Jackson: the city lists gas as its own permit category and adopts the 2018 International Fuel Gas Code with amendments and Appendices A through D, which matters for a gas-fired water heater changeout.",
+      "sourceUrl": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Jackson requires a permit to repair or replace plumbing and gas work, which covers a water heater changeout, and the Building Permits Division does the inspection.",
+      "sourceUrl": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+    },
+    "plumber-service-call": {
+      "requirement": "Repair work on plumbing in Jackson needs a permit; the city lists plumbing among the work that cannot be constructed, repaired or altered without one.",
+      "sourceUrl": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical repair and alteration work in Jackson needs a permit from the Building Permits Division, which also carries out the inspection.",
+      "sourceUrl": "https://jacksonms.gov/government/city-departments/planning-and-development/office-of-code-services/building-permits/"
+    }
+  },
+  "notVerified": [
+    "all Jackson permit fee amounts - no fee schedule is published on jacksonms.gov, and the city's codified fee provisions sit on library.municode.com, which blocks automated requests",
+    "whether a Jackson homeowner may pull their own electrical or plumbing permit, or whether only a licensed contractor may",
+    "Jackson's local amendments to the 2018 IRC, IPC and IFGC (expansion tank, drain pan, TPR discharge termination, sediment trap) - the amendment text is in Code of Ordinances Ch. 26, which was unreachable",
+    "smoke-detector-replacement permit requirement and fee",
+    "garbage-disposal-replacement permit requirement and fee",
+    "dollar amount of the Jackson city business license"
+  ]
+}

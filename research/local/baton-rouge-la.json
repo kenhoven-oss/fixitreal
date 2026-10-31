@@ -1,0 +1,73 @@
+{
+  "citySlug": "baton-rouge-la",
+  "cityName": "Baton Rouge",
+  "stateAbbr": "LA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Baton Rouge / Parish of East Baton Rouge, Permits & Inspections Division",
+    "url": "https://www.brla.gov/2688/Permits-Inspections"
+  },
+  "codeEdition": {
+    "text": "Baton Rouge enforces the Louisiana State Uniform Construction Code set by the state Uniform Construction Code Council: the 2021 editions of the International Building, Existing Building, Residential, Mechanical, Fuel Gas and Plumbing Codes and the 2020 National Electrical Code, all effective January 1, 2023, plus the 2021 International Energy Conservation Code effective July 1, 2023, with council amendments made in June 2023, November 2023 and March 2024. The council has published proposed language moving the state to the 2024 ICC codes and the 2023 NEC effective January 1, 2027.",
+    "sourceUrl": "https://www.brla.gov/DocumentCenter/View/23927/STATE-OF-LOUISIANA-UNIFORM-CONSTRUCTION-CODE"
+  },
+  "permitPolicy": {
+    "text": "A homeowner in Baton Rouge may apply for the permit and build on their own home, but must file a notarized Affidavit Claiming Exemption from Licensure, which the city forwards to the Louisiana State Licensing Board for Contractors, and must still meet the International Residential Code and the Unified Development Code. Residential work over $7,500 must otherwise be done by a registered home improvement contractor or a licensed residential contractor. Permits are applied for through the MyGovernmentOnline portal, and a trade permit can be added to an existing project as a separate electrical, plumbing, mechanical or environmental application.",
+    "sourceUrl": "https://www.brla.gov/2691/Residential"
+  },
+  "registration": {
+    "text": "Licensing in Baton Rouge runs through the Louisiana State Licensing Board for Contractors rather than a separate city trade registration. Residential work over $7,500 requires a registered home improvement contractor or a licensed residential contractor, and a homeowner acting for themselves must submit a notarized licensure-exemption affidavit that the city sends on to the state board.",
+    "sourceUrl": "https://www.brla.gov/2691/Residential"
+  },
+  "codeItems": [
+    {
+      "text": "Louisiana makes the water heater drain pan deeper than the model code: the state amendment to IRC P2801.6.1 requires a pan at least 2 inches deep, sized to catch all dripping and condensate, drained by an indirect waste pipe of at least 1 inch diameter, with safety pan drain piping from the approved materials table.",
+      "sourceUrl": "https://www.brla.gov/DocumentCenter/View/23928/Uniform-Construction-Code-"
+    },
+    {
+      "text": "The state also rewrites where the relief discharge may end. Amended IRC P2804.6.1 item 5 lets the discharge pipe terminate at the floor, a waste receptor, a mop sink or outdoors, which is a wider list than the model code gives.",
+      "sourceUrl": "https://www.brla.gov/DocumentCenter/View/23928/Uniform-Construction-Code-"
+    },
+    {
+      "text": "Louisiana amends NEC 210.8(F) so that GFCI protection is not required on HVAC equipment outdoors, a departure a national guide written to the unamended 2020 NEC would get wrong.",
+      "sourceUrl": "https://www.brla.gov/DocumentCenter/View/23928/Uniform-Construction-Code-"
+    },
+    {
+      "text": "On a service change, the state amendment to NEC 230.85 requires one- and two-family service conductors to land in a readily accessible outdoor disconnect, grouped if there is more than one, carrying specific wording such as EMERGENCY DISCONNECT, SERVICE DISCONNECT. An amendment to 230.71 lets pre-existing services and those being renovated, altered, repaired or substantially improved keep up to six disconnects instead of one, and manufactured housing services are excused from the surge-protective device.",
+      "sourceUrl": "https://www.brla.gov/DocumentCenter/View/23928/Uniform-Construction-Code-"
+    },
+    {
+      "text": "Where a fuel-fired standby generator or transfer switch is installed it must sit outside the dwelling, and the state's added exception to IRC R315.3 then requires a permanently installed carbon monoxide alarm in each sleeping area plus one outside each separate sleeping area near the bedrooms. By state law no Louisiana parish or municipality may require residential fire sprinklers, so IRC R313 is not enforced here.",
+      "sourceUrl": "https://www.brla.gov/DocumentCenter/View/23928/Uniform-Construction-Code-"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Baton Rouge names replacement of a water heater outright on its list of jobs that need a permit and inspection. It is taken out as a residential trade permit at a flat $125.00, and every permit also carries a $25.00 technology fee; a reinspection is $75.00 and an after-hours inspection $150.00.",
+      "fee": "$125.00 residential mechanical, electrical, plumbing or gas trade permit + $25.00 technology fee",
+      "sourceUrl": "https://www.brla.gov/2694/Permit-Inspection-Fees"
+    },
+    "plumber-service-call": {
+      "requirement": "A residential plumbing permit in Baton Rouge is a flat $125.00 plus the $25.00 technology fee, and the city requires one for replacing any water line, vent, drain or sewer line, replacing any plumbing valve or shutoff, or replacing a water heater. Stopping leaks, clearing stoppages, repairing leaks in pipes, valves or fixtures, pulling and resetting a water closet without rearranging anything, and replacing a plumbing fixture are exempt, though replacing a defective concealed pipe counts as new work and does need a permit.",
+      "fee": "$125.00 residential plumbing trade permit + $25.00 technology fee",
+      "sourceUrl": "https://www.brla.gov/2694/Permit-Inspection-Fees"
+    },
+    "electrician-service-call": {
+      "requirement": "Baton Rouge requires an electrical permit, a flat $125.00 residential trade permit plus the $25.00 technology fee, for any new electrical circuit including replacing or extending an existing circuit and for replacing electrical meters, disconnects or other service equipment. Swapping a light fixture, a switch or receptacle, or a circuit breaker or fuse of the same size in the same location is exempt, as is low-voltage work under 25 volts that cannot supply more than 50 watts.",
+      "fee": "$125.00 residential electrical trade permit + $25.00 technology fee",
+      "sourceUrl": "https://www.brla.gov/2694/Permit-Inspection-Fees"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Replacing a plumbing fixture on its own is on Baton Rouge's exempt list, but the same information sheet requires a permit for replacing any plumbing valve or shutoff or any water, vent or drain line, and for any new, replaced or extended electrical circuit, so a disposal swap that touches the drain piping, a shutoff or the circuit needs a $125.00 trade permit.",
+      "fee": "$125.00 residential mechanical, electrical, plumbing or gas trade permit + $25.00 technology fee",
+      "sourceUrl": "https://www.brla.gov/2694/Permit-Inspection-Fees"
+    }
+  },
+  "notVerified": [
+    "The effective or revision date of Baton Rouge's permit and inspection fee schedule (the city's fee page prints no date)",
+    "Whether a smoke alarm replacement needs a permit in Baton Rouge (the city's exempt list names light fixtures, devices and breakers but is silent on smoke alarms)",
+    "Any City of Baton Rouge / East Baton Rouge Parish amendment to the state construction code beyond the LSUCCC amendments the city publishes",
+    "Separate City-Parish trade contractor registration or bond on top of Louisiana state licensure",
+    "Baton Rouge / East Baton Rouge Parish Code of Ordinances text (library.municode.com is behind a bot check)"
+  ]
+}

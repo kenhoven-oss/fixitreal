@@ -1,0 +1,76 @@
+{
+  "citySlug": "lincoln-ne",
+  "cityName": "Lincoln",
+  "stateAbbr": "NE",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Lincoln Planning and Development Services, Building and Safety",
+    "url": "https://www.lincoln.ne.gov/City/Departments/PDS/Building-Safety"
+  },
+  "codeEdition": {
+    "text": "Lincoln's City Council has adopted, each with local amendments: the 2021 International Building Code, 2021 International Existing Building Code, 2021 International Residential Code, 2018 IECC, 2023 National Electrical Code, 2021 International Fire Code, 2012 International Property Maintenance Code, 2021 International Mechanical Code, 2021 International Fuel Gas Code, the Lincoln Hydronics Code, the 2021 Uniform Plumbing Code and the Gas Piping and Systems Code.",
+    "sourceUrl": "https://www.lincoln.ne.gov/City/Departments/Building-Safety/Codes"
+  },
+  "permitPolicy": {
+    "text": "Lincoln lets homeowners pull their own plumbing permits for work such as replacing a water heater, fitting a water softener, putting in a garbage disposal, setting a fixture or running a gas line, but not for building sewers, water services or excavations. On the electrical side a permit goes only to a registered electrical contractor or to a homeowner under section 23.10.160, and that homeowner permit covers branch-circuit and feeder wiring only in a detached single-family home they own and live in as their principal residence - never service equipment, and never pools or hot tubs. The city may refuse a homeowner permit if it believes someone else will do the work or that the house is about to be sold. Starting plumbing work before the permit is issued doubles the fee, except for genuine after-hours emergencies.",
+    "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10565"
+  },
+  "registration": {
+    "text": "Lincoln requires city registration on top of the state license. An electrical contractor must register with the City of Lincoln before any electrical permit is issued, and registration of a State of Nebraska electrical contractor license costs $250.00 for two years ($200.00 for a fire alarm installer), with a $50 late fee after December 31 and half-price registration taken out in even-numbered years. Plumbers register in four classes through the city's Examining Board of Plumbers and must pass a written exam. Electrical, plumbing and HVAC contractors must carry at least $500,000 per occurrence in general liability naming the City of Lincoln as additional insured, with the master's name shown as an insured; a bond is only required for work in the public right-of-way, and a master plumber doing excavation in the public ways posts a $5,000.00 payment bond.",
+    "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10565"
+  },
+  "codeItems": [
+    {
+      "text": "Lincoln amends UPC 604.12 so that no flexible connector of any kind may be used on a water heater connection. Braided stainless steel flexible connectors are allowed only for fixtures (30 inches), washing machines (72 inches) and dishwashers or icemakers (120 inches), and flexible PVC connectors are banned outright.",
+      "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10727"
+    },
+    {
+      "text": "Lincoln amends UPC 604.13 to bar PEX, PEX-AL-PEX, PE-AL-PE and PE-RT tubing from the first 18 inches of piping connected to a water heater, so the hot and cold stubs off the heater have to be metal.",
+      "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10727"
+    },
+    {
+      "text": "Lincoln rewrites UPC 608.5 so a relief valve inside the building drains all the way to the outside of the building, in galvanized steel, hard-drawn copper or a listed relief-valve drain tube, ending not more than six inches above the ground or flood level and pointing down. The drain may not be trapped or exposed to freezing and its end may not be threaded. Discharge to open air must be at least five feet horizontally from any opening into the building below it.",
+      "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10727"
+    },
+    {
+      "text": "Lincoln deletes UPC 507.2, the seismic provision, so the seismic strapping a national water-heater guide describes is not a Lincoln requirement.",
+      "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10727"
+    },
+    {
+      "text": "Lincoln adopts the 2023 NEC but keeps five sections at the 2017 edition: 210.8(A), 210.8(A)(3), 210.8(A)(5), 230.67(A) and 230.85. The 2023 code's wider GFCI coverage, surge-protection rule and exterior emergency-disconnect rule therefore are not enforced here as a national guide would describe them.",
+      "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10565"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Lincoln requires a plumbing permit to replace a water heater, and a homeowner may pull it themselves; the fee is a per-appliance charge on the city's plumbing fee schedule.",
+      "fee": "Water Heater Gas $8; Water Heater Electric $8 (Reinspection Fee $35)",
+      "sourceUrl": "https://www.lincoln.ne.gov/City/Departments/PDS/Building-Safety/Plumbing/Plumbing-Fees"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal takes a plumbing permit in Lincoln, charged per fixture; replacing a fixture or changing its type or kind requires the permit even though simple repairs do not.",
+      "fee": "Garbage Disposal $8",
+      "sourceUrl": "https://www.lincoln.ne.gov/City/Departments/PDS/Building-Safety/Plumbing/Plumbing-Fees"
+    },
+    "plumber-service-call": {
+      "requirement": "Lincoln needs no permit for minor repair work - fixing a leaking trap, water pipe or drain pipe, clearing a drain, resetting an existing fixture, or replacing faucets, washers, float valves, ball stops, hoses or a sump pump. Replacing or relocating water, drain or vent piping or a fixture, or changing the type of fixture, does need a plumbing permit.",
+      "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10727"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit is required in Lincoln to install, alter or add to electrical equipment, charged as a base fee plus a fee for each branch circuit or feeder, with a separate homeowner schedule. Routine maintenance that repairs or replaces existing equipment with the same size and type, making no change to the wiring, needs no permit.",
+      "fee": "Contractors: Base Permit Fee $30.00 (added to all other fees) + $6.00 each branch circuit and/or feeder; service equipment 0-200 amperes $30.00; Re-Inspection fee $50.00 each. Homeowners: Minimum permit fee $30.00 + $8.00 each new, extended or modified branch circuit, $20.00 each sub-panel feeder",
+      "feeAsOf": "Ord. 21875, June 1, 2026",
+      "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10565"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Swapping a hard-wired smoke alarm for one of the same size and type, with no change to the wiring, falls under Lincoln's routine-maintenance exemption and needs no electrical permit; new or altered wiring for an alarm does need one.",
+      "sourceUrl": "https://online.encodeplus.com/regs/lincoln-ne/doc-view.aspx?secid=10565"
+    }
+  },
+  "notVerified": [
+    "Lincoln's base or minimum plumbing permit fee - the city fee page lists per-fixture amounts and a $35 'Additional Fees' line but does not label a base fee, and the plumbing code only says fees are set by City Council",
+    "master plumber city registration fee amount (set by City Council, not printed in the code or on the fee page)",
+    "effective or revision date for the city's published plumbing and electrical fee web pages (they state only that fees change with each code cycle)",
+    "Lincoln's local amendments to the 2021 IRC bearing on smoke alarm placement"
+  ]
+}

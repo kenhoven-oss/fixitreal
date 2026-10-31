@@ -1,0 +1,56 @@
+{
+  "citySlug": "bakersfield-ca",
+  "cityName": "Bakersfield",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Bakersfield Development Services Department, Building Division",
+    "url": "https://www.bakersfieldcity.us/building-division"
+  },
+  "codeEdition": {
+    "text": "Bakersfield enforces the California Building Standards Code, Title 24 of the California Code of Regulations, which state law sets as the minimum standard for design and construction and requires local governments to enforce unless they adopt their own more restrictive standards; where a city does not amend or add to it, the state code applies and takes effect 180 days after the Building Standards Commission publishes it. Title 24 is republished on a three-year cycle with intervening supplements, and the 2025 editions of the California codes are the current set.",
+    "sourceUrl": "https://up.codes/codes/california"
+  },
+  "permitPolicy": {
+    "text": "California statewide rule, since Bakersfield's own permit pages could not be read: under the California Building Standards Code no building or structure may be erected, enlarged, altered, repaired, moved, improved, converted or demolished without first getting a separate permit from the building official, and the Contractors State License Board tells homeowners to check with their own city or county building department because requirements differ. A homeowner who signs a permit application as an owner-builder takes on full responsibility for every phase of the job, including taxes, workers' compensation and liability for an injured worker.",
+    "sourceUrl": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Building_Permit_Requirements.aspx"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "California's Energy Code treats replacing an existing water heater as an alteration, so the replacement unit has to meet the mandatory equipment efficiency requirements of the state's Appliance Efficiency Regulations or the matching federal rules. An electric-resistance heater may be replaced with a qualifying consumer electric heater rather than a gas unit.",
+      "sourceUrl": "https://www.energy.ca.gov/sites/default/files/2025-06/CEC-400-2025-005.pdf"
+    },
+    {
+      "text": "If the job puts in new piping to the water heater, the state's mandatory pipe insulation requirements apply to that new piping and to any accessible existing piping; inaccessible piping is exempt.",
+      "sourceUrl": "https://www.energy.ca.gov/sites/default/files/2025-06/CEC-400-2025-005.pdf"
+    },
+    {
+      "text": "A California permit for an alteration comes with paperwork a national guide never mentions. Taking the prescriptive route means filing the matching Certificate of Compliance with the plans, or with the permit application itself when no plans are required: a CF1R-ALT-01 for alterations generally and a CF1R-ALT-02 for an HVAC changeout. Where compliance needs field verification and diagnostic testing by an ECC-Rater, the CF1R handed to the building department must be a registered copy from an approved registry.",
+      "sourceUrl": "https://www.energy.ca.gov/sites/default/files/2025-06/CEC-400-2025-005.pdf"
+    },
+    {
+      "text": "The California Energy Commission's list of work counted as an alteration, and therefore pulled into Energy Code compliance, includes replacing the existing water heater or adding water heaters or hot water piping, replacing a space heating or cooling system, extending or replacing ductwork, and replacing existing hardwired lighting or adding new hardwired fixtures.",
+      "sourceUrl": "https://www.energy.ca.gov/sites/default/files/2025-06/CEC-400-2025-005.pdf"
+    },
+    {
+      "text": "Which edition applies is decided by the permit date, not the work date: any building whose permit application is filed on or after January 1, 2026 must comply with the 2025 Energy Code, which widens heat pump use in new homes, pushes electric readiness and tightens ventilation.",
+      "sourceUrl": "https://www.energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards/2025-building-energy-efficiency"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "In California a water heater swap is an alteration under the state Energy Code, so the replacement must meet the mandatory efficiency requirements and the prescriptive CF1R-ALT-01 certificate of compliance is filed with the permit application when no plans are required; the California Building Standards Code requires a permit from the building official before altering or repairing a building. Bakersfield publishes no permit fee figure that could be read.",
+      "sourceUrl": "https://www.energy.ca.gov/sites/default/files/2025-06/CEC-400-2025-005.pdf"
+    }
+  },
+  "notVerified": [
+    "Every City of Bakersfield permit fee figure, and the city's own permit requirement for each job: bakersfieldcity.us pages render their body text only in a browser, so curl returns the page shell with no content, and the city publishes no DocumentCenter files",
+    "Bakersfield Municipal Code Title 15 (Buildings and Construction), including the city's code adoption ordinance and local amendments: bakersfield.municipal.codes and codepublishing.com are both behind a bot check",
+    "Bakersfield's public document archive (docs.bakersfieldcity.us runs Laserfiche WebLink, which also serves no content without a browser)",
+    "Whether a homeowner may pull their own plumbing or electrical permit in Bakersfield",
+    "Whether Bakersfield requires city trade registration or a bond on top of the California state contractor licence",
+    "Bakersfield permit requirements and fees for plumber service calls, electrician service calls, garbage disposal replacement and smoke detector replacement",
+    "California water heater seismic strapping and expansion tank rules as printed in the California Plumbing Code (up.codes shows the 2025 edition's chapter list but needs an account for section text, and leginfo.legislature.ca.gov and dgs.ca.gov are unreachable)"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "citySlug": "fort-wayne-in",
+  "cityName": "Fort Wayne",
+  "stateAbbr": "IN",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Allen County Building Department (building, electrical, plumbing and mechanical permits for Fort Wayne and Allen County)",
+    "url": "https://www.allencounty.in.gov/234/Building-Department"
+  },
+  "codeEdition": {
+    "text": "Fort Wayne work is inspected to the Indiana state codes the Allen County Building Department lists: the Indiana Residential Code based on the 2018 IRC (effective December 26, 2019), the Indiana Plumbing Code based on the 2006 IPC (effective December 24, 2012), the Indiana Electrical Code based on the 2008 National Electrical Code (effective August 26, 2009), and 2012-edition Indiana Building, Mechanical and Fuel Gas Codes (effective December 1, 2014). The electrical and plumbing base codes are several cycles behind the current national editions, so a national guide's assumptions about recent requirements may not apply here.",
+    "sourceUrl": "https://www.allencounty.in.gov/234/Building-Department"
+  },
+  "permitPolicy": {
+    "text": "Permits for Fort Wayne addresses are issued by the Allen County Building Department, not by a separate city office, and the department's own guidance describes permits as being submitted by licensed and registered contractors, online or at its front counter. Allen County does not do plan review itself - that is handled at the state level, so some projects need a state construction design release number supplied at the time of permit submission.",
+    "sourceUrl": "https://www.allencounty.in.gov/m/faq?cat=20"
+  },
+  "registration": {
+    "text": "The Allen County Building Department issues contractor licenses and registrations in addition to anything the State of Indiana requires, and handles renewals through its Citizen Access portal. No dollar amount for the licence or registration is published on the department's page.",
+    "sourceUrl": "https://www.allencounty.in.gov/234/Building-Department"
+  },
+  "codeItems": [
+    {
+      "text": "Indiana building codes are adopted at the state level and cannot be amended locally, so Fort Wayne and Allen County enforce the state code as written rather than a locally amended version - there is no separate Fort Wayne amendment package to hunt for.",
+      "sourceUrl": "https://up.codes/codes/indiana"
+    },
+    {
+      "text": "Indiana's residential code carries a replacement carve-out a national guide would not mention: where a pan drain was not previously installed, one is not required for a replacement water heater. The pan itself is still required wherever a leak would cause damage, must be at least 1 1/2 inches deep, and must be drained by an indirect waste pipe of at least 3/4 inch.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+    },
+    {
+      "text": "Where a pan drain is installed, Indiana requires it to run full size and terminate either over a suitably located indirect waste receptor or outside the building, between 6 and 24 inches above the adjacent ground.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+    },
+    {
+      "text": "A water heater with an ignition source installed in a Fort Wayne garage has to be elevated so the ignition source sits at least 18 inches above the garage floor, and every tank-type heater needs a drain valve of at least 3/4 inch at the bottom with a male hose thread outlet.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+    },
+    {
+      "text": "Indiana narrows the trigger for upgrading a whole house to new-construction smoke alarms. It applies only when permitted alterations, additions or a complete replacement of the electrical system occur, and it specifically exempts plumbing and mechanical work, exterior work such as roofing, siding, windows or a deck, and electrical work in existing rooms other than newly constructed or relocated bedrooms.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/3/building-planning"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Plumbing and mechanical work in Fort Wayne needs a permit from the Allen County Building Department, and the inspector works from the Indiana code: the drain pan where a leak would cause damage, the pan drain termination, and the 18-inch elevated ignition source in a garage - but a pan drain is not required if the old installation did not have one.",
+      "sourceUrl": "https://www.allencounty.in.gov/DocumentCenter/View/13579/Residential-Permit-Guide-PDF"
+    },
+    "plumber-service-call": {
+      "requirement": "The Allen County Building Department's residential permit guide lists plumbing as permit-required work for Fort Wayne addresses, and the permit is normally submitted by a licensed and registered contractor.",
+      "sourceUrl": "https://www.allencounty.in.gov/DocumentCenter/View/13579/Residential-Permit-Guide-PDF"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Fort Wayne is permit-required through the Allen County Building Department, and it is inspected against the Indiana Electrical Code, which is still based on the 2008 National Electrical Code rather than a current edition.",
+      "sourceUrl": "https://www.allencounty.in.gov/DocumentCenter/View/13579/Residential-Permit-Guide-PDF"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Swapping a smoke alarm in Fort Wayne does not by itself force a whole-house alarm upgrade; Indiana only requires alarms to be brought up to new-construction standards when permitted electrical alterations, additions or a full electrical system replacement are done, and it exempts plumbing and mechanical work and electrical work in existing rooms other than new or relocated bedrooms.",
+      "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/3/building-planning"
+    }
+  },
+  "notVerified": [
+    "Every Fort Wayne / Allen County permit fee figure. The Allen County Building Department page links a permit fee schedule, but every attempt to open that document (DocumentCenter/View/310 and the departmental Rules and Regulations PDF) was refused by the site, and the one Allen County fee schedule that did open is the Department of Planning Services zoning fee schedule, which contains no building, electrical, plumbing or mechanical fees",
+    "garbage-disposal-replacement permit requirement and fee for Fort Wayne",
+    "Whether a Fort Wayne homeowner may pull their own plumbing or electrical permit - the county's pages describe permits as coming from licensed and registered contractors but do not state a homeowner rule either way",
+    "Allen County contractor licence or registration fee and any bond or insurance amount",
+    "Reinspection fees and which inspections are included in a Fort Wayne permit",
+    "Any effective or revision date for the Allen County building permit fee schedule, since the document could not be opened"
+  ]
+}
