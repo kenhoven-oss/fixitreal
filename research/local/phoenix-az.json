@@ -1,0 +1,69 @@
+{
+  "citySlug": "phoenix-az",
+  "cityName": "Phoenix",
+  "stateAbbr": "AZ",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Phoenix Planning and Development Department",
+    "url": "https://www.phoenix.gov/administration/departments/pdd.html"
+  },
+  "codeEdition": {
+    "text": "The 2024 Phoenix Building Construction Code took effect August 1, 2025, after City Council adoption on June 18, 2025. It is built on the 2024 IRC, 2024 IBC, 2024 IPC and 2024 UPC, the 2024 IMC and IFGC, and the 2023 National Electrical Code, each with Phoenix amendments published as separate documents.",
+    "sourceUrl": "https://www.phoenix.gov/administration/departments/pdd/tools-resources/codes-ordinance/building-code.html"
+  },
+  "permitPolicy": {
+    "text": "Either the property owner or a contractor may be the permit applicant. An owner signs a statement on the application that a licensed contractor is not required because the home is for the owner's sole occupancy and will not be sold or rented within a year of completion, citing A.R.S. 32-1121.A.5. A contractor instead writes in an Arizona Registrar of Contractors license class and number.",
+    "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00030.pdf"
+  },
+  "registration": {
+    "text": "Phoenix's construction permit application asks only for the state Arizona Registrar of Contractors license class and number; it carries no field for a separate city trade registration or license number. No city registration fee or bond figure is published on the permit application.",
+    "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00030.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Phoenix narrows the IRC exception that lets smoke alarms be battery powered during alterations and repairs. In Phoenix the battery option only applies where there is no attic, crawl space or basement giving access for hardwiring, so on most remodels and rewires the inspector looks for interconnected hardwired alarms with battery backup. The same amendment applies to carbon monoxide alarms.",
+      "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/codes-ordinances/amendmentcodes/2024-irc.pdf"
+    },
+    {
+      "text": "Phoenix has pushed back the 2023 NEC 210.8(F) Exception 2 requirement for GFCI protection on outdoor HVAC equipment outlets. The department says full enforcement starts March 1, 2027, so a condenser or heat-pump circuit installed before then is not failed for the missing GFCI device.",
+      "sourceUrl": "https://www.phoenix.gov/administration/departments/pdd/tools-resources/codes-ordinance/building-code.html"
+    },
+    {
+      "text": "Phoenix treats a concealed pipe differently from a leak. Stopping a leak is exempt, but once a concealed trap, drain, water, soil, waste or vent pipe has to be cut out and replaced with new material, Phoenix counts that as new work requiring a permit and an inspection. Swapping a fixture in place is exempt, but relocating any valve, pipe or fixture requires a permit.",
+      "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/codes-ordinances/amendmentcodes/2024-ibc-ch1.pdf"
+    },
+    {
+      "text": "Phoenix sets its own amperage ceilings on exempt electrical swaps. Replacing a switch, receptacle, contactor or control device in kind is exempt up to 60 amperes, and replacing a circuit breaker in kind is exempt up to 125 amperes, but in both cases a service disconnect is carved out and needs a permit.",
+      "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/codes-ordinances/amendmentcodes/2024-ibc-ch1.pdf"
+    },
+    {
+      "text": "Phoenix deletes most of IRC Section P2904 and sends residential sprinkler design to the Phoenix Fire Code instead. Under the amendment a multipurpose or stand-alone system does not need a backflow preventer separating it from the house water piping provided it holds no antifreeze and has no fire department connection.",
+      "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/codes-ordinances/amendmentcodes/2024-irc.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Phoenix does not require a permit to swap an existing water heater like-for-like in a one- or two-family home when a licensed contractor does the work; a permit is needed if the homeowner installs it themselves, or if the heater is relocated, and the permit fee is a reduced residential water-heater minimum that includes up to two inspections.",
+      "fee": "$98 Minimum for Residential Water Heaters and Fences (project valuation $1 - $1,000); permits in that valuation band include a maximum of two inspections, with additional inspections at $195 each",
+      "feeAsOf": "January 2026",
+      "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/impact-fees/fee-schedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Clearing a stoppage, repairing a leak, pulling and resetting a toilet, or swapping a fixture in the same spot needs no Phoenix permit, but replacing concealed pipe or moving a valve, pipe or fixture does, and the fee is then set from the valuation of the work.",
+      "fee": "$195 Base fee only (project valuation $1 - $1,000) under Table A: Building Safety Valuation-Based Permit Fee",
+      "feeAsOf": "January 2026",
+      "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/impact-fees/fee-schedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Minor electrical repair, lamp replacement and in-kind swaps of devices up to 60 amperes or breakers up to 125 amperes are exempt in Phoenix, but anything beyond that, including a service disconnect, takes an electrical permit priced from the valuation of the work.",
+      "fee": "$195 Base fee only (project valuation $1 - $1,000) under Table A: Building Safety Valuation-Based Permit Fee",
+      "feeAsOf": "January 2026",
+      "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/impact-fees/fee-schedule.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (Phoenix's exempt-work list names fixtures and built-in appliances generally but does not name food waste disposers, so the answer could not be pinned down)",
+    "smoke-detector-replacement permit requirement and fee (no Phoenix exemption or fee line addresses alarm replacement on its own)",
+    "Whether Phoenix charges any separate city contractor registration fee or bond (no city registration page or fee line found; the permit application asks only for the state ROC number)"
+  ]
+}

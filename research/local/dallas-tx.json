@@ -1,0 +1,77 @@
+{
+  "citySlug": "dallas-tx",
+  "cityName": "Dallas",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Dallas Development Services (Building Inspection)",
+    "url": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/Pages/construction_codes.aspx"
+  },
+  "codeEdition": {
+    "text": "Dallas lists the 2021 International Building, Residential, Plumbing, Mechanical, Fuel Gas and Energy Conservation Codes, each with Dallas amendments, as effective May 12, 2023. Its electrical code is the 2020 National Electrical Code with Dallas amendments, effective June 13, 2022. The residential amendments are codified as Chapter 57, the Dallas One- and Two-Family Dwelling Code.",
+    "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/Pages/construction_codes.aspx"
+  },
+  "permitPolicy": {
+    "text": "A Dallas homeowner may pull their own plumbing, mechanical or electrical permit under a homeowner's exemption, but only for a homestead they own and live in, and only if they do the work themselves with no paid help. Electrical repairs under the exemption are allowed only after the homeowner passes a City exam, and the affidavit must be signed in front of City staff or notarized. If the owner later hires help, a properly licensed contractor must take over the permits.",
+    "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/HOMEOWNERS%20EXEMPTION%20FROM%20REG-Acc.pdf"
+  },
+  "registration": {
+    "text": "Dallas requires a trade contractor to register with the city and hold the applicable electrical, plumbing or mechanical license on top of the state credential. The city waives both only for a qualifying homeowner working on their own homestead.",
+    "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/HOMEOWNERS%20EXEMPTION%20FROM%20REG-Acc.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Dallas rewrites the relief-valve rule so a water heater's temperature-and-pressure discharge pipe may not tie directly into the drainage system. It must discharge through an air gap, run by gravity, carry no valves or tee fittings, end without a threaded connection, and terminate where someone living there can see it.",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf"
+    },
+    {
+      "text": "A Dallas water heater drain pan must be at least an inch and a half deep, wide enough to catch everything that drips off the tank, and drained by an indirect waste pipe of at least three quarters of an inch. Several pan drains may share one discharge line only where the manufacturer's instructions allow it.",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf"
+    },
+    {
+      "text": "Dallas regulates how an inspector reaches an elevated water heater. An attic, roof or platform installation more than eight feet up needs a stairway or permanent ladder; a portable ladder is accepted only for a small tank reached through a lay-in ceiling within ten feet of the floor. The space also needs lighting and a reachable receptacle.",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0469.pdf"
+    },
+    {
+      "text": "Under the Dallas one- and two-family dwelling code, a water heater swapped into a spot that never had a pan drain does not have to gain one. This is a Dallas-specific relief on replacement work that a national guide would not flag.",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0471.pdf"
+    },
+    {
+      "text": "Dallas makes a permitted alteration, repair or addition trigger smoke alarms throughout the dwelling to the standard for a new house, with exceptions where the work is only on the exterior or is only plumbing or mechanical. An attic appliance also needs a luminaire switched at the passageway opening and a nearby receptacle.",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0471.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in a Dallas house is permitted as a single-family alteration or repair, and the inspector checks the relief-valve discharge, the drain pan and the access to the heater.",
+      "fee": "Table B-II Alterations or Repairs for Single-Family and Duplex Structures: $181 per dwelling unit + $100 for additional trades",
+      "feeAsOf": "May 1, 2024",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/DSDFees.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal swap in a Dallas house falls under the city's single-family alteration or repair permit, though small plumbing repairs worth no more than $1,000, gas piping excluded, are exempt from a permit altogether.",
+      "fee": "Table B-II Alterations or Repairs for Single-Family and Duplex Structures: $181 per dwelling unit + $100 for additional trades",
+      "feeAsOf": "May 1, 2024",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/DSDFees.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Dallas exempts repairs or repiping of a plumbing system on a single-family or duplex property from a permit when the work is worth no more than $1,000 and no gas piping is involved; above that a single-family alteration or repair permit applies.",
+      "fee": "Table B-II Alterations or Repairs for Single-Family and Duplex Structures: $181 per dwelling unit + $100 for additional trades; Reinspection Fee $75",
+      "feeAsOf": "May 1, 2024",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/DSDFees.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Dallas lets electrical maintenance and repair go without a permit when the value of the work does not exceed $1,000; anything larger is permitted as a single-family alteration or repair, and a failed inspection is recharged.",
+      "fee": "Table B-II Alterations or Repairs for Single-Family and Duplex Structures: $181 per dwelling unit + $100 for additional trades; Reinspection Fee $75",
+      "feeAsOf": "May 1, 2024",
+      "sourceUrl": "https://dallas.gov/departments/sustainabledevelopment/buildinginspection/DCH%20documents/DSDFees.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee as published by Dallas",
+    "The fee lines in the newer Dallas permit fee schedule effective July 1, 2025 (the city's server blocked automated retrieval of that file; the figures given here are from the May 1, 2024 schedule)",
+    "Dallas contractor registration fee amount",
+    "Whether Dallas requires a thermal expansion tank or seismic strapping on a replacement water heater (its published plumbing amendments do not address either)",
+    "Per-fixture plumbing permit charges, if Dallas publishes any separately from the single-family alteration table"
+  ]
+}

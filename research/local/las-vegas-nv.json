@@ -1,0 +1,68 @@
+{
+  "citySlug": "las-vegas-nv",
+  "cityName": "Las Vegas",
+  "stateAbbr": "NV",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Las Vegas Department of Community Development, Building and Safety Division",
+    "url": "https://www.lasvegasnevada.gov/Government/Departments/Building-Safety"
+  },
+  "codeEdition": {
+    "text": "On July 16, 2025 the Las Vegas City Council adopted the 2024 International Building, Residential and Existing Building Codes, the 2023 National Electrical Code, the 2024 Uniform Plumbing Code, the 2024 Uniform Mechanical Code and the 2024 International Fire and Energy Conservation Codes, together with local amendments. The new editions took effect January 5, 2026, and any project first submitted on or after that date must be designed to them.",
+    "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/2025/Industry_Notice-2024_Code_Adoption.pdf"
+  },
+  "permitPolicy": {
+    "text": "Las Vegas lets a homeowner pull a no-plans permit directly: the online application starts by choosing either Building Contractor or Residential Owner Builder, and only the contractor path asks for license information. The city's no-plans list covers a same-for-same water heater change-out (tankless included), minor electrical of 12 devices or fewer, gas line repair, water piping replacement and miscellaneous drainage or vent piping repair. Anything not on that list has to be submitted with plans through the city's Citizen Portal.",
+    "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/Forms/General/Apply-for-a-Permit-Without-Plans%202025.pdf"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "Southern Nevada's amendment to Uniform Plumbing Code 507.5, as further amended by Las Vegas, requires a drain pan under a water heater set in an attic, in or on an attic ceiling assembly, or on a floor-ceiling or floor-subfloor assembly. The pan must be at least 1-1/2 inches deep with a drain of at least 3/4 inch to an approved point, and the end of that drain line has to be readily visible. A tankless unit in a readily accessible spot and a point-of-use heater are exempt.",
+      "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/2025/2024-UPC-Amendments-CLV-Amended.pdf"
+    },
+    {
+      "text": "The same amendment bans routing the temperature and pressure relief valve discharge into the water heater drain pan, and requires the T&P drain to terminate outside the building unless the manufacturer's listing rules that out. Where it cannot go outside, it may discharge through an air gap into a clothes washer standpipe, floor sink, floor-mounted mop sink or a floor drain fitted with a listed funnel. The drain line must be straight-run approved pipe, not a coil.",
+      "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/2025/2024-UPC-Amendments-CLV-Amended.pdf"
+    },
+    {
+      "text": "Las Vegas backflow prevention assemblies have to be tested by a certified backflow assembly tester when installed, repaired or relocated, and at least annually after that. The tester has to leave a copy of the certification for each device on site.",
+      "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/2025/2024-UPC-Amendments-CLV-Amended.pdf"
+    },
+    {
+      "text": "The Southern Nevada amendment to the 2023 NEC caps a dwelling branch circuit at twelve outlets, and requires a dedicated 20-amp circuit for a dishwasher, trash compactor and microwave oven. Outlets serving smoke detectors are not counted toward the twelve-outlet limit.",
+      "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/2025/2023-NEC-Amendments.pdf"
+    },
+    {
+      "text": "The local NEC amendments rewrite the grounding electrode rules: plate electrodes are deleted as an acceptable electrode type, and a concrete-encased electrode is required for new buildings. An electrician doing a service change in Las Vegas may have to bring the grounding electrode system up to these local rules.",
+      "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/2025/2023-NEC-Amendments.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Las Vegas requires a plumbing permit to replace a water heater, and a same-for-same swap (including tankless) can be bought online without plans; the fee is the water heater inspection line plus a one-time permit issuance charge.",
+      "fee": "$22 permit/inspection fee for a Water Heater, plus the $55 MPE Permit Issuance fee charged once per inspection project",
+      "feeAsOf": "July 2021",
+      "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/Building-Safety-Fee-Tables.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Repairing or altering drainage or vent piping in Las Vegas takes a plumbing permit charged per fixture, and it is on the city's list of permits issued online without plans.",
+      "fee": "$64 permit/inspection fee for miscellaneous repair, including repair or alteration of drainage or vent piping, each fixture, plus the $55 MPE Permit Issuance fee charged once per inspection project",
+      "feeAsOf": "July 2021",
+      "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/Building-Safety-Fee-Tables.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Small electrical jobs in Las Vegas take a Minor Electrical permit, which the city issues online without plans for 12 devices or fewer, though a dedicated circuit to a fixed appliance needs plans.",
+      "fee": "$64 permit/inspection fee for Minor Electrical, plus the $55 MPE Permit Issuance fee charged once per inspection project",
+      "feeAsOf": "July 2021",
+      "sourceUrl": "https://files.lasvegasnevada.gov/building-safety/Building-Safety-Fee-Tables.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (the city's MPE fee table has no food waste disposer line, and the no-plans permit list does not name one)",
+    "smoke-detector-replacement permit requirement and fee (not named in the city's fee tables or no-plans permit list)",
+    "Whether Las Vegas requires its own contractor registration or a city business license on top of the Nevada State Contractors Board license, and any fee or bond amount",
+    "Whether the MPE fee table effective July 1, 2021 has been superseded; the only later fee notice found covers sewer connection charges and residential construction tax, not trade permit fees",
+    "The dollar limit and conditions of Nevada's owner-builder exemption from state contractor licensing (NRS 624 text not confirmed section by section)"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "citySlug": "new-york-ny",
+  "cityName": "New York",
+  "stateAbbr": "NY",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "New York City Department of Buildings (DOB)",
+    "url": "https://www.nyc.gov/site/buildings/index.page"
+  },
+  "codeEdition": {
+    "text": "The 2022 New York City Construction Codes are the current set, covering the General Administrative Provisions, Building Code, Fuel Gas Code, Mechanical Code and Plumbing Code. The electrical code is on its own cycle and is tracked separately by DOB.",
+    "sourceUrl": "https://www.nyc.gov/site/buildings/codes/codes.page"
+  },
+  "permitPolicy": {
+    "text": "A homeowner cannot pull their own plumbing permit in New York City. Plumbing and fire-suppression permits are issued only to a Licensed Master Plumber, and before work starts the owner has to hire a Licensed Master Plumber, a New York State licensed professional engineer or a registered architect to file. DOB inspects all plumbing work that needed a permit, and the master plumber must close out every inspection and obtain final plumbing sign-off.",
+    "sourceUrl": "https://www.nyc.gov/site/buildings/property-or-business-owner/plumbing-permits-applications.page"
+  },
+  "registration": {
+    "text": "Residential repair work in New York City needs a Home Improvement Contractor license from the Department of Consumer and Worker Protection, on top of any trade license. The two-year license fee runs from $50 to $250 depending on where in the cycle the application falls, and the applicant must either pay $200 to join the Home Improvement Business Trust Fund or post a $20,000 surety bond.",
+    "sourceUrl": "https://www.nyc.gov/site/dca/businesses/license-checklist-home-improvement-contractor.page"
+  },
+  "codeItems": [
+    {
+      "text": "New York City will not let a water heater relief-valve discharge line run to the outdoors or tie into the drainage system. It has to end through an air gap in the same room as the water heater, somewhere building occupants can readily see it, no more than 6 inches above the floor or waste-receptor rim, with no trap, no valves or tee fittings and no threaded end.",
+      "sourceUrl": "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCadmin/0-0-0-161876"
+    },
+    {
+      "text": "A water heater drain pan in New York City must be at least 1 1/2 inches deep and drain through a 3/4 inch or larger indirect waste pipe. The city adds an exception a national guide would not mention: a replacement water heater does not need a pan drain if none was there before, provided a leak detector is installed inside the pan.",
+      "sourceUrl": "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCadmin/0-0-0-161892"
+    },
+    {
+      "text": "A battery-powered smoke alarm installed in New York City must carry a non-removable, non-replaceable battery that lasts at least 10 years and must sound an audible end-of-life warning, so an ordinary 9-volt swap-out alarm will not comply. The rule comes from Local Law 112 of 2013 and Administrative Code 28-312.5, and it does not reach alarms powered by the building wiring.",
+      "sourceUrl": "https://www.nyc.gov/assets/buildings/bldgs_bulletins/bb_2018-006.pdf"
+    },
+    {
+      "text": "An in-kind water heater swap only qualifies for the simpler Limited Alteration Application Category 2 route if the unit is direct-vent gas-fired and the building is a one- or two-family dwelling of four stories or less. Category 2 has no cost ceiling but the filing must include all appliance and labor costs, and only one work type can go on one application.",
+      "sourceUrl": "https://www.nyc.gov/site/buildings/industry/limited-plumbing-alterations.page"
+    },
+    {
+      "text": "The 2025 New York City Electrical Code became fully operative on December 21, 2025. It is built on the 2020 edition of NFPA 70 with New York City amendments, so a 2023 NEC reference in a national guide will not match what an inspector here enforces.",
+      "sourceUrl": "https://www.nyc.gov/site/buildings/codes/electrical-code.page"
+    },
+    {
+      "text": "Simple repairs and straight replacement of existing faucets, toilets and sinks count as cosmetic in New York City and need no permit. Broader replacement or relocation of plumbing, gas piping and equipment can be done as ordinary plumbing work without a permit, but only by a Licensed Master Plumber.",
+      "sourceUrl": "https://www.nyc.gov/site/buildings/property-or-business-owner/do-i-need-a-permit.page"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in New York City is filed as a Limited Alteration Application by a Licensed Master Plumber, and DOB inspects the work before sign-off.",
+      "fee": "$130 minimum filing fee (Limited Alteration Application, one-, two- or three-family dwelling)",
+      "feeAsOf": "June 2023",
+      "sourceUrl": "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCadmin/0-0-0-156650"
+    },
+    "plumber-service-call": {
+      "requirement": "Swapping an existing faucet, toilet or sink is cosmetic and needs no permit in New York City, but work on the waste, water or gas piping takes a permit that only a Licensed Master Plumber can pull, usually as a Limited Alteration Application.",
+      "fee": "$130 minimum filing fee (Limited Alteration Application, one-, two- or three-family dwelling)",
+      "feeAsOf": "June 2023",
+      "sourceUrl": "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCadmin/0-0-0-156650"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in New York City needs an electrical permit filed by a DOB-licensed Master or Special Electrician, and the city charges a flat application fee rather than pricing by job value.",
+      "fee": "$40 electrical permit initial application (excluding minor work); $15 for minor work",
+      "sourceUrl": "https://www.nyc.gov/assets/buildings/rules/1_RCNY_101-03.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "New York City does not sell a permit for swapping a smoke alarm, but a battery-powered replacement must be a UL 217 unit with a sealed 10-year non-removable battery and an audible end-of-life signal.",
+      "sourceUrl": "https://www.nyc.gov/assets/buildings/bldgs_bulletins/bb_2018-006.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (DOB's permit and plumbing pages do not name food waste disposers)",
+    "Whether a homeowner may pull their own electrical permit in New York City (DOB's electrician pages address licensees only and do not state a homeowner rule)",
+    "Printed effective or revision date on the 1 RCNY 101-03 electrical fee schedule (no date appears in the published rule text)",
+    "Model code editions (IBC/IRC/IPC years) underlying the 2022 NYC Construction Codes — DOB's codes pages do not state them",
+    "Whether a water heater swap can ever avoid a permit entirely as ordinary plumbing work, versus always needing an LAA"
+  ]
+}

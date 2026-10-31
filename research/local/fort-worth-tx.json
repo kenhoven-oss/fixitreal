@@ -1,0 +1,65 @@
+{
+  "citySlug": "fort-worth-tx",
+  "cityName": "Fort Worth",
+  "stateAbbr": "TX",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Fort Worth Development Services Department",
+    "url": "https://www.fortworthtexas.gov/departments/development-services/permits"
+  },
+  "codeEdition": {
+    "text": "Fort Worth enforces the 2021 International Residential, Building, Plumbing, Fuel Gas, Mechanical and Existing Building Codes, each adopted with its own local amendment ordinance in March 2022 (for example Ordinance 25383-03-2022 for the IRC and 25385-03-2022 for the plumbing and fuel gas codes). The city's code page states the 2026 National Electrical Code takes effect September 1, 2026.",
+    "sourceUrl": "https://www.fortworthtexas.gov/departments/development-services/permits/building-energy-codes"
+  },
+  "permitPolicy": {
+    "text": "A plumbing permit is needed to change, install, move or repair plumbing, including a water heater, and an electrical permit is needed to change, move or repair electrical equipment including the service. An owner who lives in the single-family home may pull the permit and do the work personally by filing a homestead affidavit, but on electrical work the affidavit bars the homeowner from touching the service, which must be permitted and done by a master electrician.",
+    "sourceUrl": "https://www.fortworthtexas.gov/departments/development-services/permits/residential-information"
+  },
+  "registration": {
+    "text": "Anyone pulling a building, mechanical, plumbing or electrical permit must hold a current Fort Worth contractor registration backed by the matching state license (Texas electrical contractor license, master plumber or irrigator license, or air conditioning and refrigeration license). The annual registration fee published for building, plumbing irrigator, sign, moving and wrecking contractors is $168.75, and registration expires one year from issuance. An owner-occupant working on their own homestead single-family residence is exempt from registering.",
+    "sourceUrl": "https://www.fortworthtexas.gov/departments/development-services/permits/contractor-registration"
+  },
+  "codeItems": [
+    {
+      "text": "Fort Worth bans water heaters in residential attics outright, except tankless units. The ban appears in the city's amendments to IRC M2005.1, IPC 502.3 and IFGC 624.1.1, so an attic swap that a national guide would treat as routine cannot be permitted here in kind.",
+      "sourceUrl": "https://www.fortworthtexas.gov/files/assets/public/v/2/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/irc-amendments-2021-ordinance-25383-03-2022.pdf"
+    },
+    {
+      "text": "The city rewrites the TPR relief-valve discharge rules: the line must serve one relief device only, must terminate where occupants can see it, may not be trapped or valved, must have no threaded end, and must stop between six inches and two feet above grade when it discharges outdoors.",
+      "sourceUrl": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf"
+    },
+    {
+      "text": "Fort Worth normally forbids running the TPR discharge into the drain pan, but allows it on a slab-foundation water heater retrofit or replacement where no approved discharge point exists, on condition that an approved device shuts off the water supply when the pan detects water and a second device sounds an audible leak alarm.",
+      "sourceUrl": "https://www.fortworthtexas.gov/files/assets/public/v/1/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/ipc-and-ifgc-2021-amendments-ordinance-25385-03-2022.pdf"
+    },
+    {
+      "text": "A readily accessible full-open valve is required in the cold-water supply at or near every water heater or hot water storage tank, and it must not disrupt cold water to the rest of the house (city amendment to IRC P2903.9.2).",
+      "sourceUrl": "https://www.fortworthtexas.gov/files/assets/public/v/2/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/irc-amendments-2021-ordinance-25383-03-2022.pdf"
+    },
+    {
+      "text": "Fort Worth adds media rooms to the smoke-alarm location list: an alarm is required inside each media room and outside it in the immediate vicinity, on top of the usual bedroom, hallway and per-story placements, and alarms must sit at least three feet from a bathroom door where a tub or shower is present.",
+      "sourceUrl": "https://www.fortworthtexas.gov/files/assets/public/v/2/development-services/documents/building-code-local-amendments/2021-approved-local-amendments/irc-amendments-2021-ordinance-25383-03-2022.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Fort Worth requires a plumbing permit to install, change, move or repair a water heater, and city amendments mean an inspector checks the pan, the TPR discharge termination and the cold-water shutoff valve.",
+      "sourceUrl": "https://www.fortworthtexas.gov/departments/development-services/permits/residential-information"
+    },
+    "plumber-service-call": {
+      "requirement": "Repairing or altering existing plumbing in Fort Worth takes a plumbing permit, pulled by a city-registered plumbing contractor or by the owner-occupant under a homestead affidavit.",
+      "sourceUrl": "https://www.fortworthtexas.gov/departments/development-services/permits/residential-information"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit is required in Fort Worth to change, move or repair electrical equipment including the service, and a homeowner using the homestead affidavit may not work on the service at all.",
+      "sourceUrl": "https://www.fortworthtexas.gov/departments/development-services/permits/residential-information"
+    }
+  },
+  "notVerified": [
+    "All Fort Worth trade permit fee amounts (plumbing, electrical, mechanical) — the city routes fee questions to its online residential permit guide and Accela portal, neither of which publishes a static fee schedule, and the municipal code host was unreachable",
+    "garbage-disposal-replacement permit requirement (the residential permit list covers plumbing changes and repairs but does not name fixture replacement such as a disposal)",
+    "smoke-detector-replacement permit requirement (no Fort Worth page states whether a like-for-like alarm swap needs a permit)",
+    "Effective date of the 2021 code adoption ordinances (the ordinances are dated 03-2022 but the city code page prints no effective date)",
+    "Whether the posted 2026 NEC local amendments are final — the city labels that document a draft"
+  ]
+}
