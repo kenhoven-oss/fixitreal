@@ -1,0 +1,62 @@
+{
+  "citySlug": "memphis-tn",
+  "cityName": "Memphis",
+  "stateAbbr": "TN",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Memphis and Shelby County Office of Construction Code Enforcement",
+    "url": "https://www.shelbycountytn.gov/Directory.aspx?did=381"
+  },
+  "codeEdition": {
+    "text": "Memphis and unincorporated Shelby County are covered by one joint code set adopted by both the Memphis City Council and the Shelby County Board of Commissioners, effective December 31, 2021: the 2021 International Building Code with local amendments, together with the 2021 International Residential, Plumbing, Mechanical, Fuel Gas, Existing Building, Fire and Energy Conservation Codes and the 2020 National Electrical Code, each with its own local amendments. The electrical ordinance repealed the 2018 Memphis and Shelby County Electrical Code.",
+    "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39392/2021-International-Building-Code-with-Local-Amendments"
+  },
+  "permitPolicy": {
+    "text": "Trade permits in Memphis go to the contractor, not the homeowner: the plumbing code says a permit is issued only to a licensed and/or registered contractor who performs the work, and the owner or agent must first hire one. The electrical code carries the one homeowner exception — a permit may be issued to the owner of a single-family home that is their principal residence and is not held for rent, lease or resale, provided they score at or above the 70th percentile on an approved examination, do the work themselves or with immediate family, and take no more than one such permit every two years. Retaking the exam costs $25 after the first free attempt. On the building side a property owner may pull a permit for a single-family dwelling within the limits state law sets, and the county's residential handout lets a homeowner do demolition on their own home against a $300.00 refundable cash bond plus the permit fee.",
+    "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+  },
+  "registration": {
+    "text": "A state licence alone is not enough here. A contractor must hold a State of Tennessee licence and then register it with the Construction Code Enforcement licensing section, along with a Memphis and Shelby County business licence and a qualifying-agent affidavit from the State Contractors Board; registration and renewal are $50 each. The joint code also requires a $25,000 contractor bond, capped at $50,000 for a single entity holding several registrations. Electrical work additionally runs through locally issued credentials — a Master Electrician licence from the Building Official, plus journeyman and industrial plant electrician licences — and contractor vehicles must carry the firm name and registration number.",
+    "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/33929/General-Information-about-submittals"
+  },
+  "codeItems": [
+    {
+      "text": "Memphis makes an inspector re-check wiring that has sat idle: residential wiring out of service for 365 days or more (90 days or more for commercial) has to be re-inspected before the power company may energise it again. On a long-vacant house that turns a simple reconnect into an inspection.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+    },
+    {
+      "text": "Adding to an existing electrical system in Memphis requires a load calculation showing the existing service can carry the added load — so a new circuit for a hot tub, EV charger or sub-panel can turn into a service-size question rather than a simple add-on.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+    },
+    {
+      "text": "The local plumbing amendments push gas water heaters out of the plumbing code: a fuel gas water heater and its venting system are regulated under the International Fuel Gas Code, while the plumbing permit covers the potable water piping. A gas heater swap is therefore judged against two separate amended codes.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39435/2021-IPC-Amendments-Final"
+    },
+    {
+      "text": "An electrical permit holder in Memphis may name no more than two authorised agents to apply for permits on the licence, and the Electrical Board can levy civil penalties of up to $50 per violation with each day counted separately.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Memphis takes a permit — the local plumbing code requires one for all potable water systems — and the permit can only be issued to a plumbing contractor who holds a Tennessee licence and has registered it with Construction Code Enforcement, so a homeowner cannot pull it themselves. A gas heater's venting is inspected under the amended Fuel Gas Code rather than the plumbing code, and starting the work before the permit is issued triples the fee.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39435/2021-IPC-Amendments-Final"
+    },
+    "plumber-service-call": {
+      "requirement": "Memphis issues a plumbing permit only to a licensed and registered plumbing contractor who is doing the work, and the owner or agent has to hire one first; there is no homeowner plumbing exam here as there is for electrical. Work begun before the permit is issued is charged triple the usual permit fee, and the fee itself comes off a schedule the city publishes as Appendix A to the plumbing code.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39435/2021-IPC-Amendments-Final"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit in Memphis normally goes to a licensed or registered electrical contractor, but a homeowner living in the house may qualify by passing an approved exam at the 70th percentile or better, doing the work themselves or with immediate family, and taking no more than one such permit every two years. If the job adds to the existing system the city wants a load calculation proving the service can carry it, and wiring that has been out of service a year or more must be re-inspected before it is energised.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+    }
+  },
+  "notVerified": [
+    "Every Memphis trade permit dollar figure. The plumbing, mechanical and electrical fees sit in Appendix A of each joint code and in the separate Fee Ordinance, and the Appendix A pages of the published PDFs were cut off before the fee tables, so no per-fixture, per-outlet, water heater or minimum trade permit fee could be read",
+    "Whether a permit is required to replace a garbage disposal in Memphis — the local plumbing amendments reviewed contain no food waste grinder or disposal provision",
+    "Whether a permit is required to replace a smoke alarm in a Memphis house, and any local wiring or interconnection rule for one — the residential amendments were not reachable and the building ordinance addresses smoke detection only in corridors and stairs",
+    "Memphis local amendments to the NEC itself (AFCI/GFCI scope, grounding and bonding, meter location, aluminum branch wiring) — these are in Exhibit A of the electrical ordinance, which was truncated in the published PDF",
+    "Whether Memphis requires a water heater drain pan, thermal expansion tank, seismic strapping or a specific TPR discharge termination — no such local amendment appears in the portion of the plumbing amendments that could be read",
+    "The current adopted edition is stated as the 2021 set effective December 31, 2021 by the joint ordinances, but an undated Construction Code Enforcement submittal handout still on the county site says the 2015 editions and the 2014 NEC are enforced; the discrepancy was not resolved"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "citySlug": "honolulu-hi",
+  "cityName": "Honolulu",
+  "stateAbbr": "HI",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City and County of Honolulu Department of Planning and Permitting (DPP)",
+    "url": "https://www.honolulu.gov/dpp/permitting/building-permits-home/"
+  },
+  "codeEdition": {
+    "text": "DPP publishes the editions in force by Revised Ordinances of Honolulu chapter. Building, residential and existing building work is the 2018 IBC, 2018 IRC and 2018 IEBC under ROH Chapter 16, with state and city amendments effective 08/09/24 and City Addendum #1 effective 03/11/25. The housing code is ROH 16A with a city addendum effective 01/03/25, and the energy code is the 2018 IECC under ROH 16B effective 12/15/22. The two that matter most for trade work are in force as interim codes rather than locally amended ones: the electrical code under ROH Chapter 17 is the 2020 NEC, interim, effective 03/15/24, and the plumbing code under ROH Chapter 19 is the 2021 Uniform Plumbing Code, interim under HRS 107-28, effective 03/01/24. The fire code is the 2021 NFPA 1 under ROH Chapter 20 effective 01/03/25.",
+    "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/"
+  },
+  "permitPolicy": {
+    "text": "Honolulu does not issue separate trade permits. Under ROH 18-3.1(a) a BUILDING permit is what covers any electrical work or plumbing work that is not exempted, as well as erecting, altering or repairing a building, and the single application is routed through residential, building, mechanical, electrical and fire plan reviews. Small jobs escape a permit only when a licensed contractor does them: ROH 18-3.1(b) exempts electrical repair work performed by a licensed electrical contractor that does not involve service entrance equipment and does not exceed $2,500 in any 12-month period, and plumbing repair work performed by a licensed plumbing contractor that does not exceed $2,500 in any 12-month period. Maintenance repairs using the same or similar materials are exempt up to $10,000 of valuation in any 12-month period only if they do not affect any electrical or plumbing installation. Paying for a building permit requires a Contractor's Statement signed and filled out by all required contractors for their phases.",
+    "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/building-permit-requriements/"
+  },
+  "registration": {
+    "text": "Hawaii licenses contractors by trade classification through the Contractors License Board under HRS Chapter 444, and the two that matter here are C-13 Electrical contractor and C-37 Plumbing contractor (with subclassifications such as C-37a sewer and drain line and C-37b irrigation and lawn sprinkler systems). A licensee has to carry at least $100,000 per person and $300,000 per occurrence bodily injury liability and $50,000 per occurrence property damage coverage, plus any surety bond the board imposes; the board may waive the bond only after the licensee has held it for at least a year. The licensing status matters directly in Honolulu, because the small-job permit exemptions in ROH 18-3.1(b) apply only where a licensed electrical or plumbing contractor does the work.",
+    "sourceUrl": "https://files.hawaii.gov/dcca/pvl/pvl/har/har_77-c.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Honolulu is still on the 2020 National Electrical Code, not the 2023 edition, and it is in force as an interim code rather than a locally amended one. The 2020 NEC became Honolulu's electrical code on 03/15/24 under the state mechanism in HRS 107-28, which applies the state-adopted edition automatically when a county does not adopt it in time. Hawaii's own amendments to the 2020 NEC are minimal, amounting to retitling it the Electrical Code of the State of Hawaii.",
+      "sourceUrl": "https://ags.hawaii.gov/wp-content/uploads/2021/12/StateElectricalCode_03152022.pdf"
+    },
+    {
+      "text": "Do not read water heater or gas rules out of the IRC in Honolulu. Hawaii's State Residential Code deletes IRC Part VII Plumbing (Chapters 25 through 33) in its entirety and deletes Chapter 24 Fuel Gas in its entirety, pointing instead to the adopted State Plumbing Code, and deletes IRC Chapters 35 through 43 Electrical in favour of the State Electrical Code. So a Honolulu water heater is judged against the Uniform Plumbing Code, not the IRC.",
+      "sourceUrl": "https://ags.hawaii.gov/wp-content/uploads/2021/09/2018StateResidentialCode_20201117rev1.pdf"
+    },
+    {
+      "text": "Hawaii assigns seismic design categories by island rather than from the national maps: for Site Class D the State Residential Code puts Oahu, which includes all of Honolulu, in Seismic Design Category D0, while Kauai is B, Maui D1 and parts of Hawaii County D2 or E. That makes Honolulu a seismic jurisdiction for anchoring purposes, something a mainland reader would not expect of Hawaii.",
+      "sourceUrl": "https://ags.hawaii.gov/wp-content/uploads/2021/09/2018StateResidentialCode_20201117rev1.pdf"
+    },
+    {
+      "text": "Honolulu requires a solar water heater on every new single-family dwelling under Act 204, and DPP wants the Materials and Methods (MM) number for the solar hot water panel shown on the plans. A variance is possible, obtained through the State Energy Office, and the variance has to be submitted with the plans. The requirement bites on new houses rather than on replacing a heater in an existing one, but it shapes what DPP expects to see on a plan set.",
+      "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/bp-faq/"
+    },
+    {
+      "text": "Honolulu caps electrical metering per home: no more than one electrical watt-hour meter may be installed per legal dwelling unit. That bars the extra-meter arrangements homeowners sometimes propose when adding a unit or splitting a service, and it is a city rule rather than anything in the NEC.",
+      "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/bp-faq/"
+    }
+  ],
+  "byGuide": {
+    "plumber-service-call": {
+      "requirement": "In Honolulu a plumbing job needs a building permit unless it falls inside the city's narrow exemption: plumbing repair work done by a licensed plumbing contractor and not exceeding $2,500 in any 12-month period. Past that threshold, or if you do the work yourself, the permit fee is based on the fair market value of labour and materials under the city's valuation table, with a flat minimum for very small jobs, and a plan review fee of 20 percent of the permit fee is added where plans are required.",
+      "fee": "Valuation-based under ROH 18 Table 18-A, as applied by the city's own fee calculator: $20 for work valued at $500 or less; $8 plus $2.50 per $100 of value from $500.01 to $1,000; $12 plus $2.20 per $100 from $1,000.01 to $20,000; $82 plus $18 per $1,000 from $20,000.01 to $50,000; $286 plus $14 per $1,000 from $50,000.01 to $100,000; $700 plus $10 per $1,000 from $100,000.01 to $500,000. Plan Review Fee is 20% of the building permit fee, capped at $25,000, where plans are required.",
+      "feeAsOf": "Fee calculator page last modified 2024-10-22",
+      "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/bp-fee-calc/"
+    },
+    "electrician-service-call": {
+      "requirement": "Honolulu exempts electrical repair work from a permit only when a licensed electrical contractor does it, the work does not touch service entrance equipment, and it stays under $2,500 in any 12-month period. Anything involving the service entrance always needs a permit, and so does work above that dollar limit or work a homeowner does themselves. The fee is set by the value of the job on the city's valuation table.",
+      "fee": "Valuation-based under ROH 18 Table 18-A, as applied by the city's own fee calculator: $20 for work valued at $500 or less; $8 plus $2.50 per $100 of value from $500.01 to $1,000; $12 plus $2.20 per $100 from $1,000.01 to $20,000; $82 plus $18 per $1,000 from $20,000.01 to $50,000. Plan Review Fee is 20% of the building permit fee, capped at $25,000, where plans are required.",
+      "feeAsOf": "Fee calculator page last modified 2024-10-22",
+      "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/bp-fee-calc/"
+    },
+    "water-heater-replacement": {
+      "requirement": "A water heater swap in Honolulu is plumbing work under a building permit, judged against the 2021 Uniform Plumbing Code that took effect in the city on 03/01/24 rather than against the IRC, whose plumbing and fuel gas chapters Hawaii deletes outright. Whether you need the permit at all turns on the city's $2,500-per-12-months exemption for plumbing repair work done by a licensed plumbing contractor; otherwise the fee follows the valuation table. If the house is brand new rather than being retrofitted, a solar water heater is required under Act 204.",
+      "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/building-permit-requriements/"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Honolulu publishes no permit line specific to a garbage disposal. It falls under the general rule that a building permit covers any plumbing work that is not exempted, so the deciding question is the city's exemption for plumbing repair work done by a licensed plumbing contractor under $2,500 in any 12-month period. Note that the broader $10,000 maintenance-repair exemption does not help here, because it applies only where the work does not affect any plumbing installation.",
+      "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/building-permit-requriements/"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Honolulu has no smoke-alarm permit of its own, but it has no blanket exemption either: a building permit covers any electrical work that is not exempted, and the exemptions that could apply are electrical repair work by a licensed electrical contractor under $2,500 in any 12-month period, or maintenance repairs under $10,000 of valuation that do not affect any electrical installation. Hardwiring an alarm affects an electrical installation, so the licensed-contractor exemption is the relevant one.",
+      "sourceUrl": "https://www.honolulu.gov/dpp/permitting/building-permits-home/building-permit-requriements/"
+    }
+  },
+  "notVerified": [
+    "Hawaii's state amendments to the 2021 Uniform Plumbing Code that Honolulu now enforces, and therefore any Honolulu-specific water heater requirement for a drain pan, thermal expansion tank, TPR discharge termination or seismic strapping — the state plumbing code document published on ags.hawaii.gov amends an earlier UPC edition, and the text of ROH Chapters 17 and 19 is hosted on codelibrary.amlegal.com, which returned a Cloudflare browser check to automated requests",
+    "The exact text of ROH 18 Table 18-A — the tier figures reported here come from the city's own published fee calculator on honolulu.gov rather than from the table itself",
+    "Whether a Honolulu homeowner may pull a building permit for their own electrical or plumbing work (the city publishes the licensed-contractor exemptions but no owner-builder statement was found on DPP's pages; HRS 444-2 on capitol.hawaii.gov returned 403 to automated requests)",
+    "Whether a water heater or garbage disposal replacement qualifies for Honolulu's Instant Online Permit route, and the fee for that route specifically — DPP publishes only the general eligibility rules and a $75,000 value cap",
+    "Hawaii's separate journey-level electrician and plumber licensing requirements under HRS 448E, and whether Honolulu adds any city-level trade registration",
+    "Honolulu's City Addendum #1 to the 2018 IBC and IRC (effective 03/11/25) and the City Addendum to ROH 16A (effective 01/03/25)"
+  ]
+}

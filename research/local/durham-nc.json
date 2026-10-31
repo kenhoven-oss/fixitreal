@@ -1,0 +1,69 @@
+{
+  "citySlug": "durham-nc",
+  "cityName": "Durham",
+  "stateAbbr": "NC",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Durham City-County Building & Safety Department",
+    "url": "https://dconc.gov/county-departments/departments-a-e/city-county-inspections"
+  },
+  "codeEdition": {
+    "text": "Permits and inspections in Durham are run by one joint City-County Building & Safety Department that enforces the North Carolina State Building Code for both the city and the county. The 2018 North Carolina Codes, effective January 1, 2019, are still the ones in force; they are the 2015 International Codes plus the 2018 NC Ad-Hoc Committee amendments. Electrical work goes by the 2020 North Carolina Electrical Code, effective November 1, 2021, and accessibility by ANSI A117.1-2009. A 2024 North Carolina State Building Code has been approved but the State Fire Marshal issued separate correspondence in March 2025 on when it takes effect.",
+    "sourceUrl": "https://www.ncosfm.gov/codes/codes-current-and-past"
+  },
+  "permitPolicy": {
+    "text": "Durham lets a homeowner take out their own plumbing, heating and air conditioning, or electrical trade permit, but only on a signed Homeowner Acting as Their Own Contractor form that they initial item by item. The home has to be a single-family dwelling that is their primary residence, their name has to be on the deed, and they have to do the work themselves rather than hiring or allowing anyone else to do it. They also agree not to rent, lease or sell the property for one year after the certificate of occupancy is issued or the project is finished. The form is emailed to the department's permit technicians, and the homeowner is then held to exactly the same inspection rules and re-inspection fees as a licensed contractor.",
+    "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/50033/Homeowner-Acting-As-Their-Own-Contractor"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "Durham applies a six-foot setback to mechanical equipment: the unit has to sit at least six feet from the property line. On a tight city lot that can decide where a replacement condenser or heat pump is allowed to go, and it is printed right on the homeowner trade permit form.",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/50033/Homeowner-Acting-As-Their-Own-Contractor"
+    },
+    {
+      "text": "Durham charges for failed inspections on a published count of defects, and the count differs by trade: $100 once five or more electrical items fail, or four or more plumbing or mechanical items, and $50 on an HVAC replacement. Calling for an inspection on work that is not ready is $100 on its own, and repeat re-inspections climb to $100 for the second, $200 for the third and $300 for the fourth. Inspectors will not inspect work that is not fully ready, and all fees have to be paid before inspections continue.",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/50033/Homeowner-Acting-As-Their-Own-Contractor"
+    },
+    {
+      "text": "Durham's electrical minimum is not one number: the floor is $65.00, but a permit for work that needs a rough-in inspection carries a minimum of $100.00 on a house and $150.00 on a commercial job. Opening up walls therefore changes the price of the permit before any per-item fees are counted.",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/30850/Fee-Schedule-PDF---revised-August-2-2022"
+    },
+    {
+      "text": "Starting work in Durham before the permit is issued is charged at double the permit fee. An inspection outside normal hours has to be arranged with the chief inspector or supervisor of that trade at least 24 hours ahead and runs $125.00 an hour with a two- or three-hour minimum.",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/2706/Building-Permits-PDF"
+    },
+    {
+      "text": "Durham's building permit fee schedule carries a $10.00 Homeowner's Recovery Fund fee, and changing the address on an already-issued permit costs $10.00 per trade, so a mis-keyed address on a water heater or panel permit is a separate charge for each trade permit involved.",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/2706/Building-Permits-PDF"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Durham's plumbing fee schedule states outright that a permit is required for an electric water heater, and it is priced as a flat trade permit rather than per fixture.",
+      "fee": "$65.00 electric water heater (permit required)",
+      "feeAsOf": "City of Durham Fee Schedule (Ordinance 15981), revised August 2, 2022",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/30850/Fee-Schedule-PDF---revised-August-2-2022"
+    },
+    "plumber-service-call": {
+      "requirement": "A Durham plumbing permit covers fixture replacement, and as long as the rough-in is not changed the city charges one flat fee for the first few fixtures before moving to a per-fixture rate.",
+      "fee": "$65.00 for 1-4 fixtures replaced with no change to the rough-in; $6.86 per fixture for 5 or more",
+      "feeAsOf": "City of Durham Fee Schedule (Ordinance 15981), revised August 2, 2022",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/30850/Fee-Schedule-PDF---revised-August-2-2022"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Durham takes its own electrical permit, priced per item against a minimum that rises if the job needs a rough-in inspection.",
+      "fee": "$65.00 minimum electrical permit fee ($100.00 residential, $150.00 commercial where a rough-in inspection is required); service equipment $34.00 up to 100 amps plus $6.97 for each additional 100 amps or fraction; outlets, receptacles and switches $21.00 for 1-10 plus $0.83 each additional; individual branch circuits such as a dryer or dishwasher $10.90 each; electric water heater branch circuit $10.90",
+      "feeAsOf": "City of Durham Fee Schedule (Ordinance 15981), revised August 2, 2022",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/30850/Fee-Schedule-PDF---revised-August-2-2022"
+    }
+  },
+  "notVerified": [
+    "Whether Durham requires any city or county trade registration or bond on top of the North Carolina state licence. Nothing on the department's reachable pages or in its fee schedules sets one out, so registration was left null rather than guessed.",
+    "garbage-disposal-replacement permit requirement and fee. Durham's plumbing schedule has a flat fee for fixture replacement with no change to the rough-in but never names a food waste disposer, and no minor-repair exemption list was found, so it could not be established which line applies.",
+    "smoke-detector-replacement permit requirement and fee. Neither the fee schedules nor the reachable department material mentions smoke or CO alarm replacement.",
+    "The permit fee for replacing a gas-fired water heater. The plumbing schedule's water heater line is specific to an electric water heater, and the gas side of the job is priced on the mechanical schedule in a way that could not be quoted with confidence.",
+    "Durham-specific amendments on water heater drain pans, thermal expansion tanks or TPR discharge termination. North Carolina enforces one statewide code and no Durham local amendment on these was found.",
+    "durhamnc.gov sits behind Cloudflare and returns 403 to automated requests, so its pages were read through the documented fetch fallback; durhamnc.gov/293/Building-Permits and /293/Building-Safety could not be retrieved at all."
+  ]
+}

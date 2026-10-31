@@ -1,0 +1,75 @@
+{
+  "citySlug": "knoxville-tn",
+  "cityName": "Knoxville",
+  "stateAbbr": "TN",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Knoxville Department of Plans Review and Inspections",
+    "url": "https://permits.knoxvilletn.gov/"
+  },
+  "codeEdition": {
+    "text": "Knoxville enforces the 2024 editions of the International Building, Residential, Existing Building, Fire, Plumbing, Mechanical, Fuel Gas and Swimming Pool and Spa Codes. Electrical work is judged against the 2023 National Electrical Code (NFPA 70), energy work against the 2018 International Energy Conservation Code, and accessibility against ICC ANSI A117.1-2017. The city links the separate adopting ordinances for the 2024 construction codes, the 2024 fire code, the 2023 electrical code and the 2018 energy code. The Green Construction Code is voluntary and reviewed only on request. Several of the building official's standing policy statements still cite the 2018 IRC, which was the edition in force when they were issued.",
+    "sourceUrl": "https://permits.knoxvilletn.gov/Test/Home1/Plans-Review/Construction-Codes"
+  },
+  "permitPolicy": {
+    "text": "A Knoxville homeowner may pull mechanical, electrical or plumbing permits for their own principal residence without a city trade contractor's license, but has to sign the Homeowner and Unlicensed Contractor Acknowledgement Form certifying they live there or are making it their primary residence and are not working on it to sell, rent or lease. Property held by an LLC or a similar entity does not qualify. The homeowner MEP exemption is closed to manufactured homes, condemned homes, townhouses, condominiums and fire-damaged structures, to temporary poles and to electrical work on a home with no certificate of occupancy, and it cannot be used if the same homeowner was issued an MEP permit at another address in the past five years. A homeowner acting as their own residential builder may file only one such application in any two-year period.",
+    "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/licensing/documents/homeowner-and-unlicensed-contractor-ack-form.pdf"
+  },
+  "registration": {
+    "text": "Anyone who applies for a Knoxville permit must first be registered with the Plans Review and Inspections Office under a registration type matching their qualifications, which for most trades runs alongside a State of Tennessee license. The city offers three tracks: state contractor, homeowner, and unlicensed or state limited licensee (Tennessee LLE or LLP). Since 2022 the city has not required a bond for subcontractor licenses, and it points applicants who reciprocate a state license to Tennessee's own bond rules. No city registration fee is published on the registration page.",
+    "sourceUrl": "https://permits.knoxvilletn.gov/Register-To-Pull-A-Permit"
+  },
+  "codeItems": [
+    {
+      "text": "Knoxville's building official issued a standing AFCI policy for small jobs in one- and two-family dwellings: where branch circuit wiring is modified, replaced or extended in an area that requires AFCI protection, the circuit has to get either a combination-type AFCI at the origin of the branch circuit or an outlet branch-circuit AFCI at the first receptacle. The one way out is an extension of no more than 6 feet that adds no outlets or devices.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+    },
+    {
+      "text": "The code exempts plumbing and mechanical work from the carbon monoxide alarm retrofit trigger, but Knoxville reads that exemption as applying only to systems that are not fuel fired. Replacing a gas water heater or other fuel-fired appliance under permit therefore requires carbon monoxide alarms in the locations the residential code sets for new dwellings.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+    },
+    {
+      "text": "On interior work inside an existing Knoxville dwelling, the city requires smoke alarms in the code's required locations but does not make them interconnected or hard-wired: battery-powered alarms are accepted unless the permit says otherwise. Exterior work such as roofing, siding, windows or a deck, and plumbing or mechanical work, do not trigger the retrofit.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+    },
+    {
+      "text": "Before a Knoxville inspector will release power to a service, the city's electrical service connection policy has them verify that all service entrance conductors can be disconnected, that every 125-volt single-phase 15, 20 or 30 amp receptacle installed for use during construction has GFCI protection, that equipment and connections are undamaged and uncontaminated, and that every conductor landed on the busbar terminates in a device, appliance, junction box or other approved connection. Temporary construction power and service release are alternatives, not something you can run at the same time, and the inspector can have the utility pull power if an unsafe condition turns up.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+    },
+    {
+      "text": "Knoxville gives one free reinspection per discipline and then charges $50 for each further reinspection, and a special request or after-hours inspection is also $50 per discipline. Starting work before the permit is issued on a one- or two-family project costs the value of the permit fee again, capped at $1,000.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/building-code-faq/2024-development-services-fee-schedule.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Knoxville requires a residential plumbing permit for home plumbing work, and the city's permit list names gas piping and gas water heaters specifically; a water heater swap with no building permit behind it is billed as a stand-alone trade permit.",
+      "fee": "Stand-Alone Trade Permit: .5% of the trade valuation, $55 minimum (plus 2.75% if paid by credit card)",
+      "feeAsOf": "Development Services Fee Schedule 2024",
+      "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/building-code-faq/2024-development-services-fee-schedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "A residential electrical permit is required in Knoxville for all home electrical work downstream of the utility connection, and a job with no building permit behind it is charged as a stand-alone trade permit.",
+      "fee": "Stand-Alone Trade Permit: .5% of the trade valuation, $55 minimum (plus 2.75% if paid by credit card)",
+      "feeAsOf": "Development Services Fee Schedule 2024",
+      "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/building-code-faq/2024-development-services-fee-schedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "A residential plumbing permit covers all home plumbing in Knoxville, including gas piping, and a stand-alone plumbing job is priced off the trade valuation with a published minimum.",
+      "fee": "Stand-Alone Trade Permit: .5% of the trade valuation, $55 minimum (plus 2.75% if paid by credit card)",
+      "feeAsOf": "Development Services Fee Schedule 2024",
+      "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/building-code-faq/2024-development-services-fee-schedule.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Knoxville treats swapping smoke alarms as general repair and maintenance that needs no permit, but once you pull a permit for other interior work the dwelling has to have alarms in all the locations the residential code requires for a new house; they may be battery powered and need not be interconnected unless the permit says so.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (Knoxville's residential permit list names gas water heaters and general plumbing and electrical work but says nothing about a food waste disposer, and no exemption list for minor repairs was found)",
+    "The dollar fee a homeowner, state contractor or unlicensed registrant pays to register with Plans Review and Inspections (the registration tracks are described and the bond was dropped in 2022, but no figure is published)",
+    "Knoxville-specific amendments on water heater drain pans, thermal expansion tanks or TPR valve discharge termination (the city adopts the 2024 I-codes and publishes no local amendment on these; its adopting ordinances sit on library.municode.com, which blocks automated requests)",
+    "The text of the adopting ordinances for the 2024 construction codes, 2024 fire code, 2023 NEC and 2018 IECC (all four link to library.municode.com, which is Cloudflare-fronted and unreachable)",
+    "Anything published only on the main www.knoxvilletn.gov site, which returns 403 to automated requests; the department has announced it is moving its processes there"
+  ]
+}

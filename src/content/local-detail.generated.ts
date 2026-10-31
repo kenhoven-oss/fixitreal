@@ -8,11 +8,173 @@
  * Every source URL below passed the official-host check in that script
  * (.gov/.us or a municipal code publisher). Lead-gen sites are denied.
  *
- * 44 metro(s); 171 metro x guide page(s) indexable.
+ * 73 metro(s); 282 metro x guide page(s) indexable.
  */
 import type { LocalDetail } from "./local-detail-types.ts";
 
 export const LOCAL_DETAIL: Record<string, LocalDetail> = {
+  "albuquerque-nm": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Albuquerque Planning Department, Building Safety Division",
+      "url": "https://www.cabq.gov/planning/building-safety-division"
+    },
+    "codeEdition": {
+      "text": "Albuquerque enforces the state-adopted code set: the 2021 New Mexico Commercial Building Code, 2021 New Mexico Residential Building Code, 2021 New Mexico Existing Building Code, 2021 New Mexico Plumbing Code, 2021 New Mexico Mechanical Code and the 2020 New Mexico Electrical Code, which took effect in the city on September 28, 2023. On top of those the city enforces its own 2024 Uniform Administrative Code, which carries Albuquerque's amendments to the state codes along with the permit fee tables.",
+      "sourceUrl": "https://www.cabq.gov/planning/building-safety-division/current-building-codes"
+    },
+    "permitPolicy": {
+      "text": "Albuquerque issues permits only to a contractor licensed by the New Mexico Construction Industries Division, with two exceptions for homeowners: a homeowner may be permitted to build a single-family house or garage for their own use, and a homeowner may be issued an electrical or plumbing permit after passing a written city exam with a score of 75% or better. The city allows four hours for each exam, two attempts with a 30-day wait between them, and one passing exam per year. The city's permit page separately states that water heater installation and ductwork may only be done by a licensed contractor, and the homeowner guide says gas work always requires a licensed New Mexico contractor.",
+      "sourceUrl": "https://www.cabq.gov/planning/building-safety-division/permits"
+    },
+    "registration": {
+      "text": "There is no separate city trade licence. Permit issuance in Albuquerque is tied to a State of New Mexico Construction Industries Division contractor licence, unless the applicant is exempt under NMSA 60-13-3(D) or qualifies under the homeowner exceptions. The city's code names the licence classifications it recognises, including licensed electrical, mechanical and plumbing contractors, and for solar PV work an EE-98, EL-1 or ER-1 licence.",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Albuquerque rewrites the model rule on unlisted water heaters: where the plumbing code allows an unlisted heater to be approved case by case, the city's amendment says unlisted water heaters shall not be installed at all. The same amendment runs through the mechanical code, where unlisted central-heating furnaces, boilers, floor furnaces and wall furnaces are likewise banned outright rather than judged on clearances.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+      },
+      {
+        "text": "For a water heater in a residential garage the city deletes the model code's escape clause for appliances listed as flammable vapor ignition resistant, so an Albuquerque inspector applies the garage installation rule to every heater regardless of how the unit is listed.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+      },
+      {
+        "text": "Where two or more water heaters feed a common manifold, Albuquerque requires separate isolation valves on both the hot and the cold line within three feet of each heater — an addition the city makes to plumbing code section 606.5.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+      },
+      {
+        "text": "Albuquerque adds a gas shutoff the national codes do not call for: an additional full-bore gas shutoff valve downstream of the utility's gas meter, ahead of any distribution into the house piping. The city applies this to new systems and to re-pipes, so it can come up on a gas water heater job that reworks the gas line.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+      },
+      {
+        "text": "The city's plumbing amendments also set an Albuquerque-specific storm drainage design rainfall rate of two inches per hour, and require every cleanout to be sized for the largest diameter pipe in the run rather than the pipe it sits on.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Installing or replacing a water heater in Albuquerque takes a plumbing/mechanical permit, and the city states the work may only be done by a licensed contractor — a homeowner cannot do their own gas water heater. The fee is the flat administrative charge on the permit application plus the per-item unit fees in the city's plumbing and mechanical fee tables, and the city inspects the finished work.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf",
+        "fee": "$47.00 administrative charge applicable to all applications and additions to permit, plus the per-item unit fees in Table 112-D Plumbing Permit Fees and Table 112-C Mechanical Permit Fees (for example $6.00 per gas outlet, $10.00 gas line test with no outlets or appliances)",
+        "feeAsOf": "2024 edition, City of Albuquerque Uniform Administrative Code"
+      },
+      "plumber-service-call": {
+        "requirement": "Albuquerque prices a plumbing permit as a flat administrative charge plus a charge for each item of work, so a one-fixture call and a multi-fixture call are not priced the same. The city does not require a permit to clear a stoppage, fix a leak in a pipe, valve or fixture, pull and reset a water closet, or replace a plumbing fixture with the same type of configuration, as long as valves, pipes and fixtures are not rearranged.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf",
+        "fee": "$47.00 administrative charge applicable to all applications and additions to permit, plus $10.00 per plumbing fixture (includes drain and vent), $14.00 water distribution system, $14.00 water service from property line to house, $28.00 house or building sewer including 2-way cleanout",
+        "feeAsOf": "2024 edition, City of Albuquerque Uniform Administrative Code"
+      },
+      "electrician-service-call": {
+        "requirement": "An electrical permit is required in Albuquerque to install an appliance, device, piece of equipment or wiring, and to add to, alter or replace existing appliances, devices, wiring or equipment. The fee is a flat administrative charge plus unit fees for what is installed. No permit is needed to swap a receptacle for one of the same type and configuration, to repair or replace a fixed listed appliance of the same type and rating in the same location, or to remove wiring.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf",
+        "fee": "$47.00 administrative charge applicable to all applications and additions to permits, plus unit fees including $8.00 per panel, $8.00 per residential fixed appliance of 30 amps or over, $40.00 per meter loop, $1.50 each for the first 20 outlets and $0.90 each over 20",
+        "feeAsOf": "2024 edition, City of Albuquerque Uniform Administrative Code"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Albuquerque publishes no permit line for a garbage disposal on its own. Its code does exempt replacing a plumbing fixture with the same type of configuration from needing a plumbing permit, and exempts repairing or replacing a fixed listed appliance of the same type and rating in the same location from needing an electrical permit; re-piping, rearranging valves or pipes, or new wiring falls outside those exemptions and is permit work.",
+        "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+      }
+    }
+  },
+  "anaheim-ca": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Anaheim Building Division",
+      "url": "https://www.anaheim.gov/5252"
+    },
+    "codeEdition": {
+      "text": "Anaheim enforces the California building standards that took effect statewide on 1 January 2026: the 2025 California Residential Code (2024 IRC), 2025 California Plumbing Code (2024 UPC), 2025 California Mechanical Code (2024 UMC) and 2025 California Electrical Code (NFPA 70-2023). Any local Anaheim amendments were not verifiable.",
+      "sourceUrl": "https://up.codes/codes/california"
+    },
+    "permitPolicy": {
+      "text": "In California a permit is pulled either by a licensed contractor or by the property owner as an owner-builder. A homeowner improving their principal residence is exempt from contractor licensing only if the work is done before sale, they have lived in the home for the 12 months before the work is finished, and they have not used the exemption on more than two structures in any three-year period.",
+      "sourceUrl": "https://www.cslb.ca.gov/Consumers/Building_Officials/Owner_Builder_Overview.aspx"
+    },
+    "codeItems": [
+      {
+        "text": "California building departments are directed to verify, as a condition of issuing the permit, that the contractor's licence number used to pull it is valid and in good standing, and to require owner-builder verification under Health and Safety Code sections 19830, 19831 and 19832 on an owner-builder permit.",
+        "sourceUrl": "https://www.cslb.ca.gov/Resources/GuidesAndPublications/CALBOGuidelines.pdf"
+      },
+      {
+        "text": "An owner-builder may do most of the work themselves but is barred from doing well-drilling work (C-57 classification); any subcontractors they hire must be properly licensed.",
+        "sourceUrl": "https://www.cslb.ca.gov/Consumers/Building_Officials/Owner_Builder_Overview.aspx"
+      }
+    ],
+    "byGuide": {}
+  },
+  "arlington-va": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "Arlington County Department of Community Planning, Housing and Development, Inspection Services Division",
+      "url": "https://www.arlingtonva.us/Government/Programs/Building/Permits"
+    },
+    "codeEdition": {
+      "text": "Arlington County enforces the Virginia Uniform Statewide Building Code, which the state Board of Housing and Community Development writes and amends; localities enforce it rather than writing their own technical amendments. The 2021 Virginia codes took effect January 18, 2024, adopting the 2021 I-codes referenced through the Virginia Construction Code and the 2020 National Electrical Code.",
+      "sourceUrl": "https://www.dhcd.virginia.gov/codes"
+    },
+    "permitPolicy": {
+      "text": "Arlington's electrical ordinance lets a homeowner pull their own permit: a permit may be issued to a person whether registered or not for work in a single-family dwelling or townhouse used only as a residence, provided that person is the bona fide owner or the owner's agent. Otherwise the work has to be permitted by a registered electrical contractor or master electrician, and depending on who holds the permit the county may require a Permit Authorization Affidavit. All permits are applied for online through Permit Arlington, and half the total permit fee is due as a non-refundable filing fee at application.",
+      "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf"
+    },
+    "registration": {
+      "text": "Arlington publishes no county trade registration fee or bond for plumbers and electricians; its electrical ordinance refers to a registered electrical contractor or master electrician, and the Trade Name Registration link on the county's permit pages goes to the Virginia State Corporation Commission's business entity filings rather than to a county trade licence.",
+      "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Replacing a gas water heater or any other fuel-burning appliance in an existing Arlington home triggers a vent and chimney check under Virginia Construction Code M1801.1.1 and G2425.1.1: the vent or chimney has to be correctly sized and clean, free of obstruction, defects and deterioration. Where the county does not inspect it, the installer has to sign Arlington's Vent/Chimney Certification, giving their DPOR licence number, and hand it to the inspector.",
+        "sourceUrl": "https://www.arlingtonva.us/wp-content/uploads/sites/38/2016/09/Vent_Chimney_Certification.pdf"
+      },
+      {
+        "text": "Arlington splits plumbing replacements by fuel. Replacing fixtures or other elements on gas-fuelled equipment needs a permit and inspections, while on equipment that is not gas-fuelled a replacement of the same type, size and location needs no permit at all.",
+        "sourceUrl": "https://www.arlingtonva.us/Government/Programs/Building/Permits/Plumbing-Gas"
+      },
+      {
+        "text": "On the electrical side, replacing a fixture, appliance or wiring of the same type, size and location needs no Arlington permit, unless the item sits in a plenum or penetrates fire-rated or smoke-protected construction, in which case a building permit is required.",
+        "sourceUrl": "https://www.arlingtonva.us/Government/Programs/Building/Permits/Electrical"
+      },
+      {
+        "text": "Any Arlington plumbing permit that includes a backflow device cannot be finaled until a cross connection inspection is done, and that inspection has to be requested through a separate cross connection application. The county charges a cross connection inspection fee of $103.",
+        "sourceUrl": "https://www.arlingtonva.us/Government/Programs/Building/Permits/Plumbing-Gas"
+      },
+      {
+        "text": "Plumbing permits involving fixtures often get a second review by the county's Department of Environmental Services to validate drainage fixture units, and a fixture count may be required with the application. A new or relocated water heater in a building the code treats as commercial needs an approved building permit before the plumbing/gas permit can be applied for.",
+        "sourceUrl": "https://www.arlingtonva.us/Government/Programs/Building/Permits/Plumbing-Gas"
+      },
+      {
+        "text": "Virginia deletes NEC Section 210.8(F) in its entirety from the NFPA 70 it enforces, so the national rule extending GFCI protection to outdoor outlets serving equipment such as air conditioners does not apply in Arlington.",
+        "sourceUrl": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section300/"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a gas water heater in Arlington needs a plumbing/gas permit and inspections, including a vent and chimney check; swapping an electric water heater for the same type, size and location in the same place does not need a permit.",
+        "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf",
+        "fee": "Plumbing: base permit fee $139 per address per permit for replacing or setting fixtures and appliances, plus $60 each for all other plumbing fixtures, drains and appliances; minimum fee $149 for one- and two-family detached dwellings and townhouses not more than 3 stories; plus a 2% USBC Code Academy levy and a 10% automation enhancement surcharge",
+        "feeAsOf": "July 1, 2026"
+      },
+      "plumber-service-call": {
+        "requirement": "Adding, removing or relocating a plumbing fixture, appliance or pipe in Arlington needs a plumbing/gas permit, charged as a base fee per permit plus a charge per fixture, with a minimum fee for houses and townhouses.",
+        "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf",
+        "fee": "Base permit fee $139 per address, per permit; all other plumbing fixtures, drains and appliances $60 each plus the base fee; water services, new, replace or repair $174 each; building sewer repair, relocate or lower $174 each; minimum fee $149 for one- and two-family detached dwellings and townhouses not more than 3 stories; plus a 2% USBC Code Academy levy and a 10% automation enhancement surcharge",
+        "feeAsOf": "July 1, 2026"
+      },
+      "electrician-service-call": {
+        "requirement": "Adding, removing or relocating wiring, fixtures or appliances in Arlington needs an electrical permit, priced by circuit, by group of devices and by service size, with a minimum fee for a house or townhouse.",
+        "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf",
+        "fee": "Minimum permit fee $186 for one- and two-family detached dwellings and townhouses not more than 3 stories; each circuit $22.56 plus the $175 base fee; each 4 devices, receptacles or switch outlets $28.99 plus the $175 base fee; receptacle outlets greater than 20 amperes $75 per outlet; service equipment, first 500 amperes, original installation or replacement $272; sub-panels $72 each; disconnects $75 each; plus a 2% USBC Code Academy levy and a 10% automation enhancement surcharge",
+        "feeAsOf": "July 1, 2026"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Arlington counts a disposal as a fixed appliance, so swapping one for the same type, size and location needs no permit, while installing or relocating one needs a permit and is charged as a fixed appliance.",
+        "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf",
+        "fee": "Fixed appliances (disposals are named in the list): first appliance $75; each additional, not including circuits, $42; plus a 2% USBC Code Academy levy and a 10% automation enhancement surcharge",
+        "feeAsOf": "July 1, 2026"
+      }
+    }
+  },
   "atlanta-ga": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -196,6 +358,140 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "birmingham-al": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Birmingham Department of Planning, Engineering and Permits, Permitting and Inspection Division",
+      "url": "https://www.birminghamal.gov/government/city-departments/pep/divisions-pep/permitting-inspection-division"
+    },
+    "codeEdition": {
+      "text": "Birmingham works from its own Technical Code of the City of Birmingham, 2024 Edition, effective October 1, 2024. It adopts the 2021 International Building, Residential, Plumbing, Fuel Gas, Mechanical, Existing Building, Property Maintenance and Energy Conservation Codes, the 2021 International Fire Code and NFPA 101, and for electrical work the 2020 edition of the National Electrical Code; Chapter 1 of each of those model codes is replaced with the city's own administration chapter.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    "permitPolicy": {
+      "text": "Birmingham's Technical Code lets an owner, an authorized agent or a contractor apply, and the application is signed by the owner or the owner's agent; an owner's affidavit filed with a residential application can be met with proof of ownership. Trade work is different: nobody may do electrical, plumbing, gas fitting, mechanical or fire protection work in the city without the required city, county and state licence and posted bonds, a master or journeyman must be on the job and in charge throughout, and the plumbing permit application is certified by the master plumber personally.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    "registration": {
+      "text": "Birmingham licenses and bonds trades on top of the state ticket. An electrical contractor must hold municipal, city and state business licences and keep a $10,000 bond on deposit with the city's Director of Finance, approved by the Director and written by an Alabama-authorized surety; failure to keep it in force is grounds to revoke the business licence. A master plumber or gas fitter registered with the Alabama Plumbers and Gas Fitters Board may pull permits only once a City of Birmingham business licence and the required bonding are in place. Electrical examinations themselves are run by the state board.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    "codeItems": [
+      {
+        "text": "Birmingham switches the IRC's own electrical chapters off for houses: references to the ICC Electrical Code in the residential and building codes do not apply to residential construction, and an inspector works from the 2020 National Electrical Code instead. The city also notes that electrical permits need no plan review.",
+        "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+      },
+      {
+        "text": "Birmingham deletes Chapter 11, Energy Efficiency, from the International Residential Code outright, so the IRC's envelope, duct and equipment energy provisions are not enforced on a house here.",
+        "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+      },
+      {
+        "text": "Birmingham also deletes IRC Section R313, so residential automatic fire sprinklers are not required.",
+        "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+      },
+      {
+        "text": "Where fixtures are added to an existing water service, the master plumber must certify on the Birmingham application that the existing service is big enough and in good enough condition to deliver at least 8 psi at the point of outlet discharge under maximum demand, 15 psi for flush-valve fixtures, and must give the water meter number.",
+        "sourceUrl": "https://www.birminghamal.gov/government/city-departments/pep/divisions-pep/permitting-inspection-division/city-birmingham-permitting"
+      },
+      {
+        "text": "A new or replacement water service in Birmingham needs a tapping authorization from the Water Works Company, and the authorization number goes on the plumbing permit application.",
+        "sourceUrl": "https://www.birminghamal.gov/government/city-departments/pep/divisions-pep/permitting-inspection-division/city-birmingham-permitting"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Birmingham requires a permit before anyone installs, alters, repairs, converts or replaces a plumbing, gas or mechanical system, so a water heater swap is permitted work and the plumbing application must be certified by the master plumber doing it. On gas work the city exempts repairing a gas-fired furnace but still demands a gas permit for the vent and the gas piping.",
+        "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+      },
+      "plumber-service-call": {
+        "requirement": "Plumbing work in Birmingham needs a permit, with a narrow exemption for repairing or replacing no more than half of a water service up to a maximum of 20 feet; ordinary minor repairs may be waved through without a permit only with the Building, Code or Fire Official's approval.",
+        "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+      },
+      "electrician-service-call": {
+        "requirement": "An electrical permit is required in Birmingham for installing, altering, repairing, converting or replacing any electrical system, and the work must be under a licensed, bonded electrical contractor with a master or journeyman electrician on the job and in charge. Electrical permits do not go through plan review.",
+        "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Replacing a garbage disposal counts as altering or replacing a plumbing system, which Birmingham's Technical Code says needs a permit from the Building Official; the city's short list of permit-free jobs covers portable and self-contained mechanical equipment, roof coverings and finish work, not plumbing fixtures.",
+        "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Birmingham publishes no permit just for swapping a smoke alarm. Its residential amendments remove only the IRC energy-efficiency chapter and the sprinkler section, leaving the model code's smoke-alarm requirements in force, and alarm wiring itself is judged against the 2020 National Electrical Code rather than the IRC electrical chapters.",
+        "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+      }
+    }
+  },
+  "boise-id": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Boise Planning and Development Services, Building Division",
+      "url": "https://www.cityofboise.org/departments/planning-and-development-services/building/"
+    },
+    "codeEdition": {
+      "text": "Boise's currently adopted codes apply to projects submitted on or after January 1, 2021, with later updates for mass timber (1/1/22), the green construction code (3/7/23) and the electrical code (4/26/24). The set is the 2018 IBC, 2018 IEBC, 2018 IRC parts I-IV and IX, 2018 IECC, 2018 IFC and the voluntary 2018 IgCC, plus the 2017 Idaho State Plumbing Code (based on the 2015 Uniform Plumbing Code) and the 2023 National Electrical Code. One- and two-family mechanical work falls under 2018 IRC parts V and VI; larger residential and commercial work uses the 2018 IMC and 2018 IFGC. Boise publishes its own design criteria as local amendments, including a 24 inch minimum frost depth, Seismic Design Category C, a 20 psf ground snow load with a 25 psf minimum design roof snow load, and a 90 mph design wind speed.",
+      "sourceUrl": "https://www.cityofboise.org/departments/planning-and-development-services/building/building-permits/general-building-information-300/301-current-codes/"
+    },
+    "permitPolicy": {
+      "text": "A Boise homeowner may do work on their own primary residence without registering as a contractor with the State of Idaho, and may pull their own plumbing, electrical and mechanical permits through the city's online permitting system. The catch is that the homeowner has to physically perform the work themselves. If anyone else does the electrical, plumbing or mechanical work, that person must be a State of Idaho registered and licensed contractor in that trade. Once a permit is issued the city invites homeowners to request a free pre-work consultation with the plumbing or mechanical inspector.",
+      "sourceUrl": "https://www.cityofboise.org/departments/planning-and-development-services/building/homeowners-guide/"
+    },
+    "registration": {
+      "text": "Boise does not publish a separate city trade licence on top of the state credential: its own guidance is that anyone other than the homeowner doing electrical, plumbing or mechanical work must be a State of Idaho registered and licensed contractor in that trade. On the plumbing side that state credential is an active certificate of competency or registration from the Idaho Division of Occupational and Professional Licenses; working without one, employing someone without one, or advertising plumbing work without the certificate number in the advertisement are each grounds for discipline.",
+      "sourceUrl": "https://www.cityofboise.org/departments/planning-and-development-services/building/homeowners-guide/"
+    },
+    "codeItems": [
+      {
+        "text": "Boise splits water heater replacement between two different permits depending on fuel. Installing or replacing a GAS water heater is mechanical permit work, grouped with gas piping between the meter and the appliance. Installing or replacing an ELECTRIC water heater is plumbing permit work. A homeowner who assumes one plumbing permit covers a gas swap is applying for the wrong permit.",
+        "sourceUrl": "https://www.cityofboise.org/media/4932/residential-construction.pdf"
+      },
+      {
+        "text": "For electrical work Boise requires an electrical conference with the inspector BEFORE the work starts, not just an inspection afterwards. That is a step ahead of the usual pull-permit-then-call-for-inspection sequence, and the city also encourages homeowners to request a conference with the inspector before beginning any permitted work.",
+        "sourceUrl": "https://www.cityofboise.org/media/4932/residential-construction.pdf"
+      },
+      {
+        "text": "Boise enforces the Idaho State Plumbing Code, which deletes Uniform Plumbing Code Section 507.2, the seismic provisions for water heaters. So the seismic strapping that national water heater guides treat as standard is not a state code requirement in Idaho, even though Boise sits in Seismic Design Category C. Manufacturer instructions and any local amendment still govern.",
+        "sourceUrl": "https://adminrules.idaho.gov/rules/current/24/243920.pdf"
+      },
+      {
+        "text": "The Idaho State Plumbing Code that Boise enforces adds a vent test a national guide would not mention: a water heating appliance using Category 3 or Category 4 exhaust venting has to have the vent tested in its entirety with 5 pounds of air for 15 minutes, and plastic vents must be built to the manufacturer's instructions. That affects most modern high-efficiency condensing water heaters.",
+        "sourceUrl": "https://adminrules.idaho.gov/rules/current/24/243920.pdf"
+      },
+      {
+        "text": "For a water heater in a Boise garage, the Idaho amendment replacing UPC 507.13 requires burners, burner-ignition devices and other ignition sources to sit at least 18 inches above the floor, unless the appliance is listed as flammable vapor ignition resistant. The rule also reaches adjacent spaces that open to the garage and are not part of the dwelling's living space.",
+        "sourceUrl": "https://adminrules.idaho.gov/rules/current/24/243920.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater needs a permit in Boise, and which permit depends on the fuel: a gas unit is permitted as mechanical work, an electric unit as plumbing work. Either way the city charges one flat fee for a job limited to a single fixture or appliance, and a homeowner may pull it for their own house if they do the work themselves.",
+        "sourceUrl": "https://www.cityofboise.org/media/21654/fy27-plumbing-code-fee-schedule-10-1-26.pdf",
+        "fee": "$57.00 for installation of a single fixture or appliance (plumbing Table B(3) covers hot water heaters; mechanical Table B(3) covers gas appliances and gas piping)",
+        "feeAsOf": "Oct. 2026 (FY27 schedules effective 10-1-26)"
+      },
+      "plumber-service-call": {
+        "requirement": "Boise needs a plumbing permit to repair, replace, relocate or add to the piping inside a house and to set new fixtures. A job limited to one fixture, appliance or line is a flat fee; a job touching several fixtures is a base fee plus a charge for each fixture. A whole-house re-pipe and a water or waste re-pipe each have their own flat rate.",
+        "sourceUrl": "https://www.cityofboise.org/media/21654/fy27-plumbing-code-fee-schedule-10-1-26.pdf",
+        "fee": "$57.00 single fixture, appliance or line; $33.00 base permit fee plus $12.50 per fixture for multi-fixture work; $83.00 water or waste re-piping; $114.00 re-plumbing an entire house or unit",
+        "feeAsOf": "Oct. 2026 (FY27 schedule effective 10-1-26)"
+      },
+      "electrician-service-call": {
+        "requirement": "Boise prices residential electrical permits by how many branch circuits the job touches rather than by job value: one circuit is one flat fee, more than one circuit is a higher flat fee. Changing the service entrance, service conductors, main disconnect or a panel or sub-panel is its own flat fee set by amperage, with no base fee added.",
+        "sourceUrl": "https://www.cityofboise.org/media/21651/fy27-electrical-code-fee-schedule-10-1-26.pdf",
+        "fee": "$57.00 for installation or alteration of a single branch circuit; $114.00 where more than one branch circuit is installed or altered for an addition, alteration, repair or fixture replacement; service or panel change $57.00 up to 200 amp and $67.50 over 200 amp",
+        "feeAsOf": "Oct. 2026 (FY27 schedule effective 10-1-26)"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Boise's plumbing fee schedule carries its own line for garbage disposals, charged per unit on top of the residential plumbing base permit fee, so a disposal is permitted plumbing work in the city. Where the whole scope is a single fixture or appliance the city instead charges its flat single-fixture rate.",
+        "sourceUrl": "https://www.cityofboise.org/media/21654/fy27-plumbing-code-fee-schedule-10-1-26.pdf",
+        "fee": "$12.50 each for garbage disposals, in addition to the $33.00 residential plumbing base permit fee, with no charge for the disposal where it is installed with other fixtures; the schedule's flat rate for a scope limited to one fixture or appliance is $57.00",
+        "feeAsOf": "Oct. 2026 (FY27 schedule effective 10-1-26)"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Boise does not publish a permit for swapping out a smoke alarm on its own. The city's position is that an electrical permit is needed when electrical fixtures are added, and it gives the smoke alarms required alongside a building permit as its example, so the alarm work gets permitted as part of the larger job rather than by itself.",
+        "sourceUrl": "https://www.cityofboise.org/media/4932/residential-construction.pdf"
+      }
+    }
+  },
   "boston-ma": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -267,6 +563,68 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "buffalo-ny": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Buffalo Department of Permit & Inspection Services",
+      "url": "https://www.buffalony.gov/719/Permits"
+    },
+    "codeEdition": {
+      "text": "Buffalo enforces the New York State Uniform Fire Prevention and Building Code. The state repealed the 2020 edition and replaced it with the 2025 Uniform Code books, including the 2025 Residential Code of New York State and the 2025 Plumbing Code of New York State, effective December 31, 2025; permit applications filed on or after that date must meet the 2025 code.",
+      "sourceUrl": "https://dos.ny.gov/notice-adoption"
+    },
+    "permitPolicy": {
+      "text": "Buffalo issues trade permits to its own licensed tradespeople, not to anyone who asks. A plumbing permit goes to a licensed master plumber and is not transferable; an individual resident owner can get one for work in their own home only after proving to the Commissioner that they are personally qualified. Electrical permits work the same way: they are issued only to a master electrician licensed by the city, except that an owner-occupant of a one- or two-family dwelling may be issued one if they prove personal qualification to the Chief Electrical Inspector.",
+      "sourceUrl": "https://www.buffalony.gov/530/Plumbing"
+    },
+    "registration": {
+      "text": "Buffalo runs its own trade licensing on top of anything the state requires. Plumbing work must be done by a master plumber holding the city license, and a master plumber has to verify the license status of any journeyman they employ; apprentices and unlicensed journeymen may work only with a master plumber physically present and taking part. A certificate holder who does not take out a license pays $50 to keep the certificate active.",
+      "sourceUrl": "https://www.buffalony.gov/530/Plumbing"
+    },
+    "codeItems": [
+      {
+        "text": "An owner-occupant of a one- or two-family home in Buffalo who is allowed to pull their own electrical permit still cannot get one for service-entrance work, which stays with a licensed master electrician.",
+        "sourceUrl": "https://ecode360.com/13584339"
+      },
+      {
+        "text": "No Buffalo electrical permit is needed to replace fuses, receptacles, switches or fixtures on an existing system as long as no new work or change of wiring is involved, but all electrical work must conform to the National Electrical Code whether a permit is required or not.",
+        "sourceUrl": "https://ecode360.com/13584339"
+      },
+      {
+        "text": "Buffalo keeps the property owner on the hook for electrical permit matters: hiring an agent, engineer, architect or licensed contractor does not transfer that responsibility away from the owner.",
+        "sourceUrl": "https://ecode360.com/13584339"
+      },
+      {
+        "text": "Plumbing drawings submitted in Buffalo must detail the hot water tank and any recirculation system, and must detail the incoming water service including the meter and the RPZ backflow valve.",
+        "sourceUrl": "https://www.buffalony.gov/530/Plumbing"
+      },
+      {
+        "text": "Buffalo's sewer rules are enforced through the plumbing permit: storm and sanitary piping may not be combined without approval from both the Buffalo Sewer Authority and the Plumbing Department, conductor piping entering a City combination sewer must be trapped, and a sump pump must discharge indirectly into a conductor line.",
+        "sourceUrl": "https://www.buffalony.gov/530/Plumbing"
+      },
+      {
+        "text": "A failed plumbing inspection in Buffalo, or work that is not ready when the inspector arrives at the scheduled time, means taking out a separate permit with its own application fee.",
+        "sourceUrl": "https://www.buffalony.gov/614/Plumbing-Permit-Fees"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Buffalo takes a plumbing permit, and the city counts the water heater as one of the fixtures it charges for; the permit normally goes to a licensed master plumber, and a resident owner can pull it for their own home only after satisfying the Commissioner that they are qualified to do the work.",
+        "sourceUrl": "https://www.buffalony.gov/614/Plumbing-Permit-Fees",
+        "fee": "$50 application fee on every application, plus $12 per fixture for a 1- or 2-family residence; $100 plan review fee if plans are required; $75 per reinspection"
+      },
+      "plumber-service-call": {
+        "requirement": "Buffalo prices a plumbing permit as a flat application fee plus a charge for each fixture, with underground piping billed by the foot, and the permit expires if work has not started within a year of issue or is abandoned for a year after starting.",
+        "sourceUrl": "https://www.buffalony.gov/614/Plumbing-Permit-Fees",
+        "fee": "$50 application fee (all applications), plus $12 per fixture residential (1- or 2-family) or $50 for the first fixture and $20 per additional fixture otherwise; underground piping $60 for the first 100 linear feet, then $20 per additional 100 feet for pipe 6 inches or under and $55 per additional 100 feet for pipe over 6 inches; $75 per reinspection"
+      },
+      "electrician-service-call": {
+        "requirement": "Buffalo charges a flat electrical permit fee for a one- or two-family house on top of a standard application fee, and lists separate add-on amounts for things like a meter or solar panels; a licensed master electrician normally signs the application.",
+        "sourceUrl": "https://www.buffalony.gov/DocumentCenter/View/17362/2023-12-19---Electrical-Permit-Applicationcleaned",
+        "fee": "$50 application fee on all permits, plus a flat $50 for a 1-family dwelling or $75 for a 2-family dwelling; added items include $50 for the first meter and $25 for each additional meter, $3 per solar panel, and $50 per residential EV charging station"
+      }
+    }
+  },
   "charlotte-nc": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -315,6 +673,67 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       "plumber-service-call": {
         "requirement": "Plumbing work in Charlotte is permitted through Mecklenburg County, and change-out type jobs that need no building permit can be applied for, paid and printed online by the contractor at any hour, with inspections requestable as soon as the work is done.",
         "sourceUrl": "https://code.mecknc.gov/permitting/tip"
+      }
+    }
+  },
+  "chattanooga-tn": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Chattanooga Land Development Office (Public Works)",
+      "url": "https://chattanooga.gov/public-works/land-development-office"
+    },
+    "codeEdition": {
+      "text": "Chattanooga's City Council passed the current adopting ordinances on February 28, 2023, and the Land Development Office stopped accepting plans drawn to the previous codes on May 26, 2023. In force are the 2018 editions of the International Building, Residential, Fire, Mechanical, Fuel Gas and Plumbing Codes, the 2018 International Energy Conservation Code with Tennessee's state amendments, the 2023 National Electrical Code, and ANSI/ICC A117.1-2009 for accessibility. The electrical code therefore runs three cycles ahead of the building and residential codes.",
+      "sourceUrl": "https://chattanooga.gov/stay-informed/building-codes"
+    },
+    "permitPolicy": {
+      "text": "For a residential building permit Chattanooga lets a property owner act as their own contractor under the state's owner exemption: the owner may build on property they own for their own individual use and not for resale, lease or rent, and may not have been issued an owner's permit in the previous 24 months. Trade work is different. The city's own trade licenses are what entitle a person to pull the permit, so a plumbing permit takes a City of Chattanooga Master Plumbing License, a mechanical permit a City Master Mechanical License, a gas permit a City Master Gas Fitter License, and a residential electrical permit a City Class 1 or Class 2 electrical license. A Tennessee state contractor's license is added on top once the contract value reaches $25,000, and a Tennessee business license is required to pull any permit.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/residential-building-permit"
+    },
+    "registration": {
+      "text": "Chattanooga runs its own trade licensing board rather than relying on the state credential alone. It is unlawful to do plumbing work requiring a permit in the city as a master or journeyman plumber without a city certificate of competency, which takes an examination and five years of documented work in the trade. The master employer plumber certificate costs $215.00 per two-year cycle.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/plumbing-license-master"
+    },
+    "codeItems": [
+      {
+        "text": "Chattanooga will not release power to a meter that has been off more than a year until an electrical inspector passes a meter inspection, and the city's published conditions are specific: the meter must be grounded with a #4 ground wire and two ground rods, the panel must be made up with no devices or wires hanging or missing, the house must have permanent heat, and the inspector must be able to get inside. Owners, tenants and landlords are barred from making the repairs themselves. The meter inspection permit is $55.00.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/meter-inspection"
+      },
+      {
+        "text": "A contractor's Chattanooga meter inspection permit only covers minor electrical repairs such as replacing lugs, adding straps or driving ground rods. Anything beyond that has to go on a regular electrical permit, and if the meter inspection is rejected a licensed electrical contractor must pull that separate permit before starting work and then call for a reinspection.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/meter-inspection"
+      },
+      {
+        "text": "Replacing a gas-fired water heater in Chattanooga pulls in a second permit and a second licence: a Gas permit, which only a City of Chattanooga Master Gas Fitter License holder can obtain. It costs $40.00 to issue plus $10.00 for each gas-burning object under 125,000 BTU per hour, and the gas permit fee has to be paid before the inspector approves the installation plans.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/gas-permit"
+      },
+      {
+        "text": "Chattanooga's plumbing fee schedule prices backflow and pressure-control devices as separate permitted items, which is a good sign they are inspected as such: $10.00 for each vacuum breaker or backflow protective device, $6.00 for each pressure reducing device and each check valve assembly, and $10.00 for each installation, alteration or repair of water piping.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/plumbing-permit"
+      },
+      {
+        "text": "Chattanooga's mechanical code gives emergency appliance work a grace period rather than an exemption: where equipment or appliance replacements or repairs have to be done in an emergency, the permit application must be submitted by the next working business day.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/mechanical-permit"
+      },
+      {
+        "text": "Residential electrical work in Chattanooga must be permitted by the holder of a city Class 1 or Class 2 electrical licence; the Class II residential contractor's licence is limited to one- and two-family dwellings and needs three years as a licensed journeyman or residential electrician in the city's metro area, an unrevoked prior Class II licence, an electrical engineering or technology degree, or experience the board accepts. It costs $200.00 for two years plus a $5 administrative fee and a $10 technology fee.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/electrical-license-class-2"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Chattanooga needs a plumbing permit, pulled by a holder of a City of Chattanooga Master Plumbing License, and the city charges a flat issuing fee plus a line item for the heater and its vent.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/plumbing-permit",
+        "fee": "$40.00 Permit Issuance plus $6.00 for each Water Heater and/or Vent"
+      },
+      "plumber-service-call": {
+        "requirement": "Chattanooga requires a plumbing permit to install, alter, repair, remove, convert or replace any part of a plumbing system, and the fee is a flat issuing charge plus per-item amounts for what the job touches.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/plumbing-permit",
+        "fee": "$40.00 Permit Issuance; $6.00 for each Plumbing Fixture, Floor Drain or Trap; $10.00 for each installation, alteration or repair of Water Piping; $10.00 for each repair or alteration of Drainage or Vent Piping; $20.00 for each Building Sewer (replacement/repair); $50.00 for each Re-inspection"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in Chattanooga needs a city electrical permit, and only the holder of a City of Chattanooga Class 1 or Class 2 electrical license may pull one for a house; a state contractor's license is also required once the contract value hits $25,000, and the permit lapses one year after it is issued.",
+        "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/electrical-permit"
       }
     }
   },
@@ -504,6 +923,75 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
         "sourceUrl": "https://www.clevelandohio.gov/city-hall/departments/building-housing/divisions/construction-permitting/permit-fee-schedule",
         "fee": "$50.00 for repairs to existing electrical fixtures or systems ($50.00 minimum fee for any electrical permit)",
         "feeAsOf": "January 2014"
+      }
+    }
+  },
+  "colorado-springs-co": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "Pikes Peak Regional Building Department — issues building, plumbing, mechanical and electrical permits for Colorado Springs; the City separately enforces the fire code through the Fire Department's Division of the Fire Marshal",
+      "url": "https://www.pprbd.org/Information/HomeownerPermit"
+    },
+    "codeEdition": {
+      "text": "Effective June 30, 2026 the governing code in Colorado Springs is the 2023 Pikes Peak Regional Building Code, 2nd Printing, which adopts by reference the 2021 International Building Code, 2021 International Residential Code, 2021 International Mechanical Code, 2021 International Fuel Gas Code, 2021 International Plumbing Code, 2023 National Electrical Code, 2021 International Energy Conservation Code, the Colorado Model Electric Ready and Solar Ready Code, the 2021 International Existing Building Code, 2019 ASME A17.1 and the 2021 International Swimming Pool and Spa Code. Colorado Springs adopted the regional code by Ordinance 23-16, passed by City Council on March 28, 2023 and approved by the Mayor on March 30, 2023, effective April 10, 2023 with an implementation date of June 30, 2023. The fire code is separate and is the City's own: Ordinance 23-14 of April 10, 2023 adopted the 2021 International Fire Code with city amendments at City Code 8.4.102 and 8.4.105, and Ordinance 26-18 of April 28, 2026 amended Fire Code Appendix K to incorporate Colorado's state Wildfire Resiliency Code requirements at 8 CCR 1507-39, effective June 30, 2026.",
+      "sourceUrl": "https://www.pprbd.org/Information/CodeChanges"
+    },
+    "permitPolicy": {
+      "text": "A Colorado Springs homeowner may pull their own permit, but only for the primary residence they own and live in: the Regional Building Department will not issue a homeowner permit for a rental property or for a house the owner does not reside in, and it states plainly that it is illegal for a homeowner to pull a permit for a contractor they have hired. A homeowner who does pull one is expected to know the codes and is responsible for the work passing every inspection. Anyone hiring a contractor for permitted work should know the contractor has to be licensed and registered with the department and cannot obtain a permit unless that licence is in good standing. The department publishes real teeth behind this: unpermitted work draws a stop work order, an investigation fee equal to twice the permit fee, and a Certificate of Alleged Non-compliance recorded with the El Paso or Teller County Clerk and Recorder as a lien against the property. A permit is administratively closed to further inspections if no valid inspection is requested within six months of issuance, with one extension of up to 180 days available on justifiable cause, and reopening afterwards costs half the original permit fee. Re-inspection fees run $50.00 for a first incident, $100.00 for a second and $200.00 for a third, the last with a two-working-day inspection delay.",
+      "sourceUrl": "https://www.pprbd.org/Information/HomeownerPermit"
+    },
+    "registration": {
+      "text": "Trade licensing in Colorado Springs is regional, and which trades need a local licence differs by trade. An electrical contractor needs no licence beyond the Colorado state one but must register with the Regional Building Department, and the department lists the electrical contractor registration fee as N.A. A plumbing contractor holding a State master plumber's licence and registered in the jurisdiction may pull permits without a separate local licence; the Plumbing Contractor or Water Connected Appliance Contractor licence fee is $100.00. Mechanical work, which is where a gas water heater falls, is locally licensed: Mechanical Contractor A (commercial), B (residential, one- and two-family dwellings up to three stories), C (specialty, including a Gas Piping Contractor and a Residential Maintenance/Repair and Replacement classification) and D (manufactured buildings), each $100.00, with the individual Heating Mechanic I or IV licence at $10.00. Every new licence or registration application carries a separate, nonrefundable $50.00 application fee that is not credited against the licence fee, and replacing a lost licence costs $20.00. Electrical, fire alarm, mechanical, plumbing and water conditioning contractors must carry general liability cover of $1,000,000 each occurrence and $2,000,000 general aggregate, name the department as an additional insured, and file a workers' compensation certificate; a lapse is cause for automatic suspension. Renewing late costs half the licence fee within 90 days of expiry, the full fee from 90 to 135 days and twice the fee from 135 to 180 days, after which re-application and re-examination are required.",
+      "sourceUrl": "https://www.pprbd.org/File/ByAlias/PPRBC2023Edition2ndPrinting"
+    },
+    "codeItems": [
+      {
+        "text": "Colorado Springs wrote its own fire alarm section into the fire code for houses in the wildland-urban-interface overlay. Added section 907.2.25.1 applies where the approved development plan calls for it, and requires a monitored fire alarm system in a one- or two-family dwelling with smoke detectors on all levels, in bedrooms and in hallways near or outside bedrooms, a combination of rate-of-rise and 195 degree fixed-temperature detectors in the kitchen and garage, and an outside strobe unit with a clear lens positioned to be visible from the roadway.",
+        "sourceUrl": "https://coloradosprings.gov/system/files/2023-04/Signed%20Ordinance%20No.%2023-14.pdf"
+      },
+      {
+        "text": "The Regional Building Code rewrites the national rule on where a gas appliance may sit. Items 3 and 4 of the prohibited-locations section are deleted outright, item 5 is extended to allow adjacent spaces that meet the indoor combustion air requirements of section G2407.5, and a new item 7 permits the appliance in a room or space that opens only into a bedroom or bathroom provided the space is used for nothing else, the door to the bedroom or bathroom is fully louvered, the door to the appliance room is fully louvered, and all combustion air is taken from indoors under G2407.5. The same amendment is carried into the fuel gas side of the code.",
+        "sourceUrl": "https://www.pprbd.org/File/ByAlias/PPRBC2023Edition2ndPrinting"
+      },
+      {
+        "text": "Gas piping work in the Pikes Peak region is pressure tested in front of the inspector, with the figures set locally. The code official observes the test, the permit holder supplies the apparatus, and a mechanical gauge must have a range whose top of scale is no more than five times the test pressure. Threaded pipe is tested at 10 psi for 15 minutes, welded pipe at 60 psi for 30 minutes and corrugated stainless steel pipe at 10 psi for 15 minutes, using air, carbon dioxide or nitrogen. The code also adds labelling for elevated pressure: gas piping downstream of the gas purveyor's regulator or meter above half a psi is labelled Medium Pressure, above 5 psi High Pressure, and labels go on every 10 feet.",
+        "sourceUrl": "https://www.pprbd.org/File/ByAlias/PPRBC2023Edition2ndPrinting"
+      },
+      {
+        "text": "Unlike its building and mechanical provisions, the Regional Building Code adds nothing of its own to plumbing or electrical. It adopts the Colorado Plumbing Code of the Department of Regulatory Agencies and the National Electrical Code in whatever edition the Colorado State Plumbing Board and the Colorado State Electrical Board have adopted, within twelve months of that state adoption, together with all of the boards' revisions, modifications and exceptions, and in each case the code is adopted in its entirety. So a plumbing or electrical inspection here is judged against the state editions rather than a local rewrite, and the edition can roll over without a local ordinance.",
+        "sourceUrl": "https://www.pprbd.org/File/ByAlias/PPRBC2023Edition2ndPrinting"
+      },
+      {
+        "text": "In Colorado a utility may not energise an installation that needed electrical inspection until final approval has been issued, with only two exceptions: a situation the local electrical inspection authority or the state board treats as an emergency, which buys a maximum of seven days or until the inspection happens, and an approved tiny home connection. If an inspector finds the installation hazardous to life or property they can order the electrical service discontinued until it is made safe and must notify the electricity supplier. For both trades only a \"qualified applicant\" may apply for the permit, which the statute defines as a master plumber or master electrician who is also a registered contractor, one directly employed by a registered contractor, or a homeowner performing work on the homeowner's own home.",
+        "sourceUrl": "https://leg.colorado.gov/sites/default/files/images/olls/crs2023-title-12.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Colorado Springs needs a permit from the Regional Building Department, which lists it among the installations that always require one and prices it as a flat individual residential mechanical and plumbing permit rather than off the job value; replacing the vent at the same time moves it to the higher flat fee.",
+        "sourceUrl": "https://www.pprbd.org/Information/FeeSchedule",
+        "fee": "$40.00 Water Heater Replacement, or $75.00 for Water Heater, Furnace, or Boiler Replacement including vent (individual residential mechanical and plumbing permit fees); commercial is $50.00 up to 400,000 BTU and $100.00 above that",
+        "feeAsOf": "Appendix B of the 2023 Pikes Peak Regional Building Code, 2nd Printing 6.30.26"
+      },
+      "plumber-service-call": {
+        "requirement": "A plumbing permit not tied to a building permit is priced off the job valuation from Table C with a $50.00 floor, and a plumbing permit attached to an alteration of a one- or two-family dwelling is a flat fee per trade instead; the Regional Building Department treats minor plumbing and heating repairs as not needing a permit, and a backflow device or water softener install has its own flat fee.",
+        "sourceUrl": "https://www.pprbd.org/Information/FeeSchedule",
+        "fee": "$50.00 for a valuation of $100 to $500, then $50.00 for the first $500 plus $5.50 per additional $100 to $2,000, $132.50 for the first $2,000 plus $1.45 per additional $100 to $5,000, and $176.00 for the first $5,000 plus $6.75 per additional $1,000 to $50,000 (Table C); $50.00 per trade as a permit attachment to an alteration of a one- or two-family dwelling (Table B.1); $30.00 for a lawn sprinkler backflow prevention device or water softener installation",
+        "feeAsOf": "Appendix B of the 2023 Pikes Peak Regional Building Code, 2nd Printing 6.30.26"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work requires a permit from the Regional Building Department, priced off the job valuation from the same Table C with a $50.00 floor when it stands alone, or as a flat per-trade attachment fee when it rides on a building permit for an alteration; the power company cannot connect service until the final inspection is approved, apart from a declared emergency lasting at most seven days.",
+        "sourceUrl": "https://www.pprbd.org/Information/FeeSchedule",
+        "fee": "$50.00 for a valuation of $100 to $500, then $50.00 for the first $500 plus $5.50 per additional $100 to $2,000, $132.50 for the first $2,000 plus $1.45 per additional $100 to $5,000, and $176.00 for the first $5,000 plus $6.75 per additional $1,000 to $50,000 (Table C); $50.00 per trade as a permit attachment to an alteration of a one- or two-family dwelling, $100.00 per trade on a commercial building permit",
+        "feeAsOf": "Appendix B of the 2023 Pikes Peak Regional Building Code, 2nd Printing 6.30.26"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Colorado law says no plumbing licence, registration or permit is required to repair or replace a garbage disposal unit or dishwasher that is directly connected to the sanitary sewer, including replacing the tail pipes and traps that come with it, and the Regional Building Department's own guidance puts replacing most appliances and minor plumbing repairs on its list of work that needs no permit.",
+        "sourceUrl": "https://leg.colorado.gov/sites/default/files/images/olls/crs2023-title-12.pdf"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "A Colorado Springs house inside the wildland-urban-interface overlay can be held to far more than battery smoke alarms where the approved development plan requires it: the city's own added fire code section calls for a monitored fire alarm system with smoke detectors on every level, in the bedrooms and in the hallways near the bedrooms, rate-of-rise plus 195 degree fixed-temperature detectors in the kitchen and garage, and a clear-lens strobe outside visible from the road.",
+        "sourceUrl": "https://coloradosprings.gov/system/files/2023-04/Signed%20Ordinance%20No.%2023-14.pdf"
       }
     }
   },
@@ -828,6 +1316,63 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "durham-nc": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "Durham City-County Building & Safety Department",
+      "url": "https://dconc.gov/county-departments/departments-a-e/city-county-inspections"
+    },
+    "codeEdition": {
+      "text": "Permits and inspections in Durham are run by one joint City-County Building & Safety Department that enforces the North Carolina State Building Code for both the city and the county. The 2018 North Carolina Codes, effective January 1, 2019, are still the ones in force; they are the 2015 International Codes plus the 2018 NC Ad-Hoc Committee amendments. Electrical work goes by the 2020 North Carolina Electrical Code, effective November 1, 2021, and accessibility by ANSI A117.1-2009. A 2024 North Carolina State Building Code has been approved but the State Fire Marshal issued separate correspondence in March 2025 on when it takes effect.",
+      "sourceUrl": "https://www.ncosfm.gov/codes/codes-current-and-past"
+    },
+    "permitPolicy": {
+      "text": "Durham lets a homeowner take out their own plumbing, heating and air conditioning, or electrical trade permit, but only on a signed Homeowner Acting as Their Own Contractor form that they initial item by item. The home has to be a single-family dwelling that is their primary residence, their name has to be on the deed, and they have to do the work themselves rather than hiring or allowing anyone else to do it. They also agree not to rent, lease or sell the property for one year after the certificate of occupancy is issued or the project is finished. The form is emailed to the department's permit technicians, and the homeowner is then held to exactly the same inspection rules and re-inspection fees as a licensed contractor.",
+      "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/50033/Homeowner-Acting-As-Their-Own-Contractor"
+    },
+    "codeItems": [
+      {
+        "text": "Durham applies a six-foot setback to mechanical equipment: the unit has to sit at least six feet from the property line. On a tight city lot that can decide where a replacement condenser or heat pump is allowed to go, and it is printed right on the homeowner trade permit form.",
+        "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/50033/Homeowner-Acting-As-Their-Own-Contractor"
+      },
+      {
+        "text": "Durham charges for failed inspections on a published count of defects, and the count differs by trade: $100 once five or more electrical items fail, or four or more plumbing or mechanical items, and $50 on an HVAC replacement. Calling for an inspection on work that is not ready is $100 on its own, and repeat re-inspections climb to $100 for the second, $200 for the third and $300 for the fourth. Inspectors will not inspect work that is not fully ready, and all fees have to be paid before inspections continue.",
+        "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/50033/Homeowner-Acting-As-Their-Own-Contractor"
+      },
+      {
+        "text": "Durham's electrical minimum is not one number: the floor is $65.00, but a permit for work that needs a rough-in inspection carries a minimum of $100.00 on a house and $150.00 on a commercial job. Opening up walls therefore changes the price of the permit before any per-item fees are counted.",
+        "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/30850/Fee-Schedule-PDF---revised-August-2-2022"
+      },
+      {
+        "text": "Starting work in Durham before the permit is issued is charged at double the permit fee. An inspection outside normal hours has to be arranged with the chief inspector or supervisor of that trade at least 24 hours ahead and runs $125.00 an hour with a two- or three-hour minimum.",
+        "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/2706/Building-Permits-PDF"
+      },
+      {
+        "text": "Durham's building permit fee schedule carries a $10.00 Homeowner's Recovery Fund fee, and changing the address on an already-issued permit costs $10.00 per trade, so a mis-keyed address on a water heater or panel permit is a separate charge for each trade permit involved.",
+        "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/2706/Building-Permits-PDF"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Durham's plumbing fee schedule states outright that a permit is required for an electric water heater, and it is priced as a flat trade permit rather than per fixture.",
+        "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/30850/Fee-Schedule-PDF---revised-August-2-2022",
+        "fee": "$65.00 electric water heater (permit required)",
+        "feeAsOf": "City of Durham Fee Schedule (Ordinance 15981), revised August 2, 2022"
+      },
+      "plumber-service-call": {
+        "requirement": "A Durham plumbing permit covers fixture replacement, and as long as the rough-in is not changed the city charges one flat fee for the first few fixtures before moving to a per-fixture rate.",
+        "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/30850/Fee-Schedule-PDF---revised-August-2-2022",
+        "fee": "$65.00 for 1-4 fixtures replaced with no change to the rough-in; $6.86 per fixture for 5 or more",
+        "feeAsOf": "City of Durham Fee Schedule (Ordinance 15981), revised August 2, 2022"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in Durham takes its own electrical permit, priced per item against a minimum that rises if the job needs a rough-in inspection.",
+        "sourceUrl": "https://www.durhamnc.gov/DocumentCenter/View/30850/Fee-Schedule-PDF---revised-August-2-2022",
+        "fee": "$65.00 minimum electrical permit fee ($100.00 residential, $150.00 commercial where a rough-in inspection is required); service equipment $34.00 up to 100 amps plus $6.97 for each additional 100 amps or fraction; outlets, receptacles and switches $21.00 for 1-10 plus $0.83 each additional; individual branch circuits such as a dryer or dishwasher $10.90 each; electric water heater branch circuit $10.90",
+        "feeAsOf": "City of Durham Fee Schedule (Ordinance 15981), revised August 2, 2022"
+      }
+    }
+  },
   "el-paso-tx": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -923,6 +1468,348 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       "electrician-service-call": {
         "requirement": "An electrical permit is required in Fort Worth to change, move or repair electrical equipment including the service, and a homeowner using the homestead affidavit may not work on the service at all.",
         "sourceUrl": "https://www.fortworthtexas.gov/departments/development-services/permits/residential-information"
+      }
+    }
+  },
+  "fresno-ca": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Fresno Planning and Development Department, Building and Safety Services Division",
+      "url": "https://www.fresno.gov/planning/building-and-safety/"
+    },
+    "codeEdition": {
+      "text": "Fresno is on the 2025 California Building Standards Code, effective January 1, 2026. The city ran a joint triennial code-update symposium with the City of Clovis in December 2025 covering the move from the 2022 to the 2025 editions of the California Building, Residential, Electrical, Plumbing, Mechanical, Energy and Green Building Standards Codes, plus the 2025 California Wildland-Urban Interface Code. The city's own earlier bulletin documents the previous cycle, when the 2022 code took effect on January 1, 2023 with no extensions granted to the plan-review or permit-issuance periods.",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2025/12/12.15.2025-COF_COC_BS_Symposium-2025-for-Participants-10w1188.pdf"
+    },
+    "permitPolicy": {
+      "text": "Fresno applies California Building Code chapter 1 section 105.1, so the owner or an authorized agent is the one who applies for the permit, and the city publishes an Owner Builder Checklist under its single-family permit procedures for homeowners who choose not to hire licensed contractors. For straightforward trade work there are no plans to submit: the applicant instead completes the city's Permit Affidavit Form listing the fixtures and equipment involved. Every Fresno permit goes invalid if work does not start within 180 days or stalls for 180 days, and the clock resets from each approved inspection; a lapsed permit is reinstated by paying 25 percent of the original permit fee.",
+      "sourceUrl": "https://www.fresno.gov/planning/building-and-safety/building-permit-center/"
+    },
+    "registration": {
+      "text": "Fresno does not issue its own plumbing or electrical licence on top of the California state contractor licence, but a contractor working in the city owes city business tax and must hold a City of Fresno Business Tax Certificate; the city's own screening questions treat holding a California State Contractor's License as a trigger to contact the Business Tax Division. The tax is assessed on gross receipts earned from work inside the city, and the city publishes an optional Schedule S form letting a contractor deduct payments made to other state-licensed contractors who did work on Fresno project sites. No flat registration fee or bond figure is published.",
+      "sourceUrl": "https://www.fresno.gov/finance/business-license-and-tax-certificate/"
+    },
+    "codeItems": [
+      {
+        "text": "Fresno inspectors require interior access to the dwelling to confirm smoke and carbon monoxide alarms before they will sign off a permit. The city's bulletin ties the retrofit trigger to permitted alterations, repairs or additions valued above $1,000, and sets the alarm locations it checks: outside each sleeping area, on every story including basements and habitable attics, inside every bedroom, at least 36 inches from forced-air supply registers and return air ducts, at least 20 feet from a permanently installed cooking appliance, and at least 3 feet from a bathroom door where there is a shower or tub. Alarms must be listed by the Office of the State Fire Marshal, and smoke alarms are to be replaced 10 years from their date of manufacture.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2023/02/2013SmokeandCarbonMonoxideBulletin.pdf"
+      },
+      {
+        "text": "Fresno and Fresno County issued a joint bulletin exempting routine change-outs from SB 407, the state rule that otherwise forces a whole-house swap to water-conserving plumbing fixtures when a property is altered. Water heater replacement, electrical service change-outs, HVAC change-outs, sewer line replacement, re-roofs, window replacement and residential solar are all listed as permits not subject to SB 407 in the city of Fresno, because those are treated as repair or maintenance rather than an alteration.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2023/02/ApplicationofSB407WaterEfficientFixtures.pdf"
+      },
+      {
+        "text": "Under the 2025 California Electrical Code that Fresno now enforces, replacing an electrical panel in a dwelling pulls in a surge protective device. The city's code-update briefing flags CEC articles 215.18 and 225.42 as now requiring an SPD on panel replacement in dwellings, dormitories and guest rooms.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2025/12/12.15.2025-COF_COC_BS_Symposium-2025-for-Participants-10w1188.pdf"
+      },
+      {
+        "text": "Ground-fault and arc-fault scope widened sharply in the 2025 California Electrical Code Fresno enforces. The city's briefing lists GFCI protection under CEC 210.8 now reaching all 125 to 250 volt receptacles in residential areas, crawl spaces and unfinished basements, outdoor outlets regardless of cover or location, and the circuits feeding electric ranges, wall and counter mounted ovens, clothes dryers and microwaves; AFCI protection under 210.12 now reaches kitchens including dedicated appliance outlets, laundry rooms, and all 120 volt 15 and 20 amp circuits serving dwelling areas.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2025/12/12.15.2025-COF_COC_BS_Symposium-2025-for-Participants-10w1188.pdf"
+      },
+      {
+        "text": "Water heater clearance and support are both on Fresno's checklist. The 2025 California Plumbing Code section 507.25 the city now enforces requires a minimum 30 by 30 by 30 inch service clearance at the water heater unless the manufacturer specifies otherwise, with heat pump water heaters held to the manufacturer's own space requirement, and the city's plan-check comments for water heaters call for the unit's location and weight plus a vertical support detail showing seismic strapping to the wall. The 2025 California Energy Code also makes a heat-pump-water-heater-ready installation carry a dedicated 30 amp circuit.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2025/12/12.15.2025-COF_COC_BS_Symposium-2025-for-Participants-10w1188.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Fresno needs a stand-alone plumbing permit, charged as a Simple Plumbing Item with the inspection built into the fee, and the inspector checks the service clearance, the seismic strapping and the home's smoke and carbon monoxide alarms before signing off.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2026/07/MFS-Planning_593_CPI_CPI-UGM_CPI-Parking-ED-2026.07.01-10w1657-10w1683.pdf",
+        "fee": "$111.50 inspection fee for a Water Heater as a Simple Plumbing Item, plus the $27.08 Permit Issuance fee charged on all projects in that table",
+        "feeAsOf": "Effective 07/01/2026 (Master Fee Schedule Amendment #590)"
+      },
+      "plumber-service-call": {
+        "requirement": "Fresno charges one flat Simple Plumbing Item fee for most ordinary service work, including plumbing fixtures, a building sewer, water piping or water treating equipment, backflow devices, and repair or alteration of drainage or vent piping, with the permit issuance fee added on top; bigger jobs such as on-site sewer 6 inches and over are priced per linear foot instead.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2026/07/MFS-Planning_593_CPI_CPI-UGM_CPI-Parking-ED-2026.07.01-10w1657-10w1683.pdf",
+        "fee": "$111.50 inspection fee per Simple Plumbing Item (plumbing fixtures, building sewer, water piping, backflow device, repair or alteration of drainage or vent piping) plus the $27.08 Permit Issuance fee; on-site sewer 6 inches and over is $1.97 per lineal foot and Other Complex Plumbing is $149.07",
+        "feeAsOf": "Effective 07/01/2026 (Master Fee Schedule Amendment #590)"
+      },
+      "electrician-service-call": {
+        "requirement": "A stand-alone electrical permit in Fresno is priced as a Simple Electrical Item for ordinary work such as receptacles, switches and lighting outlets, lighting fixtures, residential appliances and a service of 600 volts or less rated 400 amps or under, so a typical residential panel or service change-out falls in the simple band; going over 400 amps moves the job into the far more expensive complex band, and under the 2025 electrical code a dwelling panel replacement now needs a surge protective device.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2026/07/MFS-Planning_593_CPI_CPI-UGM_CPI-Parking-ED-2026.07.01-10w1657-10w1683.pdf",
+        "fee": "$111.50 inspection fee per Simple Electrical Item, including a service of 600 volts or less and not over 400 amperes, plus the $27.08 Permit Issuance fee; a service over 400 up to 1,000 amperes is $935.79 and Other Complex Electrical is $1,232.70",
+        "feeAsOf": "Effective 07/01/2026 (Master Fee Schedule Amendment #590)"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Fresno publishes no permit or fee for simply swapping a smoke alarm, but its building bulletin requires an existing dwelling to be brought up to the current smoke and carbon monoxide alarm layout whenever permitted alterations, repairs or additions exceed $1,000 in value, and inspection staff come inside to verify every required alarm as a condition of final approval; where the work does not open up wall or ceiling finishes and gives no attic, basement or crawl space access, battery-only non-interconnected alarms are accepted.",
+        "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2023/02/2013SmokeandCarbonMonoxideBulletin.pdf"
+      }
+    }
+  },
+  "grand-rapids-mi": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Grand Rapids Development Center (Building Inspections Division)",
+      "url": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/permits/"
+    },
+    "codeEdition": {
+      "text": "Grand Rapids permits trade work under the Michigan state codes rather than a local building code: current Michigan adoptions are the 2021 Michigan Plumbing Code (2021 IPC), the 2023 Michigan Electrical Code (NFPA 70-2023), the 2021 Michigan Mechanical Code (2021 IMC) and the 2015 Michigan Residential Code (2015 IRC).",
+      "sourceUrl": "https://up.codes/codes/michigan"
+    },
+    "permitPolicy": {
+      "text": "A homeowner of a single-family home may apply for a plumbing, electrical or mechanical permit for their primary residence in person at the Development Center, signing a homeowner affidavit that they will do the work themselves. A property with two or more units must use a licensed contractor.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/permits/residential-building-permits/residential-plumbing-permit/"
+    },
+    "registration": {
+      "text": "A contractor holding a State of Michigan licence must also register that licence with the City of Grand Rapids before applying for permits; the city publishes no separate registration fee in its fee schedule. Contractors doing excavation or utility work must register separately with the Water Department.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/register-contractor"
+    },
+    "codeItems": [
+      {
+        "text": "Since 30 January 2025 city inspectors work under a No Live Work policy: electrical work must be de-energised for inspection, and contractors are asked to be on site with the inspector.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/permits/residential-building-permits/residential-electrical-permit/"
+      },
+      {
+        "text": "The permit application itself warns that concealed work must be inspected before it is covered, so a water heater's gas or water piping cannot be closed in ahead of the inspection.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/iyhdobct/plumbing-permit-application.pdf"
+      },
+      {
+        "text": "Grand Rapids itemises its plumbing permit: a backflow preventer, a backwater valve and gas piping (charged per opening) are separate line items on top of the fixture, so a gas water heater swap that adds piping or a backflow device costs more than the water heater line alone.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+      },
+      {
+        "text": "A residential water heater replacement appears on both the plumbing schedule and the mechanical schedule at $21.00, so gas-fired work can draw a mechanical permit alongside the plumbing permit.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+      },
+      {
+        "text": "New, repaired or replaced water service and sanitary sewer work is not handled on the ordinary plumbing permit: the application routes it to the Water System desk at the Development Center.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/iyhdobct/plumbing-permit-application.pdf"
+      },
+      {
+        "text": "Rental inspections are run against the Grand Rapids Property Maintenance Code, which the city describes as the 2021 International Property Maintenance Code plus local amendments, with smoke detectors kept in City Code Chapter 169 (Home Safety).",
+        "sourceUrl": "https://www.grandrapidsmi.gov/departments/code-compliance/rental-properties/rental-certification-program/"
+      },
+      {
+        "text": "Starting work before the permit is issued carries a published administrative fee of $173.00, and only one inspection is included in the permit - each further inspection is $42.00.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "A plumbing permit is required to replace a water heater in Grand Rapids: you pay a non-refundable application fee that includes one inspection, plus a per-item charge for the water heater itself.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf",
+        "fee": "$52.00 application fee (includes 1 inspection) + $21.00 water heater",
+        "feeAsOf": "effective July 1, 2026"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "A garbage disposal is a listed item on the Grand Rapids plumbing permit schedule, so the job takes a plumbing permit: the application fee plus the disposal line item.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf",
+        "fee": "$52.00 application fee (includes 1 inspection) + $5.00 garbage disposal",
+        "feeAsOf": "effective July 1, 2026"
+      },
+      "plumber-service-call": {
+        "requirement": "Plumbing work in Grand Rapids is permitted by the item: a non-refundable application fee covering one inspection, plus a small charge for each fixture such as a sink, toilet or bath/shower, with re-inspections billed separately.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf",
+        "fee": "$52.00 application fee (includes 1 inspection); $5.00 per fixture (lavatory, kitchen sink, bath tub-shower, water closet); $42.00 each additional inspection",
+        "feeAsOf": "effective July 1, 2026"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work takes a city electrical permit, priced as an application fee that includes one inspection plus per-item charges - a branch circuit, a service up to 200 amps or a fixed appliance each have their own line.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf",
+        "fee": "$52.00 application fee (includes 1 inspection); $10.00 general branch circuit; $17.00 service up to 200 amp; $10.00 electric water heater; $42.00 each additional inspection",
+        "feeAsOf": "effective July 1, 2026"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Grand Rapids enforces smoke detectors through City Code Chapter 169 (Home Safety) and its Property Maintenance Code - the 2021 IPMC with local amendments - and checks them at rental certification inspections.",
+        "sourceUrl": "https://www.grandrapidsmi.gov/departments/code-compliance/rental-properties/rental-certification-program/"
+      }
+    }
+  },
+  "greensboro-nc": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Greensboro Development Services (Engineering & Inspections)",
+      "url": "https://greensboro-nc.gov/departments/engineering-inspections/developers-contractors/permits-fees-and-procedures"
+    },
+    "codeEdition": {
+      "text": "North Carolina runs a single statewide code and Greensboro's inspectors enforce it. The 2018 North Carolina Codes took effect January 1, 2019 and are still the ones in force; they are the 2015 International Codes plus the 2018 NC Ad-Hoc Committee amendments adopted by the Building Code Council. Electrical work is judged against the 2020 North Carolina Electrical Code, which has been effective since November 1, 2021 and is the NEC plus North Carolina amendments. Accessibility follows ANSI A117.1-2009. A 2024 North Carolina State Building Code has been approved by the Rules Review Commission but the State Fire Marshal issued separate correspondence in March 2025 about its effective date.",
+      "sourceUrl": "https://www.ncosfm.gov/codes/codes-current-and-past"
+    },
+    "registration": {
+      "text": "Greensboro requires a city contractor bond on top of the North Carolina state license. Any contractor doing electrical, plumbing, heating, air conditioning, mechanical, refrigeration, HVAC or concrete work who obtains a permit in the city has to file the city's Contractor Bond form in the amount of $2,000.00. The city publishes separate bond forms for demolition, grading and house moving. Greensboro also issues contractors a city contractor code number and PIN, which is what lets them request inspections through the automated phone system.",
+      "sourceUrl": "https://greensboro-nc.gov/home/showdocument?id=24693"
+    },
+    "codeItems": [
+      {
+        "text": "Greensboro's inspectors treat a second ground rod as the default on a new or changed service. The city's own answer is that in Guilford County you cannot reach a resistance to ground of 25 ohms or less without adding another rod, so two rods are required wherever the site has no underground metal water pipe in contact with earth for at least 10 feet, no effectively grounded building steel, no concrete-encased electrode and no ground ring. It points to NEC 250-50, 250-52 and 250-56.",
+        "sourceUrl": "https://greensboro-nc.gov/departments/engineering-inspections/residents-home-owners/residential-construction/building-permits-faqs"
+      },
+      {
+        "text": "On a Greensboro service change the disconnecting means has to be readily accessible outside the building or at the nearest point where the service conductors come in, per NEC 230-70(a). The city follows an NC Department of Insurance letter allowing unfused conductors to be extended inside only twice the length of the service panel, and no further than five feet, whichever is shorter. The exception in 230-6 is the way around it: a raceway run under a slab, or encased in at least two inches of concrete or brick, counts as outside the building and may run more than five feet in.",
+        "sourceUrl": "https://greensboro-nc.gov/departments/engineering-inspections/residents-home-owners/residential-construction/building-permits-faqs"
+      },
+      {
+        "text": "Greensboro accepts unfaced fiberglass insulation to seal penetrations in non-fire-rated walls and floors, which matters on a water heater or panel job where piping and cable pass through framing.",
+        "sourceUrl": "https://greensboro-nc.gov/departments/engineering-inspections/residents-home-owners/residential-construction/building-permits-faqs"
+      },
+      {
+        "text": "Greensboro wants electrical, plumbing and mechanical work on separate permits, one for each trade, and the inspector signs the permit card in the field. A contractor needs that signature before requesting a rough or final inspection, and inspection requests go through the city's automated APRIL phone system by 8 p.m. on the business day before, using the permit number and the contractor's PIN.",
+        "sourceUrl": "https://greensboro-nc.gov/departments/engineering-inspections/residents-home-owners/residential-construction/building-permits-faqs"
+      },
+      {
+        "text": "Greensboro prices failed and repeat inspections on the plumbing schedule: $45.00 for the first follow-up extra inspection, and $45.00 each beyond three inspections on a crawl space house or four on a slab house.",
+        "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5109/638935425664700000"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Greensboro requires a plumbing permit to install a water heater or any fixture or appliance that connects to the drainage, waste and vent, water service or water distribution system, and gas work on the replacement is a separately priced item.",
+        "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5109/638935425664700000",
+        "fee": "$85.00 Minimum Permit/Inspection Fee; Water Heater, all kinds $7.00 each; Gas Connection for Water Heater Replacement $10.00 each",
+        "feeAsOf": "Plumbing Permit Fee Schedule revised 7/16/24"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "A garbage disposal connects to the drainage system, so Greensboro treats it as plumbing permit work, and the disposal is a named line item on the city's plumbing fee schedule.",
+        "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5109/638935425664700000",
+        "fee": "$85.00 Minimum Permit/Inspection Fee; Garbage Disposal $7.00 each",
+        "feeAsOf": "Plumbing Permit Fee Schedule revised 7/16/24"
+      },
+      "plumber-service-call": {
+        "requirement": "Greensboro requires a plumbing permit for changes to the drainage, waste and vent system, for installing or replacing fixtures, for installing or replacing sewer and water service lines, and for special equipment such as water softeners and grease traps; the fee is a per-item charge against a published minimum.",
+        "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5109/638935425664700000",
+        "fee": "$85.00 Minimum Permit/Inspection Fee; $7.00 each for bathtub, floor drain, lavatory, shower, sink, water closet, sewer, water line in an existing house, water softener unit or miscellaneous fixture; Backflow Preventer $15.00 each; Extra Inspection Fee, first follow-up $45.00",
+        "feeAsOf": "Plumbing Permit Fee Schedule revised 7/16/24"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in Greensboro takes its own electrical permit, and the city prices it per item — the service by amperage, then each outlet, appliance and piece of equipment — against a published minimum permit fee.",
+        "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5111/638935423722570000",
+        "fee": "$85.00 minimum permit fee; service 100 A $74.00, 150 A $90.00, 200 A $99.00, 400 A $131.00; receptacles, switches and other outlets $0.30 each; water heater $10.00; appliances such as a range, oven, cooktop, clothes dryer, dishwasher, furnace or disposal/trash compactor $10.00 each; Extra Inspection Fee, first follow-up $45.00",
+        "feeAsOf": "Electrical Permit Fee Schedule revised 7/16/24"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Greensboro prices smoke detectors as fire alarm devices on its electrical permit fee schedule, so hard-wired alarm work done under an electrical permit is charged per device against the city's minimum permit fee.",
+        "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5111/638935423722570000",
+        "fee": "Fire Alarm Devices, smoke detectors $4.00 each; $85.00 minimum permit fee",
+        "feeAsOf": "Electrical Permit Fee Schedule revised 7/16/24"
+      }
+    }
+  },
+  "hartford-ct": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Hartford Department of Development Services, Division of Licenses and Inspections",
+      "url": "https://www.hartfordct.gov/Government/Departments/DDS/DDS-Divisions/Licenses-Inspections-Housing-Code-Enforcement"
+    },
+    "codeEdition": {
+      "text": "Hartford enforces the statewide 2022 Connecticut State Building Code, which is built on the 2021 I-Codes with the ICC A117.1-2017 accessibility standard and applies to permit applications filed on or after October 1, 2022. Its electrical provisions come from the 2020 NFPA 70 National Electrical Code as amended by the state, not a later NEC edition.",
+      "sourceUrl": "https://portal.ct.gov/das/office-of-state-building-inspector/connecticut-state-building-code/regulations"
+    },
+    "permitPolicy": {
+      "text": "The state code Hartford enforces lets the owner or the owner's authorized agent apply for the permit, so a homeowner is not shut out. If the agent is a contractor, the application must carry the contractor's name, business address and Connecticut Department of Consumer Protection home-improvement registration number, and the building official cannot issue the permit until that certificate of registration is produced.",
+      "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+    },
+    "registration": {
+      "text": "Trade licensing in Hartford is handled at state level by the Department of Consumer Protection rather than by a separate city registration: the Licenses and Inspections page points applicants to the state's professional licence lookup, and the state code blocks a permit to a contractor who should be registered under the home-improvement chapter until the registration number appears on the application. Hartford publishes no city trade-registration or bond amount.",
+      "sourceUrl": "https://www.hartfordct.gov/Government/Departments/DDS/DDS-Divisions/Licenses-Inspections-Housing-Code-Enforcement"
+    },
+    "codeItems": [
+      {
+        "text": "Connecticut rewrites the relief-valve discharge rule an inspector checks on a water heater: the discharge pipe has to stop no more than 6 inches above, and at least two pipe diameters above, the floor or the flood-level rim of the waste receptor, and the end must be cut at a 45-degree angle.",
+        "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+      },
+      {
+        "text": "Connecticut amends the national outdoor GFCI rule so that every outdoor outlet on a single-phase circuit of 150 volts or less and 50 amperes or less needs GFCI protection, but it writes in exceptions for lighting outlets and for mini-split and other power-conversion HVAC equipment that the unamended code does not have.",
+        "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+      },
+      {
+        "text": "On a new one- or two-family dwelling Connecticut requires all service conductors to land in an emergency disconnect in a readily accessible outdoor location, grouped if there is more than one, with the state's own list of acceptable disconnect types and markings.",
+        "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+      },
+      {
+        "text": "Smoke alarms in Connecticut may be tied together by listed wireless alarms instead of being physically interconnected, and existing areas need no interconnection at all where the work does not strip interior wall or ceiling finishes back to the structure.",
+        "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+      },
+      {
+        "text": "Where a Hartford house stays occupied during interior alterations or an addition under a building permit, Connecticut requires temporary battery-operated smoke alarms near the work for the whole of construction; a combined smoke and carbon monoxide alarm satisfies it.",
+        "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "A permit is required in Hartford to replace a water heater, because the state code Hartford enforces covers installing, replacing or repairing any plumbing, gas or mechanical system, and the city charges one valuation-based permit fee for building, electrical and plumbing work alike.",
+        "sourceUrl": "https://www.hartfordct.gov/files/assets/public/v/2/development-services/dds-general/general-documents/fee-schedule.pdf",
+        "fee": "$50.26 for the 1st $1,000 of construction costs; $30.26 for each $1,000 thereafter",
+        "feeAsOf": "Effective August 6, 2018"
+      },
+      "plumber-service-call": {
+        "requirement": "Most plumbing work in Hartford needs a permit, but the state code exempts stopping a leak, clearing a stoppage and taking out and refitting a toilet where no valves, pipes or fixtures are replaced or rearranged; replacing a defective concealed trap, drain, water, waste or vent pipe counts as new work and does need a permit and an inspection.",
+        "sourceUrl": "https://www.hartfordct.gov/files/assets/public/v/2/development-services/dds-general/general-documents/fee-schedule.pdf",
+        "fee": "$50.26 for the 1st $1,000 of construction costs; $30.26 for each $1,000 thereafter",
+        "feeAsOf": "Effective August 6, 2018"
+      },
+      "electrician-service-call": {
+        "requirement": "An electrical permit is required in Hartford for work on an electrical system, with a short state list of jobs that are exempt: minor repairs such as changing lamps and fuses, refitting receptacle plugs, swapping a branch-circuit breaker of the same rating in the same place, and low-voltage work under 25 volts and 50 watts.",
+        "sourceUrl": "https://www.hartfordct.gov/files/assets/public/v/2/development-services/dds-general/general-documents/fee-schedule.pdf",
+        "fee": "$50.26 for the 1st $1,000 of construction costs; $30.26 for each $1,000 thereafter",
+        "feeAsOf": "Effective August 6, 2018"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Replacing a garbage disposal in Hartford falls under the permit requirement for altering or replacing a plumbing system, since the only plumbing jobs the state code exempts are leak repairs, clearing stoppages and refitting a toilet; the same valuation-based city fee applies.",
+        "sourceUrl": "https://www.hartfordct.gov/files/assets/public/v/2/development-services/dds-general/general-documents/fee-schedule.pdf",
+        "fee": "$50.26 for the 1st $1,000 of construction costs; $30.26 for each $1,000 thereafter",
+        "feeAsOf": "Effective August 6, 2018"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Hartford publishes no permit or fee for swapping a smoke alarm on its own. Under the state code, a permit for alterations, repairs or an addition normally forces the whole dwelling up to new-house alarm coverage, but Connecticut writes in an exception for plumbing, mechanical and electrical installations, alterations and repairs, so a water-heater or wiring permit does not drag in a whole-house alarm retrofit.",
+        "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+      }
+    }
+  },
+  "henderson-nv": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Henderson Department of Building and Fire Safety (permits issued through the Development Services Center)",
+      "url": "https://www.cityofhenderson.com/government/departments/building-and-fire-safety/building-codes"
+    },
+    "codeEdition": {
+      "text": "Henderson's building codes page publishes local amendments to the 2024 International Building, Residential, Existing Building, Energy Conservation, Fire and Swimming Pool and Spa Codes, the 2024 Uniform Plumbing Code, the 2024 Uniform Mechanical Code and the 2023 National Electrical Code, and states that the 2024 set applies to submittals received on or after January 2, 2026. The previous set, based on the 2021 I-codes and the 2018 Uniform and residential codes, applies to submittals received between March 23, 2023 and January 1, 2026.",
+      "sourceUrl": "https://www.cityofhenderson.com/government/departments/building-and-fire-safety/building-codes"
+    },
+    "permitPolicy": {
+      "text": "Nevada contractor licensing law exempts an owner of property who is building or improving a residential structure for their own occupancy and not for sale or lease, but the owner has to apply to the Nevada State Contractors Board for that exemption first. The same statute gives no general pass for small repairs where a building permit is required or where the work is of a type done by a plumbing, electrical, heating or air-conditioning contractor.",
+      "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-624.html"
+    },
+    "registration": {
+      "text": "A contractor working in Henderson needs a City of Henderson business license; the city publishes a contractor-specific business license checklist listing the forms required, including a business registration form and a zoning compliance check. No separate trade registration or bond amount is published on that checklist.",
+      "sourceUrl": "https://cityofhenderson.com/home/showpublisheddocument/1788/638675125235430000"
+    },
+    "codeItems": [
+      {
+        "text": "The Southern Nevada amendments to the 2024 Uniform Plumbing Code that Henderson publishes require a drain pan under a water heater in an attic, in or on an attic or floor-ceiling assembly, or anywhere a leak could cause damage. The pan has to be at least 1-1/2 inches deep with a drain of at least 3/4 inch, and discharging a relief valve into that pan is prohibited. A tankless heater in a readily accessible spot and a point-of-use heater are excepted.",
+        "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16001/638833439360300000"
+      },
+      {
+        "text": "Under the same plumbing amendments, a water heater's temperature and pressure relief drain has to terminate outside the building unless the manufacturer's listing rules that out; where it cannot, it may discharge through an air gap to a clothes washer port, floor sink, mop sink or an equipped floor drain.",
+        "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16001/638833439360300000"
+      },
+      {
+        "text": "A backflow prevention assembly has to be tested by a certified tester when it is installed, repaired or relocated and at least once a year after that, and the tester has to leave a copy of the certification for each device on site.",
+        "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16001/638833439360300000"
+      },
+      {
+        "text": "The Southern Nevada amendments to the 2023 National Electrical Code that Henderson publishes cap a dwelling's 15-amp lighting circuits and 20-amp circuits at twelve outlets each, and require separate 20-amp circuits for a dishwasher, a trash compactor and a microwave oven. Outlets serving smoke detectors are not counted toward the twelve-outlet limit.",
+        "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/15983/638833433919100000"
+      },
+      {
+        "text": "The Southern Nevada amendments to the 2024 International Residential Code also rework combustion air and alarm placement: a fireplace or gas appliance in a sleeping room or adjacent bathroom needs a permanent unobstructed outside air supply to the firebox, and carbon monoxide alarm placement is amended for fuel-burning appliances in bedrooms.",
+        "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/15993/638833443209500000"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Henderson takes a plumbing permit, charged as a single flat line in the city's building mechanical, plumbing and electrical fee table.",
+        "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16408/638948459361800000",
+        "fee": "Water Heater: $81"
+      },
+      "plumber-service-call": {
+        "requirement": "Repair or alteration of drainage or vent piping in Henderson takes a plumbing permit charged per fixture.",
+        "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16408/638948459361800000",
+        "fee": "Miscellaneous repair, including repair or alteration of drainage or vent piping, each fixture: $211"
+      },
+      "electrician-service-call": {
+        "requirement": "Small electrical work in Henderson takes an electrical permit priced per device, and replacing a whole service has its own line in the fee table.",
+        "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16408/638948459361800000",
+        "fee": "Each general lighting outlet, receptacle outlet and switch (multi-outlet assemblies, each 5' or portion thereof): $152; each service regardless of ampere rating, including first meter socket: $190"
       }
     }
   },
@@ -1151,6 +2038,71 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       "electrician-service-call": {
         "requirement": "Replacing a light switch or a light fixture needs no Kansas City permit, but most other electrical work does, and on a single-family home only the occupying owner doing the work personally, or a city-licensed electrical contractor, may pull it.",
         "sourceUrl": "https://www.kcmo.gov/city-hall/departments/city-planning-development/electrical-plumbing-and-mechanical-permits"
+      }
+    }
+  },
+  "knoxville-tn": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Knoxville Department of Plans Review and Inspections",
+      "url": "https://permits.knoxvilletn.gov/"
+    },
+    "codeEdition": {
+      "text": "Knoxville enforces the 2024 editions of the International Building, Residential, Existing Building, Fire, Plumbing, Mechanical, Fuel Gas and Swimming Pool and Spa Codes. Electrical work is judged against the 2023 National Electrical Code (NFPA 70), energy work against the 2018 International Energy Conservation Code, and accessibility against ICC ANSI A117.1-2017. The city links the separate adopting ordinances for the 2024 construction codes, the 2024 fire code, the 2023 electrical code and the 2018 energy code. The Green Construction Code is voluntary and reviewed only on request. Several of the building official's standing policy statements still cite the 2018 IRC, which was the edition in force when they were issued.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/Test/Home1/Plans-Review/Construction-Codes"
+    },
+    "permitPolicy": {
+      "text": "A Knoxville homeowner may pull mechanical, electrical or plumbing permits for their own principal residence without a city trade contractor's license, but has to sign the Homeowner and Unlicensed Contractor Acknowledgement Form certifying they live there or are making it their primary residence and are not working on it to sell, rent or lease. Property held by an LLC or a similar entity does not qualify. The homeowner MEP exemption is closed to manufactured homes, condemned homes, townhouses, condominiums and fire-damaged structures, to temporary poles and to electrical work on a home with no certificate of occupancy, and it cannot be used if the same homeowner was issued an MEP permit at another address in the past five years. A homeowner acting as their own residential builder may file only one such application in any two-year period.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/licensing/documents/homeowner-and-unlicensed-contractor-ack-form.pdf"
+    },
+    "registration": {
+      "text": "Anyone who applies for a Knoxville permit must first be registered with the Plans Review and Inspections Office under a registration type matching their qualifications, which for most trades runs alongside a State of Tennessee license. The city offers three tracks: state contractor, homeowner, and unlicensed or state limited licensee (Tennessee LLE or LLP). Since 2022 the city has not required a bond for subcontractor licenses, and it points applicants who reciprocate a state license to Tennessee's own bond rules. No city registration fee is published on the registration page.",
+      "sourceUrl": "https://permits.knoxvilletn.gov/Register-To-Pull-A-Permit"
+    },
+    "codeItems": [
+      {
+        "text": "Knoxville's building official issued a standing AFCI policy for small jobs in one- and two-family dwellings: where branch circuit wiring is modified, replaced or extended in an area that requires AFCI protection, the circuit has to get either a combination-type AFCI at the origin of the branch circuit or an outlet branch-circuit AFCI at the first receptacle. The one way out is an extension of no more than 6 feet that adds no outlets or devices.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+      },
+      {
+        "text": "The code exempts plumbing and mechanical work from the carbon monoxide alarm retrofit trigger, but Knoxville reads that exemption as applying only to systems that are not fuel fired. Replacing a gas water heater or other fuel-fired appliance under permit therefore requires carbon monoxide alarms in the locations the residential code sets for new dwellings.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+      },
+      {
+        "text": "On interior work inside an existing Knoxville dwelling, the city requires smoke alarms in the code's required locations but does not make them interconnected or hard-wired: battery-powered alarms are accepted unless the permit says otherwise. Exterior work such as roofing, siding, windows or a deck, and plumbing or mechanical work, do not trigger the retrofit.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+      },
+      {
+        "text": "Before a Knoxville inspector will release power to a service, the city's electrical service connection policy has them verify that all service entrance conductors can be disconnected, that every 125-volt single-phase 15, 20 or 30 amp receptacle installed for use during construction has GFCI protection, that equipment and connections are undamaged and uncontaminated, and that every conductor landed on the busbar terminates in a device, appliance, junction box or other approved connection. Temporary construction power and service release are alternatives, not something you can run at the same time, and the inspector can have the utility pull power if an unsafe condition turns up.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
+      },
+      {
+        "text": "Knoxville gives one free reinspection per discipline and then charges $50 for each further reinspection, and a special request or after-hours inspection is also $50 per discipline. Starting work before the permit is issued on a one- or two-family project costs the value of the permit fee again, capped at $1,000.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/building-code-faq/2024-development-services-fee-schedule.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Knoxville requires a residential plumbing permit for home plumbing work, and the city's permit list names gas piping and gas water heaters specifically; a water heater swap with no building permit behind it is billed as a stand-alone trade permit.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/building-code-faq/2024-development-services-fee-schedule.pdf",
+        "fee": "Stand-Alone Trade Permit: .5% of the trade valuation, $55 minimum (plus 2.75% if paid by credit card)",
+        "feeAsOf": "Development Services Fee Schedule 2024"
+      },
+      "electrician-service-call": {
+        "requirement": "A residential electrical permit is required in Knoxville for all home electrical work downstream of the utility connection, and a job with no building permit behind it is charged as a stand-alone trade permit.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/building-code-faq/2024-development-services-fee-schedule.pdf",
+        "fee": "Stand-Alone Trade Permit: .5% of the trade valuation, $55 minimum (plus 2.75% if paid by credit card)",
+        "feeAsOf": "Development Services Fee Schedule 2024"
+      },
+      "plumber-service-call": {
+        "requirement": "A residential plumbing permit covers all home plumbing in Knoxville, including gas piping, and a stand-alone plumbing job is priced off the trade valuation with a published minimum.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/files/assets/building/v/1/building-code-faq/2024-development-services-fee-schedule.pdf",
+        "fee": "Stand-Alone Trade Permit: .5% of the trade valuation, $55 minimum (plus 2.75% if paid by credit card)",
+        "feeAsOf": "Development Services Fee Schedule 2024"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Knoxville treats swapping smoke alarms as general repair and maintenance that needs no permit, but once you pull a permit for other interior work the dwelling has to have alarms in all the locations the residential code requires for a new house; they may be battery powered and need not be interconnected unless the permit says so.",
+        "sourceUrl": "https://permits.knoxvilletn.gov/Policies-Fast-Facts/Policy-Statements-and-Determinations"
       }
     }
   },
@@ -1419,6 +2371,119 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       "electrician-service-call": {
         "requirement": "Electrical work in Louisville is permitted and inspected against the National Electrical Code by the local certified electrical inspector, and appliances and work exempted by Kentucky Residential Code section R105.2 are not inspected.",
         "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/035/020/"
+      }
+    }
+  },
+  "madison-wi": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Madison Building Inspection Division (Dept. of Planning & Community & Economic Development)",
+      "url": "https://www.cityofmadison.com/dpced/building-inspection"
+    },
+    "codeEdition": {
+      "text": "Madison's Development Services Center directs 1- and 2-family alteration work to the state code, Wis. Admin. Code chs. SPS 320-325 (Wisconsin Uniform Dwelling Code); any building with three or more attached units is handled under the commercial building code instead.",
+      "sourceUrl": "https://www.cityofmadison.com/development-services-center/1-2-family-residential/alterations/general-alterations-including"
+    },
+    "permitPolicy": {
+      "text": "An owner-occupant altering their own single-family home may pull both the building permit and the mechanical permits (plumbing, electrical, HVAC). An owner-occupant building a new house may pull only the building permit, and a non-occupant owner of a 1- or 2-family rental needs licensed professionals for both building and mechanical permits.",
+      "sourceUrl": "https://www.cityofmadison.com/development-services-center/1-2-family-residential"
+    },
+    "codeItems": [
+      {
+        "text": "Madison's smoke alarm ordinance reaches every residential building, including owner-occupied single-family homes: alarms must be hardwired with battery backup or powered by a sealed, non-removable 10-year battery, and no alarm may stay in service longer than ten years unless the manufacturer allows it.",
+        "sourceUrl": "https://www.cityofmadison.com/fire/your-safety/smoke-alarms/smoke-alarm-ordinance"
+      },
+      {
+        "text": "Placement is stricter than the usual one-per-floor rule: an alarm is required in each bedroom, in each sleeping area, within six feet of every door leading to a bedroom or sleeping area, and on each floor of the building.",
+        "sourceUrl": "https://www.cityofmadison.com/fire/your-safety/smoke-alarms/smoke-alarm-ordinance"
+      },
+      {
+        "text": "Electrical permits are counted by \"openings\" - outlets, switches, fixtures, junction boxes, subpanels and fixed appliances all count - and a service panel replacement is counted and priced separately from openings.",
+        "sourceUrl": "https://www.cityofmadison.com/development-services-center/documents/forms/permit-electrical.pdf"
+      },
+      {
+        "text": "Water heaters and water softeners are named in the scope of the city's plumbing repair/replace permit, and plumbing permit fees are calculated from the number of new or replaced fixtures.",
+        "sourceUrl": "https://www.cityofmadison.com/development-services-center/1-2-family-residential/online-permits"
+      },
+      {
+        "text": "Moving or adding a permanent fixture (toilet, sink, shower, island or counter) pushes the job out of the over-the-counter permit and into plan review, so a relocated water heater or sink is not a same-day permit in Madison.",
+        "sourceUrl": "https://www.cityofmadison.com/development-services-center/1-2-family-residential/online-permits"
+      },
+      {
+        "text": "Connecting to, installing or replacing a water service requires a separate Water Utility application signed by a master plumber (and by the property owner for a new or replacement service), submitted with fees before work starts.",
+        "sourceUrl": "https://www.cityofmadison.com/water/plumbers-contractors"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater needs a Madison plumbing permit; the city's plumbing data sheet is the application for water heater and softener replacements and prices the permit by fixture.",
+        "sourceUrl": "https://www.cityofmadison.com/development-services-center/documents/forms/permit-plumbing.pdf",
+        "fee": "$8.00 per fixture - minimum fee $25.00"
+      },
+      "plumber-service-call": {
+        "requirement": "Plumbing work that adds or moves a fixture needs a plumbing permit from Building Inspection, priced per fixture with a minimum fee; jobs that do not require plan review can be applied for over the counter or online.",
+        "sourceUrl": "https://www.cityofmadison.com/development-services-center/documents/forms/permit-plumbing.pdf",
+        "fee": "$8.00 per fixture - minimum fee $25.00"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in an existing building needs an electrical permit, priced by the number of openings added or moved, with a separate charge for replacing a service panel.",
+        "sourceUrl": "https://www.cityofmadison.com/development-services-center/documents/forms/permit-electrical.pdf",
+        "fee": "$25.00 for openings 1-10 + $1.00 per additional opening; $50.00 per service panel"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Madison does not treat smoke alarms as a permit item, but its ordinance sets what you may install: a hardwired alarm with battery backup or a sealed 10-year-battery alarm, in each bedroom and sleeping area, within six feet of each bedroom door and on every floor, replaced at ten years.",
+        "sourceUrl": "https://www.cityofmadison.com/fire/your-safety/smoke-alarms/smoke-alarm-ordinance"
+      }
+    }
+  },
+  "memphis-tn": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "Memphis and Shelby County Office of Construction Code Enforcement",
+      "url": "https://www.shelbycountytn.gov/Directory.aspx?did=381"
+    },
+    "codeEdition": {
+      "text": "Memphis and unincorporated Shelby County are covered by one joint code set adopted by both the Memphis City Council and the Shelby County Board of Commissioners, effective December 31, 2021: the 2021 International Building Code with local amendments, together with the 2021 International Residential, Plumbing, Mechanical, Fuel Gas, Existing Building, Fire and Energy Conservation Codes and the 2020 National Electrical Code, each with its own local amendments. The electrical ordinance repealed the 2018 Memphis and Shelby County Electrical Code.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39392/2021-International-Building-Code-with-Local-Amendments"
+    },
+    "permitPolicy": {
+      "text": "Trade permits in Memphis go to the contractor, not the homeowner: the plumbing code says a permit is issued only to a licensed and/or registered contractor who performs the work, and the owner or agent must first hire one. The electrical code carries the one homeowner exception — a permit may be issued to the owner of a single-family home that is their principal residence and is not held for rent, lease or resale, provided they score at or above the 70th percentile on an approved examination, do the work themselves or with immediate family, and take no more than one such permit every two years. Retaking the exam costs $25 after the first free attempt. On the building side a property owner may pull a permit for a single-family dwelling within the limits state law sets, and the county's residential handout lets a homeowner do demolition on their own home against a $300.00 refundable cash bond plus the permit fee.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+    },
+    "registration": {
+      "text": "A state licence alone is not enough here. A contractor must hold a State of Tennessee licence and then register it with the Construction Code Enforcement licensing section, along with a Memphis and Shelby County business licence and a qualifying-agent affidavit from the State Contractors Board; registration and renewal are $50 each. The joint code also requires a $25,000 contractor bond, capped at $50,000 for a single entity holding several registrations. Electrical work additionally runs through locally issued credentials — a Master Electrician licence from the Building Official, plus journeyman and industrial plant electrician licences — and contractor vehicles must carry the firm name and registration number.",
+      "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/33929/General-Information-about-submittals"
+    },
+    "codeItems": [
+      {
+        "text": "Memphis makes an inspector re-check wiring that has sat idle: residential wiring out of service for 365 days or more (90 days or more for commercial) has to be re-inspected before the power company may energise it again. On a long-vacant house that turns a simple reconnect into an inspection.",
+        "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+      },
+      {
+        "text": "Adding to an existing electrical system in Memphis requires a load calculation showing the existing service can carry the added load — so a new circuit for a hot tub, EV charger or sub-panel can turn into a service-size question rather than a simple add-on.",
+        "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+      },
+      {
+        "text": "The local plumbing amendments push gas water heaters out of the plumbing code: a fuel gas water heater and its venting system are regulated under the International Fuel Gas Code, while the plumbing permit covers the potable water piping. A gas heater swap is therefore judged against two separate amended codes.",
+        "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39435/2021-IPC-Amendments-Final"
+      },
+      {
+        "text": "An electrical permit holder in Memphis may name no more than two authorised agents to apply for permits on the licence, and the Electrical Board can levy civil penalties of up to $50 per violation with each day counted separately.",
+        "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Memphis takes a permit — the local plumbing code requires one for all potable water systems — and the permit can only be issued to a plumbing contractor who holds a Tennessee licence and has registered it with Construction Code Enforcement, so a homeowner cannot pull it themselves. A gas heater's venting is inspected under the amended Fuel Gas Code rather than the plumbing code, and starting the work before the permit is issued triples the fee.",
+        "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39435/2021-IPC-Amendments-Final"
+      },
+      "plumber-service-call": {
+        "requirement": "Memphis issues a plumbing permit only to a licensed and registered plumbing contractor who is doing the work, and the owner or agent has to hire one first; there is no homeowner plumbing exam here as there is for electrical. Work begun before the permit is issued is charged triple the usual permit fee, and the fee itself comes off a schedule the city publishes as Appendix A to the plumbing code.",
+        "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39435/2021-IPC-Amendments-Final"
+      },
+      "electrician-service-call": {
+        "requirement": "An electrical permit in Memphis normally goes to a licensed or registered electrical contractor, but a homeowner living in the house may qualify by passing an approved exam at the 70th percentile or better, doing the work themselves or with immediate family, and taking no more than one such permit every two years. If the job adds to the existing system the city wants a load calculation proving the service can carry it, and wiring that has been out of service a year or more must be re-inspected before it is energised.",
+        "sourceUrl": "https://www.shelbycountytn.gov/DocumentCenter/View/39391/2020-National-Electrical-Code-with-Local-Amendments"
       }
     }
   },
@@ -1694,6 +2759,72 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "new-orleans-la": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of New Orleans Department of Safety & Permits",
+      "url": "https://nola.gov/next/safety-and-permits/home/"
+    },
+    "codeEdition": {
+      "text": "New Orleans enforces the construction codes adopted by the Louisiana State Uniform Construction Code Council; for houses that is the Louisiana Residential Code 2021, based on the 2021 International Residential Code with state amendments, in force since January 1, 2023. The city's own permit pages describe the adopted codes as the International Construction Code and International Fire Code as adopted by the City of New Orleans.",
+      "sourceUrl": "https://up.codes/viewer/louisiana/irc-2021"
+    },
+    "permitPolicy": {
+      "text": "A homeowner can apply for the building permit itself, but not for the trade permits. An electrical permit in New Orleans can be obtained only by an electrical contractor holding a Class \"A\" Electrical License from the city, a mechanical or gas permit only by a contractor holding the matching Class \"A\" city mechanical licence, and a plumbing permit only by an Orleans Parish licensed master plumber.",
+      "sourceUrl": "https://nola.gov/electrical-permit/"
+    },
+    "registration": {
+      "text": "New Orleans licenses tradespeople itself on top of the state licence. An electrician working in the city must hold and renew a city Electrical License annually; the Class \"A\" Master Electrical Contractor licence costs $125.00, only one holder is allowed per company, and the applicant must carry general liability cover of at least $500,000 plus workers compensation with the City of New Orleans named as certificate holder.",
+      "sourceUrl": "https://nola.gov/class-a-electrical-license/"
+    },
+    "codeItems": [
+      {
+        "text": "New Orleans treats a backflow preventer as mechanical equipment for zoning purposes: it cannot sit in a required front or corner-side yard without a variance from the Board of Zoning Adjustments, and anything placed in a side or rear yard must not block emergency access between the house and the property line.",
+        "sourceUrl": "https://nola.gov/review-requirements-for-backflow-preventers/"
+      },
+      {
+        "text": "On mechanical and fuel-gas work the city's Mechanical Division wants paperwork a national guide would not mention: a blower-door test by nationally certified personnel on New Orleans report forms showing 5 to 7 air changes per hour at 50 pascals (or an approved visual inspection instead), duct-leakage test reports before occupancy unless the air handler and ducts are all inside conditioned space, and Manual J, S and D calculations certified by affidavit in One Stop for new construction and substantial renovations.",
+        "sourceUrl": "https://nola.gov/mechanical-permit/"
+      },
+      {
+        "text": "A wood-burning fireplace in New Orleans must have its outdoor combustion air visible to the inspector at rough-in, before the wall is closed up.",
+        "sourceUrl": "https://nola.gov/mechanical-permit/"
+      },
+      {
+        "text": "Louisiana's residential code sets the water-heater drain pan at not less than 2 inches deep with a drain of at least 1 inch, but adds that a replacement water heater does not have to be given a pan drain where none was installed before.",
+        "sourceUrl": "https://up.codes/viewer/louisiana/irc-2021/chapter/28/water-heaters"
+      },
+      {
+        "text": "Where the house falls under the Historic District Landmarks Commission or the Vieux Carre Commission, New Orleans adds a 50 percent surcharge to the building permit, plan review, demolition and sign permit fees.",
+        "sourceUrl": "https://www.nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/SP-Building-Permit-Fee-Schedule.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in New Orleans goes on a Mechanical Gas permit, which only a Class \"A\" city-licensed mechanical gas contractor can apply for, and the fee is charged per heater by burner input. Removing or replacing the water piping also needs a separate plumbing permit from the Sewerage and Water Board.",
+        "sourceUrl": "https://nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/Mechanical/OSS_SP_MECHANICAL_PERMIT_APPLICATION_SUPPLEMENT_D2-Gas.pdf",
+        "fee": "Water heaters (gas, electric, heat pump or geothermal): through 50K BTU $20.00 each; 51K to 200K BTU $25.00 each"
+      },
+      "electrician-service-call": {
+        "requirement": "New Orleans requires an electrical permit to install, repair, replace or alter any electrical apparatus or equipment, with changing light bulbs and fuses the only exceptions, and the permit can be pulled only by a contractor holding a Class \"A\" Electrical License from the city.",
+        "sourceUrl": "https://nola.gov/electrical-permit/",
+        "fee": "$40 application fee plus $3 per new circuit plus $0.30 per service amperage"
+      },
+      "plumber-service-call": {
+        "requirement": "A plumbing permit is needed in New Orleans to remove or replace any water piping or plumbing fixture, it is issued by the Sewerage and Water Board rather than the Department of Safety and Permits, and only an Orleans Parish licensed master plumber may apply for it.",
+        "sourceUrl": "https://www.nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/SP-Brochure-Guidelines-for-Building-Permits.pdf"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Swapping a garbage disposal counts as replacing a plumbing fixture, so it falls under the Sewerage and Water Board plumbing permit that only an Orleans Parish licensed master plumber can pull; if the job adds a circuit, a city electrical permit is needed too.",
+        "sourceUrl": "https://www.nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/SP-Brochure-Guidelines-for-Building-Permits.pdf"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "New Orleans exempts only light bulbs and fuses from its electrical permit rule, so wired-in alarm work is not on the exempt list, and an electrical permit can be taken out only by a contractor with a Class \"A\" city Electrical License.",
+        "sourceUrl": "https://nola.gov/electrical-permit/",
+        "fee": "$40 application fee plus $3 per new circuit plus $0.30 per service amperage"
+      }
+    }
+  },
   "new-york-ny": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -1759,6 +2890,67 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       "smoke-detector-replacement": {
         "requirement": "New York City does not sell a permit for swapping a smoke alarm, but a battery-powered replacement must be a UL 217 unit with a sealed 10-year non-removable battery and an audible end-of-life signal.",
         "sourceUrl": "https://www.nyc.gov/assets/buildings/bldgs_bulletins/bb_2018-006.pdf"
+      }
+    }
+  },
+  "norfolk-va": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Norfolk Department of City Planning, Permits and Inspections",
+      "url": "https://www.norfolk.gov/2799/Permits-and-Inspections"
+    },
+    "codeEdition": {
+      "text": "Norfolk enforces the Virginia Uniform Statewide Building Code, which is written and amended by the state Board of Housing and Community Development and enforced locally; cities may not write their own technical amendments. The 2021 Virginia codes took effect January 18, 2024, adopting the 2021 I-codes referenced through the Virginia Construction Code and the 2020 National Electrical Code.",
+      "sourceUrl": "https://www.dhcd.virginia.gov/codes"
+    },
+    "permitPolicy": {
+      "text": "Norfolk's trade permit applications are built around the contractor's state licence: the online portal asks for licence information exactly as it appears in DPOR, a Class A, B or C contractor may only pull permits in their own trade, and a master-licence holder is limited to projects of $1,000 or less. Statewide, the building official must be given either proof of state licensure or a written statement that the applicant is not subject to licensure before a permit is issued, and the applicant must also show that local taxes and licence fees are paid.",
+      "sourceUrl": "https://www.norfolk.gov/6539/Trade-Permits"
+    },
+    "registration": {
+      "text": "Norfolk does not publish a separate city trade registration for plumbers or electricians. It relies on the Virginia Department of Professional and Occupational Regulation licence, requires the licence number to match DPOR records at application, and asks for a contractor licensure affidavit with project submittals.",
+      "sourceUrl": "https://www.norfolk.gov/6539/Trade-Permits"
+    },
+    "codeItems": [
+      {
+        "text": "Virginia deletes NEC Section 210.8(F) in its entirety from the NFPA 70 it enforces, so the national rule that pushes GFCI protection onto outdoor outlets serving equipment such as air conditioners does not apply in Norfolk.",
+        "sourceUrl": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section300/"
+      },
+      {
+        "text": "Virginia's statewide code treats some swaps as ordinary repairs needing no permit at all: replacing general-use snap switches, dimmer and control switches, 125-volt 15- or 20-amp receptacles, light fixtures and ceiling fans in a one- or two-family home, replacing plumbing fixtures without altering the water supply, drainage or vent piping, and replacing mechanical appliances that are not fuelled by gas or oil. A homeowner may still ask for a permit, and if they do the inspections come with it.",
+        "sourceUrl": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section80/"
+      },
+      {
+        "text": "Flood zones change the answer in Norfolk. The state code lets the building official require a permit for otherwise exempt work in a special flood hazard area, and Norfolk's own submittal guide says an elevation certificate is needed for new structures, additions, solar panels, garages, pools and alterations into habitable space in a flood zone, and that even a shed under 256 square feet needs a permit there.",
+        "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/71681"
+      },
+      {
+        "text": "Norfolk files a replacement water heater under its mechanical fee schedule rather than plumbing, so the permit is written as a mechanical equipment replacement even though the work is plumbing. Water supply, drainage and vent alterations and electric wiring are separately listed in the state code as work that always needs a permit application.",
+        "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/1494"
+      },
+      {
+        "text": "Virginia's code carves water heaters, boilers and pressure vessels out of the building code to the extent the Virginia Boiler and Pressure Vessel Regulations cover them, and lets the building official ask the owner for documents showing compliance with those regulations.",
+        "sourceUrl": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section310/"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Norfolk needs a permit, billed from the city's mechanical fee schedule, and small permits land on the city's minimum permit fee.",
+        "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/1494",
+        "fee": "Replacement Water Heater $20 each; Minimum Permit Fee (Building and PME only) $50; $15 processing fee added to all permits; 2% surcharge on all permits",
+        "feeAsOf": "July 1, 2021"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in Norfolk takes an electrical permit priced by the ampacity of the service and by each circuit installed, extended, relocated or repaired.",
+        "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/1494",
+        "fee": "Electrical service 0-200 AMP $50; 201-400 AMP $100; each circuit or feeder installed, extended, relocated or repaired $3 per circuit at 0-20 AMP rising to $20 per circuit at 121-200 AMP; Minimum Permit Fee (Building and PME only) $50; $15 processing fee; 2% surcharge",
+        "feeAsOf": "July 1, 2021"
+      },
+      "plumber-service-call": {
+        "requirement": "Plumbing work in Norfolk takes a plumbing permit charged per fixture or device, with piping billed per service line, and the city's minimum permit fee applies to small jobs.",
+        "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/1494",
+        "fee": "Plumbing equipment/fixtures $10 per fixture/device/system; plumbing piping $20 per sewer/service line; sewer caps $50 each; Minimum Permit Fee (Building and PME only) $50; $15 processing fee; 2% surcharge",
+        "feeAsOf": "July 1, 2021"
       }
     }
   },
@@ -1828,6 +3020,45 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       "smoke-detector-replacement": {
         "requirement": "Oklahoma City checks alarm coverage on any permitted residential job: the submittal requirements make the plans show smoke detectors within each bedroom and combination smoke and carbon monoxide detectors outside each bedroom area, so a remodel can pull in alarms the house never had.",
         "sourceUrl": "https://www.okc.gov/files/assets/city/v/1/development-services/documents/application-checklists/residential-construction.pdf"
+      }
+    }
+  },
+  "omaha-ne": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Omaha Planning Department, Permits and Inspections Division",
+      "url": "https://planning.omaha.gov/permits-and-inspections"
+    },
+    "codeEdition": {
+      "text": "Nebraska writes a statewide building code but lets cities adopt and enforce their own as long as it generally conforms, and Omaha has chosen to run its own. Omaha's codes sit in the Omaha Municipal Code: Chapter 43 Building, Chapter 40 Mechanical, Chapter 44 Article V Electrical, Chapter 49 Plumbing, Chapter 46 Fire and Chapter 48 Property Maintenance. The editions in force are the 2018 International Residential Code with Omaha amendments (effective July 1, 2020), the 2018 IBC, IEBC and IECC with amendments (effective January 1, 2022), the 2024 International Mechanical Code with amendments (effective May 20, 2026), the 2024 International Fire Code with amendments (effective July 1, 2026) and the 2023 National Electrical Code with amendments (effective December 24, 2025). Statewide the baseline is the 2018 IRC and IEBC, the 2018 Uniform Plumbing Code as the Nebraska Plumbing Code, and the 2023 NEC.",
+      "sourceUrl": "https://up.codes/codes/omaha"
+    },
+    "permitPolicy": {
+      "text": "Nebraska's State Electrical Act does not stop a property owner from doing electrical work on their own principal residence, so long as the residence is no larger than a single-family dwelling, and does not require that owner to be licensed. The Act also recognises city licences: someone holding a valid electrical licence issued by a city may work without a state licence, provided they only make installations inside that city's limits and the city licence meets the Act's requirements. Omaha issues its own occupational licences through the Planning Department.",
+      "sourceUrl": "https://electrical.nebraska.gov/sites/default/files/doc/STATE%20ACT%20REVISED%20VERSION%2006%2026%202026-2.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Nebraska adopts the 2023 National Electrical Code as its minimum standard but deliberately keeps the 2017 NEC text for five sections: 210.8(A), 210.8(A)(3), 210.8(A)(5), 230.67(A) and 230.85. In practical terms the 2023 edition's expanded GFCI scope, its whole-house surge protection requirement and its outdoor emergency disconnect requirement are not enforced in Nebraska, which is the opposite of what a national guide written to the 2023 NEC will tell a homeowner.",
+        "sourceUrl": "https://electrical.nebraska.gov/sites/default/files/doc/STATE%20ACT%20REVISED%20VERSION%2006%2026%202026-2.pdf"
+      },
+      {
+        "text": "Omaha is too big for Nebraska's cut-rate residential electrical licences. A Class B electrical contractor licence and a Class B journeyman licence are valid only for systems up to 400 amps in dwellings of four units or fewer located in a municipality with fewer than 100,000 inhabitants. Omaha is far above that, so residential electrical work there has to be done under a full electrical contractor or Class A master electrician licence.",
+        "sourceUrl": "https://electrical.nebraska.gov/sites/default/files/doc/STATE%20ACT%20REVISED%20VERSION%2006%2026%202026-2.pdf"
+      },
+      {
+        "text": "Omaha runs its own municipal electrical inspection program with a city electrical inspector, so an Omaha electrical permit and inspection goes through the city rather than the Nebraska State Electrical Division. The state division keeps jurisdiction only over public educational facilities and state-owned property inside the city.",
+        "sourceUrl": "https://electrical.nebraska.gov/municipal-county-electrical-inspection-programs"
+      },
+      {
+        "text": "Under Nebraska's electrical statute, a single-family residential electrical installation that needs NEW service equipment is specifically made subject to the Act's inspection and enforcement provisions, even though ordinary single-family work is not. So a panel or service change on an Omaha house is inspected work in a way that a simple circuit addition may not be.",
+        "sourceUrl": "https://electrical.nebraska.gov/sites/default/files/doc/STATE%20ACT%20REVISED%20VERSION%2006%2026%202026-2.pdf"
+      }
+    ],
+    "byGuide": {
+      "electrician-service-call": {
+        "requirement": "Electrical work in Omaha is permitted and inspected by the City of Omaha's own electrical inspection program, not by the state division, and the city enforces the 2023 National Electrical Code with amendments. Because Nebraska's Class B residential licences are only valid in towns under 100,000 people, an Omaha job needs a full electrical contractor or Class A master electrician; a homeowner may still do the work on their own single-family principal residence without a licence.",
+        "sourceUrl": "https://electrical.nebraska.gov/municipal-county-electrical-inspection-programs"
       }
     }
   },
@@ -2030,6 +3261,75 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "pittsburgh-pa": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Pittsburgh Department of Permits, Licenses and Inspections (PLI)",
+      "url": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections"
+    },
+    "codeEdition": {
+      "text": "Construction in Pittsburgh runs under the Pennsylvania Uniform Construction Code, adopted by the Pennsylvania Construction Code Act (Act 45 of 1999). PLI's code page states the 2018 ICC base codes and 2018 accessibility codes were the adopted set, and that from January 1, 2026 the 2021 ICC base codes apply with the 2018 accessibility codes. Pittsburgh's own adoption and amendments sit in Section 1002 of the Pittsburgh City Code and stay in force as the state updates the UCC. Plumbing is the exception: PLI does not enforce the UCC plumbing provisions at all, and plumbing in Pittsburgh is regulated under the Allegheny County Health Department's own Article XV Plumbing Code.",
+      "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/References-Resources-and-Forms"
+    },
+    "permitPolicy": {
+      "text": "Pittsburgh has no homeowner permit for trade work. The city's licensing rules define an electrical contractor as any person performing work that requires an electrical permit, and that person must hold a City of Pittsburgh electrical trade licence; an HVAC/Mechanical trade licence is likewise required to install, erect, enlarge, repair, alter, remove, convert or replace any mechanical system in the city. On the plumbing side Allegheny County requires a plan approved by the Health Department before work starts, and a landlord may make plumbing repairs only in their own residence — rental units must go to a Master Plumber.",
+      "sourceUrl": "https://www.pittsburghpa.gov/files/assets/city/v/1/pli/documents/17099_final_pli_licensing_rules_and_regulations_may_2022.pdf"
+    },
+    "registration": {
+      "text": "Pittsburgh issues its own trade licences on top of any state credential, each costing $90 initially and at annual renewal, with a $50 late fee: Electrical, HVAC/Mechanical, General Contractor, Fire Suppression, Sign Contractor and Stationary Engineer. A trade licence expires 365 days from issue and renewal requires eight hours of continuing education in the previous twelve months; a new general contractor licence also requires the firm's EPA Lead Renovation, Repair and Painting certification. A new electrical trade licence requires a passed Master Electrician exam (the city's own proctored exam or the ICC Standard Master Electrician exam) plus six years of combined experience and education. Plumbers are licensed by the county instead: Allegheny County charges $375 for a Master plumber licence and $125 for a Journeyman licence, with exam fees of $265 and $133.",
+      "sourceUrl": "https://www.pittsburghpa.gov/files/assets/city/v/1/pli/documents/fees/2026-fee-schedule-final-2.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "The split that catches people out in Pittsburgh: all plumbing not tied to a sprinkler system is regulated by the Allegheny County Health Department, not the city. A water heater or fixture job therefore needs a county plumbing plan approved before work begins and a county final inspection, while the gas and electrical sides of the same job are permitted and inspected by city PLI.",
+        "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Work-Not-Requiring-a-Permit"
+      },
+      {
+        "text": "Pittsburgh's list of electrical work that needs no permit is unusually short: replacing lamps, plugging approved portable equipment into existing receptacles, reinstalling attachment plug receptacles but not the outlets themselves, replacing a branch-circuit overcurrent device of the required capacity in the same location, rearranging communications wiring in a one- or two-family house, and equipment under 25 volts that cannot supply more than 50 watts. Anything beyond that list is permit work and, by the city's own definition, work only a licensed electrical contractor may do.",
+        "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Work-Not-Requiring-a-Permit"
+      },
+      {
+        "text": "The city treats \"ordinary repairs\" narrowly. Adding, altering, replacing or relocating any water supply, sewer, drain, drain leader, gas, soil, waste or vent piping, electric wiring or mechanical work is expressly not an ordinary repair and needs a permit, however small the job looks.",
+        "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Work-Not-Requiring-a-Permit"
+      },
+      {
+        "text": "Pittsburgh prices and reviews electrical work by declared scope, and some scopes pull in extra review: a residential service rated over 400 amperes requires stamped drawings, while reconnecting an existing approved service only qualifies as a \"Service Reconnect In-Kind\" if the location, phase, amperage and service equipment are all unchanged. A roof-mounted solar array permit is limited to buildings that already hold a valid certificate of occupancy.",
+        "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Electrical-Permit"
+      },
+      {
+        "text": "A residential mechanical permit in Pittsburgh is taken out against named work scopes, and modifying fuel gas piping without installing equipment is its own \"minor alteration\" scope. The city also has a defined emergency scope for replacing interior or exterior heating or ventilation equipment that PLI has condemned.",
+        "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Mechanical-Permit"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "A water heater swap in Pittsburgh goes through the Allegheny County Health Department, not the city: the county requires a plumbing permit for any plumbing installed or altered and names water heater replacement cards specifically, the plan has to be approved before work starts, and a final inspection is part of every plumbing permit. If the job also reworks the gas piping or venting, that side needs a city PLI mechanical (fuel gas) permit, which a licensed HVAC/Mechanical trade licence holder must pull.",
+        "sourceUrl": "https://www.alleghenycounty.us/files/assets/county/v/1/government/health/documents/plumbing_fee_schedule.pdf",
+        "fee": "$27 Fixture Replacement Cards (hot water heaters & fixtures)",
+        "feeAsOf": "Effective Jan. 1, 2023"
+      },
+      "plumber-service-call": {
+        "requirement": "Plumbing permits in Pittsburgh are issued by the Allegheny County Health Department, which charges by plan level and then per fixture; a plan showing every fixture to be installed or altered must be approved before the work starts, and a final inspection is required on every permit. A landlord may make plumbing repairs only in the home they live in — work in a rental unit must be done by a Master Plumber.",
+        "sourceUrl": "https://www.alleghenycounty.us/files/assets/county/v/1/government/health/documents/plumbing_fee_schedule.pdf",
+        "fee": "$80 Level 1 Plans (0-5 fixtures); $22 Fixture Fees, including fixtures, water heaters, building sewer and water service itemized in plans; $75 Re-inspection Fee",
+        "feeAsOf": "Effective Jan. 1, 2023"
+      },
+      "electrician-service-call": {
+        "requirement": "An electrical permit is required in Pittsburgh to install a new electrical system or to renovate, repair, extend or modify an existing one, and only a holder of a City of Pittsburgh electrical trade licence may do permit work — there is no homeowner option here. The permit is priced off the declared construction value with a floor, and the city adds three small per-permit charges on top.",
+        "sourceUrl": "https://www.pittsburghpa.gov/files/assets/city/v/1/pli/documents/fees/2026-fee-schedule-final-2.pdf",
+        "fee": "$6.00 per $1,000 of Construction Value (Minimum: $130 – Maximum: $8,000) Base Permit Fee (Residential), plus $4.50 State Education & Training Fund fee and $5.00 Digital Record Retention Fee per permit and a technology fee of $2.00 to $25.00 depending on the base fee range",
+        "feeAsOf": "Effective 1/1/2026"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Pittsburgh does not permit disposals itself; the Allegheny County Health Department requires a plumbing permit for any plumbing that is installed or altered, with the plan approved before work starts and a final inspection at the end. The county names water heater replacement cards and dishwasher transmittal sheets specifically but publishes no separate disposal line, and on the electrical side the city's short exemption list does not cover hard-wiring a new appliance.",
+        "sourceUrl": "https://www.alleghenycounty.us/Services/Health-Department/Plumbing-Program/Project-Plans-and-Permitting"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Pittsburgh publishes no smoke-alarm permit of its own, but its list of electrical work needing no permit is limited to lamp replacement, portable equipment plugged into existing receptacles, reinstalled plug receptacles, and like-for-like branch-circuit overcurrent devices — swapping a hardwired alarm is not on it. The city also offers a minor-alteration electrical permit scope for in-kind replacement of devices and fixtures at the same location and ampere rating, and any work that needs an electrical permit must be done by a city-licensed electrical contractor.",
+        "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Work-Not-Requiring-a-Permit"
+      }
+    }
+  },
   "portland-or": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -2101,6 +3401,75 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "providence-ri": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Providence Department of Inspection and Standards",
+      "url": "https://www.providenceri.gov/inspection-standards/"
+    },
+    "codeEdition": {
+      "text": "Providence works from the Rhode Island State Building Codes, which are the 2021 International Code Council model codes plus Rhode Island's own amendments, together with the 2023 National Electrical Code; that set took effect December 1, 2025. The energy code is separate and newer: Rhode Island adopted the 2024 International Energy Conservation Code in full on November 14, 2024.",
+      "sourceUrl": "https://www.providenceri.gov/inspection/rhode-island-building-energy-codes-current-standards/"
+    },
+    "permitPolicy": {
+      "text": "Who may apply depends on the trade and on whether you live there. A building permit goes to a licensed contractor or to the owner of a single-family owner-occupied home; mechanical needs a licensed master mechanical contractor or that same owner; electrical needs an \"A\" license electrician or that owner; plumbing needs a licensed master plumber or that owner. If the property is not owner-occupied, or has two or more units, you have to hire a licensed contractor.",
+      "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2021/03/permit-faq-20200302.pdf"
+    },
+    "registration": {
+      "text": "Providence does not run its own trade exam; it checks the state credential. The application has to carry the contractor's name and license number, and an owner who pulls a permit and later decides to hire help signs an affidavit promising to use a licensed and/or registered contractor and to give that license or registration number to the Building Official's office.",
+      "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2017/04/owner-affidavit.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Rhode Island strips the electrical chapters out of its residential code: Chapters 34 through 43 of the 2021 IRC are deleted, and an inspector in Providence works instead from the Rhode Island State Electrical Code, which is the 2023 National Electrical Code with Rhode Island amendments.",
+        "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-2"
+      },
+      {
+        "text": "Smoke alarms and carbon monoxide alarms are not a building-code item in Rhode Island. Sections R314 and R315 of the 2021 IRC are deleted without substitution, and both are governed by the Rhode Island Fire Safety Code instead.",
+        "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-2"
+      },
+      {
+        "text": "Rhode Island ties the water supply to the certificate of occupancy: a building on a public metered supply must have the water meter installed before a CO is issued, and a private well serving an occupied building must be tested and certified potable before even a temporary CO.",
+        "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-3"
+      },
+      {
+        "text": "A building sewer connecting to a public sewer in Rhode Island has to be a minimum of 36 inches below grade, which is a state amendment to the 2021 IRC rather than a model-code figure.",
+        "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-2"
+      },
+      {
+        "text": "Rhode Island publishes per-municipality design values in the building code itself. For Providence the table gives a 30 psf ground snow load, a 30 psf flat-roof snow load and a frost depth of 4 feet 0 inches.",
+        "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-1"
+      },
+      {
+        "text": "Paying the building permit fee does not cover the trades in Rhode Island: state law says that fee does not relieve the permit holder of other prescribed fees for water taps, sewer connections, electrical and plumbing permits, or inspections.",
+        "sourceUrl": "https://webserver.rilegislature.gov/Statutes/TITLE23/23-27.3/23-27.3-118.1.htm"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Providence prices permits off the declared cost of labor and materials rather than charging a flat amount per appliance, so a water heater job is quoted from the city's published fee table with a minimum fee; the permit goes to a licensed master plumber, or to you if you own and occupy the single-family home.",
+        "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2021/03/permit-faq-20200302.pdf",
+        "fee": "$0 to $10,000 of cost: $23.00 per thousand of cost (minimum $50.00); $10,000.01 to $50,000: $230.00 + $21.00 per thousand exceeding $10,000.00; more than $50,000.01: $1,070.00 + $19.00 per thousand exceeding $50,000.00",
+        "feeAsOf": "Rates set by the State of Rhode Island in July 2018"
+      },
+      "plumber-service-call": {
+        "requirement": "Not every plumbing call in Providence needs a permit: stopping a leak in a drain, water, soil, waste or vent pipe is exempt, as is clearing a stoppage or repairing a leak in pipes, valves or fixtures and taking out and reinstalling a water closet, so long as the repair does not replace or rearrange valves, pipes or fixtures; replacing a defective concealed trap or pipe with new material does need a permit and inspection.",
+        "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2021/03/permit-faq-20200302.pdf",
+        "fee": "$0 to $10,000 of cost: $23.00 per thousand of cost (minimum $50.00); $10,000.01 to $50,000: $230.00 + $21.00 per thousand exceeding $10,000.00; more than $50,000.01: $1,070.00 + $19.00 per thousand exceeding $50,000.00",
+        "feeAsOf": "Rates set by the State of Rhode Island in July 2018"
+      },
+      "electrician-service-call": {
+        "requirement": "An electrical permit in Providence has to be taken out by an \"A\" license electrician, or by you if you own and occupy a single-family home, and the fee comes off the declared labor-and-materials cost; minor repair work such as replacing lamps, or plugging approved portable equipment into existing receptacles, needs no permit. Electrical work is inspected three times: underground, rough and final.",
+        "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2021/03/permit-faq-20200302.pdf",
+        "fee": "$0 to $10,000 of cost: $23.00 per thousand of cost (minimum $50.00); $10,000.01 to $50,000: $230.00 + $21.00 per thousand exceeding $10,000.00; more than $50,000.01: $1,070.00 + $19.00 per thousand exceeding $50,000.00",
+        "feeAsOf": "Rates set by the State of Rhode Island in July 2018"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Smoke and carbon monoxide alarms are not handled through the building permit in Providence: Rhode Island deleted both sections from its residential code and put alarms under the Rhode Island Fire Safety Code instead, so the requirements come from the fire side rather than the building inspector.",
+        "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-2"
+      }
+    }
+  },
   "raleigh-nc": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -2159,6 +3528,203 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
         "sourceUrl": "https://raleighnc.gov/permits/services/development-fee-guide-and-calculator",
         "fee": "$124.00 Minimum Trade Permit Fee, per trade; $129.00 including the 4% technology surcharge",
         "feeAsOf": "July 1, 2026 - June 30, 2027 (FY27 Development Fee Guide)"
+      }
+    }
+  },
+  "reno-nv": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Reno Development Services Department, Permit Services",
+      "url": "https://reno.gov/business-development/development-services/building-permits.php"
+    },
+    "codeEdition": {
+      "text": "Reno adopted the 2024 building codes and the 2023 National Electrical Code on July 1, 2025, together with the 2024 Northern Nevada Amendments. Applications accepted before January 1, 2026 could still use the 2018 editions if every code matched; from January 1, 2026 the city accepts plans only under the 2024 editions. The set in force is the 2024 IBC, IRC, IEBC, IECC, IFGC and IMC, the 2024 Uniform Plumbing and Uniform Mechanical Codes, and the 2023 NEC.",
+      "sourceUrl": "https://reno.gov/business-development/development-services/building-permits.php"
+    },
+    "permitPolicy": {
+      "text": "A homeowner can pull their own permit in Reno by filing the Nevada State Contractors Board Owner Builder Affidavit of Exemption with the permit application. Signing it commits the owner to supervising the work personally, to not hiring an unlicensed person as contractor or construction manager, to using only state-licensed subcontractors, and to not selling or leasing the home for a year after completion. Reno also issues EZ Permits, including the water heater permit, with no plans required.",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Building%20Permit%20Applications/Owner%20Builder%20Affidavit.pdf"
+    },
+    "registration": {
+      "text": "Reno publishes no separate city trade registration for plumbers or electricians, but gas water heater and furnace change-outs carry a local credential requirement: the manometer test has to be done by someone holding a valid Washoe County manometer tester card, and the card number must be given when the inspection is requested.",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Reno requires a manometer test on every gas water heater and furnace change-out, and the test has to be performed by a person holding a valid Washoe County manometer tester card whose number is supplied when the inspection is scheduled. The requirement comes from the 2024 Northern Nevada Amendments, section G2417.6.2.",
+        "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+      },
+      {
+        "text": "Reno inspectors check earthquake strapping on water heaters: the tank must be anchored or strapped against seismic movement, with straps in the upper third and the lower third of the tank and the lower strap at least 4 inches above the controls (2024 IRC R301.2.2.10 and P2801.7).",
+        "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+      },
+      {
+        "text": "Where a leak from a storage-type water heater would cause damage, Reno requires the tank to sit in a pan at least 1-1/2 inches deep sized to catch drips and condensate (2024 IRC P2801.5). The temperature and pressure relief valve may discharge to the floor, into that pan, to a waste receptor or outdoors (2024 IRC P2804).",
+        "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+      },
+      {
+        "text": "On a gas appliance change-out Reno checks for a sediment trap installed downstream of the appliance shutoff valve and as close to the appliance inlet as possible where the appliance does not already include one (2024 IRC G2419.4), for combustion air to every gas-fired appliance (G2407), and for ignition sources raised at least 18 inches above a garage floor (M1307.3, P2801.6). An electric water heater needs a disconnect within sight or a lockable one (E4101).",
+        "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+      },
+      {
+        "text": "On an electrical service change, Reno requires a surge protective device on every service supplying a one- or two-family dwelling (2024 IRC E3606.5.1 through E3606.5.3), grounding through a concrete-encased electrode, two ground rods or another means approved under 2023 NEC 250.52, 30 inches of working width and 36 inches of working depth at the new equipment (NEC 110.26), and durable circuit marking on the overcurrent devices (NEC 408.4).",
+        "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a residential water heater in Reno takes a permit, but it is an EZ Permit issued without plans at a flat price, and the change-out is inspected.",
+        "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Fees/FY27%20Permit%20Fees.pdf",
+        "fee": "Residential EZ Permits — Water Heater $45.00 (Commercial EZ Permits — Water Heater $133.00)",
+        "feeAsOf": "July 1, 2026"
+      },
+      "electrician-service-call": {
+        "requirement": "Adding or replacing receptacles, switches, outlets or fixtures in Reno takes a flat-rate electrical permit covering up to 20 devices, and a meter or service change is a separate EZ Permit.",
+        "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Fees/FY27%20Permit%20Fees.pdf",
+        "fee": "Residential Flat Rate — Receptacles/Switch/Outlet/Fixtures, first 20: $135.00 (includes the $45.00 application fee and the $45.00 permit issuance fee); over 20: $156.00. Residential EZ Permit — Service Change $88.00",
+        "feeAsOf": "July 1, 2026"
+      },
+      "plumber-service-call": {
+        "requirement": "Common household plumbing repairs in Reno are priced as flat EZ Permits rather than per fixture, and a whole-house repipe is a flat-rate permit.",
+        "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Fees/FY27%20Permit%20Fees.pdf",
+        "fee": "Residential EZ Permits — Water Line Replacement $90.00, Sewer Line Replacement $90.00, Gas Line $90.00. Residential Flat Rate — Whole House Repipe $360.00, Gas Piping/System Residential $200.00",
+        "feeAsOf": "July 1, 2026"
+      }
+    }
+  },
+  "richmond-va": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Richmond Department of Planning & Development Review, Bureau of Permits and Inspections",
+      "url": "https://rva.gov/planning-development-review/permits-and-inspections"
+    },
+    "codeEdition": {
+      "text": "Richmond enforces the Virginia Uniform Statewide Building Code, and its own homeowner guide works from the 2021 Virginia Residential Code. Virginia adopted the 2021 I-codes and the 2020 National Electrical Code effective January 18, 2024.",
+      "sourceUrl": "https://dhcd.virginia.gov/codes"
+    },
+    "permitPolicy": {
+      "text": "A Richmond permit application may be made by the owner or lessee of the property, by an agent of either, by the registered design professional, or by the contractor doing the work or any of their agents, and the full name and address of owner, lessee and applicant all have to be on the application. Residential plans do not have to be drawn by a registered design professional — the applicant, owner or contractor may prepare them — but structural elements that do not conform to the 2021 Virginia Residential Code must be engineered.",
+      "sourceUrl": "https://rva.gov/sites/default/files/2025-05/Homeowner%27s%20Permit%20Process%20Guide_2021%20VRC.pdf"
+    },
+    "registration": {
+      "text": "Richmond checks the state credential rather than issuing its own. The city's trade permit applications ask for the license type, the class (A, B or C) and the state license number, and the city's homeowner guide tells residents to hire only contractors licensed with the Virginia Department of Professional and Occupational Regulation and to verify them with DPOR.",
+      "sourceUrl": "https://rva.gov/sites/default/files/2024-05/Plumbing-PermitApplication_0.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Trade work cannot ride along on a Richmond residential building permit. Mechanical, electrical, plumbing and gas piping each need their own separate application, and residential trade permit applications do not require construction documents.",
+        "sourceUrl": "https://rva.gov/sites/default/files/2025-05/Homeowner%27s%20Permit%20Process%20Guide_2021%20VRC.pdf"
+      },
+      {
+        "text": "For any Richmond inspection involving exposed, energized electrical parts — including any inspection of service equipment after the utility connection is made — the installing electrician or a qualified representative has to be on site to de-energize, open and close the equipment for the inspector.",
+        "sourceUrl": "https://rva.gov/planning-development-review/permits-and-inspections"
+      },
+      {
+        "text": "Richmond no longer performs the shower liner test inspection. The installer does the installation and test, and the contractor or owner must hand the completed shower liner test certification to the building inspector at the final building inspection.",
+        "sourceUrl": "https://rva.gov/planning-development-review/permits-and-inspections"
+      },
+      {
+        "text": "Richmond does not take your word for the job value: the value of work used to calculate the permit fee is the higher of the contractor's estimate or the RS Means price, and a 2.0% state surcharge is added to the final calculated fee on every permit.",
+        "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf"
+      },
+      {
+        "text": "Starting work without a Richmond permit is priced in the fee schedule: investigation of a \"Stop Work\" order costs $400.00 per permit, and a residential re-inspection or a failure to appear for an inspection costs $32.00.",
+        "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf"
+      },
+      {
+        "text": "A Richmond permit is valid 180 days from issuance, and each building inspection on the property extends it another 180 days from the date of that last inspection.",
+        "sourceUrl": "https://rva.gov/sites/default/files/2025-05/Homeowner%27s%20Permit%20Process%20Guide_2021%20VRC.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "A water heater swap in Richmond goes on its own plumbing permit — it cannot be added to a building permit — and if the heater is gas the gas piping takes a separate gas-piping permit; the fee is set by the value of the work, with a flat minimum for small jobs, and a 2% state surcharge on top.",
+        "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf",
+        "fee": "Residential 1 & 2 family: $63.00 for value of work $0–$2,000; over $2,000, $63.00 plus $6.07 per thousand or fraction thereof; a 2.0% state surcharge is added to the final calculated fee",
+        "feeAsOf": "Effective 07/01/2024 (Revision 07-01-2024)"
+      },
+      "plumber-service-call": {
+        "requirement": "Richmond uses one valuation-based fee table for building, mechanical, electrical, plumbing and gas-piping permits alike, so a plumbing permit for a small residential repair lands on the minimum fee; a residential re-inspection, or not being there when the inspector arrives, costs extra.",
+        "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf",
+        "fee": "Residential 1 & 2 family: $63.00 for value of work $0–$2,000; over $2,000, $63.00 plus $6.07 per thousand or fraction thereof; residential re-inspection or failure to appear $32.00; after-hours inspection $110.00 per hour; 2.0% state surcharge added to the final calculated fee",
+        "feeAsOf": "Effective 07/01/2024 (Revision 07-01-2024)"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in Richmond needs its own electrical permit, priced from the value of the work on the same residential table as the other trades; expect the electrician to have to be on site for any inspection where energized parts must be opened up.",
+        "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf",
+        "fee": "Residential 1 & 2 family: $63.00 for value of work $0–$2,000; over $2,000, $63.00 plus $6.07 per thousand or fraction thereof; residential re-inspection or failure to appear $32.00; 2.0% state surcharge added to the final calculated fee",
+        "feeAsOf": "Effective 07/01/2024 (Revision 07-01-2024)"
+      }
+    }
+  },
+  "riverside-ca": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Riverside Community & Economic Development Department, Building & Safety Division",
+      "url": "https://riversideca.gov/cedd/building-safety"
+    },
+    "codeEdition": {
+      "text": "Riverside adopted the latest California Code of Regulations Title 24, and it took effect in the city on January 1, 2026. The division lists the adopted parts as the 2025 California Building, Residential, Fire, Existing Building, Wildland-Urban Interface, Historical Building, Electrical, Plumbing, Mechanical, Green Building Standards, Energy, Administrative and Referenced Standards Codes. Riverside also publishes its own local design criteria an inspector works from: seismic design category D, wind exposure category C for most of the city, energy climate zone 10, very heavy termite exposure, and a roof drainage design rainfall of 2 inches per hour.",
+      "sourceUrl": "https://riversideca.gov/cedd/building-safety/building-codes-design-criteria/california-building-standards"
+    },
+    "permitPolicy": {
+      "text": "A Riverside homeowner can pull their own permit, but the paperwork is strict: the Property Owner's Package has twelve statements that must each be initialed, and the owner must sign it in front of a notary unless they come to City Hall in person, where staff witness the signature and check a driver's licence or other photo ID. An agent cannot execute the form for the owner, and if the owner sends someone else to pull the permit the city wants a notarized letter authorising that person. The package has to be completed separately for every permit the owner pulls. Where an emergency forced the replacement or repair to be done first, the permit application is due to the Building Official by the next working business day.",
+      "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/103_PROPERTY-OWNERS-PACKAGE_V1.0.pdf"
+    },
+    "registration": {
+      "text": "Riverside does not add a trade licence on top of the state contractor licence, but it does tax contractors directly and publishes the rates. A contractor working in the city owes city business tax and holds a Business Tax Certificate, which is not transferable and must be paid before starting business. The published rate is a $397.00 annual base tax for an engineering or general contractor, or $273.00 for a specialty contractor, each covering one owner only, with $6.00 added for every additional employee, owner, partner or associate, plus a $4 state disability-access fee on any local business licence application or renewal. The rates adjust automatically each November 1 with the Consumer Price Index under Riverside Municipal Code 5.04.300.",
+      "sourceUrl": "https://riversideca.gov/finance/PDF/2026/Business-Tax-Rates.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Riverside makes a gas or propane water heater installation leave room for its electric replacement. The city's residential correction notes require a designated space at least 2 feet 6 inches by 2 feet 6 inches and 7 feet tall for a future heat pump water heater. Where that space is within 3 feet of the heater it must also get a 125 volt 20 amp receptacle fed by a 120/240 volt three-conductor 10 AWG copper branch circuit, the unused third conductor labelled \"spare\" at both ends and electrically isolated, a single-pole breaker space reserved immediately next to that circuit's breaker and labelled \"Future 240V Use\", and a condensate drain no more than 2 inches above the base of the installed heater that drains by gravity. Where the designated space is more than 3 feet away, the requirement shifts to a dedicated 240 volt 30 amp minimum circuit terminated within 3 feet of that space under a blank cover marked \"240V ready\", reserved double-pole breaker space, and cold and hot water piping routed through the future location and left exposed and accessible.",
+        "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/RESIDENTIAL%20GENERAL%20NOTES%209-15-26.pdf"
+      },
+      {
+        "text": "Combustion air is an explicit Riverside correction item on a non-direct-vent water heater: two permanent openings are required in the enclosure, one starting within 12 inches of the top and one within 12 inches of the bottom, communicating either directly or by duct with the outdoors or a space that freely communicates with the outdoors, under California Plumbing Code 506.4.1.",
+        "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/RESIDENTIAL%20GENERAL%20NOTES%209-15-26.pdf"
+      },
+      {
+        "text": "Riverside applies the state water-conserving fixture retrofit by build date. Its residential notes require all noncompliant plumbing fixtures in a single-family property built before January 1, 1994 to be replaced with water-conserving fixtures when the property gets an addition, alteration or improvement, citing California Green Building Standards Code 4.303.1 and Civil Code 1101.1, and separately require maximum flow rates for showerheads, lavatory faucets, kitchen faucets and water closets to be shown on the plumbing fixture schedule.",
+        "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/RESIDENTIAL%20GENERAL%20NOTES%209-15-26.pdf"
+      },
+      {
+        "text": "Riverside lets the property owner self-certify smoke and carbon monoxide alarms instead of having an inspector climb a ladder. Its Bulletin 302 form has the owner certify the alarm count and locations under the California Residential Code once the valuation of additions, alterations or repairs to an existing dwelling passes $1,000; the city notes this is voluntary, and an owner who prefers a City Building Inspector to verify instead has to have an adult present and supply a ladder and access to every alarm location. The bulletin also states that an electrical permit is required for alarms that have to be connected to the building wiring, and that physical interconnection is not required where listed wireless alarms all sound together.",
+        "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/302_SMOKE-AND-CARBON-RESIDENTIAL_V1.0.pdf"
+      },
+      {
+        "text": "Panel work in Riverside pulls in EV-capable provisions. The city's residential notes require a listed raceway of at least trade size 1 running from the main service or subpanel to an enclosure near the proposed EV charger location, continuous through concealed or inaccessible spaces, with the service panel or subpanel carrying capacity for a 40 amp 208/240 volt minimum dedicated branch circuit and reserved breaker space. The circuit directory has to mark the reserved space \"EV CAPABLE\" and the raceway termination must be permanently and visibly marked the same way. The notes also require listed tamper-resistant receptacles for all 15 and 20 amp, 125 and 250 volt nonlocking receptacles in the areas California Electrical Code 406.12 lists.",
+        "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/RESIDENTIAL%20GENERAL%20NOTES%209-15-26.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Riverside requires a plumbing permit to replace a water heater, priced per appliance by BTU input on top of a flat permit issuance fee, with a separate line for the gas vent; the inspector checks combustion air openings and, on a gas heater, the designated space and circuit left for a future heat pump water heater.",
+        "sourceUrl": "https://www.riversideca.gov/finance/PDF/Fees-and-Charges-as-of-July-1,-2026.pdf",
+        "fee": "$37.00 for a water heater up to 100,000 BTU ($57.00 for 100,001 to 1,000,000 BTU), plus the $41.00 plumbing Permit Issuance Fee and $18.00 per water heater gas vent; a 14% surcharge for the General Plan Maintenance Fee and Technology Fee is added to each of these",
+        "feeAsOf": "FY 2026/27 Schedule of Fees and Charges, as of July 1, 2026"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Riverside publishes a per-unit plumbing permit fee for a garbage disposal, charged the same as a dishwasher and added to the flat plumbing permit issuance fee; the city's work-exempt bulletin exempts only clearing stoppages and repairing leaks that do not require replacing or rearranging valves, pipes or fixtures, so a disposal swap is not on the exempt list.",
+        "sourceUrl": "https://www.riversideca.gov/finance/PDF/Fees-and-Charges-as-of-July-1,-2026.pdf",
+        "fee": "$33.00 per garbage disposal or dishwasher, plus the $41.00 plumbing Permit Issuance Fee, plus the 14% General Plan Maintenance and Technology Fee surcharge",
+        "feeAsOf": "FY 2026/27 Schedule of Fees and Charges, as of July 1, 2026"
+      },
+      "plumber-service-call": {
+        "requirement": "Riverside charges plumbing permits per fixture or per item on top of one flat permit issuance fee, so the bill tracks exactly what was touched; stopping a leak or clearing a stoppage needs no permit, but once a concealed pipe or trap has to be removed and replaced with new material the city treats it as new work requiring a permit and inspection.",
+        "sourceUrl": "https://www.riversideca.gov/finance/PDF/Fees-and-Charges-as-of-July-1,-2026.pdf",
+        "fee": "$41.00 plumbing Permit Issuance Fee, plus per item: $66.00 residential building sewer, $6.00 each drain or sink, $37.00 each repair or alteration of drains or vents, $18.00 each trap, $118.00 full dwelling re-pipe or $66.00 partial, $22.00 each add or alter gas piping, $70.00 for other fixtures not otherwise specified; a 14% surcharge is added",
+        "feeAsOf": "FY 2026/27 Schedule of Fees and Charges, as of July 1, 2026"
+      },
+      "electrician-service-call": {
+        "requirement": "Riverside prices electrical permits per item on top of one flat issuance fee, with a service change-out priced by amperage; only minor repair and maintenance such as changing lamps or plugging approved portable equipment into existing receptacles is exempt from permit.",
+        "sourceUrl": "https://www.riversideca.gov/finance/PDF/Fees-and-Charges-as-of-July-1,-2026.pdf",
+        "fee": "$41.00 electrical Permit Issuance Fee, plus per item: $90.00 for a service 0 to 200A, $160.00 for 201A to 1,000A, $103.00 partial dwelling re-wire or $188.00 full re-wire, $41.00 per switchboard sub-panel up to 600V, $10.00 per dedicated circuit, $1.65 per outlet or receptacle, $11.00 per light fixture, $57.00 meter reset, $66.00 residential EV charger; a 14% surcharge is added",
+        "feeAsOf": "FY 2026/27 Schedule of Fees and Charges, as of July 1, 2026"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Riverside needs an electrical permit for a smoke or carbon monoxide alarm that has to be connected to the building wiring, and once the valuation of additions, alterations or repairs to an existing dwelling exceeds $1,000 the city requires the full set of alarms to be brought up to the California Residential Code locations; the owner can sign the city's Bulletin 302 self-certification form instead of having an inspector verify them, and battery-only alarms are allowed where the work does not strip wall and ceiling finishes and there is no attic, basement or crawl space to run wiring through.",
+        "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/302_SMOKE-AND-CARBON-RESIDENTIAL_V1.0.pdf"
       }
     }
   },
@@ -2626,6 +4192,142 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "spokane-wa": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Spokane Developer Services Center (Building Services)",
+      "url": "https://my.spokanecity.org/business/permits/"
+    },
+    "codeEdition": {
+      "text": "Spokane enforces the Washington State Building Code, which is the 2021 family of model codes adopted and amended by the State Building Code Council and effective statewide from March 15, 2024: the 2021 International Residential Code (WAC 51-51), the 2021 International Mechanical Code (WAC 51-52), the 2021 Uniform Plumbing Code (WAC 51-56) and the 2021 International Fire Code (WAC 51-54A). Spokane layers its own modifications on top; the city's mechanical code is the IMC and International Fuel Gas Code as modified by Chapter 17F.090 of the Spokane Municipal Code. On the electrical side Washington's rules adopt the 2023 National Electrical Code by reference, and the same rule already provides that the 2026 NEC replaces it effective December 31, 2026.",
+      "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56"
+    },
+    "permitPolicy": {
+      "text": "Washington requires a permit and inspection for electrical work, and the permit has to be bought either by the electrical contractor or by the property owner who will actually do the work; if you hire a contractor, the contractor buys the permit for their own work. Spokane is one of the Washington cities that issues its own electrical permits and does its own electrical inspections, so an electrical permit for a Spokane address comes from the city rather than from L&I. Spokane's electrical permit application is signed on a line marked for a homeowner or a contractor.",
+      "sourceUrl": "https://lni.wa.gov/licensing-permits/electrical/electrical-permits-fees-and-inspections/"
+    },
+    "registration": {
+      "text": "Spokane runs its own local trade licences on top of the state credential. Gas work on the city's mechanical permit requires a City of Spokane Gas Heating Mechanic licence number, written on the permit application in the form 01234-GHM. The city issues that licence in two classes, Gas Heating Mechanic I and Gas Heating Mechanic II, by application and proctored examination, with the exam administered through the Northwest HVAC/R Association Training Center; the examination fee is paid with the application and is non-refundable, and the exam has to be taken within 180 days or the application lapses. A mechanical contractor who also holds the appropriate electrical contractor licence may use the mechanical permit for low-voltage HVAC control circuits, but any other HVAC circuit needs a separate electrical permit.",
+      "sourceUrl": "https://static.spokanecity.org/documents/business/commercial/license-applications/gas-license-application-2026-07-15.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Washington keeps the seismic strapping rule that Idaho and several other states delete. Under the state's plumbing amendment a water heater must be anchored or strapped to resist horizontal displacement from earthquake motion, with straps placed within the upper third and the lower third of the tank's height, and the lower strap kept at least 4 inches away from the controls. The 4 inch clearance is the detail most installers get wrong.",
+        "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56-0500"
+      },
+      {
+        "text": "Washington requires a demand-response port on consumer electric storage water heaters: the unit must have a modular communications port compliant with the March 2018 version of the ANSI/CTA-2045-A interface standard and application layer requirements. Water heaters built before January 1, 2021 are exempt, and non-heat-pump electric storage heaters built before January 1, 2022 are exempt. This rules out some cheap electric tanks that are perfectly legal elsewhere.",
+        "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56-0500"
+      },
+      {
+        "text": "Washington sets a minimum first-hour rating for a water heater by the number of bedrooms and bathrooms in the house, taken from the unit's Energy Guide label, so a Spokane inspector can reject a replacement that is undersized for the dwelling even if it fits the space. The state code also points to Section 102.4 specifically for replacement water heaters.",
+        "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56-0500"
+      },
+      {
+        "text": "A fuel-burning water heater serving a Washington bedroom or bathroom has only two legal arrangements: either it sits in a closet used for nothing but the water heater, fitted with a listed gasketed door assembly, a listed self-closing device, a threshold and a bottom door seal, and taking all its combustion air from outdoors; or it is a direct-vent unit. Appliances in a garage, or in a space opening onto the garage, must have burners and ignition sources at least 18 inches above the floor unless listed as flammable vapor ignition resistant.",
+        "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56-0500"
+      },
+      {
+        "text": "Spokane permits water heaters as MECHANICAL work, not plumbing: its fee schedule states outright that water heaters are covered within the mechanical permit fees, and the mechanical permit application carries lines for gas and electric water heaters under 200,000 Btu input and a separate line for a hot water tank heat pump. The mechanical application also warns that gas piping and the appliance the gas outlet serves each need permitting, and that a Washington State Energy Code duct leakage affidavit may have to reach the mechanical inspector before a residential HVAC replacement passes final inspection.",
+        "sourceUrl": "https://static.spokanecity.org/documents/business/resources/applications/building/mechanical-permit-application-2025-05-13.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Spokane takes a mechanical permit, not a plumbing permit, and the same line covers gas and electric units under 200,000 Btu; a heat pump water heater has its own line at the same price. On top of the item fee the city adds a flat processing fee and a percentage technology fee to the permit.",
+        "sourceUrl": "https://static.spokanecity.org/documents/smc/attachments/development-fee-schedule-2026.pdf",
+        "fee": "$15.50 Water Heater and $15.50 Hot Water Tank Heat Pump under Mechanical Permit Fees, plus a $65.00 Processing/Application Fee and a 2.5% Technology Fee",
+        "feeAsOf": "Effective January 1, 2026 (Development Fee Schedule 2026)"
+      },
+      "plumber-service-call": {
+        "requirement": "Spokane charges plumbing permits by the fixture rather than by job value: each plumbing fixture on a trap carries the same flat fee, and the city's note makes clear that installs, relocations, replacements and rough-ins all count. A flat processing fee and a technology fee are added to the permit, and a failed inspection that has to be repeated is charged separately.",
+        "sourceUrl": "https://static.spokanecity.org/documents/smc/attachments/development-fee-schedule-2026.pdf",
+        "fee": "$13.50 per plumbing fixture on a trap; $13.50 each for a medical gas outlet, sewage ejector, vacuum breaker/backflow device or miscellaneous plumbing not covered elsewhere; plus a $65.00 Processing/Application Fee and a 2.5% Technology Fee; Re-Inspection Fee $156.00",
+        "feeAsOf": "Effective January 1, 2026 (Development Fee Schedule 2026)"
+      },
+      "electrician-service-call": {
+        "requirement": "Spokane issues its own electrical permits and does its own electrical inspections instead of sending you to the state. Work in an existing house is priced per circuit, while a service change is priced by amperage, and a feeder or subpanel is its own line. The permit also carries the city's flat processing fee and technology fee.",
+        "sourceUrl": "https://static.spokanecity.org/documents/smc/attachments/development-fee-schedule-2026.pdf",
+        "fee": "$7.20 per circuit for alterations or wiring of existing space; service 1-200 amps $52.00, 201-400 amps $64.20, 401-600 amps $78.00; feeder or subpanel $20.70; ground work (Ufer) $31.10; temporary service $46.60; plus a $65.00 Processing/Application Fee and a 2.5% Technology Fee",
+        "feeAsOf": "Effective January 1, 2026 (Development Fee Schedule 2026)"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "A garbage disposal counts as a plumbing fixture in Spokane: the city's note under its per-fixture plumbing fee lists garbage disposals and dishwashers among the items covered, and says the fee applies to replacements as well as new installs and rough-ins.",
+        "sourceUrl": "https://static.spokanecity.org/documents/smc/attachments/development-fee-schedule-2026.pdf",
+        "fee": "$13.50 per plumbing fixture on a trap (the per-fixture note covers garbage disposals), plus a $65.00 Processing/Application Fee and a 2.5% Technology Fee",
+        "feeAsOf": "Effective January 1, 2026 (Development Fee Schedule 2026)"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Spokane publishes no permit or fee for a smoke alarm in a single-family house, but Washington law makes smoke detection devices mandatory in every dwelling unit occupied by someone other than the owner since the end of 1981, built in the state after 1980, or sold on or after July 1, 2019, and installation is the owner's responsibility while battery replacement is the tenant's. For a home sold on or after July 1, 2019 with no alarm at all, the seller must provide at least one before anyone moves in, and the fine for non-compliance runs to $200, or $5,000 for an owner if a fire follows the failure.",
+        "sourceUrl": "https://app.leg.wa.gov/RCW/default.aspx?cite=43.44.110"
+      }
+    }
+  },
+  "stockton-ca": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Stockton Community Development Department, Building & Life Safety Division",
+      "url": "https://www.stocktonca.gov/business/building___life_safety/index.php"
+    },
+    "codeEdition": {
+      "text": "Stockton enforces the 2025 editions of the California Building, Residential, Electrical, Mechanical, Plumbing, Energy, Historical Building, Fire, Existing Building and Green Building Standards Codes as adopted by the state with local amendments, plus the Stockton Municipal Code. The city's design-criteria sheet also fixes the local values an inspector works from: energy climate zone 12, residential seismic design category D1 or D2, 95 mph wind speed, very heavy termite exposure, and a city roof-drainage design rainfall of 2 inches per hour under Stockton Municipal Code 15.16.020D. Allowable soil bearing without a soils report is split at Interstate 5, 1,500 psf to the east and 1,000 psf to the west.",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Forms/BLDG-0060_MINIMUM%20BUILDING%20DESIGN%20CRITERIA.pdf"
+    },
+    "permitPolicy": {
+      "text": "Stockton issues a water heater permit either to the property owner who completes the city's Owner/Builder form or to a California licensed C-4 or C-36 contractor who also holds a current City of Stockton business license, and whoever picks up a contractor's permit needs an authorization letter from that contractor. A homeowner going the owner-builder route must read, initial every provision of, sign and return the city's Owner-Builder Acknowledgment and Information Verification form before any permit is issued, and an agent cannot sign it for the owner without the city's prior approval. Residential water heater permits can be applied for, paid and received entirely online through the city's Accela portal. Where an emergency replacement or repair had to be done first, the permit application is due the next working business day.",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+    },
+    "registration": {
+      "text": "On top of the state contractor licence, Stockton requires a city business licence: the city's own water heater handout conditions issuing a permit to a C-4 or C-36 contractor on that contractor holding a current City of Stockton business license. The city treats self-employed people and independent contractors as owing the business tax, and lists General Contractors and Developers and Specialty Contractors as separate licence categories, each carrying an annual registration tax plus a mill tax, a flat rate, or both. Penalties run 15 percent of the tax due per month to a maximum of 60 percent, with a further 25 percent for operating unlicensed. The city publishes no dollar figure for the contractor categories on its business licence pages.",
+      "sourceUrl": "https://www.stocktonca.gov/business/business_licenses/business_license_categories.php"
+    },
+    "codeItems": [
+      {
+        "text": "Stockton specifies the water heater anchorage rather than leaving it to the installer: two seismic straps are required, one within the top third of the tank and one within the bottom third, and the bottom strap must sit at least 4 inches above the water heater controls. A heater supported on the ground has to rest on level concrete or another approved base standing at least 3 inches above the adjoining ground, and a heater in a garage needs its ignition source or pilot light at least 18 inches above the garage floor, with barriers or bollards added where the unit could be hit.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+      },
+      {
+        "text": "A sediment trap is a Stockton inspection item on a gas water heater. The city requires it downstream of the shutoff valve and ahead of the flexible connector, built as a tee fitting with a capped leg at least 3 inches long. Gas appliance connectors cannot be reused, must be attached to a hand shutoff type gas valve, and must be sized to the heater's BTU input rating. A replacement that is not like-for-like may need new gas piping run back to the meter, or pipe sizing calculations showing the existing piping is big enough.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+      },
+      {
+        "text": "Stockton is specific about where the temperature and pressure relief discharge ends. The city requires the TPR valve drained to the exterior, terminating toward the ground pointing downward with between 6 and 24 inches of clearance from the ground, and the full valve opening diameter, generally three quarters of an inch, carried through to the end of the drain. Terminating instead at a laundry sink, floor sink or floor drain is allowed only when the Building Department approves it.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+      },
+      {
+        "text": "Where a leak could do damage, in an attic or above a raised wood floor, Stockton requires a watertight corrosion-resistant pan under the heater with a drain of at least three quarters of an inch diameter, and the drain has to end somewhere readily visible so a leak gets noticed. An attic installation carries its own list: an access opening and passageway at least as large as the biggest part of the appliance and never smaller than 22 by 30 inches, a solid unobstructed floor at least 24 inches wide with the run from the opening to the appliance capped at 20 feet where headroom is under 6 feet, a level working platform at least 30 by 30 inches on the service side, and a permanent 120 volt receptacle and light fixture near the appliance with the light switch at the entrance to the passageway.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+      },
+      {
+        "text": "Swapping fuel types is restricted in Stockton. The city's handout states a gas water heater generally cannot be replaced with an electric one unless the house has a photovoltaic system or the new unit is a single heat pump water heater meeting Northwest Energy Efficiency Alliance Tier 3 or higher, with manufacturer documentation of that rating supplied. Accessible existing piping also has to be insulated, specifically the first 5 feet of cold water pipe from the storage tank, and all hot water piping under three quarters of an inch tied to a recirculation system, running from the heat source to the kitchen, or running from the heat source to the storage tank.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Stockton requires a permit to replace an existing water heater or install a new one, and charges a flat non-valuation fee for it rather than pricing it off job value; the permit can be applied for, paid and issued online, and a like-for-like swap does not need manufacturer specifications submitted.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Government/Budget%20And%20Financial%20Reports/Fee%20Schedule/2026-27/FY2627_CDD_Fees.pdf",
+        "fee": "$78.50 Water Heater permit (non-valuation based fee), plus the city's add-ons of a Technology Fee at 0.075 of the permit fee, a Community Rating System admin fee at 0.06 of the permit fee, a Capital Preservation Fee at .001 of valuation, General Plan Maintenance at .0015 of valuation and a $1.00 Green Building Standards pass-through for valuation between $1 and $25,000",
+        "feeAsOf": "Effective 7/1/2026 (FY 2026-27 Adopted Fee Schedule)"
+      },
+      "plumber-service-call": {
+        "requirement": "Stockton requires a permit for most plumbing work and prices residential permits off the job valuation from a fixed table, so a small service job lands at the bottom bracket; clearing a stoppage, repairing a leak in a pipe, valve or fixture, and removing and reinstalling a toilet are exempt, but once a concealed trap, drain, water, soil, waste or vent pipe has to come out and be replaced with new material the city treats it as new work needing a permit and an inspection.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Government/Budget%20And%20Financial%20Reports/Fee%20Schedule/2026-27/FY2627_CDD_Fees.pdf",
+        "fee": "$75.00 residential building permit at the lowest valuation bracket (job value up to $999), plus $32.00 plan check in the same bracket; above $99,999 the permit is $.006787 for each dollar over $100,000 plus $1,078",
+        "feeAsOf": "Effective 7/1/2026 (FY 2026-27 Adopted Fee Schedule)"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in Stockton needs a permit priced from the same residential valuation table, with only narrow exemptions such as reinstalling a receptacle plug, replacing a branch circuit overcurrent device of the same capacity in the same location, and minor repairs like changing lamps; an electrical-only permit for a temporary service or for any residential or commercial service over 200 amps will not be issued until the city's Electrical Service Questionnaire is filled in, which asks the existing and proposed service size, whether there are active code enforcement citations on the property, and what the service will feed.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Government/Budget%20And%20Financial%20Reports/Fee%20Schedule/2026-27/FY2627_CDD_Fees.pdf",
+        "fee": "$75.00 residential building permit at the lowest valuation bracket (job value up to $999), plus $32.00 plan check in the same bracket; Residential Minor Remodel is a flat $314.00",
+        "feeAsOf": "Effective 7/1/2026 (FY 2026-27 Adopted Fee Schedule)"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Stockton publishes no permit or fee for replacing a smoke alarm on its own, but it makes applicants sign a Smoke and Carbon Monoxide Alarm Declaration on residential new construction, alterations, repairs and additions, and the declaration sets out where the alarms go, including at least 3 feet horizontally from the door of a bathroom with a tub or shower and in both the hallway and the room open to it where that room's ceiling is 24 inches or more higher than the hallway; interconnection and hard wiring are waived where the work does not strip interior wall or ceiling finishes and there is no attic, crawl space or basement to run wiring through, and for exterior-only work such as re-roofing, siding, windows, doors or a new porch or deck.",
+        "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0035_SMOKE%20&%20CARBON%20MONOXIDE%20ALARM%20DECLARATION.pdf"
+      }
+    }
+  },
   "tampa-fl": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -2824,6 +4526,141 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
         "sourceUrl": "https://www.tucsonaz.gov/files/sharedassets/public/v/1/pdsd/documents/fee-schedule/fy27_fee_schedule.pdf",
         "fee": "$150.00 Trade Permits (items C. Replace Electric Service Panel (like for like; up to 400 amps), D. Upgrade/Modify Electric Service Panel (up to 400 amps), E. New Electrical Circuit (max two 20 amp branches), A. Electric Clearance Only (no new work))",
         "feeAsOf": "Effective July 1, 2026 (FY27 fee schedule adopted by Mayor and Council May 19, 2026)"
+      }
+    }
+  },
+  "tulsa-ok": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Tulsa Development Services, Permit Center and Inspection Services",
+      "url": "https://www.cityoftulsa.org/government/departments/development-services/inspection-services/"
+    },
+    "codeEdition": {
+      "text": "Oklahoma sets the codes statewide through the Uniform Building Code Commission: the 2024 International Residential Code and 2024 International Plumbing Code took effect September 14, 2026, replacing the 2018 editions, and the 2023 National Electrical Code took effect September 14, 2024. Tulsa's own Development Services handout on repair and alteration permits, revised May 2026, still quotes the 2018 IRC and 2018 International Existing Building Code definitions.",
+      "sourceUrl": "https://oklahoma.gov/oubcc/codes-and-rules/international-residential-code-adoptions.html"
+    },
+    "permitPolicy": {
+      "text": "Tulsa's Permit Center states plainly that only a licensed tradesperson may apply for a trade permit, so a homeowner cannot pull their own electrical, plumbing or mechanical permit here. The city does publish an affidavit of exemption from general liability and workers compensation cover for an individual homeowner, used on building permit work.",
+      "sourceUrl": "https://www.cityoftulsa.org/government/departments/development-services/permit-center/applications-and-forms/"
+    },
+    "registration": {
+      "text": "Tulsa requires its own certificate of registration on top of the Oklahoma state licence, and renewal applications must be accompanied by a photocopy of the current state licence. The registration fee is $178.00 each for an Electrical Contractor, a Plumbing Contractor and a Mechanical Contractor, and $64.00 for a Stationary Engineer, waived if the holder is registered with the city as a Mechanical Contractor; each certificate expires on the last day of the contractor's birth month.",
+      "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Oklahoma adds a rule to the residential code aimed squarely at makeshift water-heater stands: where a water heater has to be raised, it must sit on a stand or platform structurally sized for the weight of the heater plus its contents.",
+        "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2026%2009%2014%20IRC%202024%20Permanent%20Rule.pdf"
+      },
+      {
+        "text": "Solar water-heater panels fitted on a roof in Oklahoma must have a union on every pipe entering and leaving the panel, so the panel can be disconnected mechanically for service or for a reroof.",
+        "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2026%2009%2014%20IRC%202024%20Permanent%20Rule.pdf"
+      },
+      {
+        "text": "Where a slab on grade is post-tension reinforced, Oklahoma requires a label on the electrical panel door saying so, as a warning to anyone who later cuts into the floor.",
+        "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2026%2009%2014%20IRC%202024%20Permanent%20Rule.pdf"
+      },
+      {
+        "text": "Oklahoma's version of the outdoor GFCI rule reaches at-or-below-grade garages, accessory buildings and boathouses, and it adds that replacing the equipment fed from such an outlet triggers GFCI protection on that outlet. The state excepts lighting outlets and listed HVAC equipment, and deleted the expiry date the national code had put on the HVAC exception.",
+        "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2022%2009%2014%20NEC%202023%20Permanent%20Rule.pdf"
+      },
+      {
+        "text": "Oklahoma adds an allowance for a gas-fired central furnace in a dwelling to be cord-and-plug connected, so it can be run temporarily from a portable generator, with a cap on the cord length.",
+        "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2022%2009%2014%20NEC%202023%20Permanent%20Rule.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Tulsa charges a flat plumbing permit fee for a water heater, and the city's plumbing permit request form counts the water heater as its own line item. Only a licensed plumbing contractor registered with the city can apply, and the permit fee covers the inspections.",
+        "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf",
+        "fee": "Water heater fee $35.00; a minimum fee of $80.00 shall apply to any permit",
+        "feeAsOf": "Ordinance No. 25351, 2024"
+      },
+      "plumber-service-call": {
+        "requirement": "Plumbing work in Tulsa is permitted per fixture against a base fee, and the cost of the permit covers the inspections; extra inspections, partials and re-inspections are charged on top. Replacing or relocating water supply, sewer, drain, gas, waste or vent piping is specifically excluded from the ordinary-repair exemption, so it needs a permit.",
+        "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf",
+        "fee": "Plumbing fixtures, appliances and appurtenances base fee, including the first fixture, appliance or appurtenance $81.00; plus each additional $3.31; minimum fee of $80.00 for any permit; additional inspections $64.00 each; re-inspection $75.00",
+        "feeAsOf": "Ordinance No. 25351, 2024"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "A garbage disposal is one of the counted items on Tulsa's plumbing permit request form, so swapping one is charged under the city's per-fixture plumbing permit fee and must be applied for by a licensed, city-registered plumbing contractor.",
+        "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf",
+        "fee": "Plumbing fixtures, appliances and appurtenances base fee, including the first fixture, appliance or appurtenance $81.00; plus each additional $3.31; minimum fee of $80.00 for any permit",
+        "feeAsOf": "Ordinance No. 25351, 2024"
+      },
+      "electrician-service-call": {
+        "requirement": "For electrical work that is not new construction or a major remodel, Tulsa prices the permit by what is being installed: a band fee for the first fifteen pieces of electrical equipment, a separate service fee by amperage, and a flat reconnect fee. Only a licensed electrical contractor registered with the city may apply.",
+        "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf",
+        "fee": "Electrical equipment, 1-15 $81.00, each additional $2.68; electrical service (first 100 amps) $98.00, each additional 100 amps or portion thereof $18.00; reconnect fee $81.00; minimum fee of $80.00 for any permit",
+        "feeAsOf": "Ordinance No. 25351, 2024"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Tulsa permits fire alarm and detection systems by the number of devices, and the Fire Marshal must approve the plans first, but the city lets a job of five or fewer alarm devices (not counting the panel) be permitted by telephone with no application fee and no plan review. Replacing lamps is listed among the ordinary repairs that need no permit at all.",
+        "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf",
+        "fee": "Fire alarm system permit application fee $75.00; fire alarm system permit, 1-5 devices $113.00 (one inspection), 6-20 devices $157.00; exception: a permit for five or less fire alarm devices, not including the panel, may be issued with approval via telephone without any application fee or plans review",
+        "feeAsOf": "Ordinance No. 25351, 2024"
+      }
+    }
+  },
+  "virginia-beach-va": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Virginia Beach Department of Planning & Community Development, Permits & Inspections Division",
+      "url": "https://planning.virginiabeach.gov/divisions-offices/permits-inspections"
+    },
+    "codeEdition": {
+      "text": "Virginia Beach's Permits & Inspections Division administers the Virginia Uniform Statewide Building Code, and the city's trade permit pages work from the 2021 Virginia codes, including the 2021 Virginia Plumbing Code. Virginia adopted the 2021 I-codes and the 2020 National Electrical Code effective January 18, 2024.",
+      "sourceUrl": "https://dhcd.virginia.gov/codes"
+    },
+    "permitPolicy": {
+      "text": "Virginia Beach lets a property owner pull their own trade permits. A contractor's application must carry the company name, the Class A, B or C state contractor registration number and a registered master tradesman's signature; an owner applying instead supplies name, address, the approximate cost of materials as the contract value, and a signature. Either way only one address goes on an application, and an incomplete application is not processed.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    "registration": {
+      "text": "The city checks the state credential rather than issuing a local trade license: a trade contractor must give its Class A, B or C Virginia contractor registration number and have the registered master tradesman sign the application, and an application missing that number or signature will not be processed.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    "codeItems": [
+      {
+        "text": "Virginia Beach exempts residential \"like for like\" mechanical replacements, along with ranges, ovens, grills and dryers, from needing a mechanical permit — but a like-for-like swap does not include equipment with a different refrigerant type or fuel-fired equipment, and those still need the permit and a rough-in inspection.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+      },
+      {
+        "text": "Gas piping is its own permit in Virginia Beach. Installing or replacing any gas line requires a gas permit, and the city's list of triggers names water heaters, boilers, furnaces, gas packs, generators, gas logs, meter relocations and propane-to-natural-gas conversions. Gas work is inspected twice, a pressure test and a final, done alongside the plumbing rough-in and final on new residential work.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+      },
+      {
+        "text": "A new, replacement or removed testable backflow preventer needs a plumbing permit in Virginia Beach, and the test report has to be uploaded to the permit before the final inspection can be approved.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+      },
+      {
+        "text": "A Virginia Beach plumbing permit is not issued until all Public Utilities fees are paid and the receipt is given to permitting staff, and grease traps and on-site water or sewer lines must be reviewed by a plumbing inspector before issuance.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+      },
+      {
+        "text": "Which plumbing inspections you get in Virginia Beach depends on the foundation: a house on crawlspace gets rough-in, shower pan, water, sewer and final, while a house on slab adds a slab and a top-out inspection.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+      },
+      {
+        "text": "Electrical applications for services over 800 amps need an electrical inspector's approval in Virginia Beach, and the meter release to Dominion Energy is generated only once every final inspection and any outside approvals are in.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "A new residential water heater installation in Virginia Beach is mechanical permit work, though the city exempts a straight \"like for like\" residential replacement from the mechanical permit; installing or replacing gas piping for a gas heater is a separate gas permit, and both carry a 2% state levy and a technology fee.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade",
+        "fee": "Mechanical permit: $50 plus $5 per $1,000 of construction value (up to $1,000 = $55; up to $5,000 = $75; up to $10,000 = $100). Gas permit: $50 plus $4 per outlet/shutoff. A 2% state levy is assessed on these fees and a $10 technology fee is also required."
+      },
+      "plumber-service-call": {
+        "requirement": "Virginia Beach requires a plumbing permit for new plumbing fixtures or drains, replacing a water or sewer line, connecting or converting to City water or sewer, and new or replacement testable backflow preventers, and it prices the permit as a flat base plus an amount for each fixture or drain.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade",
+        "fee": "Plumbing permit: $50 plus $6 per fixture/drain; water line or sewer line conversion/replacement $50 each; plan review $50; re-inspection $75; administrative fee for beginning work without a permit $250. A 2% state levy is assessed on these fees and a $10 technology fee is also required."
+      },
+      "electrician-service-call": {
+        "requirement": "Virginia Beach requires an electrical permit to add circuits, change or upgrade the service, install or relocate wiring, or move or replace a meter base or panel, and it charges by what you are installing: service work is priced by amperage, while added or repaired circuits are a flat base plus a per-circuit amount.",
+        "sourceUrl": "https://planning.virginiabeach.gov/permits/trade",
+        "fee": "New single-phase service: $50.00 plus $20.00 per 50 amps (100 amps = $90.00; 150 amps = $110.00; 200 amps = $130.00); a change of service is half the new-service fee (up to 200 amps = $65.00). Additions or repairs: $50.00 plus $5.00 per circuit for each piece of equipment connected and each circuit or feeder installed, extended, relocated or repaired. Panel replacement or relocation, meter/meterbase replacement or relocation, subfed panel, generator circuit or temporary service pole: $50.00 each. Re-inspection $75; administrative fee for beginning work without a permit $250. A 2% state levy is assessed on these fees and a $10 technology fee is also required."
       }
     }
   }

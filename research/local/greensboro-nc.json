@@ -1,0 +1,80 @@
+{
+  "citySlug": "greensboro-nc",
+  "cityName": "Greensboro",
+  "stateAbbr": "NC",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Greensboro Development Services (Engineering & Inspections)",
+    "url": "https://greensboro-nc.gov/departments/engineering-inspections/developers-contractors/permits-fees-and-procedures"
+  },
+  "codeEdition": {
+    "text": "North Carolina runs a single statewide code and Greensboro's inspectors enforce it. The 2018 North Carolina Codes took effect January 1, 2019 and are still the ones in force; they are the 2015 International Codes plus the 2018 NC Ad-Hoc Committee amendments adopted by the Building Code Council. Electrical work is judged against the 2020 North Carolina Electrical Code, which has been effective since November 1, 2021 and is the NEC plus North Carolina amendments. Accessibility follows ANSI A117.1-2009. A 2024 North Carolina State Building Code has been approved by the Rules Review Commission but the State Fire Marshal issued separate correspondence in March 2025 about its effective date.",
+    "sourceUrl": "https://www.ncosfm.gov/codes/codes-current-and-past"
+  },
+  "permitPolicy": null,
+  "registration": {
+    "text": "Greensboro requires a city contractor bond on top of the North Carolina state license. Any contractor doing electrical, plumbing, heating, air conditioning, mechanical, refrigeration, HVAC or concrete work who obtains a permit in the city has to file the city's Contractor Bond form in the amount of $2,000.00. The city publishes separate bond forms for demolition, grading and house moving. Greensboro also issues contractors a city contractor code number and PIN, which is what lets them request inspections through the automated phone system.",
+    "sourceUrl": "https://greensboro-nc.gov/home/showdocument?id=24693"
+  },
+  "codeItems": [
+    {
+      "text": "Greensboro's inspectors treat a second ground rod as the default on a new or changed service. The city's own answer is that in Guilford County you cannot reach a resistance to ground of 25 ohms or less without adding another rod, so two rods are required wherever the site has no underground metal water pipe in contact with earth for at least 10 feet, no effectively grounded building steel, no concrete-encased electrode and no ground ring. It points to NEC 250-50, 250-52 and 250-56.",
+      "sourceUrl": "https://greensboro-nc.gov/departments/engineering-inspections/residents-home-owners/residential-construction/building-permits-faqs"
+    },
+    {
+      "text": "On a Greensboro service change the disconnecting means has to be readily accessible outside the building or at the nearest point where the service conductors come in, per NEC 230-70(a). The city follows an NC Department of Insurance letter allowing unfused conductors to be extended inside only twice the length of the service panel, and no further than five feet, whichever is shorter. The exception in 230-6 is the way around it: a raceway run under a slab, or encased in at least two inches of concrete or brick, counts as outside the building and may run more than five feet in.",
+      "sourceUrl": "https://greensboro-nc.gov/departments/engineering-inspections/residents-home-owners/residential-construction/building-permits-faqs"
+    },
+    {
+      "text": "Greensboro accepts unfaced fiberglass insulation to seal penetrations in non-fire-rated walls and floors, which matters on a water heater or panel job where piping and cable pass through framing.",
+      "sourceUrl": "https://greensboro-nc.gov/departments/engineering-inspections/residents-home-owners/residential-construction/building-permits-faqs"
+    },
+    {
+      "text": "Greensboro wants electrical, plumbing and mechanical work on separate permits, one for each trade, and the inspector signs the permit card in the field. A contractor needs that signature before requesting a rough or final inspection, and inspection requests go through the city's automated APRIL phone system by 8 p.m. on the business day before, using the permit number and the contractor's PIN.",
+      "sourceUrl": "https://greensboro-nc.gov/departments/engineering-inspections/residents-home-owners/residential-construction/building-permits-faqs"
+    },
+    {
+      "text": "Greensboro prices failed and repeat inspections on the plumbing schedule: $45.00 for the first follow-up extra inspection, and $45.00 each beyond three inspections on a crawl space house or four on a slab house.",
+      "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5109/638935425664700000"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Greensboro requires a plumbing permit to install a water heater or any fixture or appliance that connects to the drainage, waste and vent, water service or water distribution system, and gas work on the replacement is a separately priced item.",
+      "fee": "$85.00 Minimum Permit/Inspection Fee; Water Heater, all kinds $7.00 each; Gas Connection for Water Heater Replacement $10.00 each",
+      "feeAsOf": "Plumbing Permit Fee Schedule revised 7/16/24",
+      "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5109/638935425664700000"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal connects to the drainage system, so Greensboro treats it as plumbing permit work, and the disposal is a named line item on the city's plumbing fee schedule.",
+      "fee": "$85.00 Minimum Permit/Inspection Fee; Garbage Disposal $7.00 each",
+      "feeAsOf": "Plumbing Permit Fee Schedule revised 7/16/24",
+      "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5109/638935425664700000"
+    },
+    "plumber-service-call": {
+      "requirement": "Greensboro requires a plumbing permit for changes to the drainage, waste and vent system, for installing or replacing fixtures, for installing or replacing sewer and water service lines, and for special equipment such as water softeners and grease traps; the fee is a per-item charge against a published minimum.",
+      "fee": "$85.00 Minimum Permit/Inspection Fee; $7.00 each for bathtub, floor drain, lavatory, shower, sink, water closet, sewer, water line in an existing house, water softener unit or miscellaneous fixture; Backflow Preventer $15.00 each; Extra Inspection Fee, first follow-up $45.00",
+      "feeAsOf": "Plumbing Permit Fee Schedule revised 7/16/24",
+      "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5109/638935425664700000"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Greensboro takes its own electrical permit, and the city prices it per item — the service by amperage, then each outlet, appliance and piece of equipment — against a published minimum permit fee.",
+      "fee": "$85.00 minimum permit fee; service 100 A $74.00, 150 A $90.00, 200 A $99.00, 400 A $131.00; receptacles, switches and other outlets $0.30 each; water heater $10.00; appliances such as a range, oven, cooktop, clothes dryer, dishwasher, furnace or disposal/trash compactor $10.00 each; Extra Inspection Fee, first follow-up $45.00",
+      "feeAsOf": "Electrical Permit Fee Schedule revised 7/16/24",
+      "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5111/638935423722570000"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Greensboro prices smoke detectors as fire alarm devices on its electrical permit fee schedule, so hard-wired alarm work done under an electrical permit is charged per device against the city's minimum permit fee.",
+      "fee": "Fire Alarm Devices, smoke detectors $4.00 each; $85.00 minimum permit fee",
+      "feeAsOf": "Electrical Permit Fee Schedule revised 7/16/24",
+      "sourceUrl": "https://www.greensboro-nc.gov/home/showpublisheddocument/5111/638935423722570000"
+    }
+  },
+  "notVerified": [
+    "Whether a Greensboro homeowner may pull their own plumbing or electrical permit, and on what conditions. The city's Building Permits FAQ and its Permits, Fees and Procedures page say nothing about owner-permitting, and no Greensboro owner-exemption affidavit was found; North Carolina's statutory owner exemption was not attributed to the city without a city source.",
+    "The mechanical permit fee for a water heater where one contractor does both the plumbing and the gas connection. The mechanical fee schedule's table could not be read unambiguously enough to quote a figure.",
+    "A single .gov landing page that links the four fee schedules by URL. Greensboro's Permits, Fees and Procedures page lists them by name only, so the schedules are cited by their document URLs; that page does separately confirm the minimum permit fee for building, electrical, mechanical and plumbing permits rose from $75 to $85.",
+    "Greensboro-specific amendments on water heater drain pans, thermal expansion tanks or TPR discharge termination (North Carolina enforces one statewide code and no Greensboro local amendment on these was found)",
+    "greensboro-nc.gov returns 403 to automated requests behind Akamai, so pages were read through the documented fetch fallback; one page, departments/engineering-inspections/residents-home-owners/residential-construction, could not be retrieved at all."
+  ]
+}

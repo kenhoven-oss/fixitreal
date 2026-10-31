@@ -1,0 +1,79 @@
+{
+  "citySlug": "colorado-springs-co",
+  "cityName": "Colorado Springs",
+  "stateAbbr": "CO",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Pikes Peak Regional Building Department — issues building, plumbing, mechanical and electrical permits for Colorado Springs; the City separately enforces the fire code through the Fire Department's Division of the Fire Marshal",
+    "url": "https://www.pprbd.org/Information/HomeownerPermit"
+  },
+  "codeEdition": {
+    "text": "Effective June 30, 2026 the governing code in Colorado Springs is the 2023 Pikes Peak Regional Building Code, 2nd Printing, which adopts by reference the 2021 International Building Code, 2021 International Residential Code, 2021 International Mechanical Code, 2021 International Fuel Gas Code, 2021 International Plumbing Code, 2023 National Electrical Code, 2021 International Energy Conservation Code, the Colorado Model Electric Ready and Solar Ready Code, the 2021 International Existing Building Code, 2019 ASME A17.1 and the 2021 International Swimming Pool and Spa Code. Colorado Springs adopted the regional code by Ordinance 23-16, passed by City Council on March 28, 2023 and approved by the Mayor on March 30, 2023, effective April 10, 2023 with an implementation date of June 30, 2023. The fire code is separate and is the City's own: Ordinance 23-14 of April 10, 2023 adopted the 2021 International Fire Code with city amendments at City Code 8.4.102 and 8.4.105, and Ordinance 26-18 of April 28, 2026 amended Fire Code Appendix K to incorporate Colorado's state Wildfire Resiliency Code requirements at 8 CCR 1507-39, effective June 30, 2026.",
+    "sourceUrl": "https://www.pprbd.org/Information/CodeChanges"
+  },
+  "permitPolicy": {
+    "text": "A Colorado Springs homeowner may pull their own permit, but only for the primary residence they own and live in: the Regional Building Department will not issue a homeowner permit for a rental property or for a house the owner does not reside in, and it states plainly that it is illegal for a homeowner to pull a permit for a contractor they have hired. A homeowner who does pull one is expected to know the codes and is responsible for the work passing every inspection. Anyone hiring a contractor for permitted work should know the contractor has to be licensed and registered with the department and cannot obtain a permit unless that licence is in good standing. The department publishes real teeth behind this: unpermitted work draws a stop work order, an investigation fee equal to twice the permit fee, and a Certificate of Alleged Non-compliance recorded with the El Paso or Teller County Clerk and Recorder as a lien against the property. A permit is administratively closed to further inspections if no valid inspection is requested within six months of issuance, with one extension of up to 180 days available on justifiable cause, and reopening afterwards costs half the original permit fee. Re-inspection fees run $50.00 for a first incident, $100.00 for a second and $200.00 for a third, the last with a two-working-day inspection delay.",
+    "sourceUrl": "https://www.pprbd.org/Information/HomeownerPermit"
+  },
+  "registration": {
+    "text": "Trade licensing in Colorado Springs is regional, and which trades need a local licence differs by trade. An electrical contractor needs no licence beyond the Colorado state one but must register with the Regional Building Department, and the department lists the electrical contractor registration fee as N.A. A plumbing contractor holding a State master plumber's licence and registered in the jurisdiction may pull permits without a separate local licence; the Plumbing Contractor or Water Connected Appliance Contractor licence fee is $100.00. Mechanical work, which is where a gas water heater falls, is locally licensed: Mechanical Contractor A (commercial), B (residential, one- and two-family dwellings up to three stories), C (specialty, including a Gas Piping Contractor and a Residential Maintenance/Repair and Replacement classification) and D (manufactured buildings), each $100.00, with the individual Heating Mechanic I or IV licence at $10.00. Every new licence or registration application carries a separate, nonrefundable $50.00 application fee that is not credited against the licence fee, and replacing a lost licence costs $20.00. Electrical, fire alarm, mechanical, plumbing and water conditioning contractors must carry general liability cover of $1,000,000 each occurrence and $2,000,000 general aggregate, name the department as an additional insured, and file a workers' compensation certificate; a lapse is cause for automatic suspension. Renewing late costs half the licence fee within 90 days of expiry, the full fee from 90 to 135 days and twice the fee from 135 to 180 days, after which re-application and re-examination are required.",
+    "sourceUrl": "https://www.pprbd.org/File/ByAlias/PPRBC2023Edition2ndPrinting"
+  },
+  "codeItems": [
+    {
+      "text": "Colorado Springs wrote its own fire alarm section into the fire code for houses in the wildland-urban-interface overlay. Added section 907.2.25.1 applies where the approved development plan calls for it, and requires a monitored fire alarm system in a one- or two-family dwelling with smoke detectors on all levels, in bedrooms and in hallways near or outside bedrooms, a combination of rate-of-rise and 195 degree fixed-temperature detectors in the kitchen and garage, and an outside strobe unit with a clear lens positioned to be visible from the roadway.",
+      "sourceUrl": "https://coloradosprings.gov/system/files/2023-04/Signed%20Ordinance%20No.%2023-14.pdf"
+    },
+    {
+      "text": "The Regional Building Code rewrites the national rule on where a gas appliance may sit. Items 3 and 4 of the prohibited-locations section are deleted outright, item 5 is extended to allow adjacent spaces that meet the indoor combustion air requirements of section G2407.5, and a new item 7 permits the appliance in a room or space that opens only into a bedroom or bathroom provided the space is used for nothing else, the door to the bedroom or bathroom is fully louvered, the door to the appliance room is fully louvered, and all combustion air is taken from indoors under G2407.5. The same amendment is carried into the fuel gas side of the code.",
+      "sourceUrl": "https://www.pprbd.org/File/ByAlias/PPRBC2023Edition2ndPrinting"
+    },
+    {
+      "text": "Gas piping work in the Pikes Peak region is pressure tested in front of the inspector, with the figures set locally. The code official observes the test, the permit holder supplies the apparatus, and a mechanical gauge must have a range whose top of scale is no more than five times the test pressure. Threaded pipe is tested at 10 psi for 15 minutes, welded pipe at 60 psi for 30 minutes and corrugated stainless steel pipe at 10 psi for 15 minutes, using air, carbon dioxide or nitrogen. The code also adds labelling for elevated pressure: gas piping downstream of the gas purveyor's regulator or meter above half a psi is labelled Medium Pressure, above 5 psi High Pressure, and labels go on every 10 feet.",
+      "sourceUrl": "https://www.pprbd.org/File/ByAlias/PPRBC2023Edition2ndPrinting"
+    },
+    {
+      "text": "Unlike its building and mechanical provisions, the Regional Building Code adds nothing of its own to plumbing or electrical. It adopts the Colorado Plumbing Code of the Department of Regulatory Agencies and the National Electrical Code in whatever edition the Colorado State Plumbing Board and the Colorado State Electrical Board have adopted, within twelve months of that state adoption, together with all of the boards' revisions, modifications and exceptions, and in each case the code is adopted in its entirety. So a plumbing or electrical inspection here is judged against the state editions rather than a local rewrite, and the edition can roll over without a local ordinance.",
+      "sourceUrl": "https://www.pprbd.org/File/ByAlias/PPRBC2023Edition2ndPrinting"
+    },
+    {
+      "text": "In Colorado a utility may not energise an installation that needed electrical inspection until final approval has been issued, with only two exceptions: a situation the local electrical inspection authority or the state board treats as an emergency, which buys a maximum of seven days or until the inspection happens, and an approved tiny home connection. If an inspector finds the installation hazardous to life or property they can order the electrical service discontinued until it is made safe and must notify the electricity supplier. For both trades only a \"qualified applicant\" may apply for the permit, which the statute defines as a master plumber or master electrician who is also a registered contractor, one directly employed by a registered contractor, or a homeowner performing work on the homeowner's own home.",
+      "sourceUrl": "https://leg.colorado.gov/sites/default/files/images/olls/crs2023-title-12.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Colorado Springs needs a permit from the Regional Building Department, which lists it among the installations that always require one and prices it as a flat individual residential mechanical and plumbing permit rather than off the job value; replacing the vent at the same time moves it to the higher flat fee.",
+      "fee": "$40.00 Water Heater Replacement, or $75.00 for Water Heater, Furnace, or Boiler Replacement including vent (individual residential mechanical and plumbing permit fees); commercial is $50.00 up to 400,000 BTU and $100.00 above that",
+      "feeAsOf": "Appendix B of the 2023 Pikes Peak Regional Building Code, 2nd Printing 6.30.26",
+      "sourceUrl": "https://www.pprbd.org/Information/FeeSchedule"
+    },
+    "plumber-service-call": {
+      "requirement": "A plumbing permit not tied to a building permit is priced off the job valuation from Table C with a $50.00 floor, and a plumbing permit attached to an alteration of a one- or two-family dwelling is a flat fee per trade instead; the Regional Building Department treats minor plumbing and heating repairs as not needing a permit, and a backflow device or water softener install has its own flat fee.",
+      "fee": "$50.00 for a valuation of $100 to $500, then $50.00 for the first $500 plus $5.50 per additional $100 to $2,000, $132.50 for the first $2,000 plus $1.45 per additional $100 to $5,000, and $176.00 for the first $5,000 plus $6.75 per additional $1,000 to $50,000 (Table C); $50.00 per trade as a permit attachment to an alteration of a one- or two-family dwelling (Table B.1); $30.00 for a lawn sprinkler backflow prevention device or water softener installation",
+      "feeAsOf": "Appendix B of the 2023 Pikes Peak Regional Building Code, 2nd Printing 6.30.26",
+      "sourceUrl": "https://www.pprbd.org/Information/FeeSchedule"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work requires a permit from the Regional Building Department, priced off the job valuation from the same Table C with a $50.00 floor when it stands alone, or as a flat per-trade attachment fee when it rides on a building permit for an alteration; the power company cannot connect service until the final inspection is approved, apart from a declared emergency lasting at most seven days.",
+      "fee": "$50.00 for a valuation of $100 to $500, then $50.00 for the first $500 plus $5.50 per additional $100 to $2,000, $132.50 for the first $2,000 plus $1.45 per additional $100 to $5,000, and $176.00 for the first $5,000 plus $6.75 per additional $1,000 to $50,000 (Table C); $50.00 per trade as a permit attachment to an alteration of a one- or two-family dwelling, $100.00 per trade on a commercial building permit",
+      "feeAsOf": "Appendix B of the 2023 Pikes Peak Regional Building Code, 2nd Printing 6.30.26",
+      "sourceUrl": "https://www.pprbd.org/Information/FeeSchedule"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Colorado law says no plumbing licence, registration or permit is required to repair or replace a garbage disposal unit or dishwasher that is directly connected to the sanitary sewer, including replacing the tail pipes and traps that come with it, and the Regional Building Department's own guidance puts replacing most appliances and minor plumbing repairs on its list of work that needs no permit.",
+      "sourceUrl": "https://leg.colorado.gov/sites/default/files/images/olls/crs2023-title-12.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "A Colorado Springs house inside the wildland-urban-interface overlay can be held to far more than battery smoke alarms where the approved development plan requires it: the city's own added fire code section calls for a monitored fire alarm system with smoke detectors on every level, in the bedrooms and in the hallways near the bedrooms, rate-of-rise plus 195 degree fixed-temperature detectors in the kitchen and garage, and a clear-lens strobe outside visible from the road.",
+      "sourceUrl": "https://coloradosprings.gov/system/files/2023-04/Signed%20Ordinance%20No.%2023-14.pdf"
+    }
+  },
+  "notVerified": [
+    "A published permit fee for replacing a smoke or carbon monoxide alarm (the Regional Building Department's fee schedule has no alarm line, and no page states whether an alarm swap needs a permit at all)",
+    "What the Colorado Model Electric Ready and Solar Ready Code requires on a water heater replacement in Colorado Springs (the Regional Building Department lists it among the adopted codes but does not reproduce its provisions, and the state code text itself was not retrieved)",
+    "Whether Colorado Springs licenses plumbing or electrical contractors through the City Clerk on top of the regional registration (the clerk publishes licence pages for concrete contractors, excavation and tree service, but the absence of a plumbing or electrical page is not a published statement either way)",
+    "Any Colorado Springs or Pikes Peak requirement on thermal expansion tanks, water heater drain pans, TPR discharge termination or seismic strapping (the full 2023 Pikes Peak Regional Building Code was searched and contains no such local amendment; the department adopts the Colorado Plumbing Code in its entirety instead, and that state code text is not published on a host these rules accept)",
+    "Whether the flat water heater permit fee includes the inspection (the fee schedule says fees include inspections for the Table A tables but says nothing either way for the individual residential mechanical and plumbing flat fees)"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "citySlug": "henderson-nv",
+  "cityName": "Henderson",
+  "stateAbbr": "NV",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Henderson Department of Building and Fire Safety (permits issued through the Development Services Center)",
+    "url": "https://www.cityofhenderson.com/government/departments/building-and-fire-safety/building-codes"
+  },
+  "codeEdition": {
+    "text": "Henderson's building codes page publishes local amendments to the 2024 International Building, Residential, Existing Building, Energy Conservation, Fire and Swimming Pool and Spa Codes, the 2024 Uniform Plumbing Code, the 2024 Uniform Mechanical Code and the 2023 National Electrical Code, and states that the 2024 set applies to submittals received on or after January 2, 2026. The previous set, based on the 2021 I-codes and the 2018 Uniform and residential codes, applies to submittals received between March 23, 2023 and January 1, 2026.",
+    "sourceUrl": "https://www.cityofhenderson.com/government/departments/building-and-fire-safety/building-codes"
+  },
+  "permitPolicy": {
+    "text": "Nevada contractor licensing law exempts an owner of property who is building or improving a residential structure for their own occupancy and not for sale or lease, but the owner has to apply to the Nevada State Contractors Board for that exemption first. The same statute gives no general pass for small repairs where a building permit is required or where the work is of a type done by a plumbing, electrical, heating or air-conditioning contractor.",
+    "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-624.html"
+  },
+  "registration": {
+    "text": "A contractor working in Henderson needs a City of Henderson business license; the city publishes a contractor-specific business license checklist listing the forms required, including a business registration form and a zoning compliance check. No separate trade registration or bond amount is published on that checklist.",
+    "sourceUrl": "https://cityofhenderson.com/home/showpublisheddocument/1788/638675125235430000"
+  },
+  "codeItems": [
+    {
+      "text": "The Southern Nevada amendments to the 2024 Uniform Plumbing Code that Henderson publishes require a drain pan under a water heater in an attic, in or on an attic or floor-ceiling assembly, or anywhere a leak could cause damage. The pan has to be at least 1-1/2 inches deep with a drain of at least 3/4 inch, and discharging a relief valve into that pan is prohibited. A tankless heater in a readily accessible spot and a point-of-use heater are excepted.",
+      "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16001/638833439360300000"
+    },
+    {
+      "text": "Under the same plumbing amendments, a water heater's temperature and pressure relief drain has to terminate outside the building unless the manufacturer's listing rules that out; where it cannot, it may discharge through an air gap to a clothes washer port, floor sink, mop sink or an equipped floor drain.",
+      "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16001/638833439360300000"
+    },
+    {
+      "text": "A backflow prevention assembly has to be tested by a certified tester when it is installed, repaired or relocated and at least once a year after that, and the tester has to leave a copy of the certification for each device on site.",
+      "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16001/638833439360300000"
+    },
+    {
+      "text": "The Southern Nevada amendments to the 2023 National Electrical Code that Henderson publishes cap a dwelling's 15-amp lighting circuits and 20-amp circuits at twelve outlets each, and require separate 20-amp circuits for a dishwasher, a trash compactor and a microwave oven. Outlets serving smoke detectors are not counted toward the twelve-outlet limit.",
+      "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/15983/638833433919100000"
+    },
+    {
+      "text": "The Southern Nevada amendments to the 2024 International Residential Code also rework combustion air and alarm placement: a fireplace or gas appliance in a sleeping room or adjacent bathroom needs a permanent unobstructed outside air supply to the firebox, and carbon monoxide alarm placement is amended for fuel-burning appliances in bedrooms.",
+      "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/15993/638833443209500000"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Henderson takes a plumbing permit, charged as a single flat line in the city's building mechanical, plumbing and electrical fee table.",
+      "fee": "Water Heater: $81",
+      "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16408/638948459361800000"
+    },
+    "plumber-service-call": {
+      "requirement": "Repair or alteration of drainage or vent piping in Henderson takes a plumbing permit charged per fixture.",
+      "fee": "Miscellaneous repair, including repair or alteration of drainage or vent piping, each fixture: $211",
+      "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16408/638948459361800000"
+    },
+    "electrician-service-call": {
+      "requirement": "Small electrical work in Henderson takes an electrical permit priced per device, and replacing a whole service has its own line in the fee table.",
+      "fee": "Each general lighting outlet, receptacle outlet and switch (multi-outlet assemblies, each 5' or portion thereof): $152; each service regardless of ampere rating, including first meter socket: $190",
+      "sourceUrl": "https://www.cityofhenderson.com/home/showpublisheddocument/16408/638948459361800000"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (Henderson's MPE fee table has no food waste disposer line)",
+    "smoke-detector-replacement permit requirement and fee (no smoke alarm line in the MPE fee table)",
+    "Whether Henderson lets a homeowner pull their own plumbing or electrical permit, and what the city asks for if so",
+    "The effective or revision date of the Henderson Development Services Center Schedule of Fees — the document prints none, only that fees may be adjusted by Council effective January 1 each year",
+    "Henderson's own ordinance amendments under Municipal Code Title 15 beyond the Southern Nevada amendment documents the city publishes",
+    "Henderson business license fee or bond amounts for contractors",
+    "Clark County's own amendment documents (files.clarkcountynv.gov was unreachable from this run)"
+  ]
+}

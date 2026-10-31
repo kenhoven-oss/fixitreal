@@ -1,0 +1,52 @@
+{
+  "citySlug": "omaha-ne",
+  "cityName": "Omaha",
+  "stateAbbr": "NE",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Omaha Planning Department, Permits and Inspections Division",
+    "url": "https://planning.omaha.gov/permits-and-inspections"
+  },
+  "codeEdition": {
+    "text": "Nebraska writes a statewide building code but lets cities adopt and enforce their own as long as it generally conforms, and Omaha has chosen to run its own. Omaha's codes sit in the Omaha Municipal Code: Chapter 43 Building, Chapter 40 Mechanical, Chapter 44 Article V Electrical, Chapter 49 Plumbing, Chapter 46 Fire and Chapter 48 Property Maintenance. The editions in force are the 2018 International Residential Code with Omaha amendments (effective July 1, 2020), the 2018 IBC, IEBC and IECC with amendments (effective January 1, 2022), the 2024 International Mechanical Code with amendments (effective May 20, 2026), the 2024 International Fire Code with amendments (effective July 1, 2026) and the 2023 National Electrical Code with amendments (effective December 24, 2025). Statewide the baseline is the 2018 IRC and IEBC, the 2018 Uniform Plumbing Code as the Nebraska Plumbing Code, and the 2023 NEC.",
+    "sourceUrl": "https://up.codes/codes/omaha"
+  },
+  "permitPolicy": {
+    "text": "Nebraska's State Electrical Act does not stop a property owner from doing electrical work on their own principal residence, so long as the residence is no larger than a single-family dwelling, and does not require that owner to be licensed. The Act also recognises city licences: someone holding a valid electrical licence issued by a city may work without a state licence, provided they only make installations inside that city's limits and the city licence meets the Act's requirements. Omaha issues its own occupational licences through the Planning Department.",
+    "sourceUrl": "https://electrical.nebraska.gov/sites/default/files/doc/STATE%20ACT%20REVISED%20VERSION%2006%2026%202026-2.pdf"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "Nebraska adopts the 2023 National Electrical Code as its minimum standard but deliberately keeps the 2017 NEC text for five sections: 210.8(A), 210.8(A)(3), 210.8(A)(5), 230.67(A) and 230.85. In practical terms the 2023 edition's expanded GFCI scope, its whole-house surge protection requirement and its outdoor emergency disconnect requirement are not enforced in Nebraska, which is the opposite of what a national guide written to the 2023 NEC will tell a homeowner.",
+      "sourceUrl": "https://electrical.nebraska.gov/sites/default/files/doc/STATE%20ACT%20REVISED%20VERSION%2006%2026%202026-2.pdf"
+    },
+    {
+      "text": "Omaha is too big for Nebraska's cut-rate residential electrical licences. A Class B electrical contractor licence and a Class B journeyman licence are valid only for systems up to 400 amps in dwellings of four units or fewer located in a municipality with fewer than 100,000 inhabitants. Omaha is far above that, so residential electrical work there has to be done under a full electrical contractor or Class A master electrician licence.",
+      "sourceUrl": "https://electrical.nebraska.gov/sites/default/files/doc/STATE%20ACT%20REVISED%20VERSION%2006%2026%202026-2.pdf"
+    },
+    {
+      "text": "Omaha runs its own municipal electrical inspection program with a city electrical inspector, so an Omaha electrical permit and inspection goes through the city rather than the Nebraska State Electrical Division. The state division keeps jurisdiction only over public educational facilities and state-owned property inside the city.",
+      "sourceUrl": "https://electrical.nebraska.gov/municipal-county-electrical-inspection-programs"
+    },
+    {
+      "text": "Under Nebraska's electrical statute, a single-family residential electrical installation that needs NEW service equipment is specifically made subject to the Act's inspection and enforcement provisions, even though ordinary single-family work is not. So a panel or service change on an Omaha house is inspected work in a way that a simple circuit addition may not be.",
+      "sourceUrl": "https://electrical.nebraska.gov/sites/default/files/doc/STATE%20ACT%20REVISED%20VERSION%2006%2026%202026-2.pdf"
+    }
+  ],
+  "byGuide": {
+    "electrician-service-call": {
+      "requirement": "Electrical work in Omaha is permitted and inspected by the City of Omaha's own electrical inspection program, not by the state division, and the city enforces the 2023 National Electrical Code with amendments. Because Nebraska's Class B residential licences are only valid in towns under 100,000 people, an Omaha job needs a full electrical contractor or Class A master electrician; a homeowner may still do the work on their own single-family principal residence without a licence.",
+      "sourceUrl": "https://electrical.nebraska.gov/municipal-county-electrical-inspection-programs"
+    }
+  },
+  "notVerified": [
+    "All Omaha permit fees for water heater replacement, plumbing service calls, electrical service calls, garbage disposal replacement and smoke detector replacement — the City of Omaha's own sites (planning.omaha.gov, planning.cityofomaha.org, www.cityofomaha.org, permits.cityofomaha.org) return an Akamai Access Denied to automated requests, and the WebFetch fallback for https://planning.omaha.gov/permits-and-inspections/permits/fees and https://planning.cityofomaha.org/permits-and-inspections could not be completed",
+    "Whether Omaha requires a permit at all for a like-for-like water heater, garbage disposal or smoke alarm replacement, and which trade permit each falls under",
+    "Whether a homeowner may pull their own plumbing or mechanical permit in Omaha (only the state electrical exemption for an owner's principal residence was verified)",
+    "Omaha's local trade licensing and registration requirements and any bond amount — the city's occupational licensing pages were unreachable, and the Omaha Municipal Code is hosted on codelibrary.amlegal.com, library.amlegal.com and omaha.municipal.codes, all of which returned a Cloudflare browser check",
+    "The edition of the plumbing code Omaha enforces under Omaha Municipal Code Chapter 49 — the chapter's current effective date is published but not the model code edition behind it",
+    "Omaha's own written amendments to the 2018 IRC and the 2023 NEC",
+    "Any Omaha-specific water heater requirement such as a drain pan, thermal expansion tank, TPR discharge termination or sediment trap"
+  ]
+}

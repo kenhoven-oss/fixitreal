@@ -1,0 +1,72 @@
+{
+  "citySlug": "chattanooga-tn",
+  "cityName": "Chattanooga",
+  "stateAbbr": "TN",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Chattanooga Land Development Office (Public Works)",
+    "url": "https://chattanooga.gov/public-works/land-development-office"
+  },
+  "codeEdition": {
+    "text": "Chattanooga's City Council passed the current adopting ordinances on February 28, 2023, and the Land Development Office stopped accepting plans drawn to the previous codes on May 26, 2023. In force are the 2018 editions of the International Building, Residential, Fire, Mechanical, Fuel Gas and Plumbing Codes, the 2018 International Energy Conservation Code with Tennessee's state amendments, the 2023 National Electrical Code, and ANSI/ICC A117.1-2009 for accessibility. The electrical code therefore runs three cycles ahead of the building and residential codes.",
+    "sourceUrl": "https://chattanooga.gov/stay-informed/building-codes"
+  },
+  "permitPolicy": {
+    "text": "For a residential building permit Chattanooga lets a property owner act as their own contractor under the state's owner exemption: the owner may build on property they own for their own individual use and not for resale, lease or rent, and may not have been issued an owner's permit in the previous 24 months. Trade work is different. The city's own trade licenses are what entitle a person to pull the permit, so a plumbing permit takes a City of Chattanooga Master Plumbing License, a mechanical permit a City Master Mechanical License, a gas permit a City Master Gas Fitter License, and a residential electrical permit a City Class 1 or Class 2 electrical license. A Tennessee state contractor's license is added on top once the contract value reaches $25,000, and a Tennessee business license is required to pull any permit.",
+    "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/residential-building-permit"
+  },
+  "registration": {
+    "text": "Chattanooga runs its own trade licensing board rather than relying on the state credential alone. It is unlawful to do plumbing work requiring a permit in the city as a master or journeyman plumber without a city certificate of competency, which takes an examination and five years of documented work in the trade. The master employer plumber certificate costs $215.00 per two-year cycle.",
+    "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/plumbing-license-master"
+  },
+  "codeItems": [
+    {
+      "text": "Chattanooga will not release power to a meter that has been off more than a year until an electrical inspector passes a meter inspection, and the city's published conditions are specific: the meter must be grounded with a #4 ground wire and two ground rods, the panel must be made up with no devices or wires hanging or missing, the house must have permanent heat, and the inspector must be able to get inside. Owners, tenants and landlords are barred from making the repairs themselves. The meter inspection permit is $55.00.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/meter-inspection"
+    },
+    {
+      "text": "A contractor's Chattanooga meter inspection permit only covers minor electrical repairs such as replacing lugs, adding straps or driving ground rods. Anything beyond that has to go on a regular electrical permit, and if the meter inspection is rejected a licensed electrical contractor must pull that separate permit before starting work and then call for a reinspection.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/meter-inspection"
+    },
+    {
+      "text": "Replacing a gas-fired water heater in Chattanooga pulls in a second permit and a second licence: a Gas permit, which only a City of Chattanooga Master Gas Fitter License holder can obtain. It costs $40.00 to issue plus $10.00 for each gas-burning object under 125,000 BTU per hour, and the gas permit fee has to be paid before the inspector approves the installation plans.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/gas-permit"
+    },
+    {
+      "text": "Chattanooga's plumbing fee schedule prices backflow and pressure-control devices as separate permitted items, which is a good sign they are inspected as such: $10.00 for each vacuum breaker or backflow protective device, $6.00 for each pressure reducing device and each check valve assembly, and $10.00 for each installation, alteration or repair of water piping.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/plumbing-permit"
+    },
+    {
+      "text": "Chattanooga's mechanical code gives emergency appliance work a grace period rather than an exemption: where equipment or appliance replacements or repairs have to be done in an emergency, the permit application must be submitted by the next working business day.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/mechanical-permit"
+    },
+    {
+      "text": "Residential electrical work in Chattanooga must be permitted by the holder of a city Class 1 or Class 2 electrical licence; the Class II residential contractor's licence is limited to one- and two-family dwellings and needs three years as a licensed journeyman or residential electrician in the city's metro area, an unrevoked prior Class II licence, an electrical engineering or technology degree, or experience the board accepts. It costs $200.00 for two years plus a $5 administrative fee and a $10 technology fee.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/electrical-license-class-2"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Chattanooga needs a plumbing permit, pulled by a holder of a City of Chattanooga Master Plumbing License, and the city charges a flat issuing fee plus a line item for the heater and its vent.",
+      "fee": "$40.00 Permit Issuance plus $6.00 for each Water Heater and/or Vent",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/plumbing-permit"
+    },
+    "plumber-service-call": {
+      "requirement": "Chattanooga requires a plumbing permit to install, alter, repair, remove, convert or replace any part of a plumbing system, and the fee is a flat issuing charge plus per-item amounts for what the job touches.",
+      "fee": "$40.00 Permit Issuance; $6.00 for each Plumbing Fixture, Floor Drain or Trap; $10.00 for each installation, alteration or repair of Water Piping; $10.00 for each repair or alteration of Drainage or Vent Piping; $20.00 for each Building Sewer (replacement/repair); $50.00 for each Re-inspection",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/plumbing-permit"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Chattanooga needs a city electrical permit, and only the holder of a City of Chattanooga Class 1 or Class 2 electrical license may pull one for a house; a state contractor's license is also required once the contract value hits $25,000, and the permit lapses one year after it is issued.",
+      "sourceUrl": "https://chattanooga.gov/pay-and-apply/permits-applications/electrical-permit"
+    }
+  },
+  "notVerified": [
+    "Chattanooga's electrical permit fee. The city's electrical permit page publishes the licence requirements but no fee table, and the fee provisions sit in City Code chapter 14, which is published only on library.municode.com; that host blocks automated requests and was not reachable.",
+    "The city's 'Other Fees' schedule in City Code chapter 10, article III, which the Land Development Office links as the authority for permit fees (same municode host, unreachable)",
+    "An effective or revision date for the plumbing, gas and mechanical fee tables. The city publishes them as web pages with no date printed, so no feeAsOf could be recorded.",
+    "garbage-disposal-replacement permit requirement and fee (Chattanooga's plumbing permit language is broad enough to cover plumbing system replacements, but the fee schedule has no disposer line and no minor-repair exemption list was found, so neither the requirement nor which fee line applies could be pinned down)",
+    "smoke-detector-replacement permit requirement and fee (nothing on the city's permit, code or Land Development Office pages addresses smoke or CO alarm replacement)",
+    "Chattanooga-specific amendments on water heater drain pans, thermal expansion tanks, TPR discharge termination or sediment traps (the city adopts the 2018 I-codes and its local amendments are in the municode-hosted chapters, which could not be read)"
+  ]
+}

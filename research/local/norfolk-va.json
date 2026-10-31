@@ -1,0 +1,71 @@
+{
+  "citySlug": "norfolk-va",
+  "cityName": "Norfolk",
+  "stateAbbr": "VA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Norfolk Department of City Planning, Permits and Inspections",
+    "url": "https://www.norfolk.gov/2799/Permits-and-Inspections"
+  },
+  "codeEdition": {
+    "text": "Norfolk enforces the Virginia Uniform Statewide Building Code, which is written and amended by the state Board of Housing and Community Development and enforced locally; cities may not write their own technical amendments. The 2021 Virginia codes took effect January 18, 2024, adopting the 2021 I-codes referenced through the Virginia Construction Code and the 2020 National Electrical Code.",
+    "sourceUrl": "https://www.dhcd.virginia.gov/codes"
+  },
+  "permitPolicy": {
+    "text": "Norfolk's trade permit applications are built around the contractor's state licence: the online portal asks for licence information exactly as it appears in DPOR, a Class A, B or C contractor may only pull permits in their own trade, and a master-licence holder is limited to projects of $1,000 or less. Statewide, the building official must be given either proof of state licensure or a written statement that the applicant is not subject to licensure before a permit is issued, and the applicant must also show that local taxes and licence fees are paid.",
+    "sourceUrl": "https://www.norfolk.gov/6539/Trade-Permits"
+  },
+  "registration": {
+    "text": "Norfolk does not publish a separate city trade registration for plumbers or electricians. It relies on the Virginia Department of Professional and Occupational Regulation licence, requires the licence number to match DPOR records at application, and asks for a contractor licensure affidavit with project submittals.",
+    "sourceUrl": "https://www.norfolk.gov/6539/Trade-Permits"
+  },
+  "codeItems": [
+    {
+      "text": "Virginia deletes NEC Section 210.8(F) in its entirety from the NFPA 70 it enforces, so the national rule that pushes GFCI protection onto outdoor outlets serving equipment such as air conditioners does not apply in Norfolk.",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section300/"
+    },
+    {
+      "text": "Virginia's statewide code treats some swaps as ordinary repairs needing no permit at all: replacing general-use snap switches, dimmer and control switches, 125-volt 15- or 20-amp receptacles, light fixtures and ceiling fans in a one- or two-family home, replacing plumbing fixtures without altering the water supply, drainage or vent piping, and replacing mechanical appliances that are not fuelled by gas or oil. A homeowner may still ask for a permit, and if they do the inspections come with it.",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section80/"
+    },
+    {
+      "text": "Flood zones change the answer in Norfolk. The state code lets the building official require a permit for otherwise exempt work in a special flood hazard area, and Norfolk's own submittal guide says an elevation certificate is needed for new structures, additions, solar panels, garages, pools and alterations into habitable space in a flood zone, and that even a shed under 256 square feet needs a permit there.",
+      "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/71681"
+    },
+    {
+      "text": "Norfolk files a replacement water heater under its mechanical fee schedule rather than plumbing, so the permit is written as a mechanical equipment replacement even though the work is plumbing. Water supply, drainage and vent alterations and electric wiring are separately listed in the state code as work that always needs a permit application.",
+      "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/1494"
+    },
+    {
+      "text": "Virginia's code carves water heaters, boilers and pressure vessels out of the building code to the extent the Virginia Boiler and Pressure Vessel Regulations cover them, and lets the building official ask the owner for documents showing compliance with those regulations.",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section310/"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Norfolk needs a permit, billed from the city's mechanical fee schedule, and small permits land on the city's minimum permit fee.",
+      "fee": "Replacement Water Heater $20 each; Minimum Permit Fee (Building and PME only) $50; $15 processing fee added to all permits; 2% surcharge on all permits",
+      "feeAsOf": "July 1, 2021",
+      "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/1494"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Norfolk takes an electrical permit priced by the ampacity of the service and by each circuit installed, extended, relocated or repaired.",
+      "fee": "Electrical service 0-200 AMP $50; 201-400 AMP $100; each circuit or feeder installed, extended, relocated or repaired $3 per circuit at 0-20 AMP rising to $20 per circuit at 121-200 AMP; Minimum Permit Fee (Building and PME only) $50; $15 processing fee; 2% surcharge",
+      "feeAsOf": "July 1, 2021",
+      "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/1494"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Norfolk takes a plumbing permit charged per fixture or device, with piping billed per service line, and the city's minimum permit fee applies to small jobs.",
+      "fee": "Plumbing equipment/fixtures $10 per fixture/device/system; plumbing piping $20 per sewer/service line; sewer caps $50 each; Minimum Permit Fee (Building and PME only) $50; $15 processing fee; 2% surcharge",
+      "feeAsOf": "July 1, 2021",
+      "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/1494"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee — the state code exempts replacing a plumbing fixture that does not alter supply, drainage or vent piping, but neither Virginia nor Norfolk states whether a food waste disposer counts as a fixture or as an appliance, and Norfolk's schedule has no disposer line",
+    "smoke-detector-replacement permit requirement and fee — Norfolk's fee schedule prices fire alarm systems but not a dwelling smoke alarm swap, and the state low-voltage permit exemption excludes fire detection components without saying how a one-for-one alarm replacement is treated",
+    "Whether a Norfolk homeowner can pull their own electrical or plumbing trade permit in the online portal — the city's trade permit page describes only licensed-contractor paths",
+    "Whether the Norfolk fee schedule effective July 1, 2021 has since been superseded; it is the schedule the city's permits page links as current",
+    "Virginia's amendments to the IRC specific to water heaters (pan, expansion control, strapping) — the state posts its amendments by IBC chapter and no IRC amendment list was reachable from an official host in this run"
+  ]
+}

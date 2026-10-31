@@ -64,6 +64,23 @@ const OFFICIAL_CITY_HOSTS = [
   "dallascityhall.com", // City of Dallas's primary site
   "houstonpermittingcenter.org", // City of Houston's own permitting centre
   "dsm.city",           // City of Des Moines's rebranded primary site
+  "cityoftulsa.org",    // City of Tulsa's primary site (mayor, council, charter,
+                        // Development Services permit centre, staff @cityoftulsa.org)
+  "cityofmadison.com",  // City of Madison, WI
+  "cityofboise.org",    // City of Boise, ID
+  "cityofhenderson.com", // City of Henderson, NV (confirmed by Clark County's .gov listing)
+  "cityoftulsa.org",    // City of Tulsa, OK
+  // Pikes Peak Regional Building Department: the actual permitting authority
+  // for Colorado Springs, El Paso County, Fountain, Woodland Park and Manitou
+  // Springs, an intergovernmental body with no .gov domain. Allowed because it
+  // IS the authority, the same basis as houstonpermittingcenter.org -- not
+  // because it merely hosts a city's files.
+  "pprbd.org",
+  // City of Spokane's own domain. Covers my.spokanecity.org (the primary site)
+  // and static.spokanecity.org (its asset subdomain) -- the SAME registrable
+  // domain as the city, which is what separates this from third-party storage
+  // like widen.net or an S3 bucket.
+  "spokanecity.org",
   "nyc.gov",            // already .gov, listed for clarity of intent
 ];
 

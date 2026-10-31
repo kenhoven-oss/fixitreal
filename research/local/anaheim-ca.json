@@ -1,0 +1,37 @@
+{
+  "citySlug": "anaheim-ca",
+  "cityName": "Anaheim",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Anaheim Building Division",
+    "url": "https://www.anaheim.gov/5252"
+  },
+  "codeEdition": {
+    "text": "Anaheim enforces the California building standards that took effect statewide on 1 January 2026: the 2025 California Residential Code (2024 IRC), 2025 California Plumbing Code (2024 UPC), 2025 California Mechanical Code (2024 UMC) and 2025 California Electrical Code (NFPA 70-2023). Any local Anaheim amendments were not verifiable.",
+    "sourceUrl": "https://up.codes/codes/california"
+  },
+  "permitPolicy": {
+    "text": "In California a permit is pulled either by a licensed contractor or by the property owner as an owner-builder. A homeowner improving their principal residence is exempt from contractor licensing only if the work is done before sale, they have lived in the home for the 12 months before the work is finished, and they have not used the exemption on more than two structures in any three-year period.",
+    "sourceUrl": "https://www.cslb.ca.gov/Consumers/Building_Officials/Owner_Builder_Overview.aspx"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "California building departments are directed to verify, as a condition of issuing the permit, that the contractor's licence number used to pull it is valid and in good standing, and to require owner-builder verification under Health and Safety Code sections 19830, 19831 and 19832 on an owner-builder permit.",
+      "sourceUrl": "https://www.cslb.ca.gov/Resources/GuidesAndPublications/CALBOGuidelines.pdf"
+    },
+    {
+      "text": "An owner-builder may do most of the work themselves but is barred from doing well-drilling work (C-57 classification); any subcontractors they hire must be properly licensed.",
+      "sourceUrl": "https://www.cslb.ca.gov/Consumers/Building_Officials/Owner_Builder_Overview.aspx"
+    }
+  ],
+  "byGuide": {},
+  "notVerified": [
+    "all Anaheim permit fees for the five guides - www.anaheim.gov and www.anaheim.net sit behind a Cloudflare bot check that returns 403 to automated requests, and no fee figure was published on a page that could be read",
+    "Anaheim's own water heater replacement handout (anaheim.gov DocumentCenter item 719) - unreadable for the same reason",
+    "Anaheim Municipal Code Title 15/18 building code adoption and local amendments (codelibrary.amlegal.com and library.municode.com both return 403)",
+    "whether Anaheim requires a city trade registration on top of the state CSLB licence",
+    "Anaheim-specific inspection items (seismic strapping, expansion tank, TPR discharge, drain pan) - the state code text was not readable on a reachable official host"
+  ]
+}

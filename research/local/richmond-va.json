@@ -1,0 +1,75 @@
+{
+  "citySlug": "richmond-va",
+  "cityName": "Richmond",
+  "stateAbbr": "VA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Richmond Department of Planning & Development Review, Bureau of Permits and Inspections",
+    "url": "https://rva.gov/planning-development-review/permits-and-inspections"
+  },
+  "codeEdition": {
+    "text": "Richmond enforces the Virginia Uniform Statewide Building Code, and its own homeowner guide works from the 2021 Virginia Residential Code. Virginia adopted the 2021 I-codes and the 2020 National Electrical Code effective January 18, 2024.",
+    "sourceUrl": "https://dhcd.virginia.gov/codes"
+  },
+  "permitPolicy": {
+    "text": "A Richmond permit application may be made by the owner or lessee of the property, by an agent of either, by the registered design professional, or by the contractor doing the work or any of their agents, and the full name and address of owner, lessee and applicant all have to be on the application. Residential plans do not have to be drawn by a registered design professional — the applicant, owner or contractor may prepare them — but structural elements that do not conform to the 2021 Virginia Residential Code must be engineered.",
+    "sourceUrl": "https://rva.gov/sites/default/files/2025-05/Homeowner%27s%20Permit%20Process%20Guide_2021%20VRC.pdf"
+  },
+  "registration": {
+    "text": "Richmond checks the state credential rather than issuing its own. The city's trade permit applications ask for the license type, the class (A, B or C) and the state license number, and the city's homeowner guide tells residents to hire only contractors licensed with the Virginia Department of Professional and Occupational Regulation and to verify them with DPOR.",
+    "sourceUrl": "https://rva.gov/sites/default/files/2024-05/Plumbing-PermitApplication_0.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Trade work cannot ride along on a Richmond residential building permit. Mechanical, electrical, plumbing and gas piping each need their own separate application, and residential trade permit applications do not require construction documents.",
+      "sourceUrl": "https://rva.gov/sites/default/files/2025-05/Homeowner%27s%20Permit%20Process%20Guide_2021%20VRC.pdf"
+    },
+    {
+      "text": "For any Richmond inspection involving exposed, energized electrical parts — including any inspection of service equipment after the utility connection is made — the installing electrician or a qualified representative has to be on site to de-energize, open and close the equipment for the inspector.",
+      "sourceUrl": "https://rva.gov/planning-development-review/permits-and-inspections"
+    },
+    {
+      "text": "Richmond no longer performs the shower liner test inspection. The installer does the installation and test, and the contractor or owner must hand the completed shower liner test certification to the building inspector at the final building inspection.",
+      "sourceUrl": "https://rva.gov/planning-development-review/permits-and-inspections"
+    },
+    {
+      "text": "Richmond does not take your word for the job value: the value of work used to calculate the permit fee is the higher of the contractor's estimate or the RS Means price, and a 2.0% state surcharge is added to the final calculated fee on every permit.",
+      "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf"
+    },
+    {
+      "text": "Starting work without a Richmond permit is priced in the fee schedule: investigation of a \"Stop Work\" order costs $400.00 per permit, and a residential re-inspection or a failure to appear for an inspection costs $32.00.",
+      "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf"
+    },
+    {
+      "text": "A Richmond permit is valid 180 days from issuance, and each building inspection on the property extends it another 180 days from the date of that last inspection.",
+      "sourceUrl": "https://rva.gov/sites/default/files/2025-05/Homeowner%27s%20Permit%20Process%20Guide_2021%20VRC.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A water heater swap in Richmond goes on its own plumbing permit — it cannot be added to a building permit — and if the heater is gas the gas piping takes a separate gas-piping permit; the fee is set by the value of the work, with a flat minimum for small jobs, and a 2% state surcharge on top.",
+      "fee": "Residential 1 & 2 family: $63.00 for value of work $0–$2,000; over $2,000, $63.00 plus $6.07 per thousand or fraction thereof; a 2.0% state surcharge is added to the final calculated fee",
+      "feeAsOf": "Effective 07/01/2024 (Revision 07-01-2024)",
+      "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Richmond uses one valuation-based fee table for building, mechanical, electrical, plumbing and gas-piping permits alike, so a plumbing permit for a small residential repair lands on the minimum fee; a residential re-inspection, or not being there when the inspector arrives, costs extra.",
+      "fee": "Residential 1 & 2 family: $63.00 for value of work $0–$2,000; over $2,000, $63.00 plus $6.07 per thousand or fraction thereof; residential re-inspection or failure to appear $32.00; after-hours inspection $110.00 per hour; 2.0% state surcharge added to the final calculated fee",
+      "feeAsOf": "Effective 07/01/2024 (Revision 07-01-2024)",
+      "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Richmond needs its own electrical permit, priced from the value of the work on the same residential table as the other trades; expect the electrician to have to be on site for any inspection where energized parts must be opened up.",
+      "fee": "Residential 1 & 2 family: $63.00 for value of work $0–$2,000; over $2,000, $63.00 plus $6.07 per thousand or fraction thereof; residential re-inspection or failure to appear $32.00; 2.0% state surcharge added to the final calculated fee",
+      "feeAsOf": "Effective 07/01/2024 (Revision 07-01-2024)",
+      "sourceUrl": "https://www.rva.gov/sites/default/files/2024-08/PermitsFeeSchedule.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee for Richmond — the fee schedule covers plumbing permits generally but no official source says whether a disposal swap is an ordinary repair exempt under Section 108 of the 2021 Virginia Residential Code",
+    "smoke-detector-replacement requirement and fee for Richmond — no city page or state code section was verified for a one-for-one alarm replacement",
+    "Whether a homeowner may personally perform plumbing or electrical work in Richmond without a DPOR-licensed contractor; the city states who may apply for a permit but not who may do the work",
+    "Richmond's own amendments to the 2021 Virginia codes; the city publishes a citywide code modification document on insulation but it is a scanned image with no extractable text",
+    "Any Richmond-specific water-heater installation requirement such as an expansion tank, drain pan or TPR discharge termination beyond what the 2021 Virginia codes already require"
+  ]
+}

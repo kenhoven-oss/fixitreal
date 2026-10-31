@@ -1,0 +1,74 @@
+{
+  "citySlug": "stockton-ca",
+  "cityName": "Stockton",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Stockton Community Development Department, Building & Life Safety Division",
+    "url": "https://www.stocktonca.gov/business/building___life_safety/index.php"
+  },
+  "codeEdition": {
+    "text": "Stockton enforces the 2025 editions of the California Building, Residential, Electrical, Mechanical, Plumbing, Energy, Historical Building, Fire, Existing Building and Green Building Standards Codes as adopted by the state with local amendments, plus the Stockton Municipal Code. The city's design-criteria sheet also fixes the local values an inspector works from: energy climate zone 12, residential seismic design category D1 or D2, 95 mph wind speed, very heavy termite exposure, and a city roof-drainage design rainfall of 2 inches per hour under Stockton Municipal Code 15.16.020D. Allowable soil bearing without a soils report is split at Interstate 5, 1,500 psf to the east and 1,000 psf to the west.",
+    "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Forms/BLDG-0060_MINIMUM%20BUILDING%20DESIGN%20CRITERIA.pdf"
+  },
+  "permitPolicy": {
+    "text": "Stockton issues a water heater permit either to the property owner who completes the city's Owner/Builder form or to a California licensed C-4 or C-36 contractor who also holds a current City of Stockton business license, and whoever picks up a contractor's permit needs an authorization letter from that contractor. A homeowner going the owner-builder route must read, initial every provision of, sign and return the city's Owner-Builder Acknowledgment and Information Verification form before any permit is issued, and an agent cannot sign it for the owner without the city's prior approval. Residential water heater permits can be applied for, paid and received entirely online through the city's Accela portal. Where an emergency replacement or repair had to be done first, the permit application is due the next working business day.",
+    "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+  },
+  "registration": {
+    "text": "On top of the state contractor licence, Stockton requires a city business licence: the city's own water heater handout conditions issuing a permit to a C-4 or C-36 contractor on that contractor holding a current City of Stockton business license. The city treats self-employed people and independent contractors as owing the business tax, and lists General Contractors and Developers and Specialty Contractors as separate licence categories, each carrying an annual registration tax plus a mill tax, a flat rate, or both. Penalties run 15 percent of the tax due per month to a maximum of 60 percent, with a further 25 percent for operating unlicensed. The city publishes no dollar figure for the contractor categories on its business licence pages.",
+    "sourceUrl": "https://www.stocktonca.gov/business/business_licenses/business_license_categories.php"
+  },
+  "codeItems": [
+    {
+      "text": "Stockton specifies the water heater anchorage rather than leaving it to the installer: two seismic straps are required, one within the top third of the tank and one within the bottom third, and the bottom strap must sit at least 4 inches above the water heater controls. A heater supported on the ground has to rest on level concrete or another approved base standing at least 3 inches above the adjoining ground, and a heater in a garage needs its ignition source or pilot light at least 18 inches above the garage floor, with barriers or bollards added where the unit could be hit.",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+    },
+    {
+      "text": "A sediment trap is a Stockton inspection item on a gas water heater. The city requires it downstream of the shutoff valve and ahead of the flexible connector, built as a tee fitting with a capped leg at least 3 inches long. Gas appliance connectors cannot be reused, must be attached to a hand shutoff type gas valve, and must be sized to the heater's BTU input rating. A replacement that is not like-for-like may need new gas piping run back to the meter, or pipe sizing calculations showing the existing piping is big enough.",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+    },
+    {
+      "text": "Stockton is specific about where the temperature and pressure relief discharge ends. The city requires the TPR valve drained to the exterior, terminating toward the ground pointing downward with between 6 and 24 inches of clearance from the ground, and the full valve opening diameter, generally three quarters of an inch, carried through to the end of the drain. Terminating instead at a laundry sink, floor sink or floor drain is allowed only when the Building Department approves it.",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+    },
+    {
+      "text": "Where a leak could do damage, in an attic or above a raised wood floor, Stockton requires a watertight corrosion-resistant pan under the heater with a drain of at least three quarters of an inch diameter, and the drain has to end somewhere readily visible so a leak gets noticed. An attic installation carries its own list: an access opening and passageway at least as large as the biggest part of the appliance and never smaller than 22 by 30 inches, a solid unobstructed floor at least 24 inches wide with the run from the opening to the appliance capped at 20 feet where headroom is under 6 feet, a level working platform at least 30 by 30 inches on the service side, and a permanent 120 volt receptacle and light fixture near the appliance with the light switch at the entrance to the passageway.",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+    },
+    {
+      "text": "Swapping fuel types is restricted in Stockton. The city's handout states a gas water heater generally cannot be replaced with an electric one unless the house has a photovoltaic system or the new unit is a single heat pump water heater meeting Northwest Energy Efficiency Alliance Tier 3 or higher, with manufacturer documentation of that rating supplied. Accessible existing piping also has to be insulated, specifically the first 5 feet of cold water pipe from the storage tank, and all hot water piping under three quarters of an inch tied to a recirculation system, running from the heat source to the kitchen, or running from the heat source to the storage tank.",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0036_RESIDENTIAL%20WATER%20HEATER%20REQUIREMENTS.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Stockton requires a permit to replace an existing water heater or install a new one, and charges a flat non-valuation fee for it rather than pricing it off job value; the permit can be applied for, paid and issued online, and a like-for-like swap does not need manufacturer specifications submitted.",
+      "fee": "$78.50 Water Heater permit (non-valuation based fee), plus the city's add-ons of a Technology Fee at 0.075 of the permit fee, a Community Rating System admin fee at 0.06 of the permit fee, a Capital Preservation Fee at .001 of valuation, General Plan Maintenance at .0015 of valuation and a $1.00 Green Building Standards pass-through for valuation between $1 and $25,000",
+      "feeAsOf": "Effective 7/1/2026 (FY 2026-27 Adopted Fee Schedule)",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Government/Budget%20And%20Financial%20Reports/Fee%20Schedule/2026-27/FY2627_CDD_Fees.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Stockton requires a permit for most plumbing work and prices residential permits off the job valuation from a fixed table, so a small service job lands at the bottom bracket; clearing a stoppage, repairing a leak in a pipe, valve or fixture, and removing and reinstalling a toilet are exempt, but once a concealed trap, drain, water, soil, waste or vent pipe has to come out and be replaced with new material the city treats it as new work needing a permit and an inspection.",
+      "fee": "$75.00 residential building permit at the lowest valuation bracket (job value up to $999), plus $32.00 plan check in the same bracket; above $99,999 the permit is $.006787 for each dollar over $100,000 plus $1,078",
+      "feeAsOf": "Effective 7/1/2026 (FY 2026-27 Adopted Fee Schedule)",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Government/Budget%20And%20Financial%20Reports/Fee%20Schedule/2026-27/FY2627_CDD_Fees.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Stockton needs a permit priced from the same residential valuation table, with only narrow exemptions such as reinstalling a receptacle plug, replacing a branch circuit overcurrent device of the same capacity in the same location, and minor repairs like changing lamps; an electrical-only permit for a temporary service or for any residential or commercial service over 200 amps will not be issued until the city's Electrical Service Questionnaire is filled in, which asks the existing and proposed service size, whether there are active code enforcement citations on the property, and what the service will feed.",
+      "fee": "$75.00 residential building permit at the lowest valuation bracket (job value up to $999), plus $32.00 plan check in the same bracket; Residential Minor Remodel is a flat $314.00",
+      "feeAsOf": "Effective 7/1/2026 (FY 2026-27 Adopted Fee Schedule)",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Government/Budget%20And%20Financial%20Reports/Fee%20Schedule/2026-27/FY2627_CDD_Fees.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Stockton publishes no permit or fee for replacing a smoke alarm on its own, but it makes applicants sign a Smoke and Carbon Monoxide Alarm Declaration on residential new construction, alterations, repairs and additions, and the declaration sets out where the alarms go, including at least 3 feet horizontally from the door of a bathroom with a tub or shower and in both the hallway and the room open to it where that room's ceiling is 24 inches or more higher than the hallway; interconnection and hard wiring are waived where the work does not strip interior wall or ceiling finishes and there is no attic, crawl space or basement to run wiring through, and for exterior-only work such as re-roofing, siding, windows, doors or a new porch or deck.",
+      "sourceUrl": "https://www.stocktonca.gov/Documents/Business/Building%20&%20Life%20Safety/Building%20Permits%20&%20Inspections/BLDG-0035_SMOKE%20&%20CARBON%20MONOXIDE%20ALARM%20DECLARATION.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (Stockton's Work Exempt From Permit handout does not list a food waste disposer either way, and the adopted fee schedule has no line for one; the only flat plumbing-type fee published is for a water heater)",
+    "The dollar amount of Stockton's business licence tax for General Contractors or Specialty Contractors (the city describes an annual registration tax plus a mill tax or flat rate but publishes no figures, and the Stockton Municipal Code is hosted on library.qcode.us, which returned 403 to automated requests)",
+    "Stockton's own local amendments to the 2025 California codes (the design-criteria sheet says the state codes are adopted with local amendments and cites Stockton Municipal Code 15.16.020D, but the code text itself could not be reached)",
+    "Whether a plumbing or electrical service call is charged as a flat non-valuation permit rather than off the valuation table (the fee schedule lists flat fees only for HVAC, re-roof, water heater, solar and a residential minor remodel, so the valuation table figures above are the published fallback for other trade work)"
+  ]
+}

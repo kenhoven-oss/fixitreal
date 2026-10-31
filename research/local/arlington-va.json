@@ -1,0 +1,80 @@
+{
+  "citySlug": "arlington-va",
+  "cityName": "Arlington",
+  "stateAbbr": "VA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Arlington County Department of Community Planning, Housing and Development, Inspection Services Division",
+    "url": "https://www.arlingtonva.us/Government/Programs/Building/Permits"
+  },
+  "codeEdition": {
+    "text": "Arlington County enforces the Virginia Uniform Statewide Building Code, which the state Board of Housing and Community Development writes and amends; localities enforce it rather than writing their own technical amendments. The 2021 Virginia codes took effect January 18, 2024, adopting the 2021 I-codes referenced through the Virginia Construction Code and the 2020 National Electrical Code.",
+    "sourceUrl": "https://www.dhcd.virginia.gov/codes"
+  },
+  "permitPolicy": {
+    "text": "Arlington's electrical ordinance lets a homeowner pull their own permit: a permit may be issued to a person whether registered or not for work in a single-family dwelling or townhouse used only as a residence, provided that person is the bona fide owner or the owner's agent. Otherwise the work has to be permitted by a registered electrical contractor or master electrician, and depending on who holds the permit the county may require a Permit Authorization Affidavit. All permits are applied for online through Permit Arlington, and half the total permit fee is due as a non-refundable filing fee at application.",
+    "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf"
+  },
+  "registration": {
+    "text": "Arlington publishes no county trade registration fee or bond for plumbers and electricians; its electrical ordinance refers to a registered electrical contractor or master electrician, and the Trade Name Registration link on the county's permit pages goes to the Virginia State Corporation Commission's business entity filings rather than to a county trade licence.",
+    "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Replacing a gas water heater or any other fuel-burning appliance in an existing Arlington home triggers a vent and chimney check under Virginia Construction Code M1801.1.1 and G2425.1.1: the vent or chimney has to be correctly sized and clean, free of obstruction, defects and deterioration. Where the county does not inspect it, the installer has to sign Arlington's Vent/Chimney Certification, giving their DPOR licence number, and hand it to the inspector.",
+      "sourceUrl": "https://www.arlingtonva.us/wp-content/uploads/sites/38/2016/09/Vent_Chimney_Certification.pdf"
+    },
+    {
+      "text": "Arlington splits plumbing replacements by fuel. Replacing fixtures or other elements on gas-fuelled equipment needs a permit and inspections, while on equipment that is not gas-fuelled a replacement of the same type, size and location needs no permit at all.",
+      "sourceUrl": "https://www.arlingtonva.us/Government/Programs/Building/Permits/Plumbing-Gas"
+    },
+    {
+      "text": "On the electrical side, replacing a fixture, appliance or wiring of the same type, size and location needs no Arlington permit, unless the item sits in a plenum or penetrates fire-rated or smoke-protected construction, in which case a building permit is required.",
+      "sourceUrl": "https://www.arlingtonva.us/Government/Programs/Building/Permits/Electrical"
+    },
+    {
+      "text": "Any Arlington plumbing permit that includes a backflow device cannot be finaled until a cross connection inspection is done, and that inspection has to be requested through a separate cross connection application. The county charges a cross connection inspection fee of $103.",
+      "sourceUrl": "https://www.arlingtonva.us/Government/Programs/Building/Permits/Plumbing-Gas"
+    },
+    {
+      "text": "Plumbing permits involving fixtures often get a second review by the county's Department of Environmental Services to validate drainage fixture units, and a fixture count may be required with the application. A new or relocated water heater in a building the code treats as commercial needs an approved building permit before the plumbing/gas permit can be applied for.",
+      "sourceUrl": "https://www.arlingtonva.us/Government/Programs/Building/Permits/Plumbing-Gas"
+    },
+    {
+      "text": "Virginia deletes NEC Section 210.8(F) in its entirety from the NFPA 70 it enforces, so the national rule extending GFCI protection to outdoor outlets serving equipment such as air conditioners does not apply in Arlington.",
+      "sourceUrl": "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section300/"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a gas water heater in Arlington needs a plumbing/gas permit and inspections, including a vent and chimney check; swapping an electric water heater for the same type, size and location in the same place does not need a permit.",
+      "fee": "Plumbing: base permit fee $139 per address per permit for replacing or setting fixtures and appliances, plus $60 each for all other plumbing fixtures, drains and appliances; minimum fee $149 for one- and two-family detached dwellings and townhouses not more than 3 stories; plus a 2% USBC Code Academy levy and a 10% automation enhancement surcharge",
+      "feeAsOf": "July 1, 2026",
+      "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Adding, removing or relocating a plumbing fixture, appliance or pipe in Arlington needs a plumbing/gas permit, charged as a base fee per permit plus a charge per fixture, with a minimum fee for houses and townhouses.",
+      "fee": "Base permit fee $139 per address, per permit; all other plumbing fixtures, drains and appliances $60 each plus the base fee; water services, new, replace or repair $174 each; building sewer repair, relocate or lower $174 each; minimum fee $149 for one- and two-family detached dwellings and townhouses not more than 3 stories; plus a 2% USBC Code Academy levy and a 10% automation enhancement surcharge",
+      "feeAsOf": "July 1, 2026",
+      "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Adding, removing or relocating wiring, fixtures or appliances in Arlington needs an electrical permit, priced by circuit, by group of devices and by service size, with a minimum fee for a house or townhouse.",
+      "fee": "Minimum permit fee $186 for one- and two-family detached dwellings and townhouses not more than 3 stories; each circuit $22.56 plus the $175 base fee; each 4 devices, receptacles or switch outlets $28.99 plus the $175 base fee; receptacle outlets greater than 20 amperes $75 per outlet; service equipment, first 500 amperes, original installation or replacement $272; sub-panels $72 each; disconnects $75 each; plus a 2% USBC Code Academy levy and a 10% automation enhancement surcharge",
+      "feeAsOf": "July 1, 2026",
+      "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Arlington counts a disposal as a fixed appliance, so swapping one for the same type, size and location needs no permit, while installing or relocating one needs a permit and is charged as a fixed appliance.",
+      "fee": "Fixed appliances (disposals are named in the list): first appliance $75; each additional, not including circuits, $42; plus a 2% USBC Code Academy levy and a 10% automation enhancement surcharge",
+      "feeAsOf": "July 1, 2026",
+      "sourceUrl": "https://www.arlingtonva.us/files/sharedassets/public/v/1/building/documents/fee-schedules/fy27-isd-fee-schedule.pdf"
+    }
+  },
+  "notVerified": [
+    "smoke-detector-replacement permit requirement and fee — Arlington's ISD fee schedule has no dwelling smoke alarm line, and the county's permit pages do not say how a one-for-one alarm swap is treated",
+    "Whether Arlington lets a homeowner pull their own plumbing/gas permit — the published owner provision sits in the electrical ordinance only",
+    "Any county registration fee or bond for a registered electrical contractor in Arlington",
+    "Virginia's IRC amendments specific to water heater pans, thermal expansion control or strapping — the state publishes its amendments by IBC chapter and no IRC amendment list was reachable from an official host in this run"
+  ]
+}

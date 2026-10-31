@@ -1,0 +1,70 @@
+{
+  "citySlug": "reno-nv",
+  "cityName": "Reno",
+  "stateAbbr": "NV",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Reno Development Services Department, Permit Services",
+    "url": "https://reno.gov/business-development/development-services/building-permits.php"
+  },
+  "codeEdition": {
+    "text": "Reno adopted the 2024 building codes and the 2023 National Electrical Code on July 1, 2025, together with the 2024 Northern Nevada Amendments. Applications accepted before January 1, 2026 could still use the 2018 editions if every code matched; from January 1, 2026 the city accepts plans only under the 2024 editions. The set in force is the 2024 IBC, IRC, IEBC, IECC, IFGC and IMC, the 2024 Uniform Plumbing and Uniform Mechanical Codes, and the 2023 NEC.",
+    "sourceUrl": "https://reno.gov/business-development/development-services/building-permits.php"
+  },
+  "permitPolicy": {
+    "text": "A homeowner can pull their own permit in Reno by filing the Nevada State Contractors Board Owner Builder Affidavit of Exemption with the permit application. Signing it commits the owner to supervising the work personally, to not hiring an unlicensed person as contractor or construction manager, to using only state-licensed subcontractors, and to not selling or leasing the home for a year after completion. Reno also issues EZ Permits, including the water heater permit, with no plans required.",
+    "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Building%20Permit%20Applications/Owner%20Builder%20Affidavit.pdf"
+  },
+  "registration": {
+    "text": "Reno publishes no separate city trade registration for plumbers or electricians, but gas water heater and furnace change-outs carry a local credential requirement: the manometer test has to be done by someone holding a valid Washoe County manometer tester card, and the card number must be given when the inspection is requested.",
+    "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Reno requires a manometer test on every gas water heater and furnace change-out, and the test has to be performed by a person holding a valid Washoe County manometer tester card whose number is supplied when the inspection is scheduled. The requirement comes from the 2024 Northern Nevada Amendments, section G2417.6.2.",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+    },
+    {
+      "text": "Reno inspectors check earthquake strapping on water heaters: the tank must be anchored or strapped against seismic movement, with straps in the upper third and the lower third of the tank and the lower strap at least 4 inches above the controls (2024 IRC R301.2.2.10 and P2801.7).",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+    },
+    {
+      "text": "Where a leak from a storage-type water heater would cause damage, Reno requires the tank to sit in a pan at least 1-1/2 inches deep sized to catch drips and condensate (2024 IRC P2801.5). The temperature and pressure relief valve may discharge to the floor, into that pan, to a waste receptor or outdoors (2024 IRC P2804).",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+    },
+    {
+      "text": "On a gas appliance change-out Reno checks for a sediment trap installed downstream of the appliance shutoff valve and as close to the appliance inlet as possible where the appliance does not already include one (2024 IRC G2419.4), for combustion air to every gas-fired appliance (G2407), and for ignition sources raised at least 18 inches above a garage floor (M1307.3, P2801.6). An electric water heater needs a disconnect within sight or a lockable one (E4101).",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+    },
+    {
+      "text": "On an electrical service change, Reno requires a surge protective device on every service supplying a one- or two-family dwelling (2024 IRC E3606.5.1 through E3606.5.3), grounding through a concrete-encased electrode, two ground rods or another means approved under 2023 NEC 250.52, 30 inches of working width and 36 inches of working depth at the new equipment (NEC 110.26), and durable circuit marking on the overcurrent devices (NEC 408.4).",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Resources%20to%20Assist%20with%20The%20Application%20Process%20and%20Plan%20Submission/EZ%20Permits%20General%20Requirements%2007012025.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a residential water heater in Reno takes a permit, but it is an EZ Permit issued without plans at a flat price, and the change-out is inspected.",
+      "fee": "Residential EZ Permits — Water Heater $45.00 (Commercial EZ Permits — Water Heater $133.00)",
+      "feeAsOf": "July 1, 2026",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Fees/FY27%20Permit%20Fees.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Adding or replacing receptacles, switches, outlets or fixtures in Reno takes a flat-rate electrical permit covering up to 20 devices, and a meter or service change is a separate EZ Permit.",
+      "fee": "Residential Flat Rate — Receptacles/Switch/Outlet/Fixtures, first 20: $135.00 (includes the $45.00 application fee and the $45.00 permit issuance fee); over 20: $156.00. Residential EZ Permit — Service Change $88.00",
+      "feeAsOf": "July 1, 2026",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Fees/FY27%20Permit%20Fees.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Common household plumbing repairs in Reno are priced as flat EZ Permits rather than per fixture, and a whole-house repipe is a flat-rate permit.",
+      "fee": "Residential EZ Permits — Water Line Replacement $90.00, Sewer Line Replacement $90.00, Gas Line $90.00. Residential Flat Rate — Whole House Repipe $360.00, Gas Piping/System Residential $200.00",
+      "feeAsOf": "July 1, 2026",
+      "sourceUrl": "https://reno.gov/Documents/Business%20and%20Development/Development%20Services/Building%20Permits/Fees/FY27%20Permit%20Fees.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (no disposer line in Reno's EZ, flat-rate or valuation-based fee tables)",
+    "smoke-detector-replacement permit requirement and fee (no smoke alarm line in Reno's fee tables)",
+    "Whether Reno requires a city business license or registration for plumbing and electrical contractors, and any fee or bond amount (the business licensing pages load their content dynamically and could not be read)",
+    "The text of the 2024 Northern Nevada Amendments itself — the city links the amendment document to a non-governmental host, so only the amendment items quoted in Reno's own EZ Permit requirements handout are reported here"
+  ]
+}

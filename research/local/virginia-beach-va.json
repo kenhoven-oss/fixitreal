@@ -1,0 +1,72 @@
+{
+  "citySlug": "virginia-beach-va",
+  "cityName": "Virginia Beach",
+  "stateAbbr": "VA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Virginia Beach Department of Planning & Community Development, Permits & Inspections Division",
+    "url": "https://planning.virginiabeach.gov/divisions-offices/permits-inspections"
+  },
+  "codeEdition": {
+    "text": "Virginia Beach's Permits & Inspections Division administers the Virginia Uniform Statewide Building Code, and the city's trade permit pages work from the 2021 Virginia codes, including the 2021 Virginia Plumbing Code. Virginia adopted the 2021 I-codes and the 2020 National Electrical Code effective January 18, 2024.",
+    "sourceUrl": "https://dhcd.virginia.gov/codes"
+  },
+  "permitPolicy": {
+    "text": "Virginia Beach lets a property owner pull their own trade permits. A contractor's application must carry the company name, the Class A, B or C state contractor registration number and a registered master tradesman's signature; an owner applying instead supplies name, address, the approximate cost of materials as the contract value, and a signature. Either way only one address goes on an application, and an incomplete application is not processed.",
+    "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+  },
+  "registration": {
+    "text": "The city checks the state credential rather than issuing a local trade license: a trade contractor must give its Class A, B or C Virginia contractor registration number and have the registered master tradesman sign the application, and an application missing that number or signature will not be processed.",
+    "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+  },
+  "codeItems": [
+    {
+      "text": "Virginia Beach exempts residential \"like for like\" mechanical replacements, along with ranges, ovens, grills and dryers, from needing a mechanical permit — but a like-for-like swap does not include equipment with a different refrigerant type or fuel-fired equipment, and those still need the permit and a rough-in inspection.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    {
+      "text": "Gas piping is its own permit in Virginia Beach. Installing or replacing any gas line requires a gas permit, and the city's list of triggers names water heaters, boilers, furnaces, gas packs, generators, gas logs, meter relocations and propane-to-natural-gas conversions. Gas work is inspected twice, a pressure test and a final, done alongside the plumbing rough-in and final on new residential work.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    {
+      "text": "A new, replacement or removed testable backflow preventer needs a plumbing permit in Virginia Beach, and the test report has to be uploaded to the permit before the final inspection can be approved.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    {
+      "text": "A Virginia Beach plumbing permit is not issued until all Public Utilities fees are paid and the receipt is given to permitting staff, and grease traps and on-site water or sewer lines must be reviewed by a plumbing inspector before issuance.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    {
+      "text": "Which plumbing inspections you get in Virginia Beach depends on the foundation: a house on crawlspace gets rough-in, shower pan, water, sewer and final, while a house on slab adds a slab and a top-out inspection.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    {
+      "text": "Electrical applications for services over 800 amps need an electrical inspector's approval in Virginia Beach, and the meter release to Dominion Energy is generated only once every final inspection and any outside approvals are in.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A new residential water heater installation in Virginia Beach is mechanical permit work, though the city exempts a straight \"like for like\" residential replacement from the mechanical permit; installing or replacing gas piping for a gas heater is a separate gas permit, and both carry a 2% state levy and a technology fee.",
+      "fee": "Mechanical permit: $50 plus $5 per $1,000 of construction value (up to $1,000 = $55; up to $5,000 = $75; up to $10,000 = $100). Gas permit: $50 plus $4 per outlet/shutoff. A 2% state levy is assessed on these fees and a $10 technology fee is also required.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    "plumber-service-call": {
+      "requirement": "Virginia Beach requires a plumbing permit for new plumbing fixtures or drains, replacing a water or sewer line, connecting or converting to City water or sewer, and new or replacement testable backflow preventers, and it prices the permit as a flat base plus an amount for each fixture or drain.",
+      "fee": "Plumbing permit: $50 plus $6 per fixture/drain; water line or sewer line conversion/replacement $50 each; plan review $50; re-inspection $75; administrative fee for beginning work without a permit $250. A 2% state levy is assessed on these fees and a $10 technology fee is also required.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    },
+    "electrician-service-call": {
+      "requirement": "Virginia Beach requires an electrical permit to add circuits, change or upgrade the service, install or relocate wiring, or move or replace a meter base or panel, and it charges by what you are installing: service work is priced by amperage, while added or repaired circuits are a flat base plus a per-circuit amount.",
+      "fee": "New single-phase service: $50.00 plus $20.00 per 50 amps (100 amps = $90.00; 150 amps = $110.00; 200 amps = $130.00); a change of service is half the new-service fee (up to 200 amps = $65.00). Additions or repairs: $50.00 plus $5.00 per circuit for each piece of equipment connected and each circuit or feeder installed, extended, relocated or repaired. Panel replacement or relocation, meter/meterbase replacement or relocation, subfed panel, generator circuit or temporary service pole: $50.00 each. Re-inspection $75; administrative fee for beginning work without a permit $250. A 2% state levy is assessed on these fees and a $10 technology fee is also required.",
+      "sourceUrl": "https://planning.virginiabeach.gov/permits/trade"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee — Virginia Beach's residential plumbing permit list covers new fixtures or drains, but no official page says whether replacing an existing disposal counts",
+    "smoke-detector-replacement requirement and fee for Virginia Beach — no city page was found addressing a one-for-one alarm replacement",
+    "Any printed effective or revision date for the trade permit fees, so no feeAsOf is given; the city's trade permits page shows no date",
+    "Residential building permit fee amounts, roofing and siding fees, and asbestos permit fees — Virginia Beach publishes these only as PDFs on a third-party storage host rather than stating the figures on a city page, so they are treated as unpublished",
+    "Virginia Beach's own amendments, if any, to the 2021 Virginia codes"
+  ]
+}

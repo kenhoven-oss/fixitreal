@@ -1,0 +1,82 @@
+{
+  "citySlug": "boise-id",
+  "cityName": "Boise",
+  "stateAbbr": "ID",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Boise Planning and Development Services, Building Division",
+    "url": "https://www.cityofboise.org/departments/planning-and-development-services/building/"
+  },
+  "codeEdition": {
+    "text": "Boise's currently adopted codes apply to projects submitted on or after January 1, 2021, with later updates for mass timber (1/1/22), the green construction code (3/7/23) and the electrical code (4/26/24). The set is the 2018 IBC, 2018 IEBC, 2018 IRC parts I-IV and IX, 2018 IECC, 2018 IFC and the voluntary 2018 IgCC, plus the 2017 Idaho State Plumbing Code (based on the 2015 Uniform Plumbing Code) and the 2023 National Electrical Code. One- and two-family mechanical work falls under 2018 IRC parts V and VI; larger residential and commercial work uses the 2018 IMC and 2018 IFGC. Boise publishes its own design criteria as local amendments, including a 24 inch minimum frost depth, Seismic Design Category C, a 20 psf ground snow load with a 25 psf minimum design roof snow load, and a 90 mph design wind speed.",
+    "sourceUrl": "https://www.cityofboise.org/departments/planning-and-development-services/building/building-permits/general-building-information-300/301-current-codes/"
+  },
+  "permitPolicy": {
+    "text": "A Boise homeowner may do work on their own primary residence without registering as a contractor with the State of Idaho, and may pull their own plumbing, electrical and mechanical permits through the city's online permitting system. The catch is that the homeowner has to physically perform the work themselves. If anyone else does the electrical, plumbing or mechanical work, that person must be a State of Idaho registered and licensed contractor in that trade. Once a permit is issued the city invites homeowners to request a free pre-work consultation with the plumbing or mechanical inspector.",
+    "sourceUrl": "https://www.cityofboise.org/departments/planning-and-development-services/building/homeowners-guide/"
+  },
+  "registration": {
+    "text": "Boise does not publish a separate city trade licence on top of the state credential: its own guidance is that anyone other than the homeowner doing electrical, plumbing or mechanical work must be a State of Idaho registered and licensed contractor in that trade. On the plumbing side that state credential is an active certificate of competency or registration from the Idaho Division of Occupational and Professional Licenses; working without one, employing someone without one, or advertising plumbing work without the certificate number in the advertisement are each grounds for discipline.",
+    "sourceUrl": "https://www.cityofboise.org/departments/planning-and-development-services/building/homeowners-guide/"
+  },
+  "codeItems": [
+    {
+      "text": "Boise splits water heater replacement between two different permits depending on fuel. Installing or replacing a GAS water heater is mechanical permit work, grouped with gas piping between the meter and the appliance. Installing or replacing an ELECTRIC water heater is plumbing permit work. A homeowner who assumes one plumbing permit covers a gas swap is applying for the wrong permit.",
+      "sourceUrl": "https://www.cityofboise.org/media/4932/residential-construction.pdf"
+    },
+    {
+      "text": "For electrical work Boise requires an electrical conference with the inspector BEFORE the work starts, not just an inspection afterwards. That is a step ahead of the usual pull-permit-then-call-for-inspection sequence, and the city also encourages homeowners to request a conference with the inspector before beginning any permitted work.",
+      "sourceUrl": "https://www.cityofboise.org/media/4932/residential-construction.pdf"
+    },
+    {
+      "text": "Boise enforces the Idaho State Plumbing Code, which deletes Uniform Plumbing Code Section 507.2, the seismic provisions for water heaters. So the seismic strapping that national water heater guides treat as standard is not a state code requirement in Idaho, even though Boise sits in Seismic Design Category C. Manufacturer instructions and any local amendment still govern.",
+      "sourceUrl": "https://adminrules.idaho.gov/rules/current/24/243920.pdf"
+    },
+    {
+      "text": "The Idaho State Plumbing Code that Boise enforces adds a vent test a national guide would not mention: a water heating appliance using Category 3 or Category 4 exhaust venting has to have the vent tested in its entirety with 5 pounds of air for 15 minutes, and plastic vents must be built to the manufacturer's instructions. That affects most modern high-efficiency condensing water heaters.",
+      "sourceUrl": "https://adminrules.idaho.gov/rules/current/24/243920.pdf"
+    },
+    {
+      "text": "For a water heater in a Boise garage, the Idaho amendment replacing UPC 507.13 requires burners, burner-ignition devices and other ignition sources to sit at least 18 inches above the floor, unless the appliance is listed as flammable vapor ignition resistant. The rule also reaches adjacent spaces that open to the garage and are not part of the dwelling's living space.",
+      "sourceUrl": "https://adminrules.idaho.gov/rules/current/24/243920.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater needs a permit in Boise, and which permit depends on the fuel: a gas unit is permitted as mechanical work, an electric unit as plumbing work. Either way the city charges one flat fee for a job limited to a single fixture or appliance, and a homeowner may pull it for their own house if they do the work themselves.",
+      "fee": "$57.00 for installation of a single fixture or appliance (plumbing Table B(3) covers hot water heaters; mechanical Table B(3) covers gas appliances and gas piping)",
+      "feeAsOf": "Oct. 2026 (FY27 schedules effective 10-1-26)",
+      "sourceUrl": "https://www.cityofboise.org/media/21654/fy27-plumbing-code-fee-schedule-10-1-26.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Boise needs a plumbing permit to repair, replace, relocate or add to the piping inside a house and to set new fixtures. A job limited to one fixture, appliance or line is a flat fee; a job touching several fixtures is a base fee plus a charge for each fixture. A whole-house re-pipe and a water or waste re-pipe each have their own flat rate.",
+      "fee": "$57.00 single fixture, appliance or line; $33.00 base permit fee plus $12.50 per fixture for multi-fixture work; $83.00 water or waste re-piping; $114.00 re-plumbing an entire house or unit",
+      "feeAsOf": "Oct. 2026 (FY27 schedule effective 10-1-26)",
+      "sourceUrl": "https://www.cityofboise.org/media/21654/fy27-plumbing-code-fee-schedule-10-1-26.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Boise prices residential electrical permits by how many branch circuits the job touches rather than by job value: one circuit is one flat fee, more than one circuit is a higher flat fee. Changing the service entrance, service conductors, main disconnect or a panel or sub-panel is its own flat fee set by amperage, with no base fee added.",
+      "fee": "$57.00 for installation or alteration of a single branch circuit; $114.00 where more than one branch circuit is installed or altered for an addition, alteration, repair or fixture replacement; service or panel change $57.00 up to 200 amp and $67.50 over 200 amp",
+      "feeAsOf": "Oct. 2026 (FY27 schedule effective 10-1-26)",
+      "sourceUrl": "https://www.cityofboise.org/media/21651/fy27-electrical-code-fee-schedule-10-1-26.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Boise's plumbing fee schedule carries its own line for garbage disposals, charged per unit on top of the residential plumbing base permit fee, so a disposal is permitted plumbing work in the city. Where the whole scope is a single fixture or appliance the city instead charges its flat single-fixture rate.",
+      "fee": "$12.50 each for garbage disposals, in addition to the $33.00 residential plumbing base permit fee, with no charge for the disposal where it is installed with other fixtures; the schedule's flat rate for a scope limited to one fixture or appliance is $57.00",
+      "feeAsOf": "Oct. 2026 (FY27 schedule effective 10-1-26)",
+      "sourceUrl": "https://www.cityofboise.org/media/21654/fy27-plumbing-code-fee-schedule-10-1-26.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Boise does not publish a permit for swapping out a smoke alarm on its own. The city's position is that an electrical permit is needed when electrical fixtures are added, and it gives the smoke alarms required alongside a building permit as its example, so the alarm work gets permitted as part of the larger job rather than by itself.",
+      "sourceUrl": "https://www.cityofboise.org/media/4932/residential-construction.pdf"
+    }
+  },
+  "notVerified": [
+    "Boise City Code Title 9 and the city's own written amendments to the building, plumbing, mechanical and electrical codes — the city hosts its code on citycode.cityofboise.org and codelibrary.amlegal.com, both of which returned a Cloudflare browser check to automated requests",
+    "Whether replacing a garbage disposal with no change to the piping needs a permit in Boise on its own — the fee schedule prices disposals but the city's permit-required list names fixtures such as toilets, sinks, showers, tubs and dishwashers without addressing a like-for-like disposal swap",
+    "Whether Boise requires a water heater drain pan or thermal expansion tank — neither the city's adopted-code page nor its residential construction guide states either requirement, and no city water heater handout was found",
+    "Any Boise-specific AFCI or GFCI amendment to the 2023 NEC it adopted on 4/26/24",
+    "Whether a Boise trade permit fee covers a set number of inspection visits (the schedules state inspection counts only for solar, elevators, radiant floor, pools and spas)",
+    "The dollar amount of Idaho state contractor registration, and whether Boise requires contractors to register with the city before pulling permits"
+  ]
+}

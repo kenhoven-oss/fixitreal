@@ -1,0 +1,88 @@
+{
+  "citySlug": "grand-rapids-mi",
+  "cityName": "Grand Rapids",
+  "stateAbbr": "MI",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Grand Rapids Development Center (Building Inspections Division)",
+    "url": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/permits/"
+  },
+  "codeEdition": {
+    "text": "Grand Rapids permits trade work under the Michigan state codes rather than a local building code: current Michigan adoptions are the 2021 Michigan Plumbing Code (2021 IPC), the 2023 Michigan Electrical Code (NFPA 70-2023), the 2021 Michigan Mechanical Code (2021 IMC) and the 2015 Michigan Residential Code (2015 IRC).",
+    "sourceUrl": "https://up.codes/codes/michigan"
+  },
+  "permitPolicy": {
+    "text": "A homeowner of a single-family home may apply for a plumbing, electrical or mechanical permit for their primary residence in person at the Development Center, signing a homeowner affidavit that they will do the work themselves. A property with two or more units must use a licensed contractor.",
+    "sourceUrl": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/permits/residential-building-permits/residential-plumbing-permit/"
+  },
+  "registration": {
+    "text": "A contractor holding a State of Michigan licence must also register that licence with the City of Grand Rapids before applying for permits; the city publishes no separate registration fee in its fee schedule. Contractors doing excavation or utility work must register separately with the Water Department.",
+    "sourceUrl": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/register-contractor"
+  },
+  "codeItems": [
+    {
+      "text": "Since 30 January 2025 city inspectors work under a No Live Work policy: electrical work must be de-energised for inspection, and contractors are asked to be on site with the inspector.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/grow-and-thrive/development-center/permits/residential-building-permits/residential-electrical-permit/"
+    },
+    {
+      "text": "The permit application itself warns that concealed work must be inspected before it is covered, so a water heater's gas or water piping cannot be closed in ahead of the inspection.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/iyhdobct/plumbing-permit-application.pdf"
+    },
+    {
+      "text": "Grand Rapids itemises its plumbing permit: a backflow preventer, a backwater valve and gas piping (charged per opening) are separate line items on top of the fixture, so a gas water heater swap that adds piping or a backflow device costs more than the water heater line alone.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+    },
+    {
+      "text": "A residential water heater replacement appears on both the plumbing schedule and the mechanical schedule at $21.00, so gas-fired work can draw a mechanical permit alongside the plumbing permit.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+    },
+    {
+      "text": "New, repaired or replaced water service and sanitary sewer work is not handled on the ordinary plumbing permit: the application routes it to the Water System desk at the Development Center.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/iyhdobct/plumbing-permit-application.pdf"
+    },
+    {
+      "text": "Rental inspections are run against the Grand Rapids Property Maintenance Code, which the city describes as the 2021 International Property Maintenance Code plus local amendments, with smoke detectors kept in City Code Chapter 169 (Home Safety).",
+      "sourceUrl": "https://www.grandrapidsmi.gov/departments/code-compliance/rental-properties/rental-certification-program/"
+    },
+    {
+      "text": "Starting work before the permit is issued carries a published administrative fee of $173.00, and only one inspection is included in the permit - each further inspection is $42.00.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A plumbing permit is required to replace a water heater in Grand Rapids: you pay a non-refundable application fee that includes one inspection, plus a per-item charge for the water heater itself.",
+      "fee": "$52.00 application fee (includes 1 inspection) + $21.00 water heater",
+      "feeAsOf": "effective July 1, 2026",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is a listed item on the Grand Rapids plumbing permit schedule, so the job takes a plumbing permit: the application fee plus the disposal line item.",
+      "fee": "$52.00 application fee (includes 1 inspection) + $5.00 garbage disposal",
+      "feeAsOf": "effective July 1, 2026",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Grand Rapids is permitted by the item: a non-refundable application fee covering one inspection, plus a small charge for each fixture such as a sink, toilet or bath/shower, with re-inspections billed separately.",
+      "fee": "$52.00 application fee (includes 1 inspection); $5.00 per fixture (lavatory, kitchen sink, bath tub-shower, water closet); $42.00 each additional inspection",
+      "feeAsOf": "effective July 1, 2026",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work takes a city electrical permit, priced as an application fee that includes one inspection plus per-item charges - a branch circuit, a service up to 200 amps or a fixed appliance each have their own line.",
+      "fee": "$52.00 application fee (includes 1 inspection); $10.00 general branch circuit; $17.00 service up to 200 amp; $10.00 electric water heater; $42.00 each additional inspection",
+      "feeAsOf": "effective July 1, 2026",
+      "sourceUrl": "https://www.grandrapidsmi.gov/media/4lzl0erl/planning-design-and-development-fee-schedule-fy2027.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Grand Rapids enforces smoke detectors through City Code Chapter 169 (Home Safety) and its Property Maintenance Code - the 2021 IPMC with local amendments - and checks them at rental certification inspections.",
+      "sourceUrl": "https://www.grandrapidsmi.gov/departments/code-compliance/rental-properties/rental-certification-program/"
+    }
+  },
+  "notVerified": [
+    "text of Grand Rapids City Code Chapters 131-134 and Chapter 169 (library.municode.com returns 403 to automated requests)",
+    "Michigan code edition confirmation from the state (michigan.gov returns 403 to automated requests), so editions come from the UpCodes Michigan adoption list",
+    "whether a smoke alarm replacement alone ever requires a Grand Rapids electrical permit",
+    "city contractor registration fee amount (not published in the fee schedule)"
+  ]
+}

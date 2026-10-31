@@ -1,0 +1,80 @@
+{
+  "citySlug": "riverside-ca",
+  "cityName": "Riverside",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Riverside Community & Economic Development Department, Building & Safety Division",
+    "url": "https://riversideca.gov/cedd/building-safety"
+  },
+  "codeEdition": {
+    "text": "Riverside adopted the latest California Code of Regulations Title 24, and it took effect in the city on January 1, 2026. The division lists the adopted parts as the 2025 California Building, Residential, Fire, Existing Building, Wildland-Urban Interface, Historical Building, Electrical, Plumbing, Mechanical, Green Building Standards, Energy, Administrative and Referenced Standards Codes. Riverside also publishes its own local design criteria an inspector works from: seismic design category D, wind exposure category C for most of the city, energy climate zone 10, very heavy termite exposure, and a roof drainage design rainfall of 2 inches per hour.",
+    "sourceUrl": "https://riversideca.gov/cedd/building-safety/building-codes-design-criteria/california-building-standards"
+  },
+  "permitPolicy": {
+    "text": "A Riverside homeowner can pull their own permit, but the paperwork is strict: the Property Owner's Package has twelve statements that must each be initialed, and the owner must sign it in front of a notary unless they come to City Hall in person, where staff witness the signature and check a driver's licence or other photo ID. An agent cannot execute the form for the owner, and if the owner sends someone else to pull the permit the city wants a notarized letter authorising that person. The package has to be completed separately for every permit the owner pulls. Where an emergency forced the replacement or repair to be done first, the permit application is due to the Building Official by the next working business day.",
+    "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/103_PROPERTY-OWNERS-PACKAGE_V1.0.pdf"
+  },
+  "registration": {
+    "text": "Riverside does not add a trade licence on top of the state contractor licence, but it does tax contractors directly and publishes the rates. A contractor working in the city owes city business tax and holds a Business Tax Certificate, which is not transferable and must be paid before starting business. The published rate is a $397.00 annual base tax for an engineering or general contractor, or $273.00 for a specialty contractor, each covering one owner only, with $6.00 added for every additional employee, owner, partner or associate, plus a $4 state disability-access fee on any local business licence application or renewal. The rates adjust automatically each November 1 with the Consumer Price Index under Riverside Municipal Code 5.04.300.",
+    "sourceUrl": "https://riversideca.gov/finance/PDF/2026/Business-Tax-Rates.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Riverside makes a gas or propane water heater installation leave room for its electric replacement. The city's residential correction notes require a designated space at least 2 feet 6 inches by 2 feet 6 inches and 7 feet tall for a future heat pump water heater. Where that space is within 3 feet of the heater it must also get a 125 volt 20 amp receptacle fed by a 120/240 volt three-conductor 10 AWG copper branch circuit, the unused third conductor labelled \"spare\" at both ends and electrically isolated, a single-pole breaker space reserved immediately next to that circuit's breaker and labelled \"Future 240V Use\", and a condensate drain no more than 2 inches above the base of the installed heater that drains by gravity. Where the designated space is more than 3 feet away, the requirement shifts to a dedicated 240 volt 30 amp minimum circuit terminated within 3 feet of that space under a blank cover marked \"240V ready\", reserved double-pole breaker space, and cold and hot water piping routed through the future location and left exposed and accessible.",
+      "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/RESIDENTIAL%20GENERAL%20NOTES%209-15-26.pdf"
+    },
+    {
+      "text": "Combustion air is an explicit Riverside correction item on a non-direct-vent water heater: two permanent openings are required in the enclosure, one starting within 12 inches of the top and one within 12 inches of the bottom, communicating either directly or by duct with the outdoors or a space that freely communicates with the outdoors, under California Plumbing Code 506.4.1.",
+      "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/RESIDENTIAL%20GENERAL%20NOTES%209-15-26.pdf"
+    },
+    {
+      "text": "Riverside applies the state water-conserving fixture retrofit by build date. Its residential notes require all noncompliant plumbing fixtures in a single-family property built before January 1, 1994 to be replaced with water-conserving fixtures when the property gets an addition, alteration or improvement, citing California Green Building Standards Code 4.303.1 and Civil Code 1101.1, and separately require maximum flow rates for showerheads, lavatory faucets, kitchen faucets and water closets to be shown on the plumbing fixture schedule.",
+      "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/RESIDENTIAL%20GENERAL%20NOTES%209-15-26.pdf"
+    },
+    {
+      "text": "Riverside lets the property owner self-certify smoke and carbon monoxide alarms instead of having an inspector climb a ladder. Its Bulletin 302 form has the owner certify the alarm count and locations under the California Residential Code once the valuation of additions, alterations or repairs to an existing dwelling passes $1,000; the city notes this is voluntary, and an owner who prefers a City Building Inspector to verify instead has to have an adult present and supply a ladder and access to every alarm location. The bulletin also states that an electrical permit is required for alarms that have to be connected to the building wiring, and that physical interconnection is not required where listed wireless alarms all sound together.",
+      "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/302_SMOKE-AND-CARBON-RESIDENTIAL_V1.0.pdf"
+    },
+    {
+      "text": "Panel work in Riverside pulls in EV-capable provisions. The city's residential notes require a listed raceway of at least trade size 1 running from the main service or subpanel to an enclosure near the proposed EV charger location, continuous through concealed or inaccessible spaces, with the service panel or subpanel carrying capacity for a 40 amp 208/240 volt minimum dedicated branch circuit and reserved breaker space. The circuit directory has to mark the reserved space \"EV CAPABLE\" and the raceway termination must be permanently and visibly marked the same way. The notes also require listed tamper-resistant receptacles for all 15 and 20 amp, 125 and 250 volt nonlocking receptacles in the areas California Electrical Code 406.12 lists.",
+      "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/RESIDENTIAL%20GENERAL%20NOTES%209-15-26.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Riverside requires a plumbing permit to replace a water heater, priced per appliance by BTU input on top of a flat permit issuance fee, with a separate line for the gas vent; the inspector checks combustion air openings and, on a gas heater, the designated space and circuit left for a future heat pump water heater.",
+      "fee": "$37.00 for a water heater up to 100,000 BTU ($57.00 for 100,001 to 1,000,000 BTU), plus the $41.00 plumbing Permit Issuance Fee and $18.00 per water heater gas vent; a 14% surcharge for the General Plan Maintenance Fee and Technology Fee is added to each of these",
+      "feeAsOf": "FY 2026/27 Schedule of Fees and Charges, as of July 1, 2026",
+      "sourceUrl": "https://www.riversideca.gov/finance/PDF/Fees-and-Charges-as-of-July-1,-2026.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Riverside publishes a per-unit plumbing permit fee for a garbage disposal, charged the same as a dishwasher and added to the flat plumbing permit issuance fee; the city's work-exempt bulletin exempts only clearing stoppages and repairing leaks that do not require replacing or rearranging valves, pipes or fixtures, so a disposal swap is not on the exempt list.",
+      "fee": "$33.00 per garbage disposal or dishwasher, plus the $41.00 plumbing Permit Issuance Fee, plus the 14% General Plan Maintenance and Technology Fee surcharge",
+      "feeAsOf": "FY 2026/27 Schedule of Fees and Charges, as of July 1, 2026",
+      "sourceUrl": "https://www.riversideca.gov/finance/PDF/Fees-and-Charges-as-of-July-1,-2026.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Riverside charges plumbing permits per fixture or per item on top of one flat permit issuance fee, so the bill tracks exactly what was touched; stopping a leak or clearing a stoppage needs no permit, but once a concealed pipe or trap has to be removed and replaced with new material the city treats it as new work requiring a permit and inspection.",
+      "fee": "$41.00 plumbing Permit Issuance Fee, plus per item: $66.00 residential building sewer, $6.00 each drain or sink, $37.00 each repair or alteration of drains or vents, $18.00 each trap, $118.00 full dwelling re-pipe or $66.00 partial, $22.00 each add or alter gas piping, $70.00 for other fixtures not otherwise specified; a 14% surcharge is added",
+      "feeAsOf": "FY 2026/27 Schedule of Fees and Charges, as of July 1, 2026",
+      "sourceUrl": "https://www.riversideca.gov/finance/PDF/Fees-and-Charges-as-of-July-1,-2026.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Riverside prices electrical permits per item on top of one flat issuance fee, with a service change-out priced by amperage; only minor repair and maintenance such as changing lamps or plugging approved portable equipment into existing receptacles is exempt from permit.",
+      "fee": "$41.00 electrical Permit Issuance Fee, plus per item: $90.00 for a service 0 to 200A, $160.00 for 201A to 1,000A, $103.00 partial dwelling re-wire or $188.00 full re-wire, $41.00 per switchboard sub-panel up to 600V, $10.00 per dedicated circuit, $1.65 per outlet or receptacle, $11.00 per light fixture, $57.00 meter reset, $66.00 residential EV charger; a 14% surcharge is added",
+      "feeAsOf": "FY 2026/27 Schedule of Fees and Charges, as of July 1, 2026",
+      "sourceUrl": "https://www.riversideca.gov/finance/PDF/Fees-and-Charges-as-of-July-1,-2026.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Riverside needs an electrical permit for a smoke or carbon monoxide alarm that has to be connected to the building wiring, and once the valuation of additions, alterations or repairs to an existing dwelling exceeds $1,000 the city requires the full set of alarms to be brought up to the California Residential Code locations; the owner can sign the city's Bulletin 302 self-certification form instead of having an inspector verify them, and battery-only alarms are allowed where the work does not strip wall and ceiling finishes and there is no attic, basement or crawl space to run wiring through.",
+      "sourceUrl": "https://riversideca.gov/cedd/sites/riversideca.gov.cedd/files/pdf/building/forms/302_SMOKE-AND-CARBON-RESIDENTIAL_V1.0.pdf"
+    }
+  },
+  "notVerified": [
+    "A specific published fee for a smoke or carbon monoxide alarm electrical permit (the schedule's electrical section has no alarm line, so only the permit issuance fee and the generic device lines exist and none is identified as covering alarms)",
+    "Riverside's own amendments to the 2025 California codes in Title 16 of the Riverside Municipal Code (the city links its code only to library.municode.com, which is Cloudflare-fronted and blocks automated requests)",
+    "Whether a water heater or garbage disposal permit in Riverside includes the inspection in the per-item fee or draws a separate inspection charge (the schedule heads the section Building Permit and Inspection but does not say so for the per-item plumbing lines)",
+    "Whether Riverside requires a contractor to register with the Building & Safety Division separately from the Business Tax Certificate (the division publishes an Authorized Agent Form for contractors but no registration requirement or fee)"
+  ]
+}

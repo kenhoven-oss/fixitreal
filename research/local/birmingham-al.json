@@ -1,0 +1,73 @@
+{
+  "citySlug": "birmingham-al",
+  "cityName": "Birmingham",
+  "stateAbbr": "AL",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Birmingham Department of Planning, Engineering and Permits, Permitting and Inspection Division",
+    "url": "https://www.birminghamal.gov/government/city-departments/pep/divisions-pep/permitting-inspection-division"
+  },
+  "codeEdition": {
+    "text": "Birmingham works from its own Technical Code of the City of Birmingham, 2024 Edition, effective October 1, 2024. It adopts the 2021 International Building, Residential, Plumbing, Fuel Gas, Mechanical, Existing Building, Property Maintenance and Energy Conservation Codes, the 2021 International Fire Code and NFPA 101, and for electrical work the 2020 edition of the National Electrical Code; Chapter 1 of each of those model codes is replaced with the city's own administration chapter.",
+    "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+  },
+  "permitPolicy": {
+    "text": "Birmingham's Technical Code lets an owner, an authorized agent or a contractor apply, and the application is signed by the owner or the owner's agent; an owner's affidavit filed with a residential application can be met with proof of ownership. Trade work is different: nobody may do electrical, plumbing, gas fitting, mechanical or fire protection work in the city without the required city, county and state licence and posted bonds, a master or journeyman must be on the job and in charge throughout, and the plumbing permit application is certified by the master plumber personally.",
+    "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+  },
+  "registration": {
+    "text": "Birmingham licenses and bonds trades on top of the state ticket. An electrical contractor must hold municipal, city and state business licences and keep a $10,000 bond on deposit with the city's Director of Finance, approved by the Director and written by an Alabama-authorized surety; failure to keep it in force is grounds to revoke the business licence. A master plumber or gas fitter registered with the Alabama Plumbers and Gas Fitters Board may pull permits only once a City of Birmingham business licence and the required bonding are in place. Electrical examinations themselves are run by the state board.",
+    "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+  },
+  "codeItems": [
+    {
+      "text": "Birmingham switches the IRC's own electrical chapters off for houses: references to the ICC Electrical Code in the residential and building codes do not apply to residential construction, and an inspector works from the 2020 National Electrical Code instead. The city also notes that electrical permits need no plan review.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    {
+      "text": "Birmingham deletes Chapter 11, Energy Efficiency, from the International Residential Code outright, so the IRC's envelope, duct and equipment energy provisions are not enforced on a house here.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    {
+      "text": "Birmingham also deletes IRC Section R313, so residential automatic fire sprinklers are not required.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    {
+      "text": "Where fixtures are added to an existing water service, the master plumber must certify on the Birmingham application that the existing service is big enough and in good enough condition to deliver at least 8 psi at the point of outlet discharge under maximum demand, 15 psi for flush-valve fixtures, and must give the water meter number.",
+      "sourceUrl": "https://www.birminghamal.gov/government/city-departments/pep/divisions-pep/permitting-inspection-division/city-birmingham-permitting"
+    },
+    {
+      "text": "A new or replacement water service in Birmingham needs a tapping authorization from the Water Works Company, and the authorization number goes on the plumbing permit application.",
+      "sourceUrl": "https://www.birminghamal.gov/government/city-departments/pep/divisions-pep/permitting-inspection-division/city-birmingham-permitting"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Birmingham requires a permit before anyone installs, alters, repairs, converts or replaces a plumbing, gas or mechanical system, so a water heater swap is permitted work and the plumbing application must be certified by the master plumber doing it. On gas work the city exempts repairing a gas-fired furnace but still demands a gas permit for the vent and the gas piping.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Birmingham needs a permit, with a narrow exemption for repairing or replacing no more than half of a water service up to a maximum of 20 feet; ordinary minor repairs may be waved through without a permit only with the Building, Code or Fire Official's approval.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit is required in Birmingham for installing, altering, repairing, converting or replacing any electrical system, and the work must be under a licensed, bonded electrical contractor with a master or journeyman electrician on the job and in charge. Electrical permits do not go through plan review.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Replacing a garbage disposal counts as altering or replacing a plumbing system, which Birmingham's Technical Code says needs a permit from the Building Official; the city's short list of permit-free jobs covers portable and self-contained mechanical equipment, roof coverings and finish work, not plumbing fixtures.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Birmingham publishes no permit just for swapping a smoke alarm. Its residential amendments remove only the IRC energy-efficiency chapter and the sprinkler section, leaving the model code's smoke-alarm requirements in force, and alarm wiring itself is judged against the 2020 National Electrical Code rather than the IRC electrical chapters.",
+      "sourceUrl": "https://www.birminghamal.gov/work/building-codes"
+    }
+  },
+  "notVerified": [
+    "Every Birmingham permit fee figure: the Technical Code fee article and the permit brochure are published only as PDFs on the city's third-party file host, and no birminghamal.gov page states the amounts",
+    "Birmingham master plumber or gas fitter bond amount (the code requires bonding but names no figure for those trades)",
+    "Whether a stand-alone smoke-alarm replacement needs a permit in Birmingham",
+    "Birmingham-specific water heater installation amendments such as expansion tank, drain pan or TPR discharge rules (the 2024 Technical Code adds no local amendments to the plumbing or fuel gas codes on those points)",
+    "City of Birmingham general code of ordinances text (library.municode.com is behind a bot check)"
+  ]
+}

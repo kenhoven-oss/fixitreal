@@ -1,0 +1,81 @@
+{
+  "citySlug": "hartford-ct",
+  "cityName": "Hartford",
+  "stateAbbr": "CT",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Hartford Department of Development Services, Division of Licenses and Inspections",
+    "url": "https://www.hartfordct.gov/Government/Departments/DDS/DDS-Divisions/Licenses-Inspections-Housing-Code-Enforcement"
+  },
+  "codeEdition": {
+    "text": "Hartford enforces the statewide 2022 Connecticut State Building Code, which is built on the 2021 I-Codes with the ICC A117.1-2017 accessibility standard and applies to permit applications filed on or after October 1, 2022. Its electrical provisions come from the 2020 NFPA 70 National Electrical Code as amended by the state, not a later NEC edition.",
+    "sourceUrl": "https://portal.ct.gov/das/office-of-state-building-inspector/connecticut-state-building-code/regulations"
+  },
+  "permitPolicy": {
+    "text": "The state code Hartford enforces lets the owner or the owner's authorized agent apply for the permit, so a homeowner is not shut out. If the agent is a contractor, the application must carry the contractor's name, business address and Connecticut Department of Consumer Protection home-improvement registration number, and the building official cannot issue the permit until that certificate of registration is produced.",
+    "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+  },
+  "registration": {
+    "text": "Trade licensing in Hartford is handled at state level by the Department of Consumer Protection rather than by a separate city registration: the Licenses and Inspections page points applicants to the state's professional licence lookup, and the state code blocks a permit to a contractor who should be registered under the home-improvement chapter until the registration number appears on the application. Hartford publishes no city trade-registration or bond amount.",
+    "sourceUrl": "https://www.hartfordct.gov/Government/Departments/DDS/DDS-Divisions/Licenses-Inspections-Housing-Code-Enforcement"
+  },
+  "codeItems": [
+    {
+      "text": "Connecticut rewrites the relief-valve discharge rule an inspector checks on a water heater: the discharge pipe has to stop no more than 6 inches above, and at least two pipe diameters above, the floor or the flood-level rim of the waste receptor, and the end must be cut at a 45-degree angle.",
+      "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+    },
+    {
+      "text": "Connecticut amends the national outdoor GFCI rule so that every outdoor outlet on a single-phase circuit of 150 volts or less and 50 amperes or less needs GFCI protection, but it writes in exceptions for lighting outlets and for mini-split and other power-conversion HVAC equipment that the unamended code does not have.",
+      "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+    },
+    {
+      "text": "On a new one- or two-family dwelling Connecticut requires all service conductors to land in an emergency disconnect in a readily accessible outdoor location, grouped if there is more than one, with the state's own list of acceptable disconnect types and markings.",
+      "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+    },
+    {
+      "text": "Smoke alarms in Connecticut may be tied together by listed wireless alarms instead of being physically interconnected, and existing areas need no interconnection at all where the work does not strip interior wall or ceiling finishes back to the structure.",
+      "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+    },
+    {
+      "text": "Where a Hartford house stays occupied during interior alterations or an addition under a building permit, Connecticut requires temporary battery-operated smoke alarms near the work for the whole of construction; a combined smoke and carbon monoxide alarm satisfies it.",
+      "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A permit is required in Hartford to replace a water heater, because the state code Hartford enforces covers installing, replacing or repairing any plumbing, gas or mechanical system, and the city charges one valuation-based permit fee for building, electrical and plumbing work alike.",
+      "fee": "$50.26 for the 1st $1,000 of construction costs; $30.26 for each $1,000 thereafter",
+      "feeAsOf": "Effective August 6, 2018",
+      "sourceUrl": "https://www.hartfordct.gov/files/assets/public/v/2/development-services/dds-general/general-documents/fee-schedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Most plumbing work in Hartford needs a permit, but the state code exempts stopping a leak, clearing a stoppage and taking out and refitting a toilet where no valves, pipes or fixtures are replaced or rearranged; replacing a defective concealed trap, drain, water, waste or vent pipe counts as new work and does need a permit and an inspection.",
+      "fee": "$50.26 for the 1st $1,000 of construction costs; $30.26 for each $1,000 thereafter",
+      "feeAsOf": "Effective August 6, 2018",
+      "sourceUrl": "https://www.hartfordct.gov/files/assets/public/v/2/development-services/dds-general/general-documents/fee-schedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit is required in Hartford for work on an electrical system, with a short state list of jobs that are exempt: minor repairs such as changing lamps and fuses, refitting receptacle plugs, swapping a branch-circuit breaker of the same rating in the same place, and low-voltage work under 25 volts and 50 watts.",
+      "fee": "$50.26 for the 1st $1,000 of construction costs; $30.26 for each $1,000 thereafter",
+      "feeAsOf": "Effective August 6, 2018",
+      "sourceUrl": "https://www.hartfordct.gov/files/assets/public/v/2/development-services/dds-general/general-documents/fee-schedule.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Replacing a garbage disposal in Hartford falls under the permit requirement for altering or replacing a plumbing system, since the only plumbing jobs the state code exempts are leak repairs, clearing stoppages and refitting a toilet; the same valuation-based city fee applies.",
+      "fee": "$50.26 for the 1st $1,000 of construction costs; $30.26 for each $1,000 thereafter",
+      "feeAsOf": "Effective August 6, 2018",
+      "sourceUrl": "https://www.hartfordct.gov/files/assets/public/v/2/development-services/dds-general/general-documents/fee-schedule.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Hartford publishes no permit or fee for swapping a smoke alarm on its own. Under the state code, a permit for alterations, repairs or an addition normally forces the whole dwelling up to new-house alarm coverage, but Connecticut writes in an exception for plumbing, mechanical and electrical installations, alterations and repairs, so a water-heater or wiring permit does not drag in a whole-house alarm retrofit.",
+      "sourceUrl": "https://portal.ct.gov/das/-/media/das-beta/pdf/office-of-state-building-inspector/2022-csbc-final.pdf"
+    }
+  },
+  "notVerified": [
+    "Any Hartford-specific permit fee broken out by trade or per fixture (the city publishes a single valuation-based fee covering building, electrical and plumbing permits)",
+    "Whether an inspection fee is bundled into the Hartford permit fee (the schedule lists a separate $100.00 State Required Inspection Fee without saying when it applies)",
+    "Hartford-level contractor registration or bond amount (none published)",
+    "Connecticut General Statutes text on homeowner trade-licence exemptions (www.cga.ct.gov did not respond to requests)",
+    "Whether the August 6, 2018 fee schedule has since been revised (it is the current version linked from the Licenses and Inspections page)"
+  ]
+}

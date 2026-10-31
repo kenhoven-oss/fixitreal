@@ -1,0 +1,83 @@
+{
+  "citySlug": "tulsa-ok",
+  "cityName": "Tulsa",
+  "stateAbbr": "OK",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Tulsa Development Services, Permit Center and Inspection Services",
+    "url": "https://www.cityoftulsa.org/government/departments/development-services/inspection-services/"
+  },
+  "codeEdition": {
+    "text": "Oklahoma sets the codes statewide through the Uniform Building Code Commission: the 2024 International Residential Code and 2024 International Plumbing Code took effect September 14, 2026, replacing the 2018 editions, and the 2023 National Electrical Code took effect September 14, 2024. Tulsa's own Development Services handout on repair and alteration permits, revised May 2026, still quotes the 2018 IRC and 2018 International Existing Building Code definitions.",
+    "sourceUrl": "https://oklahoma.gov/oubcc/codes-and-rules/international-residential-code-adoptions.html"
+  },
+  "permitPolicy": {
+    "text": "Tulsa's Permit Center states plainly that only a licensed tradesperson may apply for a trade permit, so a homeowner cannot pull their own electrical, plumbing or mechanical permit here. The city does publish an affidavit of exemption from general liability and workers compensation cover for an individual homeowner, used on building permit work.",
+    "sourceUrl": "https://www.cityoftulsa.org/government/departments/development-services/permit-center/applications-and-forms/"
+  },
+  "registration": {
+    "text": "Tulsa requires its own certificate of registration on top of the Oklahoma state licence, and renewal applications must be accompanied by a photocopy of the current state licence. The registration fee is $178.00 each for an Electrical Contractor, a Plumbing Contractor and a Mechanical Contractor, and $64.00 for a Stationary Engineer, waived if the holder is registered with the city as a Mechanical Contractor; each certificate expires on the last day of the contractor's birth month.",
+    "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Oklahoma adds a rule to the residential code aimed squarely at makeshift water-heater stands: where a water heater has to be raised, it must sit on a stand or platform structurally sized for the weight of the heater plus its contents.",
+      "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2026%2009%2014%20IRC%202024%20Permanent%20Rule.pdf"
+    },
+    {
+      "text": "Solar water-heater panels fitted on a roof in Oklahoma must have a union on every pipe entering and leaving the panel, so the panel can be disconnected mechanically for service or for a reroof.",
+      "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2026%2009%2014%20IRC%202024%20Permanent%20Rule.pdf"
+    },
+    {
+      "text": "Where a slab on grade is post-tension reinforced, Oklahoma requires a label on the electrical panel door saying so, as a warning to anyone who later cuts into the floor.",
+      "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2026%2009%2014%20IRC%202024%20Permanent%20Rule.pdf"
+    },
+    {
+      "text": "Oklahoma's version of the outdoor GFCI rule reaches at-or-below-grade garages, accessory buildings and boathouses, and it adds that replacing the equipment fed from such an outlet triggers GFCI protection on that outlet. The state excepts lighting outlets and listed HVAC equipment, and deleted the expiry date the national code had put on the HVAC exception.",
+      "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2022%2009%2014%20NEC%202023%20Permanent%20Rule.pdf"
+    },
+    {
+      "text": "Oklahoma adds an allowance for a gas-fired central furnace in a dwelling to be cord-and-plug connected, so it can be run temporarily from a portable generator, with a cap on the cord length.",
+      "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/oubcc/documents/rules/2022%2009%2014%20NEC%202023%20Permanent%20Rule.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Tulsa charges a flat plumbing permit fee for a water heater, and the city's plumbing permit request form counts the water heater as its own line item. Only a licensed plumbing contractor registered with the city can apply, and the permit fee covers the inspections.",
+      "fee": "Water heater fee $35.00; a minimum fee of $80.00 shall apply to any permit",
+      "feeAsOf": "Ordinance No. 25351, 2024",
+      "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work in Tulsa is permitted per fixture against a base fee, and the cost of the permit covers the inspections; extra inspections, partials and re-inspections are charged on top. Replacing or relocating water supply, sewer, drain, gas, waste or vent piping is specifically excluded from the ordinary-repair exemption, so it needs a permit.",
+      "fee": "Plumbing fixtures, appliances and appurtenances base fee, including the first fixture, appliance or appurtenance $81.00; plus each additional $3.31; minimum fee of $80.00 for any permit; additional inspections $64.00 each; re-inspection $75.00",
+      "feeAsOf": "Ordinance No. 25351, 2024",
+      "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal is one of the counted items on Tulsa's plumbing permit request form, so swapping one is charged under the city's per-fixture plumbing permit fee and must be applied for by a licensed, city-registered plumbing contractor.",
+      "fee": "Plumbing fixtures, appliances and appurtenances base fee, including the first fixture, appliance or appurtenance $81.00; plus each additional $3.31; minimum fee of $80.00 for any permit",
+      "feeAsOf": "Ordinance No. 25351, 2024",
+      "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "For electrical work that is not new construction or a major remodel, Tulsa prices the permit by what is being installed: a band fee for the first fifteen pieces of electrical equipment, a separate service fee by amperage, and a flat reconnect fee. Only a licensed electrical contractor registered with the city may apply.",
+      "fee": "Electrical equipment, 1-15 $81.00, each additional $2.68; electrical service (first 100 amps) $98.00, each additional 100 amps or portion thereof $18.00; reconnect fee $81.00; minimum fee of $80.00 for any permit",
+      "feeAsOf": "Ordinance No. 25351, 2024",
+      "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Tulsa permits fire alarm and detection systems by the number of devices, and the Fire Marshal must approve the plans first, but the city lets a job of five or fewer alarm devices (not counting the panel) be permitted by telephone with no application fee and no plan review. Replacing lamps is listed among the ordinary repairs that need no permit at all.",
+      "fee": "Fire alarm system permit application fee $75.00; fire alarm system permit, 1-5 devices $113.00 (one inspection), 6-20 devices $157.00; exception: a permit for five or less fire alarm devices, not including the panel, may be issued with approval via telephone without any application fee or plans review",
+      "feeAsOf": "Ordinance No. 25351, 2024",
+      "sourceUrl": "https://www.cityoftulsa.org/media/26193/ordinance-no-25351.pdf"
+    }
+  },
+  "notVerified": [
+    "Which code editions Tulsa itself adopts in Titles 51, 52, 56 and 59 of the Tulsa Revised Ordinances (library.municode.com, which hosts the city's code, is behind a bot check)",
+    "Tulsa-specific amendments to the plumbing, mechanical or electrical codes beyond the statewide Oklahoma amendments",
+    "Whether a stand-alone household smoke alarm swap is treated as fire alarm system work in Tulsa",
+    "Bond amounts for Tulsa electrical, plumbing or mechanical contractor registration (the ordinance names a $2,500 surety bond only for fire suppression system installers)",
+    "Whether any fee in Ordinance No. 25351 has been amended since 2024"
+  ]
+}

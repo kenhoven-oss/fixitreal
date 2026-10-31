@@ -1,0 +1,75 @@
+{
+  "citySlug": "albuquerque-nm",
+  "cityName": "Albuquerque",
+  "stateAbbr": "NM",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Albuquerque Planning Department, Building Safety Division",
+    "url": "https://www.cabq.gov/planning/building-safety-division"
+  },
+  "codeEdition": {
+    "text": "Albuquerque enforces the state-adopted code set: the 2021 New Mexico Commercial Building Code, 2021 New Mexico Residential Building Code, 2021 New Mexico Existing Building Code, 2021 New Mexico Plumbing Code, 2021 New Mexico Mechanical Code and the 2020 New Mexico Electrical Code, which took effect in the city on September 28, 2023. On top of those the city enforces its own 2024 Uniform Administrative Code, which carries Albuquerque's amendments to the state codes along with the permit fee tables.",
+    "sourceUrl": "https://www.cabq.gov/planning/building-safety-division/current-building-codes"
+  },
+  "permitPolicy": {
+    "text": "Albuquerque issues permits only to a contractor licensed by the New Mexico Construction Industries Division, with two exceptions for homeowners: a homeowner may be permitted to build a single-family house or garage for their own use, and a homeowner may be issued an electrical or plumbing permit after passing a written city exam with a score of 75% or better. The city allows four hours for each exam, two attempts with a 30-day wait between them, and one passing exam per year. The city's permit page separately states that water heater installation and ductwork may only be done by a licensed contractor, and the homeowner guide says gas work always requires a licensed New Mexico contractor.",
+    "sourceUrl": "https://www.cabq.gov/planning/building-safety-division/permits"
+  },
+  "registration": {
+    "text": "There is no separate city trade licence. Permit issuance in Albuquerque is tied to a State of New Mexico Construction Industries Division contractor licence, unless the applicant is exempt under NMSA 60-13-3(D) or qualifies under the homeowner exceptions. The city's code names the licence classifications it recognises, including licensed electrical, mechanical and plumbing contractors, and for solar PV work an EE-98, EL-1 or ER-1 licence.",
+    "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Albuquerque rewrites the model rule on unlisted water heaters: where the plumbing code allows an unlisted heater to be approved case by case, the city's amendment says unlisted water heaters shall not be installed at all. The same amendment runs through the mechanical code, where unlisted central-heating furnaces, boilers, floor furnaces and wall furnaces are likewise banned outright rather than judged on clearances.",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    },
+    {
+      "text": "For a water heater in a residential garage the city deletes the model code's escape clause for appliances listed as flammable vapor ignition resistant, so an Albuquerque inspector applies the garage installation rule to every heater regardless of how the unit is listed.",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    },
+    {
+      "text": "Where two or more water heaters feed a common manifold, Albuquerque requires separate isolation valves on both the hot and the cold line within three feet of each heater — an addition the city makes to plumbing code section 606.5.",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    },
+    {
+      "text": "Albuquerque adds a gas shutoff the national codes do not call for: an additional full-bore gas shutoff valve downstream of the utility's gas meter, ahead of any distribution into the house piping. The city applies this to new systems and to re-pipes, so it can come up on a gas water heater job that reworks the gas line.",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    },
+    {
+      "text": "The city's plumbing amendments also set an Albuquerque-specific storm drainage design rainfall rate of two inches per hour, and require every cleanout to be sized for the largest diameter pipe in the run rather than the pipe it sits on.",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Installing or replacing a water heater in Albuquerque takes a plumbing/mechanical permit, and the city states the work may only be done by a licensed contractor — a homeowner cannot do their own gas water heater. The fee is the flat administrative charge on the permit application plus the per-item unit fees in the city's plumbing and mechanical fee tables, and the city inspects the finished work.",
+      "fee": "$47.00 administrative charge applicable to all applications and additions to permit, plus the per-item unit fees in Table 112-D Plumbing Permit Fees and Table 112-C Mechanical Permit Fees (for example $6.00 per gas outlet, $10.00 gas line test with no outlets or appliances)",
+      "feeAsOf": "2024 edition, City of Albuquerque Uniform Administrative Code",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Albuquerque prices a plumbing permit as a flat administrative charge plus a charge for each item of work, so a one-fixture call and a multi-fixture call are not priced the same. The city does not require a permit to clear a stoppage, fix a leak in a pipe, valve or fixture, pull and reset a water closet, or replace a plumbing fixture with the same type of configuration, as long as valves, pipes and fixtures are not rearranged.",
+      "fee": "$47.00 administrative charge applicable to all applications and additions to permit, plus $10.00 per plumbing fixture (includes drain and vent), $14.00 water distribution system, $14.00 water service from property line to house, $28.00 house or building sewer including 2-way cleanout",
+      "feeAsOf": "2024 edition, City of Albuquerque Uniform Administrative Code",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit is required in Albuquerque to install an appliance, device, piece of equipment or wiring, and to add to, alter or replace existing appliances, devices, wiring or equipment. The fee is a flat administrative charge plus unit fees for what is installed. No permit is needed to swap a receptacle for one of the same type and configuration, to repair or replace a fixed listed appliance of the same type and rating in the same location, or to remove wiring.",
+      "fee": "$47.00 administrative charge applicable to all applications and additions to permits, plus unit fees including $8.00 per panel, $8.00 per residential fixed appliance of 30 amps or over, $40.00 per meter loop, $1.50 each for the first 20 outlets and $0.90 each over 20",
+      "feeAsOf": "2024 edition, City of Albuquerque Uniform Administrative Code",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Albuquerque publishes no permit line for a garbage disposal on its own. Its code does exempt replacing a plumbing fixture with the same type of configuration from needing a plumbing permit, and exempts repairing or replacing a fixed listed appliance of the same type and rating in the same location from needing an electrical permit; re-piping, rearranging valves or pipes, or new wiring falls outside those exemptions and is permit work.",
+      "sourceUrl": "https://www.cabq.gov/planning/documents/2024-uac-adopted.pdf"
+    }
+  },
+  "notVerified": [
+    "Whether Albuquerque requires a permit to replace a hardwired smoke alarm, and under what fee line — the city's electrical exemptions cover fixed listed appliances and receptacles but say nothing about smoke alarms, and the city publishes no smoke alarm handout",
+    "Which single fee-table line Albuquerque applies to a residential water heater (the plumbing and mechanical tables both carry the $47.00 administrative charge and per-item unit fees, but neither prints a water heater line), so no all-in water heater permit figure is published",
+    "Whether a City of Albuquerque business registration is required of a trade contractor in addition to the state CID licence, and its fee — the city's business licence link goes to a login-only self-service portal",
+    "Any Albuquerque requirement for a water heater drain pan, thermal expansion tank, seismic strapping or a specific TPR discharge termination — the city's amendments cover unlisted heaters, garage installation, isolation valves and gas shutoffs but state none of these",
+    "Whether Albuquerque charges a separate fee for the homeowner plumbing or electrical exam"
+  ]
+}

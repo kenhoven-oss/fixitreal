@@ -1,0 +1,82 @@
+{
+  "citySlug": "spokane-wa",
+  "cityName": "Spokane",
+  "stateAbbr": "WA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Spokane Developer Services Center (Building Services)",
+    "url": "https://my.spokanecity.org/business/permits/"
+  },
+  "codeEdition": {
+    "text": "Spokane enforces the Washington State Building Code, which is the 2021 family of model codes adopted and amended by the State Building Code Council and effective statewide from March 15, 2024: the 2021 International Residential Code (WAC 51-51), the 2021 International Mechanical Code (WAC 51-52), the 2021 Uniform Plumbing Code (WAC 51-56) and the 2021 International Fire Code (WAC 51-54A). Spokane layers its own modifications on top; the city's mechanical code is the IMC and International Fuel Gas Code as modified by Chapter 17F.090 of the Spokane Municipal Code. On the electrical side Washington's rules adopt the 2023 National Electrical Code by reference, and the same rule already provides that the 2026 NEC replaces it effective December 31, 2026.",
+    "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56"
+  },
+  "permitPolicy": {
+    "text": "Washington requires a permit and inspection for electrical work, and the permit has to be bought either by the electrical contractor or by the property owner who will actually do the work; if you hire a contractor, the contractor buys the permit for their own work. Spokane is one of the Washington cities that issues its own electrical permits and does its own electrical inspections, so an electrical permit for a Spokane address comes from the city rather than from L&I. Spokane's electrical permit application is signed on a line marked for a homeowner or a contractor.",
+    "sourceUrl": "https://lni.wa.gov/licensing-permits/electrical/electrical-permits-fees-and-inspections/"
+  },
+  "registration": {
+    "text": "Spokane runs its own local trade licences on top of the state credential. Gas work on the city's mechanical permit requires a City of Spokane Gas Heating Mechanic licence number, written on the permit application in the form 01234-GHM. The city issues that licence in two classes, Gas Heating Mechanic I and Gas Heating Mechanic II, by application and proctored examination, with the exam administered through the Northwest HVAC/R Association Training Center; the examination fee is paid with the application and is non-refundable, and the exam has to be taken within 180 days or the application lapses. A mechanical contractor who also holds the appropriate electrical contractor licence may use the mechanical permit for low-voltage HVAC control circuits, but any other HVAC circuit needs a separate electrical permit.",
+    "sourceUrl": "https://static.spokanecity.org/documents/business/commercial/license-applications/gas-license-application-2026-07-15.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Washington keeps the seismic strapping rule that Idaho and several other states delete. Under the state's plumbing amendment a water heater must be anchored or strapped to resist horizontal displacement from earthquake motion, with straps placed within the upper third and the lower third of the tank's height, and the lower strap kept at least 4 inches away from the controls. The 4 inch clearance is the detail most installers get wrong.",
+      "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56-0500"
+    },
+    {
+      "text": "Washington requires a demand-response port on consumer electric storage water heaters: the unit must have a modular communications port compliant with the March 2018 version of the ANSI/CTA-2045-A interface standard and application layer requirements. Water heaters built before January 1, 2021 are exempt, and non-heat-pump electric storage heaters built before January 1, 2022 are exempt. This rules out some cheap electric tanks that are perfectly legal elsewhere.",
+      "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56-0500"
+    },
+    {
+      "text": "Washington sets a minimum first-hour rating for a water heater by the number of bedrooms and bathrooms in the house, taken from the unit's Energy Guide label, so a Spokane inspector can reject a replacement that is undersized for the dwelling even if it fits the space. The state code also points to Section 102.4 specifically for replacement water heaters.",
+      "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56-0500"
+    },
+    {
+      "text": "A fuel-burning water heater serving a Washington bedroom or bathroom has only two legal arrangements: either it sits in a closet used for nothing but the water heater, fitted with a listed gasketed door assembly, a listed self-closing device, a threshold and a bottom door seal, and taking all its combustion air from outdoors; or it is a direct-vent unit. Appliances in a garage, or in a space opening onto the garage, must have burners and ignition sources at least 18 inches above the floor unless listed as flammable vapor ignition resistant.",
+      "sourceUrl": "https://app.leg.wa.gov/wac/default.aspx?cite=51-56-0500"
+    },
+    {
+      "text": "Spokane permits water heaters as MECHANICAL work, not plumbing: its fee schedule states outright that water heaters are covered within the mechanical permit fees, and the mechanical permit application carries lines for gas and electric water heaters under 200,000 Btu input and a separate line for a hot water tank heat pump. The mechanical application also warns that gas piping and the appliance the gas outlet serves each need permitting, and that a Washington State Energy Code duct leakage affidavit may have to reach the mechanical inspector before a residential HVAC replacement passes final inspection.",
+      "sourceUrl": "https://static.spokanecity.org/documents/business/resources/applications/building/mechanical-permit-application-2025-05-13.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Spokane takes a mechanical permit, not a plumbing permit, and the same line covers gas and electric units under 200,000 Btu; a heat pump water heater has its own line at the same price. On top of the item fee the city adds a flat processing fee and a percentage technology fee to the permit.",
+      "fee": "$15.50 Water Heater and $15.50 Hot Water Tank Heat Pump under Mechanical Permit Fees, plus a $65.00 Processing/Application Fee and a 2.5% Technology Fee",
+      "feeAsOf": "Effective January 1, 2026 (Development Fee Schedule 2026)",
+      "sourceUrl": "https://static.spokanecity.org/documents/smc/attachments/development-fee-schedule-2026.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Spokane charges plumbing permits by the fixture rather than by job value: each plumbing fixture on a trap carries the same flat fee, and the city's note makes clear that installs, relocations, replacements and rough-ins all count. A flat processing fee and a technology fee are added to the permit, and a failed inspection that has to be repeated is charged separately.",
+      "fee": "$13.50 per plumbing fixture on a trap; $13.50 each for a medical gas outlet, sewage ejector, vacuum breaker/backflow device or miscellaneous plumbing not covered elsewhere; plus a $65.00 Processing/Application Fee and a 2.5% Technology Fee; Re-Inspection Fee $156.00",
+      "feeAsOf": "Effective January 1, 2026 (Development Fee Schedule 2026)",
+      "sourceUrl": "https://static.spokanecity.org/documents/smc/attachments/development-fee-schedule-2026.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Spokane issues its own electrical permits and does its own electrical inspections instead of sending you to the state. Work in an existing house is priced per circuit, while a service change is priced by amperage, and a feeder or subpanel is its own line. The permit also carries the city's flat processing fee and technology fee.",
+      "fee": "$7.20 per circuit for alterations or wiring of existing space; service 1-200 amps $52.00, 201-400 amps $64.20, 401-600 amps $78.00; feeder or subpanel $20.70; ground work (Ufer) $31.10; temporary service $46.60; plus a $65.00 Processing/Application Fee and a 2.5% Technology Fee",
+      "feeAsOf": "Effective January 1, 2026 (Development Fee Schedule 2026)",
+      "sourceUrl": "https://static.spokanecity.org/documents/smc/attachments/development-fee-schedule-2026.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A garbage disposal counts as a plumbing fixture in Spokane: the city's note under its per-fixture plumbing fee lists garbage disposals and dishwashers among the items covered, and says the fee applies to replacements as well as new installs and rough-ins.",
+      "fee": "$13.50 per plumbing fixture on a trap (the per-fixture note covers garbage disposals), plus a $65.00 Processing/Application Fee and a 2.5% Technology Fee",
+      "feeAsOf": "Effective January 1, 2026 (Development Fee Schedule 2026)",
+      "sourceUrl": "https://static.spokanecity.org/documents/smc/attachments/development-fee-schedule-2026.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Spokane publishes no permit or fee for a smoke alarm in a single-family house, but Washington law makes smoke detection devices mandatory in every dwelling unit occupied by someone other than the owner since the end of 1981, built in the state after 1980, or sold on or after July 1, 2019, and installation is the owner's responsibility while battery replacement is the tenant's. For a home sold on or after July 1, 2019 with no alarm at all, the seller must provide at least one before anyone moves in, and the fine for non-compliance runs to $200, or $5,000 for an owner if a fire follows the failure.",
+      "sourceUrl": "https://app.leg.wa.gov/RCW/default.aspx?cite=43.44.110"
+    }
+  },
+  "notVerified": [
+    "Spokane's own adopted code editions and amendments as codified in the Spokane Municipal Code (Title 17F) — the city's current-codes pages at my.spokanecity.org returned an Imperva bot check to curl and the WebFetch fallback for https://my.spokanecity.org/business/permits/ could not be completed; only static.spokanecity.org documents were reachable",
+    "The dollar amount of the City of Spokane Gas Heating Mechanic I and II licence and examination fee — the application says the fee is paid at submittal and is non-refundable but prints no figure",
+    "Whether a Spokane homeowner may pull their own plumbing or mechanical permit (the electrical application's signature line names a homeowner, but no city statement on plumbing or mechanical was reachable)",
+    "Whether Spokane requires a permit for a like-for-like smoke alarm replacement, and any Spokane amendment to the state smoke-alarm rules",
+    "Washington L&I contractor registration and bond amounts, and whether Spokane requires its own electrical contractor registration in addition to the state one",
+    "Whether a water heater drain pan or thermal expansion tank is required in Spokane — the state plumbing amendment covers seismic strapping, sizing, location and relief devices but states neither"
+  ]
+}

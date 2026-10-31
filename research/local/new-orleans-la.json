@@ -1,0 +1,76 @@
+{
+  "citySlug": "new-orleans-la",
+  "cityName": "New Orleans",
+  "stateAbbr": "LA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of New Orleans Department of Safety & Permits",
+    "url": "https://nola.gov/next/safety-and-permits/home/"
+  },
+  "codeEdition": {
+    "text": "New Orleans enforces the construction codes adopted by the Louisiana State Uniform Construction Code Council; for houses that is the Louisiana Residential Code 2021, based on the 2021 International Residential Code with state amendments, in force since January 1, 2023. The city's own permit pages describe the adopted codes as the International Construction Code and International Fire Code as adopted by the City of New Orleans.",
+    "sourceUrl": "https://up.codes/viewer/louisiana/irc-2021"
+  },
+  "permitPolicy": {
+    "text": "A homeowner can apply for the building permit itself, but not for the trade permits. An electrical permit in New Orleans can be obtained only by an electrical contractor holding a Class \"A\" Electrical License from the city, a mechanical or gas permit only by a contractor holding the matching Class \"A\" city mechanical licence, and a plumbing permit only by an Orleans Parish licensed master plumber.",
+    "sourceUrl": "https://nola.gov/electrical-permit/"
+  },
+  "registration": {
+    "text": "New Orleans licenses tradespeople itself on top of the state licence. An electrician working in the city must hold and renew a city Electrical License annually; the Class \"A\" Master Electrical Contractor licence costs $125.00, only one holder is allowed per company, and the applicant must carry general liability cover of at least $500,000 plus workers compensation with the City of New Orleans named as certificate holder.",
+    "sourceUrl": "https://nola.gov/class-a-electrical-license/"
+  },
+  "codeItems": [
+    {
+      "text": "New Orleans treats a backflow preventer as mechanical equipment for zoning purposes: it cannot sit in a required front or corner-side yard without a variance from the Board of Zoning Adjustments, and anything placed in a side or rear yard must not block emergency access between the house and the property line.",
+      "sourceUrl": "https://nola.gov/review-requirements-for-backflow-preventers/"
+    },
+    {
+      "text": "On mechanical and fuel-gas work the city's Mechanical Division wants paperwork a national guide would not mention: a blower-door test by nationally certified personnel on New Orleans report forms showing 5 to 7 air changes per hour at 50 pascals (or an approved visual inspection instead), duct-leakage test reports before occupancy unless the air handler and ducts are all inside conditioned space, and Manual J, S and D calculations certified by affidavit in One Stop for new construction and substantial renovations.",
+      "sourceUrl": "https://nola.gov/mechanical-permit/"
+    },
+    {
+      "text": "A wood-burning fireplace in New Orleans must have its outdoor combustion air visible to the inspector at rough-in, before the wall is closed up.",
+      "sourceUrl": "https://nola.gov/mechanical-permit/"
+    },
+    {
+      "text": "Louisiana's residential code sets the water-heater drain pan at not less than 2 inches deep with a drain of at least 1 inch, but adds that a replacement water heater does not have to be given a pan drain where none was installed before.",
+      "sourceUrl": "https://up.codes/viewer/louisiana/irc-2021/chapter/28/water-heaters"
+    },
+    {
+      "text": "Where the house falls under the Historic District Landmarks Commission or the Vieux Carre Commission, New Orleans adds a 50 percent surcharge to the building permit, plan review, demolition and sign permit fees.",
+      "sourceUrl": "https://www.nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/SP-Building-Permit-Fee-Schedule.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in New Orleans goes on a Mechanical Gas permit, which only a Class \"A\" city-licensed mechanical gas contractor can apply for, and the fee is charged per heater by burner input. Removing or replacing the water piping also needs a separate plumbing permit from the Sewerage and Water Board.",
+      "fee": "Water heaters (gas, electric, heat pump or geothermal): through 50K BTU $20.00 each; 51K to 200K BTU $25.00 each",
+      "sourceUrl": "https://nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/Mechanical/OSS_SP_MECHANICAL_PERMIT_APPLICATION_SUPPLEMENT_D2-Gas.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "New Orleans requires an electrical permit to install, repair, replace or alter any electrical apparatus or equipment, with changing light bulbs and fuses the only exceptions, and the permit can be pulled only by a contractor holding a Class \"A\" Electrical License from the city.",
+      "fee": "$40 application fee plus $3 per new circuit plus $0.30 per service amperage",
+      "sourceUrl": "https://nola.gov/electrical-permit/"
+    },
+    "plumber-service-call": {
+      "requirement": "A plumbing permit is needed in New Orleans to remove or replace any water piping or plumbing fixture, it is issued by the Sewerage and Water Board rather than the Department of Safety and Permits, and only an Orleans Parish licensed master plumber may apply for it.",
+      "sourceUrl": "https://www.nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/SP-Brochure-Guidelines-for-Building-Permits.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Swapping a garbage disposal counts as replacing a plumbing fixture, so it falls under the Sewerage and Water Board plumbing permit that only an Orleans Parish licensed master plumber can pull; if the job adds a circuit, a city electrical permit is needed too.",
+      "sourceUrl": "https://www.nola.gov/nola/media/One-Stop-Shop/Safety%20and%20Permits/SP-Brochure-Guidelines-for-Building-Permits.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "New Orleans exempts only light bulbs and fuses from its electrical permit rule, so wired-in alarm work is not on the exempt list, and an electrical permit can be taken out only by a contractor with a Class \"A\" city Electrical License.",
+      "fee": "$40 application fee plus $3 per new circuit plus $0.30 per service amperage",
+      "sourceUrl": "https://nola.gov/electrical-permit/"
+    }
+  },
+  "notVerified": [
+    "Plumbing permit fee in New Orleans (the Sewerage and Water Board sets it and no city .gov page publishes the figure)",
+    "Effective or revision date on the New Orleans building permit fee schedule and on the mechanical gas permit application (neither document prints one)",
+    "Whether a smoke-alarm swap on its own is treated as permit-exempt minor electrical repair in practice (the city publishes no job-specific guidance)",
+    "City of New Orleans master plumber licence fee and bond amount",
+    "Louisiana state amendments to the residential smoke-alarm and electrical chapters (not reviewed)"
+  ]
+}

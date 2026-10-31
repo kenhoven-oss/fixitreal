@@ -1,0 +1,75 @@
+{
+  "citySlug": "fresno-ca",
+  "cityName": "Fresno",
+  "stateAbbr": "CA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Fresno Planning and Development Department, Building and Safety Services Division",
+    "url": "https://www.fresno.gov/planning/building-and-safety/"
+  },
+  "codeEdition": {
+    "text": "Fresno is on the 2025 California Building Standards Code, effective January 1, 2026. The city ran a joint triennial code-update symposium with the City of Clovis in December 2025 covering the move from the 2022 to the 2025 editions of the California Building, Residential, Electrical, Plumbing, Mechanical, Energy and Green Building Standards Codes, plus the 2025 California Wildland-Urban Interface Code. The city's own earlier bulletin documents the previous cycle, when the 2022 code took effect on January 1, 2023 with no extensions granted to the plan-review or permit-issuance periods.",
+    "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2025/12/12.15.2025-COF_COC_BS_Symposium-2025-for-Participants-10w1188.pdf"
+  },
+  "permitPolicy": {
+    "text": "Fresno applies California Building Code chapter 1 section 105.1, so the owner or an authorized agent is the one who applies for the permit, and the city publishes an Owner Builder Checklist under its single-family permit procedures for homeowners who choose not to hire licensed contractors. For straightforward trade work there are no plans to submit: the applicant instead completes the city's Permit Affidavit Form listing the fixtures and equipment involved. Every Fresno permit goes invalid if work does not start within 180 days or stalls for 180 days, and the clock resets from each approved inspection; a lapsed permit is reinstated by paying 25 percent of the original permit fee.",
+    "sourceUrl": "https://www.fresno.gov/planning/building-and-safety/building-permit-center/"
+  },
+  "registration": {
+    "text": "Fresno does not issue its own plumbing or electrical licence on top of the California state contractor licence, but a contractor working in the city owes city business tax and must hold a City of Fresno Business Tax Certificate; the city's own screening questions treat holding a California State Contractor's License as a trigger to contact the Business Tax Division. The tax is assessed on gross receipts earned from work inside the city, and the city publishes an optional Schedule S form letting a contractor deduct payments made to other state-licensed contractors who did work on Fresno project sites. No flat registration fee or bond figure is published.",
+    "sourceUrl": "https://www.fresno.gov/finance/business-license-and-tax-certificate/"
+  },
+  "codeItems": [
+    {
+      "text": "Fresno inspectors require interior access to the dwelling to confirm smoke and carbon monoxide alarms before they will sign off a permit. The city's bulletin ties the retrofit trigger to permitted alterations, repairs or additions valued above $1,000, and sets the alarm locations it checks: outside each sleeping area, on every story including basements and habitable attics, inside every bedroom, at least 36 inches from forced-air supply registers and return air ducts, at least 20 feet from a permanently installed cooking appliance, and at least 3 feet from a bathroom door where there is a shower or tub. Alarms must be listed by the Office of the State Fire Marshal, and smoke alarms are to be replaced 10 years from their date of manufacture.",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2023/02/2013SmokeandCarbonMonoxideBulletin.pdf"
+    },
+    {
+      "text": "Fresno and Fresno County issued a joint bulletin exempting routine change-outs from SB 407, the state rule that otherwise forces a whole-house swap to water-conserving plumbing fixtures when a property is altered. Water heater replacement, electrical service change-outs, HVAC change-outs, sewer line replacement, re-roofs, window replacement and residential solar are all listed as permits not subject to SB 407 in the city of Fresno, because those are treated as repair or maintenance rather than an alteration.",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2023/02/ApplicationofSB407WaterEfficientFixtures.pdf"
+    },
+    {
+      "text": "Under the 2025 California Electrical Code that Fresno now enforces, replacing an electrical panel in a dwelling pulls in a surge protective device. The city's code-update briefing flags CEC articles 215.18 and 225.42 as now requiring an SPD on panel replacement in dwellings, dormitories and guest rooms.",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2025/12/12.15.2025-COF_COC_BS_Symposium-2025-for-Participants-10w1188.pdf"
+    },
+    {
+      "text": "Ground-fault and arc-fault scope widened sharply in the 2025 California Electrical Code Fresno enforces. The city's briefing lists GFCI protection under CEC 210.8 now reaching all 125 to 250 volt receptacles in residential areas, crawl spaces and unfinished basements, outdoor outlets regardless of cover or location, and the circuits feeding electric ranges, wall and counter mounted ovens, clothes dryers and microwaves; AFCI protection under 210.12 now reaches kitchens including dedicated appliance outlets, laundry rooms, and all 120 volt 15 and 20 amp circuits serving dwelling areas.",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2025/12/12.15.2025-COF_COC_BS_Symposium-2025-for-Participants-10w1188.pdf"
+    },
+    {
+      "text": "Water heater clearance and support are both on Fresno's checklist. The 2025 California Plumbing Code section 507.25 the city now enforces requires a minimum 30 by 30 by 30 inch service clearance at the water heater unless the manufacturer specifies otherwise, with heat pump water heaters held to the manufacturer's own space requirement, and the city's plan-check comments for water heaters call for the unit's location and weight plus a vertical support detail showing seismic strapping to the wall. The 2025 California Energy Code also makes a heat-pump-water-heater-ready installation carry a dedicated 30 amp circuit.",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2025/12/12.15.2025-COF_COC_BS_Symposium-2025-for-Participants-10w1188.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Fresno needs a stand-alone plumbing permit, charged as a Simple Plumbing Item with the inspection built into the fee, and the inspector checks the service clearance, the seismic strapping and the home's smoke and carbon monoxide alarms before signing off.",
+      "fee": "$111.50 inspection fee for a Water Heater as a Simple Plumbing Item, plus the $27.08 Permit Issuance fee charged on all projects in that table",
+      "feeAsOf": "Effective 07/01/2026 (Master Fee Schedule Amendment #590)",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2026/07/MFS-Planning_593_CPI_CPI-UGM_CPI-Parking-ED-2026.07.01-10w1657-10w1683.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Fresno charges one flat Simple Plumbing Item fee for most ordinary service work, including plumbing fixtures, a building sewer, water piping or water treating equipment, backflow devices, and repair or alteration of drainage or vent piping, with the permit issuance fee added on top; bigger jobs such as on-site sewer 6 inches and over are priced per linear foot instead.",
+      "fee": "$111.50 inspection fee per Simple Plumbing Item (plumbing fixtures, building sewer, water piping, backflow device, repair or alteration of drainage or vent piping) plus the $27.08 Permit Issuance fee; on-site sewer 6 inches and over is $1.97 per lineal foot and Other Complex Plumbing is $149.07",
+      "feeAsOf": "Effective 07/01/2026 (Master Fee Schedule Amendment #590)",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2026/07/MFS-Planning_593_CPI_CPI-UGM_CPI-Parking-ED-2026.07.01-10w1657-10w1683.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "A stand-alone electrical permit in Fresno is priced as a Simple Electrical Item for ordinary work such as receptacles, switches and lighting outlets, lighting fixtures, residential appliances and a service of 600 volts or less rated 400 amps or under, so a typical residential panel or service change-out falls in the simple band; going over 400 amps moves the job into the far more expensive complex band, and under the 2025 electrical code a dwelling panel replacement now needs a surge protective device.",
+      "fee": "$111.50 inspection fee per Simple Electrical Item, including a service of 600 volts or less and not over 400 amperes, plus the $27.08 Permit Issuance fee; a service over 400 up to 1,000 amperes is $935.79 and Other Complex Electrical is $1,232.70",
+      "feeAsOf": "Effective 07/01/2026 (Master Fee Schedule Amendment #590)",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2026/07/MFS-Planning_593_CPI_CPI-UGM_CPI-Parking-ED-2026.07.01-10w1657-10w1683.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Fresno publishes no permit or fee for simply swapping a smoke alarm, but its building bulletin requires an existing dwelling to be brought up to the current smoke and carbon monoxide alarm layout whenever permitted alterations, repairs or additions exceed $1,000 in value, and inspection staff come inside to verify every required alarm as a condition of final approval; where the work does not open up wall or ceiling finishes and gives no attic, basement or crawl space access, battery-only non-interconnected alarms are accepted.",
+      "sourceUrl": "https://www.fresno.gov/wp-content/uploads/2023/02/2013SmokeandCarbonMonoxideBulletin.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (the Fresno Master Fee Schedule prices Simple Plumbing Items and Residential Appliances but never names a food waste disposer, and no city page states whether replacing one needs a permit)",
+    "Any dollar amount for the Fresno business tax a contractor owes (the city publishes the gross-receipts filing forms and the Schedule S deduction but no rate or flat registration figure on the Business Tax pages reached)",
+    "Fresno Municipal Code text adopting the building codes (the city links its code only to library.municode.com, which is Cloudflare-fronted and blocks automated requests)",
+    "Whether Fresno publishes its own local amendments to the 2025 California codes beyond the state editions (no amendment ordinance or amendment list was found on the Building and Safety pages; the only code documents published there are implementation bulletins and the 2025 symposium briefing)",
+    "A city-published figure for the smoke and carbon monoxide alarm retrofit, and whether the 2014 bulletin has been reissued against the 2025 code (the bulletin remains posted on the current Building Industry Bulletins list but is written against the 2013 California code)"
+  ]
+}

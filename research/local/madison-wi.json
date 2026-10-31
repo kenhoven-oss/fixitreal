@@ -1,0 +1,73 @@
+{
+  "citySlug": "madison-wi",
+  "cityName": "Madison",
+  "stateAbbr": "WI",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Madison Building Inspection Division (Dept. of Planning & Community & Economic Development)",
+    "url": "https://www.cityofmadison.com/dpced/building-inspection"
+  },
+  "codeEdition": {
+    "text": "Madison's Development Services Center directs 1- and 2-family alteration work to the state code, Wis. Admin. Code chs. SPS 320-325 (Wisconsin Uniform Dwelling Code); any building with three or more attached units is handled under the commercial building code instead.",
+    "sourceUrl": "https://www.cityofmadison.com/development-services-center/1-2-family-residential/alterations/general-alterations-including"
+  },
+  "permitPolicy": {
+    "text": "An owner-occupant altering their own single-family home may pull both the building permit and the mechanical permits (plumbing, electrical, HVAC). An owner-occupant building a new house may pull only the building permit, and a non-occupant owner of a 1- or 2-family rental needs licensed professionals for both building and mechanical permits.",
+    "sourceUrl": "https://www.cityofmadison.com/development-services-center/1-2-family-residential"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "Madison's smoke alarm ordinance reaches every residential building, including owner-occupied single-family homes: alarms must be hardwired with battery backup or powered by a sealed, non-removable 10-year battery, and no alarm may stay in service longer than ten years unless the manufacturer allows it.",
+      "sourceUrl": "https://www.cityofmadison.com/fire/your-safety/smoke-alarms/smoke-alarm-ordinance"
+    },
+    {
+      "text": "Placement is stricter than the usual one-per-floor rule: an alarm is required in each bedroom, in each sleeping area, within six feet of every door leading to a bedroom or sleeping area, and on each floor of the building.",
+      "sourceUrl": "https://www.cityofmadison.com/fire/your-safety/smoke-alarms/smoke-alarm-ordinance"
+    },
+    {
+      "text": "Electrical permits are counted by \"openings\" - outlets, switches, fixtures, junction boxes, subpanels and fixed appliances all count - and a service panel replacement is counted and priced separately from openings.",
+      "sourceUrl": "https://www.cityofmadison.com/development-services-center/documents/forms/permit-electrical.pdf"
+    },
+    {
+      "text": "Water heaters and water softeners are named in the scope of the city's plumbing repair/replace permit, and plumbing permit fees are calculated from the number of new or replaced fixtures.",
+      "sourceUrl": "https://www.cityofmadison.com/development-services-center/1-2-family-residential/online-permits"
+    },
+    {
+      "text": "Moving or adding a permanent fixture (toilet, sink, shower, island or counter) pushes the job out of the over-the-counter permit and into plan review, so a relocated water heater or sink is not a same-day permit in Madison.",
+      "sourceUrl": "https://www.cityofmadison.com/development-services-center/1-2-family-residential/online-permits"
+    },
+    {
+      "text": "Connecting to, installing or replacing a water service requires a separate Water Utility application signed by a master plumber (and by the property owner for a new or replacement service), submitted with fees before work starts.",
+      "sourceUrl": "https://www.cityofmadison.com/water/plumbers-contractors"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater needs a Madison plumbing permit; the city's plumbing data sheet is the application for water heater and softener replacements and prices the permit by fixture.",
+      "fee": "$8.00 per fixture - minimum fee $25.00",
+      "sourceUrl": "https://www.cityofmadison.com/development-services-center/documents/forms/permit-plumbing.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing work that adds or moves a fixture needs a plumbing permit from Building Inspection, priced per fixture with a minimum fee; jobs that do not require plan review can be applied for over the counter or online.",
+      "fee": "$8.00 per fixture - minimum fee $25.00",
+      "sourceUrl": "https://www.cityofmadison.com/development-services-center/documents/forms/permit-plumbing.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in an existing building needs an electrical permit, priced by the number of openings added or moved, with a separate charge for replacing a service panel.",
+      "fee": "$25.00 for openings 1-10 + $1.00 per additional opening; $50.00 per service panel",
+      "sourceUrl": "https://www.cityofmadison.com/development-services-center/documents/forms/permit-electrical.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Madison does not treat smoke alarms as a permit item, but its ordinance sets what you may install: a hardwired alarm with battery backup or a sealed 10-year-battery alarm, in each bedroom and sleeping area, within six feet of each bedroom door and on every floor, replaced at ten years.",
+      "sourceUrl": "https://www.cityofmadison.com/fire/your-safety/smoke-alarms/smoke-alarm-ordinance"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee (no Madison page names a disposal)",
+    "city trade registration or bond on top of the Wisconsin DSPS plumbing/electrical licence",
+    "effective or revision date printed on the Building Inspection fee schedule (the page and the permit data sheets carry no date)",
+    "Madison General Ordinances text (library.municode.com returns 403 to automated requests)",
+    "Wisconsin Administrative Code text (docs.legis.wisconsin.gov did not respond)"
+  ]
+}

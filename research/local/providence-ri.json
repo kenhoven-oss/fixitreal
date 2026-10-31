@@ -1,0 +1,79 @@
+{
+  "citySlug": "providence-ri",
+  "cityName": "Providence",
+  "stateAbbr": "RI",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Providence Department of Inspection and Standards",
+    "url": "https://www.providenceri.gov/inspection-standards/"
+  },
+  "codeEdition": {
+    "text": "Providence works from the Rhode Island State Building Codes, which are the 2021 International Code Council model codes plus Rhode Island's own amendments, together with the 2023 National Electrical Code; that set took effect December 1, 2025. The energy code is separate and newer: Rhode Island adopted the 2024 International Energy Conservation Code in full on November 14, 2024.",
+    "sourceUrl": "https://www.providenceri.gov/inspection/rhode-island-building-energy-codes-current-standards/"
+  },
+  "permitPolicy": {
+    "text": "Who may apply depends on the trade and on whether you live there. A building permit goes to a licensed contractor or to the owner of a single-family owner-occupied home; mechanical needs a licensed master mechanical contractor or that same owner; electrical needs an \"A\" license electrician or that owner; plumbing needs a licensed master plumber or that owner. If the property is not owner-occupied, or has two or more units, you have to hire a licensed contractor.",
+    "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2021/03/permit-faq-20200302.pdf"
+  },
+  "registration": {
+    "text": "Providence does not run its own trade exam; it checks the state credential. The application has to carry the contractor's name and license number, and an owner who pulls a permit and later decides to hire help signs an affidavit promising to use a licensed and/or registered contractor and to give that license or registration number to the Building Official's office.",
+    "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2017/04/owner-affidavit.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Rhode Island strips the electrical chapters out of its residential code: Chapters 34 through 43 of the 2021 IRC are deleted, and an inspector in Providence works instead from the Rhode Island State Electrical Code, which is the 2023 National Electrical Code with Rhode Island amendments.",
+      "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-2"
+    },
+    {
+      "text": "Smoke alarms and carbon monoxide alarms are not a building-code item in Rhode Island. Sections R314 and R315 of the 2021 IRC are deleted without substitution, and both are governed by the Rhode Island Fire Safety Code instead.",
+      "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-2"
+    },
+    {
+      "text": "Rhode Island ties the water supply to the certificate of occupancy: a building on a public metered supply must have the water meter installed before a CO is issued, and a private well serving an occupied building must be tested and certified potable before even a temporary CO.",
+      "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-3"
+    },
+    {
+      "text": "A building sewer connecting to a public sewer in Rhode Island has to be a minimum of 36 inches below grade, which is a state amendment to the 2021 IRC rather than a model-code figure.",
+      "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-2"
+    },
+    {
+      "text": "Rhode Island publishes per-municipality design values in the building code itself. For Providence the table gives a 30 psf ground snow load, a 30 psf flat-roof snow load and a frost depth of 4 feet 0 inches.",
+      "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-1"
+    },
+    {
+      "text": "Paying the building permit fee does not cover the trades in Rhode Island: state law says that fee does not relieve the permit holder of other prescribed fees for water taps, sewer connections, electrical and plumbing permits, or inspections.",
+      "sourceUrl": "https://webserver.rilegislature.gov/Statutes/TITLE23/23-27.3/23-27.3-118.1.htm"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Providence prices permits off the declared cost of labor and materials rather than charging a flat amount per appliance, so a water heater job is quoted from the city's published fee table with a minimum fee; the permit goes to a licensed master plumber, or to you if you own and occupy the single-family home.",
+      "fee": "$0 to $10,000 of cost: $23.00 per thousand of cost (minimum $50.00); $10,000.01 to $50,000: $230.00 + $21.00 per thousand exceeding $10,000.00; more than $50,000.01: $1,070.00 + $19.00 per thousand exceeding $50,000.00",
+      "feeAsOf": "Rates set by the State of Rhode Island in July 2018",
+      "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2021/03/permit-faq-20200302.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Not every plumbing call in Providence needs a permit: stopping a leak in a drain, water, soil, waste or vent pipe is exempt, as is clearing a stoppage or repairing a leak in pipes, valves or fixtures and taking out and reinstalling a water closet, so long as the repair does not replace or rearrange valves, pipes or fixtures; replacing a defective concealed trap or pipe with new material does need a permit and inspection.",
+      "fee": "$0 to $10,000 of cost: $23.00 per thousand of cost (minimum $50.00); $10,000.01 to $50,000: $230.00 + $21.00 per thousand exceeding $10,000.00; more than $50,000.01: $1,070.00 + $19.00 per thousand exceeding $50,000.00",
+      "feeAsOf": "Rates set by the State of Rhode Island in July 2018",
+      "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2021/03/permit-faq-20200302.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit in Providence has to be taken out by an \"A\" license electrician, or by you if you own and occupy a single-family home, and the fee comes off the declared labor-and-materials cost; minor repair work such as replacing lamps, or plugging approved portable equipment into existing receptacles, needs no permit. Electrical work is inspected three times: underground, rough and final.",
+      "fee": "$0 to $10,000 of cost: $23.00 per thousand of cost (minimum $50.00); $10,000.01 to $50,000: $230.00 + $21.00 per thousand exceeding $10,000.00; more than $50,000.01: $1,070.00 + $19.00 per thousand exceeding $50,000.00",
+      "feeAsOf": "Rates set by the State of Rhode Island in July 2018",
+      "sourceUrl": "https://www.providenceri.gov/wp-content/uploads/2021/03/permit-faq-20200302.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Smoke and carbon monoxide alarms are not handled through the building permit in Providence: Rhode Island deleted both sections from its residential code and put alarms under the Rhode Island Fire Safety Code instead, so the requirements come from the fire side rather than the building inspector.",
+      "sourceUrl": "https://rules.sos.ri.gov/Regulations/part/510-00-00-2"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee for Providence — no official source states whether a disposal swap falls inside or outside the plumbing no-permit list",
+    "Whether the published cost-based fee table is applied to electrical, plumbing and mechanical permits at exactly the same rates as the building permit; the city's FAQ presents the table under the building permit heading while describing all permit fees as cost-times-multiplier",
+    "The dollar amount of the \"ADA fee\" that Providence's own permit fee calculator adds on top of the permit fee",
+    "Whether Providence requires any city-level trade registration beyond the state license",
+    "Current fee figures newer than the FY19 schedule — the only fee document the city publishes is its FY19 calculator and the FAQ table, both stating rates set by the state in July 2018"
+  ]
+}

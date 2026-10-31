@@ -1,0 +1,73 @@
+{
+  "citySlug": "buffalo-ny",
+  "cityName": "Buffalo",
+  "stateAbbr": "NY",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Buffalo Department of Permit & Inspection Services",
+    "url": "https://www.buffalony.gov/719/Permits"
+  },
+  "codeEdition": {
+    "text": "Buffalo enforces the New York State Uniform Fire Prevention and Building Code. The state repealed the 2020 edition and replaced it with the 2025 Uniform Code books, including the 2025 Residential Code of New York State and the 2025 Plumbing Code of New York State, effective December 31, 2025; permit applications filed on or after that date must meet the 2025 code.",
+    "sourceUrl": "https://dos.ny.gov/notice-adoption"
+  },
+  "permitPolicy": {
+    "text": "Buffalo issues trade permits to its own licensed tradespeople, not to anyone who asks. A plumbing permit goes to a licensed master plumber and is not transferable; an individual resident owner can get one for work in their own home only after proving to the Commissioner that they are personally qualified. Electrical permits work the same way: they are issued only to a master electrician licensed by the city, except that an owner-occupant of a one- or two-family dwelling may be issued one if they prove personal qualification to the Chief Electrical Inspector.",
+    "sourceUrl": "https://www.buffalony.gov/530/Plumbing"
+  },
+  "registration": {
+    "text": "Buffalo runs its own trade licensing on top of anything the state requires. Plumbing work must be done by a master plumber holding the city license, and a master plumber has to verify the license status of any journeyman they employ; apprentices and unlicensed journeymen may work only with a master plumber physically present and taking part. A certificate holder who does not take out a license pays $50 to keep the certificate active.",
+    "sourceUrl": "https://www.buffalony.gov/530/Plumbing"
+  },
+  "codeItems": [
+    {
+      "text": "An owner-occupant of a one- or two-family home in Buffalo who is allowed to pull their own electrical permit still cannot get one for service-entrance work, which stays with a licensed master electrician.",
+      "sourceUrl": "https://ecode360.com/13584339"
+    },
+    {
+      "text": "No Buffalo electrical permit is needed to replace fuses, receptacles, switches or fixtures on an existing system as long as no new work or change of wiring is involved, but all electrical work must conform to the National Electrical Code whether a permit is required or not.",
+      "sourceUrl": "https://ecode360.com/13584339"
+    },
+    {
+      "text": "Buffalo keeps the property owner on the hook for electrical permit matters: hiring an agent, engineer, architect or licensed contractor does not transfer that responsibility away from the owner.",
+      "sourceUrl": "https://ecode360.com/13584339"
+    },
+    {
+      "text": "Plumbing drawings submitted in Buffalo must detail the hot water tank and any recirculation system, and must detail the incoming water service including the meter and the RPZ backflow valve.",
+      "sourceUrl": "https://www.buffalony.gov/530/Plumbing"
+    },
+    {
+      "text": "Buffalo's sewer rules are enforced through the plumbing permit: storm and sanitary piping may not be combined without approval from both the Buffalo Sewer Authority and the Plumbing Department, conductor piping entering a City combination sewer must be trapped, and a sump pump must discharge indirectly into a conductor line.",
+      "sourceUrl": "https://www.buffalony.gov/530/Plumbing"
+    },
+    {
+      "text": "A failed plumbing inspection in Buffalo, or work that is not ready when the inspector arrives at the scheduled time, means taking out a separate permit with its own application fee.",
+      "sourceUrl": "https://www.buffalony.gov/614/Plumbing-Permit-Fees"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Buffalo takes a plumbing permit, and the city counts the water heater as one of the fixtures it charges for; the permit normally goes to a licensed master plumber, and a resident owner can pull it for their own home only after satisfying the Commissioner that they are qualified to do the work.",
+      "fee": "$50 application fee on every application, plus $12 per fixture for a 1- or 2-family residence; $100 plan review fee if plans are required; $75 per reinspection",
+      "sourceUrl": "https://www.buffalony.gov/614/Plumbing-Permit-Fees"
+    },
+    "plumber-service-call": {
+      "requirement": "Buffalo prices a plumbing permit as a flat application fee plus a charge for each fixture, with underground piping billed by the foot, and the permit expires if work has not started within a year of issue or is abandoned for a year after starting.",
+      "fee": "$50 application fee (all applications), plus $12 per fixture residential (1- or 2-family) or $50 for the first fixture and $20 per additional fixture otherwise; underground piping $60 for the first 100 linear feet, then $20 per additional 100 feet for pipe 6 inches or under and $55 per additional 100 feet for pipe over 6 inches; $75 per reinspection",
+      "sourceUrl": "https://www.buffalony.gov/614/Plumbing-Permit-Fees"
+    },
+    "electrician-service-call": {
+      "requirement": "Buffalo charges a flat electrical permit fee for a one- or two-family house on top of a standard application fee, and lists separate add-on amounts for things like a meter or solar panels; a licensed master electrician normally signs the application.",
+      "fee": "$50 application fee on all permits, plus a flat $50 for a 1-family dwelling or $75 for a 2-family dwelling; added items include $50 for the first meter and $25 for each additional meter, $3 per solar panel, and $50 per residential EV charging station",
+      "sourceUrl": "https://www.buffalony.gov/DocumentCenter/View/17362/2023-12-19---Electrical-Permit-Applicationcleaned"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee — Buffalo's plumbing fee schedule charges per fixture but no official source names a disposal swap, so nothing was recorded",
+    "smoke-detector-replacement requirement and fee for Buffalo — no City of Buffalo page or ordinance found stating what a one-for-one alarm replacement triggers",
+    "Any printed effective or revision date on Buffalo's plumbing permit fee page and electrical permit application; neither document shows one, so no feeAsOf is given for those figures",
+    "Whether Buffalo requires a contractor bond or insurance for a master plumber or master electrician license — the city's plumbing page does not state one",
+    "Buffalo's own amendments, if any, to the New York State Uniform Code (none published on a city page that was reachable)",
+    "Buffalo's heating/mechanical permit fee amounts (the heating permit application was not read)"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "citySlug": "st-louis-mo",
+  "cityName": "St. Louis",
+  "stateAbbr": "MO",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of St. Louis Building Division, Department of Public Safety",
+    "url": "https://www.stlouis-mo.gov/government/departments/public-safety/building/"
+  },
+  "codeEdition": {
+    "text": "St. Louis publishes the ordinance behind each code it enforces: the 2018 International Building, Existing Building, Residential, Energy Conservation, Property Maintenance and Fire Codes, all adopted 08-01-18 (Ordinances 70794 through 70799); the 2018 International Mechanical Code (Ordinance 70800) and 2018 International Fuel Gas Code (Ordinance 70801), also 08-01-18; the 2017 National Electrical Code (Ordinance 70802); and, separately and more recently, the 2021 Uniform Plumbing Code adopted by Ordinance 71644 effective 02/20/2023. The plumbing ordinance adopts the 2021 UPC in full except where the city's own amendments change it, and those amendments run to several hundred pages.",
+    "sourceUrl": "https://www.stlouis-mo.gov/government/departments/public-safety/building/building-codes.cfm"
+  },
+  "permitPolicy": {
+    "text": "For plumbing work the city's code says the owner must engage a licensed plumbing and/or drainlaying contractor, who applies for the permit, and all the work has to be done by whoever the permit is issued to. A homeowner can be certified instead, but on tight terms: they must live in the one-family dwelling and prove ownership, the work has to be for their own and their family's use (repairs on a house held for rent or sale are a violation), the exam may be taken only once with a one-year wait after a failure, the certification lasts two years and only at the address on the application, and the homeowner may hold only one open permit at a time covering up to four plumbing fixtures, not extendable past six months, and may do no work outside the building. Mechanical permits go only to city-licensed mechanical contractors.",
+    "sourceUrl": "https://www.stlouis-mo.gov/government/city-laws/upload/legislative/Ordinances/BOAPdf/71644%20Combined.pdf"
+  },
+  "registration": {
+    "text": "St. Louis licenses the trades itself through its Building Division Boards of Examiners, and the plumbing code publishes the schedule: a $50 application fee for all classes, then $300 for three years for a Master Plumber or a Master Drainlayer ($600 for a combined Master Plumber/Drainlayer), $50 for three years for a Journeyman, $25 for five years to register an apprentice, and $25 to replace a lost licence. The homeowner's plumbing exam costs $25 and the certification it buys lasts two years; any other test the city administers is $50. A licensed plumbing or drainlaying contractor must also file an approved surety bond of $25,000 and carry insurance. Electrical and mechanical contractors are licensed separately by the same Building Division.",
+    "sourceUrl": "https://www.stlouis-mo.gov/government/city-laws/upload/legislative/Ordinances/BOAPdf/71644%20Combined.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "St. Louis makes a thermal expansion tank part of a water heater replacement, not an option. Any system with a new or replacement water heater that has a pressure reducing valve or is a closed system needs an approved, listed, properly sized expansion tank within ten feet of the heater, on the cold water supply, between the heater's shut-off valve and the heater, and at least 18 inches from the cold-water inlet fitting. The tank may not be supported by the water heater, no shutoff may be put on the branch to the tank, and it must be installed so the heater can still be removed or replaced.",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/city-laws/upload/legislative/Ordinances/BOAPdf/71644%20Combined.pdf"
+    },
+    {
+      "text": "The city also wants the pressures recorded on the tank: the measured static building pressure and the pressure the expansion tank was set to must be written in ink on a permanent durable label attached to the tank where it can be seen. An inspector looks for that label. A heater of 30 gallons or less set under a counter or in a confined space in a multi-family unit may use properly sized mechanical water hammer arrestors instead, with the inspector's approval.",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/city-laws/upload/legislative/Ordinances/BOAPdf/71644%20Combined.pdf"
+    },
+    {
+      "text": "The St. Louis drain pan rule is written out in detail. A watertight corrosion-resistant safe pan is required where a heater sits in an attic or a ceiling, floor or furred assembly, or anywhere above ground or basement level with no floor drain available. The pan must be at least 2 inches deep and 3 inches larger than the heater in both width and length, metal pans at least 0.0276 inch galvanized sheet, non-metallic pans at least 0.0625 inch and only with electric heaters, with a 1 inch tapping increasing to a 1-1/4 inch drain that discharges through an air gap to a trapped and vented receptor — and the drain has to end at a non-concealed point so a leak is noticed. An attic heater also needs 24 inches of continuous solid flooring from the opening and, where the opening is more than 11 feet above the floor, a permanently fastened stairway or ladder. Unlike many jurisdictions, St. Louis expressly permits a relief valve to discharge into the water heater pan.",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/city-laws/upload/legislative/Ordinances/BOAPdf/71644%20Combined.pdf"
+    },
+    {
+      "text": "Plastic pipe is kept away from the heater: PEX, PEX-AL-PEX, PE-AL-PE, PE-RT and CPVC tubing may not be installed within the first 18 inches of piping connected to a water heater, and copper, copper alloy or stainless steel flexible connectors may not exceed 24 inches. A fullway valve is required on the cold water supply to each heater at or near it, and water heater shut-off valves must be in view of and within ten feet of the heater, within easy reach from the ground, and readily accessible.",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/city-laws/upload/legislative/Ordinances/BOAPdf/71644%20Combined.pdf"
+    },
+    {
+      "text": "On the electrical side the city re-inspects dormant services: where electrical service to a building has not been in use for six months or more, a re-inspection is required and it is unlawful to supply current until it has been made. If the owner does not apply for it, the Electrical Inspection Supervisor orders the power company to disconnect the service, and it stays off until the Supervisor says otherwise. A re-inspection for faulty or incomplete work costs $50 and that fee doubles for each occurrence.",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/departments/public-safety/building/permits/electrical-permit-fees.cfm"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in St. Louis needs a plumbing permit: the city's per-fixture charge names the water heater explicitly, and its \"minor repair\" exemption expressly does not cover setting or replacing fixtures. Expect a rough and a finish inspection, each separately priced, and expect the inspector to check the thermal expansion tank, its pressure label, the drain pan and the first 18 inches of pipe at the heater.",
+      "fee": "$30 application fee for all plumbing permits, plus $10 for fixtures, each (floor drain, sump, water heater, reduced pressure backflow device or double gate/double check valve, roof drain or trapped outlet), plus $25 rough inspection and $25 finish inspection, each; re-inspection $30",
+      "feeAsOf": "City Ordinance 71644, effective 02/20/2023",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/departments/public-safety/building/permits/plumbing-permit-fees.cfm"
+    },
+    "plumber-service-call": {
+      "requirement": "St. Louis plumbing permits are issued to plumbing contractors licensed by the City of St. Louis, and the fee is built up from a flat application charge plus a charge for each fixture and each inspection. Clearing a stoppage or fixing a leak in a pipe, valve or fixture needs no permit, as long as valves, pipes or fixtures are not replaced or rearranged — but the city is explicit that minor repairs stop short of setting or replacing a fixture or disturbing a soil, supply, waste or vent connection. Starting the work before the permit is issued adds a surcharge that rises with the permit fee.",
+      "fee": "$30 application fee; $10 per fixture; $25 tap, water connection or extension, each; $25 sewer extension, connection or repair, each; $25 rough inspection and $25 finish inspection, each; $30 re-inspection; $45 special inspection; surcharge for commencing work before receiving a permit from $35 up to $1005 depending on the permit fee",
+      "feeAsOf": "City Ordinance 71644, effective 02/20/2023",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/departments/public-safety/building/permits/plumbing-permit-fees.cfm"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical permits in St. Louis go to electrical contractors licensed by the city, and the residential fees are flat amounts by type of work rather than a valuation calculation. A homeowner can pull one instead if they pass a short test given by the Building Division's Electrical Section, live in the single-family home, and are doing a room addition, repair or modification to an existing system; service changes, rehab and new construction must go to a licensed contractor.",
+      "fee": "$25 application fee for all electrical permits, plus residential inspection fees of $60 to Repair or Modify, $60 Service Only, $100 Repair or Modify with Service, and $120 for Residential New Construction including rehab of 50% or more; re-inspection for faulty or incomplete work $50, doubled for each occurrence; re-inspection of a service disconnected six months or more $30",
+      "feeAsOf": "City Ordinance 70802, adopted 08-01-18",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/departments/public-safety/building/permits/electrical-permit-fees.cfm"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A disposal swap is permit work in St. Louis: a plumbing permit is required for plumbing work other than minor repairs, and the city's definition of a minor repair excludes both the setting or replacing of fixtures and any work that disturbs a soil, supply, waste or vent connection. The city's plumbing code also sets out exactly how the sink side has to be piped — on a residential double-bowl sink with a disposal the fixture trap must be on the same side of the sink as the disposal, and a dishwasher drain must be looped up and secured to the highest point under the counter and tied in with a wye between the disposal discharge and the trap inlet, or at the head of the disposal.",
+      "fee": "$30 application fee for all plumbing permits",
+      "feeAsOf": "City Ordinance 71644, effective 02/20/2023",
+      "sourceUrl": "https://www.stlouis-mo.gov/government/departments/public-safety/building/permits/plumbing-permit-fees.cfm"
+    }
+  },
+  "notVerified": [
+    "Whether replacing a smoke alarm needs an electrical permit in St. Louis, and which fee line applies — the exemptions sit in the city's electrical ordinance (Ordinance 70802), which was not read, and the Building Division publishes no smoke alarm guidance page",
+    "St. Louis amendments to the 2017 National Electrical Code (AFCI/GFCI scope, grounding and bonding, aluminum branch wiring) — these are in Ordinance 70802, not read for this entry",
+    "Whether a gas water heater also needs a mechanical or fuel gas permit alongside the plumbing permit in St. Louis, and the fee for it — the residential mechanical fee lines name furnaces and condensing units but not water heaters",
+    "The current City of St. Louis electrical and mechanical contractor licence fees and bond amounts (the published Table 111 figures cited here are the plumbing, drainlaying and sprinkler-fitter classes from the plumbing code)",
+    "Whether the $25 rough and $25 finish plumbing inspection fees are charged on every permit or only when those inspections are called for"
+  ]
+}

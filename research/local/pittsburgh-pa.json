@@ -1,0 +1,79 @@
+{
+  "citySlug": "pittsburgh-pa",
+  "cityName": "Pittsburgh",
+  "stateAbbr": "PA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Pittsburgh Department of Permits, Licenses and Inspections (PLI)",
+    "url": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections"
+  },
+  "codeEdition": {
+    "text": "Construction in Pittsburgh runs under the Pennsylvania Uniform Construction Code, adopted by the Pennsylvania Construction Code Act (Act 45 of 1999). PLI's code page states the 2018 ICC base codes and 2018 accessibility codes were the adopted set, and that from January 1, 2026 the 2021 ICC base codes apply with the 2018 accessibility codes. Pittsburgh's own adoption and amendments sit in Section 1002 of the Pittsburgh City Code and stay in force as the state updates the UCC. Plumbing is the exception: PLI does not enforce the UCC plumbing provisions at all, and plumbing in Pittsburgh is regulated under the Allegheny County Health Department's own Article XV Plumbing Code.",
+    "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/References-Resources-and-Forms"
+  },
+  "permitPolicy": {
+    "text": "Pittsburgh has no homeowner permit for trade work. The city's licensing rules define an electrical contractor as any person performing work that requires an electrical permit, and that person must hold a City of Pittsburgh electrical trade licence; an HVAC/Mechanical trade licence is likewise required to install, erect, enlarge, repair, alter, remove, convert or replace any mechanical system in the city. On the plumbing side Allegheny County requires a plan approved by the Health Department before work starts, and a landlord may make plumbing repairs only in their own residence — rental units must go to a Master Plumber.",
+    "sourceUrl": "https://www.pittsburghpa.gov/files/assets/city/v/1/pli/documents/17099_final_pli_licensing_rules_and_regulations_may_2022.pdf"
+  },
+  "registration": {
+    "text": "Pittsburgh issues its own trade licences on top of any state credential, each costing $90 initially and at annual renewal, with a $50 late fee: Electrical, HVAC/Mechanical, General Contractor, Fire Suppression, Sign Contractor and Stationary Engineer. A trade licence expires 365 days from issue and renewal requires eight hours of continuing education in the previous twelve months; a new general contractor licence also requires the firm's EPA Lead Renovation, Repair and Painting certification. A new electrical trade licence requires a passed Master Electrician exam (the city's own proctored exam or the ICC Standard Master Electrician exam) plus six years of combined experience and education. Plumbers are licensed by the county instead: Allegheny County charges $375 for a Master plumber licence and $125 for a Journeyman licence, with exam fees of $265 and $133.",
+    "sourceUrl": "https://www.pittsburghpa.gov/files/assets/city/v/1/pli/documents/fees/2026-fee-schedule-final-2.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "The split that catches people out in Pittsburgh: all plumbing not tied to a sprinkler system is regulated by the Allegheny County Health Department, not the city. A water heater or fixture job therefore needs a county plumbing plan approved before work begins and a county final inspection, while the gas and electrical sides of the same job are permitted and inspected by city PLI.",
+      "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Work-Not-Requiring-a-Permit"
+    },
+    {
+      "text": "Pittsburgh's list of electrical work that needs no permit is unusually short: replacing lamps, plugging approved portable equipment into existing receptacles, reinstalling attachment plug receptacles but not the outlets themselves, replacing a branch-circuit overcurrent device of the required capacity in the same location, rearranging communications wiring in a one- or two-family house, and equipment under 25 volts that cannot supply more than 50 watts. Anything beyond that list is permit work and, by the city's own definition, work only a licensed electrical contractor may do.",
+      "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Work-Not-Requiring-a-Permit"
+    },
+    {
+      "text": "The city treats \"ordinary repairs\" narrowly. Adding, altering, replacing or relocating any water supply, sewer, drain, drain leader, gas, soil, waste or vent piping, electric wiring or mechanical work is expressly not an ordinary repair and needs a permit, however small the job looks.",
+      "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Work-Not-Requiring-a-Permit"
+    },
+    {
+      "text": "Pittsburgh prices and reviews electrical work by declared scope, and some scopes pull in extra review: a residential service rated over 400 amperes requires stamped drawings, while reconnecting an existing approved service only qualifies as a \"Service Reconnect In-Kind\" if the location, phase, amperage and service equipment are all unchanged. A roof-mounted solar array permit is limited to buildings that already hold a valid certificate of occupancy.",
+      "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Electrical-Permit"
+    },
+    {
+      "text": "A residential mechanical permit in Pittsburgh is taken out against named work scopes, and modifying fuel gas piping without installing equipment is its own \"minor alteration\" scope. The city also has a defined emergency scope for replacing interior or exterior heating or ventilation equipment that PLI has condemned.",
+      "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Permitting/Mechanical-Permit"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "A water heater swap in Pittsburgh goes through the Allegheny County Health Department, not the city: the county requires a plumbing permit for any plumbing installed or altered and names water heater replacement cards specifically, the plan has to be approved before work starts, and a final inspection is part of every plumbing permit. If the job also reworks the gas piping or venting, that side needs a city PLI mechanical (fuel gas) permit, which a licensed HVAC/Mechanical trade licence holder must pull.",
+      "fee": "$27 Fixture Replacement Cards (hot water heaters & fixtures)",
+      "feeAsOf": "Effective Jan. 1, 2023",
+      "sourceUrl": "https://www.alleghenycounty.us/files/assets/county/v/1/government/health/documents/plumbing_fee_schedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Plumbing permits in Pittsburgh are issued by the Allegheny County Health Department, which charges by plan level and then per fixture; a plan showing every fixture to be installed or altered must be approved before the work starts, and a final inspection is required on every permit. A landlord may make plumbing repairs only in the home they live in — work in a rental unit must be done by a Master Plumber.",
+      "fee": "$80 Level 1 Plans (0-5 fixtures); $22 Fixture Fees, including fixtures, water heaters, building sewer and water service itemized in plans; $75 Re-inspection Fee",
+      "feeAsOf": "Effective Jan. 1, 2023",
+      "sourceUrl": "https://www.alleghenycounty.us/files/assets/county/v/1/government/health/documents/plumbing_fee_schedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "An electrical permit is required in Pittsburgh to install a new electrical system or to renovate, repair, extend or modify an existing one, and only a holder of a City of Pittsburgh electrical trade licence may do permit work — there is no homeowner option here. The permit is priced off the declared construction value with a floor, and the city adds three small per-permit charges on top.",
+      "fee": "$6.00 per $1,000 of Construction Value (Minimum: $130 – Maximum: $8,000) Base Permit Fee (Residential), plus $4.50 State Education & Training Fund fee and $5.00 Digital Record Retention Fee per permit and a technology fee of $2.00 to $25.00 depending on the base fee range",
+      "feeAsOf": "Effective 1/1/2026",
+      "sourceUrl": "https://www.pittsburghpa.gov/files/assets/city/v/1/pli/documents/fees/2026-fee-schedule-final-2.pdf"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Pittsburgh does not permit disposals itself; the Allegheny County Health Department requires a plumbing permit for any plumbing that is installed or altered, with the plan approved before work starts and a final inspection at the end. The county names water heater replacement cards and dishwasher transmittal sheets specifically but publishes no separate disposal line, and on the electrical side the city's short exemption list does not cover hard-wiring a new appliance.",
+      "sourceUrl": "https://www.alleghenycounty.us/Services/Health-Department/Plumbing-Program/Project-Plans-and-Permitting"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Pittsburgh publishes no smoke-alarm permit of its own, but its list of electrical work needing no permit is limited to lamp replacement, portable equipment plugged into existing receptacles, reinstalled plug receptacles, and like-for-like branch-circuit overcurrent devices — swapping a hardwired alarm is not on it. The city also offers a minor-alteration electrical permit scope for in-kind replacement of devices and fixtures at the same location and ampere rating, and any work that needs an electrical permit must be done by a city-licensed electrical contractor.",
+      "sourceUrl": "https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/OneStopPGH-Permit-Center/Work-Not-Requiring-a-Permit"
+    }
+  },
+  "notVerified": [
+    "Allegheny County's water heater installation requirements (TPR discharge termination, thermal expansion tank, drain pan, shutoff valve placement) — the county's Article XV Plumbing Code, 2022 edition, is published only through codes.iccsafe.org and shop.iccsafe.org, which block automated requests, and the free copy on up.codes is the superseded 2009 edition",
+    "Whether a garbage disposal replacement needs its own Allegheny County plumbing permit or is covered by a fixture replacement card, and which fee line applies — the county names water heaters and dishwashers but not disposals",
+    "Whether replacing a hardwired smoke alarm needs a Pittsburgh electrical permit in practice; the city publishes an exemption list that does not include it and a minor-alteration scope that may cover it, but no explicit statement either way",
+    "Pittsburgh's own amendments in Section 1002 of the City Code — the city code is hosted on American Legal Publishing, which blocked automated requests",
+    "Whether the Pittsburgh residential base permit fee covers a set number of inspections, and the fee for a re-inspection of a failed residential electrical or mechanical inspection"
+  ]
+}
