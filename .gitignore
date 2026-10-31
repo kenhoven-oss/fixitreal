@@ -48,3 +48,6 @@ next-env.d.ts
 # Office lock files
 ~$*
 
+
+# Local permit/code research inputs are kept; agent scratch is not.
+research/local/_*.json

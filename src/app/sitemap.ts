@@ -276,11 +276,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // per (cost guide × metro), targeting
   // "[trade] cost in [city]" long-tail queries. Higher purchase intent than
   // the state-level variant; less crowded with aggregator listings.
-  const { getAllCityCostParams } = await import("@/content/city-cost-data");
-  const metroCostEntries: MetadataRoute.Sitemap = (LOCAL_COST_PAGES_INDEXABLE ? getAllCityCostParams() : []).map(
+  //
+  // Submitted per page, not per family: only a metro × guide combination
+  // carrying verified local permit/code data is listed. The predicate reads
+  // the same data the page renders, so the sitemap cannot advertise a URL
+  // whose page is noindexed, and cannot list a thin page by accident.
+  const { getIndexableCityCostParams, METRO_COST_UPDATED } = await import(
+    "@/content/city-cost-data"
+  );
+  const metroCostEntries: MetadataRoute.Sitemap = getIndexableCityCostParams().map(
     ({ slug, city }) => ({
       url: fullUrl(`/costs/${slug}/metro/${city}`),
-      lastModified: d(STATE_COST_UPDATED),
+      lastModified: d(METRO_COST_UPDATED),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })

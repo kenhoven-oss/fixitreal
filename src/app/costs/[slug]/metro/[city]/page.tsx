@@ -7,6 +7,7 @@ import { ContractorRedFlagsBlock } from "@/components/content/ContractorRedFlags
 import { DiyAlternative } from "@/components/content/DiyAlternative";
 import { LocalPriceMethodology } from "@/components/content/LocalPriceMethodology";
 import { LocalLicensing } from "@/components/content/LocalLicensing";
+import { LocalPermits } from "@/components/content/LocalPermits";
 import { getStateLicensing, tradeForGuide } from "@/content/state-licensing";
 import { notesForTrade } from "@/lib/local-notes";
 import { buildMetadata } from "@/lib/metadata";
@@ -17,13 +18,14 @@ import {
   STATE_COST_GUIDES,
   getGuideBySlug,
   getStateByslug,
-  LOCAL_COST_PAGES_INDEXABLE,
 } from "@/content/state-cost-data";
 import {
   CITIES,
   METRO_COST_UPDATED,
   getAllCityCostParams,
   getCityBySlug,
+  getLocalDetail,
+  isCityGuideIndexable,
 } from "@/content/city-cost-data";
 import { kenHoven } from "@/content/authors/ken-hoven";
 
@@ -68,7 +70,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     updatedAt: METRO_COST_UPDATED,
     authorName: kenHoven.name,
     section: "Metro Cost Guide",
-    noIndexFollow: !LOCAL_COST_PAGES_INDEXABLE,
+    noIndexFollow: !isCityGuideIndexable(city, slug),
   });
 }
 
@@ -206,6 +208,18 @@ export default async function MetroCostPage({ params }: { params: Params }) {
           const lic = getStateLicensing(stateSlug);
           return lic ? (
             <LocalLicensing stateName={cityData.stateName} licensing={lic} trade={tradeForGuide(slug)} />
+          ) : null;
+        })()}
+
+        {(() => {
+          const detail = getLocalDetail(city);
+          return detail ? (
+            <LocalPermits
+              placeName={cityData.name}
+              detail={detail}
+              guideSlug={slug}
+              jobLabel={guide.shortName}
+            />
           ) : null;
         })()}
 

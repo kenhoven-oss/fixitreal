@@ -314,10 +314,17 @@ export const STATE_COST_UPDATED = "2026-10-31";
  * the sitemap can never advertise a noindexed URL.
  *
  * Currently FALSE (2026-09-21, Ken's decision after the programmatic-page
- * inventory in docs/programmatic-page-inventory.md): every state and metro
- * page renders robots {index:false, follow:true} and is excluded from the
- * sitemap. The pages stay live and linked. Flip back per the inventory's
- * "enrich a small set" plan once a place has real local data.
+ * inventory in docs/programmatic-page-inventory.md): every state page
+ * renders robots {index:false, follow:true} and is excluded from the
+ * sitemap. The pages stay live and linked.
+ *
+ * SCOPE NOTE (2026-10-31): this switch now governs the STATE layer only.
+ * The metro layer moved to per-page indexability keyed on verified local
+ * data -- see isCityGuideIndexable in src/content/city-cost-data.ts. That
+ * is the inventory's "enrich a small set" plan: a metro page goes back into
+ * the sitemap when, and only when, it carries a published permit fee or
+ * code requirement for that specific job. The state layer has no such data
+ * yet, so it stays off entirely rather than being flipped wholesale.
  */
 export const LOCAL_COST_PAGES_INDEXABLE = false;
 

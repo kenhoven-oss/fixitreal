@@ -20,6 +20,7 @@
  */
 
 import type { StateCostTier } from "@/content/state-cost-data";
+import { getLocalDetail, isCityGuideIndexable } from "@/lib/local-indexability";
 import { STATE_COST_GUIDES, TIER_MULTIPLIERS, adjustRange } from "@/content/state-cost-data";
 
 /**
@@ -990,3 +991,17 @@ export function getCityBySlug(slug: string): CityCostData | undefined {
 
 /** Re-export the adjustRange helper so the route file only needs one import. */
 export { adjustRange, TIER_MULTIPLIERS };
+
+/**
+ * Re-exported so the route files need one import for the metro data layer.
+ * Defined in src/lib/local-indexability.ts, which is kept alias-free so the
+ * Node test runner can cover the indexing rule directly.
+ */
+export { getLocalDetail, isCityGuideIndexable };
+
+/** Metros carrying verified local data for a given guide, for the sitemap. */
+export function getIndexableCityCostParams(): Array<{ slug: string; city: string }> {
+  return getAllCityCostParams().filter(({ slug, city }) =>
+    isCityGuideIndexable(city, slug)
+  );
+}
