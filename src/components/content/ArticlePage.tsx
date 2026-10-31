@@ -425,6 +425,7 @@ export async function ArticlePage({ article }: ArticlePageProps) {
             authorJobTitle: kenHoven.role,
             authorDescription: kenHoven.shortBio,
             articleSection: pillarLabel[pillar],
+            region: frontmatter.region,
           }),
           ...(frontmatter.howTo
             ? [

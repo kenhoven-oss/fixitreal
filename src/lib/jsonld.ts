@@ -113,6 +113,8 @@ type ArticleInput = {
   reviewerName?: string;
   image?: string;
   articleSection?: string;
+  /** Mirrors the article frontmatter's `region`. Defaults to "US". */
+  region?: "US" | "CA";
 };
 
 export function articleSchema(a: ArticleInput): JsonLd {
@@ -128,7 +130,7 @@ export function articleSchema(a: ArticleInput): JsonLd {
     description: a.description,
     mainEntityOfPage: absoluteUrl(a.url),
     url: absoluteUrl(a.url),
-    inLanguage: "en-US",
+    inLanguage: a.region === "CA" ? "en-CA" : "en-US",
     isAccessibleForFree: true,
     datePublished: a.datePublished,
     dateModified: a.dateModified ?? a.datePublished,

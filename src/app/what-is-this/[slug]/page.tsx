@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     type: "article",
     publishedAt: article.frontmatter.publishedAt,
     updatedAt: article.frontmatter.updatedAt,
+    region: article.frontmatter.region,
     authorName: kenHoven.name,
     section: "What Is This?",
     image: `${article.path}/opengraph-image`,

@@ -31,6 +31,14 @@ type BuildMetadataInput = {
   authorName?: string;
   section?: string;
   image?: string;
+  /**
+   * Target market, mirrors the article frontmatter's `region`. "US"
+   * (default) declares en-us + x-default, matching the site's primary
+   * audience. "CA" declares en-ca + x-default instead — dropping the
+   * en-us claim so hreflang doesn't tell Google this is a US page, and
+   * setting og:locale to en_CA. Only affects pages that set it.
+   */
+  region?: "US" | "CA";
 };
 
 export function buildMetadata({
@@ -46,6 +54,7 @@ export function buildMetadata({
   authorName,
   section,
   image,
+  region = "US",
 }: BuildMetadataInput = {}): Metadata {
   // SEO: drop the " | FixItReal" suffix when the per-page title is long enough
   // to be self-identifying. Google renders the site name from og:site_name + the
@@ -71,14 +80,15 @@ export function buildMetadata({
     description: desc,
     alternates: {
       canonical: canonicalUrl,
-      // Site is US-focused (cost ranges in USD, US code references, US-trade
-      // rates). Declaring en-us + x-default tells Search the regional variant
-      // precisely and keeps us future-proof if any international variants
-      // are ever added.
-      languages: {
-        "en-us": canonicalUrl,
-        "x-default": canonicalUrl,
-      },
+      // Site is primarily US-focused (cost ranges in USD, US code
+      // references, US-trade rates), so en-us + x-default is the default.
+      // A page with region: "CA" declares en-ca instead — it must not also
+      // claim en-us, or hreflang tells Google the Canadian-pricing page is
+      // a US variant, which is exactly backwards.
+      languages:
+        region === "CA"
+          ? { "en-ca": canonicalUrl, "x-default": canonicalUrl }
+          : { "en-us": canonicalUrl, "x-default": canonicalUrl },
       types: {
         "application/rss+xml": [
           { url: new URL("/feed.xml", env.siteUrl).toString(), title: `${site.name} — RSS feed` },
@@ -112,7 +122,7 @@ export function buildMetadata({
       siteName: site.name,
       title: fullTitle,
       description: desc,
-      locale: site.locale,
+      locale: region === "CA" ? "en_CA" : site.locale,
       ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630 }] } : {}),
       ...(type === "article"
         ? {

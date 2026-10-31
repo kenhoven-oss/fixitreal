@@ -22,6 +22,17 @@ export const articleFrontmatterSchema = z.object({
 
   ymyl: z.boolean().default(false),
 
+  /**
+   * Target market for this article's pricing, code references, and
+   * regulatory claims. Defaults to "US" (the site's primary audience).
+   * Set "CA" for Canada-specific content (CAD pricing, provincial code,
+   * HST/GST). Drives hreflang (alternates.languages), og:locale, and the
+   * Article JSON-LD's inLanguage — without this, Canada-targeted content
+   * inherits the site-wide en-US signal and Google has no reason to treat
+   * it as anything but a US page competing (badly) against US queries.
+   */
+  region: z.enum(["US", "CA"]).default("US"),
+
   publishedAt: z.string().date(),
   updatedAt: z.string().date().optional(),
   readingMinutes: z.number().int().positive().max(60),
