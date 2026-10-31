@@ -1,6 +1,14 @@
 import type { ReactNode } from "react";
+import { COST_METHODOLOGY } from "@/content/cost-methodology";
 
 type CostMethodologyProps = {
+  /**
+   * Registry key in src/content/cost-methodology.ts — normally the article
+   * slug. This is how MDX uses the component, because next-mdx-remote drops
+   * expression attributes (see the registry header). Passing the arrays
+   * directly still works for non-MDX callers.
+   */
+  id?: string;
   /** Optional override; defaults to the article's `updatedAt`/`publishedAt`. */
   reviewedOn?: string;
   /** Bullet list: materials price drivers, e.g. "Toilet retail: $90–$450". */
@@ -27,8 +35,14 @@ type CostMethodologyProps = {
  *
  * Usage from MDX:
  *
+ * Usage from MDX (string attribute — expression props do NOT survive):
+ *
+ *   <CostMethodology id="toilet-replacement" />
+ *
+ * Direct usage from a .tsx caller:
+ *
  *   <CostMethodology
- *     reviewedOn="May 2026"
+ *     reviewedOn="October 2026"
  *     materialFactors={[
  *       "Standard 1.28 GPF toilet (retail): $90–$280.",
  *       "Premium dual-flush / smart toilet: $300–$1,200.",
@@ -55,6 +69,7 @@ type CostMethodologyProps = {
  * Every field is optional. Omit a section and it won't render.
  */
 export function CostMethodology({
+  id,
   reviewedOn,
   materialFactors,
   laborFactors,
@@ -62,12 +77,26 @@ export function CostMethodology({
   regionalFactors,
   complexityFactors,
 }: CostMethodologyProps) {
+  const entry = id ? COST_METHODOLOGY[id] : undefined;
+  if (id && !entry) {
+    throw new Error(
+      `<CostMethodology id="${id}"> has no entry in src/content/cost-methodology.ts`
+    );
+  }
+
+  const resolvedReviewedOn = reviewedOn ?? entry?.reviewedOn;
+  const material = materialFactors ?? entry?.materialFactors;
+  const labor = laborFactors ?? entry?.laborFactors;
+  const permit = permitFactors ?? entry?.permitFactors;
+  const regional = regionalFactors ?? entry?.regionalFactors;
+  const complexity = complexityFactors ?? entry?.complexityFactors;
+
   const sections: Array<{ title: string; items: ReactNode[] }> = [];
-  if (materialFactors?.length) sections.push({ title: "Materials", items: materialFactors });
-  if (laborFactors?.length) sections.push({ title: "Labor", items: laborFactors });
-  if (permitFactors?.length) sections.push({ title: "Permits & code", items: permitFactors });
-  if (regionalFactors?.length) sections.push({ title: "Regional variation", items: regionalFactors });
-  if (complexityFactors?.length) sections.push({ title: "Complexity adjustments", items: complexityFactors });
+  if (material?.length) sections.push({ title: "Materials", items: material });
+  if (labor?.length) sections.push({ title: "Labor", items: labor });
+  if (permit?.length) sections.push({ title: "Permits & code", items: permit });
+  if (regional?.length) sections.push({ title: "Regional variation", items: regional });
+  if (complexity?.length) sections.push({ title: "Complexity adjustments", items: complexity });
 
   if (sections.length === 0) return null;
 
@@ -98,10 +127,10 @@ export function CostMethodology({
           ))}
         </div>
         <p className="mt-5 text-xs text-ink-600 leading-relaxed">
-          {reviewedOn && (
+          {resolvedReviewedOn && (
             <>
               <strong className="text-navy-900">Last reviewed:</strong>{" "}
-              {reviewedOn}.{" "}
+              {resolvedReviewedOn}.{" "}
             </>
           )}
           Quotes vary by location, scope, demand season, and individual
