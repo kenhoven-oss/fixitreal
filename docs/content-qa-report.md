@@ -38,13 +38,8 @@ Generated 2026-10-31 against 933 prerendered pages.
 
 ## WARN · Same href listed twice in a related-links list — 0
 
-## WARN · Identical paragraph (60+ chars) repeated on one page — 2
-- "Affiliate links. As an Amazon Associate I earn from qualifying purchases, at no …" — 1 page(s), e.g. `/diy-or-hire/garbage-disposal`
-- "We use double opt-in — you'll get one confirmation email. After that, expect a w…" — 1 page(s), e.g. `/home-repair-cost-calendar`
+## WARN · Identical paragraph (60+ chars) repeated on one page — 0
 
 ## WARN · <img> without alt attribute — 0
 
-## WARN · <title> longer than 65 characters — 3
-- 66 chars: "How often to change HVAC air filter (real schedule by filter type)" — 1 page(s), e.g. `/advice/how-often-to-change-air-filter`
-- 67 chars: "Smoke detector going off for no reason: the 8 real causes, in order" — 1 page(s), e.g. `/advice/smoke-detector-going-off-for-no-reason`
-- 68 chars: "How to unclog a drain: the best way for each clog (and when to call)" — 1 page(s), e.g. `/diy-or-hire/unclog-drain`
+## WARN · <title> longer than 65 characters — 0

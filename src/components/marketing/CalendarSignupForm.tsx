@@ -170,7 +170,9 @@ export function CalendarSignupForm({ variant = "hero" }: CalendarSignupFormProps
         </p>
       )}
 
-      <p className="mt-3 text-xs text-ink-500 leading-relaxed">
+      {/* data-fine-print: a page may carry a hero and an inline form, and each
+          states the opt-in terms under its own submit button. */}
+      <p data-fine-print className="mt-3 text-xs text-ink-500 leading-relaxed">
         We use double opt-in — you&apos;ll get one confirmation email. After
         that, expect a weekly newsletter with the month&apos;s maintenance
         tasks and one contractor-vetting tip. Unsubscribe anytime with one

@@ -108,7 +108,11 @@ export function ProductPicks({
           ))}
         </p>
       )}
-      <p className="mt-3 text-[11px] leading-relaxed text-ink-500">
+      {/* data-fine-print: repeats once per ProductPicks block on purpose. The
+          FTC wants the disclosure beside the links it covers, so an article
+          with two blocks carries it twice. Marked so content-qa's
+          duplicate-paragraph check does not push toward deleting one. */}
+      <p data-fine-print className="mt-3 text-[11px] leading-relaxed text-ink-500">
         Affiliate links. As an Amazon Associate I earn from qualifying
         purchases, at no extra cost to you. Picks are editorial — see{" "}
         <Link

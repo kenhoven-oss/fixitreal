@@ -256,8 +256,17 @@ for (const file of files) {
   }
 
   // --- repeated paragraphs
-  const paras = [...html.replace(/<script[\s\S]*?<\/script>/g, "").matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/g)]
-    .map((m) => decode(m[1].replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim())
+  //
+  // Skips paragraphs marked data-fine-print. Compliance and form fine print is
+  // SUPPOSED to repeat: an article with two ProductPicks blocks carries the
+  // affiliate disclosure beside each set of links (the FTC wants it close to
+  // the links, not once at the top), and a page with a hero and an inline
+  // signup form repeats the double-opt-in note under each. Flagging those as
+  // duplicate content would push toward removing a disclosure, which is the
+  // wrong fix. The check still catches genuinely accidental duplication.
+  const paras = [...html.replace(/<script[\s\S]*?<\/script>/g, "").matchAll(/<p\b([^>]*)>([\s\S]*?)<\/p>/g)]
+    .filter((m) => !/\bdata-fine-print\b/.test(m[1]))
+    .map((m) => decode(m[2].replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim())
     .filter((t) => t.length >= 60);
   const seenPara = new Set();
   for (const p of paras) {
