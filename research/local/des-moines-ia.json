@@ -1,0 +1,75 @@
+{
+  "citySlug": "des-moines-ia",
+  "cityName": "Des Moines",
+  "stateAbbr": "IA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Des Moines Permit and Development Center",
+    "url": "https://www.dsm.city/departments/development_services/permit_development_center/index.php"
+  },
+  "codeEdition": {
+    "text": "Effective January 1, 2026 Des Moines enforces the 2024 International Building Code, 2024 International Residential Code, 2024 International Existing Building Code and 2024 International Fire Code, all adopted with amendments in the Des Moines Municipal Code. The trade codes come from the state rather than the city: the State Electrical Code based on the 2023 NEC, the State Plumbing Code based on the 2024 Uniform Plumbing Code, the State Mechanical Code based on the 2024 International Mechanical Code, the 2021 National Fuel Gas Code (NFPA 54) as adopted by Iowa, and the 2015 International Energy Conservation Code.",
+    "sourceUrl": "https://www.dsm.city/departments/development_services/permit_development_center/construction_codes.php"
+  },
+  "permitPolicy": {
+    "text": "A homeowner in Des Moines may pull a permit for work on their own residence, including a water heater; anyone else doing the work has to be a State of Iowa licensed plumbing or mechanical contractor. Electrical is split: a homeowner can get a homeowner's electrical permit for branch-circuit wiring, but a panel change-out or service upgrade may only be done by an electrical contractor licensed by the State of Iowa, and the city permits and inspects it.",
+    "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Residential/Electrical%20Panel-Service%20Update-Upgrade-ChangeOut%20-2026%20DSM.pdf"
+  },
+  "registration": {
+    "text": "Registration here is a state requirement the city points contractors to rather than a separate city licence. Iowa Code chapter 91C makes any individual or business doing construction work in Iowa register with the Iowa Division of Labor and renew annually once they earn at least $2,000 a year from that work; the registration fee is $50, with a notarized exemption available to a self-employed contractor who pays no more than $2,000 a year in wages to others and does not work with or for other contractors in the same phase of construction. A contractor principally based outside Iowa must file a bond with the Division of Labor before starting any Iowa job with a contract price of $5,000 or more.",
+    "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Construction%20Codes/Community%20Development%20-%20Iowas%20Contractor%20Law%20-%20Registration%20and%20Bonding.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Des Moines bars corrugated stainless steel tubing and flex gas line from the gas drop to a water heater: the drop must be black iron pipe. No new yellow-jacketed CSST may be installed at all, and if the existing gas line already has unbonded CSST, bonding has to be done as part of the water heater job. Where a flexible range connector is used it must sit downstream of the gas shutoff valve and drip leg, with the drop rigidly supported.",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Residential/Residential-Water-Heater-Replacement.pdf"
+    },
+    {
+      "text": "The city's water heater handout sets out several checks a national guide skips: temperature and pressure relief piping must be rigid pipe, never PVC or plastic; a cold water shut-off valve must isolate only the water heater; PEX water lines must stay 18 inches from the heater and no closer than 6 inches to the side or 12 inches above the metal vent; and 50 cubic feet of combustion air is required for each 1,000 Btu of input, which can mean added louvers or outside air.",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Residential/Residential-Water-Heater-Replacement.pdf"
+    },
+    {
+      "text": "Des Moines inspectors specifically look for CSST gas-piping bonding when they inspect a replacement furnace or water heater, not only on new construction, and the city also checks it on additions, remodels and rental inspections. The bonding jumper must be at least 6 AWG copper or equivalent, and the bonding itself has to be permitted and installed by a licensed electrical or mechanical contractor.",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Construction%20Codes/CSST%20Policy.pdf"
+    },
+    {
+      "text": "The city requires a UFER (concrete-encased electrode) grounding system in every residential and commercial structure, in addition to bonding all the other electrodes at the building together into one grounding electrode system, with the grounding electrode conductor protected from physical damage.",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Construction%20Codes/Community%20Development%20-%20UFER%20Grounding%20System.pdf"
+    },
+    {
+      "text": "Des Moines overrides the national gas test pressures: threaded and CSST gas piping is tested at a minimum of 10 psi for at least 15 minutes and welded piping at 60 psi for at least 30 minutes, in place of the NFPA 54 and Uniform Plumbing Code figures. The city also requires a shutoff valve within 6 feet of every gas appliance, dedicated to that appliance and in the same room as it, and only accepts 0.5 inch water column pressure drop tables for gas pipe sizing at inlet pressures of 5 to 9 inches water column.",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Construction%20Codes/Natural%20Gas%20Piping%20Installation%20Clarifications.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "You need a permit to replace a water heater in Des Moines and the city inspects the finished job; a homeowner can pull it for their own house, otherwise it takes a State of Iowa licensed plumbing or mechanical contractor. The fee is the city's flat residential plumbing permit charge for alterations and additions to an existing dwelling, and the final inspection has to be booked at least 24 hours ahead.",
+      "fee": "$77.25 plumbing permit for plumbing installations associated with alterations and additions to existing dwellings and accessory structures",
+      "feeAsOf": "January 1, 2026",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/PDC%20Permit%20Fee%20Schedule.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Des Moines charges one flat plumbing permit fee for plumbing work in an existing house rather than pricing it per fixture, so the permit cost is the same whether the job touches one fixture or several.",
+      "fee": "$77.25 plumbing permit for plumbing installations associated with alterations and additions to existing dwellings and accessory structures",
+      "feeAsOf": "January 1, 2026",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/PDC%20Permit%20Fee%20Schedule.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in an existing Des Moines house carries a single flat permit fee rather than a per-circuit charge; the per-circuit and per-opening unit fees on the city's schedule apply to buildings other than houses, townhouses and two-family dwellings.",
+      "fee": "$77.25 electrical permit for electrical installations associated with alterations and additions to existing dwellings and accessory structures",
+      "feeAsOf": "January 1, 2026",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/PDC%20Permit%20Fee%20Schedule.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Des Moines does not publish a permit or fee just for swapping a smoke alarm, but it does set what the replacement has to be: an added or replaced alarm may be battery powered unless the one it replaces was hardwired, and a hardwired alarm must be replaced with a hardwired alarm. Where interior alterations or repairs need a permit, or a sleeping room is added, the whole dwelling has to be brought up to new-dwelling alarm locations, interconnected and hardwired, unless finishes are not being removed and no attic, crawl space or basement gives access.",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Residential/Residential-Smoke-Detectors.pdf"
+    }
+  },
+  "notVerified": [
+    "Whether replacing a garbage disposal on its own needs a permit in Des Moines, and under which fee line it would fall — the fee schedule lists only a general residential plumbing alteration permit and the city publishes no disposal-specific guidance",
+    "Any Des Moines minimum or re-inspection fee specific to trade permits, and whether the flat residential trade permit fee includes more than one inspection visit",
+    "The amount of the City of Des Moines right-of-way excavation bond required of plumbing contractors (the city publishes a sample bond form but no dollar figure on the permit pages reviewed)",
+    "The city's own amendments to the adopted codes as codified in the Des Moines Municipal Code — the city links its code on library.municode.com, which returned a Cloudflare bot check to automated requests",
+    "Whether Des Moines requires a water heater drain pan, expansion tank or seismic strapping — the city's water heater handout covers venting, gas piping, TPR piping and clearances but states none of these three"
+  ]
+}

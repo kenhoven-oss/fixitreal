@@ -1,0 +1,87 @@
+{
+  "citySlug": "philadelphia-pa",
+  "cityName": "Philadelphia",
+  "stateAbbr": "PA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "City of Philadelphia Department of Licenses and Inspections (L&I)",
+    "url": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+  },
+  "codeEdition": {
+    "text": "Philadelphia moved to the 2021 International Codes effective January 1, 2026, covering the Building, Residential, Existing Building, Plumbing, Mechanical, Fuel Gas, Energy Conservation and ICC Performance Codes, with the 2020 National Electrical Code and 2019 NFPA 72 as referenced standards. Applications filed before July 1, 2026 could be reviewed under either the 2018 or the 2021 edition; anything filed on or after that date must meet the 2021 editions. The 2021 accessibility provisions are enjoined by a Commonwealth Court ruling, so the 2018 International Building Code accessibility provisions still apply, and the Philadelphia Administrative Code continues as the local construction code within the Pennsylvania Uniform Construction Code.",
+    "sourceUrl": "https://www.phila.gov/media/20251021080549/B-2501-Implementation-of-2021-International-Codes.pdf"
+  },
+  "permitPolicy": {
+    "text": "In Philadelphia a property owner may be the applicant on a plumbing or electrical permit, but not the person doing the work. A licensed master plumber has to oversee the plumbing, and a licensed electrical contractor has to perform the electrical work. When anyone other than that master plumber or electrical contractor files the application, L&I requires a signed statement on the tradesperson's letterhead confirming they are on the job. The other people allowed to apply as an owner's agent are a Pennsylvania-licensed design professional, an attorney, or a licensed expediter.",
+    "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+  },
+  "registration": {
+    "text": "Philadelphia will not issue a permit to a trade licence that is not in good standing with the city. The master plumber or electrical contractor named on the application must hold an active city licence, be current on all City of Philadelphia taxes, and have current insurance on file with L&I. A contractor filing online also has to associate the licence or registration with their online account.",
+    "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+  },
+  "codeItems": [
+    {
+      "text": "Philadelphia does not inspect electrical work itself. The owner or the owner's agent has to hire a licensed electrical inspection agency and pay it for every inspection on the permit, which is a cost on top of the city permit fee that a national guide would not account for.",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+    },
+    {
+      "text": "A large hot water heater in Philadelphia can need a second permit from the Philadelphia Department of Public Health, separate from the L&I plumbing permit, so an oversized tank is not a one-permit job.",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+    },
+    {
+      "text": "Philadelphia requires a backflow prevention device to be installed by an approved technician, so a plumber who is licensed for the rest of the job is not automatically accepted for the backflow device.",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+    },
+    {
+      "text": "Philadelphia draws its plumbing permit line at the pipe. Minor repairs using the same material, swapping a faucet, valve or part, stopping a leak, clearing a stoppage, and taking a toilet out and putting it back all go without a permit, so long as no pipe or fixture is replaced or moved. Replacing fixtures with the same kind is allowed under the city's EZ permit, which skips plans.",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+    },
+    {
+      "text": "Philadelphia keeps fire alarm work out of its no-plans EZ electrical permit, and treats the power supply and signal cables for fire and smoke alarm systems as part of the rough-in approval, so alarm wiring is inspected at rough-in rather than only at the end.",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+    },
+    {
+      "text": "From July 1, 2026 a contractor named on a Philadelphia electrical permit application for an EV charger must hold a valid EVITP certification.",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Philadelphia requires a plumbing permit to replace a water heater, the work must be overseen by a licensed master plumber, and a large heater can need an extra permit from the Department of Public Health.",
+      "fee": "Water Heater $31 per water heater for Residential (1 or 2 family), $37 per water heater for Other Occupancies; $100 nonrefundable filing fee applied toward the final permit fee; City surcharge $3 and State surcharge $4.50 per permit",
+      "feeAsOf": "October 1, 2026",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "Swapping a garbage disposal in Philadelphia falls under the plumbing permit for fixture replacement with no piping work, which the city will issue as an EZ permit when the new fixture is the same kind as the old one.",
+      "fee": "Fixture Replacement (No Piping Work) $31 for Residential (1 or 2 family); $75 for the first 7 fixtures and $6.30 for each additional fixture above 7 for Other Occupancies; $100 nonrefundable filing fee applied toward the final permit fee; City surcharge $3 and State surcharge $4.50 per permit",
+      "feeAsOf": "October 1, 2026",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+    },
+    "plumber-service-call": {
+      "requirement": "Philadelphia lets a plumber stop a leak, clear a stoppage, change a faucet or valve, or pull and reset a toilet without a permit, but replacing or moving pipe or a fixture needs one, and the $100 filing fee is charged up front and credited against the permit.",
+      "fee": "Repair/Replacement of Water Lines, Waste Lines and Stacks, no fixtures: $37 Residential (1 or 2 family), $126 Other Occupancies; Water Distribution Line Replacement from curb stop into the building $126; Plumbing alterations to existing buildings $50 for the first 7 fixtures and $22.50 for each additional fixture above 7; optional Rough-in Permit $150",
+      "feeAsOf": "October 1, 2026",
+      "sourceUrl": "https://www.phila.gov/media/20260729134349/PG_012_INF_Summary-of-construction-permit-fees-Eff-1.1.2025-Rev-7.2026.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Philadelphia charges an electrical permit on the estimated cost of the electrical work rather than per device, exempts routine maintenance such as changing lamps, breakers and fuses, and makes the owner hire a licensed electrical inspection agency for the inspections.",
+      "fee": "Electrical Work $25 for each $1,000 or fraction thereof of estimated electrical construction cost, minimum $63 and maximum $18,975; $100 nonrefundable filing fee applied toward the final permit fee; City surcharge $3 and State surcharge $4.50 per permit; record retention fee $4 per plan; optional Rough-in Permit $150",
+      "feeAsOf": "October 1, 2026",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Wiring for smoke and fire alarm systems is electrical permit work in Philadelphia, it cannot go through the city's no-plans EZ electrical permit, and the cables are checked as part of the rough-in approval.",
+      "fee": "Electrical Work $25 for each $1,000 or fraction thereof of estimated electrical construction cost, minimum $63 and maximum $18,975",
+      "feeAsOf": "October 1, 2026",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+    }
+  },
+  "notVerified": [
+    "Philadelphia's own smoke alarm rules for existing homes, including any 10-year sealed battery requirement and the number and placement of alarms (no official Philadelphia page stating them was reachable, and the city's code publisher codelibrary.amlegal.com blocked automated retrieval)",
+    "Whether a Philadelphia inspector requires a thermal expansion tank, a drain pan or a particular TPR discharge termination on a replacement water heater",
+    "The size threshold at which a hot water heater needs the extra Department of Public Health permit, and that permit's fee",
+    "Philadelphia master plumber and electrical contractor licence fees, and the licensed electrical inspection agency charge",
+    "Whether a Philadelphia garbage disposal swap also needs an electrical permit for the appliance circuit"
+  ]
+}

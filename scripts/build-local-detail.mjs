@@ -62,6 +62,8 @@ const OFFICIAL_CODE_HOSTS = [
 const OFFICIAL_CITY_HOSTS = [
   "denvergov.org",      // City and County of Denver's primary site
   "dallascityhall.com", // City of Dallas's primary site
+  "houstonpermittingcenter.org", // City of Houston's own permitting centre
+  "dsm.city",           // City of Des Moines's rebranded primary site
   "nyc.gov",            // already .gov, listed for clarity of intent
 ];
 

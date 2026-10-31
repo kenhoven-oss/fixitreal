@@ -30,6 +30,22 @@ For a PDF fee schedule:
     curl -sL --max-time 60 -o /tmp/fee.pdf "<url>" && pdftotext -layout /tmp/fee.pdf - | head -200
 
 Use WebSearch to FIND the pages (it does not prompt), then curl to READ them.
+
+Some city sites block curl outright (403 on every path). For those, WebFetch
+is the documented fallback — phila.gov and sanjoseca.gov both block curl but
+serve WebFetch fine. Use WebFetch only for a host where curl has actually
+failed, not as your default.
+
+Known from earlier runs, so you need not rediscover it:
+- curl BLOCKED: phila.gov, sanjoseca.gov, kcmo.gov, city.milwaukee.gov,
+  detroitmi.gov, atlantaga.gov, chicago.gov PDFs, dgs.ca.gov,
+  leginfo.legislature.ca.gov, codes.iccsafe.org, library.municode.com,
+  codelibrary.amlegal.com (the last two are Cloudflare-fronted).
+- curl WORKS: seattle.gov, kingcounty.gov, mecknc.gov, ncosfm.gov, in.gov,
+  hcd.ca.gov, up.codes, files.amlegal.com, codes.ohio.gov, le.utah.gov,
+  okc.gov (with curl's default user agent), codes.baltimorecity.gov.
+- up.codes is an allowed host and carries state codes plus several cities as
+  separate jurisdictions — a good fallback for code editions and amendments.
 If curl returns 403 or an empty body for a site, note that source as
 unreachable and move on rather than retrying repeatedly.
 

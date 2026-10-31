@@ -8,7 +8,7 @@
  * Every source URL below passed the official-host check in that script
  * (.gov/.us or a municipal code publisher). Lead-gen sites are denied.
  *
- * 38 metro(s); 148 metro x guide page(s) indexable.
+ * 44 metro(s); 171 metro x guide page(s) indexable.
  */
 import type { LocalDetail } from "./local-detail-types.ts";
 
@@ -704,6 +704,71 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "des-moines-ia": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Des Moines Permit and Development Center",
+      "url": "https://www.dsm.city/departments/development_services/permit_development_center/index.php"
+    },
+    "codeEdition": {
+      "text": "Effective January 1, 2026 Des Moines enforces the 2024 International Building Code, 2024 International Residential Code, 2024 International Existing Building Code and 2024 International Fire Code, all adopted with amendments in the Des Moines Municipal Code. The trade codes come from the state rather than the city: the State Electrical Code based on the 2023 NEC, the State Plumbing Code based on the 2024 Uniform Plumbing Code, the State Mechanical Code based on the 2024 International Mechanical Code, the 2021 National Fuel Gas Code (NFPA 54) as adopted by Iowa, and the 2015 International Energy Conservation Code.",
+      "sourceUrl": "https://www.dsm.city/departments/development_services/permit_development_center/construction_codes.php"
+    },
+    "permitPolicy": {
+      "text": "A homeowner in Des Moines may pull a permit for work on their own residence, including a water heater; anyone else doing the work has to be a State of Iowa licensed plumbing or mechanical contractor. Electrical is split: a homeowner can get a homeowner's electrical permit for branch-circuit wiring, but a panel change-out or service upgrade may only be done by an electrical contractor licensed by the State of Iowa, and the city permits and inspects it.",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Residential/Electrical%20Panel-Service%20Update-Upgrade-ChangeOut%20-2026%20DSM.pdf"
+    },
+    "registration": {
+      "text": "Registration here is a state requirement the city points contractors to rather than a separate city licence. Iowa Code chapter 91C makes any individual or business doing construction work in Iowa register with the Iowa Division of Labor and renew annually once they earn at least $2,000 a year from that work; the registration fee is $50, with a notarized exemption available to a self-employed contractor who pays no more than $2,000 a year in wages to others and does not work with or for other contractors in the same phase of construction. A contractor principally based outside Iowa must file a bond with the Division of Labor before starting any Iowa job with a contract price of $5,000 or more.",
+      "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Construction%20Codes/Community%20Development%20-%20Iowas%20Contractor%20Law%20-%20Registration%20and%20Bonding.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Des Moines bars corrugated stainless steel tubing and flex gas line from the gas drop to a water heater: the drop must be black iron pipe. No new yellow-jacketed CSST may be installed at all, and if the existing gas line already has unbonded CSST, bonding has to be done as part of the water heater job. Where a flexible range connector is used it must sit downstream of the gas shutoff valve and drip leg, with the drop rigidly supported.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Residential/Residential-Water-Heater-Replacement.pdf"
+      },
+      {
+        "text": "The city's water heater handout sets out several checks a national guide skips: temperature and pressure relief piping must be rigid pipe, never PVC or plastic; a cold water shut-off valve must isolate only the water heater; PEX water lines must stay 18 inches from the heater and no closer than 6 inches to the side or 12 inches above the metal vent; and 50 cubic feet of combustion air is required for each 1,000 Btu of input, which can mean added louvers or outside air.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Residential/Residential-Water-Heater-Replacement.pdf"
+      },
+      {
+        "text": "Des Moines inspectors specifically look for CSST gas-piping bonding when they inspect a replacement furnace or water heater, not only on new construction, and the city also checks it on additions, remodels and rental inspections. The bonding jumper must be at least 6 AWG copper or equivalent, and the bonding itself has to be permitted and installed by a licensed electrical or mechanical contractor.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Construction%20Codes/CSST%20Policy.pdf"
+      },
+      {
+        "text": "The city requires a UFER (concrete-encased electrode) grounding system in every residential and commercial structure, in addition to bonding all the other electrodes at the building together into one grounding electrode system, with the grounding electrode conductor protected from physical damage.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Construction%20Codes/Community%20Development%20-%20UFER%20Grounding%20System.pdf"
+      },
+      {
+        "text": "Des Moines overrides the national gas test pressures: threaded and CSST gas piping is tested at a minimum of 10 psi for at least 15 minutes and welded piping at 60 psi for at least 30 minutes, in place of the NFPA 54 and Uniform Plumbing Code figures. The city also requires a shutoff valve within 6 feet of every gas appliance, dedicated to that appliance and in the same room as it, and only accepts 0.5 inch water column pressure drop tables for gas pipe sizing at inlet pressures of 5 to 9 inches water column.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Construction%20Codes/Natural%20Gas%20Piping%20Installation%20Clarifications.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "You need a permit to replace a water heater in Des Moines and the city inspects the finished job; a homeowner can pull it for their own house, otherwise it takes a State of Iowa licensed plumbing or mechanical contractor. The fee is the city's flat residential plumbing permit charge for alterations and additions to an existing dwelling, and the final inspection has to be booked at least 24 hours ahead.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/PDC%20Permit%20Fee%20Schedule.pdf",
+        "fee": "$77.25 plumbing permit for plumbing installations associated with alterations and additions to existing dwellings and accessory structures",
+        "feeAsOf": "January 1, 2026"
+      },
+      "plumber-service-call": {
+        "requirement": "Des Moines charges one flat plumbing permit fee for plumbing work in an existing house rather than pricing it per fixture, so the permit cost is the same whether the job touches one fixture or several.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/PDC%20Permit%20Fee%20Schedule.pdf",
+        "fee": "$77.25 plumbing permit for plumbing installations associated with alterations and additions to existing dwellings and accessory structures",
+        "feeAsOf": "January 1, 2026"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in an existing Des Moines house carries a single flat permit fee rather than a per-circuit charge; the per-circuit and per-opening unit fees on the city's schedule apply to buildings other than houses, townhouses and two-family dwellings.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/PDC%20Permit%20Fee%20Schedule.pdf",
+        "fee": "$77.25 electrical permit for electrical installations associated with alterations and additions to existing dwellings and accessory structures",
+        "feeAsOf": "January 1, 2026"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Des Moines does not publish a permit or fee just for swapping a smoke alarm, but it does set what the replacement has to be: an added or replaced alarm may be battery powered unless the one it replaces was hardwired, and a hardwired alarm must be replaced with a hardwired alarm. Where interior alterations or repairs need a permit, or a sleeping room is added, the whole dwelling has to be brought up to new-dwelling alarm locations, interconnected and hardwired, unless finishes are not being removed and no attic, crawl space or basement gives access.",
+        "sourceUrl": "https://www.dsm.city/Documents/Departments/Development%20Services/Permit%20Development%20Center/Residential/Residential-Smoke-Detectors.pdf"
+      }
+    }
+  },
   "detroit-mi": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -928,6 +993,49 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "indianapolis-in": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Indianapolis Department of Business and Neighborhood Services",
+      "url": "https://www.indy.gov/agency/department-of-business-and-neighborhood-services"
+    },
+    "codeEdition": {
+      "text": "Houses in Indianapolis are built and inspected to the Indiana Residential Code 2020, which is the 2018 IRC with Indiana amendments and took effect December 26, 2019. Other trades run on older base codes: the Indiana Plumbing Code 2012 is built on the 2006 IPC and took effect December 24, 2012, while the Indiana Building, Mechanical and Fuel Gas Codes are 2014 editions based on the 2012 I-Codes.",
+      "sourceUrl": "https://up.codes/codes/indiana"
+    },
+    "codeItems": [
+      {
+        "text": "Indiana's residential code includes a replacement carve-out a national guide would not mention: if the old water heater had no pan drain, the code does not require one for the replacement heater. The pan itself is still required wherever a leak would cause damage, and it has to be at least 1 1/2 inches deep with a 3/4-inch minimum indirect drain.",
+        "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+      },
+      {
+        "text": "Where a pan drain is installed, Indiana requires it to run full size and end either over an indirect waste receptor or outside the building, between 6 and 24 inches above the adjacent ground.",
+        "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+      },
+      {
+        "text": "Seismic strapping of a water heater is not a general Indiana requirement. The code calls for anchoring or strapping in the upper and lower thirds of the tank only in Seismic Design Categories D0, D1 and D2, plus townhouses in Category C, so for most Indianapolis houses it is the manufacturer's instructions rather than a seismic rule that governs.",
+        "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+      },
+      {
+        "text": "A water heater with an ignition source installed in a garage has to be raised so the ignition source sits at least 18 inches above the garage floor, unless the appliance is listed as flammable vapor ignition-resistant.",
+        "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+      },
+      {
+        "text": "Indiana narrows the smoke-alarm retrofit trigger. A whole-house alarm upgrade to new-construction standards is required only when permitted alterations, additions or a complete replacement of the electrical system occur, and the code specifically exempts plumbing and mechanical work, electrical work in existing rooms other than new or relocated bedrooms, and work limited to replacing, relocating or upgrading a service panel or meter base.",
+        "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/3/building-planning"
+      }
+    ],
+    "byGuide": {
+      "smoke-detector-replacement": {
+        "requirement": "Swapping a smoke alarm in Indianapolis does not by itself force a whole-house alarm upgrade; Indiana's code only requires alarms to be brought up to new-construction standards when permitted electrical alterations, additions or a full electrical system replacement are done, and it exempts plumbing or mechanical work and a plain service panel or meter base swap.",
+        "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/3/building-planning"
+      },
+      "water-heater-replacement": {
+        "requirement": "Indiana's residential code governs the water heater swap itself: the inspector looks for the drain pan where a leak could cause damage, the pan drain terminating properly, and an 18-inch elevated ignition source in a garage, but a pan drain is not required if the old installation did not have one.",
+        "sourceUrl": "https://up.codes/viewer/indiana/irc-2018/chapter/28/water-heaters"
+      }
+    }
+  },
   "jacksonville-fl": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -1103,6 +1211,93 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
       }
     }
   },
+  "lexington-ky": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "Lexington-Fayette Urban County Government, Division of Building Inspection",
+      "url": "https://lexingtonky.gov/working/building-permits"
+    },
+    "codeEdition": {
+      "text": "For one- and two-family houses Lexington enforces the 2018 Kentucky Residential Code, which is the 2015 IRC with Kentucky amendments, together with the 2015 International Mechanical Code, the 2009 International Energy Conservation Code, the 2009 National Fuel Gas Code and the 2023 NFPA 70 National Electrical Code. Plumbing is not a city code at all: the city lists Kentucky State Plumbing Law, Codes and Regulations at 815 KAR Chapter 20 as the governing text. Commercial and multi-family work runs on the 2018 Kentucky Building Code, which is the 2015 IBC.",
+      "sourceUrl": "https://lexingtonky.gov/working/current-building-codes"
+    },
+    "permitPolicy": {
+      "text": "Lexington says an electrical permit is required for all electrical work anywhere in Fayette County. A homeowner may pull their own electrical permit, but only for a property they own and currently live in: the city will not issue a homeowner electrical permit for vacant property, rental property, a duplex or a mobile home. A contractor pulling the permit instead must hold a Master Electrician licence or employ one, and must also hold an LFUCG business licence. Electrical inspections are not done by city staff; they are arranged through the Commonwealth Inspection Bureau, which sets its own inspection fee.",
+      "sourceUrl": "https://lexingtonky.gov/working/building-permits/electrical-permits-licensing-inspections"
+    },
+    "registration": {
+      "text": "Lexington runs its own contractor registration on top of state licensing, under Ordinance 35-2000 and section 5-86 of the LFUCG Code of Ordinances. Where a registered contractor is used, the contractor makes the permit application on the property owner's behalf. An owner acting as their own builder files an Affidavit of Exemption from Contractor Registration, which also commits them to the rule that any non-resident of the property who works in the construction trades as a paid entity on the job has to be a registered contractor, family or not. No registration fee or bond figure could be read, because the city's codified ordinances sit behind a bot check.",
+      "sourceUrl": "https://content.lexingtonky.gov/sites/default/files/2025-03/CONTRACTOR%20REGISTRATION%20AFFIDAVIT.pdf"
+    },
+    "codeItems": [
+      {
+        "text": "Kentucky's water-heater rule turns on whether there is a single check valve at the water meter or service. If there is, a correctly sized thermal expansion tank has to be fitted on the cold supply near the heater and pressurised to the right setting. A Lexington inspector will look for this because the city enforces the state plumbing code rather than a code of its own.",
+        "sourceUrl": "https://dhbc.ky.gov/Documents/HOs%20Info%20-%20Water%20Heater.pdf"
+      },
+      {
+        "text": "Kentucky requires a corrosion-resistant watertight pan under any water heater installed after 1 April 2021 in an attic, above a drop ceiling, or on wood flooring in occupied space, and the pan needs at least a three-quarter inch drain piped like a relief-valve discharge line. The relief valve may discharge into the pan only if the pan pipe is a full one inch, is rated for hot water, and empties through an air gap.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+      },
+      {
+        "text": "A water heater in a Kentucky crawl space needs a travel path with at least five feet of vertical clearance and has to sit on at least two inches of corrosion-resistant material strong enough to carry it. Replacing a heater that was already in a crawl space before 1 September 2006 is exempt from the five-foot clearance, which matters on Lexington's older housing stock.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+      },
+      {
+        "text": "Kentucky is specific about where the relief discharge ends. In a room with a floor drain it has to be piped to within two inches of the floor; with no floor drain it has to be piped to within four inches of the ground surface. Piped outside in PEX or CPVC, the line has to be covered against ultraviolet light. The relief device itself goes no more than three inches from the top of the heater.",
+        "sourceUrl": "https://dhbc.ky.gov/Documents/HOs%20Info%20-%20Water%20Heater.pdf"
+      },
+      {
+        "text": "Three details the state's own homeowner handout flags that a national guide skips: the shutoff valve has to be within three feet of the heater and reachable from its accessible side, a ferrous-to-copper joint has to use a dielectric or other insulating fitting to stop electrolysis, and a flexible final water connector has to carry an ASME A112.18.6 mark on the connector, its label or its box. Flue pipe is held together with screws, not tape, three for three-inch pipe and four for four-inch.",
+        "sourceUrl": "https://dhbc.ky.gov/Documents/HOs%20Info%20-%20Water%20Heater.pdf"
+      },
+      {
+        "text": "A fuel-fired water heater in Kentucky cannot be put back into a closed room or closet unless the space has a louver door or is ventilated for combustion air to the National Fuel Gas Code standard in the Kentucky Building Code, and it cannot go in a bathroom, toilet room or sleeping room unless it is direct-vent or through-the-wall. The flue has to extend two feet above the roof and must not terminate within six feet of a door or window.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+      },
+      {
+        "text": "Kentucky puts a paperwork duty on the seller and installer rather than the homeowner: under KRS 318.200, anyone selling or installing a water heating device has thirty days from the sale to send the purchaser's name and address and the unit's serial number to the state department or to the city or county agency with jurisdiction.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+      },
+      {
+        "text": "A Kentucky plumbing permit goes only to a licensed master plumber or to a homeowner working on a home they occupy or built for their own residential use. The homeowner route carries conditions: apply before work starts, file an affidavit, do the work personally, and have taken no other homeowner permit for new-home construction in the last five years. A journeyman may not do the work unless a master plumber holds a valid permit and supervises.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+      },
+      {
+        "text": "Lexington splits the trades between three bodies, which catches people out. The Division of Building Inspection handles building and electrical permits, plumbing plan review sits with the Plumbing Program at the Lexington Health Department, and the electrical inspection itself is carried out by the Commonwealth Inspection Bureau.",
+        "sourceUrl": "https://lexingtonky.gov/working/building-permits/plumbing-permits"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater needs a Kentucky plumbing permit, and the state sets a deliberately flat price for it: if only one heater is installed or replaced in a single building, the permit fee is the base fee alone with no per-appliance add-on, and the permit carries five inspections at no extra charge.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/",
+        "fee": "$50 base fee for a residential one- and two-family plumbing permit; if only one new domestic water heater is installed or replaced within a single building, the only fee for the plumbing permit shall be $50; five inspections included at no additional cost, $50 for each additional inspection",
+        "feeAsOf": "815 KAR 20:050, latest effective date 3-1-2022"
+      },
+      "plumber-service-call": {
+        "requirement": "Kentucky lists exactly what triggers a plumbing permit in Lexington and exactly what does not: a new installation, a fixture or waste opening being moved, a replaced sewer or water service, a new backflow device or a water heater all need one, while repairing a leak, a cock or a valve, or cleaning out a waste or sewer pipe, does not.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/",
+        "fee": "$50 base fee plus $14 for each plumbing fixture, appliance, or opening left for a fixture or appliance, for residential one- and two-family units ($50 plus $20 each in other buildings); fee limited to the base fee where the work includes no new installation; five inspections at no additional cost, then $50 per additional inspection, which does not apply if the permit cost exceeds $250",
+        "feeAsOf": "815 KAR 20:050, latest effective date 3-1-2022"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "A disposer is a plumbing appliance, so whether a Lexington permit is needed depends on the state's published trigger list: swapping one in place is not one of the listed triggers and repairs of leaks, cocks and valves are expressly exempt, but moving or relocating the fixture or waste opening to fit the new unit does require a permit.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/",
+        "fee": "$50 base fee plus $14 for each plumbing fixture or appliance, for residential one- and two-family units; where the work includes no new installation the fee is limited to the base fee",
+        "feeAsOf": "815 KAR 20:050, latest effective date 3-1-2022"
+      },
+      "electrician-service-call": {
+        "requirement": "Lexington requires an electrical permit for all electrical work in Fayette County and charges a single flat price for it regardless of the job, but the inspection is a separate cost: it is scheduled through the Commonwealth Inspection Bureau, which quotes its own fee.",
+        "sourceUrl": "https://lexingtonky.gov/working/building-permits/electrical-permits-licensing-inspections",
+        "fee": "Electrical permits cost $10 each"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Lexington publishes no exempt-work list for electrical permits and states flatly that they are required for all electrical work in Fayette County, so replacing a hard-wired smoke alarm falls under the same flat electrical permit, pulled by the resident owner or by a Master Electrician.",
+        "sourceUrl": "https://lexingtonky.gov/working/building-permits/electrical-permits-licensing-inspections",
+        "fee": "Electrical permits cost $10 each"
+      }
+    }
+  },
   "los-angeles-ca": {
     "verifiedOn": "2026-10-31",
     "authority": {
@@ -1169,6 +1364,61 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
         "sourceUrl": "https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/permit-fee-schedule-for-electrical-permits-pc-elec-feesched01.pdf",
         "fee": "SFD and Apartment Smoke Detectors, 1 residential unit $15.00; each additional residential unit in a multi-dwelling occupancy $12.00; minimum $55 if applying for one item costing less than $55",
         "feeAsOf": "December 2016"
+      }
+    }
+  },
+  "louisville-ky": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "Kentucky Department of Housing, Buildings and Construction, Division of Plumbing (state plumbing permit authority covering Louisville)",
+      "url": "https://dhbc.ky.gov/"
+    },
+    "codeEdition": {
+      "text": "The 2015 International Residential Code is the mandatory residential code in Kentucky, with the Kentucky amendments in the 2018 Kentucky Residential Code (Third Edition, August 2024) overriding anything in conflict. For a single-family dwelling, building permits, inspections and certificates of occupancy are required only where a local ordinance requires them.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/007/125/"
+    },
+    "permitPolicy": {
+      "text": "A Kentucky plumbing permit is issued only to a licensed master plumber, or to a homeowner who will personally do the work in a home they occupy. The homeowner has to apply before starting and file an affidavit with the application, and cannot have taken a homeowner permit for a new home in the previous five years. A journeyman may only work under a master plumber's permit.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+    },
+    "codeItems": [
+      {
+        "text": "A water heater in a crawl space needs a travel path with at least five feet of vertical clearance and must sit on at least two inches of corrosion-resistant material strong enough to carry it. Replacing a heater that was already in a crawl space before September 1, 2006 is exempt from the height rule.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+      },
+      {
+        "text": "Since April 1, 2021, a water heater in an attic, above a drop ceiling, or on wood flooring in occupied space must have a corrosion-resistant watertight pan under it with at least a 3/4-inch drain piped like a TPR discharge line. The TPR valve may discharge into that pan only if the pan drain is one inch and discharges through an air gap to an approved point.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+      },
+      {
+        "text": "A fuel-fired water heater must vent to a flue or chimney that extends two feet above the roof and does not terminate within six feet of a door or window, and it may not be connected to a flue serving a coal-burning appliance. It cannot go in a bathroom, toilet room or sleeping room unless it is direct-vent or through-the-wall, and a closet installation needs a louver door or combustion-air ventilation.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+      },
+      {
+        "text": "Direct-vent water heater terminals have Kentucky-specific clearances: nine inches from any opening flue gases could enter for units up to 50,000 BTU per hour, twelve inches for larger units, and the terminal and air intake must be at least twelve inches above grade.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+      },
+      {
+        "text": "State Housing, Buildings and Construction inspectors now carry carbon monoxide detection instruments, and every inspection they perform includes a visual check of the mechanical room and a CO reading.",
+        "sourceUrl": "https://dhbc.ky.gov/Documents/CarbonMonoxideTestingInitiative1-26.pdf"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Kentucky requires a state plumbing permit, and that permit covers five plumbing inspections at no extra charge.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/",
+        "fee": "$50 flat when one new or replacement domestic water heater is installed in a building; otherwise $50 base fee plus $14 for each fixture, appliance or water heater in a one- or two-family home",
+        "feeAsOf": "effective March 1, 2022"
+      },
+      "plumber-service-call": {
+        "requirement": "Kentucky does not require a plumbing permit to repair a leak, a cock or a valve, or to clean out a waste or sewer pipe, but moving or relocating a fixture or waste opening does need one, and work that is not a new installation is charged only the base permit fee.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/",
+        "fee": "$50 base fee (residential one- and two-family); the fee is limited to the base fee when the work is not new installation",
+        "feeAsOf": "effective March 1, 2022"
+      },
+      "electrician-service-call": {
+        "requirement": "Electrical work in Louisville is permitted and inspected against the National Electrical Code by the local certified electrical inspector, and appliances and work exempted by Kentucky Residential Code section R105.2 are not inspected.",
+        "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/035/020/"
       }
     }
   },
@@ -1639,6 +1889,83 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
         "sourceUrl": "https://www.orlando.gov/files/sharedassets/public/v/1/departments/edv/permitting-services-division/permitting-development-fees-residential-2026.pdf",
         "fee": "$66.24 for the first $1,000 of construction cost or fraction thereof, plus $11.03 for each additional $1,000 up to and including $25,000, plus $8.28 for each additional $1,000 above $25,000; Change of Service $50; Safety Check $50; Low Voltage Fee Residential $50",
         "feeAsOf": "Effective January 2026"
+      }
+    }
+  },
+  "philadelphia-pa": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "City of Philadelphia Department of Licenses and Inspections (L&I)",
+      "url": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+    },
+    "codeEdition": {
+      "text": "Philadelphia moved to the 2021 International Codes effective January 1, 2026, covering the Building, Residential, Existing Building, Plumbing, Mechanical, Fuel Gas, Energy Conservation and ICC Performance Codes, with the 2020 National Electrical Code and 2019 NFPA 72 as referenced standards. Applications filed before July 1, 2026 could be reviewed under either the 2018 or the 2021 edition; anything filed on or after that date must meet the 2021 editions. The 2021 accessibility provisions are enjoined by a Commonwealth Court ruling, so the 2018 International Building Code accessibility provisions still apply, and the Philadelphia Administrative Code continues as the local construction code within the Pennsylvania Uniform Construction Code.",
+      "sourceUrl": "https://www.phila.gov/media/20251021080549/B-2501-Implementation-of-2021-International-Codes.pdf"
+    },
+    "permitPolicy": {
+      "text": "In Philadelphia a property owner may be the applicant on a plumbing or electrical permit, but not the person doing the work. A licensed master plumber has to oversee the plumbing, and a licensed electrical contractor has to perform the electrical work. When anyone other than that master plumber or electrical contractor files the application, L&I requires a signed statement on the tradesperson's letterhead confirming they are on the job. The other people allowed to apply as an owner's agent are a Pennsylvania-licensed design professional, an attorney, or a licensed expediter.",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+    },
+    "registration": {
+      "text": "Philadelphia will not issue a permit to a trade licence that is not in good standing with the city. The master plumber or electrical contractor named on the application must hold an active city licence, be current on all City of Philadelphia taxes, and have current insurance on file with L&I. A contractor filing online also has to associate the licence or registration with their online account.",
+      "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+    },
+    "codeItems": [
+      {
+        "text": "Philadelphia does not inspect electrical work itself. The owner or the owner's agent has to hire a licensed electrical inspection agency and pay it for every inspection on the permit, which is a cost on top of the city permit fee that a national guide would not account for.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+      },
+      {
+        "text": "A large hot water heater in Philadelphia can need a second permit from the Philadelphia Department of Public Health, separate from the L&I plumbing permit, so an oversized tank is not a one-permit job.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+      },
+      {
+        "text": "Philadelphia requires a backflow prevention device to be installed by an approved technician, so a plumber who is licensed for the rest of the job is not automatically accepted for the backflow device.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+      },
+      {
+        "text": "Philadelphia draws its plumbing permit line at the pipe. Minor repairs using the same material, swapping a faucet, valve or part, stopping a leak, clearing a stoppage, and taking a toilet out and putting it back all go without a permit, so long as no pipe or fixture is replaced or moved. Replacing fixtures with the same kind is allowed under the city's EZ permit, which skips plans.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/"
+      },
+      {
+        "text": "Philadelphia keeps fire alarm work out of its no-plans EZ electrical permit, and treats the power supply and signal cables for fire and smoke alarm systems as part of the rough-in approval, so alarm wiring is inspected at rough-in rather than only at the end.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+      },
+      {
+        "text": "From July 1, 2026 a contractor named on a Philadelphia electrical permit application for an EV charger must hold a valid EVITP certification.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Philadelphia requires a plumbing permit to replace a water heater, the work must be overseen by a licensed master plumber, and a large heater can need an extra permit from the Department of Public Health.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/",
+        "fee": "Water Heater $31 per water heater for Residential (1 or 2 family), $37 per water heater for Other Occupancies; $100 nonrefundable filing fee applied toward the final permit fee; City surcharge $3 and State surcharge $4.50 per permit",
+        "feeAsOf": "October 1, 2026"
+      },
+      "garbage-disposal-replacement": {
+        "requirement": "Swapping a garbage disposal in Philadelphia falls under the plumbing permit for fixture replacement with no piping work, which the city will issue as an EZ permit when the new fixture is the same kind as the old one.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-a-plumbing-permit/",
+        "fee": "Fixture Replacement (No Piping Work) $31 for Residential (1 or 2 family); $75 for the first 7 fixtures and $6.30 for each additional fixture above 7 for Other Occupancies; $100 nonrefundable filing fee applied toward the final permit fee; City surcharge $3 and State surcharge $4.50 per permit",
+        "feeAsOf": "October 1, 2026"
+      },
+      "plumber-service-call": {
+        "requirement": "Philadelphia lets a plumber stop a leak, clear a stoppage, change a faucet or valve, or pull and reset a toilet without a permit, but replacing or moving pipe or a fixture needs one, and the $100 filing fee is charged up front and credited against the permit.",
+        "sourceUrl": "https://www.phila.gov/media/20260729134349/PG_012_INF_Summary-of-construction-permit-fees-Eff-1.1.2025-Rev-7.2026.pdf",
+        "fee": "Repair/Replacement of Water Lines, Waste Lines and Stacks, no fixtures: $37 Residential (1 or 2 family), $126 Other Occupancies; Water Distribution Line Replacement from curb stop into the building $126; Plumbing alterations to existing buildings $50 for the first 7 fixtures and $22.50 for each additional fixture above 7; optional Rough-in Permit $150",
+        "feeAsOf": "October 1, 2026"
+      },
+      "electrician-service-call": {
+        "requirement": "Philadelphia charges an electrical permit on the estimated cost of the electrical work rather than per device, exempts routine maintenance such as changing lamps, breakers and fuses, and makes the owner hire a licensed electrical inspection agency for the inspections.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/",
+        "fee": "Electrical Work $25 for each $1,000 or fraction thereof of estimated electrical construction cost, minimum $63 and maximum $18,975; $100 nonrefundable filing fee applied toward the final permit fee; City surcharge $3 and State surcharge $4.50 per permit; record retention fee $4 per plan; optional Rough-in Permit $150",
+        "feeAsOf": "October 1, 2026"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Wiring for smoke and fire alarm systems is electrical permit work in Philadelphia, it cannot go through the city's no-plans EZ electrical permit, and the cables are checked as part of the rough-in approval.",
+        "sourceUrl": "https://www.phila.gov/services/permits-violations-licenses/apply-for-a-permit/building-and-repair-permits/get-an-electrical-permit/",
+        "fee": "Electrical Work $25 for each $1,000 or fraction thereof of estimated electrical construction cost, minimum $63 and maximum $18,975",
+        "feeAsOf": "October 1, 2026"
       }
     }
   },
@@ -2219,6 +2546,83 @@ export const LOCAL_DETAIL: Record<string, LocalDetail> = {
         "sourceUrl": "https://sanjoseca.gov/home/showpublisheddocument/26047/638598545783230000",
         "fee": "$315 per hour of required inspection time for residential electrical permits; permit issuance charged at $227 per hour of processing and coordination time, whichever is greater than the listed amount",
         "feeAsOf": "FY 2024-25 Building Division Fee Schedule, effective August 12, 2024"
+      }
+    }
+  },
+  "seattle-wa": {
+    "verifiedOn": "2026-10-31",
+    "authority": {
+      "name": "Seattle Department of Construction and Inspections (SDCI); plumbing and gas piping by Public Health - Seattle & King County",
+      "url": "https://www.seattle.gov/construction-and-inspections/permits/permits-we-issue-(a-z)/electrical-permit"
+    },
+    "codeEdition": {
+      "text": "Houses, duplexes and townhouses up to three stories in Seattle are judged against the 2021 Seattle Residential Code, which is the 2021 International Residential Code with Seattle's own amendments.",
+      "sourceUrl": "https://www.seattle.gov/construction-and-inspections/codes/codes-we-enforce-(a-z)/residential-code"
+    },
+    "permitPolicy": {
+      "text": "Plumbing and gas piping in Seattle are permitted by Public Health - Seattle & King County, not by SDCI, and a homeowner can get a homeowner's plumbing permit, which authorizes the homeowner personally to do the plumbing; anyone signing on the owner's behalf is representing that the owner authorized it, and a plumber hired for the job has to be a registered contractor. On the electrical side, a property owner may do their own work when they own and occupy the property.",
+      "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/applications-and-permits"
+    },
+    "registration": {
+      "text": "A professional pulling an electrical permit in Seattle needs two things: a Washington State electrical contractor's license and a City of Seattle business license. SDCI also issues its own trade licenses for boiler operator/supervisor, refrigeration and gas piping work.",
+      "sourceUrl": "https://www.seattle.gov/construction-and-inspections/permits/permits-we-issue-(a-z)/electrical-permit"
+    },
+    "codeItems": [
+      {
+        "text": "Seattle's plumbing rules are a separate code enforced by a separate agency: the 2021 Seattle Plumbing Code is the 2021 Washington State Plumbing Code with Seattle amendments, and Public Health - Seattle & King County enforces it rather than SDCI.",
+        "sourceUrl": "https://www.seattle.gov/construction-and-inspections/codes/codes-we-enforce-(a-z)/plumbing-code"
+      },
+      {
+        "text": "Seismic bracing is spelled out by the inspecting agency, not left to the installer: a water heater needs two 20-gauge sheet metal straps, one in the upper third of the tank and one in the lower third.",
+        "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/installations/installing-new-water-heater"
+      },
+      {
+        "text": "Seattle requires at least 24 inches of continuous width for access to the water heater, and a heater in a garage has to be shielded by a fixed barrier such as a metal post set in the concrete between the tank and where a car would park. Gas piping must not block removal of the tank.",
+        "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/installations/installing-new-water-heater"
+      },
+      {
+        "text": "A closed water system, meaning water can flow into the building but not back out, requires an expansion tank or another approved thermal expansion device. The temperature and pressure relief line has to drain by gravity to the outside or to an approved drain, and a gas water heater other than a direct-vent type cannot go in a bedroom or bathroom unless it meets special criteria.",
+        "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/installations/installing-new-water-heater"
+      },
+      {
+        "text": "Carbon monoxide alarms work on a trigger in Seattle. An owner-occupied single-family home legally occupied before July 26, 2009 is exempt, but any building permit application for work on the home triggers the requirement, a permit application for alterations has to show the alarms are already in place or include them, and every home must have a CO alarm when it is sold.",
+        "sourceUrl": "https://www.seattle.gov/DPD/Publications/CAM/cam317.pdf"
+      },
+      {
+        "text": "Smoke alarms have to be added throughout an existing Seattle house when a bedroom is added, when an accessory dwelling unit is created, or when other interior work requiring a permit happens. If you do not strip the interior finishes and there is no attic or basement access, the added alarms may be battery powered and need not be interconnected.",
+        "sourceUrl": "https://www.seattle.gov/DPD/Publications/CAM/cam317.pdf"
+      },
+      {
+        "text": "Gas piping is not covered by the plumbing permit or by a mechanical permit; installing or changing gas piping takes its own gas piping permit, and Seattle's mechanical permit explicitly excludes plumbing, sprinklers, gas lines, refrigeration and boilers.",
+        "sourceUrl": "https://www.seattle.gov/construction-and-inspections/permits/permits-we-issue-(a-z)/mechanical-permit"
+      },
+      {
+        "text": "Getting the address wrong on a Seattle plumbing permit has a published price: if inspectors are sent to the wrong site because of an applicant error, a $40 change-of-address fee may be charged.",
+        "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/applications-and-permits"
+      }
+    ],
+    "byGuide": {
+      "water-heater-replacement": {
+        "requirement": "Replacing a water heater in Seattle needs a plumbing permit from Public Health - Seattle & King County, which charges a base permit fee plus a per-fixture amount; a homeowner can pull it themselves, and if the heater is gas and the gas piping changes, that takes a separate gas piping permit.",
+        "sourceUrl": "https://cdn.kingcounty.gov/-/media/king-county/depts/dph/documents/health-safety/environmental-health/fees/plumbing-gas-piping-service-fees-through-2026.pdf",
+        "fee": "$137 plus $27 per fixture (Plumbing/Backflow Permit); gas piping permits are $137 plus $27 per outlet",
+        "feeAsOf": "Effective January 1, 2026"
+      },
+      "plumber-service-call": {
+        "requirement": "Any time you install, relocate or change a plumbing or gas piping system in Seattle, a permit from Public Health - Seattle & King County is required, priced as a base fee plus an amount per fixture; work already done without a permit is billed instead under the much higher Already Built Construction permit.",
+        "sourceUrl": "https://cdn.kingcounty.gov/-/media/king-county/depts/dph/documents/health-safety/environmental-health/fees/plumbing-gas-piping-service-fees-through-2026.pdf",
+        "fee": "$137 plus $27 per fixture; $273 plus $55 per fixture/outlet for an Already Built Construction (ABC) permit; $137 re-inspection; $68 permit renewal",
+        "feeAsOf": "Effective January 1, 2026"
+      },
+      "electrician-service-call": {
+        "requirement": "Seattle requires an electrical permit any time wiring is installed, altered, extended or connected to equipment, and most of these are self-issued online the same day with no plan review; the city publishes a minimum permit fee plus an administrative fee, and then charges by what you are actually installing.",
+        "sourceUrl": "https://www.seattle.gov/documents/Departments/SDCI/Codes/FeeSubtitleFinal.pdf",
+        "fee": "$105.12 minimum fee for a standard Online Trade-Construction (OTC) self-issued electrical permit, plus a $55.48 administrative fee; $146.00 for a service repair (mast and meter base only); new or altered service $146.00 up to 125 amperes, $292.00 for 150-200 amperes; branch circuit or feeder $26.28 up to 25 amperes, $43.80 for 30-50 amperes, $146.00 for 60-200 amperes",
+        "feeAsOf": "2026 Fee Subtitle, effective January 1, 2026"
+      },
+      "smoke-detector-replacement": {
+        "requirement": "Replacing one alarm is not what triggers Seattle's rules, but adding a bedroom, creating an accessory dwelling unit or doing other permitted interior work means smoke alarms must be brought up to current standards throughout the house, and the city allows battery-only, non-interconnected alarms where finishes stay in place and there is no attic or basement access.",
+        "sourceUrl": "https://www.seattle.gov/DPD/Publications/CAM/cam317.pdf"
       }
     }
   },

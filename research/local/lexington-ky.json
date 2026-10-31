@@ -1,0 +1,97 @@
+{
+  "citySlug": "lexington-ky",
+  "cityName": "Lexington",
+  "stateAbbr": "KY",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Lexington-Fayette Urban County Government, Division of Building Inspection",
+    "url": "https://lexingtonky.gov/working/building-permits"
+  },
+  "codeEdition": {
+    "text": "For one- and two-family houses Lexington enforces the 2018 Kentucky Residential Code, which is the 2015 IRC with Kentucky amendments, together with the 2015 International Mechanical Code, the 2009 International Energy Conservation Code, the 2009 National Fuel Gas Code and the 2023 NFPA 70 National Electrical Code. Plumbing is not a city code at all: the city lists Kentucky State Plumbing Law, Codes and Regulations at 815 KAR Chapter 20 as the governing text. Commercial and multi-family work runs on the 2018 Kentucky Building Code, which is the 2015 IBC.",
+    "sourceUrl": "https://lexingtonky.gov/working/current-building-codes"
+  },
+  "permitPolicy": {
+    "text": "Lexington says an electrical permit is required for all electrical work anywhere in Fayette County. A homeowner may pull their own electrical permit, but only for a property they own and currently live in: the city will not issue a homeowner electrical permit for vacant property, rental property, a duplex or a mobile home. A contractor pulling the permit instead must hold a Master Electrician licence or employ one, and must also hold an LFUCG business licence. Electrical inspections are not done by city staff; they are arranged through the Commonwealth Inspection Bureau, which sets its own inspection fee.",
+    "sourceUrl": "https://lexingtonky.gov/working/building-permits/electrical-permits-licensing-inspections"
+  },
+  "registration": {
+    "text": "Lexington runs its own contractor registration on top of state licensing, under Ordinance 35-2000 and section 5-86 of the LFUCG Code of Ordinances. Where a registered contractor is used, the contractor makes the permit application on the property owner's behalf. An owner acting as their own builder files an Affidavit of Exemption from Contractor Registration, which also commits them to the rule that any non-resident of the property who works in the construction trades as a paid entity on the job has to be a registered contractor, family or not. No registration fee or bond figure could be read, because the city's codified ordinances sit behind a bot check.",
+    "sourceUrl": "https://content.lexingtonky.gov/sites/default/files/2025-03/CONTRACTOR%20REGISTRATION%20AFFIDAVIT.pdf"
+  },
+  "codeItems": [
+    {
+      "text": "Kentucky's water-heater rule turns on whether there is a single check valve at the water meter or service. If there is, a correctly sized thermal expansion tank has to be fitted on the cold supply near the heater and pressurised to the right setting. A Lexington inspector will look for this because the city enforces the state plumbing code rather than a code of its own.",
+      "sourceUrl": "https://dhbc.ky.gov/Documents/HOs%20Info%20-%20Water%20Heater.pdf"
+    },
+    {
+      "text": "Kentucky requires a corrosion-resistant watertight pan under any water heater installed after 1 April 2021 in an attic, above a drop ceiling, or on wood flooring in occupied space, and the pan needs at least a three-quarter inch drain piped like a relief-valve discharge line. The relief valve may discharge into the pan only if the pan pipe is a full one inch, is rated for hot water, and empties through an air gap.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+    },
+    {
+      "text": "A water heater in a Kentucky crawl space needs a travel path with at least five feet of vertical clearance and has to sit on at least two inches of corrosion-resistant material strong enough to carry it. Replacing a heater that was already in a crawl space before 1 September 2006 is exempt from the five-foot clearance, which matters on Lexington's older housing stock.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+    },
+    {
+      "text": "Kentucky is specific about where the relief discharge ends. In a room with a floor drain it has to be piped to within two inches of the floor; with no floor drain it has to be piped to within four inches of the ground surface. Piped outside in PEX or CPVC, the line has to be covered against ultraviolet light. The relief device itself goes no more than three inches from the top of the heater.",
+      "sourceUrl": "https://dhbc.ky.gov/Documents/HOs%20Info%20-%20Water%20Heater.pdf"
+    },
+    {
+      "text": "Three details the state's own homeowner handout flags that a national guide skips: the shutoff valve has to be within three feet of the heater and reachable from its accessible side, a ferrous-to-copper joint has to use a dielectric or other insulating fitting to stop electrolysis, and a flexible final water connector has to carry an ASME A112.18.6 mark on the connector, its label or its box. Flue pipe is held together with screws, not tape, three for three-inch pipe and four for four-inch.",
+      "sourceUrl": "https://dhbc.ky.gov/Documents/HOs%20Info%20-%20Water%20Heater.pdf"
+    },
+    {
+      "text": "A fuel-fired water heater in Kentucky cannot be put back into a closed room or closet unless the space has a louver door or is ventilated for combustion air to the National Fuel Gas Code standard in the Kentucky Building Code, and it cannot go in a bathroom, toilet room or sleeping room unless it is direct-vent or through-the-wall. The flue has to extend two feet above the roof and must not terminate within six feet of a door or window.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+    },
+    {
+      "text": "Kentucky puts a paperwork duty on the seller and installer rather than the homeowner: under KRS 318.200, anyone selling or installing a water heating device has thirty days from the sale to send the purchaser's name and address and the unit's serial number to the state department or to the city or county agency with jurisdiction.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+    },
+    {
+      "text": "A Kentucky plumbing permit goes only to a licensed master plumber or to a homeowner working on a home they occupy or built for their own residential use. The homeowner route carries conditions: apply before work starts, file an affidavit, do the work personally, and have taken no other homeowner permit for new-home construction in the last five years. A journeyman may not do the work unless a master plumber holds a valid permit and supervises.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+    },
+    {
+      "text": "Lexington splits the trades between three bodies, which catches people out. The Division of Building Inspection handles building and electrical permits, plumbing plan review sits with the Plumbing Program at the Lexington Health Department, and the electrical inspection itself is carried out by the Commonwealth Inspection Bureau.",
+      "sourceUrl": "https://lexingtonky.gov/working/building-permits/plumbing-permits"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater needs a Kentucky plumbing permit, and the state sets a deliberately flat price for it: if only one heater is installed or replaced in a single building, the permit fee is the base fee alone with no per-appliance add-on, and the permit carries five inspections at no extra charge.",
+      "fee": "$50 base fee for a residential one- and two-family plumbing permit; if only one new domestic water heater is installed or replaced within a single building, the only fee for the plumbing permit shall be $50; five inspections included at no additional cost, $50 for each additional inspection",
+      "feeAsOf": "815 KAR 20:050, latest effective date 3-1-2022",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+    },
+    "plumber-service-call": {
+      "requirement": "Kentucky lists exactly what triggers a plumbing permit in Lexington and exactly what does not: a new installation, a fixture or waste opening being moved, a replaced sewer or water service, a new backflow device or a water heater all need one, while repairing a leak, a cock or a valve, or cleaning out a waste or sewer pipe, does not.",
+      "fee": "$50 base fee plus $14 for each plumbing fixture, appliance, or opening left for a fixture or appliance, for residential one- and two-family units ($50 plus $20 each in other buildings); fee limited to the base fee where the work includes no new installation; five inspections at no additional cost, then $50 per additional inspection, which does not apply if the permit cost exceeds $250",
+      "feeAsOf": "815 KAR 20:050, latest effective date 3-1-2022",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+    },
+    "garbage-disposal-replacement": {
+      "requirement": "A disposer is a plumbing appliance, so whether a Lexington permit is needed depends on the state's published trigger list: swapping one in place is not one of the listed triggers and repairs of leaks, cocks and valves are expressly exempt, but moving or relocating the fixture or waste opening to fit the new unit does require a permit.",
+      "fee": "$50 base fee plus $14 for each plumbing fixture or appliance, for residential one- and two-family units; where the work includes no new installation the fee is limited to the base fee",
+      "feeAsOf": "815 KAR 20:050, latest effective date 3-1-2022",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+    },
+    "electrician-service-call": {
+      "requirement": "Lexington requires an electrical permit for all electrical work in Fayette County and charges a single flat price for it regardless of the job, but the inspection is a separate cost: it is scheduled through the Commonwealth Inspection Bureau, which quotes its own fee.",
+      "fee": "Electrical permits cost $10 each",
+      "sourceUrl": "https://lexingtonky.gov/working/building-permits/electrical-permits-licensing-inspections"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Lexington publishes no exempt-work list for electrical permits and states flatly that they are required for all electrical work in Fayette County, so replacing a hard-wired smoke alarm falls under the same flat electrical permit, pulled by the resident owner or by a Master Electrician.",
+      "fee": "Electrical permits cost $10 each",
+      "sourceUrl": "https://lexingtonky.gov/working/building-permits/electrical-permits-licensing-inspections"
+    }
+  },
+  "notVerified": [
+    "Lexington's contractor registration fee and any bond amount. The LFUCG Code of Ordinances section 5-86 is hosted on Municode behind a Cloudflare bot check, which was not bypassed.",
+    "The Commonwealth Inspection Bureau's electrical inspection fee. The city's electrical page gives only a phone number for fee information and publishes no figure.",
+    "Any Lexington-specific smoke or carbon monoxide alarm rule for existing dwellings. The city's permit guides mention showing alarm locations on new-construction plans but publish no retrofit requirement, and nothing beyond the adopted 2018 Kentucky Residential Code was located.",
+    "Whether a hard-wired smoke alarm swap is treated as exempt in practice. The $10 electrical permit and the all-electrical-work rule are published, but the city publishes no list of minor work it waives.",
+    "An LFUCG building permit fee schedule. The city publishes per-project permit guides and the $10 electrical figure, but no consolidated dollar fee schedule page could be located on lexingtonky.gov."
+  ]
+}

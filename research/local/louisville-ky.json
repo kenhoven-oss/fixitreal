@@ -1,0 +1,67 @@
+{
+  "citySlug": "louisville-ky",
+  "cityName": "Louisville",
+  "stateAbbr": "KY",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Kentucky Department of Housing, Buildings and Construction, Division of Plumbing (state plumbing permit authority covering Louisville)",
+    "url": "https://dhbc.ky.gov/"
+  },
+  "codeEdition": {
+    "text": "The 2015 International Residential Code is the mandatory residential code in Kentucky, with the Kentucky amendments in the 2018 Kentucky Residential Code (Third Edition, August 2024) overriding anything in conflict. For a single-family dwelling, building permits, inspections and certificates of occupancy are required only where a local ordinance requires them.",
+    "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/007/125/"
+  },
+  "permitPolicy": {
+    "text": "A Kentucky plumbing permit is issued only to a licensed master plumber, or to a homeowner who will personally do the work in a home they occupy. The homeowner has to apply before starting and file an affidavit with the application, and cannot have taken a homeowner permit for a new home in the previous five years. A journeyman may only work under a master plumber's permit.",
+    "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+  },
+  "registration": null,
+  "codeItems": [
+    {
+      "text": "A water heater in a crawl space needs a travel path with at least five feet of vertical clearance and must sit on at least two inches of corrosion-resistant material strong enough to carry it. Replacing a heater that was already in a crawl space before September 1, 2006 is exempt from the height rule.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+    },
+    {
+      "text": "Since April 1, 2021, a water heater in an attic, above a drop ceiling, or on wood flooring in occupied space must have a corrosion-resistant watertight pan under it with at least a 3/4-inch drain piped like a TPR discharge line. The TPR valve may discharge into that pan only if the pan drain is one inch and discharges through an air gap to an approved point.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+    },
+    {
+      "text": "A fuel-fired water heater must vent to a flue or chimney that extends two feet above the roof and does not terminate within six feet of a door or window, and it may not be connected to a flue serving a coal-burning appliance. It cannot go in a bathroom, toilet room or sleeping room unless it is direct-vent or through-the-wall, and a closet installation needs a louver door or combustion-air ventilation.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+    },
+    {
+      "text": "Direct-vent water heater terminals have Kentucky-specific clearances: nine inches from any opening flue gases could enter for units up to 50,000 BTU per hour, twelve inches for larger units, and the terminal and air intake must be at least twelve inches above grade.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/055/"
+    },
+    {
+      "text": "State Housing, Buildings and Construction inspectors now carry carbon monoxide detection instruments, and every inspection they perform includes a visual check of the mechanical room and a CO reading.",
+      "sourceUrl": "https://dhbc.ky.gov/Documents/CarbonMonoxideTestingInitiative1-26.pdf"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Kentucky requires a state plumbing permit, and that permit covers five plumbing inspections at no extra charge.",
+      "fee": "$50 flat when one new or replacement domestic water heater is installed in a building; otherwise $50 base fee plus $14 for each fixture, appliance or water heater in a one- or two-family home",
+      "feeAsOf": "effective March 1, 2022",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+    },
+    "plumber-service-call": {
+      "requirement": "Kentucky does not require a plumbing permit to repair a leak, a cock or a valve, or to clean out a waste or sewer pipe, but moving or relocating a fixture or waste opening does need one, and work that is not a new installation is charged only the base permit fee.",
+      "fee": "$50 base fee (residential one- and two-family); the fee is limited to the base fee when the work is not new installation",
+      "feeAsOf": "effective March 1, 2022",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/020/050/"
+    },
+    "electrician-service-call": {
+      "requirement": "Electrical work in Louisville is permitted and inspected against the National Electrical Code by the local certified electrical inspector, and appliances and work exempted by Kentucky Residential Code section R105.2 are not inspected.",
+      "sourceUrl": "https://apps.legislature.ky.gov/law/kar/titles/815/035/020/"
+    }
+  },
+  "notVerified": [
+    "Louisville Metro's own permit fee schedule, contractor registration and permit pages (louisvilleky.gov returns 403 to automated requests behind a Cloudflare bot check; its Municode/American Legal code library is behind the same check)",
+    "Louisville Metro electrical, building and HVAC permit fees",
+    "Louisville Metro contractor registration requirement, fee and bond amount",
+    "garbage-disposal-replacement permit requirement and fee",
+    "smoke-detector-replacement permit requirement and fee",
+    "Whether Louisville Metro issues plumbing permits locally rather than through the state Division of Plumbing"
+  ]
+}

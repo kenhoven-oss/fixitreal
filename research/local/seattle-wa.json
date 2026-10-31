@@ -1,0 +1,86 @@
+{
+  "citySlug": "seattle-wa",
+  "cityName": "Seattle",
+  "stateAbbr": "WA",
+  "verifiedOn": "2026-10-31",
+  "authority": {
+    "name": "Seattle Department of Construction and Inspections (SDCI); plumbing and gas piping by Public Health - Seattle & King County",
+    "url": "https://www.seattle.gov/construction-and-inspections/permits/permits-we-issue-(a-z)/electrical-permit"
+  },
+  "codeEdition": {
+    "text": "Houses, duplexes and townhouses up to three stories in Seattle are judged against the 2021 Seattle Residential Code, which is the 2021 International Residential Code with Seattle's own amendments.",
+    "sourceUrl": "https://www.seattle.gov/construction-and-inspections/codes/codes-we-enforce-(a-z)/residential-code"
+  },
+  "permitPolicy": {
+    "text": "Plumbing and gas piping in Seattle are permitted by Public Health - Seattle & King County, not by SDCI, and a homeowner can get a homeowner's plumbing permit, which authorizes the homeowner personally to do the plumbing; anyone signing on the owner's behalf is representing that the owner authorized it, and a plumber hired for the job has to be a registered contractor. On the electrical side, a property owner may do their own work when they own and occupy the property.",
+    "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/applications-and-permits"
+  },
+  "registration": {
+    "text": "A professional pulling an electrical permit in Seattle needs two things: a Washington State electrical contractor's license and a City of Seattle business license. SDCI also issues its own trade licenses for boiler operator/supervisor, refrigeration and gas piping work.",
+    "sourceUrl": "https://www.seattle.gov/construction-and-inspections/permits/permits-we-issue-(a-z)/electrical-permit"
+  },
+  "codeItems": [
+    {
+      "text": "Seattle's plumbing rules are a separate code enforced by a separate agency: the 2021 Seattle Plumbing Code is the 2021 Washington State Plumbing Code with Seattle amendments, and Public Health - Seattle & King County enforces it rather than SDCI.",
+      "sourceUrl": "https://www.seattle.gov/construction-and-inspections/codes/codes-we-enforce-(a-z)/plumbing-code"
+    },
+    {
+      "text": "Seismic bracing is spelled out by the inspecting agency, not left to the installer: a water heater needs two 20-gauge sheet metal straps, one in the upper third of the tank and one in the lower third.",
+      "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/installations/installing-new-water-heater"
+    },
+    {
+      "text": "Seattle requires at least 24 inches of continuous width for access to the water heater, and a heater in a garage has to be shielded by a fixed barrier such as a metal post set in the concrete between the tank and where a car would park. Gas piping must not block removal of the tank.",
+      "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/installations/installing-new-water-heater"
+    },
+    {
+      "text": "A closed water system, meaning water can flow into the building but not back out, requires an expansion tank or another approved thermal expansion device. The temperature and pressure relief line has to drain by gravity to the outside or to an approved drain, and a gas water heater other than a direct-vent type cannot go in a bedroom or bathroom unless it meets special criteria.",
+      "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/installations/installing-new-water-heater"
+    },
+    {
+      "text": "Carbon monoxide alarms work on a trigger in Seattle. An owner-occupied single-family home legally occupied before July 26, 2009 is exempt, but any building permit application for work on the home triggers the requirement, a permit application for alterations has to show the alarms are already in place or include them, and every home must have a CO alarm when it is sold.",
+      "sourceUrl": "https://www.seattle.gov/DPD/Publications/CAM/cam317.pdf"
+    },
+    {
+      "text": "Smoke alarms have to be added throughout an existing Seattle house when a bedroom is added, when an accessory dwelling unit is created, or when other interior work requiring a permit happens. If you do not strip the interior finishes and there is no attic or basement access, the added alarms may be battery powered and need not be interconnected.",
+      "sourceUrl": "https://www.seattle.gov/DPD/Publications/CAM/cam317.pdf"
+    },
+    {
+      "text": "Gas piping is not covered by the plumbing permit or by a mechanical permit; installing or changing gas piping takes its own gas piping permit, and Seattle's mechanical permit explicitly excludes plumbing, sprinklers, gas lines, refrigeration and boilers.",
+      "sourceUrl": "https://www.seattle.gov/construction-and-inspections/permits/permits-we-issue-(a-z)/mechanical-permit"
+    },
+    {
+      "text": "Getting the address wrong on a Seattle plumbing permit has a published price: if inspectors are sent to the wrong site because of an applicant error, a $40 change-of-address fee may be charged.",
+      "sourceUrl": "https://kingcounty.gov/en/dept/dph/health-safety/environmental-health/plumbing-gas-piping/applications-and-permits"
+    }
+  ],
+  "byGuide": {
+    "water-heater-replacement": {
+      "requirement": "Replacing a water heater in Seattle needs a plumbing permit from Public Health - Seattle & King County, which charges a base permit fee plus a per-fixture amount; a homeowner can pull it themselves, and if the heater is gas and the gas piping changes, that takes a separate gas piping permit.",
+      "fee": "$137 plus $27 per fixture (Plumbing/Backflow Permit); gas piping permits are $137 plus $27 per outlet",
+      "feeAsOf": "Effective January 1, 2026",
+      "sourceUrl": "https://cdn.kingcounty.gov/-/media/king-county/depts/dph/documents/health-safety/environmental-health/fees/plumbing-gas-piping-service-fees-through-2026.pdf"
+    },
+    "plumber-service-call": {
+      "requirement": "Any time you install, relocate or change a plumbing or gas piping system in Seattle, a permit from Public Health - Seattle & King County is required, priced as a base fee plus an amount per fixture; work already done without a permit is billed instead under the much higher Already Built Construction permit.",
+      "fee": "$137 plus $27 per fixture; $273 plus $55 per fixture/outlet for an Already Built Construction (ABC) permit; $137 re-inspection; $68 permit renewal",
+      "feeAsOf": "Effective January 1, 2026",
+      "sourceUrl": "https://cdn.kingcounty.gov/-/media/king-county/depts/dph/documents/health-safety/environmental-health/fees/plumbing-gas-piping-service-fees-through-2026.pdf"
+    },
+    "electrician-service-call": {
+      "requirement": "Seattle requires an electrical permit any time wiring is installed, altered, extended or connected to equipment, and most of these are self-issued online the same day with no plan review; the city publishes a minimum permit fee plus an administrative fee, and then charges by what you are actually installing.",
+      "fee": "$105.12 minimum fee for a standard Online Trade-Construction (OTC) self-issued electrical permit, plus a $55.48 administrative fee; $146.00 for a service repair (mast and meter base only); new or altered service $146.00 up to 125 amperes, $292.00 for 150-200 amperes; branch circuit or feeder $26.28 up to 25 amperes, $43.80 for 30-50 amperes, $146.00 for 60-200 amperes",
+      "feeAsOf": "2026 Fee Subtitle, effective January 1, 2026",
+      "sourceUrl": "https://www.seattle.gov/documents/Departments/SDCI/Codes/FeeSubtitleFinal.pdf"
+    },
+    "smoke-detector-replacement": {
+      "requirement": "Replacing one alarm is not what triggers Seattle's rules, but adding a bedroom, creating an accessory dwelling unit or doing other permitted interior work means smoke alarms must be brought up to current standards throughout the house, and the city allows battery-only, non-interconnected alarms where finishes stay in place and there is no attic or basement access.",
+      "sourceUrl": "https://www.seattle.gov/DPD/Publications/CAM/cam317.pdf"
+    }
+  },
+  "notVerified": [
+    "garbage-disposal-replacement permit requirement and fee. The published plumbing permit rule covers installing, relocating or changing a plumbing system and the fee is per fixture, but no official source specifically names a disposal swap, so no figure was recorded for it.",
+    "Seattle mechanical permit dollar figures for residential work (the fee subtitle prices mechanical permits on construction value plus an hourly review fee rather than as a flat residential amount)",
+    "Whether the 2023 Seattle Electrical Code is the only electrical edition currently in force (the city's electrical code page links both a 2023 edition and 2020 replacement pages without stating an effective date)",
+    "The dollar amount of the Seattle technology fee that is added to the permit fees above"
+  ]
+}
