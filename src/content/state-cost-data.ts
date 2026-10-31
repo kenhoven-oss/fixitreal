@@ -306,7 +306,7 @@ export const STATES: StateCostData[] = [
  * Article JSON-LD and the fair-price band all read this. Bump it when the
  * rate tables or the page copy change materially — not on every deploy.
  */
-export const STATE_COST_UPDATED = "2026-09-13";
+export const STATE_COST_UPDATED = "2026-10-31";
 
 /**
  * Whether the programmatic state and metro cost pages are submitted to
@@ -389,7 +389,7 @@ export const STATE_COST_GUIDES: CostGuideForState[] = [
     longName: "electrician service call",
     model: "service-call",
     base: { low: 80, high: 200 },
-    hourly: { low: 75, high: 150 },
+    hourly: { low: 60, high: 130 },
     jobDescription:
       "single small electrical fix — one outlet, one breaker, one fixture",
     nationalBasis:
@@ -430,11 +430,11 @@ export const STATE_COST_GUIDES: CostGuideForState[] = [
     shortName: "garbage disposal replacement",
     longName: "garbage disposal replacement",
     model: "fixed-job",
-    base: { low: 230, high: 500 },
+    base: { low: 250, high: 600 },
     hourly: { low: 85, high: 175 },
     jobDescription:
       "like-for-like ¾ HP disposal swap — unit, labor and haul-away",
-    nationalBasis: "$230–$500 hired, including a mid-range ¾ HP unit",
+    nationalBasis: "$250–$600 hired, including a mid-range ¾ HP unit",
     diy: {
       parts: { low: 85, high: 150 },
       time: "about an hour",
@@ -448,12 +448,12 @@ export const STATE_COST_GUIDES: CostGuideForState[] = [
     longName: "water heater replacement",
     model: "fixed-job",
     // Was 900–1800, which reconciled with nothing. The parent guide
-    // publishes $1,350–$2,400 installed; that is the only defensible base.
-    base: { low: 1350, high: 2400 },
+    // publishes $900–$2,500 installed (~$1,400 typical); that is the defensible base.
+    base: { low: 900, high: 2500 },
     hourly: { low: 85, high: 175 },
     jobDescription:
       "like-for-like 40–50 gallon tank swap — unit, labor, permit and haul-away",
-    nationalBasis: "$1,350–$2,400 installed for a standard 50-gallon swap",
+    nationalBasis: "$900–$2,500 installed for a standard 50-gallon swap, about $1,400 typical",
   },
 ];
 

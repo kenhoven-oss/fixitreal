@@ -55,8 +55,8 @@ export const jobs: readonly Job[] = [
     permit: { commonlyRequired: false, notes: "Not typically required for like-for-like toilet replacement." },
     time: { diyMinutes: 90, proMinutes: 60 },
     cost: {
-      diy: { low: 140, high: 400, notes: "Toilet + wax ring + supply line + shims" },
-      pro: { low: 300, high: 600, notes: "Typically includes removal and disposal of the old unit" },
+      diy: { low: 105, high: 400, notes: "Toilet + wax ring + supply line + shims" },
+      pro: { low: 300, high: 800, notes: "Typically includes removal and disposal of the old unit; some shops bill haul-away separately at $50–$200" },
     },
     toolsNeeded: ["adjustable wrench", "putty knife", "bucket", "utility knife", "level"],
     partsNeeded: ["toilet", "wax ring", "supply line", "closet bolts", "shims"],
@@ -107,8 +107,8 @@ export const jobs: readonly Job[] = [
     permit: { commonlyRequired: false, notes: "Not typically required." },
     time: { diyMinutes: 75, proMinutes: 45 },
     cost: {
-      diy: { low: 85, high: 265, notes: "Unit cost dominates — ½ HP is $100, ¾ HP is $180, 1 HP is $250" },
-      pro: { low: 230, high: 500, notes: "Labor typically $120–$220 on top of unit cost" },
+      diy: { low: 90, high: 265, notes: "Unit cost dominates — ½ HP is $100, ¾ HP is $180, 1 HP is $250" },
+      pro: { low: 250, high: 600, notes: "Labor typically $100–$275 on top of unit cost" },
     },
     toolsNeeded: ["screwdriver", "channel-lock pliers", "putty knife", "bucket", "flashlight"],
     partsNeeded: ["new disposal unit", "plumber's putty or silicone", "possibly a new mounting ring"],
@@ -263,7 +263,7 @@ export const jobs: readonly Job[] = [
     time: { diyMinutes: 300, proMinutes: 180 },
     cost: {
       diy: { low: 550, high: 1100, notes: "Tank + fittings + permit + code items" },
-      pro: { low: 1350, high: 2400, notes: "Includes tank, labor, permit, haul-away, code upgrades" },
+      pro: { low: 900, high: 2500, notes: "Includes tank, labor, permit, haul-away, code upgrades; ~$1,400 typical" },
     },
     toolsNeeded: ["pipe wrench", "tubing cutter", "torch (if sweat fittings)", "voltage tester", "garden hose", "helper"],
     partsNeeded: ["new water heater", "supply lines / flex connectors", "T&P valve discharge pipe", "expansion tank", "seismic straps (West Coast)", "drip pan with drain"],
@@ -274,7 +274,7 @@ export const jobs: readonly Job[] = [
     ifYouDiy:
       "Don't, unless you've done it before and have a licensed plumber review your work. If you insist: pull the permit first. Study the code items required for your jurisdiction. Budget for the expansion tank, drip pan, and T&P discharge routing on top of the unit cost. Verify gas connections with a licensed plumber before lighting; a leak tester is not optional. After install, call for inspection before drywalling in or hiding any connections. Realistically, you're saving $600–$1,200 compared to hiring — at the cost of an entire weekend, a permit fee, inspection coordination, and personal exposure to a fail/leak/fire scenario if something's wrong.",
     ifYouHire:
-      "A $1,350–$2,400 quote for a standard 50-gallon replacement is fair. Verify it includes: the permit, haul-away of the old unit, the expansion tank, any code-required upgrades (drip pan, straps), and labor to route the T&P discharge. $2,500–$3,500 is reasonable for tankless conversions or complex installs (moving location, upsizing, gas line work). Anything over $4,000 on a simple swap without clear justification is overpriced — get another quote. Ask for the permit number before you pay.",
+      "A $900–$2,500 quote for a standard 50-gallon replacement is fair, with about $1,400 the most commonly published figure. Verify it includes: the permit, haul-away of the old unit, the expansion tank, any code-required upgrades (drip pan, straps), and labor to route the T&P discharge. $2,500–$3,500 is reasonable for tankless conversions or complex installs (moving location, upsizing, gas line work). Anything over $4,000 on a simple swap without clear justification is overpriced — get another quote. Ask for the permit number before you pay.",
     safetyNote:
       "Water heaters involve natural gas or 240V electric, pressurized water, and carbon-monoxide-producing combustion (gas units). Mistakes cause flooding, explosions, carbon monoxide poisoning, or fire. This is a licensed-plumber-and-permit job in almost every US jurisdiction. If you proceed without a permit, an insurer can deny a claim for resulting damage, and the install becomes a disclosure item at resale.",
     faq: [
@@ -369,7 +369,7 @@ export const jobs: readonly Job[] = [
     time: { diyMinutes: 75, proMinutes: 45 },
     cost: {
       diy: { low: 80, high: 300, notes: "Faucet $60–$250 + supply lines" },
-      pro: { low: 200, high: 500, notes: "Labor $130–$250 plus faucet" },
+      pro: { low: 200, high: 600, notes: "Labor $120–$300 plus faucet" },
     },
     toolsNeeded: ["basin wrench", "adjustable wrench", "bucket", "towel", "flashlight"],
     partsNeeded: ["faucet", "supply lines (braided stainless)", "plumber's tape"],
