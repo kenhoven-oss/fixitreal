@@ -1,0 +1,21 @@
+{
+  "state": "Nevada",
+  "stateSlug": "nevada",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Nevada sets no smoke or carbon monoxide alarm condition on selling an ordinary house; the one sale-linked rule covers mobile and manufactured homes, which must have a smoke detector when sold.",
+  "alarmType": "For a mobile home or commercial coach: a smoke detector meeting standards approved by the State Fire Marshal. For a manufactured home: a smoke detector meeting the federal HUD construction and safety standards (42 U.S.C. 5401 et seq.). An interconnectivity device is not required if the home was not built to accept one.",
+  "coAlarms": null,
+  "certification": null,
+  "citation": "Nev. Rev. Stat. § 489.701 (mobile, manufactured homes and commercial coaches sold or used for residential purposes); Nev. Rev. Stat. § 477.140 (hotels, motels, apartment buildings)",
+  "sourceUrl": "https://www.leg.state.nv.us/NRS/NRS-489.html#NRS489Sec701",
+  "lastAmended": "2025 (NRS 489.701, A 2025, 56). NRS 477.140 added 1981 and not amended since.",
+  "notVerified": [
+    "Nevada appears to have no statewide carbon monoxide alarm statute at all. The official 2025 NRS Subject Index letter C has no entry for carbon monoxide, so coAlarms is set to null rather than claimed either way.",
+    "No statewide smoke alarm requirement for site-built one- and two-family homes was found. The official NRS Subject Index entry for smoke detectors lists only 489.701 and 477.140, and NRS 477.140 reaches only hotels and motels with six or more guest rooms and apartment buildings with three or more units.",
+    "Nevada's seller real property disclosure chapter (NRS 113) contains no mention of smoke, detector or alarm, so there is no state disclosure item about alarms either.",
+    "Local requirements were not checked. Nevada counties and cities adopt their own building and fire codes, so Clark, Washoe and other jurisdictions may require alarms in new work or at a change of occupancy.",
+    "The State Fire Marshal's approved standards referenced by NRS 489.701 were not read, so the exact detector spec for mobile homes is unverified.",
+    "Nobody certifies. No inspection, certificate or seller affidavit appears in either statute."
+  ]
+}

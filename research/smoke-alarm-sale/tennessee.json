@@ -1,0 +1,27 @@
+{
+  "state": "Tennessee",
+  "stateSlug": "tennessee",
+  "requiredAtSale": false,
+  "verifiedOn": "2026-10-31",
+  "summary": "Tennessee attaches no smoke or carbon monoxide alarm duty to selling a house; its alarm laws hit rentals, hotels, apartment buildings, and newly built homes getting permanent power hooked up.",
+  "alarmType": "A smoke alarm must respond to smoke, be approved under the building construction safety standards adopted under T.C.A. s. 68-120-101, and be either listed by a nationally recognized independent testing lab such as UL or inspected by an agency the state fire marshal authorizes. Install per those standards and the manufacturer's directions, with the standards winning any conflict. Battery-only alarms are allowed in buildings with no commercial power. For a newly built one- or two-family dwelling, permanent electric service cannot be approved unless a listed smoke alarm is installed. In hotels and apartment buildings existing before Jan. 1, 2016, alarms may be hardwired, battery-powered, or plugged into an outlet with a plug restrainer where no switch other than the main power switch controls that outlet. No sealed 10-year battery, interconnection or photoelectric requirement.",
+  "coAlarms": "Nothing in state law. Public Chapter 120 of 2015, which rewrote all three of Tennessee's alarm sections, contains no carbon monoxide provision. A 2021 bill (SB 525 / HB 949) would have required CO alarms within ten feet of each sleeping room in one- and two-family rental units and mandated tamper-resistant 10-year battery alarms on replacement, but it died in committee and is not law.",
+  "certification": null,
+  "citation": "T.C.A. s. 68-102-151 (one- and two-family rental units); T.C.A. s. 68-120-111 (newly constructed one- and two-family dwellings, no permanent electric service without an alarm); T.C.A. s. 68-120-112 (hotels and apartment buildings existing before Jan. 1, 2016); all three rewritten by 2015 Public Chapter 120 (SB 1036)",
+  "sourceUrl": "https://capitol.tn.gov/Bills/109/Bill/HB0917.pdf",
+  "lastAmended": "2015 Public Chapter 120, signed April 20, 2015, effective January 1, 2016",
+  "notVerified": [
+    "No Tennessee requirement to install, inspect or certify alarms at sale or transfer was found; this is an absence of a rule.",
+    "Tennessee publishes the Tennessee Code through a commercial vendor, not on a .gov site, so the current codified text of these sections was not read. The content comes from the General Assembly's own bill text for HB 917 (109th G.A.) plus the enacted Public Chapter 120, and the bill was passed with a House amendment that was not read separately.",
+    "publications.tnsosfiles.com, the state's own publication site for acts and administrative rules, returned HTTP 403 to automated requests, so the fire marshal's rules at 0780-02-23 and the Public Chapter PDF were not retrieved by direct fetch; the Public Chapter was read through a page fetch instead.",
+    "Whether any act after 2015 amended s. 68-102-151, s. 68-120-111 or s. 68-120-112 was not confirmed.",
+    "Whether Tennessee's residential property disclosure statute (T.C.A. ch. 66-5, part 2) or its form asks about smoke or CO alarms was not checked.",
+    "Local ordinances were not checked; several Tennessee cities adopt their own fire codes."
+  ],
+  "sourceUrlSecondary": [
+    "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=SB1036&ga=109",
+    "https://publications.tnsosfiles.com/acts/109/pub/pc0120.pdf",
+    "https://capitol.tn.gov/Bills/112/Bill/HB0949.pdf",
+    "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=SB0525&ga=112"
+  ]
+}

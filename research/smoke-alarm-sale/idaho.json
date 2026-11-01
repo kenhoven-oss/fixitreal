@@ -1,0 +1,18 @@
+{
+  "state": "Idaho",
+  "stateSlug": "idaho",
+  "verifiedOn": "2026-11-01",
+  "requiredAtSale": false,
+  "summary": "Idaho does not require a seller to install or prove working smoke alarms, but the state's seller disclosure form does ask whether the smoke detectors included in the sale are working.",
+  "alarmType": "No alarm type is specified for a home being sold. The only type Idaho law spells out is for rentals: an 'approved smoke detector' means a battery-operated device that detects visible or invisible particles of combustion and carries a label from an approved testing agency (Idaho Code s 6-320(a)(6)). For new construction, Idaho adopts the International Residential Code, as amended by the Idaho Building Code Board, which it names the Idaho residential code (Idaho Code s 39-4109).",
+  "coAlarms": "No Idaho statute requiring CO alarms in a one- or two-family home was found. A search of the Legislature's own statute search for 'carbon monoxide' returned only a workers' compensation occupational-disease section, a licensed-facility section and a short-term-rental section - nothing about homes or home sales.",
+  "certification": "Nobody inspects or certifies alarms at sale. The one sale-time duty is on the seller's own disclosure form: under the Property Condition Disclosure Act the seller must list anything among the appliances and service systems included in the sale - the form names smoke detectors among them - that is not functioning properly, and the seller certifies the form is true. That is a disclosure, not a requirement to have working alarms.",
+  "citation": "Idaho Code s 55-2508 (Property Condition Disclosure Act - disclosure form); Idaho Code s 6-320(a)(6) (landlord duty, rentals only); Idaho Code s 39-4109 (Idaho Building Code Act - adoption of the Idaho residential code)",
+  "sourceUrl": "https://legislature.idaho.gov/statutesrules/idstat/title55/t55ch25/sect55-2508/",
+  "lastAmended": "2002 (s 55-2508, added 1994 ch. 366, amended 2002 ch. 333); 1994 (s 6-320, added 1977, amended 1994 ch. 418); 2022 (s 39-4109, amended ch. 302)",
+  "notVerified": [
+    "Whether the Idaho residential code (the IRC edition and amendments adopted by the Idaho Building Code Board) imposes smoke or CO alarm retrofit duties when a home is altered or sold - the code itself and the Board's rules were not read. Smoke and CO alarm requirements for new and remodeled homes live there, not in the statutes.",
+    "The absence of a sale requirement rests on the Idaho Legislature's own statute search for 'smoke detector', 'smoke alarm' and 'carbon monoxide' (all results reviewed: ss 6-320, 39-1109, 39-1211B, 39-4109C, 55-2508, 67-6539, 72-438) - none keys a smoke or CO alarm duty to sale or transfer of a home. A section using different wording could have been missed.",
+    "Local ordinances (city or county) were not checked."
+  ]
+}

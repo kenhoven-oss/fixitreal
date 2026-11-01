@@ -1,0 +1,18 @@
+{
+  "state": "Montana",
+  "stateSlug": "montana",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Montana does not make a seller install alarms to close a sale; it only makes the seller put in writing whether the home has smoke and carbon monoxide detectors or not.",
+  "alarmType": null,
+  "coAlarms": "Handled in the same statute as smoke detectors: the written notice to the buyer must state whether the dwelling is equipped with a carbon monoxide detector. No duty to install one.",
+  "certification": "Nobody inspects or signs off. The seller gives the buyer written notice in the buy-sell agreement or at the time of sale. The statute also says neither the seller nor either agent can be sued for failing to give that notice, and evidence of the failure is not admissible in a civil action.",
+  "citation": "Mont. Code Ann. § 70-20-113",
+  "sourceUrl": "https://mca.legmt.gov/bills/mca/title_0700/chapter_0200/part_0010/section_0130/0700-0200-0010-0130.html",
+  "lastAmended": "2009",
+  "notVerified": [
+    "Whether Montana has any general statewide smoke alarm mandate for existing one- or two-family homes. MCA Title 50, ch. 61 covers fire safety in public buildings only, and the MCA site's search endpoint returned 404, so no statewide residential mandate was located and none is claimed either way.",
+    "New-construction alarm requirements under whatever building code Montana has adopted were not checked.",
+    "70-20-113 applies on its face to a dwelling 'not otherwise required to have' the detectors; which dwellings are otherwise required was not traced."
+  ]
+}

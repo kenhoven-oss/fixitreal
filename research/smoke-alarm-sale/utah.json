@@ -1,0 +1,14 @@
+{
+  "state": "Utah",
+  "stateSlug": "utah",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Utah has no statute making smoke or carbon monoxide alarms a condition of selling or transferring a home; the state requirement comes from the building code, which applies when a home is built and when it is altered, repaired, or added to.",
+  "alarmType": "Utah adopts the 2021 International Residential Code as part of the State Construction Code, so IRC Section R314 (smoke alarms) and R315 (CO alarms) govern. Utah's own amendments add accessory dwelling units to the alterations/repairs trigger in R314.2.2 and R315.2.2, and amend IRC 315.3 so CO alarms must be installed on each level of the dwelling unit as well as in the locations the IRC already lists. The statute sets no separate Utah-specific sensor type or power source.",
+  "coAlarms": "Covered by the adopted IRC Section R315 as amended by Utah, which requires them on each level of the dwelling unit in addition to the IRC's own locations. No sale or transfer trigger.",
+  "certification": null,
+  "citation": "Utah Code § 15A-2-103 (codes adopted as the State Construction Code, incl. the 2021 IRC); Utah Code § 15A-3-202 (statewide amendments to IRC chapters 1-5, incl. R314.2.2, R315.2.2, and 315.3)",
+  "sourceUrl": "https://le.utah.gov/xcode/Title15A/Chapter3/15A-3-S202.html",
+  "lastAmended": "§ 15A-3-202: amended by ch. 47, 2026 General Session",
+  "notVerified": ["No sale/transfer requirement was found, but absence is based on reading the full XML text of Utah Code Title 15A (State Construction and Fire Codes Act) and Title 57 (Real Estate). Title 57 contains no occurrence of \"alarm\" and its only use of \"smoke\" is in an HOA-rules section. Other titles were not searched; the le.utah.gov full-text code search is JavaScript-driven and could not be queried with curl.", "The substantive text of IRC R314 and R315 is in the ICC model code, which is copyrighted and not reproduced in the Utah Code, so the actual number, location, interconnection, and power-source requirements for alarms were not read from an official Utah source.", "Statute text was read from the Legislature's own XML files, since le.utah.gov HTML pages load their content by script and returned only the page shell to curl: https://le.utah.gov/xcode/Title15A/Chapter3/C15A-3_1800010118000101.xml, https://le.utah.gov/xcode/Title15A/C15A_1800010118000101.xml, https://le.utah.gov/xcode/Title57/C57_1800010118000101.xml", "Local Utah city and county ordinances were not checked and may add requirements at sale."]
+}

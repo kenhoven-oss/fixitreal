@@ -1,0 +1,19 @@
+{
+  "state": "Missouri",
+  "stateSlug": "missouri",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Missouri has no statewide smoke or carbon monoxide alarm law for houses at all, so nothing in state law has to be done about alarms before you sell one; whatever applies comes from your city or county.",
+  "alarmType": null,
+  "coAlarms": null,
+  "certification": null,
+  "citation": "No Missouri statute found. Nearest provisions: Mo. Rev. Stat. § 320.405 (Missouri Fire and Life Safety Standards, state-inspected facilities only, effective Aug. 28, 2026); § 210.027 (child care providers); § 198.074 (long-term care facilities)",
+  "sourceUrl": "https://revisor.mo.gov/main/OneSection.aspx?section=320.405",
+  "lastAmended": null,
+  "notVerified": [
+    "Conclusion is based on a full-text search of the Revised Statutes of Missouri on the Revisor's own site. The phrase 'smoke detector' returns no statute sections; 'smoke detectors' returns only a disability-access renovation tax credit (135.562), long-term care facilities (198.074), child care providers (210.027) and an observance day (9.130); 'carbon monoxide' returns only a mining section (293.120); 'smoke alarm' returns only 198.074. None is tied to the sale of a home.",
+    "New section 320.405, effective August 28, 2026, does list transfer of ownership as a trigger, but only for a 'state-inspected facility' and only from January 1, 2028, and subsection 5(3) says it does not create a statewide building or fire code for any occupancy not already inspected by the Division of Fire Safety. It does not reach one- or two-family homes. Verify this reading if a client's property is a licensed facility.",
+    "Missouri's new-construction requirements were not checked. Missouri has no statewide residential building code for one- and two-family homes, so new-home alarm rules come from local codes; no local ordinance was read.",
+    "Whether any Missouri seller disclosure requirement touches alarms. Missouri has no statutory seller disclosure form found in this search, so disclosure practice there rests on contract and real estate licensing rules that were not reviewed."
+  ]
+}

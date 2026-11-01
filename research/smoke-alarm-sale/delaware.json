@@ -1,0 +1,17 @@
+{
+  "state": "Delaware",
+  "stateSlug": "delaware",
+  "verifiedOn": "2026-11-01",
+  "requiredAtSale": false,
+  "summary": "Delaware requires working smoke detectors in every home no matter how old it is, but state law adds nothing extra when a house is sold.",
+  "alarmType": "Photoelectric or ionization smoke detectors. Homes built after July 8, 1993 follow the State Fire Prevention Regulations and building code in force when they were built. Homes built before that date need a detector outside each sleeping area near the bedrooms plus one on every other story including the basement, and may use single-station battery units listed by Underwriters Laboratories or Factory Mutual. Hardwired interconnected systems are allowed but not required in a one- or two-family home.",
+  "coAlarms": "No CO requirement for an owner-occupied one- or two-family home. Delaware's CO chapter covers only 'lodging establishments' - hotels, motels, bed and breakfasts, apartments and multi-family dwellings, condominiums, dormitories and similar places that provide accommodation for pay - and only where a unit has a fuel-burning appliance, fireplace or attached garage. A private residence occupied by the owner with no unit available for pay is expressly excluded. Added by 81 Del. Laws, c. 349, approved July 23, 2018. Cite: 16 Del. C. ch. 66C (ss 6601C-6605C), https://delcode.delaware.gov/title16/c066c/index.html",
+  "certification": "Nobody inspects or signs off at sale. The statute says a licensed real estate salesperson or broker has no duty to verify that a home complies (16 Del. C. s 6631(f)). Enforcement is by the State Fire Marshal through Justice of the Peace Court fines of $100 to $500, typically after a fire department response or a complaint.",
+  "citation": "16 Del. C. ss 6631-6635 (smoke detectors); 16 Del. C. ss 6601C-6605C (carbon monoxide)",
+  "sourceUrl": "https://delcode.delaware.gov/title16/c066/sc04/index.html",
+  "lastAmended": "2010 (smoke detector sections, 77 Del. Laws c. 444, approved July 27, 2010); 2018 (CO chapter, 81 Del. Laws c. 349, approved July 23, 2018)",
+  "notVerified": [
+    "Whether any Delaware city or county ordinance (for example Wilmington, Newark, Dover or New Castle, which have their own assistant fire marshals) imposes a smoke or CO alarm inspection at sale - not checked, state law only was reviewed.",
+    "Whether the State Fire Prevention Regulations themselves (the detailed rules referenced by s 6631(d)) add any transfer-of-title step - the regulations were not read."
+  ]
+}

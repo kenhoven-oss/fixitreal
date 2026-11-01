@@ -1,0 +1,18 @@
+{
+  "state": "New Jersey",
+  "stateSlug": "new-jersey",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": true,
+  "summary": "In New Jersey you cannot close on a one- or two-family home until the local fire official has inspected it and issued a certificate showing the smoke alarms, carbon monoxide alarms and a kitchen fire extinguisher all comply.",
+  "alarmType": "State law requires a smoke-sensitive alarm on every level and outside each separate sleeping area, near the ceiling; battery alarms are allowed. Under the fire code, alarms that are added or replaced must be 10-year sealed-battery single-station units listed to ANSI/UL 217 (that requirement took effect January 1, 2019). AC-powered alarms put in during original construction or a rehab may not be swapped for battery units, and AC-powered alarms still satisfy the rule. Alarms must be placed and kept up per NFPA 72 and are not required to be interconnected.",
+  "coAlarms": "Carbon monoxide alarms are required in every dwelling unit of one- and two-family and attached single-family homes, except buildings that have neither a fuel-burning device nor an attached garage. CO alarms are inspected as part of the same pre-sale certificate.",
+  "certification": "The local fire enforcement agency under the Uniform Fire Safety Act inspects and issues the certificate before the sale; where the municipality already requires a certificate of occupancy or inspection on a change of occupancy, that certificate cannot be issued until the same items are verified. The local governing body sets the inspection fee. Selling without it carries a fine of up to $500 per alarm violation and up to $100 for the fire extinguisher. The certificate is widely issued under names like Certificate of Smoke Alarm, Carbon Monoxide Alarm and Portable Fire Extinguisher Compliance; the statute itself uses no acronym.",
+  "citation": "N.J.S.A. 52:27D-198.1 to 52:27D-198.3 (P.L.1991, c.92, as amended by P.L.2005, c.71); N.J.A.C. 5:70-4.19 (smoke, CO and extinguisher specifics) and N.J.A.C. 5:70-2.3 (certificate)",
+  "sourceUrl": "https://pub.njleg.gov/Bills/2004/PL05/71_.PDF",
+  "lastAmended": "Statute: 2005 (P.L.2005, c.71, approved April 14, 2005). Fire code rule N.J.A.C. 5:70-4.19 amended effective February 5, 2018 (R.2018 d.075), with the 10-year sealed battery subsection effective January 1, 2019.",
+  "notVerified": [
+    "The current full text of N.J.A.C. 5:70-2.3 (the rule that spells out the certificate application and how long a certificate stays valid) could not be read on a state-hosted page; New Jersey publishes the Administrative Code through a commercial service. The certificate requirement itself is verified from the statute.",
+    "Whether a fee cap or statewide uniform fee applies, and any statewide validity period for the certificate, were not verified.",
+    "Secondary source for rule text: N.J.A.C. 5:70-4.19 as adopted is quoted in the state's own 2018 rule adoption notice at https://nj.gov/dca/divisions/dfs/codes/regulations/r.2018%20d.075%20(50%20n.j.r.%20771(a)).pdf ; the CO alarm scope language at 5:70-4.19(d) in https://www.nj.gov/dca/divisions/dfs/codes/regulations/carbon_monoxide_detection.pdf"
+  ]
+}

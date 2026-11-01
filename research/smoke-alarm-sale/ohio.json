@@ -1,0 +1,20 @@
+{
+  "state": "Ohio",
+  "stateSlug": "ohio",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Ohio does not require smoke or carbon monoxide alarms as a condition of selling a home — the state's alarm rules are in the Residential Code of Ohio and apply when a house is built or when permitted alteration, repair or addition work is done.",
+  "alarmType": "Smoke alarms must meet the household fire warning provisions of NFPA 72, be listed and labeled to UL 217, and — a requirement unusual to Ohio — on each level of a dwelling unit both photoelectric and ionization technologies must be installed, either as separate alarms or dual-sensing units; the alarm outside the sleeping area must include photoelectric. Required locations: in each sleeping room, outside each separate sleeping area near the bedrooms, and on each additional story including basements and habitable attics. Alarms must be interconnected so that one sets off all, and must take primary power from the building wiring with battery backup. Existing homes get relief: battery alarms are allowed in buildings without commercial power, hard-wiring is not required in existing areas unless the work exposes the structure or an attic, crawl space or basement gives access without tearing out finishes, and interconnection is not required in existing areas. Alarms are required in an existing home only when permitted alterations or repairs touch the sleeping rooms or the area just outside them, or when a sleeping room is added or created; exterior work like roofing, siding, windows, doors, a porch or a deck, and plumbing or mechanical work, do not trigger it.",
+  "coAlarms": "CO alarms must be listed and labeled to UL 2034 and installed per the manufacturer. In new construction they are required where the dwelling unit has a fuel-fired appliance or an attached garage. In an existing home with a fuel-fired appliance or attached garage, they are required when permitted work involves adding or altering a sleeping room, altering the area just outside a sleeping room, adding or altering an attached garage, or adding, altering, repairing or replacing a fuel-fired appliance. Location: outside each separate sleeping area near the bedrooms, plus inside a bedroom that contains a fuel-burning appliance or has one in its attached bathroom. Ohio deleted the interconnection requirement for CO alarms. Nothing here is triggered by a sale.",
+  "certification": null,
+  "citation": "Residential Code of Ohio, OAC 4101:8-3-01, Sections 314 (smoke alarms) and 315 (carbon monoxide alarms)",
+  "sourceUrl": "https://codes.ohio.gov/ohio-administrative-code/rule-4101:8-3-01 (rule text PDF: https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-3-01_eff_7_1_19.pdf)",
+  "lastAmended": "Rule effective July 1, 2019",
+  "notVerified": [
+    "Keyword searches of the Ohio Revised Code for 'smoke detector', 'smoke alarm' and 'carbon monoxide' on the state's official codes site returned no provision tying alarms to the sale or transfer of a one- or two-family home. The only smoke detector statute found, R.C. 3781.104, covers existing apartment and condominium buildings over 75 feet tall, not houses.",
+    "Ohio's residential property disclosure form statute (R.C. 5302.30) was not read, so whether the state disclosure form asks a seller about alarms is unverified. A disclosure duty would not be an installation requirement in any case.",
+    "How the Residential Code of Ohio is enforced locally — which jurisdictions have certified residential building departments — was not verified, so practical enforcement may vary by county or city.",
+    "Local Ohio city ordinances were not checked; some Ohio municipalities do run a point-of-sale or certificate-of-occupancy inspection, which is a local matter rather than state law.",
+    "The Ohio Fire Code (OAC 1301:7-7) was not read in full; its rule text is filed as a PDF and its scope as applied to one- and two-family dwellings was not confirmed."
+  ]
+}

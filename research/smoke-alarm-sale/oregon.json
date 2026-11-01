@@ -1,0 +1,21 @@
+{
+  "state": "Oregon",
+  "stateSlug": "oregon",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": true,
+  "summary": "Oregon law bars you from deeding over a home, or handing it over under a land sale contract, unless approved smoke alarms are installed the way the building code and fire marshal rules require.",
+  "alarmType": "Approved smoke alarms (or a smoke detector tied to a central panel) installed per the state building code and State Fire Marshal rules, and meeting ORS 479.297. ORS 479.297 applies to alarms sold in Oregon: a battery-only ionization alarm must be packaged with a 10-year battery and every ionization alarm must have a hush button. The statute does not require hardwiring, interconnection or photoelectric sensing at sale; the fire marshal's own guidance places alarms on every level including the basement, outside bedrooms within 21 feet of bedroom doors, and inside bedrooms, citing OAR 837-045-0050.",
+  "coAlarms": "Separate requirement. You may not convey fee title to, or transfer possession under a land sale contract of, a one- and two-family dwelling that contains a carbon monoxide source unless one or more properly functioning CO alarms are installed so that all sleeping areas are covered, installed per State Fire Marshal rules and the building code. ORS 105.838, part of the Lofgren and Zander Memorial Act; the fire marshal dates the seller duty to April 1, 2011.",
+  "certification": "Nobody inspects or signs off. There is no fire department certificate and no seller affidavit. Enforcement is private: a buyer can sue for actual damages or $50 (smoke, ORS 479.265) or actual damages or $250 per unit (CO, ORS 105.840), within one year of the sale, and a violation does not invalidate the transfer.",
+  "citation": "ORS 479.260 (smoke alarms at transfer); ORS 105.838 (CO alarms at transfer); ORS 479.297 (alarm features); ORS 479.265 and ORS 105.840 (buyer remedies)",
+  "sourceUrl": "https://www.oregonlegislature.gov/bills_laws/ors/ors479.html",
+  "lastAmended": "ORS 479.260 last amended 2003 (2003 c.655 s.78); ORS 105.838 enacted 2009 (2009 c.591 s.2)",
+  "notVerified": [
+    "The text of the State Fire Marshal's administrative rules (OAR 837-045, OAR 837-047) was not read directly; placement details come from the State Fire Marshal's own public guidance page, which cites OAR 837-045-0050.",
+    "Whether any Oregon city or county adds a local point-of-sale alarm inspection on top of state law."
+  ],
+  "sourceUrlSecondary": [
+    "https://www.oregonlegislature.gov/bills_laws/ors/ors105.html",
+    "https://www.oregon.gov/osfm/education/Pages/alarms.aspx"
+  ]
+}

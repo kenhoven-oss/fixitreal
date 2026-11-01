@@ -1,0 +1,18 @@
+{
+  "state": "New Mexico",
+  "stateSlug": "new-mexico",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "New Mexico has nothing in state law that requires smoke or carbon monoxide alarms as a condition of selling a house; alarms come in through the building code, which applies when you build, alter or repair, not when you sell.",
+  "alarmType": "The New Mexico Residential Building Code adopts the 2021 International Residential Code by reference, and the state rule makes no amendment to the IRC's alarm sections. The state rule itself names no power source, so there is no state-added requirement for sealed 10-year battery, hardwired, interconnected or photoelectric alarms beyond whatever the adopted IRC says.",
+  "coAlarms": "Handled the same way — through the adopted International Residential Code at construction or alteration. No separate New Mexico statute requiring carbon monoxide alarms in an existing home, and nothing tied to a sale, was found.",
+  "certification": null,
+  "citation": "14.7.3 NMAC (2021 New Mexico Residential Building Code), adopting the 2021 International Residential Code; statutory authority NMSA 1978 §§ 60-13-9 and 60-13-44",
+  "sourceUrl": "https://www.srca.nm.gov/parts/title14/14.007.0003.html",
+  "lastAmended": "Rule replaced effective July 14, 2023; permits issued only under this version after December 14, 2023",
+  "notVerified": [
+    "The specific alarm requirements in IRC sections R314 (smoke alarms) and R315 (carbon monoxide alarms) were not read — the International Residential Code is a model code published by ICC, not state-hosted text, so what the code requires on alarm type, placement and interconnection is unverified here.",
+    "A full-text search of NMSA 1978 for a smoke or CO alarm provision was not completed; the state's official statute site (nmonesource.com) does not expose a direct full-text search by URL and no New Mexico alarm statute surfaced. A statute outside the building code therefore cannot be ruled out with certainty.",
+    "Landlord/tenant obligations under the New Mexico Uniform Owner-Resident Relations Act were not examined; this entry covers sale of an owner-occupied home."
+  ]
+}

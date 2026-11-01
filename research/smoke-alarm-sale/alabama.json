@@ -1,0 +1,20 @@
+{
+  "state": "Alabama",
+  "stateSlug": "alabama",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Alabama has no state law making smoke or CO alarms a condition of selling a one- or two-family home, and no statewide alarm requirement for existing houses at all; the only alarm duty found in the Code of Alabama applies to hotel guest rooms.",
+  "alarmType": null,
+  "coAlarms": null,
+  "certification": null,
+  "citation": "No Alabama Code section found requiring smoke or CO alarms at sale or transfer of a one- or two-family dwelling. Closest related provisions located: Ala. Code 34-15-4 (hotel owners must install and maintain a battery or electrically operated smoke detector in each guest sleeping room, listed by a nationally recognized testing organization; history: Acts 1981, No. 81-290); Ala. Code 35-9A-204 (landlord's duty to maintain premises, which contains no smoke alarm provision; Act 2006-316).",
+  "sourceUrl": "https://alison.legislature.state.al.us/code-of-alabama",
+  "lastAmended": null,
+  "notVerified": [
+    "The absence of a requirement. This was established by full-text searching the Code of Alabama through the Alabama Legislature's own ALISON site and reading the candidate sections returned; the search engine is fuzzy and exact-phrase queries behaved inconsistently (a phrase search for \"smoke alarm\" returned zero results), so a relevant section could in principle have been missed. Treat 'no requirement at sale' as well supported but not exhaustively proven.",
+    "A 2019 bill, HB 426, would have added a landlord smoke-alarm maintenance duty to Ala. Code 35-9A-204. The current text of 35-9A-204 contains no smoke-alarm language, which indicates the bill did not become law, but its final disposition was not confirmed.",
+    "Whether the statewide residential construction code adopted by the Alabama Energy and Residential Codes Board (or any successor body) requires smoke or CO alarms in new or altered homes. A search of the Code of Alabama for the residential code returned nothing usable and the code itself was not read. New construction is a separate question from sale in any case.",
+    "The Alabama State Fire Marshal's administrative rules (Alabama Department of Insurance) were not reviewed.",
+    "Local Alabama city and county ordinances, which were not checked and may impose their own alarm or inspection requirements at sale."
+  ]
+}

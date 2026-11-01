@@ -1,0 +1,21 @@
+{
+  "state": "Louisiana",
+  "stateSlug": "louisiana",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": true,
+  "summary": "Louisiana law says that when an existing one- or two-family home is sold or leased it must already contain, at minimum, a working 10-year sealed lithium battery smoke detector and a working carbon monoxide detector with a long-life sealed battery - but the same statute says missing alarms cannot delay or stop the closing.",
+  "alarmType": "At a minimum, an operable 10-year, sealed lithium battery smoke detector. The statute sets a floor, not a ceiling, so a better system (for example hardwired interconnected alarms) satisfies it. The statute does not specify photoelectric or ionization, does not say how many detectors or where they go, and the same minimum applies at lease as at sale.",
+  "coAlarms": "Covered in the same section and equally required at sale or lease: an operable carbon monoxide detector with a long-life, sealed battery. A combination smoke/CO unit is expressly allowed. Separately, a professional installer who puts a generator in a one- or two-family dwelling must include an operable CO detector with a long-life sealed battery as part of the installation.",
+  "certification": "Nobody inspects and nobody signs off. The statute deliberately strips the requirement of teeth at closing: failing to comply cannot delay or stop the transfer of the property, cannot be a reason to refuse payment of an insurance claim, and the real estate agent is not liable for the seller's failure to comply. No penalty, fine or enforcement agency is named in the section.",
+  "citation": "La. R.S. 40:1581 (smoke detectors; carbon monoxide detectors; one- or two-family dwellings)",
+  "sourceUrl": "https://www.legis.la.gov/Legis/LawPrint.aspx?d=97690",
+  "lastAmended": "2022 (Acts 2022, No. 458, § 1; earlier Acts 1991, No. 701 and Acts 2009, No. 163)",
+  "notVerified": [
+    "The statute does not say how many smoke or CO detectors are needed or where in the house they go, and it names no enforcement authority and no penalty. Nothing was found that fills those gaps, so do not state a count, a placement rule or a consequence for noncompliance.",
+    "Because La. R.S. 40:1581(E) says noncompliance cannot delay or stop the transfer, this is a real legal duty with no closing-day enforcement mechanism. Presenting it as a hard condition of sale would overstate it.",
+    "Requirements for new construction under the Louisiana State Uniform Construction Code, and any rules of the Office of State Fire Marshal, were not read. Those could impose more than § 1581's minimum on a newer home.",
+    "No separate Louisiana statute setting general smoke detector requirements for existing owner-occupied homes outside the sale/lease context was located; the adjoining sections read (R.S. 40:1580 and 40:1580.1) deal with hotels and motels.",
+    "Parish and municipal ordinances were not researched.",
+    "Louisiana's residential property disclosure statute (La. R.S. 9:3198) was not examined for any alarm-related disclosure duty."
+  ]
+}

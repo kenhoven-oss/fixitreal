@@ -1,0 +1,19 @@
+{
+  "state": "North Dakota",
+  "stateSlug": "north-dakota",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "North Dakota has no state requirement for smoke or carbon monoxide alarms when a home is sold; alarms are a building-code matter that comes up when you build or remodel, and only in cities and counties that have adopted the building code.",
+  "alarmType": "The State Building Code is required by statute to consist of the International Building, Residential, Mechanical and Fuel Gas codes. The version effective January 1, 2026 is built on the 2024 editions. North Dakota's own amendments to the residential code do not change the smoke alarm requirements, so no state-added rule on sealed 10-year battery, hardwired or photoelectric alarms applies. For larger residential occupancies (Groups R-2, R-3, R-4 and I-1) the state amended the building code to require single or multiple-station smoke alarms regardless of occupant load, and to add a hallway and adjacent-room detector where a room open to the sleeping-room hallway has a ceiling more than 24 inches higher than the hallway.",
+  "coAlarms": "North Dakota amended the residential code (Section 311.3) to require a carbon monoxide alarm on every habitable level of a dwelling unit, interconnected so that one alarm sets off all of them in that unit. This applies through the building code when work is permitted, not at a sale.",
+  "certification": null,
+  "citation": "N.D.C.C. § 54-21.3-03 (State Building Code must consist of the IBC, IRC, IMC and IFGC); 2026 North Dakota State Building Code, 2024 International Residential Code Amendments, Section 311.3 (carbon monoxide alarms) and 2024 International Building Code Amendments, Section 907.2.11.2 (smoke alarms)",
+  "sourceUrl": "https://ndlegis.gov/cencode/t54c21-3.pdf ; code book: https://www.medialibrary.nd.gov/assetbank-nd/assetfile/156311.pdf (linked from https://www.commerce.nd.gov/community-services/building-codes)",
+  "lastAmended": "State Building Code effective January 1, 2026, adopted September 11, 2025 on the 2024 ICC editions",
+  "notVerified": [
+    "The base alarm requirements in the 2024 International Residential Code (smoke alarm section) were not read — that is ICC model-code text, not state-hosted, so the underlying placement, listing and interconnection rules are unverified.",
+    "The Century Code was searched only in chapters 18-01, 23-01, 47-16 and 54-21.3 and no dwelling smoke or CO alarm statute was found; no full-text search of all of the Century Code was run, so a provision elsewhere cannot be excluded with certainty.",
+    "Enforcement is local: the Department of Commerce states that only cities, counties and townships that elect to adopt and enforce building codes apply the State Building Code, and they may amend it locally, so local requirements at sale were not checked.",
+    "No statewide inspection or certificate at transfer was found, but this was confirmed only by absence in the sources read."
+  ]
+}

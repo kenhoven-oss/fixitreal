@@ -1,0 +1,24 @@
+{
+  "state": "Oklahoma",
+  "stateSlug": "oklahoma",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Oklahoma has no smoke or carbon monoxide alarm requirement tied to selling a house; the state's alarm law covers listed building types like hotels, apartment houses and nursing homes, plus new work that needs a building permit.",
+  "alarmType": "For the buildings the statute covers, smoke detectors must be installed per the nationally recognized codes and standards adopted by the State Fire Marshal Commission. The statute's own definition is loose: a device designed to detect visible or invisible products of combustion, with an alarm audible to the rooms it serves, powered by battery, AC or another source, and tested and listed by a recognized testing laboratory. No hardwiring, interconnection, sealed battery or sensor type is specified. Since Nov. 1, 1997, new construction or remodeling of a residential dwelling that requires a building permit must include smoke detectors or the wiring for them.",
+  "coAlarms": "Nothing found. The word carbon monoxide does not appear anywhere in Title 74 (State Government, which holds the fire marshal and smoke detector provisions), and the Residential Property Condition Disclosure Act in Title 60 does not mention it either.",
+  "certification": null,
+  "citation": "74 O.S. s. 324.11a (smoke detectors required for certain buildings; tenant testing; new construction and remodeling); 74 O.S. s. 324.11b (visual alarms in hotels and motels)",
+  "sourceUrl": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os74.pdf",
+  "lastAmended": "1997 (Laws 1997, c. 42, s. 1, eff. Nov. 1, 1997)",
+  "notVerified": [
+    "No Oklahoma requirement to install, inspect or certify alarms at sale was found; this is an absence of a rule.",
+    "Owner-occupied single-family houses are not in the statute's list of covered buildings, which runs to hospitals, churches, theaters, hotels, motels, apartment houses, rooming houses, dormitories, rest homes, nursing homes, day nurseries, convalescent homes, auditoriums and child care institutions.",
+    "The State Fire Marshal Commission's rules (Oklahoma Administrative Code title 265), which say which national standards are adopted, were not read: rules.ok.gov returned HTTP 403 and the Secretary of State PDF path returned 404.",
+    "The Oklahoma State Courts Network (oscn.net), the usual official statute viewer, served a human-verification page, so the statute was read from the Oklahoma Legislature's own PDF of Title 74 instead.",
+    "The Oklahoma Real Estate Commission's property condition disclosure form was not read, so whether it asks about smoke or CO alarms is unknown; the statute itself (60 O.S. ss. 831-839) does not mention them.",
+    "Oklahoma bars political subdivisions from imposing a greater duty on dwelling owners for installing, testing, repairing or replacing smoke detectors than the state statute does, but municipalities may enact ordinances to enforce the Fire Marshal Commission's rules. Local ordinances were not checked."
+  ],
+  "sourceUrlSecondary": [
+    "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os60.pdf"
+  ]
+}

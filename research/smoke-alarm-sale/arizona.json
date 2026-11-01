@@ -1,0 +1,19 @@
+{
+  "state": "Arizona",
+  "stateSlug": "arizona",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Arizona law does not make working smoke alarms a condition of selling or transferring a home; it requires an approved smoke detector when a home is built, and when a sleeping area is remodeled under a permit.",
+  "alarmType": "An \"approved smoke detector\": an electronic device powered by batteries or household current that senses visible or invisible products of combustion and sounds an alarm audible in all sleeping areas, meeting standards set by the Arizona State Fire Marshal under A.R.S. 37-1383. The statute does not require sealed 10-year batteries, hardwiring, interconnection, or photoelectric sensing.",
+  "coAlarms": null,
+  "certification": null,
+  "citation": "A.R.S. 36-1637 (smoke detectors; residential housing); A.R.S. 36-1636 (definitions); A.R.S. 36-1638 (local ordinances); A.R.S. 36-1639 (exemptions)",
+  "sourceUrl": "https://www.azleg.gov/viewdocument/?docName=https://www.azleg.gov/ars/36/01637.htm",
+  "lastAmended": null,
+  "notVerified": [
+    "Whether Arizona has any statewide carbon monoxide alarm requirement. The A.R.S. Title 36 section index was searched and contains no carbon monoxide provisions; other titles were not exhaustively searched, so this entry does not confirm that no CO requirement exists anywhere in Arizona law.",
+    "The date A.R.S. 36-1637 was last amended. The Arizona Legislature's statute page shows no amendment history.",
+    "Local requirements. A.R.S. 36-1638 expressly preserves city, town and county ordinances that are equal to or stricter than the state rule, and preserves local inspection authority, so an individual Arizona city or county may impose a sale-time or inspection requirement. No local ordinances were checked.",
+    "The State Fire Marshal detector standards adopted under A.R.S. 37-1383 were not read, so the detailed device specifications they impose are unknown."
+  ]
+}

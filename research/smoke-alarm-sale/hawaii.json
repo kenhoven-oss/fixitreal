@@ -1,0 +1,21 @@
+{
+  "state": "Hawaii",
+  "stateSlug": "hawaii",
+  "verifiedOn": "2026-11-01",
+  "requiredAtSale": false,
+  "summary": "Hawaii has no state law that makes a seller put in or prove working smoke alarms before closing - alarm rules come from the state fire code and county codes instead.",
+  "alarmType": null,
+  "coAlarms": null,
+  "certification": null,
+  "citation": "Haw. Rev. Stat. ch. 132 (Fire Protection) - current chapter contains no smoke alarm section; Haw. Rev. Stat. s 132-3 (state fire council adopts the state fire code, which becomes part of the Hawaii state building codes under s 107-25)",
+  "sourceUrl": "https://data.capitol.hawaii.gov/hrscurrent/Vol03_Ch0121-0200D/HRS0132/HRS_0132-.htm",
+  "lastAmended": "s 132-3 last amended 2020 (L 2020, c 49, s 2)",
+  "notVerified": [
+    "Basis for requiredAtSale: false - the current official table of contents for HRS ch. 132 (Fire Protection), read today, lists ss 132-1 through 132-19 and 132-31 through 132-46 and has no smoke alarm or CO alarm section. The State Fire Council's own 2020 bill, H.B. 1762 (30th Legislature), would have ADDED a new s 132- requiring that 'upon the sale or transfer of any residential real property, the property shall be equipped by the seller with smoke alarms that conform with all applicable State and county building or residential codes' (residential real property defined as up to four family units, including a condominium or cooperative apartment), enforced by each county fire department. That section does not appear in the current chapter, so it was not enacted. Source: https://data.capitol.hawaii.gov/sessions/session2020/Bills/HB1762_.HTM",
+    "Whether any smoke alarm requirement at sale exists OUTSIDE HRS ch. 132 (for example in the real property disclosure chapter) - NOT VERIFIED; no full-text search of the HRS was possible.",
+    "What smoke alarms Hawaii actually requires in a home, and where - NOT VERIFIED. The substantive requirement sits in the State Fire Code adopted by the State Fire Council under s 132-3, which was not read. Type, placement, interconnection and sealed-battery rules are therefore unknown.",
+    "Hawaii CO alarm requirements - NOT VERIFIED. No state CO statute was located.",
+    "County codes were not checked (Honolulu, Hawaii, Maui and Kauai each enforce fire and building codes, and the counties are the enforcing authority under ch. 132).",
+    "ACCESS NOTE: www.capitol.hawaii.gov and capitol.hawaii.gov both return a Cloudflare 403 block to curl; no attempt was made to get past it. The statute text above was read from the Legislature's own data host, data.capitol.hawaii.gov, which serves the same hrscurrent files."
+  ]
+}

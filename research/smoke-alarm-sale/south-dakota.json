@@ -1,0 +1,24 @@
+{
+  "state": "South Dakota",
+  "stateSlug": "south-dakota",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "South Dakota does not require a seller to install or have alarms inspected before closing; the only sale duty is ticking the smoke/fire alarm line on the state property condition disclosure as working, not working, none, or not included.",
+  "alarmType": "The state fire safety rules do not reach ordinary one- and two-family homes at all. They require smoke detectors in each sleeping room of a lodging establishment, and at least one detector in each family living unit of a multifamily residence housing six or more families. In existing buildings the detector may be battery-only; in new construction it must run off the building wiring with battery backup, on permanent wiring with no disconnect switch other than overcurrent protection. The state also adopts the 2015 International Building, Fire and Mechanical Codes as its fire safety standards.",
+  "coAlarms": "Nothing found. Chapter 61:15:01 of the state fire safety rules does not mention carbon monoxide, and the state property condition disclosure form has no carbon monoxide line.",
+  "certification": null,
+  "citation": "ARSD 61:15:01:14 and 61:15:01:15 (smoke detectors in lodging establishments and in multifamily residences of six or more families); ARSD 61:15:01:01 (adoption of the 2015 I-Codes); SDCL 34-29B-2 (authority); SDCL 43-4-38 and 43-4-44 (property condition disclosure statement, which includes a Smoke/Fire Alarm line)",
+  "sourceUrl": "https://sdlegislature.gov/api/Rules/Rule/61:15:01.html?all=true",
+  "lastAmended": "ARSD 61:15:01:15 last amended 37 SDR 235, effective June 28, 2011; ARSD 61:15:01:14 last amended 23 SDR 32, effective Sept. 11, 1996; ARSD 61:15:01:01 last amended 43 SDR 56, effective Oct. 17, 2016; SDCL 43-4-44 last amended SL 2025, ch. 180, s. 1",
+  "notVerified": [
+    "No South Dakota statute or rule requiring smoke or CO alarms in a one- or two-family home, or at sale, was found. SDCL chapter 34-29B (Fire Prevention) and chapter 43-32 (Lease of Real Property) contain no mention of smoke, detector, alarm or carbon monoxide.",
+    "A full-text search of all of SDCL was not possible: the legislature's search API returned the site shell rather than results, so chapters were checked individually.",
+    "South Dakota has no statewide residential building code for one- and two-family homes; adoption of the IRC is left to municipalities, which were not checked.",
+    "The state property condition disclosure statute has exemptions (for example certain transfers) that were not read in full."
+  ],
+  "sourceUrlSecondary": [
+    "https://sdlegislature.gov/api/Statutes/43-4-44.html?all=true",
+    "https://sdlegislature.gov/api/Statutes/43-4-38.html?all=true",
+    "https://sdlegislature.gov/api/Statutes/34-29B.html?all=true"
+  ]
+}

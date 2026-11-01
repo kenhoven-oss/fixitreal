@@ -1,0 +1,19 @@
+{
+  "state": "Michigan",
+  "stateSlug": "michigan",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Michigan law puts no smoke or carbon monoxide alarm condition on selling a one- or two-family home, and the state's required seller disclosure form does not even ask about alarms.",
+  "alarmType": "For the statutory retrofit duty on older buildings: at least one single-station smoke alarm in each dwelling unit, defined as a self-contained unit (detector, control and sounder in one) not connected to a system, powered either internally or at the point of installation. No sealed-battery, photoelectric or interconnection requirement in the statute.",
+  "coAlarms": "The state's CO alarm statute reaches only transient residential occupancies (boarding houses, hotels, motels) newly built on or after December 1, 2009, one device at each source point. It does not cover one- or two-family homes, and nothing in it is triggered by a sale. Mich. Comp. Laws 125.1504d.",
+  "certification": null,
+  "citation": "Mich. Comp. Laws § 125.1504c (smoke alarms in existing buildings); § 125.482a (Housing Law of Michigan, class A multiple dwellings); § 125.1504d (CO devices); § 565.957 (Seller Disclosure Act form)",
+  "sourceUrl": "https://legislature.mi.gov/documents/mcl/pdf/MCL-125-1504C.pdf",
+  "lastAmended": "2004 (both smoke alarm sections, 2004 PA 64 and 65); CO section added 2009",
+  "notVerified": [
+    "Whether the Michigan rules that 125.1504c(1) depends on were ever actually promulgated. The retrofit duty on pre-November 6, 1974 buildings starts one year after the director's rules take effect, and those rules were not located, so it is unclear whether the existing-home smoke alarm duty is in force at all.",
+    "New-construction and alteration requirements in the Michigan Residential Code (including whether it requires interconnected or hardwired alarms and CO alarms in new one- and two-family homes). 125.1504c(3) sends renovated buildings and changes of use to that code, which was not read.",
+    "Local ordinances. At least one Michigan city (Holland) publishes a point-of-sale smoke detector requirement, so a city-level sale requirement can exist even though the state has none; no local code was read.",
+    "Searched the smoke alarm sections of the construction code act and housing law plus the Seller Disclosure Act form; no exhaustive full-text search of the Michigan Compiled Laws was run."
+  ]
+}

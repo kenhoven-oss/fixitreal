@@ -1,0 +1,22 @@
+{
+  "state": "Georgia",
+  "stateSlug": "georgia",
+  "verifiedOn": "2026-11-01",
+  "requiredAtSale": false,
+  "summary": "Georgia's smoke detector law is written around new dwellings, not around selling - no state step is triggered when a house changes hands.",
+  "alarmType": null,
+  "coAlarms": null,
+  "certification": null,
+  "citation": "O.C.G.A. s 25-2-40 (official catchline: 'smoke detectors required in new dwellings and dwelling units and exceptions')",
+  "sourceUrl": "https://www.legis.ga.gov/api/legislation/document/20252026/241616",
+  "lastAmended": null,
+  "notVerified": [
+    "The full current text of O.C.G.A. s 25-2-40 could not be read from an official source. The Georgia General Assembly's code viewer is served by an API that returns HTTP 401 without credentials; the state's official code (OCGA) is published on LexisNexis (the link the legislature itself uses, lexisnexis.com/hottopics/gacode) which is a JavaScript application curl cannot read; and the Secretary of State's rules site, rules.sos.ga.gov, returned HTTP 403 (noted, not worked around). A WebFetch of rules.sos.ga.gov/gac/120-3-3 was also not permitted.",
+    "What IS verified comes from the Georgia General Assembly's own published bill text for HB 1201 (2026 session, LC 52 0948, https://www.legis.ga.gov/api/legislation/document/20252026/241616), which recites the Code section's official subject as 'smoke detectors required in new dwellings and dwelling units and exceptions'. The requiredAtSale: false answer rests on that catchline plus the absence of any sale or transfer language in it - not on reading the operative text.",
+    "Alarm type (battery vs hardwired, interconnection, sealed 10-year battery, photoelectric) - NOT VERIFIED, statute text unread.",
+    "Whether Georgia requires CO alarms in one- or two-family homes, and under what statute or building-code provision - NOT VERIFIED. News reports describe a 2009 Georgia CO alarm law for new homes but no official text or cite was located.",
+    "HB 1201 (2026) would require smoke detectors installed or replaced on and after January 1, 2027, and all smoke detectors under the section on and after January 1, 2028, to comply with UL 217 ninth edition or later. Its enactment status is NOT VERIFIED - do not publish it as law.",
+    "Georgia State Minimum Standard Codes (Dept. of Community Affairs amendments to the IRC, which carry the new-construction smoke and CO alarm rules) were not read; www.dca.ga.gov failed TLS hostname verification.",
+    "Local ordinances were not checked."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "state": "Minnesota",
+  "stateSlug": "minnesota",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Minnesota requires a working smoke alarm in every home all the time, but state law adds no special alarm inspection or upgrade just because the house is being sold.",
+  "alarmType": "A smoke alarm meeting the State Fire Code, mounted where Dept. of Public Safety rules say. In a newly built home each alarm must be attached to a centralized power source. The statute names no sealed-battery, photoelectric or interconnection requirement for existing homes.",
+  "coAlarms": "Separate law: every single-family dwelling must have an approved, working carbon monoxide alarm within ten feet of each room used for sleeping (Minn. Stat. 299F.51, subd. 1). Not tied to sale. Last amended 2023.",
+  "certification": null,
+  "citation": "Minn. Stat. § 299F.362 (smoke alarms); Minn. Stat. § 299F.51 (carbon monoxide alarms)",
+  "sourceUrl": "https://www.revisor.mn.gov/statutes/cite/299F.362",
+  "lastAmended": "2023",
+  "notVerified": [
+    "Whether any Minnesota statute outside chapter 299F ties alarms to transfer of title. The Revisor's keyword search would not return results over curl, so this conclusion rests on reading all of 299F.362 and all of 299F.51 and finding no sale or transfer trigger in either.",
+    "Local rules were not read. Minn. Stat. 299F.362, subd. 9 lets a city adopt stricter smoke alarm installation rules for single-family homes and enforce them through a truth-in-housing inspection, so an individual city (St. Paul and Minneapolis appear to run such programs) may require a seller affidavit or certificate.",
+    "The exact alarm specifications in the Minnesota State Fire Code (Minn. R. ch. 7511) and the placement rules adopted under 299F.362, subd. 2 were not read.",
+    "Whether 299F.51's CO alarm duty is enforced against owner-occupants of single-family homes in practice; subd. 2 writes the installation duty only for multifamily, hotel and lodging-house owners."
+  ]
+}

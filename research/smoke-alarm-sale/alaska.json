@@ -1,0 +1,19 @@
+{
+  "state": "Alaska",
+  "stateSlug": "alaska",
+  "requiredAtSale": false,
+  "verifiedOn": "2026-10-31",
+  "summary": "Alaska requires working smoke detectors in every home all the time, and CO detectors in homes with a fuel-burning appliance, an attached garage or carport, or a neighbouring parking space, but state law adds no special inspection or certificate when a house is sold.",
+  "alarmType": "The statute says only that smoke detection devices must be of a type approved by the Alaska State Fire Marshal and installed the way the fire marshal approves. It does not itself name sealed 10-year batteries, hardwiring, interconnection or photoelectric sensing.",
+  "coAlarms": "CO detection devices must be installed and maintained in every 'qualifying dwelling unit': one that contains or is served by a carbon-based fuel-burning appliance or device, has an attached garage or carport, or sits next to a parking space. The device must have an alarm and must be installed and maintained per the manufacturer's instructions. A CO-detector violation is a 'violation' rather than a misdemeanour under AS 18.70.100(c).",
+  "certification": null,
+  "citation": "AS 18.70.095 (smoke and carbon monoxide detection devices); penalty at AS 18.70.100",
+  "sourceUrl": "https://www.akleg.gov/basis/statutes.asp#18.70.095",
+  "lastAmended": null,
+  "notVerified": [
+    "The date AS 18.70.095 was last amended. The Alaska Legislature's statute text view does not display session-law history, and the site's search and administrative-code pages repeatedly timed out.",
+    "The State Fire Marshal's regulations (13 AAC 50), which set the approved detector type and installation method and could in principle contain a transfer-of-ownership provision. Repeated requests to the Alaska Administrative Code pages on akleg.gov timed out, so this was not read.",
+    "Whether Alaska's residential real property transfer disclosure statute (AS 34.70) requires a seller to disclose anything about smoke or CO detectors. The request for that statute text timed out. A disclosure duty would not be the same as a requirement to have alarms at sale.",
+    "Whether any Alaska municipality (for example Anchorage or Fairbanks) imposes a sale-time alarm or inspection requirement. No local codes were checked."
+  ]
+}

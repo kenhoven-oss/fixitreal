@@ -1,0 +1,19 @@
+{
+  "state": "North Carolina",
+  "stateSlug": "north-carolina",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "North Carolina does not require smoke or carbon monoxide alarms as a condition of selling a home — the state's alarm rules are aimed at rental property and at new construction under the building code.",
+  "alarmType": "State law lets the Building Code require either battery-operated or electrical smoke detectors in every dwelling unit used as rental property, whatever its age. For rentals built before 1975 the alarms must carry a UL or equivalent listing and be installed to NFPA standards or the maker's instructions, and the owner keeps that documentation as proof. Separately, in a rental a landlord installing or replacing an alarm after December 31, 2012 must use a tamper-resistant 10-year lithium battery alarm, unless the unit already has a hardwired alarm or a combination smoke/CO alarm. None of this is triggered by a sale.",
+  "coAlarms": "The Building Code may require battery-operated or electrical CO alarms in any dwelling unit with a combustion heater, appliance or fireplace, or with an attached garage, and must require electrical CO alarms at lodging establishments. Alarms must be listed to ANSI/UL2034 or ANSI/UL2075 and installed per NFPA or the maker's instructions, with the owner keeping proof. Landlords must provide at least one operable CO alarm per rental unit per level. Again, nothing attaches to a sale.",
+  "certification": null,
+  "citation": "N.C.G.S. § 143-138(b1) (smoke detectors) and § 143-138(b2) (carbon monoxide alarms); N.C.G.S. § 42-42(a)(5), (5a), (7) (landlord duties)",
+  "sourceUrl": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_143/GS_143-138.pdf",
+  "lastAmended": "G.S. 143-138: most recent entry in the history note is S.L. 2026-11, s. 19(b). G.S. 42-42: most recent is S.L. 2022-56, s. 2.",
+  "notVerified": [
+    "The North Carolina Residential Property Disclosure Act (G.S. Chapter 47E) was not read. It governs what a seller must disclose, not what a seller must install, but whether its disclosure form asks about alarms was not checked.",
+    "The North Carolina Residential Code adopted by the Building Code Council was not read, so the alarm requirements that apply to new construction and permitted alterations are not described here.",
+    "No full-text search of the General Statutes was run for an alarm provision outside Chapters 42 and 143, so a sale-related requirement elsewhere in the statutes cannot be excluded with certainty.",
+    "Local city or county ordinances were not checked."
+  ]
+}

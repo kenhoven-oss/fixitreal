@@ -1,0 +1,20 @@
+{
+  "state": "Iowa",
+  "stateSlug": "iowa",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Iowa requires approved smoke detectors in every existing single-family home, but nothing in the law is triggered by selling or transferring the house - the one place Iowa makes you certify in writing is when you file for the homestead property tax credit, not at closing.",
+  "alarmType": "The statute does not name a technology, a power source or a 10-year battery. It says only that existing single-family dwellings must have approved smoke detectors, that new construction begun on or after July 1, 1991 must have detectors installed per the director's rules, and that detectors must carry a label from an approved testing agency or another label the director specifically approves. Placement and which devices count are left to rules adopted by the director of the Department of Inspections, Appeals, and Licensing. On request, an owner must supply light-emitting detectors for a tenant who is deaf or hard of hearing.",
+  "coAlarms": "Handled in the same section and also not tied to sale. Existing single-family homes that have a fuel-fired heater or appliance, a fireplace, or an attached garage must have approved CO alarms; new construction begun on or after July 1, 2018 with any of those features must include them. An approved alarm is one meeting Underwriters Laboratories standards or approved by the director. Placement follows the director's rules, accounting for the number and location of fuel sources. Fuel is defined to include coal, kerosene, oil, fuel gases, and other petroleum or hydrocarbon products such as wood. The same homestead-credit certification applies to CO alarms.",
+  "certification": "Nobody inspects or signs off at a sale. The director enforces and may run an inspection program, but inspections are limited to placement, repair and operability, and the written notice of compliance or noncompliance goes to owners or managers of multiple-unit buildings and single-family rental units - not to home sellers. Violating the section or its rules is a simple misdemeanor. The written certification that the law does require is made by a person filing for the homestead credit under chapter 425, who must certify the home has a compliant smoke detector and, where applicable, CO alarms, or that they will be installed within 30 days of the filing.",
+  "citation": "Iowa Code § 10A.518 (smoke detectors and carbon monoxide alarms), formerly Iowa Code § 100.18, transferred by 2023 Iowa Acts, ch. 19, § 1711",
+  "sourceUrl": "https://www.legis.iowa.gov/docs/code/10A.518.pdf",
+  "lastAmended": "2023 (2023 Iowa Acts, ch. 19, §§ 1493, 1711 - renumbered to § 10A.518 for the 2024 Code); last substantive amendments 2020 Iowa Acts, ch. 1102, §§ 3-4",
+  "notVerified": [
+    "Iowa has no sale- or transfer-specific smoke or CO alarm requirement that this research could find. The full text of Iowa Code § 10A.518 was read and contains no reference to sale, transfer, conveyance or closing. Note that § 100.18, the cite most older write-ups use, was transferred to § 10A.518 effective with the 2024 Code, so any source citing § 100.18 is out of date on the numbering.",
+    "The administrative rules the statute delegates to the director, which set detector placement and which devices are acceptable, were not read. Those rules - not the statute - carry the real installation detail, including anything about alarm type or power source.",
+    "Iowa's residential real property seller disclosure statute (Iowa Code ch. 558A and its form) was NOT examined. If Iowa requires a seller to disclose anything about alarms, it would be there rather than in § 10A.518.",
+    "Local ordinances were not researched; a city or county could impose a point-of-sale inspection.",
+    "Whether the statute's requirement for 'existing single-family dwellings' is enforced against owner-occupants at all was not determined - the enforcement, notice and 30-day-repair provisions of § 10A.518 are all written around rental units and multiple-unit buildings."
+  ]
+}

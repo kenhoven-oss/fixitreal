@@ -1,0 +1,22 @@
+{
+  "state": "Mississippi",
+  "stateSlug": "mississippi",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": null,
+  "summary": "No Mississippi sale requirement was found, and the state fire code the fire marshal enforces does not reach private houses at all, but the Mississippi Code itself could not be searched from an official source, so this is unconfirmed rather than a clean no.",
+  "alarmType": null,
+  "coAlarms": null,
+  "certification": null,
+  "citation": "Miss. Code Ann. §§ 45-11-101 to 45-11-111 (Mississippi Fire Prevention Code, scope and enforcement), as published by the Mississippi State Fire Marshal",
+  "sourceUrl": "https://www.mid.ms.gov/sfmo/fce/",
+  "lastAmended": null,
+  "notVerified": [
+    "requiredAtSale is null, not false. The Mississippi Code could not be full-text searched from any official source, so the absence of a sale requirement elsewhere in the Code is not proven. Treat this state as unresearched until the Code can be searched.",
+    "SOURCE BLOCKS: the Mississippi Legislature's own hosts (billstatus.ls.state.ms.us, legislature.ms.gov) fail TLS verification over curl through this session's proxy and could not be fetched. The 1999 Senate Bill 2782 PDF on that host is robots-disallowed to WebFetch. The Secretary of State points to LexisNexis (lexisnexis.com/hottopics/mscode) as the official publisher of the Mississippi Code; that page is script-driven, served no table of contents, and a WebFetch of it was not authorized in time.",
+    "WHAT IS VERIFIED: the State Fire Marshal's own site quotes Miss. Code Ann. 45-11-101 and the Mississippi Fire Prevention Code applies only to buildings owned by the state or state agencies, buildings used for public assembly, and buildings at least 75 feet tall. One- and two-family homes are outside it. The fire marshal describes his code duties as inspecting state buildings, places of public assembly and high-rise sprinkler systems.",
+    "The state's only alarm language found for homes is advisory. The fire marshal's factory-built homes page tells owners to make sure the home has a working smoke detector, as advice, not a rule.",
+    "Mississippi House Bill 605 (2004) amended Miss. Code Ann. 45-11-29 to require a fire detector on each floor of a hotel or lodging house. That is lodging, not homes, and only the As Passed the House version was readable, so its enactment is unconfirmed.",
+    "Mississippi's landlord-tenant law (Title 89) and whether Mississippi has any statutory seller disclosure form were not checked.",
+    "Whether any Mississippi county or municipality imposes a point-of-sale alarm requirement. 45-11-101 expressly defers to local fire prevention codes that are at least as strict, so local rules matter a lot here and none was read."
+  ]
+}

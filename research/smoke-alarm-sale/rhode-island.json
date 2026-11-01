@@ -1,0 +1,24 @@
+{
+  "state": "Rhode Island",
+  "stateSlug": "rhode-island",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": true,
+  "summary": "In Rhode Island the seller has to get the local fire department to inspect the home's smoke and carbon monoxide alarms before closing and hand the buyer that certificate at the transfer of title.",
+  "alarmType": "Depends on when the house was built, and smoke/CO combination units are allowed. Homes built 1976 or earlier: smoke alarms outside the sleeping areas and on every level including the basement, battery-powered is fine, no interconnection; CO alarms outside the sleeping areas, battery is fine. Built 1 Jan 1977 to 31 Dec 2001: smoke alarms hardwired with battery backup and interconnected; CO alarms may still be battery. Built 20 Feb 2004 to 31 Dec 2012: smoke alarms also inside each bedroom, hardwired with battery backup and interconnected, and CO alarms hardwired with battery backup and interconnected. Homes built 2013 or later follow the NFPA 72 (and formerly NFPA 720) edition in force when they were built. New and converted homes must meet the new-construction rules and alarm compliance is a prerequisite to the certificate of occupancy.",
+  "coAlarms": "Not separate — Rhode Island runs smoke and CO alarms through the same point-of-sale inspection and the same certificate. Owners of existing homes that already had smoke alarms were not required to add CO alarms immediately, but full compliance is required at the next transfer of title (RI Life Safety Code s. 24.6.3.1.7).",
+  "certification": "The fire department for the community where the house sits. At transfer of title the seller must give the buyer a certificate from that department saying the smoke and CO alarms were inspected within the prior 120 days and found in good working order. The department must inspect within 10 days of the owner's request; the State Fire Marshal's office may do the inspection. The seller pays a $30 inspection fee, $60 for a re-inspection caused by bad installation or a missed appointment. Certificates are valid for at least 120 days by statute. Transfers are exempt in listed cases, including foreclosure, tax sale, transfer by operation of law or court order, property with no residential dwelling, and property that got a certificate of occupancy in the past six months.",
+  "citation": "RI Life Safety Code, 450-RICR-00-00-8, Chapter 24 (One and Two Family Dwellings), ss. 24.6.3.1 through 24.6.3.1.7 — especially s. 24.6.3.1.4 (certificate at transfer of title); authority R.I. Gen. Laws ss. 23-28.1-2 and 23-28.3-3; R.I. Gen. Laws s. 23-28.1-10 (certificates valid at least 120 days)",
+  "sourceUrl": "https://rules.sos.ri.gov/regulations/Part/450-00-00-8",
+  "lastAmended": "Current amendment of 450-RICR-00-00-8 effective 03/01/2026; R.I. Gen. Laws s. 23-28.1-10 enacted 2009 (P.L. 2009, ch. 334)",
+  "notVerified": [
+    "The old statutory smoke detector law, R.I. Gen. Laws chapter 23-28.35, was repealed effective June 30, 2004 (P.L. 2004, ch. 220, s. 39; ch. 225, s. 39), so the sale requirement now lives only in the Fire Safety Code Board's regulation, not in the General Laws. Any consumer page citing 23-28.35 is citing a repealed chapter.",
+    "The Fire Safety Code Board's own site, fsc.ri.gov, returned HTTP 403 to automated requests, so the board's PDF of Chapter 24 was not read; the regulation text was read on the Secretary of State's Code of Regulations instead.",
+    "The underlying NFPA 72 placement tables are copyrighted and not reproduced in the state regulation, so exact alarm locations for homes built 2013 and later were not read.",
+    "Whether individual cities or towns add requirements on top of the state code was not checked."
+  ],
+  "sourceUrlSecondary": [
+    "https://webserver.rilegislature.gov/Statutes/TITLE23/23-28.1/23-28.1-2.htm",
+    "https://webserver.rilegislature.gov/Statutes/TITLE23/23-28.1/23-28.1-10.htm",
+    "https://webserver.rilegislature.gov/Statutes/TITLE23/23-28.35/23-28.35-1.htm"
+  ]
+}

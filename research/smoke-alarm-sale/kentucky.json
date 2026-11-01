@@ -1,0 +1,20 @@
+{
+  "state": "Kentucky",
+  "stateSlug": "kentucky",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Kentucky has no statewide smoke or carbon monoxide alarm requirement tied to selling a home, and no seller affidavit or fire department sign-off at closing; bills to create exactly that have been filed repeatedly and have died in committee.",
+  "alarmType": "The only Kentucky statute setting a general alarm requirement for an existing home covers manufactured and mobile homes: at least one working smoke detector inside the home near the bedroom areas on each floor level (plus at least two operable means of egress, if the home originally had two). No technology, power source or battery life is specified. For site-built houses, smoke alarm requirements come from the Kentucky Residential Code, which operates through building permits and new construction rather than through sale.",
+  "coAlarms": null,
+  "certification": "No one certifies anything at sale. For manufactured and mobile homes the statute actually limits enforcement: no public servant with citation authority may enter the home just to check compliance, the owner is responsible for correcting a violation, and a violation is a 'violation' level offense. The state is required to post notices of the requirement at each vehicle entrance to a manufactured home park and in every county clerk's office. Local governments may not pass ordinances contrary to the requirement or to the no-entry rule, except in cities that have adopted the Uniform Residential Landlord and Tenant Act.",
+  "citation": "KRS 227.555 (smoke-detector and egress requirements for manufactured or mobile homes). No Kentucky statute imposing a smoke or CO alarm requirement at sale or transfer was found.",
+  "sourceUrl": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=46966",
+  "lastAmended": "2017 (2017 Ky. Acts ch. 169, sec. 73, effective June 29, 2017), for KRS 227.555",
+  "notVerified": [
+    "That Kentucky has no sale requirement is supported two ways: the section titles of KRS Chapter 227 (Fire Prevention and Protection) and KRS Chapter 198B (Housing, Buildings, and Construction -- Building Code) were scanned on the Legislative Research Commission's own statute site and the only detector statute is KRS 227.555 for manufactured and mobile homes; and 2025 HB 339, which would have created exactly this duty (working smoke, CO and gas detectors in all existing single-family dwellings and multifamily units, installed before sale, lease or change of ownership, with the seller giving the purchaser a signed affidavit at closing), was referred to committee on 02/07/25 and went no further. A similar bill, 2026 HB 474, was referred to the same committee on 01/30/26. Both are proposals, not law.",
+    "The scan of chapters 227 and 198B was by section TITLE only, not full text. A sale-related alarm provision buried inside a section with an unrelated title would have been missed, and other chapters (for example KRS Chapter 324 on real estate licensees, or KRS Chapter 383 landlord-tenant) were not checked at all.",
+    "No Kentucky statute requiring carbon monoxide alarms in homes was located, so coAlarms is set to null rather than 'none required'. Do not publish a claim that Kentucky requires no CO alarms.",
+    "The Kentucky Residential Code (815 KAR 7:125) and the Kentucky Building Code were NOT read. Those are where smoke alarm requirements for site-built houses actually live, including anything about interconnection, battery backup, hardwiring, or alarms required when a house is altered or added to.",
+    "Local ordinances were not researched and matter here: searches turned up municipal smoke detector ordinances in Kentucky cities, and some cities operate under the Uniform Residential Landlord and Tenant Act. A Kentucky city could require a point-of-sale inspection even though the state does not."
+  ]
+}

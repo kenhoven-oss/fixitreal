@@ -1,0 +1,19 @@
+{
+  "state": "Nebraska",
+  "stateSlug": "nebraska",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": true,
+  "summary": "In Nebraska the seller has to put working smoke detectors in an older home before it changes hands, and since 2017 also a working carbon monoxide alarm on every livable floor if the house has a fuel-burning appliance, a fireplace or an attached garage.",
+  "alarmType": "Smoke: one or more operating smoke detectors meeting the State Fire Marshal's rules, mounted in the number and places those rules set, sounding inside the dwelling unit. For homes built before January 1, 1982 a city or county may not require the detectors to be wired to a central power source, so battery units are allowed. CO: an audible alarm listed by a recognized testing lab, battery-powered or plug-in, hardwired or panel-connected (plug-in and hardwired need battery backup), installed per NFPA 720 as it stood on January 1, 2015. A combination smoke/CO unit counts if the CO alarm sounds distinctly from the smoke alarm.",
+  "coAlarms": "Separate requirement, Carbon Monoxide Safety Act. The seller of a single-family home offered for sale or transfer on or after January 1, 2017 must make sure an operational CO alarm is installed on each habitable floor, but only if the home has a fuel-fired heater or appliance, a fireplace or an attached garage. Same duty on the seller of a unit in an existing multifamily building. Homes built on or after January 1, 2017 with those features need CO alarms regardless of sale. Cities and counties may be stricter.",
+  "certification": null,
+  "citation": "Neb. Rev. Stat. § 81-5,142(3) (smoke detectors at remodeling or sale); §§ 81-5,143, 81-5,145, 81-5,146 (location, local standards, penalty); Neb. Rev. Stat. §§ 76-601 to 76-607, especially § 76-604 (Carbon Monoxide Safety Act)",
+  "sourceUrl": "https://nebraskalegislature.gov/laws/statutes.php?statute=81-5,142",
+  "lastAmended": "Smoke detector section: 1985 (Laws 1985, LB 313, § 29). CO act: enacted 2015 (Laws 2015, LB34), duties start January 1, 2017.",
+  "notVerified": [
+    "Nobody signs off. No fire department inspection, certificate or seller affidavit appears in either statute; the smoke detector section just makes providing the detectors the seller's sole responsibility and says that duty cannot be assigned or imputed to any other party or any party's agent. Violating the smoke detector sections is a Class V misdemeanor. No separate penalty section for the CO act was located.",
+    "The State Fire Marshal's rules that set the number, type and location of smoke detectors were not read, so the exact spec (how many, which rooms, any sealed-battery or photoelectric requirement) is not verified.",
+    "Whether the smoke detector duty at sale reaches homes built on or after January 1, 1982. 81-5,142(3) names only pre-1982 dwellings, mobile homes and modular units; post-1982 homes are covered by 81-5,142(1) as built or remodeled, with no sale trigger, so a 1990s house arguably has no sale-specific duty. Read the text before relying on this.",
+    "Whether Nebraska's residential property disclosure statement (Neb. Rev. Stat. § 76-2,120) separately asks about alarms. It came up in a carbon monoxide keyword search but was not read."
+  ]
+}

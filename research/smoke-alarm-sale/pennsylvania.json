@@ -1,0 +1,24 @@
+{
+  "state": "Pennsylvania",
+  "stateSlug": "pennsylvania",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Pennsylvania does not make a seller install or certify alarms to close on a house; the only sale-specific duty is telling the buyer, on the standard seller disclosure, whether carbon monoxide detectors are installed.",
+  "alarmType": "Nothing special at sale. Smoke alarms come in through the Uniform Construction Code, which adopts the 2021 International Residential Code for one- and two-family dwellings, so they apply to new construction and to work needing a permit. Pennsylvania modified IRC R314.4: the interconnection requirement does not apply to one- and two-family dwellings undergoing alterations, repairs or additions, and non-interconnected battery-operated smoke alarms may be installed in that work instead (34 Pa. Code s. 403.21(a)(7)(i)).",
+  "coAlarms": "Separate statute, and it does not require installation at sale. The Carbon Monoxide Alarm Standards Act requires CO alarms in apartments in multifamily rental buildings that have a fossil-fuel-burning heater or appliance, a fireplace, or an attached garage, placed centrally near the bedrooms and near the heater or fireplace. For a sale, section 4(a) only requires the seller of a residential building to disclose CO detector information on the property disclosure statement required by 68 Pa.C.S. ch. 73. Willful failure to install or maintain a required alarm is a summary offense with a fine up to $50, and municipalities may adopt equal or stricter CO rules.",
+  "certification": null,
+  "citation": "Carbon Monoxide Alarm Standards Act, Act of Dec. 18, 2013, P.L. 1229, No. 121, ss. 4-7; 68 Pa.C.S. ch. 73 (seller property disclosure); Pennsylvania Construction Code Act and 34 Pa. Code s. 403.21 (adoption of the 2021 IRC, with the R314.4 interconnection exception)",
+  "sourceUrl": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/034/chapter403/chap403toc.html",
+  "lastAmended": "Act 121 of 2013, approved Dec. 18, 2013, effective immediately with an 18-month compliance window for the apartment alarm requirement",
+  "notVerified": [
+    "No statewide Pennsylvania requirement to install or inspect smoke alarms as a condition of sale was found; this is an absence of a rule, not a rule saying nothing is required.",
+    "The Pennsylvania General Assembly's statute sites (palegis.us and legis.state.pa.us) returned HTTP 403 to automated requests, so Act 121's text was read through a page fetch rather than the statute viewer, and the 35 P.S. section numbers for Act 121 were not confirmed.",
+    "The text of 68 Pa.C.S. ch. 73 and the Real Estate Commission's standard disclosure form were not read; the CO disclosure duty is taken from Act 121 s. 4(a) itself. The Pennsylvania Code section on the disclosure form, 49 Pa. Code s. 35.335a, contains no mention of smoke or CO alarms.",
+    "Whether any Pennsylvania act after 2013 adds a smoke-alarm requirement (for example a sealed 10-year battery mandate) was not confirmed; several such bills have been introduced but no enacted act was located.",
+    "Local ordinances: Pennsylvania municipalities may adopt equal or stricter CO requirements, and some cities run their own point-of-sale or occupancy inspections. Not checked."
+  ],
+  "sourceUrlSecondary": [
+    "https://legis.state.pa.us/WU01/LI/LI/US/HTM/2013/0/0121..HTM",
+    "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/049/chapter35/s35.335a.html"
+  ]
+}

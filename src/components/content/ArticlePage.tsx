@@ -26,6 +26,7 @@ import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
 import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import { ProductPicks } from "@/components/content/ProductPicks";
+import { SmokeAlarmSaleByState } from "@/components/content/SmokeAlarmSaleByState";
 import { jsonLdScript, articleSchema, howToSchema } from "@/lib/jsonld";
 import type { LoadedArticle } from "@/lib/articles-loader";
 import { loadArticleTitle } from "@/lib/articles-loader";
@@ -66,6 +67,7 @@ const mdxComponents = {
   ChecklistCTA,
   PrintReadyFormsCTA,
   ProductPicks,
+  SmokeAlarmSaleByState,
   // Wide comparison tables scroll inside their own box on phones instead of
   // stretching the whole page sideways.
   table: ({ children }: { children?: React.ReactNode }) => (

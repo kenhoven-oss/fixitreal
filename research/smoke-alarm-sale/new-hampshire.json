@@ -1,0 +1,19 @@
+{
+  "state": "New Hampshire",
+  "stateSlug": "new-hampshire",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "New Hampshire has no state law tying smoke or carbon monoxide alarms to the sale of a home: the state alarm rules depend on the type of building and when it was built, not on a closing.",
+  "alarmType": "RSA 153:10-a requires automatic fire warning devices meeting NFPA 101 and NFPA 72 in multi-unit dwellings and rental units. A single-family dwelling is covered only if it was built or substantially rehabilitated after January 1, 2010. The statute names the NFPA standards rather than a power source, so it does not specify sealed 10-year battery, hardwired or interconnected alarms. The state fire marshal may adopt enforcement rules but may not require a sprinkler system in a one- or two-family dwelling that otherwise complies.",
+  "coAlarms": "Carbon monoxide detectors meeting NFPA 720 are required in the same buildings — multi-unit dwellings, rental units, and single-family homes built or substantially rehabilitated after January 1, 2010. Not required where the dwelling has no attached garage and no fuel-burning appliance; if either is added later, a CO detector becomes required. Nothing in the statute ties this to a sale.",
+  "certification": null,
+  "citation": "N.H. RSA 153:10-a",
+  "sourceUrl": "https://gc.nh.gov/rsa/html/XII/153/153-10-a.htm",
+  "lastAmended": "2011 (source note ends: 2011, 129:1, eff. July 1, 2011)",
+  "notVerified": [
+    "Only RSA 153:10-a itself was read. The table of contents for RSA chapter 153 could not be opened, so other sections of that chapter were not checked for a sale- or transfer-related provision.",
+    "Other New Hampshire titles (for example the conveyances and real estate disclosure statutes) were not searched for an alarm requirement at transfer, so a requirement located outside RSA 153 would not have been caught.",
+    "The New Hampshire State Fire Marshal's own informational bulletins on smoke alarms in dwellings could not be retrieved: www.nh.gov/safety/divisions/firesafety/ and www.dos.nh.gov/divisions/fire-safety both returned HTTP 403 Access Denied.",
+    "The statute page itself would not load over curl (www.gencourt.state.nh.us and gc.nh.gov both returned an empty reply); the official gc.nh.gov page was read through a page fetcher instead. Landlord duties to maintain devices in rental units are in the same section but were not detailed here."
+  ]
+}

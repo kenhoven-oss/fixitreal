@@ -1,0 +1,20 @@
+{
+  "state": "New York",
+  "stateSlug": "new-york",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": true,
+  "summary": "When a New York one- or two-family home, condo unit or co-op apartment changes hands, the seller has to hand the buyer a sworn affidavit at closing saying the smoke alarms are in place and working.",
+  "alarmType": "State law requires operable single-station smoke alarms placed so the alarm is clearly audible in every bedroom or sleeping room with the doors closed. Battery-operated units are expressly allowed. Separately, since April 1, 2019 any smoke alarm sold in New York must be either hard-wired or powered by a sealed, non-removable 10-year battery, so a replacement alarm bought now will be a sealed 10-year unit. That sales law does not force removal of older removable-battery alarms already installed to code.",
+  "coAlarms": "Every one- or two-family dwelling, condo or co-op unit and multiple dwelling must have an operable carbon monoxide alarm, but only where the unit has an appliance, device or system that can emit carbon monoxide or has an attached garage. The closing affidavit requirement in the statute is written for smoke alarms; no matching CO affidavit was found in the statute.",
+  "certification": "No inspection and no government certificate. The seller (grantor) signs and delivers an affidavit of compliance to the buyer at the time of conveyance. The buyer then has 10 days from the conveyance to tell the seller if an alarm does not work, and the seller pays the cost of fixing it. Failure to comply is not a breach of warranty in the deed and is not a defense to a fire-insurance claim.",
+  "citation": "N.Y. Executive Law § 378(5-b) (smoke alarms; affidavit at conveyance in paragraph (e)); § 378(5-a) (carbon monoxide alarms); N.Y. General Business Law § 399-ccc (sealed 10-year battery alarms for sale)",
+  "sourceUrl": "https://dos.ny.gov/news/new-residential-smoke-alarm-sales-requirements-go-effect-april-1",
+  "lastAmended": "General Business Law § 399-ccc took effect April 1, 2019 (per NY Department of State). The amendment date of Executive Law § 378(5-b) was not shown on the state's statute page.",
+  "notVerified": [
+    "The chapter and year of the most recent amendment to N.Y. Executive Law § 378(5-b) — the state statute page does not display amendment history.",
+    "The Uniform Fire Prevention and Building Code rules (19 NYCRR) that fill in alarm placement and listing details were not read; the alarm specifics here come from the statute itself.",
+    "Whether any state-level affidavit form is prescribed, and any penalty amount for failing to deliver the affidavit, were not verified.",
+    "www.nysenate.gov, which also publishes these statutes, returned a Cloudflare bot check (HTTP 403) and was not used; the Legislature's own retrieval system at public.leginfo.state.ny.us was used instead.",
+    "N.Y. Executive Law s.378(5-b) was read on the state's legislative search site, which is http-only; the https source cited here is the Department of State's own statement of the alarm requirement. The statutory text itself should be re-checked on an https state host before relying on the exact wording."
+  ]
+}

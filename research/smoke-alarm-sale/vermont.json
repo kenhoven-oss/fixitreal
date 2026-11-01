@@ -1,0 +1,14 @@
+{
+  "state": "Vermont",
+  "stateSlug": "vermont",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": true,
+  "summary": "Vermont requires a single-family home to have working smoke alarms and carbon monoxide alarms in place when it is sold or exchanged, and the seller must sign a certificate at closing saying so.",
+  "alarmType": "Photoelectric-type or UL 217 compliant smoke alarms near any bedrooms and on every level of the home, installed per the manufacturer's instructions, plus one or more carbon monoxide alarms. Homes built before January 1, 1994 may use battery, hardwired, or both. Homes built after January 1, 1994 that have electrical power must have smoke alarms powered by the building's electrical service and by battery; the same dual-power rule applies to CO alarms in homes built after July 1, 2005.",
+  "coAlarms": "Yes, treated alongside smoke alarms. One or more CO alarms installed per manufacturer's instructions must be present at transfer; new construction requires them near bedrooms, and post-July 1, 2005 homes with electrical power need them powered by the electrical service plus battery.",
+  "certification": "The seller certifies to the buyer at closing that the required smoke and CO alarms are in place; the certification must be signed and dated by the seller. No fire department inspection is required. If the buyer notifies the seller by certified mail within 10 days of conveyance that an alarm is missing or inoperable, the seller has 10 days after notice to fix it. A violation does not create a defect in title.",
+  "citation": "9 V.S.A. ch. 77, §§ 2881-2883 (transfer requirement at § 2883; installation at § 2882(b))",
+  "sourceUrl": "https://legislature.vermont.gov/statutes/fullchapter/09/077",
+  "lastAmended": "2025 (2025, No. 69, § 23, eff. July 1, 2025)",
+  "notVerified": ["Chapter 77 is written for \"single-family dwelling,\" which by definition at 9 V.S.A. § 2881(1) excludes condominiums and multiple unit dwellings as defined in 20 V.S.A. § 2729(d); whether a two-family house falls inside or outside that definition was not verified against 20 V.S.A. § 2729(d).", "Rental and public-building alarm rules under 20 V.S.A. ch. 173 were not reviewed; only the sale/transfer rule was."]
+}

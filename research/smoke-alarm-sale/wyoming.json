@@ -1,0 +1,14 @@
+{
+  "state": "Wyoming",
+  "stateSlug": "wyoming",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Wyoming has no state law requiring smoke or carbon monoxide alarms in a private home, at sale or at any other time; the state's fire standards reach public and government buildings, so anything that applies to your house comes from your city or county.",
+  "alarmType": null,
+  "coAlarms": "No state requirement found. Carbon monoxide is not mentioned anywhere in the statute titles searched.",
+  "certification": null,
+  "citation": "Wyo. Stat. §§ 35-9-106 and 35-9-108 (state fire prevention standards and plan review; the state fire standards and plan review apply to state and local government buildings, public buildings over 5,000 sq ft, multistory public buildings, child care centers for more than 10 children, public assembly occupancies, and fuel dispensing facilities - not private one- or two-family homes). No Wyoming statute on residential smoke or CO alarms exists in the titles searched.",
+  "sourceUrl": "https://wyoleg.gov/statutes/compress/title35.pdf",
+  "lastAmended": null,
+  "notVerified": ["The finding of no requirement rests on a full-text search of the Wyoming Legislature's own statute PDFs for Title 35 (Public Health and Safety, which contains Chapter 9 Fire Protection), Title 34 (Property, Conveyances and Security Transactions), and Title 15 (Cities and Towns), downloaded from https://wyoleg.gov/statutes/compress/title35.pdf, title34.pdf and title15.pdf. The phrases \"smoke detector,\" \"smoke alarm\" and \"carbon monoxide\" appear nowhere in those three titles. Other titles were not searched.", "The Wyoming Fire Prevention and Safety rules adopted by the council under § 35-9-106 (which adopt editions of the International Fire Code and International Building Code) were not read; the governing statute limits state fire standards and plan review to the public and government building categories listed above, but the rules themselves were not checked for any residential provision.", "City and county ordinances were not checked. In a state with no statewide residential requirement, local ordinance is where any at-sale rule would live.", "No statute showed an amendment date relevant to an alarm requirement, because no alarm requirement was found."]
+}

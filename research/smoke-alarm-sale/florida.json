@@ -1,0 +1,18 @@
+{
+  "state": "Florida",
+  "stateSlug": "florida",
+  "verifiedOn": "2026-11-01",
+  "requiredAtSale": false,
+  "summary": "Florida ties smoke alarm rules to building work, not to selling - nothing in state law makes a seller upgrade or prove alarms before closing.",
+  "alarmType": "A one- or two-family home or townhome undergoing a repair or a 'level 1 alteration' under the Florida Building Code may use smoke alarms powered by a 10-year nonremovable, nonreplaceable battery instead of retrofitting alarms wired to the house. If a battery alarm is newly installed, or replaces an existing battery alarm, because of a level 1 alteration, its battery must be nonremovable, nonreplaceable and last at least 10 years. The 10-year battery rule does not apply to an alarm that is part of a centrally monitored or supervised system, uses low-power radio frequency wireless signalling, or has multiple sensors (such as a combined smoke and CO alarm) and is listed by a nationally recognized testing laboratory.",
+  "coAlarms": "Separate statute, keyed to new construction. Every separate building or addition built on or after July 1, 2008 that has a fossil-fuel-burning heater or appliance, a fireplace, an attached garage or anything else that gives off CO must have an approved working CO alarm within 10 feet of each sleeping room, or wherever else the Florida Building Code requires. A hardwired or battery CO alarm, or a hardwired or battery combination CO and smoke alarm, satisfies it. It does not reach existing buildings being altered or repaired unless the work is an addition (more floor area, stories or height). Cite: Fla. Stat. s 553.885, https://www.flsenate.gov/Laws/Statutes/2025/553.885 - last amended 2010 (ch. 2010-176).",
+  "certification": null,
+  "citation": "Fla. Stat. s 553.883 (smoke alarms in one- and two-family dwellings and townhomes); Fla. Stat. s 553.885 (carbon monoxide alarm required)",
+  "sourceUrl": "https://www.flsenate.gov/Laws/Statutes/2025/553.883",
+  "lastAmended": "2016 (s 553.883, ch. 2016-129); 2010 (s 553.885, ch. 2010-176)",
+  "notVerified": [
+    "No sign-off, inspection or affidavit requirement at sale was found, so 'certification' is null rather than confirmed as 'none' - the Florida Legislature's full-text statute search form could not be driven from the command line (the search page returns only the form), so the no-requirement-at-sale finding rests on reading the two sections that govern residential smoke and CO alarms rather than an exhaustive search of the whole code.",
+    "Florida Building Code requirements for new construction were not read - FS 553.885 points to the Code for CO alarm placement and the Florida Building Commission writes the implementing rules.",
+    "Local ordinances (county or municipal) were not checked."
+  ]
+}

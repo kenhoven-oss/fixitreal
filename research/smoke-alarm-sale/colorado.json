@@ -1,0 +1,17 @@
+{
+  "state": "Colorado",
+  "stateSlug": "colorado",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": true,
+  "summary": "If your Colorado home has a fuel-burning heater or appliance, a fireplace, or an attached garage, you must have a working carbon monoxide alarm within 15 feet of every bedroom door before you sell or transfer it; state law sets no equivalent smoke-alarm requirement at sale.",
+  "alarmType": "A listed CO alarm that sounds an audible alarm and is either battery powered, plugged into an outlet with battery backup, wired into the home's electrical system with battery backup, or connected through an electrical panel. It may be a combination smoke/CO unit if the combined device meets both sets of rules and clearly distinguishes the two alarms. Battery units must be mounted per NFPA 720.",
+  "coAlarms": "This is a CO-alarm law. The seller of an existing single-family dwelling offered for sale or transfer on or after July 1, 2009 must make sure an operational CO alarm is installed within 15 feet of the entrance to each room used for sleeping, or where a state or local building code specifies. Applies only to homes with a fuel-fired heater or appliance, a fireplace, or an attached garage. The same duty applies to each unit of an existing multi-family dwelling under C.R.S. 38-45-103, and CO alarms are also triggered by permitted alterations, repairs, fuel-fired appliance replacement, additions, or added bedrooms.",
+  "certification": "No inspection or certificate. The seller is responsible for making sure the alarm is installed and working. The statute directs the Colorado Real Estate Commission to require listing contracts for residential real property to disclose this requirement.",
+  "citation": "C.R.S. 38-45-102 (single-family); C.R.S. 38-45-101 (definitions); C.R.S. 38-45-103 (multi-family)",
+  "sourceUrl": "https://leg.colorado.gov/sites/default/files/images/olls/crs2024-title-38.pdf",
+  "lastAmended": "2019 (HB 19-1172 amended 38-45-102(1)(b), effective October 1, 2019; article added 2009 by HB 09-1091)",
+  "notVerified": [
+    "Whether Colorado has any statewide statute requiring working smoke alarms at sale or transfer. Title 38 of the 2024 Colorado Revised Statutes contains no such smoke-alarm requirement, and a text search of Title 9 (Safety - Industrial and Commercial) found no smoke-detector provisions. Smoke alarms in Colorado homes appear to be governed by locally adopted building and fire codes, which was not verified for this entry.",
+    "Whether the Real Estate Commission rule requiring the listing-contract disclosure was actually adopted and its current wording; only the statutory directive was read."
+  ]
+}

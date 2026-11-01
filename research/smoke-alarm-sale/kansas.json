@@ -1,0 +1,19 @@
+{
+  "state": "Kansas",
+  "stateSlug": "kansas",
+  "verifiedOn": "2026-10-31",
+  "requiredAtSale": false,
+  "summary": "Kansas requires a smoke detector on every story of a single-family home at all times, but nothing in the law is triggered by selling the house, and the state goes out of its way to limit when an official may even enter to check.",
+  "alarmType": "At least one smoke detector on every story of the dwelling unit for a single-family residence. In a building with more than one dwelling unit, or a mixed-use building with at least one dwelling unit, at least one detector at the top ceiling of each interior stairwell plus one on every story in each unit. Detectors in units that already existed on January 1, 1999 may be battery-powered or wired into the building's electrical system and do not have to be interconnected; detectors in units built after January 1, 1999 must be permanently wired into the electrical system. A detector must be approved or listed for its purpose by an approved independent testing laboratory. The statute says nothing about photoelectric vs ionization or about sealed 10-year batteries. Manufactured homes follow the federal HUD construction and safety standards instead, though their owners and occupants still have to test and maintain the detectors.",
+  "coAlarms": null,
+  "certification": "No inspection, certificate or affidavit at sale, and the law restricts enforcement. Officials may not enter a dwelling just to check smoke detector compliance except when inspecting before issuing an occupancy or building permit, when responding to a report of an actual fire (not a false alarm), or when the owner or occupant asks for a home safety inspection. The owner must supply and install the detectors and must test and maintain them, except inside a rental, where the occupant takes over testing and maintenance once in possession. Failing to place or maintain a detector is a nonclass nonperson misdemeanor with a fine capped at $25. Kansas also blocks two consequences you might expect: a property owner's failure to provide a working detector, and an occupant's failure to maintain one, are both inadmissible in any action to establish civil liability, and the act cannot be used to offset, reduce or deny an insurance payout.",
+  "citation": "K.S.A. 31-160 to 31-164 (the Kansas smoke detector act); K.S.A. 31-162 is the installation requirement",
+  "sourceUrl": "https://ksrevisor.gov/statutes/chapters/ch31/031_001_0062.html",
+  "lastAmended": "1998 (L. 1998, ch. 66, §§ 12-16, effective July 1, 1998) - the sections carry no later amendment in their printed history",
+  "notVerified": [
+    "Kansas has no sale- or transfer-specific smoke alarm requirement that this research could find. All five sections of the smoke detector act (K.S.A. 31-160, 31-161, 31-162, 31-163, 31-164) were read in full on the Kansas Office of Revisor of Statutes site and none mentions sale, transfer, conveyance or closing.",
+    "No Kansas statute requiring carbon monoxide alarms in homes was located, so coAlarms is set to null rather than 'none required'. A targeted search turned up no official Kansas source; the only hits were commercial and tenant-advocacy sites, which this brief excludes. The Kansas fire prevention code adopted by the State Fire Marshal through the Kansas Administrative Regulations was NOT read, and a CO requirement for new construction could live there. Do not publish a claim that Kansas requires no CO alarms.",
+    "K.S.A. 31-164 says the state act is in addition to any county resolution or city ordinance on smoke detectors, so a Kansas city or county is free to impose a point-of-sale inspection. Local ordinances were not researched.",
+    "Whether the Kansas residential property seller disclosure practice requires any statement about alarms was not checked."
+  ]
+}

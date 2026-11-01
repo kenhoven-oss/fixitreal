@@ -1,0 +1,25 @@
+{
+  "state": "South Carolina",
+  "stateSlug": "south-carolina",
+  "requiredAtSale": false,
+  "verifiedOn": "2026-10-31",
+  "summary": "South Carolina requires nothing of a seller's alarms at closing; the state's smoke detector statute covers apartment units, and smoke and CO alarms otherwise come in through the building code when a house is built or permitted work is done.",
+  "alarmType": "The statute that does apply, to apartment house dwelling units with no fire protection system, calls for an approved listed smoke detector installed per the manufacturer's instructions, ceiling- or wall-mounted centrally in the corridor or area serving each group of sleeping rooms, on every story including cellars and basements but not uninhabitable attics, connected to a sounding device or another detector so the alarm is audible in the sleeping areas, and meeting NFPA 72A and NFPA 74. For one- and two-family houses, alarm requirements come from the International Residential Code as adopted statewide by the South Carolina Building Codes Council, which applies to new construction and permitted work, not to a sale.",
+  "coAlarms": "No CO alarm requirement tied to a sale, and none in the state smoke detector statute. The State Fire Marshal's regulations require a CO alarm outside each separate sleeping area only in a narrow case: foster homes with fuel-fired appliances or an attached garage (S.C. Code Ann. Regs. 71-8301). Otherwise CO alarms come through the building code for new construction.",
+  "certification": null,
+  "citation": "S.C. Code s. 23-9-155 (smoke detectors in apartment houses); S.C. Code s. 23-9-20 (State Fire Marshal duties, which exclude egress enforcement for one- and two-family dwellings); S.C. Code ss. 6-9-40 to 6-9-60 (statewide adoption of the building codes); S.C. Code ch. 27-50 (residential property condition disclosure, which does not mention alarms)",
+  "sourceUrl": "https://www.scstatehouse.gov/code/t23c009.php",
+  "lastAmended": "S.C. Code s. 23-9-155 last amended 1993 (1993 Act No. 181, s. 351)",
+  "notVerified": [
+    "No South Carolina requirement to install, inspect or certify alarms at sale or transfer was found; this is an absence of a rule.",
+    "The statute's NFPA references (72A and 74) are to standards long since folded into NFPA 72; which current edition the State Fire Marshal treats as controlling was not verified.",
+    "Which edition of the International Residential Code is currently in force statewide, and what its R314 and R315 requirements say for new one- and two-family homes, were not read.",
+    "The South Carolina Real Estate Commission's property condition disclosure form was not read; the enabling chapter, S.C. Code ch. 27-50, does not mention smoke or CO alarms.",
+    "Local ordinances were not checked. South Carolina's code chapter lets municipalities and counties adopt the latest editions of certain national codes, including property maintenance and existing building codes."
+  ],
+  "sourceUrlSecondary": [
+    "https://www.scstatehouse.gov/code/t06c009.php",
+    "https://www.scstatehouse.gov/code/t27c050.php",
+    "https://statefire.llr.sc.gov/osfm/forms/policies/SCRegulations-OSFM.pdf"
+  ]
+}
