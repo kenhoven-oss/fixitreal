@@ -35,6 +35,10 @@ import { kenHoven } from "@/content/authors/ken-hoven";
 import { site } from "@/content/site";
 import { extractToc } from "@/lib/toc";
 import { TableOfContents } from "@/components/content/TableOfContents";
+import { AdSlot } from "@/components/ads/AdSlot";
+import { adsConfig } from "@/lib/ads";
+import { adPolicyForPillar } from "@/lib/ad-policy";
+import { insertArticleAdSlots } from "@/lib/ad-placement";
 
 type ArticlePageProps = {
   article: LoadedArticle;
@@ -68,6 +72,9 @@ const mdxComponents = {
   PrintReadyFormsCTA,
   ProductPicks,
   SmokeAlarmSaleByState,
+  // Injected by insertArticleAdSlots() when advertising is enabled; renders
+  // nothing otherwise. Not for hand-placement in article source.
+  AdSlot,
   // Wide comparison tables scroll inside their own box on phones instead of
   // stretching the whole page sideways.
   table: ({ children }: { children?: React.ReactNode }) => (
@@ -126,6 +133,19 @@ export async function ArticlePage({ article }: ArticlePageProps) {
     ? new Date(frontmatter.updatedAt)
     : publishDate;
   const toc = extractToc(content);
+
+  /**
+   * Display advertising. The MDX body is only rewritten when ads are on;
+   * with ads off the compiler sees the article byte-for-byte as authored.
+   * Slot positions are chosen per article at build time by the rules in
+   * src/lib/ad-placement.ts (section boundaries only, never next to safety,
+   * calculator or product blocks) within the per-pillar cap from
+   * src/lib/ad-policy.ts. `toc` and `hasAffiliateLinks` above deliberately
+   * read the untouched `content`.
+   */
+  const bodySource = adsConfig.adsEnabled
+    ? insertArticleAdSlots(content, adPolicyForPillar(pillar)).source
+    : content;
 
   const pillarInfo = site.pillars.find((p) => p.slug === pillar);
 
@@ -287,7 +307,7 @@ export async function ArticlePage({ article }: ArticlePageProps) {
         <div className="mt-8">
           <Prose>
             <MDXRemote
-              source={content}
+              source={bodySource}
               components={mdxComponents}
               options={{
                 mdxOptions: {

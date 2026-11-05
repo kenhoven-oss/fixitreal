@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { env } from "@/lib/env";
+import { adsConfig } from "@/lib/ads";
 
 type BuildMetadataInput = {
   title?: string;
@@ -116,6 +117,12 @@ export function buildMetadata({
     verification: site.verification.google
       ? { google: site.verification.google }
       : undefined,
+    // AdSense account meta tag — Google's "meta tag" site-verification
+    // method, and harmless to keep once ads are live. Only emitted when a
+    // valid publisher ID is configured (see src/lib/ads.ts).
+    ...(adsConfig.renderMetaTag && adsConfig.publisherId
+      ? { other: { "google-adsense-account": adsConfig.publisherId } }
+      : {}),
     openGraph: {
       type,
       url,

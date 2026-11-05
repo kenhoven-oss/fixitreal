@@ -50,6 +50,10 @@ Workflow for adding a new variable (e.g. a Stripe key):
 
 Never put secrets in code, in `src/content/`, or in any file without `.local` in its name. `NEXT_PUBLIC_` vars are exposed to the browser — only use that prefix for non-secret values.
 
+### Advertising (Google AdSense)
+
+Display advertising is fully configuration-driven and **off by default** — a build with no `NEXT_PUBLIC_ADSENSE_*` / `NEXT_PUBLIC_ADS_ENABLED` variables contains no ad script, no ad containers and no reserved space. The switches are read in `src/lib/ads.ts`, the per-pillar limits live in `src/lib/ad-policy.ts`, and slot positions are chosen by `src/lib/ad-placement.ts` (section boundaries only, never next to safety / calculator / product blocks). See **[docs/adsense-setup.md](docs/adsense-setup.md)** for the owner's step-by-step: applying, verifying ownership, consent for EU visitors, turning ads on after approval, and checking they work.
+
 ## Deployment
 
 `main` auto-deploys to production. Every pull request gets its own preview deployment at a `*.vercel.app` URL.
