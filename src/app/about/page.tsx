@@ -26,16 +26,20 @@ export default function AboutPage() {
         <div className="mt-6 space-y-5 text-lg text-ink-800 leading-relaxed">
           <p>
             FixItReal exists because most home-repair content is written by
-            people selling something — contractor lead-gen, home warranty
-            affiliates, or advertising relationships with the companies you&apos;d
-            need to question to get honest advice.
+            people selling something — contractor lead-gen dressed up as
+            advice, home warranty affiliates, or sponsored &ldquo;reviews&rdquo;
+            of the very companies you&apos;d need to question to get an honest
+            answer.
           </p>
           <p>
-            We&apos;re independent. One editor. No warranty companies. No
-            sponsored content disguised as editorial. No AI-generated filler
-            articles. When we recommend a product or service, it&apos;s because
-            we&apos;ve used it or done the research. When we don&apos;t, we
-            tell you why.
+            We&apos;re independent. One editor. No warranty companies, ever.
+            No sponsored content disguised as editorial. No AI-generated filler
+            articles. We do earn money — through clearly labelled affiliate
+            links and, in future, a small number of labelled display ads — but
+            nobody who pays us sees an article before it&apos;s published or has
+            a say in what it says. When we recommend a product or service,
+            it&apos;s because we&apos;ve used it or done the research. When we
+            don&apos;t, we tell you why.
           </p>
           <p>
             The goal is simple: help you fix the right things yourself, skip
