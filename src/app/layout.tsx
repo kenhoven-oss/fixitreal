@@ -6,6 +6,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, organizationSchema, websiteSchema } from "@/lib/jsonld";
+import { adsConfig } from "@/lib/ads";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,6 +42,17 @@ export default function RootLayout({
       <head>
         {/* @ts-expect-error — Impact verification requires non-standard value= attribute */}
         <meta name='impact-site-verification' value='c0d08fb1-8b1f-4e9b-9be4-736725c60abb' />
+        {/*
+          AdSense "code snippet" ownership verification. Rendered server-side
+          in <head> on every page ONLY when NEXT_PUBLIC_ADSENSE_VERIFICATION=
+          script, because that is where Google's reviewer looks for it. This
+          does not display ads: no ad units render unless NEXT_PUBLIC_ADS_ENABLED
+          is also true (see src/lib/ads.ts). Live ads load the same script per
+          page from <AdSlot>, so ad-free pages never fetch it.
+        */}
+        {adsConfig.loadScriptSiteWide && adsConfig.scriptSrc && (
+          <script async src={adsConfig.scriptSrc} crossOrigin="anonymous" />
+        )}
       </head>
       <body className="min-h-full flex flex-col">
         <script

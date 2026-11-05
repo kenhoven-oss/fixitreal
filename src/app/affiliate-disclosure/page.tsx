@@ -1,11 +1,16 @@
 import { Section } from "@/components/ui/Section";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import Link from "next/link";
 import { buildMetadata } from "@/lib/metadata";
+import { adsConfig } from "@/lib/ads";
+
+/** Keeps the advertising wording truthful either way; see src/lib/ads.ts. */
+const adsLive = adsConfig.adsEnabled;
 
 export const metadata = buildMetadata({
   title: "Affiliate disclosure",
   description:
-    "How FixItReal makes money: home-services lead-gen partnerships, display advertising, and affiliate links — and what we will never accept.",
+    "How FixItReal makes money today (Amazon affiliate links, a sister site), what we're evaluating (display ads, contractor referrals), and what we will never accept.",
   path: "/affiliate-disclosure",
 });
 
@@ -23,13 +28,16 @@ export default function AffiliateDisclosurePage() {
 
       <Section padding="sm" size="sm">
         <h1 className="font-serif text-4xl text-navy-900">Affiliate disclosure</h1>
-        <p className="mt-2 text-sm text-ink-500">Last updated: April 2026</p>
+        <p className="mt-2 text-sm text-ink-500">Last updated: November 2026</p>
 
         <div className="mt-8 space-y-5 text-ink-800 leading-relaxed">
           <p>
-            FixItReal is supported by a mix of lead-generation partnerships,
-            display advertising, and affiliate links. This page tells you, in
-            plain English, how we make money — and what we refuse to do.
+            FixItReal is a small, independent site. Today it earns money
+            through affiliate links (mostly Amazon) and from a sister site that
+            sells printable forms. We are evaluating two more sources —
+            contractor referrals and display advertising — and we would rather
+            tell you about them before they exist than after. This page says, in
+            plain English, how we make money and what we refuse to do.
           </p>
 
           <h2 className="font-serif text-2xl text-navy-900 mt-8">How we earn</h2>
@@ -47,16 +55,47 @@ export default function AffiliateDisclosurePage() {
               — not from the contractor you ultimately hire.
             </li>
             <li>
-              <strong>Affiliate links.</strong> Some articles link to products
-              — typically parts and tools — through affiliate programs (mostly
-              Amazon Associates). If you buy through that link, we earn a small
-              commission at no extra cost to you.
+              <strong>Affiliate links (active).</strong> Some articles and
+              buying guides link to products — typically parts and tools —
+              through affiliate programs, mostly Amazon Associates. If you buy
+              through one of those links, we earn a small commission at no
+              extra cost to you. Articles that contain affiliate links say so
+              near the top.
             </li>
             <li>
-              <strong>Display advertising.</strong> Once we have enough traffic,
-              we&apos;ll run display ads from a premium ad network
-              (Mediavine/Raptive tier). We don&apos;t allow advertisers to
-              influence what we write.
+              <strong>Our sister site (active).</strong> Some pages point to
+              printable contractor-quote and inspection forms sold by
+              PrintReadyForms, which is run by the same owner. Those links are
+              labelled as a sister-site resource wherever they appear.
+            </li>
+            <li>
+              <strong>Display advertising{adsLive ? " (active)" : " (planned, not yet running)"}.</strong>{" "}
+              {adsLive ? (
+                <>
+                  Some article pages show display ads served by Google AdSense.
+                  There are no ads on the homepage, on our calculators and
+                  tools, or on policy pages like this one, and no more than two
+                  ad placements on any article.
+                </>
+              ) : (
+                <>
+                  We intend to run a small number of display ads through Google
+                  AdSense on article pages — never on the homepage, our
+                  calculators and tools, or policy pages like this one, and no
+                  more than two placements per article. There are no ads on the
+                  site today; this page and our{" "}
+                  <Link
+                    href="/privacy"
+                    className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+                  >
+                    privacy policy
+                  </Link>{" "}
+                  will be updated when that changes.
+                </>
+              )}{" "}
+              Advertisers never see our content before it&apos;s published and
+              have no say in what we write. Ads are labelled as advertisements
+              and are not editorial recommendations.
             </li>
           </ul>
 
