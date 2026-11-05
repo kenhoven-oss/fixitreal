@@ -8,6 +8,25 @@ until you set them.
 Last reviewed against Google's documentation on 2026-11-05. The AdSense interface
 changes often; menu names below are the ones Google used at that date.
 
+## Status as of 2026-11-05
+
+Steps 1–7 below are **done**; the site is in Google's review queue.
+
+| Item | State |
+| --- | --- |
+| AdSense account | Exists; publisher ID `ca-pub-6521328782014554`; payments info on file |
+| Site `fixitreal.com` | Added, ownership **verified** (meta-tag method), **review requested** — Sites page shows "Getting ready" |
+| Vercel env (Production + Preview) | `NEXT_PUBLIC_ADSENSE_PUBLISHER_ID`, `NEXT_PUBLIC_ADSENSE_VERIFICATION=meta`, `NEXT_PUBLIC_ADSENSE_SLOT_IN_ARTICLE=7114445861` set. `NEXT_PUBLIC_ADS_ENABLED` **not set** (ads off). |
+| Live site | Meta tag on every page; `/ads.txt` serving Google's line; no ad slots rendered |
+| Consent (EEA/UK/CH) | Google CMP message "FixItReal — European regulations message" **published**, three-button layout, logo + privacy URL set. Served only by the AdSense script, so nothing shows until ads are on. |
+| Auto ads / Auto optimize | Both turned **off** for fixitreal.com (they were on by default) |
+| Ad unit | "FixItReal in-article" responsive display unit created, slot `7114445861` |
+| ads.txt status in AdSense | "Not found" — expected; Google recrawls within days (up to a month) |
+
+**The only remaining action, after the approval email arrives:** set
+`NEXT_PUBLIC_ADS_ENABLED=true` in Vercel (Production), redeploy, then run the
+checks in Step 9. Nothing else needs to change.
+
 ## How the integration behaves
 
 | Vercel variable | Default | Effect |
