@@ -497,6 +497,68 @@ export default async function Home() {
       </Section>
 
       {/* ==============================================================
+           INSPECTION REPORT HUB — entry point for buyers and sellers
+           arriving with a report in hand. High-intent audience, so it
+           gets its own section rather than a link buried in the footer.
+           ============================================================== */}
+      <Section padding="xl" className="bg-navy-900">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-start">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">
+              Just got an inspection report?
+            </p>
+            <h2 className="mt-2 font-serif text-3xl md:text-4xl text-white leading-tight">
+              See a real inspection report, finding by finding.
+            </h2>
+            <p className="mt-4 text-ink-200 leading-relaxed">
+              A real report, shared as an educational sample with all
+              identifying details removed. Every deficiency is translated into
+              plain English with a typical cost range and a straight answer on
+              whether it&apos;s a DIY job or a call to a pro.
+            </p>
+            <Link
+              href="/resources/sample-home-inspection-report"
+              className="mt-6 inline-flex items-center rounded-md bg-amber-500 px-5 py-3 text-sm font-semibold text-navy-900 no-underline transition-colors hover:bg-amber-400"
+            >
+              Open the sample report →
+            </Link>
+          </div>
+          <div className="grid gap-3">
+            {[
+              {
+                href: "/advice/home-inspection-what-must-be-fixed",
+                title: "What actually has to be fixed",
+                blurb: "Sorting findings into safety items, negotiating points, and things to ignore.",
+              },
+              {
+                href: "/advice/pre-inspection-checklist-for-sellers",
+                title: "Selling? Fix these first",
+                blurb: "The cheap items that make buyers assume bigger problems.",
+              },
+              {
+                href: "/advice/no-main-disconnect-electrical-panel",
+                title: "Panel flagged on your report?",
+                blurb: "No main disconnect, open knockouts, and unlabeled breakers explained.",
+              },
+            ].map((c) => (
+              <Link
+                key={c.href}
+                href={c.href}
+                className="group block rounded-lg border border-white/15 bg-white/5 p-5 no-underline transition-colors hover:border-amber-400/60 hover:bg-white/10"
+              >
+                <h3 className="font-serif text-lg text-white leading-snug">
+                  {c.title}
+                </h3>
+                <p className="mt-1.5 text-sm text-ink-300 leading-relaxed">
+                  {c.blurb}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* ==============================================================
            BUYING GUIDES — surface the 6 Tools pages.
            ============================================================== */}
       <Section padding="xl" className="bg-ink-50">

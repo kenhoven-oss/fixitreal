@@ -105,6 +105,54 @@ export default async function HomeInspectionRepairsHub() {
       </Section>
 
       <Section padding="md" size="lg">
+        <div className="rounded-xl border-2 border-amber-500 bg-amber-50 p-6 md:p-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
+            Start here
+          </p>
+          <h2 className="mt-2 font-serif text-2xl md:text-3xl text-navy-900 leading-tight">
+            Read a real inspection report, finding by finding
+          </h2>
+          <p className="mt-3 text-ink-700 leading-relaxed max-w-2xl">
+            A real report, shared as an educational sample with identifying
+            details removed. Every deficiency is translated into plain English,
+            with a typical cost range and a DIY-or-hire verdict.
+          </p>
+          <Link
+            href="/resources/sample-home-inspection-report"
+            className="mt-5 inline-flex items-center rounded-md bg-navy-900 px-5 py-3 text-sm font-semibold text-white no-underline transition-colors hover:bg-navy-800"
+          >
+            Open the sample report →
+          </Link>
+          <div className="mt-6 border-t border-amber-200 pt-5">
+            <p className="text-xs font-semibold uppercase tracking-wider text-ink-600">
+              Common report findings, explained
+            </p>
+            <ul className="mt-3 grid gap-x-8 gap-y-2 sm:grid-cols-2 text-sm">
+              {[
+                { href: "/advice/home-inspection-what-must-be-fixed", label: "What actually has to be fixed" },
+                { href: "/advice/pre-inspection-checklist-for-sellers", label: "Seller pre-inspection checklist" },
+                { href: "/advice/no-main-disconnect-electrical-panel", label: "No main disconnect in the panel" },
+                { href: "/advice/open-knockouts-electrical-panel", label: "Open knockouts in the panel" },
+                { href: "/advice/deck-rot-sag-ledger-repair", label: "Deck rot, sag, and ledger problems" },
+                { href: "/advice/failed-window-seals-foggy-glass", label: "Failed window seals / foggy glass" },
+                { href: "/advice/settled-garage-slab-leveling", label: "Settled garage slab" },
+                { href: "/advice/cracked-brick-veneer", label: "Cracked brick veneer" },
+              ].map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="no-underline text-navy-700 hover:text-navy-900 border-b border-amber-400 pb-0.5"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      <Section padding="md" size="lg">
         <h2 className="font-serif text-2xl text-navy-900">
           All inspection-repair guides
         </h2>
