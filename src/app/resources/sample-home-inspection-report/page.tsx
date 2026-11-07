@@ -17,7 +17,7 @@ export const metadata = buildMetadata({
   title:
     "Sample Home Inspection Report: Full Walkthrough with Annotated Deficiencies",
   description:
-    "A real, anonymized 56-page home inspection report — plus a plain-English walkthrough of every one of its 38 flagged deficiencies, with repair costs and DIY-or-hire verdicts.",
+    "A real, anonymized 56-page home inspection report — plus a plain-English walkthrough of all 33 flagged deficiencies, with repair costs and DIY-or-hire verdicts.",
   path: "/resources/sample-home-inspection-report",
   type: "article",
   publishedAt: PUBLISHED,
@@ -442,12 +442,7 @@ const FAQ = [
   {
     question: "Is this a typical home inspection report?",
     answer:
-      "Yes, in length and structure. 56 pages and 38 flagged items is common for an occupied single-family home in average condition. A newer home might flag 10-15 items; a neglected older home routinely runs 50+. The sections — Exterior, Garage, Roofing, Structure, Electrical, Heating, Cooling, Plumbing, Appliances, Interior — follow the InterNACHI and ASHI standards of practice.",
-  },
-  {
-    question: "What software produced this report?",
-    answer:
-      "Most modern home inspectors use one of a handful of mobile reporting apps (HomeGauge, Spectora, Horizon, iPad-based tools). This report uses a common layout: a summary section, photos inline, and findings tagged as either Information or Deficiency.",
+      "Yes, in length and structure. 38 comments (33 deficiencies plus 5 informational notes) is a plausible count for an occupied single-family home in average condition; newer homes usually show fewer and neglected ones more. The section layout — Exterior, Garage, Roofing, Structure, Electrical, Heating, Cooling, Plumbing, Appliances, Interior — mirrors the systems covered by common inspection standards of practice such as InterNACHI's and ASHI's.",
   },
   {
     question: "How many of these items would stop a sale?",
@@ -577,7 +572,10 @@ export default function SampleHomeInspectionReportPage() {
         </h2>
         <p className="mt-2 text-ink-700">
           Grouped by inspection section. Comment numbers match the PDF.
-          Verdicts and cost ranges are FixItReal&apos;s own.
+          The Garage, Heating, and Appliances sections recorded no
+          deficiencies, and informational comments (20, 23, 26, 30, 37 —
+          equipment dates and access notes) are omitted. Verdicts and cost
+          ranges are FixItReal&apos;s own typical-range estimates, not quotes.
         </p>
 
         <nav className="mt-6 flex flex-wrap gap-2 text-sm">
@@ -731,7 +729,7 @@ export default function SampleHomeInspectionReportPage() {
             headline:
               "Sample Home Inspection Report: Full Walkthrough with Annotated Deficiencies",
             description:
-              "A real, anonymized 56-page home inspection report with a plain-English walkthrough of every one of its 38 flagged deficiencies.",
+              "A real, anonymized 56-page home inspection report with a plain-English walkthrough of all 33 of its flagged deficiencies.",
             url: "/resources/sample-home-inspection-report",
             datePublished: PUBLISHED,
             dateModified: UPDATED,
