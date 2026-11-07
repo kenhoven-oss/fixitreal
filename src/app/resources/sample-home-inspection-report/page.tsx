@@ -8,6 +8,7 @@ import {
   breadcrumbSchema,
   faqSchema,
 } from "@/lib/jsonld";
+import { ReportPhoto, type ReportPhotoData } from "@/components/content/ReportPhoto";
 import { kenHoven } from "@/content/authors/ken-hoven";
 
 const PUBLISHED = "2026-11-07";
@@ -34,6 +35,7 @@ type Deficiency = {
   cost: string;
   verdict: "DIY" | "DIY or hire" | "Hire a pro" | "Pro — safety";
   link?: { href: string; label: string };
+  photos?: ReportPhotoData[];
 };
 
 type ReportSection = {
@@ -66,6 +68,9 @@ const REPORT: ReportSection[] = [
           "Cheap, obvious deferred maintenance — a bottom-of-jamb rot spot and peeling paint. The kind of item that reads to a buyer as general neglect.",
         cost: "$50–$150 DIY in materials; $250–$600 for a handyman visit.",
         verdict: "DIY",
+        photos: [
+          { file: "garage-door-jamb-rot", alt: "Bottom corner of an exterior door jamb with rotted, missing wood and peeling paint above a concrete threshold", caption: "Rotted lower corner of the garage side-door jamb." },
+        ],
       },
       {
         n: 3,
@@ -76,6 +81,10 @@ const REPORT: ReportSection[] = [
           "A vertical crack through the brick skin at a crawl-space vent. Usually cosmetic settlement, occasionally a foundation signal — read the pattern before assuming either.",
         cost: "$15 DIY caulk seal to $5,000+ mason repair; foundation work if indicated runs $3,000–$15,000+.",
         verdict: "DIY or hire",
+        photos: [
+          { file: "brick-veneer-crawl-vent-wide", alt: "Brick veneer skirt below vinyl siding with a crawl-space vent near a chain-link fence", caption: "The brick skirt at the back corner of the house." },
+          { file: "brick-veneer-crack-above-vent", alt: "Close view of brick above a crawl-space vent with a vertical crack running through the mortar joints", caption: "Close-up: a vertical crack stepping through the mortar above the vent." },
+        ],
         link: {
           href: "/advice/cracked-brick-veneer",
           label: "Full guide: cracked brick veneer",
@@ -126,6 +135,10 @@ const REPORT: ReportSection[] = [
           "At two spots where the roof terminates against a wall, the small diverter piece that keeps water out of the wall cavity is missing. Classic hidden-water-damage item.",
         cost: "$150–$400 per kick-out retrofit; add $500–$3,000+ if wall sheathing is already rotted.",
         verdict: "Hire a pro",
+        photos: [
+          { file: "missing-kick-out-flashing-closeup", alt: "Roof edge meeting a vinyl-sided wall with a gutter but no angled kick-out flashing diverting water away from the siding", caption: "Where the roof edge meets the wall: no kick-out to steer water into the gutter." },
+          { file: "missing-kick-out-flashing-roof-wall", alt: "Lower roof meeting a sided wall beside a screened porch, with the gutter ending at the wall", caption: "A second roof-to-wall junction on the same house." },
+        ],
         link: {
           href: "/advice/missing-kick-out-flashing",
           label: "Full guide: missing kick-out flashing",
@@ -199,6 +212,9 @@ const REPORT: ReportSection[] = [
           "Visible growth on the framing underside. Related to item 12 — the moisture caused it.",
         cost: "$400–$2,000 for mold treatment plus the moisture fix driving it.",
         verdict: "Pro — safety",
+        photos: [
+          { file: "crawl-space-subfloor-mildew", alt: "Underside of a plywood subfloor in a crawl space with white and dark staining along joists and insulation", caption: "Mildew-type growth on the underside of the subfloor." },
+        ],
       },
       {
         n: 14,
@@ -235,6 +251,9 @@ const REPORT: ReportSection[] = [
           "An extension cord is powering an exterior tankless water heater. Fire and shock hazard. Permanent wiring required.",
         cost: "$200–$500 for an electrician to install a weatherproof dedicated circuit.",
         verdict: "Pro — safety",
+        photos: [
+          { file: "tankless-water-heater-extension-cord", alt: "Exterior wall with a power cord running down the siding to a plug outdoors near a gutter downspout and crawl-space vents", caption: "A drop cord supplying the outdoor tankless unit instead of a permanent weatherproof connection." },
+        ],
       },
       {
         n: 17,
@@ -255,6 +274,10 @@ const REPORT: ReportSection[] = [
           "Multiple outlets on one circuit testing a fault. Usually a loose connection at the first outlet in the chain, affecting everything downstream. Fire risk.",
         cost: "$150–$350 for an electrician service call.",
         verdict: "Pro — safety",
+        photos: [
+          { file: "open-hot-outlet-dining-room", alt: "Dining room wall with a standard receptacle above the baseboard", caption: "One of the dining room receptacles that tested faulty." },
+          { file: "outlet-tester-open-hot", alt: "Handheld outlet tester with indicator lights showing a wiring fault pattern", caption: "Plug-in tester showing the open hot pattern." },
+        ],
         link: { href: "/advice/open-hot-outlet", label: "Full guide: open hot outlet" },
       },
       {
@@ -282,6 +305,9 @@ const REPORT: ReportSection[] = [
           "Plants restricting airflow to the condenser coils. Reduces capacity and shortens compressor life.",
         cost: "$0–$100 DIY (prune or remove the bush).",
         verdict: "DIY",
+        photos: [
+          { file: "rosebush-hvac-condenser", alt: "Dormant rosebush growing tight against an outdoor air conditioner condenser unit", caption: "Plant growth crowding the outdoor condenser." },
+        ],
       },
       {
         n: 22,
@@ -358,6 +384,9 @@ const REPORT: ReportSection[] = [
           "Hose left attached over winters is now seized. Classic small deferred-maintenance item.",
         cost: "$10–$50 DIY (penetrating oil, replace the faucet bib if needed).",
         verdict: "DIY",
+        photos: [
+          { file: "garden-hose-corroded-frostproof-faucet", alt: "Garden hose attached to an outdoor frost-proof faucet in a brick wall", caption: "A hose left connected to the frost-proof faucet." },
+        ],
       },
       {
         n: 32,
@@ -622,6 +651,13 @@ export default function SampleHomeInspectionReportPage() {
                     <p className="mt-2 text-ink-800">
                       <strong>Typical cost:</strong> {d.cost}
                     </p>
+                    {d.photos && (
+                      <div className="mt-4 flex flex-wrap gap-x-4">
+                        {d.photos.map((ph) => (
+                          <ReportPhoto key={ph.file} {...ph} />
+                        ))}
+                      </div>
+                    )}
                     {d.link && (
                       <p className="mt-2">
                         <Link

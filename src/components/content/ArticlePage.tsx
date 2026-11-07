@@ -16,6 +16,7 @@ import { CostEstimateBox } from "@/components/content/CostEstimateBox";
 import { CostMethodology } from "@/components/content/CostMethodology";
 import { SafetyWarning } from "@/components/content/SafetyWarning";
 import { KensTake } from "@/components/content/KensTake";
+import { ReportPhoto } from "@/components/content/ReportPhoto";
 import { FairPriceChecker } from "@/components/content/FairPriceChecker";
 import { DIYorHireVerdict } from "@/components/content/DIYorHireVerdict";
 import { ContractorRedFlagsBlock } from "@/components/content/ContractorRedFlagsBlock";
@@ -63,6 +64,7 @@ const mdxComponents = {
   CostMethodology,
   SafetyWarning,
   KensTake,
+  ReportPhoto,
   FairPriceChecker,
   DIYorHireVerdict,
   ContractorRedFlagsBlock,
