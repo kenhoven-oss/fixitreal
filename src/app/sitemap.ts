@@ -52,6 +52,7 @@ const STATIC_LASTMOD: Record<string, Date> = {
   "/tools/home-renovation-cost-estimator": d("2026-05-27"),
   "/tools/diy-project-cost-tracker": d("2026-05-27"),
   "/tools/home-cleaning-cost-calculator": d("2026-05-27"),
+  "/resources/sample-home-inspection-report": d("2026-11-07"),
 };
 
 /** Glossary entries carry no per-entry date; this is the glossary file's last content change. */
@@ -114,6 +115,7 @@ const staticRoutes: Route[] = [
   { path: "/terms", priority: 0.2, changeFrequency: "yearly" },
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },
   { path: "/reports/2026-state-repair-cost-index", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/resources/sample-home-inspection-report", priority: 0.85, changeFrequency: "monthly" },
   { path: "/topics", priority: 0.7, changeFrequency: "weekly" },
   { path: "/glossary", priority: 0.7, changeFrequency: "monthly" },
 ];

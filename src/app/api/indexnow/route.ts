@@ -64,6 +64,7 @@ export async function GET(req: Request) {
     "/what-is-this",
     "/contractor-red-flags",
     "/tools",
+    "/resources/sample-home-inspection-report",
   ].map((p) => `${env.siteUrl}${p}`);
 
   // Programmatic state-cost pages: STATES × STATE_COST_GUIDES.
