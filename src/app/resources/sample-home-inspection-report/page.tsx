@@ -736,6 +736,30 @@ export default function SampleHomeInspectionReportPage() {
           </li>
           <li>
             <Link
+              href="/advice/exterior-outlet-no-gfci"
+              className="no-underline text-navy-700 hover:text-navy-900 border-b border-amber-500 pb-0.5"
+            >
+              Exterior outlet without GFCI protection
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/advice/tub-spout-diverter-not-working"
+              className="no-underline text-navy-700 hover:text-navy-900 border-b border-amber-500 pb-0.5"
+            >
+              Tub spout diverter not working
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/advice/seized-water-shutoff-valve"
+              className="no-underline text-navy-700 hover:text-navy-900 border-b border-amber-500 pb-0.5"
+            >
+              Seized water shutoff valve: what to do
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/home-inspection-repairs"
               className="no-underline text-navy-700 hover:text-navy-900 border-b border-amber-500 pb-0.5"
             >
