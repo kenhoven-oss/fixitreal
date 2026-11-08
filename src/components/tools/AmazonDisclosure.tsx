@@ -20,9 +20,9 @@ export function AmazonDisclosure({ products }: { products: RecommendedProduct[] 
   return (
     <aside
       role="note"
-      className="my-6 rounded-md border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-ink-800 leading-relaxed"
+      className="my-5 border-l-2 border-ink-200 pl-3 text-xs text-ink-600 leading-relaxed"
     >
-      <strong className="font-semibold text-navy-900">Affiliate disclosure:</strong>{" "}
+      <strong className="font-medium text-ink-700">Disclosure:</strong>{" "}
       As an Amazon Associate, I earn from qualifying purchases.
     </aside>
   );

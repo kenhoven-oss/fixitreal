@@ -9,16 +9,15 @@ export function AffiliateDisclosure({ variant = "inline" }: AffiliateDisclosureP
     return (
       <aside
         role="note"
-        className="my-6 rounded-md border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-ink-800 leading-relaxed"
+        className="my-5 border-l-2 border-ink-200 pl-3 text-xs text-ink-600 leading-relaxed"
       >
-        <strong className="font-semibold text-navy-900">Affiliate disclosure:</strong>{" "}
-        This article may contain affiliate links. If you buy something after
-        clicking one, we may earn a small commission at no extra cost to you.
-        As an Amazon Associate, I earn from qualifying purchases. Our editorial
-        picks aren&apos;t influenced by commissions —{" "}
+        <strong className="font-medium text-ink-700">Disclosure:</strong>{" "}
+        This article contains affiliate links; we may earn a small commission
+        at no extra cost to you. As an Amazon Associate, I earn from qualifying
+        purchases. Picks are editorial —{" "}
         <Link
           href="/affiliate-disclosure"
-          className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+          className="text-ink-700 hover:text-navy-900 underline decoration-ink-300"
         >
           how we decide
         </Link>
