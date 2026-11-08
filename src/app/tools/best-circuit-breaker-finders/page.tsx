@@ -4,7 +4,6 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, itemListSchema, articleSchema, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { kenHoven } from "@/content/authors/ken-hoven";
-import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
 import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
@@ -69,7 +68,6 @@ export default function BestCircuitBreakerFindersPage() {
           <span>By <Link href={kenHoven.url} className="no-underline hover:text-navy-900">{kenHoven.name}</Link></span>
           <span>Updated September 2026</span><span>3 min read</span>
         </p>
-        <AmazonDisclosure products={products} />
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>An unlabeled electrical panel is more than an annoyance — it means every small repair requires either guessing or flipping every breaker in the house. A circuit breaker finder solves this once, correctly, in an afternoon.</p>
         </div>

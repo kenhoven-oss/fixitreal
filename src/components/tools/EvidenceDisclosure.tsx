@@ -83,7 +83,7 @@ export function EvidenceDisclosure({
         <dd>
           {hasAffiliateLinks ? (
             <>
-              Yes — product links on this page are Amazon affiliate links; we may earn a commission at no extra cost to you.{" "}
+              Yes — product links on this page are Amazon affiliate links. As an Amazon Associate, I earn from qualifying purchases, at no extra cost to you.{" "}
               <Link href="/affiliate-disclosure" className="underline decoration-amber-500 hover:text-navy-900">
                 How that works
               </Link>

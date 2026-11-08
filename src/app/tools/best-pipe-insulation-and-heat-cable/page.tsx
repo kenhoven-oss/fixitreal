@@ -4,7 +4,6 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, itemListSchema, articleSchema, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { kenHoven } from "@/content/authors/ken-hoven";
-import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
 import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
@@ -99,7 +98,6 @@ export default function BestPipeInsulationPage() {
           <span>By <Link href={kenHoven.url} className="no-underline hover:text-navy-900">{kenHoven.name}</Link></span>
           <span>Updated September 2026</span><span>5 min read</span>
         </p>
-        <AmazonDisclosure products={products} />
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>Insulation and heat cable solve two different problems. Foam sleeves slow heat loss and buy hours during a cold snap. Heat cable adds heat and keeps a pipe in an unheated space from freezing at all. Most homes need the first on every exposed run and the second on exactly one or two lines.</p>
           <p>Below: the four products that cover it, and how to decide which pipe gets which.</p>

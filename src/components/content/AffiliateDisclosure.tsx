@@ -9,7 +9,7 @@ export function AffiliateDisclosure({ variant = "inline" }: AffiliateDisclosureP
     return (
       <aside
         role="note"
-        className="my-5 border-l-2 border-ink-200 pl-3 text-xs text-ink-600 leading-relaxed"
+        className="mt-8 -mb-3 border-l-2 border-ink-200 pl-3 text-xs text-ink-600 leading-relaxed"
       >
         <strong className="font-medium text-ink-700">Disclosure:</strong>{" "}
         This article contains affiliate links; we may earn a small commission

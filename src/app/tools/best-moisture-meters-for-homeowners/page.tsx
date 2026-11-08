@@ -10,7 +10,6 @@ import {
   faqSchema,
 } from "@/lib/jsonld";
 import { kenHoven } from "@/content/authors/ken-hoven";
-import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
 import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
@@ -174,7 +173,6 @@ export default function BestMoistureMetersGuide() {
           <span>5 min read</span>
         </p>
 
-        <AmazonDisclosure products={products} />
 
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>

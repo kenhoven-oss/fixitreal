@@ -9,7 +9,6 @@ import {
   faqSchema,
 } from "@/lib/jsonld";
 import { kenHoven } from "@/content/authors/ken-hoven";
-import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
 import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
@@ -237,7 +236,6 @@ export default function BestDrainSnakesGuide() {
 
         {/* Auto-renders the Amazon Associates sentence when the page
             contains at least one affiliate link. Draft pages stay clean. */}
-        <AmazonDisclosure products={products} />
 
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>

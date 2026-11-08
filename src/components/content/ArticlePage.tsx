@@ -211,8 +211,6 @@ export async function ArticlePage({ article }: ArticlePageProps) {
           </Link>
         </p>
 
-        {hasAffiliateLinks && <AffiliateDisclosure variant="banner" />}
-
         {frontmatter.howTo && (
           <section
             aria-labelledby="howto-heading"
@@ -305,6 +303,11 @@ export async function ArticlePage({ article }: ArticlePageProps) {
             </div>
           </details>
         )}
+
+        {/* Sits directly above the body so readers pass it before the first
+            affiliate link in the text, which is what the FTC asks for; it does
+            not need to be in the header to count. */}
+        {hasAffiliateLinks && <AffiliateDisclosure variant="banner" />}
 
         <div className="mt-8">
           <Prose>

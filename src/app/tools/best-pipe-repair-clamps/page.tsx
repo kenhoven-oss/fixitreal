@@ -4,7 +4,6 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, itemListSchema, articleSchema, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { kenHoven } from "@/content/authors/ken-hoven";
-import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
 import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
@@ -84,7 +83,6 @@ export default function BestPipeRepairClampsPage() {
           <span>By <Link href={kenHoven.url} className="no-underline hover:text-navy-900">{kenHoven.name}</Link></span>
           <span>Updated September 2026</span><span>4 min read</span>
         </p>
-        <AmazonDisclosure products={products} />
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>A pinhole leak in a copper supply line or a hairline crack in a PVC drain line is a &quot;stop the bleeding&quot; situation. The right emergency repair buys you days to weeks while you schedule a permanent fix — or confirms the pipe is too far gone to clamp and a plumber is the next call.</p>
           <p>Below: three products covering pressurized supply lines, drain lines, and the first 20 minutes of any pipe emergency.</p>

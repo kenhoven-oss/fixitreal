@@ -4,7 +4,6 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, itemListSchema, articleSchema, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { kenHoven } from "@/content/authors/ken-hoven";
-import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
 import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
@@ -99,7 +98,6 @@ export default function BestAutomaticShutoffPage() {
           <span>By <Link href={kenHoven.url} className="no-underline hover:text-navy-900">{kenHoven.name}</Link></span>
           <span>Updated September 2026</span><span>5 min read</span>
         </p>
-        <AmazonDisclosure products={products} />
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>A burst pipe running for eight hours does more damage than a house fire, on average, and it usually happens when nobody is home. An automatic shutoff valve on the main line detects the flow pattern of a leak and closes the water in seconds. Insurers know this: many offer 5–15% premium discounts for an installed system.</p>
           <p>Below: the two categories that work — flow-sensing smart valves and sensor-triggered shutoffs — and how to pick between them.</p>

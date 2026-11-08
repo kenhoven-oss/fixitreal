@@ -4,7 +4,6 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, itemListSchema, articleSchema, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { kenHoven } from "@/content/authors/ken-hoven";
-import { AmazonDisclosure } from "@/components/tools/AmazonDisclosure";
 import { RecommendedProductsSection } from "@/components/tools/RecommendedProductsSection";
 import { BuyingGuideSections } from "@/components/tools/BuyingGuideSections";
 import type { RecommendedProduct } from "@/components/tools/RecommendedProductCard";
@@ -84,7 +83,6 @@ export default function BestWaterPressureGaugesPage() {
           <span>By <Link href={kenHoven.url} className="no-underline hover:text-navy-900">{kenHoven.name}</Link></span>
           <span>Updated September 2026</span><span>4 min read</span>
         </p>
-        <AmazonDisclosure products={products} />
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>Water pressure is behind more unexplained plumbing problems than most homeowners realize — pinhole leaks, banging pipes, running toilets, appliance failures, and weak showers all trace back to pressure being too high, too low, or inconsistent. A $12 gauge gives you the actual number in 60 seconds.</p>
           <p>Below: the gauge to buy, what to do with the reading, and the fix when pressure is out of range.</p>
