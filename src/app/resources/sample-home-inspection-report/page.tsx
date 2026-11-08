@@ -553,6 +553,17 @@ export default function SampleHomeInspectionReportPage() {
               structure, deficiency wording, and what gets flagged in average
               US residential stock.
             </li>
+            <li>
+              <strong>Ready to budget and hire:</strong> our sister site Home
+              Repair Planner shows how to{" "}
+              <a
+                href="https://homerepairplanner.com/guides/home-inspection-repair-plan"
+                className="no-underline text-navy-700 hover:text-navy-900 border-b border-amber-500 pb-0.5"
+              >
+                turn an inspection report into a repair plan
+              </a>
+              .
+            </li>
           </ul>
         </div>
       </Section>
