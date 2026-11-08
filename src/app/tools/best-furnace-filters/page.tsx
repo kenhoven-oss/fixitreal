@@ -72,10 +72,11 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-furnace-filters";
-const pageTitle = "Best furnace filters: which MERV rating you actually need";
-const pageDescription = "MERV 8 is right for most homes. MERV 11–13 helps allergies but can starve an older furnace. What the ratings mean, and the sizes that fit.";
+const pageTitle = "Recommended furnace filter: which MERV rating you actually need (2026)";
+const pageDescription = "MERV 8 is the recommended furnace filter for most homes. MERV 11–13 helps allergies but can starve an older furnace. Ratings explained, plus sizes that fit.";
 const publishedAt = "2026-09-12";
-const updatedAt = "2026-09-12";
+const updatedAt = "2026-11-08";
+const linksCheckedAt = "2026-09-12";
 
 export const metadata = buildMetadata({ title: pageTitle, description: pageDescription, path, type: "article", publishedAt, updatedAt, authorName: kenHoven.name, section: "Buying guide" });
 
@@ -83,6 +84,10 @@ const faqs = [
   { question: "How often should I change my furnace filter?", answer: "Every 60–90 days for a 1-inch filter in normal use; every 30–60 days with pets, allergies, or during heavy use; every 6–12 months for a 4-inch media filter. If you can't see light through the filter, it's overdue regardless of the calendar." },
   { question: "What does MERV stand for?", answer: "Minimum Efficiency Reporting Value — a 1 to 16 scale of how small a particle the filter captures. MERV 8 stops dust and pollen; 11 adds pet dander and mold spores; 13 adds smoke and some bacteria. Higher ratings restrict airflow more, which is why the furnace's limits matter." },
   { question: "Are expensive filters worth it?", answer: "A $25 MERV 11 filter isn't 'better' than a $6 MERV 8 for a healthy household with no pets — it just restricts more airflow and loads faster. Spend more only when there's a reason: allergies, pets, smoke, or a medical recommendation. What always pays is changing the filter on schedule." },
+  { question: "What furnace filter do HVAC technicians recommend?", answer: "For most homes, a MERV 8 pleated filter in the size printed on your current filter. The deciding factor is the furnace itself: check the manual for its maximum recommended MERV, or ask your HVAC tech, before moving up to MERV 11 or 13." },
+  { question: "Is a higher MERV filter always better?", answer: "No. Higher ratings capture finer particles but restrict airflow more, and many older furnaces top out at MERV 11. If the furnace starts short-cycling after you upgrade, drop back to MERV 8. A filter changed on schedule beats a higher rating left in too long." },
+  { question: "What is the difference between 1-inch and 4-inch furnace filters?", answer: "A 4-inch media filter has far more surface area, so it can run MERV 11 with less airflow restriction than a 1-inch MERV 8, and it needs changing only once or twice a year instead of every 60–90 days. It only fits a furnace with a 4- or 5-inch filter cabinet; it will not fit a standard 1-inch slot." },
+  { question: "How do I find my furnace filter size?", answer: "Read the size printed on the frame of the filter you have now (for example 16x25x1) and buy the same. That is the nominal size. Check the arrow on the frame points toward the furnace when you install it." },
 ];
 
 const breadcrumbItems = [{ name: "Home", href: "/" }, { name: "Tools", href: "/tools" }, { name: pageTitle, href: path }];
@@ -96,13 +101,18 @@ export default function BestFurnaceFiltersPage() {
         <h1 className="mt-3 font-serif text-4xl md:text-5xl text-navy-900 leading-tight">{pageTitle}</h1>
         <p className="mt-4 text-sm text-ink-600 flex flex-wrap gap-x-4 gap-y-1">
           <span>By <Link href={kenHoven.url} className="no-underline hover:text-navy-900">{kenHoven.name}</Link></span>
-          <span>Updated September 2026</span><span>4 min read</span>
+          <span>Updated November 2026</span><span>4 min read</span>
         </p>
         <div className="mt-6 space-y-4 text-ink-800 leading-relaxed">
           <p>The furnace filter is the cheapest part of the HVAC system and the one most likely to cause an expensive service call when ignored. A clogged filter overheats the furnace, trips the limit switch, and shortens the life of the blower motor — all for want of a $10 part every 60–90 days.</p>
           <p>Below: what the MERV number means in plain terms, why higher isn&apos;t automatically better, and the picks for standard, allergy, and pet households.</p>
         </div>
-        <RecommendedProductsSection heading="Our picks" intro={<p>Match the MERV rating to the household, not the highest number on the shelf. Check the arrow on the frame points toward the furnace.</p>} products={products} evidence={{ basis: "editorial-research", lastChecked: updatedAt, sources: ["Manufacturer specifications and instruction sheets", "ASHRAE 52.2 MERV ratings", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }} />
+        <h2 className="mt-10 font-serif text-2xl text-navy-900">Our recommended furnace filter for most homes</h2>
+        <div className="mt-3 space-y-4 text-ink-800 leading-relaxed">
+          <p>For most homes the recommended furnace filter is a MERV 8 pleated filter in the size printed on your current one. It captures dust, pollen, and lint without restricting airflow on any residential furnace, and a multi-pack makes it easy to actually change it on schedule.</p>
+          <p>Step up to MERV 11 if anyone has allergies or asthma, or you have pets, as long as the furnace manual allows it. MERV 13 is for wildfire smoke or medical needs, and only on a system designed for it or with an HVAC tech&apos;s sign-off. If your furnace has a 4-inch filter cabinet, a deep media filter is the best fit.</p>
+        </div>
+        <RecommendedProductsSection heading="Our picks" intro={<p>Match the MERV rating to the household, not the highest number on the shelf. Check the arrow on the frame points toward the furnace.</p>} products={products} evidence={{ basis: "editorial-research", lastChecked: linksCheckedAt, sources: ["Manufacturer specifications and instruction sheets", "ASHRAE 52.2 MERV ratings", "Verified owner reports on retailer and manufacturer sites", "The author's own repair experience"] }} />
         <BuyingGuideSections
           whoShouldBuy={["Every homeowner with a forced-air furnace or heat pump \u2014 this is a recurring purchase, not a one-time one.", "Anyone whose furnace has started short-cycling, smells like burning, or blows weakly \u2014 the filter is the first suspect.", "Allergy, asthma, and pet households."]}
           whoShouldSkip={["Homes with boilers or radiant heat and no forced-air system.", "Furnaces with a whole-house electronic air cleaner in place of a media filter."]}
