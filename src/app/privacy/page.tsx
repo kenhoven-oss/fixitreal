@@ -345,8 +345,27 @@ export default function PrivacyPage() {
             </li>
           </ul>
 
-          <h2 className="font-serif text-2xl text-navy-900 mt-8">Your choices</h2>
+          <h2 id="your-choices" className="font-serif text-2xl text-navy-900 mt-8">Your choices</h2>
           <ul className="list-disc pl-6 space-y-3">
+            <li>
+              <strong>Do not sell or share my personal information.</strong>{" "}
+              FixItReal does not sell your personal information. The one place
+              information you enter is passed to a third party for value is the
+              contractor quote-request form, where what you type goes directly
+              to Networx (see Contractor quote requests above) — and you choose
+              whether to use it. If you have submitted a request and want it
+              withdrawn, or want to opt out of any sale or sharing of your
+              information, email{" "}
+              <a
+                href={`mailto:${site.contactEmail}?subject=Do%20not%20sell%20or%20share%20my%20information`}
+                className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+              >
+                {site.contactEmail}
+              </a>{" "}
+              with the phone number or email you used. We will confirm within
+              three business days and pass the request to Networx. We honor
+              these requests regardless of where you live.
+            </li>
             <li>
               <strong>Unsubscribe anytime.</strong> Every newsletter email has a
               one-click unsubscribe link.

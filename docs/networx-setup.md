@@ -59,6 +59,15 @@ The parts that touch the site or day-to-day operation:
   Springs, FL 23043 — 23043 is a Virginia zip code (Green Cove Springs is
   32043). Ask Josh to correct it on the next IO.
 
+## Compliance program
+
+The written program the MSA requires lives in `docs/compliance/`:
+`networx-compliance-program.md` (policies, training, monitoring, investigation),
+`consumer-request-procedure.md` + `consumer-request-log.csv` (3-business-day opt-out handling),
+`invoice-procedure.md` + `invoices/ledger.csv` (invoice by the 15th), `consent-language-log.md`
+(every wording version and Networx's approval), `training-log.md`, `monitoring-log.md`, and
+`evidence/` for screenshots and approval emails. `npm run check-networx-copy` is the automated control.
+
 ## Go-live checklist
 
 1. **Reply to Josh** with the contact info and PayPal email (the agreement is

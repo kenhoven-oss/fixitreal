@@ -25,7 +25,7 @@ export default function TermsPage() {
 
       <Section padding="sm" size="sm">
         <h1 className="font-serif text-4xl text-navy-900">Terms of use</h1>
-        <p className="mt-2 text-sm text-ink-600">Last updated: April 2026</p>
+        <p className="mt-2 text-sm text-ink-600">Last updated: November 2026</p>
 
         <div className="mt-8 space-y-5 text-ink-800 leading-relaxed">
           <p>
@@ -108,6 +108,27 @@ export default function TermsPage() {
             </Link>{" "}
             for details. When you click a link to a third-party site, their
             terms and privacy policies apply once you&apos;re on their site.
+          </p>
+          <p>
+            <strong>Contractor quote requests.</strong> Where the site offers a
+            way to request quotes from local contractors, that form is operated
+            by a third-party contractor lead service (currently Networx
+            Systems, Inc.), which matches your request to contractors in its
+            network and is paid by them. FixItReal earns a referral fee from
+            the service, does not select, screen, or endorse the contractors who
+            contact you, and does not guarantee that anyone will respond, how
+            quickly, or the quality, licensing, insurance, or pricing of any
+            work. Any agreement you make is between you and the contractor.
+            Verify licenses, insurance, and references yourself. The consent
+            you give when submitting a request, and how your details are
+            handled, are described next to the form and in our{" "}
+            <Link
+              href="/privacy#quote-requests"
+              className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+            >
+              privacy policy
+            </Link>
+            .
           </p>
 
           <h2 className="font-serif text-2xl text-navy-900 mt-8">No warranty</h2>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { TCPA_CONSENT_VERSION, TCPA_PARTNERS_URL } from "@/lib/networx";
 
 type TcpaConsentProps = {
-  /** Wording for the action that constitutes consent, e.g. "clicking Get Free Quotes". */
+  /** Wording for the action that constitutes consent, e.g. "clicking the submit button in the form above". */
   action?: string;
   className?: string;
 };
