@@ -3,9 +3,12 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/metadata";
 import { adsConfig } from "@/lib/ads";
+import { networxConfig } from "@/lib/networx";
 
 /** Keeps the advertising wording truthful either way; see src/lib/ads.ts. */
 const adsLive = adsConfig.adsEnabled;
+/** Same for the Networx quote form; see src/lib/networx.ts. */
+const quoteFormLive = networxConfig.formEnabled;
 
 export const metadata = buildMetadata({
   title: "Affiliate disclosure",
@@ -34,25 +37,51 @@ export default function AffiliateDisclosurePage() {
           <p>
             FixItReal is a small, independent site. Today it earns money
             through affiliate links (mostly Amazon) and from a sister site that
-            sells printable forms. We are evaluating two more sources —
-            contractor referrals and display advertising — and we would rather
-            tell you about them before they exist than after. This page says, in
-            plain English, how we make money and what we refuse to do.
+            sells printable forms.{" "}
+            {quoteFormLive
+              ? "It also earns a referral fee when you request contractor quotes through our partner Networx."
+              : "We are adding two more sources — contractor referrals and display advertising — and we would rather tell you about them before they exist than after."}{" "}
+            This page says, in plain English, how we make money and what we
+            refuse to do.
           </p>
 
           <h2 className="font-serif text-2xl text-navy-900 mt-8">How we earn</h2>
           <ul className="list-disc pl-6 space-y-3">
             <li>
-              <strong>Home-services lead-gen (under evaluation).</strong> We
-              may test carefully selected lead-generation partners — the
-              forms where you enter your project details and a network sends
-              matching contractors. <strong>We do not recommend any
-              contractor simply because they came through a partner
-              network.</strong> If a partner does not meet our standards for
-              lead quality, contractor vetting, or homeowner experience, we
-              remove them. Any &ldquo;get a quote&rdquo; form on this site,
-              when present, earns FixItReal a referral fee from the partner
-              — not from the contractor you ultimately hire.
+              <strong>Contractor referrals{quoteFormLive ? " (active)" : " (being set up, not yet live)"}.</strong>{" "}
+              {quoteFormLive ? (
+                <>
+                  Our{" "}
+                  <Link
+                    href="/get-quotes"
+                    className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+                  >
+                    request-quotes form
+                  </Link>{" "}
+                  is operated by Networx, a contractor lead service.
+                  Contractors in the Networx network pay Networx for your
+                  request, and FixItReal earns a referral fee from Networx
+                  when you submit it — not from the contractor you ultimately
+                  hire.
+                </>
+              ) : (
+                <>
+                  We are setting up a quote-request form operated by Networx,
+                  a contractor lead service. When it is live, contractors in
+                  the Networx network will pay Networx for your request, and
+                  FixItReal will earn a referral fee from Networx when you
+                  submit it — not from the contractor you ultimately hire.
+                </>
+              )}{" "}
+              <strong>We do not recommend any contractor simply because they
+              came through a partner network.</strong> Networx does the
+              matching; we do not see or choose the contractors, and you
+              should verify license, insurance, and references yourself. If a
+              partner does not meet our standards for lead quality,
+              contractor vetting, or homeowner experience, we remove them.
+              The form is shown only on pages where the reader has already
+              decided the job needs a contractor, never beside safety
+              instructions, and the fee never changes what we write.
             </li>
             <li>
               <strong>Affiliate links (active).</strong> Some articles and
