@@ -11,6 +11,7 @@ const trustLinks = [
   { href: "/corrections", label: "Corrections" },
   { href: "/disclaimer", label: "Disclaimer" },
   { href: "/privacy", label: "Privacy" },
+  { href: "/privacy#your-choices", label: "Do not sell or share my info" },
   { href: "/terms", label: "Terms" },
 ];
 

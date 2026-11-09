@@ -5,6 +5,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { site } from "@/content/site";
 import { adsConfig } from "@/lib/ads";
 import { ExternalLink } from "@/components/ui/ExternalLink";
+import { networxConfig, TCPA_PARTNERS_URL } from "@/lib/networx";
 
 /**
  * The advertising sections below read the live ad configuration so the
@@ -12,6 +13,8 @@ import { ExternalLink } from "@/components/ui/ExternalLink";
  * Flipping NEXT_PUBLIC_ADS_ENABLED changes the wording on the next deploy.
  */
 const adsLive = adsConfig.adsEnabled;
+/** Same idea for the Networx quote form; see src/lib/networx.ts. */
+const quoteFormLive = networxConfig.formEnabled;
 
 export const metadata = buildMetadata({
   title: "Privacy policy",
@@ -59,7 +62,13 @@ export default function PrivacyPage() {
               <strong>Information you give us.</strong> When you sign up for our
               newsletter or request the Home Repair Cost Calendar, we collect
               your first name and email address. When you email us, we receive
-              whatever you write in the message.
+              whatever you write in the message. If you use the contractor
+              quote-request form, what you enter goes to our referral partner
+              Networx, not to us — see{" "}
+              <a href="#quote-requests" className="text-navy-700 hover:text-navy-900 underline decoration-amber-500">
+                Contractor quote requests
+              </a>{" "}
+              below.
             </li>
             <li>
               <strong>Information collected automatically.</strong> Like most
@@ -109,6 +118,11 @@ export default function PrivacyPage() {
               <strong>Google Search Console / Impact</strong> — site
               verification only. These tools don&apos;t receive personally
               identifiable visitor data from us.
+            </li>
+            <li>
+              <strong>Networx</strong> — operates the contractor quote-request
+              form{quoteFormLive ? "" : " (not yet active)"}. Details in the
+              Contractor quote requests section below.
             </li>
             <li>
               <strong>Google (advertising).</strong>{" "}
@@ -251,8 +265,107 @@ export default function PrivacyPage() {
             for the full picture on how we earn.
           </p>
 
-          <h2 className="font-serif text-2xl text-navy-900 mt-8">Your choices</h2>
+          <h2 id="quote-requests" className="font-serif text-2xl text-navy-900 mt-8">Contractor quote requests</h2>
+          {quoteFormLive ? (
+            <p>
+              Our{" "}
+              <Link
+                href="/get-quotes"
+                className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+              >
+                request-quotes form
+              </Link>{" "}
+              is operated by Networx Systems, Inc., a contractor lead service.
+              Here is what that means for your data:
+            </p>
+          ) : (
+            <p>
+              <strong>Not yet active.</strong> We are setting up a contractor
+              quote-request form operated by Networx Systems, Inc., a
+              contractor lead service. Because we want this policy to be
+              accurate before the form goes live, here is how it will handle
+              your data when it does:
+            </p>
+          )}
           <ul className="list-disc pl-6 space-y-3">
+            <li>
+              <strong>What is collected.</strong> The form asks for your name,
+              phone number, email address, zip code, and the type of project.
+              It is embedded from Networx, so those details go directly to
+              Networx — they are not stored on FixItReal&apos;s servers.
+            </li>
+            <li>
+              <strong>Who receives it, and why.</strong> Networx shares your
+              request with{" "}
+              <ExternalLink href={TCPA_PARTNERS_URL}>
+                Networx Systems, Inc. and its Partners
+              </ExternalLink>{" "}
+              — the contractors and home-service companies that buy requests
+              from Networx (its &ldquo;Buyers&rdquo;) and serve your area — so
+              they can contact you with quotes. Once you submit, Networx owns
+              the request and may use, share, sell, or resell it, and the
+              contact details in it, to respond to your request and to market
+              related home services to you. Networx also shows us the status
+              of each request in its reporting dashboard so we can track
+              referrals and get paid; we don&apos;t use that information to
+              contact you, and we don&apos;t sell it.
+            </li>
+            <li>
+              <strong>Consent to be contacted.</strong> Submitting the form
+              gives Networx Systems, Inc. and its Partners your express written
+              consent to contact you about your project and related
+              home-service offers by phone, text message, and email, including
+              calls and texts made using automated technology (an automatic
+              telephone dialing system and artificial or prerecorded voice),
+              even if your number is on a Do Not Call list. That consent is
+              not a condition of any purchase. The full wording appears next
+              to the form, and we keep a dated record of every version of it.
+            </li>
+            <li>
+              <strong>Your rights: opt out, revoke consent, delete.</strong>{" "}
+              Reply STOP to any text message to stop texts from that sender.
+              To revoke your consent to calls, ask for your information to be
+              deleted, or stop all contact, email Networx using the details in
+              your confirmation, or email us at{" "}
+              <a
+                href={`mailto:${site.contactEmail}`}
+                className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+              >
+                {site.contactEmail}
+              </a>{" "}
+              and we will pass the request to Networx within three business
+              days. Residents of California and other states with privacy laws
+              can also exercise their rights to access, delete, and opt out of
+              the sale or sharing of their information the same way.
+            </li>
+            <li>
+              <strong>Their policy, too.</strong> Networx&apos;s own privacy
+              policy and terms, linked inside the form, govern how Networx
+              stores, uses, and shares what you submit.
+            </li>
+          </ul>
+
+          <h2 id="your-choices" className="font-serif text-2xl text-navy-900 mt-8">Your choices</h2>
+          <ul className="list-disc pl-6 space-y-3">
+            <li>
+              <strong>Do not sell or share my personal information.</strong>{" "}
+              FixItReal does not sell your personal information. The one place
+              information you enter is passed to a third party for value is the
+              contractor quote-request form, where what you type goes directly
+              to Networx (see Contractor quote requests above) — and you choose
+              whether to use it. If you have submitted a request and want it
+              withdrawn, or want to opt out of any sale or sharing of your
+              information, email{" "}
+              <a
+                href={`mailto:${site.contactEmail}?subject=Do%20not%20sell%20or%20share%20my%20information`}
+                className="text-navy-700 hover:text-navy-900 underline decoration-amber-500"
+              >
+                {site.contactEmail}
+              </a>{" "}
+              with the phone number or email you used. We will confirm within
+              three business days and pass the request to Networx. We honor
+              these requests regardless of where you live.
+            </li>
             <li>
               <strong>Unsubscribe anytime.</strong> Every newsletter email has a
               one-click unsubscribe link.
