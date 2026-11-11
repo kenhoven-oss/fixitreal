@@ -1,3 +1,4 @@
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
@@ -157,6 +158,8 @@ export default async function MetroCostPage({ params }: { params: Params }) {
               : `${cityData.name} pricing tier: ${model.tierLabel.toLowerCase()}. Installed price, parts and labor. Work beyond a like-for-like swap is billed at about ${model.hourlyRangeText}/hour.`
           }
         />
+
+        <QuoteRequestCTA className="mt-10 mb-0" />
 
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           {`What you're paying for in ${cityData.name}`}
