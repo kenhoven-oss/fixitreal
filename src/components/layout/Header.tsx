@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/content/site";
+import { networxConfig } from "@/lib/networx";
 
 export function Header() {
   return (
@@ -41,6 +42,14 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+          {networxConfig.formEnabled && (
+            <Link
+              href="/get-quotes"
+              className="no-underline hover:text-amber-700 transition-colors"
+            >
+              Get Quotes
+            </Link>
+          )}
           <Link
             href="/search"
             aria-label="Search FixItReal"

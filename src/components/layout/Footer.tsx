@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/content/site";
+import { networxConfig } from "@/lib/networx";
 
 const trustLinks = [
   { href: "/about", label: "About" },
@@ -52,6 +53,13 @@ export function Footer() {
                   Tools
                 </Link>
               </li>
+              {networxConfig.formEnabled && (
+                <li>
+                  <Link href="/get-quotes" className="no-underline text-ink-700 hover:text-navy-900">
+                    Request contractor quotes
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link href="/resources/sample-home-inspection-report" className="no-underline text-ink-700 hover:text-navy-900">
                   Sample inspection report
