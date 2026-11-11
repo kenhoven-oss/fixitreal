@@ -6,6 +6,7 @@ import { NewsletterBlock } from "@/components/marketing/NewsletterBlock";
 import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, collectionPageSchema, itemListSchema } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 
 export const metadata = buildMetadata({
   title: "DIY or Hire: honest home repair decisions",
@@ -54,6 +55,10 @@ export default async function DiyOrHireHub() {
             </p>
           </div>
         </div>
+      </Section>
+
+      <Section padding="sm" size="lg">
+        <QuoteRequestCTA className="my-0" />
       </Section>
 
       <Section padding="md" size="lg">

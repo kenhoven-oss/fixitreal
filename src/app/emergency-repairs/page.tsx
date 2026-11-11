@@ -10,6 +10,7 @@ import {
   faqSchema,
 } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 
 export const metadata = buildMetadata({
   title: "Emergency Home Repair: what to do first",
@@ -97,6 +98,10 @@ export default async function EmergencyRepairsHub() {
             </p>
           </div>
         </div>
+      </Section>
+
+      <Section padding="sm" size="lg">
+        <QuoteRequestCTA className="my-0" />
       </Section>
 
       <Section padding="md" size="lg">

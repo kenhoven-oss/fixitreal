@@ -13,6 +13,7 @@ import { jsonLdScript, itemListSchema } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 import { kenHoven } from "@/content/authors/ken-hoven";
 import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 
 export const metadata = buildMetadata({
   title: "Honest home repair advice and 2026 cost guides",
@@ -315,6 +316,10 @@ export default async function Home() {
         </div>
       </Section>
 
+      <Section padding="sm" size="lg">
+        <QuoteRequestCTA className="my-0" />
+      </Section>
+
       {/* ==============================================================
            POPULAR REPAIR DECISIONS — the primary findability section.
            Placed immediately after the TrustBar so a visitor arriving
@@ -358,6 +363,7 @@ export default async function Home() {
             ))}
           </div>
         </Section>
+
       )}
 
       {/* ==============================================================
