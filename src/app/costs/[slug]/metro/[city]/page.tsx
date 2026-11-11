@@ -159,7 +159,11 @@ export default async function MetroCostPage({ params }: { params: Params }) {
           }
         />
 
-        <QuoteRequestCTA className="mt-10 mb-0" />
+        <QuoteRequestCTA
+          job={`${guide.shortName} in ${placeLabel}`}
+          placement="metro"
+          className="mt-10 mb-0"
+        />
 
         <h2 className="mt-12 font-serif text-2xl text-navy-900">
           {`What you're paying for in ${cityData.name}`}

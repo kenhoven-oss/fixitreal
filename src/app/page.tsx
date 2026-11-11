@@ -317,7 +317,7 @@ export default async function Home() {
       </Section>
 
       <Section padding="sm" size="lg">
-        <QuoteRequestCTA className="my-0" />
+        <QuoteRequestCTA placement="hub-home" className="my-0" />
       </Section>
 
       {/* ==============================================================

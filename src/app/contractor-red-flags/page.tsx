@@ -139,7 +139,7 @@ export default async function ContractorRedFlagsPage() {
       </Section>
 
       <Section padding="sm" size="lg">
-        <QuoteRequestCTA className="my-0" />
+        <QuoteRequestCTA placement="hub-contractor-red-flags" className="my-0" />
       </Section>
 
       <Section padding="md" size="lg">

@@ -58,7 +58,7 @@ export default async function DiyOrHireHub() {
       </Section>
 
       <Section padding="sm" size="lg">
-        <QuoteRequestCTA className="my-0" />
+        <QuoteRequestCTA placement="hub-diy-or-hire" className="my-0" />
       </Section>
 
       <Section padding="md" size="lg">
