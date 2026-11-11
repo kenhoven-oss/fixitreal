@@ -37,6 +37,7 @@ import { site } from "@/content/site";
 import { extractToc } from "@/lib/toc";
 import { TableOfContents } from "@/components/content/TableOfContents";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 import { adsConfig } from "@/lib/ads";
 import { adPolicyForPillar } from "@/lib/ad-policy";
 import { insertArticleAdSlots } from "@/lib/ad-placement";
@@ -348,6 +349,8 @@ export async function ArticlePage({ article }: ArticlePageProps) {
             </ul>
           </div>
         )}
+
+        <QuoteRequestCTA />
 
         {frontmatter.faq && frontmatter.faq.length > 0 && (
           <FaqBlock items={frontmatter.faq} />
