@@ -12,6 +12,7 @@ import {
 } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 import { PrintReadyFormsCTA } from "@/components/marketing/PrintReadyFormsCTA";
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 
 export const metadata = buildMetadata({
   title: "Contractor Red Flags — Bad Quote, Bad Pro, Bad Job",
@@ -135,6 +136,10 @@ export default async function ContractorRedFlagsPage() {
             </p>
           </div>
         </div>
+      </Section>
+
+      <Section padding="sm" size="lg">
+        <QuoteRequestCTA className="my-0" />
       </Section>
 
       <Section padding="md" size="lg">

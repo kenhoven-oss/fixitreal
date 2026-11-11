@@ -11,6 +11,7 @@ import {
   breadcrumbSchema,
   collectionPageSchema,
 } from "@/lib/jsonld";
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 
 type BuyingGuide = { href: string; title: string; description: string };
 
@@ -168,6 +169,10 @@ export default async function ToolsHub() {
             picks you&apos;d pass along to a neighbor.
           </p>
         </div>
+      </Section>
+
+      <Section padding="sm" size="lg">
+        <QuoteRequestCTA className="my-0" />
       </Section>
 
       {/* Decision & vetting tools */}

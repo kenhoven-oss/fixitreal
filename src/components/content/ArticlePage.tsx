@@ -37,10 +37,11 @@ import { site } from "@/content/site";
 import { extractToc } from "@/lib/toc";
 import { TableOfContents } from "@/components/content/TableOfContents";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { networxConfig } from "@/lib/networx";
 import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 import { adsConfig } from "@/lib/ads";
 import { adPolicyForPillar } from "@/lib/ad-policy";
-import { insertArticleAdSlots } from "@/lib/ad-placement";
+import { insertArticleAdSlots, insertQuoteCtaTag } from "@/lib/ad-placement";
 
 type ArticlePageProps = {
   article: LoadedArticle;
@@ -78,6 +79,7 @@ const mdxComponents = {
   // Injected by insertArticleAdSlots() when advertising is enabled; renders
   // nothing otherwise. Not for hand-placement in article source.
   AdSlot,
+  QuoteRequestCTA,
   // Wide comparison tables scroll inside their own box on phones instead of
   // stretching the whole page sideways.
   table: ({ children }: { children?: React.ReactNode }) => (
@@ -146,9 +148,16 @@ export async function ArticlePage({ article }: ArticlePageProps) {
    * src/lib/ad-policy.ts. `toc` and `hasAffiliateLinks` above deliberately
    * read the untouched `content`.
    */
-  const bodySource = adsConfig.adsEnabled
+  const adSource = adsConfig.adsEnabled
     ? insertArticleAdSlots(content, adPolicyForPillar(pillar)).source
     : content;
+  // Quote CTA sits at an early safe section boundary (Ken, 2026-11-11:
+  // visible top-to-middle of the page); falls back to end-of-article below
+  // when no boundary qualifies.
+  const quoteCta = networxConfig.formEnabled
+    ? insertQuoteCtaTag(adSource)
+    : { source: adSource, inserted: false };
+  const bodySource = quoteCta.source;
 
   const pillarInfo = site.pillars.find((p) => p.slug === pillar);
 
@@ -350,7 +359,7 @@ export async function ArticlePage({ article }: ArticlePageProps) {
           </div>
         )}
 
-        <QuoteRequestCTA />
+        {!quoteCta.inserted && <QuoteRequestCTA />}
 
         {frontmatter.faq && frontmatter.faq.length > 0 && (
           <FaqBlock items={frontmatter.faq} />

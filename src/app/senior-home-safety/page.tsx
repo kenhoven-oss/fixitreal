@@ -11,6 +11,7 @@ import {
   faqSchema,
 } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 
 export const metadata = buildMetadata({
   title: "Senior Home Safety — practical aging-in-place modifications",
@@ -101,6 +102,10 @@ export default async function SeniorHomeSafetyHub() {
             </p>
           </div>
         </div>
+      </Section>
+
+      <Section padding="sm" size="lg">
+        <QuoteRequestCTA className="my-0" />
       </Section>
 
       <Section padding="md" size="lg">

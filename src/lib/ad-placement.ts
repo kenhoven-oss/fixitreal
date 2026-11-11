@@ -288,3 +288,20 @@ export function insertArticleAdSlots(src: string, options: PlacementOptions): Pl
   }
   return { source: lines.join("\n"), placements, totalWords };
 }
+
+/**
+ * Inject a single `<QuoteRequestCTA />` at the first eligible section
+ * boundary — after the intro, away from safety/calculator/verdict blocks —
+ * using the same planner as advertising. Runs on the (possibly ad-rewritten)
+ * source, so an AdSlot immediately at a boundary pushes the CTA to the next
+ * one instead of stacking. Returns the source untouched when no boundary
+ * qualifies (short articles keep the end-of-article placement instead).
+ */
+export function insertQuoteCtaTag(src: string): { source: string; inserted: boolean } {
+  const { placements } = planArticleAdPlacements(src, { maxPlacements: 1 });
+  const p = placements[0];
+  if (!p) return { source: src, inserted: false };
+  const lines = src.split(/\r?\n/);
+  lines.splice(p.line, 0, "", "<QuoteRequestCTA />", "");
+  return { source: lines.join("\n"), inserted: true };
+}
