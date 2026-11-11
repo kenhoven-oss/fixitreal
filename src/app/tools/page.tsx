@@ -172,7 +172,7 @@ export default async function ToolsHub() {
       </Section>
 
       <Section padding="sm" size="lg">
-        <QuoteRequestCTA className="my-0" />
+        <QuoteRequestCTA placement="hub-tools" className="my-0" />
       </Section>
 
       {/* Decision & vetting tools */}

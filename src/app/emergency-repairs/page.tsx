@@ -101,7 +101,7 @@ export default async function EmergencyRepairsHub() {
       </Section>
 
       <Section padding="sm" size="lg">
-        <QuoteRequestCTA className="my-0" />
+        <QuoteRequestCTA placement="hub-emergency-repairs" className="my-0" />
       </Section>
 
       <Section padding="md" size="lg">

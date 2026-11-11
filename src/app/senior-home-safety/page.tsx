@@ -105,7 +105,7 @@ export default async function SeniorHomeSafetyHub() {
       </Section>
 
       <Section padding="sm" size="lg">
-        <QuoteRequestCTA className="my-0" />
+        <QuoteRequestCTA placement="hub-senior-home-safety" className="my-0" />
       </Section>
 
       <Section padding="md" size="lg">
