@@ -39,6 +39,7 @@ import { TableOfContents } from "@/components/content/TableOfContents";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { networxConfig } from "@/lib/networx";
 import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
+import { InlineQuoteSection } from "@/components/leadgen/InlineQuoteSection";
 import { adsConfig } from "@/lib/ads";
 import { adPolicyForPillar } from "@/lib/ad-policy";
 import { insertArticleAdSlots, insertQuoteCtaTag } from "@/lib/ad-placement";
@@ -359,10 +360,14 @@ export async function ArticlePage({ article }: ArticlePageProps) {
           </div>
         )}
 
-        {!quoteCta.inserted && <QuoteRequestCTA />}
+        {!quoteCta.inserted && !frontmatter.inlineQuoteForm && <QuoteRequestCTA />}
 
         {frontmatter.faq && frontmatter.faq.length > 0 && (
           <FaqBlock items={frontmatter.faq} />
+        )}
+
+        {frontmatter.inlineQuoteForm && (
+          <InlineQuoteSection placement={`${pillar}-${frontmatter.slug}`} />
         )}
 
         <div className="mt-12">
