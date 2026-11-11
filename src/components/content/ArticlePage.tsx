@@ -80,7 +80,6 @@ const mdxComponents = {
   // Injected by insertArticleAdSlots() when advertising is enabled; renders
   // nothing otherwise. Not for hand-placement in article source.
   AdSlot,
-  QuoteRequestCTA,
   // Wide comparison tables scroll inside their own box on phones instead of
   // stretching the whole page sideways.
   table: ({ children }: { children?: React.ReactNode }) => (
@@ -158,6 +157,19 @@ export async function ArticlePage({ article }: ArticlePageProps) {
   const quoteCta = networxConfig.formEnabled
     ? insertQuoteCtaTag(adSource)
     : { source: adSource, inserted: false };
+
+  /**
+   * The injected <QuoteRequestCTA /> carries no props of its own (the tag is
+   * written into the MDX by insertQuoteCtaTag), so bind the analytics
+   * placement here. Headline stays generic on articles: job names in the
+   * catalogue are imperative ("Replace a toilet") and do not read correctly
+   * after "Get quotes for". Metro pages, which have a noun phrase and a
+   * city, carry the specific headline instead.
+   */
+  const articleMdxComponents = {
+    ...mdxComponents,
+    QuoteRequestCTA: () => <QuoteRequestCTA placement={`article-${pillar}`} />,
+  };
   const bodySource = quoteCta.source;
 
   const pillarInfo = site.pillars.find((p) => p.slug === pillar);
@@ -324,7 +336,7 @@ export async function ArticlePage({ article }: ArticlePageProps) {
           <Prose>
             <MDXRemote
               source={bodySource}
-              components={mdxComponents}
+              components={articleMdxComponents}
               options={{
                 mdxOptions: {
                   remarkPlugins: [remarkGfm],
@@ -360,7 +372,9 @@ export async function ArticlePage({ article }: ArticlePageProps) {
           </div>
         )}
 
-        {!quoteCta.inserted && !frontmatter.inlineQuoteForm && <QuoteRequestCTA />}
+        {!quoteCta.inserted && !frontmatter.inlineQuoteForm && (
+          <QuoteRequestCTA placement={`article-${pillar}-end`} />
+        )}
 
         {frontmatter.faq && frontmatter.faq.length > 0 && (
           <FaqBlock items={frontmatter.faq} />
