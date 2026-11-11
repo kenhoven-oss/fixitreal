@@ -48,6 +48,12 @@ export const articleFrontmatterSchema = z.object({
   relatedAdvice: z.array(z.string()).optional(),
   /** Must be a slug from src/content/jobs.ts — validated at build. */
   relatedJob: z.string().optional(),
+  /**
+   * Embed the Networx quote form directly on this article (bottom of page),
+   * instead of only linking to /get-quotes. Reserved for high-intent,
+   * big-ticket hire-a-pro cost pages; placement test started 2026-11-11.
+   */
+  inlineQuoteForm: z.boolean().optional().default(false),
 
   /**
    * Generic cross-pillar related articles. Renders in the article's
