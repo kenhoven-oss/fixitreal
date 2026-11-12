@@ -47,14 +47,37 @@ export function NetworxQuoteForm({
     container.id = "nx_form";
     container.innerHTML = "";
 
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = src;
-    script.async = true;
-    script.dataset.placement = placement;
-    container.appendChild(script);
+    const load = () => {
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = src;
+      script.async = true;
+      script.dataset.placement = placement;
+      container.appendChild(script);
+    };
+
+    // Load Networx's script only when the form is close to the viewport. On
+    // articles the form sits below the content, so the third-party script and
+    // iframe stay out of the initial page load (Core Web Vitals); on
+    // /get-quotes the form is near the top and loads immediately.
+    let observer: IntersectionObserver | undefined;
+    if (typeof IntersectionObserver === "undefined") {
+      load();
+    } else {
+      observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            observer?.disconnect();
+            load();
+          }
+        },
+        { rootMargin: "800px 0px" },
+      );
+      observer.observe(container);
+    }
 
     return () => {
+      observer?.disconnect();
       container.innerHTML = "";
       container.id = "nx_form";
     };
