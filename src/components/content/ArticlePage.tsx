@@ -14,6 +14,7 @@ import { AffiliateDisclosure } from "@/components/content/AffiliateDisclosure";
 import { KeyTakeaway } from "@/components/content/KeyTakeaway";
 import { CostEstimateBox } from "@/components/content/CostEstimateBox";
 import { CostMethodology } from "@/components/content/CostMethodology";
+import { PermitFeeTable } from "@/components/content/PermitFeeTable";
 import { SafetyWarning } from "@/components/content/SafetyWarning";
 import { KensTake } from "@/components/content/KensTake";
 import { ReportPhoto } from "@/components/content/ReportPhoto";
@@ -65,6 +66,7 @@ const mdxComponents = {
   KeyTakeaway,
   CostEstimateBox,
   CostMethodology,
+  PermitFeeTable,
   SafetyWarning,
   KensTake,
   ReportPhoto,

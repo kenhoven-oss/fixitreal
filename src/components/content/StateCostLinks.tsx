@@ -4,6 +4,7 @@ import {
   getGuideBySlug,
 } from "@/content/state-cost-data";
 import { MetroCostLinks } from "@/components/content/MetroCostLinks";
+import { StateCostTiers } from "@/components/content/StateCostTiers";
 
 type StateCostLinksProps = {
   /** The cost article slug — must match a STATE_COST_GUIDES entry. */
@@ -43,6 +44,7 @@ export function StateCostLinks({ slug, heading }: StateCostLinksProps) {
           regional range, licensing notes, and what counts as a fair quote in
           your market.
         </p>
+        <StateCostTiers guide={slug} />
         <ul className="mt-5 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 text-sm">
           {sorted.map((s) => (
             <li key={s.slug}>
