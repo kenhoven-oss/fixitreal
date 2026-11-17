@@ -451,7 +451,7 @@ export const SMOKE_ALARM_SALE: SmokeAlarmSaleRule[] = [
     "coAlarms": "North Dakota amended the residential code (Section 311.3) to require a carbon monoxide alarm on every habitable level of a dwelling unit, interconnected so that one alarm sets off all of them in that unit. This applies through the building code when work is permitted, not at a sale.",
     "certification": null,
     "citation": "N.D.C.C. § 54-21.3-03 (State Building Code must consist of the IBC, IRC, IMC and IFGC); 2026 North Dakota State Building Code, 2024 International Residential Code Amendments, Section 311.3 (carbon monoxide alarms) and 2024 International Building Code Amendments, Section 907.2.11.2 (smoke alarms)",
-    "sourceUrl": "https://ndlegis.gov/cencode/t54c21-3.pdf ; code book: https://www.medialibrary.nd.gov/assetbank-nd/assetfile/156311.pdf (linked from https://www.commerce.nd.gov/community-services/building-codes)",
+    "sourceUrl": "https://ndlegis.gov/cencode/t54c21-3.pdf",
     "lastAmended": "State Building Code effective January 1, 2026, adopted September 11, 2025 on the 2024 ICC editions"
   },
   {
@@ -464,7 +464,7 @@ export const SMOKE_ALARM_SALE: SmokeAlarmSaleRule[] = [
     "coAlarms": "CO alarms must be listed and labeled to UL 2034 and installed per the manufacturer. In new construction they are required where the dwelling unit has a fuel-fired appliance or an attached garage. In an existing home with a fuel-fired appliance or attached garage, they are required when permitted work involves adding or altering a sleeping room, altering the area just outside a sleeping room, adding or altering an attached garage, or adding, altering, repairing or replacing a fuel-fired appliance. Location: outside each separate sleeping area near the bedrooms, plus inside a bedroom that contains a fuel-burning appliance or has one in its attached bathroom. Ohio deleted the interconnection requirement for CO alarms. Nothing here is triggered by a sale.",
     "certification": null,
     "citation": "Residential Code of Ohio, OAC 4101:8-3-01, Sections 314 (smoke alarms) and 315 (carbon monoxide alarms)",
-    "sourceUrl": "https://codes.ohio.gov/ohio-administrative-code/rule-4101:8-3-01 (rule text PDF: https://codes.ohio.gov/assets/laws/administrative-code/rules/4101/8/4101$8-3-01_eff_7_1_19.pdf)",
+    "sourceUrl": "https://codes.ohio.gov/ohio-administrative-code/rule-4101:8-3-01",
     "lastAmended": "Rule effective July 1, 2019"
   },
   {

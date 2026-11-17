@@ -116,7 +116,6 @@ const staticRoutes: Route[] = [
   { path: "/home-repair-cost-calendar", priority: 0.7, changeFrequency: "monthly" },
   { path: "/reports/2026-state-repair-cost-index", priority: 0.8, changeFrequency: "monthly" },
   { path: "/resources/sample-home-inspection-report", priority: 0.85, changeFrequency: "monthly" },
-  { path: "/topics", priority: 0.7, changeFrequency: "weekly" },
   { path: "/glossary", priority: 0.7, changeFrequency: "monthly" },
 ];
 
@@ -259,17 +258,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  // Glossary entries: each is a small Article page targeting a single
-  // long-tail "what is a <term>" query.
-  const { getAllGlossarySlugs } = await import("@/content/glossary");
-  const glossaryEntries: MetadataRoute.Sitemap = getAllGlossarySlugs().map(
-    (slug) => ({
-      url: fullUrl(`/glossary/${slug}`),
-      lastModified: GLOSSARY_UPDATED,
-      changeFrequency: "yearly" as const,
-      priority: 0.55,
-    })
-  );
+  // Glossary term pages are noindex,follow (short definitions that repeat
+  // /glossary) and are deliberately left out. /glossary itself is listed above.
 
   // State-level cost pages: programmatic at /costs/<slug>/<state>, one per
   // (cost guide × priority state), targeting "[trade] cost in [state]"
@@ -312,7 +302,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...toolEntries,
     ...articleEntries,
     ...topicEntries,
-    ...glossaryEntries,
     ...stateCostEntries,
     ...metroCostEntries,
   ];

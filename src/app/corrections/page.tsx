@@ -114,8 +114,8 @@ export default function CorrectionsPage() {
               How updates are dated
             </h2>
             <p className="mt-3">
-              Every article has an <code>updatedAt</code> date in its
-              frontmatter, displayed at the top of the page. That date
+              Every article shows an &ldquo;Updated&rdquo; date at the top of
+              the page. That date
               reflects the most recent meaningful review or change. Articles
               that haven&apos;t needed updating still show their original
               publish date as the last-reviewed marker.

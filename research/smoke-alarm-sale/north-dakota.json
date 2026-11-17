@@ -8,7 +8,7 @@
   "coAlarms": "North Dakota amended the residential code (Section 311.3) to require a carbon monoxide alarm on every habitable level of a dwelling unit, interconnected so that one alarm sets off all of them in that unit. This applies through the building code when work is permitted, not at a sale.",
   "certification": null,
   "citation": "N.D.C.C. § 54-21.3-03 (State Building Code must consist of the IBC, IRC, IMC and IFGC); 2026 North Dakota State Building Code, 2024 International Residential Code Amendments, Section 311.3 (carbon monoxide alarms) and 2024 International Building Code Amendments, Section 907.2.11.2 (smoke alarms)",
-  "sourceUrl": "https://ndlegis.gov/cencode/t54c21-3.pdf ; code book: https://www.medialibrary.nd.gov/assetbank-nd/assetfile/156311.pdf (linked from https://www.commerce.nd.gov/community-services/building-codes)",
+  "sourceUrl": "https://ndlegis.gov/cencode/t54c21-3.pdf",
   "lastAmended": "State Building Code effective January 1, 2026, adopted September 11, 2025 on the 2024 ICC editions",
   "notVerified": [
     "The base alarm requirements in the 2024 International Residential Code (smoke alarm section) were not read — that is ICC model-code text, not state-hosted, so the underlying placement, listing and interconnection rules are unverified.",

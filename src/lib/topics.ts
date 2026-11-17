@@ -35,10 +35,13 @@ function topicSlug(keyword: string): string {
 /** Title-case a topic label, preserving common short words lowercase. */
 function topicLabel(keyword: string): string {
   const lower = new Set(["a", "an", "and", "or", "the", "of", "for", "to", "in", "vs", "with"]);
+  // Acronyms that title-casing would render as "Fha", "Ac", "Gfci".
+  const upper = new Set(["fha", "va", "ac", "hvac", "gfci", "afci", "co", "diy", "pex", "pvc", "led", "hoa"]);
   return keyword
     .split(/\s+/)
     .map((w, i) => {
       const lw = w.toLowerCase();
+      if (upper.has(lw)) return lw.toUpperCase();
       if (i > 0 && lower.has(lw)) return lw;
       return lw.charAt(0).toUpperCase() + lw.slice(1);
     })

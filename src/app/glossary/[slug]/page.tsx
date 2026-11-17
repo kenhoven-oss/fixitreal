@@ -31,6 +31,13 @@ export async function generateMetadata({ params }: { params: Params }) {
     updatedAt: "2026-05-16",
     authorName: kenHoven.name,
     section: "Glossary",
+    // Term pages run 130-200 words and repeat the definition already on
+    // /glossary, which is the page submitted to search engines. Google's
+    // AdSense guidance lists "pages with little or no content" as a reason a
+    // site is not ready; these were 79 of 380 indexable pages when AdSense
+    // declined the site for "Low value content" (2026-11-14). A term that is
+    // expanded into a full article should move to /advice, not flip this.
+    noIndexFollow: true,
   });
 }
 

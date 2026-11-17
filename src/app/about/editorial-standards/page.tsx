@@ -57,7 +57,7 @@ export default function EditorialStandardsPage() {
             contractor quote. Sources are cited inline with external links.
           </p>
           <p>
-            For YMYL topics — articles covering electrical, gas, plumbing
+            For safety-critical topics — articles covering electrical, gas, plumbing
             under pressure, or structural work where mistakes cause real harm —
             we apply stronger safety-forward language, always recommend
             permits and licensed inspections where applicable, and never

@@ -157,21 +157,6 @@ export const glossary: GlossaryEntry[] = [
     ],
   },
   {
-    slug: "ymyl",
-    term: "YMYL (Your Money or Your Life)",
-    alsoCalled: ["YMYL content"],
-    short:
-      "Content categories where bad information could harm a reader's safety or finances — used as a quality-and-trust standard by both Google and editorial publishers.",
-    body: [
-      "Google explicitly evaluates content in 'Your Money or Your Life' categories — health, finance, safety, legal, medical — against a higher trust bar than other content. Pages that deal with electrical work, gas appliances, fire safety, structural issues, or expensive repair decisions fall into this category.",
-      "On FixItReal, every YMYL article carries a frontmatter flag (`ymyl: true`) that triggers a visible 'safety-sensitive topic — consult a licensed pro' note at the top of the article. The site's editorial standards explicitly call out where to stop a DIY job and hire a professional.",
-      "If you're reading an electrical, gas, or structural repair guide that doesn't mention safety thresholds and when to hire — it isn't a serious source. Walk away.",
-    ],
-    related: [
-      { path: "/about/editorial-standards", label: "Editorial standards" },
-    ],
-  },
-  {
     slug: "ufer-ground",
     term: "Ufer ground (concrete-encased electrode)",
     article: "a",

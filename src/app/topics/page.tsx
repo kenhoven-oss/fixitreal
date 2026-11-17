@@ -10,6 +10,9 @@ export const metadata = buildMetadata({
   description:
     "Browse every FixItReal topic — repair cost ranges, DIY-or-hire verdicts, and consumer-advocate guidance grouped by the appliance, system, or question.",
   path: "/topics",
+  // A list of two-article tag pages that are themselves noindex. Kept for
+  // readers and internal links, not submitted to search engines.
+  noIndexFollow: true,
 });
 
 export default async function TopicsIndex() {

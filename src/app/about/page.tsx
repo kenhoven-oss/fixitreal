@@ -35,7 +35,9 @@ export default function AboutPage() {
             We&apos;re independent. One editor. No warranty companies, ever.
             No sponsored content disguised as editorial. No AI-generated filler
             articles. We do earn money — through clearly labelled affiliate
-            links and, in future, a small number of labelled display ads — but
+            links, a referral fee when you request contractor quotes through
+            our partner Networx, and, in future, a small number of labelled
+            display ads — but
             nobody who pays us sees an article before it&apos;s published or has
             a say in what it says. When we recommend a product or service,
             it&apos;s because we&apos;ve used it or done the research. When we
