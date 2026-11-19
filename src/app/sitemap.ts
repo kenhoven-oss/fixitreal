@@ -297,8 +297,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
+  // The few glossary terms expanded into full articles at their own URL are
+  // indexable and listed here; every other term page stays out (see
+  // src/content/glossary/long-form.ts).
+  const { GLOSSARY_LONG_FORM } = await import("@/content/glossary/long-form");
+  const glossaryLongFormEntries: MetadataRoute.Sitemap = Object.entries(GLOSSARY_LONG_FORM).map(
+    ([slug, a]) => ({
+      url: fullUrl(`/glossary/${slug}`),
+      lastModified: d(a.updatedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }),
+  );
+
   const all: MetadataRoute.Sitemap = [
     ...staticEntries,
+    ...glossaryLongFormEntries,
     ...toolEntries,
     ...articleEntries,
     ...topicEntries,
