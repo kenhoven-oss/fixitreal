@@ -6,6 +6,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { jsonLdScript, collectionPageSchema, itemListSchema } from "@/lib/jsonld";
 import { loadArticlesByPillar } from "@/lib/articles-loader";
 import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
+import { getIndexedMetroLinks } from "@/lib/indexed-metro-links";
 
 export const metadata = buildMetadata({
   title: "Repair costs: what things actually cost in 2026",
@@ -16,6 +17,7 @@ export const metadata = buildMetadata({
 
 export default async function CostsHub() {
   const articles = await loadArticlesByPillar("costs");
+  const cityGuides = getIndexedMetroLinks();
 
   return (
     <>
@@ -69,6 +71,24 @@ export default async function CostsHub() {
         <QuoteRequestCTA placement="hub-costs" className="my-0" />
       </Section>
 
+      <Section padding="sm" size="lg">
+        <h2 className="font-serif text-2xl text-navy-900">Estimate your own project</h2>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <Card
+            href="/tools/home-renovation-cost-estimator"
+            eyebrow="Calculator"
+            title="Home renovation cost estimator"
+            description="Kitchen or bathroom remodel, room addition, basement finish, deck, paint or flooring. Enter the project, finish level, square footage and region to get the cost range a contractor should bid."
+          />
+          <Card
+            href="/tools/repair-cost-estimator"
+            eyebrow="Calculator"
+            title="Repair cost estimator"
+            description="Pick a common repair and get the 2026 DIY and hired cost range, a verdict, and what drives the price."
+          />
+        </div>
+      </Section>
+
       <Section padding="md" size="lg">
         <h2 className="font-serif text-2xl text-navy-900">All cost guides</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -89,6 +109,29 @@ export default async function CostsHub() {
           ))}
         </div>
       </Section>
+
+      {cityGuides.length > 0 && (
+        <Section padding="sm" size="lg">
+          <h2 className="font-serif text-2xl text-navy-900">City cost guides with verified local details</h2>
+          <p className="mt-2 max-w-3xl text-sm text-ink-600">
+            One guide per city, each carrying sourced local permit, code or licensing details for that city.
+          </p>
+          <details className="mt-4 rounded-lg border border-ink-200 bg-white px-5 py-4">
+            <summary className="cursor-pointer text-sm font-semibold text-navy-900">
+              {`Browse all ${cityGuides.length} city guides, by state`}
+            </summary>
+            <ul className="mt-4 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+              {cityGuides.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href} className="no-underline text-navy-700 hover:text-navy-900">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        </Section>
+      )}
 
       <Section padding="lg" size="lg">
         <NewsletterBlock variant="inline" />

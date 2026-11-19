@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CITIES } from "@/content/city-cost-data";
 import { getGuideBySlug } from "@/content/state-cost-data";
+import { getIndexedCitySlugsForGuide } from "@/lib/indexed-metro-links";
 
 type MetroCostLinksProps = {
   /** The cost article slug — must match a STATE_COST_GUIDES entry. */
@@ -22,6 +23,12 @@ export function MetroCostLinks({ slug, heading }: MetroCostLinksProps) {
   if (!guide) return null;
 
   const sorted = [...CITIES].sort((a, b) => a.name.localeCompare(b.name));
+  // The cities whose page for THIS guide carries verified local permit and
+  // code research (and is the one submitted to search engines) are listed
+  // first, so they are not lost in the alphabetical list. No link is removed.
+  const verifiedSlugs = getIndexedCitySlugsForGuide(slug);
+  const verified = sorted.filter((c) => verifiedSlugs.has(c.slug));
+  const rest = sorted.filter((c) => !verifiedSlugs.has(c.slug));
 
   return (
     <section className="mt-12">
@@ -33,8 +40,28 @@ export function MetroCostLinks({ slug, heading }: MetroCostLinksProps) {
         for the city-specific range, licensing notes, and what counts as a fair
         quote in your local market.
       </p>
-      <ul className="mt-5 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 text-sm">
-        {sorted.map((c) => (
+      {verified.length > 0 && (
+        <>
+          <h3 className="mt-6 text-sm font-semibold text-navy-900">
+            Cities with verified local permit and code details
+          </h3>
+          <ul className="mt-3 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+            {verified.map((c) => (
+              <li key={c.slug}>
+                <Link
+                  href={`/costs/${slug}/metro/${c.slug}`}
+                  className="no-underline text-navy-700 hover:text-navy-900"
+                >
+                  {capitalize(guide.shortName)} cost in {c.name}, {c.stateAbbr} →
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <h3 className="mt-6 text-sm font-semibold text-navy-900">All other metros</h3>
+        </>
+      )}
+      <ul className={`${verified.length > 0 ? "mt-3" : "mt-5"} grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 text-sm`}>
+        {rest.map((c) => (
           <li key={c.slug}>
             <Link
               href={`/costs/${slug}/metro/${c.slug}`}

@@ -143,6 +143,13 @@ export default function RepairCostEstimatorPage() {
               <p className="mt-1">Already have a quote? Run it through the 11-question checker for red flags.</p>
             </Link>
             <Link
+              href="/tools/home-renovation-cost-estimator"
+              className="no-underline rounded-md border border-ink-200 bg-white p-4 hover:border-navy-300 transition-colors"
+            >
+              <p className="font-semibold text-navy-900">Home Renovation Cost Estimator</p>
+              <p className="mt-1">Bigger than a repair? Price a kitchen or bath remodel, addition, basement finish, deck, paint or flooring.</p>
+            </Link>
+            <Link
               href="/tools/diy-or-hire"
               className="no-underline rounded-md border border-ink-200 bg-white p-4 hover:border-navy-300 transition-colors"
             >
