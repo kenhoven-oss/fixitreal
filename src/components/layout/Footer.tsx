@@ -61,6 +61,11 @@ export function Footer() {
                 </li>
               )}
               <li>
+                <Link href="/glossary" className="no-underline text-ink-700 hover:text-navy-900">
+                  Glossary
+                </Link>
+              </li>
+              <li>
                 <Link href="/resources/sample-home-inspection-report" className="no-underline text-ink-700 hover:text-navy-900">
                   Sample inspection report
                 </Link>

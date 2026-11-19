@@ -29,6 +29,7 @@ import {
   isCityGuideIndexable,
 } from "@/content/city-cost-data";
 import { kenHoven } from "@/content/authors/ken-hoven";
+import { getIndexedMetroLinks, getIndexedMetroLinkForCity } from "@/lib/indexed-metro-links";
 
 type Params = Promise<{ slug: string; city: string }>;
 
@@ -99,6 +100,20 @@ export default async function MetroCostPage({ params }: { params: Params }) {
   const stateCitySiblings = CITIES.filter(
     (c) => c.stateAbbr === cityData.stateAbbr && c.slug !== cityData.slug
   ).slice(0, 4);
+
+  // Links to the pages that carry verified local research (2026-11-19):
+  //  - this city's own verified page, when the reader is on a sibling guide;
+  //  - verified pages for the other cities in the state that the same-guide
+  //    list above does not already reach.
+  const cityVerifiedLink = getIndexedMetroLinkForCity(cityData.slug);
+  const showCityVerifiedLink = cityVerifiedLink !== undefined && cityVerifiedLink.guideSlug !== slug;
+  const sameGuideSiblingSlugs = new Set(stateCitySiblings.map((c) => c.slug));
+  const stateVerifiedLinks = getIndexedMetroLinks().filter(
+    (l) =>
+      l.city.stateAbbr === cityData.stateAbbr &&
+      l.city.slug !== cityData.slug &&
+      !(l.guideSlug === slug && sameGuideSiblingSlugs.has(l.city.slug)),
+  );
 
   // The statewide page only exists for the subset of states in the
   // state-cost data file. Only link to it when it actually resolves —
@@ -351,9 +366,38 @@ export default async function MetroCostPage({ params }: { params: Params }) {
           </div>
         )}
 
+        {stateVerifiedLinks.length > 0 && (
+          <div className="mt-12">
+            <h2 className="font-serif text-2xl text-navy-900">
+              {`Verified local permit and code guides in ${cityData.stateName}`}
+            </h2>
+            <ul className="mt-4 space-y-2 text-ink-700">
+              {stateVerifiedLinks.map((l) => (
+                <li key={l.href}>
+                  →{" "}
+                  <Link href={l.href} className="no-underline text-navy-700 hover:text-navy-900">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <div className="mt-12">
           <h2 className="font-serif text-2xl text-navy-900">Related guides</h2>
           <ul className="mt-4 space-y-2 text-ink-700">
+            {showCityVerifiedLink && cityVerifiedLink && (
+              <li>
+                →{" "}
+                <Link
+                  href={cityVerifiedLink.href}
+                  className="no-underline text-navy-700 hover:text-navy-900"
+                >
+                  {`${cityVerifiedLink.label} — verified ${cityData.name} permit and code details`}
+                </Link>
+              </li>
+            )}
             <li>
               →{" "}
               <Link
