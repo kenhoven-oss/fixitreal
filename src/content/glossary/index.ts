@@ -137,6 +137,7 @@ export const glossary: GlossaryEntry[] = [
       "A homeowner walking through a remodel never removes a wall before a structural assessment. The cost of a 15-minute engineer visit is trivial compared to the cost of replacing a structural element after the fact.",
     ],
     related: [
+      { path: "/glossary/header-vs-lintel", label: "Header vs. lintel: the beams over doors and windows" },
       { path: "/contractor-red-flags", label: "Contractor red flags" },
     ],
   },
@@ -323,6 +324,9 @@ export const glossary: GlossaryEntry[] = [
       "Brick veneer walls have weep holes at the bottom of each brick run — small gaps every few feet at the base of the wall. They look like cosmetic flaws but are critical: rainwater that gets behind the brick (it always does eventually) has to drain back out, or it rots the framing behind.",
       "Windows have weep holes at the bottom of the frame's exterior face. Painting them shut, plugging them with debris, or sealing them with caulk traps water inside the frame — leading to rotted sills and interior water damage.",
       "If your home's weep holes are blocked, clear them with a thin tool (a clothes hanger works). Never seal them, no matter how 'wrong' they look.",
+    ],
+    related: [
+      { path: "/glossary/header-vs-lintel", label: "Header vs. lintel: why steel lintels over windows rust" },
     ],
   },
   {

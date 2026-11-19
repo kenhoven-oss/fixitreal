@@ -9,7 +9,18 @@ import {
   getGlossaryEntry,
   glossaryHeading,
 } from "@/content/glossary";
+import { getGlossaryLongForm } from "@/content/glossary/long-form";
+import { HeaderVsLintelArticle } from "@/components/content/glossary/HeaderVsLintelArticle";
+import { Prose } from "@/components/content/Prose";
+import { FaqBlock } from "@/components/content/FaqBlock";
+import { ExternalLink } from "@/components/ui/ExternalLink";
+import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 import { kenHoven } from "@/content/authors/ken-hoven";
+
+/** Body component for each slug in GLOSSARY_LONG_FORM. */
+const LONG_FORM_BODIES: Record<string, () => React.ReactElement> = {
+  "header-vs-lintel": HeaderVsLintelArticle,
+};
 
 type Params = Promise<{ slug: string }>;
 
@@ -21,6 +32,22 @@ export async function generateMetadata({ params }: { params: Params }) {
   const { slug } = await params;
   const entry = getGlossaryEntry(slug);
   if (!entry) return buildMetadata({ title: "Term not found", noIndex: true });
+
+  // A term expanded into a full article keeps its URL and is indexable; see
+  // src/content/glossary/long-form.ts for when that is allowed.
+  const longForm = getGlossaryLongForm(slug);
+  if (longForm && LONG_FORM_BODIES[slug]) {
+    return buildMetadata({
+      title: longForm.title,
+      description: longForm.description,
+      path: `/glossary/${entry.slug}`,
+      type: "article",
+      publishedAt: longForm.publishedAt,
+      updatedAt: longForm.updatedAt,
+      authorName: kenHoven.name,
+      section: "Glossary",
+    });
+  }
 
   return buildMetadata({
     title: `What is ${entry.term}?`,
@@ -36,7 +63,8 @@ export async function generateMetadata({ params }: { params: Params }) {
     // AdSense guidance lists "pages with little or no content" as a reason a
     // site is not ready; these were 79 of 380 indexable pages when AdSense
     // declined the site for "Low value content" (2026-11-14). A term that is
-    // expanded into a full article should move to /advice, not flip this.
+    // expanded into a full article is registered in GLOSSARY_LONG_FORM and
+    // handled above; this flag itself is never flipped.
     noIndexFollow: true,
   });
 }
@@ -47,6 +75,104 @@ export default async function GlossaryEntryPage({ params }: { params: Params }) 
   if (!entry) notFound();
 
   const path = `/glossary/${entry.slug}`;
+
+  const longForm = getGlossaryLongForm(slug);
+  const LongFormBody = LONG_FORM_BODIES[slug];
+  if (longForm && LongFormBody) {
+    const updated = new Date(`${longForm.updatedAt}T12:00:00Z`).toLocaleDateString("en-US", {
+      month: "long",
+      year: "numeric",
+    });
+    return (
+      <>
+        <Section padding="md" size="md">
+          <Breadcrumb
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Glossary", href: "/glossary" },
+              { name: entry.term, href: path },
+            ]}
+          />
+        </Section>
+
+        <Section padding="sm" size="md">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">Glossary</p>
+          <h1 className="mt-3 font-serif text-4xl md:text-5xl text-navy-900 leading-tight">
+            {longForm.heading}
+          </h1>
+          <p className="article-lede mt-5 text-lg text-ink-700 leading-relaxed max-w-3xl">{longForm.lede}</p>
+          <p className="mt-4 text-sm text-ink-600">
+            By{" "}
+            <Link href={kenHoven.url} className="no-underline text-navy-700 hover:text-navy-900">
+              {kenHoven.name}
+            </Link>{" "}
+            · Updated {updated}
+          </p>
+
+          <div className="mt-8">
+            <Prose className="!mx-0">
+              <LongFormBody />
+            </Prose>
+          </div>
+
+          <div className="max-w-2xl">
+            <div className="mt-12 pt-6 border-t border-ink-200">
+              <h2 className="font-serif text-xl text-navy-900">Sources</h2>
+              <ul className="mt-3 space-y-2 text-sm">
+                {longForm.sources.map((c) => (
+                  <li key={c.url}>
+                    <ExternalLink href={c.url}>{c.label}</ExternalLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <QuoteRequestCTA placement={`glossary-${entry.slug}`} />
+
+            <FaqBlock items={longForm.faq} />
+
+            <div className="mt-12">
+              <h2 className="font-serif text-2xl text-navy-900">Related guides</h2>
+              <ul className="mt-4 space-y-2 text-ink-700">
+                {longForm.related.map((r) => (
+                  <li key={r.path}>
+                    <Link href={r.path} className="no-underline text-navy-700 hover:text-navy-900">
+                      → {r.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <p className="mt-10 text-sm">
+              <Link
+                href="/glossary"
+                className="no-underline text-navy-700 hover:text-navy-900 border-b border-amber-500 pb-0.5"
+              >
+                Back to glossary
+              </Link>
+            </p>
+          </div>
+        </Section>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLdScript([
+            articleSchema({
+              headline: longForm.heading,
+              description: longForm.description,
+              url: path,
+              datePublished: longForm.publishedAt,
+              dateModified: longForm.updatedAt,
+              authorUrl: kenHoven.url,
+              authorName: kenHoven.name,
+              articleSection: "Glossary",
+            }),
+          ])}
+        />
+      </>
+    );
+  }
 
   return (
     <>
