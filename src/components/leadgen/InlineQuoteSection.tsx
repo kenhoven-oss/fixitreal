@@ -37,7 +37,7 @@ export function InlineQuoteSection({ placement, className = "" }: InlineQuoteSec
     <section
       id="quote-form"
       aria-label="Request contractor quotes"
-      className={`mt-12 rounded-xl border border-ink-200 bg-paper-50 p-6 sm:p-8 ${className}`}
+      className={`mt-12 scroll-mt-24 rounded-xl border border-ink-200 bg-paper-50 p-4 sm:p-8 ${className}`}
     >
       <h2 className="font-serif text-2xl text-navy-900">Ready to get quotes for this job?</h2>
       <p className="mt-3 text-ink-700 leading-relaxed">
