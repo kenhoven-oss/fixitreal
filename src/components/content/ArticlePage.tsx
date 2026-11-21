@@ -41,6 +41,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { networxConfig } from "@/lib/networx";
 import { QuoteRequestCTA } from "@/components/marketing/QuoteRequestCTA";
 import { InlineQuoteSection } from "@/components/leadgen/InlineQuoteSection";
+import { QuoteJumpLink } from "@/components/marketing/QuoteJumpLink";
 import { adsConfig } from "@/lib/ads";
 import { adPolicyForPillar } from "@/lib/ad-policy";
 import { insertArticleAdSlots, insertQuoteCtaTag } from "@/lib/ad-placement";
@@ -360,6 +361,10 @@ export async function ArticlePage({ article }: ArticlePageProps) {
             />
           </Prose>
         </div>
+
+        {frontmatter.inlineQuoteForm && networxConfig.formEnabled && (
+          <QuoteJumpLink placement={`${pillar}-jump`} />
+        )}
 
         {frontmatter.citations.length > 0 && (
           <div className="mt-12 pt-6 border-t border-ink-200">

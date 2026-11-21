@@ -1,12 +1,19 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import type { CSSProperties } from "react";
+import { track } from "@vercel/analytics";
 import { NETWORX_FORM_DEFAULT_HEIGHT, networxConfig, networxEmbedSrc } from "@/lib/networx";
 
 type NetworxQuoteFormProps = {
   /** Override the default form (e.g. a trade-specific form ID from the Networx dashboard). */
   formId?: string;
-  /** Height of the embed container in px. Networx's standard embed is 435. */
+  /**
+   * Height of the embed container in px from the `sm` breakpoint up.
+   * Networx's standard embed is 435. On narrower screens the container is a
+   * fixed 520px: the form's heading wraps there and the iframe cannot scroll,
+   * so 435px risks clipping the button and the consent line under it.
+   */
   height?: number;
   /** Label used for analytics/debugging only; never sent to Networx. */
   placement?: string;
@@ -76,8 +83,60 @@ export function NetworxQuoteForm({
       observer.observe(container);
     }
 
+    // Funnel analytics (see src/lib/funnel-events.ts). Properties are the
+    // placement label and page path only; nothing typed into Networx's
+    // cross-origin iframe is readable from this page.
+    const sent = new Set<string>();
+    const send = (name: string) => {
+      if (sent.has(name)) return;
+      sent.add(name);
+      try {
+        track(name, { placement, page: window.location.pathname });
+      } catch {
+        /* analytics must never affect the form */
+      }
+    };
+
+    let viewObserver: IntersectionObserver | undefined;
+    if (typeof IntersectionObserver !== "undefined") {
+      viewObserver = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            viewObserver?.disconnect();
+            send("quote_form_view");
+          }
+        },
+        { threshold: 0.5 },
+      );
+      viewObserver.observe(container);
+    }
+
+    let frameObserver: MutationObserver | undefined;
+    if (typeof MutationObserver !== "undefined") {
+      frameObserver = new MutationObserver(() => {
+        if (container.querySelector("iframe")) {
+          frameObserver?.disconnect();
+          send("quote_form_loaded");
+        }
+      });
+      frameObserver.observe(container, { childList: true, subtree: true });
+    }
+
+    // A click or tap inside a cross-origin iframe moves focus into it, which
+    // the parent page sees as a window blur with the iframe as activeElement.
+    const onBlur = () => {
+      const active = document.activeElement;
+      if (active instanceof HTMLIFrameElement && container.contains(active)) {
+        send("quote_form_interact");
+      }
+    };
+    window.addEventListener("blur", onBlur);
+
     return () => {
       observer?.disconnect();
+      viewObserver?.disconnect();
+      frameObserver?.disconnect();
+      window.removeEventListener("blur", onBlur);
       container.innerHTML = "";
       container.id = "nx_form";
     };
@@ -104,8 +163,8 @@ export function NetworxQuoteForm({
     <div
       ref={containerRef}
       id="nx_form"
-      className={`w-full overflow-hidden rounded-lg border border-ink-200 bg-white ${className}`}
-      style={{ height }}
+      className={`h-[520px] w-full overflow-hidden rounded-lg border border-ink-200 bg-white sm:h-[var(--nx-form-height)] ${className}`}
+      style={{ "--nx-form-height": `${height}px` } as CSSProperties}
       aria-label="Request contractor quotes"
     />
   );
