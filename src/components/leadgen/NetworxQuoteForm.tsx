@@ -9,10 +9,10 @@ type NetworxQuoteFormProps = {
   /** Override the default form (e.g. a trade-specific form ID from the Networx dashboard). */
   formId?: string;
   /**
-   * Height of the embed container in px from the `sm` breakpoint up.
-   * Networx's standard embed is 435. On narrower screens the container is a
-   * fixed 520px: the form's heading wraps there and the iframe cannot scroll,
-   * so 435px risks clipping the button and the consent line under it.
+   * Height of the embed container in px. Networx's standard embed is 435.
+   * On screens up to 480px wide the container is a fixed 480px instead: the
+   * form's heading wraps there and the iframe cannot scroll, so 435px clips
+   * the bottom of the form (measured at a 326px-wide container, 2026-11-20).
    */
   height?: number;
   /** Label used for analytics/debugging only; never sent to Networx. */
@@ -163,7 +163,7 @@ export function NetworxQuoteForm({
     <div
       ref={containerRef}
       id="nx_form"
-      className={`h-[520px] w-full overflow-hidden rounded-lg border border-ink-200 bg-white sm:h-[var(--nx-form-height)] ${className}`}
+      className={`h-[var(--nx-form-height)] w-full overflow-hidden rounded-lg border border-ink-200 bg-white max-[480px]:h-[480px] ${className}`}
       style={{ "--nx-form-height": `${height}px` } as CSSProperties}
       aria-label="Request contractor quotes"
     />
