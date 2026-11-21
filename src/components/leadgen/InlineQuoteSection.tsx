@@ -11,17 +11,20 @@ type InlineQuoteSectionProps = {
 
 /**
  * Networx quote form embedded directly on a high-intent article, below the
- * content. Used only on big-ticket "hire a pro" cost pages (frontmatter
- * `inlineQuoteForm: true`) as a placement test against the standard
- * link-to-/get-quotes CTA box; started 2026-11-11.
+ * content. Used only on big-ticket "hire a pro" pages (frontmatter
+ * `inlineQuoteForm: true`): the replacement cost pages, and since 2026-11-20
+ * the three "how long does it last" advice pages (water heater, AC, furnace)
+ * that lead into those replacements. Started 2026-11-11 as a placement test
+ * against the standard link-to-/get-quotes CTA box.
  *
  * Compliance notes (Networx MSA + Exhibit A, signed 2026-11-09):
  * - TcpaConsent renders the full consent disclosure immediately below the
  *   form, same as /get-quotes.
  * - The intro keeps the referral relationship conspicuous and links the
  *   full "how this works" explanation and affiliate disclosure.
- * - Copy avoids prohibited claims (no "pre-screened", "licensed and
- *   insured", urgency or scare language).
+ * - Copy avoids the Exhibit A prohibited claims (screening, licensing or
+ *   insurance assurances, urgency or scare language); the phrase list is
+ *   in scripts/check-networx-copy.mjs.
  * - NetworxQuoteForm's loader only supports one form per page (fixed
  *   #nx_form container id) — never render this twice on a page.
  *

@@ -27,9 +27,10 @@ type QuoteRequestCTAProps = {
  * small print but above the fold of the box — it must stay adjacent to the
  * link it qualifies (FTC) and must never be moved behind a disclosure link.
  *
- * Copy here is governed by the Networx MSA Exhibit A: no "pre-screened",
- * no "licensed and insured", no "free installation", no urgency or scare
- * language. Keep claims to what is verifiably true of the referral itself.
+ * Copy here is governed by the Networx MSA Exhibit A: no screening,
+ * licensing or insurance assurances, no giveaway offers, no urgency or scare
+ * language (phrase list in scripts/check-networx-copy.mjs). Keep claims to
+ * what is verifiably true of the referral itself.
  */
 export function QuoteRequestCTA({ job, placement = "article", className = "" }: QuoteRequestCTAProps) {
   if (!networxConfig.formEnabled) return null;
