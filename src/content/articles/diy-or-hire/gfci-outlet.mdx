@@ -4,7 +4,7 @@ description: "GFCI outlet replacement is borderline DIY — straightforward wiri
 author: "ken-hoven"
 ymyl: true
 publishedAt: "2026-05-15"
-updatedAt: "2026-05-15"
+updatedAt: "2026-11-22"
 readingMinutes: 6
 verdict: "maybe-diy"
 costLow: 20
@@ -48,6 +48,10 @@ keywords:
   - GFCI wiring line vs load
   - swap GFCI outlet
 citations:
+  - label: "U.S. Consumer Product Safety Commission — Repairing Aluminum Wiring (Publication 516)"
+    url: "https://www.cpsc.gov/s3fs-public/516.pdf"
+  - label: "Electrical Contractor Magazine — New GFCI technology issues (line/load miswire lockout)"
+    url: "https://www.ecmag.com/magazine/articles/article-detail/codes-standards-new-gfci-technology-issues"
   - label: "National Electrical Code (NEC) Article 210.8: GFCI protection requirements"
     url: "https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70"
   - label: "Electrical Safety Foundation International: GFCI outlets"
@@ -56,11 +60,11 @@ citations:
     url: "https://www.osha.gov/electrical/standards"
 faq:
   - question: "What's the difference between Line and Load on a GFCI outlet?"
-    answer: "Line is the wiring coming from the breaker panel — the power source. Load is the wiring going downstream to other outlets on the same circuit. If you wire Line and Load backwards, the GFCI itself works as an outlet but doesn't protect anything downstream, and it'll trip strangely or not at all. Always identify Line first with a voltage tester before connecting any wires."
+    answer: "Line is the wiring coming from the breaker panel — the power source. Load is the wiring going downstream to other outlets on the same circuit. If you wire Line and Load backwards, a current GFCI will not reset, and outlets downstream stay dead. Older GFCIs could appear to work when reversed while giving no protection at the outlet itself. Always identify Line first with a voltage tester before connecting any wires."
   - question: "Can a GFCI outlet protect downstream outlets?"
     answer: "Yes, if wired correctly. The Load terminals on a GFCI feed protection downstream — outlets after it on the circuit will be GFCI-protected without being GFCI outlets themselves. This is how kitchens and bathrooms typically meet code without every outlet being a GFCI. Just label the downstream outlets ('GFCI Protected') for the next homeowner."
   - question: "Why does my GFCI keep tripping after I replace it?"
-    answer: "Three usual suspects: (1) miswired Line and Load, (2) actual fault on the circuit (appliance with leakage current — common with old refrigerators, dishwashers, deep freezers), (3) faulty new GFCI (it happens — about 1 in 50 is DOA out of the box). Swap Line/Load and retest. If still tripping, unplug everything downstream and reset; plug things back in one at a time."
+    answer: "Three usual suspects: (1) miswired Line and Load, (2) actual fault on the circuit (appliance with leakage current — common with old refrigerators, dishwashers, deep freezers), (3) a faulty new GFCI, which does happen. Swap Line/Load and retest. If still tripping, unplug everything downstream and reset; plug things back in one at a time."
   - question: "Do I need a permit to replace a GFCI outlet?"
     answer: "Like-for-like replacement is treated as routine maintenance in most jurisdictions — no permit required. Adding a new GFCI in a location that didn't have an outlet, or upgrading a non-GFCI to GFCI as part of a remodel, sometimes does require a permit. Check with your local building department if you're unsure; the permit fee is usually $25–$75 and saves resale headaches later."
 related:
@@ -87,7 +91,7 @@ GFCI outlet replacement is borderline DIY. The mechanical work is simple — two
 
 ## When to hire an electrician
 
-- **Aluminum branch wiring.** GFCI outlets work on aluminum only with special "CO/ALR" rated devices and specific torque on the connections. Amateur work on aluminum is a fire risk.
+- **Aluminum branch wiring.** A GFCI outlet should not be connected directly to aluminum wire. An electrician joins short copper leads to the aluminum with connectors made for that purpose, then connects the copper to the GFCI. Amateur work on aluminum is a fire risk.
 - **Backstabbed outlets in a stack.** If the existing outlet uses backstab connections (wires pushed into spring clips on the back, common in 1980s–1990s homes), it's prone to loosening over time. Replacing with screw terminals is the right move, but if multiple wires are coming into the box and you can't identify Line vs. Load, it's an electrician's job.
 - **The box has more than two cables coming in.** Multi-cable boxes are common in kitchens where the GFCI feeds several downstream outlets. The Line/Load logic gets harder; mistakes leave downstream protection broken.
 - **Any sign of trouble in the box** — scorched wire, melted insulation, evidence of overheating, three-prong outlet on a two-wire system (no ground).
@@ -122,9 +126,11 @@ The eight steps, including which wire goes to which terminal, are in the step-by
 
 ## Safety notes
 
-- **Verify the breaker is off, twice.** Touch the voltage tester to a known-hot outlet first to confirm it works. Then test the outlet you're working on. False negatives from a dead-battery tester are the #1 cause of "I thought it was off" shocks.
-- **Don't skip the Load wiring if there are downstream outlets.** A GFCI miswired with both cables on Line terminals works as an outlet but provides no protection downstream. Half-protected kitchens are how electrical fires start.
-- **Press TEST monthly after install.** This is the only way to verify GFCI protection still works. About 1 in 10 older GFCIs eventually fails in a "stays on but no protection" state.
+- **Verify the breaker is off, twice.** Touch the voltage tester to a known-hot outlet first to confirm it works. Then test the outlet you're working on. A tester with a dead battery reads "off" on a live wire, which is a common way people get shocked.
+- **Don't skip the Load wiring if there are downstream outlets.** A GFCI miswired with both cables on Line terminals works as an outlet but provides no protection downstream. A GFCI protects against shock, so the result is outlets near water that everyone assumes are protected and are not.
+- **Press TEST monthly after install.** This is the only way to verify GFCI protection still works. Older GFCIs can fail in a state where the outlet still has power but no longer protects.
+
+*Corrected on November 22, 2026: an earlier version said a GFCI wired with Line and Load reversed still works as an outlet, and that special CO/ALR-rated GFCIs handle aluminum wiring. Current GFCIs will not reset when reversed, and aluminum wiring needs copper leads joined with listed connectors.*
 
 ## What I'd do
 
