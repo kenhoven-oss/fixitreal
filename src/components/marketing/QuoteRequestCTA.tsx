@@ -21,7 +21,8 @@ type QuoteRequestCTAProps = {
  *
  * DESIGN
  * ------
- * Tinted panel, job-specific headline, one line of body copy and a solid
+ * Dark navy panel with an orange button (2026-11-25, Ken: "make this stand
+ * out", on all pages). Job-specific headline, one line of body copy and a solid
  * button: a text link on a gray panel reads as a footnote and gets clicked
  * like one. The referral-fee disclosure sits directly under the button, in
  * small print but above the fold of the box — it must stay adjacent to the
@@ -37,24 +38,24 @@ export function QuoteRequestCTA({ job, placement = "article", className = "" }: 
 
   return (
     <aside
-      className={`my-8 rounded-lg border border-amber-200 bg-amber-50/70 px-5 py-5 sm:px-6 ${className}`}
+      className={`my-8 rounded-xl border-l-8 border-amber-500 bg-navy-900 px-6 py-6 shadow-lg sm:px-8 sm:py-7 ${className}`}
       aria-label="Request contractor quotes"
     >
-      <p className="text-xs font-semibold uppercase tracking-[0.15em] text-amber-700">Hiring this out?</p>
-      <p className="mt-2 font-serif text-xl text-navy-900 leading-tight">
+      <p className="text-xs font-bold uppercase tracking-[0.18em] text-amber-300">Hiring this out?</p>
+      <p className="mt-2 font-serif text-2xl sm:text-3xl text-white leading-tight">
         Get quotes{job ? ` for ${job}` : " from local contractors"}
       </p>
-      <p className="mt-2 text-sm text-ink-700 leading-relaxed">
+      <p className="mt-3 text-base text-navy-100 leading-relaxed">
         Three written quotes is the minimum worth collecting. Tell our referral partner Networx your zip code and
         local contractors call or text to bid the job — no charge, no obligation.
       </p>
       <QuoteCtaLink
         placement={placement}
-        className="mt-4 inline-flex items-center rounded-md bg-navy-900 px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-navy-800 transition-colors"
+        className="mt-5 inline-flex items-center rounded-md bg-amber-500 px-6 py-3 text-base font-bold text-navy-900 no-underline shadow hover:bg-amber-400 transition-colors"
       >
         Request quotes →
       </QuoteCtaLink>
-      <p className="mt-3 text-xs text-ink-600 leading-relaxed">
+      <p className="mt-4 text-xs text-navy-200 leading-relaxed">
         We earn a referral fee when you submit a request. It never changes which contractors you are matched with or
         what they charge, and FixItReal has not vetted them — compare their bids like any others.
       </p>
