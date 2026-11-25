@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/content/site";
 import { networxConfig } from "@/lib/networx";
+import { QuoteCtaLink } from "@/components/marketing/QuoteCtaLink";
 
 export function Header() {
   return (
@@ -43,12 +44,12 @@ export function Header() {
             </Link>
           ))}
           {networxConfig.formEnabled && (
-            <Link
-              href="/get-quotes"
-              className="no-underline hover:text-amber-700 transition-colors"
+            <QuoteCtaLink
+              placement="header"
+              className="rounded-md bg-amber-500 px-2.5 py-1 font-semibold text-navy-900 no-underline hover:bg-amber-400 transition-colors"
             >
               Get Quotes
-            </Link>
+            </QuoteCtaLink>
           )}
           <Link
             href="/search"

@@ -379,7 +379,10 @@ export async function ArticlePage({ article }: ArticlePageProps) {
           </div>
         )}
 
-        {!quoteCta.inserted && !frontmatter.inlineQuoteForm && (
+        {/* End-of-article box on every article (2026-11-25): a reader who
+            finishes has just decided whether to hire. Skipped where the full
+            form is embedded below instead. */}
+        {!frontmatter.inlineQuoteForm && (
           <QuoteRequestCTA placement={`article-${pillar}-end`} />
         )}
 

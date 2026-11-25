@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { QuoteCtaLink } from "@/components/marketing/QuoteCtaLink";
 import Image from "next/image";
 import { site } from "@/content/site";
 import { networxConfig } from "@/lib/networx";
@@ -55,9 +56,9 @@ export function Footer() {
               </li>
               {networxConfig.formEnabled && (
                 <li>
-                  <Link href="/get-quotes" className="no-underline text-ink-700 hover:text-navy-900">
+                  <QuoteCtaLink placement="footer" className="no-underline text-ink-700 hover:text-navy-900">
                     Request contractor quotes
-                  </Link>
+                  </QuoteCtaLink>
                 </li>
               )}
               <li>
