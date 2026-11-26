@@ -95,7 +95,7 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-smoke-detectors-for-homeowners";
-const pageTitle = "Best smoke detectors for homeowners";
+const pageTitle = "Best smoke detectors 2026: why 10-year photoelectric wins";
 const pageDescription =
   "Sealed 10-year lithium photoelectric units win for most homes. Here's what spec actually matters, what to avoid, and how many alarms a typical house needs.";
 

@@ -16,7 +16,7 @@ const UPDATED = "2026-11-07";
 
 export const metadata = buildMetadata({
   title:
-    "Sample Home Inspection Report: Full Walkthrough with Annotated Deficiencies",
+    "Sample home inspection report, annotated line by line",
   description:
     "A real, anonymized 56-page home inspection report — plus a plain-English walkthrough of all 33 flagged deficiencies, with repair costs and DIY-or-hire verdicts.",
   path: "/resources/sample-home-inspection-report",
@@ -504,7 +504,7 @@ export default function SampleHomeInspectionReportPage() {
             Resource · FixItReal
           </p>
           <h1 className="mt-2 font-serif text-4xl md:text-5xl text-navy-900 leading-tight">
-            Sample Home Inspection Report: Full Walkthrough with Annotated Deficiencies
+            Sample home inspection report, annotated line by line
           </h1>
           <p className="article-lede mt-6 text-lg text-ink-700 leading-relaxed">
             A real, anonymized 56-page residential inspection report — plus a
@@ -798,7 +798,7 @@ export default function SampleHomeInspectionReportPage() {
           ]),
           articleSchema({
             headline:
-              "Sample Home Inspection Report: Full Walkthrough with Annotated Deficiencies",
+              "Sample home inspection report, annotated line by line",
             description:
               "A real, anonymized 56-page home inspection report with a plain-English walkthrough of all 33 of its flagged deficiencies.",
             url: "/resources/sample-home-inspection-report",

@@ -72,7 +72,7 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-furnace-filters";
-const pageTitle = "Recommended furnace filter: which MERV rating you actually need (2026)";
+const pageTitle = "Best furnace filters 2026: which MERV rating you need";
 const pageDescription = "MERV 8 is the recommended furnace filter for most homes. MERV 11–13 helps allergies but can starve an older furnace. Ratings explained, plus sizes that fit.";
 const publishedAt = "2026-09-12";
 const updatedAt = "2026-11-08";
@@ -132,6 +132,8 @@ export default function BestFurnaceFiltersPage() {
             <li>→ <Link href="/advice/furnace-smells-like-burning" className="no-underline text-navy-700 hover:text-navy-900">Furnace smells like burning: normal or not?</Link></li>
             <li>→ <Link href="/advice/furnace-not-igniting" className="no-underline text-navy-700 hover:text-navy-900">Furnace not igniting</Link></li>
             <li>→ <Link href="/costs/hvac-service-call-cost" className="no-underline text-navy-700 hover:text-navy-900">HVAC service call cost</Link></li>
+            <li>→ <Link href="/costs/furnace-replacement-cost" className="no-underline text-navy-700 hover:text-navy-900">Furnace replacement cost</Link></li>
+            <li>→ <Link href="/costs/heat-pump-cost" className="no-underline text-navy-700 hover:text-navy-900">Heat pump cost</Link></li>
           </ul>
         </div>
         <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript([breadcrumbSchema(breadcrumbItems), articleSchema({ headline: pageTitle, description: pageDescription, url: path, datePublished: publishedAt, dateModified: updatedAt, authorUrl: kenHoven.url, authorName: kenHoven.name, articleSection: "Buying guide",   image: "/opengraph-image", }), faqSchema(faqs), itemListSchema({ name: pageTitle, description: pageDescription, url: path, items: products.map((p) => ({ name: p.name, url: `${path}#${p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}` })) })])} />

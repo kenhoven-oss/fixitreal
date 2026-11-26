@@ -129,9 +129,9 @@ const products: RecommendedProduct[] = [
 -------------------------------------------------------------------------- */
 
 const path = "/tools/best-water-leak-detectors";
-const pageTitle = "Best water leak detectors 2026: Wi-Fi vs smart-home vs standalone";
+const pageTitle = "Best water leak sensors 2026: which type to put where";
 const pageDescription =
-  "Which leak detector is best for the water heater, basement, washing machine, and under sinks — Wi-Fi, smart-home, standalone pucks, and shutoff valves compared.";
+  "The best water leak sensor for each spot: water heater, washer, sinks and basement. Siren pucks, Wi-Fi kits, smart-home sensors and automatic shutoffs compared.";
 
 // Single source of truth for this page's dates: OG metadata, the visible
 // byline, the Article JSON-LD and the sitemap all read from these two
