@@ -72,7 +72,7 @@ const products: RecommendedProduct[] = [
 ];
 
 const path = "/tools/best-automatic-water-shutoff-valves";
-const pageTitle = "Best automatic water shutoff valves for homeowners";
+const pageTitle = "Best automatic water shut-off valves 2026: what works";
 const pageDescription = "A smart shutoff closes the main when it detects a burst pipe — even when nobody's home. Which systems work, what they cost, and the insurance discount most people miss.";
 const publishedAt = "2026-09-12";
 const updatedAt = "2026-09-12";
