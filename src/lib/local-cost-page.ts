@@ -188,7 +188,7 @@ export function buildLocalCostModel(
     {
       question: `How much does ${withIndefiniteArticle(guide.shortName)} cost in ${place.label}?`,
       answer: isServiceCall
-        ? `In ${place.label}, expect ${usdRange(baseRange)} for the trip plus the first hour, then ${usdRange(hourlyRange)}/hour after that. A ${guide.jobDescription} normally takes 30–60 minutes, so it fits inside that first hour. Evening, weekend and overnight calls typically run 1.5–2× these numbers.`
+        ? `In ${place.label}, expect ${usdRange(baseRange)} for the trip plus the first hour, then ${usdRange(hourlyRange)}/hour after that. A ${guide.jobDescription} normally takes 30–60 minutes, so it fits inside that first hour. Evening and weekend calls typically run 1.5–2× these numbers, and overnight can run higher.`
         : `In ${place.label}, expect ${usdRange(baseRange)} installed for a ${guide.jobDescription}. A planned replacement does not usually carry a separate trip or dispatch fee; work that goes beyond a like-for-like swap is billed at roughly ${usdRange(hourlyRange)}/hour on top.`,
     },
     {
