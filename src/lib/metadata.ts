@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { env } from "@/lib/env";
 import { adsConfig } from "@/lib/ads";
+import { clusterForPath } from "@/content/hreflang-clusters";
 
 type BuildMetadataInput = {
   title?: string;
@@ -75,6 +76,23 @@ export function buildMetadata({
     ? new URL(image, env.siteUrl).toString()
     : new URL("/opengraph-image", env.siteUrl).toString();
 
+  // A page that has a regional sibling (same question, different market) must
+  // declare the whole cluster, not just itself — see content/hreflang-clusters.
+  // Declaring only itself leaves two pages competing for the same query with
+  // two rival x-default claims, and Google picks one.
+  const cluster = clusterForPath(canonicalPath ?? path);
+  const clusterLanguages = cluster
+    ? {
+        ...Object.fromEntries(
+          Object.entries(cluster.alternates).map(([code, p]) => [
+            code,
+            new URL(p, env.siteUrl).toString(),
+          ]),
+        ),
+        "x-default": new URL(cluster.alternates[cluster.xDefault], env.siteUrl).toString(),
+      }
+    : undefined;
+
   return {
     metadataBase: new URL(env.siteUrl),
     title: fullTitle,
@@ -87,9 +105,10 @@ export function buildMetadata({
       // claim en-us, or hreflang tells Google the Canadian-pricing page is
       // a US variant, which is exactly backwards.
       languages:
-        region === "CA"
+        clusterLanguages ??
+        (region === "CA"
           ? { "en-ca": canonicalUrl, "x-default": canonicalUrl }
-          : { "en-us": canonicalUrl, "x-default": canonicalUrl },
+          : { "en-us": canonicalUrl, "x-default": canonicalUrl }),
       types: {
         "application/rss+xml": [
           { url: new URL("/feed.xml", env.siteUrl).toString(), title: `${site.name} — RSS feed` },
